@@ -18,13 +18,23 @@ async def main():
         check("design categories present", all(c in st["cats"] for c in ["furniture", "wardrobe", "fenestration", "lighting", "ceiling"]), ",".join(st["cats"]))
         await pg.wait_for_timeout(2500); await pg.screenshot(path=f"{OUT}/01_default_start.png")
         cam0 = await pg.evaluate("() => viewer.camera.position.toArray()")
-        for key, f in [("A", "OPTION_A"), ("B", "OPTION_B"), ("C", "OPTION_C"), ("D", "DEFAULT")]:
+        for key, f in [("A", "OPTION_A"), ("B", "OPTION_B"), ("C", "OPTION_C"), ("D", "OPTION_D"), ("DEF", "DEFAULT")]:
             await pg.click(f'#designPanel button[data-file="MyFlat_V1_1_Room1_{f}.glb"]')
             await pg.wait_for_function(f"app.ready && app.modelFile === 'MyFlat_V1_1_Room1_{f}.glb' && !document.getElementById('loading').checkVisibility()")
             await pg.wait_for_timeout(2500); await pg.screenshot(path=f"{OUT}/02_{f}_eye.png")
             n = await pg.evaluate("() => app.objects.filter(o => o.obj.userData.design_option).length")
             cam = await pg.evaluate("() => viewer.camera.position.toArray()")
             check(f"switch to {f}: loads, keeps camera", n > 40 and max(abs(a - b_) for a, b_ in zip(cam, cam0)) < 1e-3, f"{n} design objects")
+        # Option D shows its budget with a total inside the Rs 1.5-2 lakh target
+        await pg.click('#designPanel button[data-file="MyFlat_V1_1_Room1_OPTION_D.glb"]')
+        await pg.wait_for_function("app.ready && app.modelFile === 'MyFlat_V1_1_Room1_OPTION_D.glb'")
+        bud = await pg.evaluate("""() => { const n = app.designNotes.OPTION_D.budget; const sum = n.rows.reduce((s, r) => s + +r[2].replace(/[^0-9]/g, ''), 0);
+            return { total: n.total, sum, shown: !!document.querySelector('#designNotes .budget tr.tot') }; }""")
+        check("Option D: budget table shown, rows add up to the total, total within Rs 1.5-2 lakh",
+              bud["shown"] and int(bud["total"].replace("₹", "").replace(",", "")) == bud["sum"] and 150000 <= bud["sum"] <= 200000, str(bud))
+        await pg.wait_for_timeout(1500); await pg.screenshot(path=f"{OUT}/02b_OPTION_D_budget.png")
+        await pg.click('#designPanel button[data-file="MyFlat_V1_1_Room1_DEFAULT.glb"]')
+        await pg.wait_for_function("app.ready && app.modelFile === 'MyFlat_V1_1_Room1_DEFAULT.glb'")
         # W1 placeholder replaced; architecture baseline has no design objects
         rep = await pg.evaluate("() => !viewer.scene.getObjectByName('WINDOW_W1_FRAME') && !!viewer.scene.getObjectByName('R1_DEF_W1_OUTER_FRAME')")
         check("generic W1 replaced by designed window", rep)

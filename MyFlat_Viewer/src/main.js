@@ -5,13 +5,13 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { CONFIG } from './config.js?v=7';
-import { Walkthrough } from './walk.js?v=7';
-import { setupImmersive } from './immersive.js?v=7';
-import { setupExtras } from './extras.js?v=7';
+import { CONFIG } from './config.js?v=8';
+import { Walkthrough } from './walk.js?v=8';
+import { setupImmersive } from './immersive.js?v=8';
+import { setupExtras } from './extras.js?v=8';
 // bump together with the ?v= in index.html and the imports above whenever the viewer or models change,
 // so browsers never mix a new page with old cached scripts or models
-const BUILD = '7';
+const BUILD = '8';
 
 const $ = (id) => document.getElementById(id);
 const FT = 0.3048;
@@ -202,7 +202,7 @@ function buildDesignPanel(list) {
     for (const m of items) {
       const b = document.createElement('button'); b.dataset.file = m.file;
       const note = m.design && app.designNotes?.[m.design];
-      const sub = note ? note.title.split('·')[1]?.trim() || '' : (m.label || '').replace(/\(.*\)/, '');
+      const sub = (note ? note.title.split('·')[1]?.trim() || '' : (m.label || '').replace(/\(.*\)/, '')) + (note?.budget ? ` · ${note.budget.total}` : '');
       b.innerHTML = `${m.short || m.label}<small>${g === 'interior' ? sub : (m.label || '')}</small>`;
       b.onclick = () => switchModel(m.file);
       p.appendChild(b);
@@ -223,6 +223,10 @@ function updateDesignUI() {
   el.classList.remove('hidden');
   el.innerHTML = `<div class="t">${n.title}</div><div class="tag">${n.tagline}</div>` +
     `<details ${m.design === 'DEFAULT' ? 'open' : ''}><summary>${m.design === 'DEFAULT' ? 'Why this is the default' : 'Concept'}</summary><div class="why">${n.why}</div></details>` +
+    (n.budget ? `<details class="budget" open><summary>Budget · ${n.budget.total}</summary><table>` +
+      n.budget.rows.map(r => `<tr><td>${r[0]}<div class="bd">${r[1]}</div></td><td class="amt">${r[2]}</td></tr>`).join('') +
+      `<tr class="tot"><td>Total</td><td class="amt">${n.budget.total}</td></tr></table>` +
+      (n.budget.note ? `<div class="bnote">${n.budget.note}</div>` : '') + (n.budget.savings ? `<div class="bnote"><b>If it runs over:</b> ${n.budget.savings.replace(/^If it runs over:\s*/, '')}</div>` : '') + `</details>` : '') +
     Object.entries(n.sections).map(([k, v]) => `<details><summary>${k}</summary><div>${v}</div></details>`).join('') +
     (n.schedule ? `<details class="sched" open><summary>Material & finish schedule</summary>` + n.schedule.map(g =>
       `<div class="sg">${g.area}</div><table>${g.items.map(r => `<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join('')}</table>`).join('') + `</details>` : '');

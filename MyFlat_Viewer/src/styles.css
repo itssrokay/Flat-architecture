@@ -180,3 +180,12 @@ body.immersive .edgeTab { display: none; }
 #topbar { gap: 4px; }
 #topbar button, #topbar select { padding: 4px 7px; font-size: 12.5px; }
 #topbar .sep { margin: 0 2px; }
+
+/* budget table (design notes) */
+#designNotes .budget table { width: 100%; border-collapse: collapse; margin: 4px 0; }
+#designNotes .budget td { border-top: 1px solid #e8e0f3; padding: 3px 4px; vertical-align: top; font-size: 11.5px; }
+#designNotes .budget td:first-child { font-weight: 600; color: #3d2a5a; }
+#designNotes .budget .bd { font-weight: 400; color: var(--muted); font-size: 10.5px; }
+#designNotes .budget .amt { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+#designNotes .budget tr.tot td { border-top: 2px solid #6d3fa8; font-weight: 800; color: #6d3fa8; font-size: 12.5px; }
+#designNotes .bnote { font-size: 11px; color: var(--muted); margin: 4px 0; }

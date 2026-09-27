@@ -595,5 +595,262 @@
     ]
    }
   ]
+ },
+ "OPTION_D": {
+  "title": "Option D · Smart Budget (Indian)",
+  "tagline": "The same well-planned layout as DEFAULT for about ₹1,93,300: ready-made pieces, a local carpenter and colour instead of costly finishes.",
+  "why": "Money goes where it lasts and gets used every day: a full-height wardrobe with a loft, proper aluminium sliders for the balcony and the window, and a good mattress. It saves on things that cost a lot but add little: no false ceiling, no panelling, no veneer or acrylic, and the existing floor stays. The look comes from colour and Indian textiles: a terracotta accent wall, indigo cotton curtains, a handloom dhurrie, a cane moodha and a Madhubani print. Walnut and frosty-white laminate tie the carpenter work to the ready-made bed. The layout is DEFAULT's, which already works: bed facing the balcony, wardrobe in the alcove, study-dresser on the thick wall.",
+  "sections": {
+   "Layout": "Queen storage bed on the east wall facing the balcony; 2 bedsides with wall lights; 3-door wardrobe + loft in the 5'4\" alcove; wall-hung study-dresser with shelves and a mirror on the thick wall; cane moodha by the window; 5'×7' dhurrie.",
+   "Wardrobe": "Local carpenter, MR ply/HDHMR carcass, frosty-white 1 mm laminate with a walnut-laminate strip, basic soft-close hinges, SS D-handles, loft above for suitcases.",
+   "Window W1": "3-track domal aluminium slider (2 glass + 1 mesh), white; plain MS grill (reuse if sound); granite offcut sill; indigo cotton curtains + voile.",
+   "Balcony door": "2-track domal aluminium sliding door, 4 panels: the two middle panels slide over the fixed end panels to give about 5' clear in the middle. A pleated mesh can be added later (about ₹6–8k).",
+   "Ceiling & lighting": "No false ceiling. 5 surface-mounted LED downlights, an LED strip on top of a laminated ply curtain pelmet for a cove-like glow, 2 bedside wall lights.",
+   "Balcony": "Existing floor kept. Folding metal bistro set, tulsi / money plant / snake plant / areca in pots, solar string lights on the railing, basic bulkhead light.",
+   "Palette": "Warm white, terracotta, indigo, mustard, walnut, cane."
+  },
+  "budget": {
+   "total": "₹1,93,300",
+   "rows": [
+    [
+     "Wardrobe",
+     "3-door hinged + loft, local carpenter, MR ply/HDHMR + 1 mm laminate, 5'3\" × 2' × 9'10\"",
+     "₹46,000"
+    ],
+    [
+     "Balcony door",
+     "2-track domal aluminium slider, 4 panels (2 slide), 5 mm toughened glass, 73 sq ft",
+     "₹40,000"
+    ],
+    [
+     "Window W1",
+     "3-track domal aluminium slider (2 glass + 1 mesh), 16 sq ft",
+     "₹13,200"
+    ],
+    [
+     "Bed",
+     "Queen engineered-wood storage bed, walnut finish (Wakefit Orion class)",
+     "₹16,100"
+    ],
+    [
+     "Mattress",
+     "6\" orthopaedic memory foam, queen",
+     "₹13,000"
+    ],
+    [
+     "Bedside tables",
+     "2 ready-made, engineered wood",
+     "₹4,000"
+    ],
+    [
+     "Study wall",
+     "Carpenter: wall desk 4'×1'8\" + 2 open shelves + plain mirror",
+     "₹9,000"
+    ],
+    [
+     "Study chair",
+     "Metal + wood cafe chair",
+     "₹3,000"
+    ],
+    [
+     "Moodha",
+     "Cane moodha + cotton cushion",
+     "₹1,500"
+    ],
+    [
+     "Paint",
+     "~590 sq ft economy/standard emulsion + putty patching; terracotta accent wall",
+     "₹9,000"
+    ],
+    [
+     "Lighting",
+     "5 surface LED downlights, pelmet LED strip + driver, 2 wall lights, electrician",
+     "₹10,500"
+    ],
+    [
+     "Pelmet & rods",
+     "Laminated ply pelmet 11', SS curtain rods",
+     "₹4,000"
+    ],
+    [
+     "Curtains",
+     "Indigo cotton curtains (balcony 4 + W1 2 panels) + voile sheers",
+     "₹7,000"
+    ],
+    [
+     "Soft",
+     "Cotton dhurrie 5'×7', block-print bedsheet + dohar, cushions",
+     "₹5,000"
+    ],
+    [
+     "Stone",
+     "Black granite balcony threshold + W1 sill",
+     "₹2,500"
+    ],
+    [
+     "Balcony",
+     "Folding bistro set, 4 plants in pots, solar string lights, bulkhead light",
+     "₹8,500"
+    ],
+    [
+     "Decor",
+     "Framed Madhubani print",
+     "₹1,000"
+    ]
+   ],
+   "note": "2026 metro prices, rounded. Aluminium work includes 18% GST; carpenter quotes usually don't. Not included: re-flooring (about ₹30–40k if needed), AC, ceiling fan, rewiring.",
+   "savings": "If it runs over: keep the existing W1 window and just add a mesh (−₹10k), buy the balcony set later (−₹5k), skip the pelmet LED and string lights (−₹3k), one bedside only (−₹2k). That brings it to about ₹1.73 lakh."
+  },
+  "schedule": [
+   {
+    "area": "Floor",
+    "items": [
+     [
+      "Existing",
+      "Keep the current floor; deep-clean and re-grout"
+     ],
+     [
+      "Rug",
+      "Handloom cotton dhurrie 5'×7' (Panipat)"
+     ]
+    ]
+   },
+   {
+    "area": "Walls",
+    "items": [
+     [
+      "Paint",
+      "Economy/standard emulsion, warm white, over putty patching"
+     ],
+     [
+      "Accent",
+      "Terracotta emulsion on the bed wall"
+     ],
+     [
+      "Art",
+      "Framed Madhubani print over the desk"
+     ]
+    ]
+   },
+   {
+    "area": "Ceiling",
+    "items": [
+     [
+      "Finish",
+      "Existing plaster, repainted white; no false ceiling"
+     ],
+     [
+      "Pelmet",
+      "Laminated ply box over the balcony curtains, LED strip on top"
+     ]
+    ]
+   },
+   {
+    "area": "Wardrobe",
+    "items": [
+     [
+      "Carcass",
+      "18 mm MR ply / HDHMR"
+     ],
+     [
+      "Shutters",
+      "Frosty-white 1 mm laminate + walnut strip"
+     ],
+     [
+      "Hardware",
+      "Basic soft-close hinges, SS D-handles"
+     ],
+     [
+      "Loft",
+      "Full-width loft to the ceiling"
+     ]
+    ]
+   },
+   {
+    "area": "Furniture",
+    "items": [
+     [
+      "Bed",
+      "Engineered-wood queen with box storage, walnut finish"
+     ],
+     [
+      "Mattress",
+      "6\" orthopaedic memory foam"
+     ],
+     [
+      "Study",
+      "Wall-hung laminated-ply desk + shelves, cafe chair"
+     ],
+     [
+      "Seat",
+      "Cane moodha"
+     ]
+    ]
+   },
+   {
+    "area": "Window & door",
+    "items": [
+     [
+      "W1",
+      "3-track domal aluminium (2 glass + mesh), white"
+     ],
+     [
+      "Balcony",
+      "2-track domal aluminium, 4 panels (2 sliding), white"
+     ],
+     [
+      "Stone",
+      "Black granite threshold and sill"
+     ]
+    ]
+   },
+   {
+    "area": "Lighting",
+    "items": [
+     [
+      "General",
+      "5 × 12 W surface LED downlights, 3000K"
+     ],
+     [
+      "Mood",
+      "LED strip on the curtain pelmet"
+     ],
+     [
+      "Bedside",
+      "2 cone wall lights, warm-white bulbs"
+     ]
+    ]
+   },
+   {
+    "area": "Textiles",
+    "items": [
+     [
+      "Curtains",
+      "Indigo cotton + voile sheer on SS rods"
+     ],
+     [
+      "Bed",
+      "Jaipuri block-print bedsheet + dohar, mustard cushions"
+     ]
+    ]
+   },
+   {
+    "area": "Balcony",
+    "items": [
+     [
+      "Seating",
+      "Folding metal bistro table + 2 chairs"
+     ],
+     [
+      "Plants",
+      "Tulsi, money plant, snake plant, areca palm"
+     ],
+     [
+      "Light",
+      "Solar string lights, IP65 bulkhead"
+     ]
+    ]
+   }
+  ]
  }
 }

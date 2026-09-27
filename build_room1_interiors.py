@@ -17,7 +17,7 @@ H = 10.0
 
 def m(v): return v * FT
 OPT = None; COL = None; MATS = {}
-TAG = {'DEFAULT': 'DEF', 'OPTION_A': 'OPA', 'OPTION_B': 'OPB', 'OPTION_C': 'OPC'}
+TAG = {'DEFAULT': 'DEF', 'OPTION_A': 'OPA', 'OPTION_B': 'OPB', 'OPTION_C': 'OPC', 'OPTION_D': 'OPD'}
 
 def mat(name, rgb, rough=0.6, metal=0.0, alpha=1.0, emit=0.0):
     key = f"{OPT}_{name}"
@@ -549,8 +549,88 @@ def build_C():  # Indian modern heritage - premium, bi-fold door, diwan, cane
     blob("BALCONY_BRASS_LANTERN", -1.6, -12.6, 6.5, 0.3, mat("Lantern", (1.0, 0.8, 0.5), 0.5, emit=3.5), "lighting", "pierced brass lantern (wall bracket)", sz=1.4)
     box("BALCONY_DHURRIE", -4.2, -1.5, -13.8, -9.5, BAL_Z + 0.03, BAL_Z + 0.05, mat("Dhurrie", (0.7, 0.45, 0.35), 1.0), "balcony", "outdoor jute dhurrie")
 
+def build_D():  # Smart budget Indian (Rs 1.5-2 lakh) - same proven layout as DEFAULT, ready-made + local carpenter
+    walnut = mat("Walnut_Laminate", (0.42, 0.28, 0.18), 0.55); white = mat("Frosty_White_Laminate", (0.94, 0.93, 0.9), 0.5)
+    terracotta = mat("Terracotta_Paint", (0.72, 0.42, 0.3), 0.9); warmwhite = mat("Warm_White_Paint", (0.95, 0.93, 0.88), 0.9)
+    indigo = mat("Indigo_Cotton", (0.2, 0.25, 0.45), 0.9); mustard = mat("Mustard_Cotton", (0.85, 0.62, 0.2), 0.9)
+    whitealu = mat("White_Alu", (0.93, 0.93, 0.92), 0.4, 0.3); black = mat("Black_Metal", (0.1, 0.1, 0.1), 0.5, 0.4)
+    glass = mat("Clear_Glass", (0.75, 0.88, 0.95), 0.05, alpha=0.25); mesh = mat("Mesh", (0.2, 0.2, 0.22), 0.8, alpha=0.55)
+    cane = mat("Cane", (0.78, 0.62, 0.4), 0.8); granite = mat("Granite_Black", (0.1, 0.1, 0.11), 0.25)
+    light = mat("LED", (1.0, 0.86, 0.66), 0.5, emit=6.0); ss = mat("Steel", (0.75, 0.75, 0.77), 0.3, 1.0)
+    # walls: economy emulsion everywhere + one terracotta accent wall behind the bed (no panelling, no false ceiling)
+    box("ACCENT_WALL_TERRACOTTA", RW - 0.015, RW, -9.5, 0, 0, H - 0.02, terracotta, "finishes",
+        "terracotta accent wall behind the bed: 2 coats economy/standard emulsion over putty patching (part of the ~Rs 9,000 paint job)")
+    # bed: ready-made engineered-wood queen storage bed with a shelf headboard (Wakefit Orion class)
+    bed(RW - 0.1, -4.5, 180, 5.0, 6.5, dict(hb_h=3.4, hb_t=0.55, hb_mat=walnut, hb_spec="headboard with 2 open shelves (phone, books, diya)",
+        base_z=(0.02, 1.15), base_mat=walnut, base_spec="Queen engineered-wood storage bed, walnut finish, 4 box compartments (Wakefit Orion class, ~Rs 16,100)",
+        duvet=mat("Blockprint_White", (0.93, 0.9, 0.84), 0.9), throw=indigo, cushion=mustard, duvet_spec="Jaipuri block-print cotton bedsheet + dohar"))
+    o = bpy.data.objects.get(f"R1_{TAG[OPT]}_BED_MATTRESS")
+    if o: o["spec"] = "Queen 72\"x60\" 6\" orthopaedic memory-foam mattress (Wakefit class, ~Rs 13,000)"
+    for tag, y0 in (("N", -0.4), ("S", -7.15)):
+        box(f"BEDSIDE_{tag}", RW - 1.45, RW - 0.15, y0 - 1.3, y0, 0.0, 1.8, walnut, "furniture", "ready-made engineered-wood bedside table, 1 drawer (~Rs 2,000 each)")
+        box(f"WALL_LAMP_{tag}", RW - 0.4, RW - 0.05, y0 - 0.8, y0 - 0.5, 4.5, 4.95, light, "lighting", "budget cone wall light, E27 warm-white 9 W LED bulb (~Rs 1,200)")
+    # wardrobe: local carpenter, fills the alcove (the same size as DEFAULT, simpler finish)
+    wardrobe_alcove(dict(doors=3, body=white, shutter=white, spec="3-door hinged wardrobe + loft by a local carpenter, 5'3\" x 2' x 9'10\": 18 mm MR ply / HDHMR carcass, 1 mm laminate (~Rs 46,000 incl. hardware)",
+                         shutter_spec="frosty-white 1 mm laminate shutters, Ebco/Hettich basic hinges", handle=ss, handle_spec="8\" SS D-handles",
+                         inset=walnut, inset_spec="walnut laminate inlay strip (same sheet as the bed - no extra cost)", loft=True, light=None))
+    # study-cum-dresser on the thick wall: carpenter-made wall desk + open shelves + mirror
+    box("STUDY_DESK_TOP", 1.2, 5.2, YW, YW + 1.65, 2.4, 2.52, walnut, "furniture", "wall-mounted desk 4' x 1'8\", laminated ply on concealed brackets (carpenter, part of ~Rs 9,000 study wall)")
+    box("STUDY_DESK_APRON", 1.2, 5.2, YW + 1.45, YW + 1.6, 2.0, 2.4, walnut, "furniture", "desk apron with 1 slim drawer")
+    for i, z in enumerate((4.9, 6.0)):
+        box(f"STUDY_SHELF_{i+1}", 1.2, 5.2, YW, YW + 0.85, z, z + 0.08, walnut, "furniture", "open wall shelf, laminated ply")
+    box("STUDY_MIRROR", 3.6, 5.0, YW, YW + 0.04, 2.8, 4.6, mat("Mirror", (0.85, 0.9, 0.92), 0.02, 1.0), "furniture", "plain 4 mm mirror on ply backing (~Rs 1,500)")
+    boxes("STUDY_CHAIR", [(0, 1.4, 0, 1.4, 1.45, 1.55), (0, 1.4, 0, 0.1, 1.55, 2.8), (0.05, 0.12, 0.05, 0.12, 0, 1.45), (1.28, 1.35, 0.05, 0.12, 0, 1.45),
+                          (0.05, 0.12, 1.28, 1.35, 0, 1.45), (1.28, 1.35, 1.28, 1.35, 0, 1.45)], black, "furniture", "metal + wood cafe chair (~Rs 3,000)", (2.1, YW + 1.9, 0))
+    box("MADHUBANI_PRINT", 1.4, 3.3, YW + 0.02, YW + 0.06, 3.0, 4.4, mat("Madhubani", (0.8, 0.35, 0.2), 0.8), "decor", "framed Madhubani print (~Rs 1,000)")
+    # Indian touches: cane moodha by the window, cotton dhurrie
+    cyl("MOODHA", 2.2, -1.6, 0.75, 0, 1.4, cane, "furniture", "cane moodha (stool) (~Rs 1,200)")
+    cyl("MOODHA_CUSHION", 2.2, -1.6, 0.72, 1.4, 1.55, mustard, "soft_furnishing", "cotton cushion")
+    box("DHURRIE", 4.0, 10.8, -7.3, -1.7, 0.01, 0.04, mat("Dhurrie", (0.55, 0.32, 0.25), 1.0), "soft_furnishing", "handloom cotton dhurrie 5'x7' (Panipat, ~Rs 2,500)")
+    # ceiling & lighting: plain ceiling, surface LED downlights, laminated ply pelmet with LED strip on the balcony side
+    downlights([(3.0, -3.0), (3.0, -8.5), (9.3, -2.8), (9.3, -8.0), (10.0, -10.3)], H, light, "12 W surface round LED downlight, 3000K (Wipro/Philips class, ~Rs 650)")
+    box("CURTAIN_PELMET", 0.0, 1.0, OPN_Y0, -0.2, 8.3, 8.4, walnut, "furniture", "laminated ply curtain pelmet 11' long (carpenter, ~Rs 3,000)")
+    box("CURTAIN_PELMET_FASCIA", 0.92, 1.0, OPN_Y0, -0.2, 7.9, 8.4, walnut, "furniture", "pelmet fascia")
+    box("PELMET_LED", 0.1, 0.25, OPN_Y0 + 0.1, -0.3, 8.4, 8.45, light, "lighting", "LED strip on top of the pelmet = cheap cove glow (3 m + driver, ~Rs 2,000)")
+    # W1: 3-track domal aluminium slider (2 glass + 1 mesh) with a basic MS grill
+    w1_frame(whitealu, "W1: 3-track domal aluminium sliding window, white, 5 mm toughened glass, 16 sq ft (~Rs 13,200 incl. GST)")
+    sash("W1_SASH_1", W1_X0 + 0.15, 5.55, W1_Z0 + 0.15, W1_Z1 - 0.15, 0.24, 0.32, whitealu, glass, "sliding glass shutter (track 1)")
+    sash("W1_SASH_2", 5.25, W1_X1 - 0.15, W1_Z0 + 0.15, W1_Z1 - 0.15, 0.33, 0.41, whitealu, glass, "sliding glass shutter (track 2)", slide=-1.85)
+    sash("W1_MESH", 5.25, W1_X1 - 0.15, W1_Z0 + 0.15, W1_Z1 - 0.15, 0.43, 0.5, whitealu, mesh, "mosquito mesh shutter (track 3)")
+    w1_grill(black, "plain MS square-bar grill, black enamel (reuse existing if sound)")
+    w1_sill(granite, "black granite sill (offcut)")
+    track_curtains("W1_CURTAIN", (W1_X0 - 0.8, -0.3), (W1_X1 + 0.8, -0.3), 8.2, mat("Sheer", (0.97, 0.96, 0.93), 0.9, alpha=0.4), indigo,
+                   0.9, "cotton voile sheer", "indigo cotton curtains on SS rod", rod_mt=ss, side=-0.12)
+    # Balcony door: 2-track, 4-panel domal aluminium slider - 2 fixed ends, the 2 middle panels slide apart (5' clear in the middle)
+    bd_frame(whitealu, "Balcony door: 2-track domal aluminium sliding door, white, 10'5\" x 7' = 73 sq ft (~Rs 40,000 incl. GST)")
+    q = (OPN_Y1 - OPN_Y0) / 4; y0 = OPN_Y0
+    spans = [(y0, y0 + q + 0.05), (y0 + q - 0.05, y0 + 2 * q + 0.03), (y0 + 2 * q - 0.03, y0 + 3 * q + 0.05), (y0 + 3 * q - 0.05, OPN_Y1)]
+    for i, (ya, yb) in enumerate(spans):
+        sliding = i in (1, 2); xc = -0.52 if sliding else -0.74
+        dy = (-(q - 0.15) if i == 1 else (q - 0.15)) if sliding else None
+        hy = yb - 0.3 if i == 1 else ya + 0.3
+        hx = [(xc + 0.06, xc + 0.13, hy - 0.04, hy + 0.04, 3.2, 4.2)] if sliding else []
+        bd_panel(f"BALCONY_DOOR_P{i+1}", xc, ya, yb, whitealu, glass, th=0.06,
+                 spec=f"panel {i+1}: 5 mm clear toughened glass, " + ("sliding" if sliding else "fixed"),
+                 slide_dy=dy, extra=[(f"BALCONY_DOOR_P{i+1}_HANDLE", hx, black)] if hx else None)
+    threshold(granite, "black granite threshold with slope to balcony (~Rs 2,500)")
+    track_curtains("BALCONY_CURTAIN", (0.4, OPN_Y0 + 0.05), (0.4, OPN_Y1 + 0.3), 8.2, mat("Sheer", (0.97, 0.96, 0.93), 0.9, alpha=0.4), indigo,
+                   1.5, "cotton voile sheer", "indigo cotton curtains (4 ready-made 7' panels), hidden behind the pelmet", rod_mt=ss, side=-0.12)
+    # Balcony: keep the existing floor; folding bistro set, potted plants, string lights
+    boxes("BALCONY_BISTRO_TABLE", [(-0.05, 0.05, -0.05, 0.05, 0, 2.3)], black, "balcony", "folding metal bistro table (set of table + 2 chairs ~Rs 5,000)", (-2.75, -11.6, 0))
+    cyl("BALCONY_BISTRO_TABLE_TOP", -2.75, -11.6, 0.95, 2.3, 2.38, black, "balcony", "24\" round top (set sits at the south end, clear of the door)")
+    for i, y in enumerate((-12.55, -9.35)):   # south chair (back to the south wall), north chair (back to the door side)
+        boxes(f"BALCONY_BISTRO_CHAIR_{i+1}", [(0, 1.3, 0, 1.3, 1.45, 1.55), (0, 1.3, 0 if i == 0 else 1.2, 0.1 if i == 0 else 1.3, 1.55, 3.0),
+                                           (0.05, 0.12, 0.05, 0.12, 0, 1.45), (1.18, 1.25, 0.05, 0.12, 0, 1.45), (0.05, 0.12, 1.18, 1.25, 0, 1.45), (1.18, 1.25, 1.18, 1.25, 0, 1.45)],
+              black, "balcony", "folding metal bistro chair", (-3.25, y - 0.65, 0))
+    for i, (x, y, spec) in enumerate(((-3.6, 0.1, "areca palm in plastic planter"), (-2.2, 0.2, "money plant on moss stick"),
+                                      (-3.8, -4.6, "tulsi in terracotta pot"), (-3.8, -2.4, "snake plant"))):
+        plant(f"BALCONY_PLANT_{i+1}", x, y, BAL_Z, 0.4 + 0.1 * (i % 2), 0.9 + 0.3 * (i % 2), 0.55, mat("Terracotta", (0.66, 0.4, 0.28), 0.8), spec + " (4 plants + pots ~Rs 2,000)", 1.3)
+    box("BALCONY_LED_STRING", -4.3, -4.2, -13.5, 0.4, 3.3, 3.34, mat("Fairy", (1.0, 0.85, 0.55), 0.5, emit=4.0), "lighting", "solar warm-white string lights along the railing (~Rs 800)")
+    outdoor_light(black, "basic IP65 bulkhead light (~Rs 700)")
+
 OPTIONS = [("DEFAULT", "13_ROOM1_DEFAULT", build_default), ("OPTION_A", "14_ROOM1_OPTION_A", build_A),
-           ("OPTION_B", "15_ROOM1_OPTION_B", build_B), ("OPTION_C", "16_ROOM1_OPTION_C", build_C)]
+           ("OPTION_B", "15_ROOM1_OPTION_B", build_B), ("OPTION_C", "16_ROOM1_OPTION_C", build_C),
+           ("OPTION_D", "17_ROOM1_OPTION_D", build_D)]
 REPLACES = "WINDOW_W1_FRAME,WINDOW_W1_GLASS"   # generic architecture placeholders replaced by the designed window
 
 def run():

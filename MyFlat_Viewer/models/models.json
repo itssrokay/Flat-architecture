@@ -6,6 +6,7 @@
     { "file": "MyFlat_V1_1_Room1_OPTION_A.glb", "label": "Room 1 · Option A (Japandi Calm)",     "short": "A",        "group": "interior", "design": "OPTION_A", "startView": "Room 1:0", "manifest": "MyFlat_V1_1_Room1_OPTION_A.manifest.json" },
     { "file": "MyFlat_V1_1_Room1_OPTION_B.glb", "label": "Room 1 · Option B (Minimal Modern)",   "short": "B",        "group": "interior", "design": "OPTION_B", "startView": "Room 1:0", "manifest": "MyFlat_V1_1_Room1_OPTION_B.manifest.json" },
     { "file": "MyFlat_V1_1_Room1_OPTION_C.glb", "label": "Room 1 · Option C (Indian Modern)",    "short": "C",        "group": "interior", "design": "OPTION_C", "startView": "Room 1:0", "manifest": "MyFlat_V1_1_Room1_OPTION_C.manifest.json" },
+    { "file": "MyFlat_V1_1_Room1_OPTION_D.glb", "label": "Room 1 · Option D (Smart Budget)",     "short": "D",        "group": "interior", "design": "OPTION_D", "startView": "Room 1:0", "manifest": "MyFlat_V1_1_Room1_OPTION_D.manifest.json" },
     { "file": "MyFlat_V1_1_Architecture.glb", "label": "V1.1 Architecture (Room 1 corrected)", "short": "V1.1 arch", "group": "architecture", "manifest": "MyFlat_V1_1_Architecture.manifest.json" },
     { "file": "MyFlat_V1_Architecture.glb",   "label": "V1 Architecture (untouched baseline)", "short": "V1 baseline", "group": "architecture", "manifest": "MyFlat_V1_Architecture.manifest.json" }
   ]

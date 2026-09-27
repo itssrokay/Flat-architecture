@@ -1,0 +1,1949 @@
+{
+ "model": "MyFlat_V1_1_Room1_OPTION_D.glb",
+ "source_blend": "MyFlat_V1_1_Room1_Interiors.blend",
+ "exported": "2026-09-28T00:52:42",
+ "blender": "5.2.2 LTS",
+ "units": "metres",
+ "up": "+Y",
+ "north": "-Z",
+ "east": "+X",
+ "object_count": 237,
+ "counts": {
+  "walls": 26,
+  "floors": 14,
+  "roof": 1,
+  "doors": 24,
+  "windows": 22,
+  "pillars": 3,
+  "beams": 3,
+  "stairs": 21,
+  "railings": 7,
+  "context": 1,
+  "plan_reference": 1,
+  "vents": 20,
+  "finishes": 1,
+  "furniture": 13,
+  "soft_furnishing": 15,
+  "lighting": 10,
+  "wardrobe": 17,
+  "decor": 3,
+  "fenestration": 23,
+  "balcony": 4,
+  "plants": 8
+ },
+ "design_option": "OPTION_D",
+ "replaced": [
+  "WINDOW_W1_FRAME",
+  "WINDOW_W1_GLASS"
+ ],
+ "rooms": {
+  "FLOOR_R1": "Room 1",
+  "FLOOR_KIT": "Kitchen",
+  "FLOOR_B2": "Bathroom 2",
+  "FLOOR_PAS": "Passage",
+  "FLOOR_R2": "Room 2",
+  "FLOOR_HALL": "Hall",
+  "FLOOR_B1": "Bathroom 1",
+  "FLOOR_STAIR": "Stair",
+  "FLOOR_OPENSQ": "Open Square",
+  "BALCONY_FLOOR": "Balcony"
+ },
+ "objects": [
+  {
+   "name": "WALL_EXT_N_R1",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "external",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "WALL_EXT_N_KIT",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "external",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "WALL_EXT_N_B2",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "external",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "WALL_EXT_N_R2",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "external",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "WALL_EXT_W_R1_BALCONY",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "external",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "WALL_EXT_S_R1",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "external",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "WALL_EXT_E_R2_TAPERED",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "external",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "WALL_EXT_E_STAIR",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "external",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "WALL_EXT_W_HALL",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "external",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "WALL_EXT_S_HALL",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "external",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "WALL_INT_R1_S_HALL",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "internal",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "WALL_R1_S_RAISED",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "internal",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "WALL_INT_PAS_S_HALL",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "internal",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "WALL_INT_R1_E",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "internal",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "WALL_INT_KIT_B2_S",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "internal",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "WALL_INT_KIT_B2",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "internal",
+   "status": "DERIVED",
+   "parent": null
+  },
+  {
+   "name": "WALL_INT_R2_W",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "internal",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "WALL_INT_R2_S",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "internal",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "WALL_INT_STAIR_W",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "internal",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "WALL_INT_HALLSTRIP_S",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "internal",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "WALL_INT_OPENSQ_W",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "internal",
+   "status": "DERIVED",
+   "parent": null
+  },
+  {
+   "name": "WALL_INT_B1_N",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "internal",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "WALL_INT_B1_W",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "internal",
+   "status": "DERIVED",
+   "parent": null
+  },
+  {
+   "name": "SLAB_FLOOR_STRUCTURAL",
+   "type": "MESH",
+   "category": "floors",
+   "subtype": "structure",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "FLOOR_R1",
+   "type": "MESH",
+   "category": "floors",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "FLOOR_KIT",
+   "type": "MESH",
+   "category": "floors",
+   "subtype": "",
+   "status": "DERIVED",
+   "parent": null
+  },
+  {
+   "name": "FLOOR_B2",
+   "type": "MESH",
+   "category": "floors",
+   "subtype": "",
+   "status": "DERIVED",
+   "parent": null
+  },
+  {
+   "name": "FLOOR_PAS",
+   "type": "MESH",
+   "category": "floors",
+   "subtype": "",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "FLOOR_R2",
+   "type": "MESH",
+   "category": "floors",
+   "subtype": "",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "FLOOR_HALL",
+   "type": "MESH",
+   "category": "floors",
+   "subtype": "",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "FLOOR_B1",
+   "type": "MESH",
+   "category": "floors",
+   "subtype": "",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "FLOOR_STAIR",
+   "type": "MESH",
+   "category": "floors",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "THRESHOLD_B2",
+   "type": "MESH",
+   "category": "floors",
+   "subtype": "threshold",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "THRESHOLD_B1",
+   "type": "MESH",
+   "category": "floors",
+   "subtype": "threshold",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "THRESHOLD_BALCONY",
+   "type": "MESH",
+   "category": "floors",
+   "subtype": "threshold",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "SLAB_ROOF",
+   "type": "MESH",
+   "category": "roof",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "DOOR_R1_EXIT",
+   "type": "EMPTY",
+   "category": "doors",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "DOOR_R1_EXIT_FRAME",
+   "type": "MESH",
+   "category": "doors",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": "DOOR_R1_EXIT"
+  },
+  {
+   "name": "DOOR_R1_EXIT_LEAF",
+   "type": "MESH",
+   "category": "doors",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "DOOR_R1_EXIT"
+  },
+  {
+   "name": "DOOR_KITCHEN",
+   "type": "EMPTY",
+   "category": "doors",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "DOOR_KITCHEN_FRAME",
+   "type": "MESH",
+   "category": "doors",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": "DOOR_KITCHEN"
+  },
+  {
+   "name": "DOOR_KITCHEN_LEAF",
+   "type": "MESH",
+   "category": "doors",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "DOOR_KITCHEN"
+  },
+  {
+   "name": "OPENING_HALL_GATE",
+   "type": "EMPTY",
+   "category": "doors",
+   "subtype": "opening",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "OPENING_HALL_GATE_FRAME",
+   "type": "MESH",
+   "category": "doors",
+   "subtype": "opening",
+   "status": "CONFIRMED",
+   "parent": "OPENING_HALL_GATE"
+  },
+  {
+   "name": "DOOR_B2",
+   "type": "EMPTY",
+   "category": "doors",
+   "subtype": "",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "DOOR_B2_FRAME",
+   "type": "MESH",
+   "category": "doors",
+   "subtype": "",
+   "status": "PLAN",
+   "parent": "DOOR_B2"
+  },
+  {
+   "name": "DOOR_B2_LEAF",
+   "type": "MESH",
+   "category": "doors",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "DOOR_B2"
+  },
+  {
+   "name": "DOOR_R2_EXIT2",
+   "type": "EMPTY",
+   "category": "doors",
+   "subtype": "",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "DOOR_R2_EXIT2_FRAME",
+   "type": "MESH",
+   "category": "doors",
+   "subtype": "",
+   "status": "PLAN",
+   "parent": "DOOR_R2_EXIT2"
+  },
+  {
+   "name": "DOOR_R2_EXIT2_LEAF",
+   "type": "MESH",
+   "category": "doors",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "DOOR_R2_EXIT2"
+  },
+  {
+   "name": "DOOR_R2_EXIT1",
+   "type": "EMPTY",
+   "category": "doors",
+   "subtype": "",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "DOOR_R2_EXIT1_FRAME",
+   "type": "MESH",
+   "category": "doors",
+   "subtype": "",
+   "status": "PLAN",
+   "parent": "DOOR_R2_EXIT1"
+  },
+  {
+   "name": "DOOR_R2_EXIT1_LEAF",
+   "type": "MESH",
+   "category": "doors",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "DOOR_R2_EXIT1"
+  },
+  {
+   "name": "DOOR_B1",
+   "type": "EMPTY",
+   "category": "doors",
+   "subtype": "",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "DOOR_B1_FRAME",
+   "type": "MESH",
+   "category": "doors",
+   "subtype": "",
+   "status": "PLAN",
+   "parent": "DOOR_B1"
+  },
+  {
+   "name": "DOOR_B1_LEAF",
+   "type": "MESH",
+   "category": "doors",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "DOOR_B1"
+  },
+  {
+   "name": "DOOR_STAIR",
+   "type": "EMPTY",
+   "category": "doors",
+   "subtype": "",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "DOOR_STAIR_FRAME",
+   "type": "MESH",
+   "category": "doors",
+   "subtype": "",
+   "status": "PLAN",
+   "parent": "DOOR_STAIR"
+  },
+  {
+   "name": "DOOR_STAIR_LEAF",
+   "type": "MESH",
+   "category": "doors",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "DOOR_STAIR"
+  },
+  {
+   "name": "OPENING_BALCONY",
+   "type": "EMPTY",
+   "category": "doors",
+   "subtype": "opening",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "WINDOW_W1",
+   "type": "EMPTY",
+   "category": "windows",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "WINDOW_W2",
+   "type": "EMPTY",
+   "category": "windows",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "WINDOW_W2_FRAME",
+   "type": "MESH",
+   "category": "windows",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": "WINDOW_W2"
+  },
+  {
+   "name": "WINDOW_W2_GLASS",
+   "type": "MESH",
+   "category": "windows",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": "WINDOW_W2"
+  },
+  {
+   "name": "WINDOW_W3",
+   "type": "EMPTY",
+   "category": "windows",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "WINDOW_W3_FRAME",
+   "type": "MESH",
+   "category": "windows",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "WINDOW_W3"
+  },
+  {
+   "name": "WINDOW_W3_GLASS",
+   "type": "MESH",
+   "category": "windows",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "WINDOW_W3"
+  },
+  {
+   "name": "WINDOW_W4",
+   "type": "EMPTY",
+   "category": "windows",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "WINDOW_W4_FRAME",
+   "type": "MESH",
+   "category": "windows",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": "WINDOW_W4"
+  },
+  {
+   "name": "WINDOW_W4_GLASS",
+   "type": "MESH",
+   "category": "windows",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": "WINDOW_W4"
+  },
+  {
+   "name": "WINDOW_W7",
+   "type": "EMPTY",
+   "category": "windows",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "WINDOW_W7_FRAME",
+   "type": "MESH",
+   "category": "windows",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": "WINDOW_W7"
+  },
+  {
+   "name": "WINDOW_W7_GLASS",
+   "type": "MESH",
+   "category": "windows",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": "WINDOW_W7"
+  },
+  {
+   "name": "WINDOW_W9_PASSAGE_HALL",
+   "type": "EMPTY",
+   "category": "windows",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "WINDOW_W9_PASSAGE_HALL_FRAME",
+   "type": "MESH",
+   "category": "windows",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": "WINDOW_W9_PASSAGE_HALL"
+  },
+  {
+   "name": "WINDOW_W9_PASSAGE_HALL_GLASS",
+   "type": "MESH",
+   "category": "windows",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": "WINDOW_W9_PASSAGE_HALL"
+  },
+  {
+   "name": "WINDOW_W5",
+   "type": "EMPTY",
+   "category": "windows",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "WINDOW_W5_FRAME",
+   "type": "MESH",
+   "category": "windows",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": "WINDOW_W5"
+  },
+  {
+   "name": "WINDOW_W5_GLASS",
+   "type": "MESH",
+   "category": "windows",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": "WINDOW_W5"
+  },
+  {
+   "name": "WINDOW_W6",
+   "type": "EMPTY",
+   "category": "windows",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "WINDOW_W6_FRAME",
+   "type": "MESH",
+   "category": "windows",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": "WINDOW_W6"
+  },
+  {
+   "name": "WINDOW_W6_GLASS",
+   "type": "MESH",
+   "category": "windows",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": "WINDOW_W6"
+  },
+  {
+   "name": "PILLAR_2",
+   "type": "MESH",
+   "category": "pillars",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "PILLAR_1",
+   "type": "MESH",
+   "category": "pillars",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "PILLAR_R1_NW",
+   "type": "MESH",
+   "category": "pillars",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "BEAM_HALL_01_NS",
+   "type": "MESH",
+   "category": "beams",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "BEAM_HALL_02_EW_P2",
+   "type": "MESH",
+   "category": "beams",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "BEAM_HALL_03_EW_P1",
+   "type": "MESH",
+   "category": "beams",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "STAIR_01",
+   "type": "EMPTY",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "STAIR_01_F1_STEP_01",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_F1_STEP_02",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_F1_STEP_03",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_F1_STEP_04",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_F1_STEP_05",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_F1_STEP_06",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_F1_STEP_07",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_F1_STEP_08",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_LANDING",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_F2_STEP_01",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_F2_STEP_02",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_F2_STEP_03",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_F2_STEP_04",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_F2_STEP_05",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_F2_STEP_06",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_F2_STEP_07",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_F2_STEP_08",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_F1_WAIST",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_F2_WAIST",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_MID_WALL",
+   "type": "MESH",
+   "category": "stairs",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_HANDRAIL_F1",
+   "type": "MESH",
+   "category": "railings",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "STAIR_01_HANDRAIL_F2",
+   "type": "MESH",
+   "category": "railings",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "STAIR_01"
+  },
+  {
+   "name": "BALCONY_FLOOR",
+   "type": "MESH",
+   "category": "floors",
+   "subtype": "",
+   "status": "PLAN",
+   "parent": null
+  },
+  {
+   "name": "BALCONY_EDGE_CURB",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "parapet",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "BALCONY_RAILING_W",
+   "type": "MESH",
+   "category": "railings",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "BALCONY_RAILING_N",
+   "type": "MESH",
+   "category": "railings",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "BALCONY_RAILING_S",
+   "type": "MESH",
+   "category": "railings",
+   "subtype": "",
+   "status": "CONFIRMED",
+   "parent": null
+  },
+  {
+   "name": "FLOOR_OPENSQ",
+   "type": "MESH",
+   "category": "floors",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "PARAPET_OPENSQ_S",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "parapet",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "PARAPET_OPENSQ_E",
+   "type": "MESH",
+   "category": "walls",
+   "subtype": "parapet",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "RAILING_OPENSQ_S",
+   "type": "MESH",
+   "category": "railings",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "RAILING_OPENSQ_E",
+   "type": "MESH",
+   "category": "railings",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "GROUND_CONTEXT",
+   "type": "MESH",
+   "category": "context",
+   "subtype": "",
+   "status": "REFERENCE",
+   "parent": null
+  },
+  {
+   "name": "PLAN_REFERENCE_OVERLAY",
+   "type": "MESH",
+   "category": "plan_reference",
+   "subtype": "",
+   "status": "REFERENCE",
+   "parent": null
+  },
+  {
+   "name": "VENT_R1_N_1",
+   "type": "EMPTY",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "VENT_R1_N_1_FRAME",
+   "type": "MESH",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "VENT_R1_N_1"
+  },
+  {
+   "name": "VENT_R1_N_2",
+   "type": "EMPTY",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "VENT_R1_N_2_FRAME",
+   "type": "MESH",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "VENT_R1_N_2"
+  },
+  {
+   "name": "VENT_KIT_N",
+   "type": "EMPTY",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "VENT_KIT_N_FRAME",
+   "type": "MESH",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "VENT_KIT_N"
+  },
+  {
+   "name": "VENT_B2_N",
+   "type": "EMPTY",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "VENT_B2_N_FRAME",
+   "type": "MESH",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "VENT_B2_N"
+  },
+  {
+   "name": "VENT_R2_N_1",
+   "type": "EMPTY",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "VENT_R2_N_1_FRAME",
+   "type": "MESH",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "VENT_R2_N_1"
+  },
+  {
+   "name": "VENT_R2_N_2",
+   "type": "EMPTY",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "VENT_R2_N_2_FRAME",
+   "type": "MESH",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "VENT_R2_N_2"
+  },
+  {
+   "name": "VENT_HALL_S_1",
+   "type": "EMPTY",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "VENT_HALL_S_1_FRAME",
+   "type": "MESH",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "VENT_HALL_S_1"
+  },
+  {
+   "name": "VENT_HALL_S_2",
+   "type": "EMPTY",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "VENT_HALL_S_2_FRAME",
+   "type": "MESH",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "VENT_HALL_S_2"
+  },
+  {
+   "name": "VENT_HALL_S_3",
+   "type": "EMPTY",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "VENT_HALL_S_3_FRAME",
+   "type": "MESH",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "VENT_HALL_S_3"
+  },
+  {
+   "name": "VENT_B1_W",
+   "type": "EMPTY",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": null
+  },
+  {
+   "name": "VENT_B1_W_FRAME",
+   "type": "MESH",
+   "category": "vents",
+   "subtype": "",
+   "status": "PROVISIONAL",
+   "parent": "VENT_B1_W"
+  },
+  {
+   "name": "R1_OPD_ACCENT_WALL_TERRACOTTA",
+   "type": "MESH",
+   "category": "finishes",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BED_HEADBOARD",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BED_BASE",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BED_MATTRESS",
+   "type": "MESH",
+   "category": "soft_furnishing",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BED_DUVET",
+   "type": "MESH",
+   "category": "soft_furnishing",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BED_THROW",
+   "type": "MESH",
+   "category": "soft_furnishing",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BED_PILLOWS",
+   "type": "MESH",
+   "category": "soft_furnishing",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BED_CUSHIONS",
+   "type": "MESH",
+   "category": "soft_furnishing",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BEDSIDE_N",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WALL_LAMP_N",
+   "type": "MESH",
+   "category": "lighting",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BEDSIDE_S",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WALL_LAMP_S",
+   "type": "MESH",
+   "category": "lighting",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WARDROBE_CARCASS",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WARDROBE_PLINTH",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WARDROBE_INTERNALS",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WARDROBE_HANGING_RODS",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WARDROBE_CONTENTS",
+   "type": "MESH",
+   "category": "decor",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WARDROBE_DOOR_1",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WARDROBE_DOOR_1_HANDLE",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WARDROBE_DOOR_1_INSET",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WARDROBE_DOOR_2",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WARDROBE_DOOR_2_HANDLE",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WARDROBE_DOOR_2_INSET",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WARDROBE_DOOR_3",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WARDROBE_DOOR_3_HANDLE",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WARDROBE_DOOR_3_INSET",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WARDROBE_LOFT",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WARDROBE_LOFT_CONTENTS",
+   "type": "MESH",
+   "category": "decor",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WARDROBE_LOFT_DOOR_1",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WARDROBE_LOFT_DOOR_2",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_WARDROBE_LOFT_DOOR_3",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_STUDY_DESK_TOP",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_STUDY_DESK_APRON",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_STUDY_SHELF_1",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_STUDY_SHELF_2",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_STUDY_MIRROR",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_STUDY_CHAIR",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_MADHUBANI_PRINT",
+   "type": "MESH",
+   "category": "decor",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_MOODHA",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_MOODHA_CUSHION",
+   "type": "MESH",
+   "category": "soft_furnishing",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_DHURRIE",
+   "type": "MESH",
+   "category": "soft_furnishing",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_DOWNLIGHT_1",
+   "type": "MESH",
+   "category": "lighting",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_DOWNLIGHT_2",
+   "type": "MESH",
+   "category": "lighting",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_DOWNLIGHT_3",
+   "type": "MESH",
+   "category": "lighting",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_DOWNLIGHT_4",
+   "type": "MESH",
+   "category": "lighting",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_DOWNLIGHT_5",
+   "type": "MESH",
+   "category": "lighting",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_CURTAIN_PELMET",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_CURTAIN_PELMET_FASCIA",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_PELMET_LED",
+   "type": "MESH",
+   "category": "lighting",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_W1_OUTER_FRAME",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_W1_SASH_1_SASH",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_W1_SASH_1_GLASS",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_W1_SASH_2_SASH",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_W1_SASH_2_GLASS",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_W1_MESH_SASH",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_W1_MESH_GLASS",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_W1_SAFETY_GRILL",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_W1_SILL",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_W1_DRIP_SILL",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_W1_CURTAIN_SHEER",
+   "type": "MESH",
+   "category": "soft_furnishing",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_W1_CURTAIN_DRAPE_L",
+   "type": "MESH",
+   "category": "soft_furnishing",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_W1_CURTAIN_DRAPE_R",
+   "type": "MESH",
+   "category": "soft_furnishing",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_W1_CURTAIN_TRACK",
+   "type": "MESH",
+   "category": "soft_furnishing",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_DOOR_FRAME",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_DOOR_P1_FRAME",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_DOOR_P1_GLASS",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_DOOR_P2_FRAME",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_DOOR_P2_GLASS",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_DOOR_P2_HANDLE",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_DOOR_P3_FRAME",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_DOOR_P3_GLASS",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_DOOR_P3_HANDLE",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_DOOR_P4_FRAME",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_DOOR_P4_GLASS",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_THRESHOLD",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_THRESHOLD_NOSING",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_CURTAIN_SHEER",
+   "type": "MESH",
+   "category": "soft_furnishing",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_CURTAIN_DRAPE_L",
+   "type": "MESH",
+   "category": "soft_furnishing",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_CURTAIN_DRAPE_R",
+   "type": "MESH",
+   "category": "soft_furnishing",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_CURTAIN_TRACK",
+   "type": "MESH",
+   "category": "soft_furnishing",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_BISTRO_TABLE",
+   "type": "MESH",
+   "category": "balcony",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_BISTRO_TABLE_TOP",
+   "type": "MESH",
+   "category": "balcony",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_BISTRO_CHAIR_1",
+   "type": "MESH",
+   "category": "balcony",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_BISTRO_CHAIR_2",
+   "type": "MESH",
+   "category": "balcony",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_PLANT_1_POT",
+   "type": "MESH",
+   "category": "plants",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_PLANT_1_LEAVES",
+   "type": "MESH",
+   "category": "plants",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_PLANT_2_POT",
+   "type": "MESH",
+   "category": "plants",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_PLANT_2_LEAVES",
+   "type": "MESH",
+   "category": "plants",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_PLANT_3_POT",
+   "type": "MESH",
+   "category": "plants",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_PLANT_3_LEAVES",
+   "type": "MESH",
+   "category": "plants",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_PLANT_4_POT",
+   "type": "MESH",
+   "category": "plants",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_PLANT_4_LEAVES",
+   "type": "MESH",
+   "category": "plants",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_LED_STRING",
+   "type": "MESH",
+   "category": "lighting",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPD_BALCONY_WALL_LIGHT",
+   "type": "MESH",
+   "category": "lighting",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  }
+ ]
+}
