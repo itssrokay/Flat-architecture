@@ -8,6 +8,7 @@ import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { CONFIG } from './config.js';
 import { Walkthrough } from './walk.js';
 import { setupImmersive } from './immersive.js';
+import { setupExtras } from './extras.js';
 
 const $ = (id) => document.getElementById(id);
 const FT = 0.3048;
@@ -324,7 +325,7 @@ async function loadModel(file) {
       if (vp) { useCamera(false); camera.position.copy(vp.pos); controls.target.copy(vp.target); controls.update();
         if (!vp.roofOff && !CONFIG.startInOverview) walk.enter(vp.pos.clone(), vp.target.clone()); } }
   }
-  imm.onModel(root);
+  imm.onModel(root); ex.onModel(root);
   updateDesignUI();
   if (app.compare) $('capL').innerHTML = `<b>${modelEntry(file).label || file}</b>`;
   app.ready = true;
@@ -768,7 +769,7 @@ const clock = new THREE.Clock();
 function loop() {
   const dt = Math.min(0.25, clock.getDelta());
   if (walk.active) walk.update(dt); else { stepTween(dt); orbitKeys(dt); controls.update(); }
-  imm.update(dt);
+  imm.update(dt); ex.update(dt);
   if (selBox.visible && app.selected) selBox.box.setFromObject(app.selected);
   const now = performance.now(); if (now - (app._occT || 0) > 200) { app._occT = now; updateLabelOcclusion(); }
   const camName = walk.active ? 'Walkthrough' : (app.ortho ? 'Orthographic' : 'Perspective');
@@ -788,9 +789,14 @@ function loop() {
 
 // ------------------------------------------------------------------ immersive features
 const imm = setupImmersive({ app, scene, renderer, controls, walk, hemi, sun, $, fmtFt, getCamera: () => camera, resize: () => { _aspect = 0; resize(); },
+  onBlocked: (what, by) => ex && ex.toast(`${what[0].toUpperCase() + what.slice(1)} can't open further: it hits the ${by}`),
   startWalk: () => startWalk(), overview, goToPoint, goRoom: (n, i) => { const r = app.rooms.find(x => x.name === n); if (r && r.vps[i]) goRoomVp(r, r.vps[i]); } });
+const ex = setupExtras({ app, scene, renderer, controls, walk, persp, $, fmtFt, CONFIG, getCamera: () => camera,
+  resize: () => { _aspect = 0; resize(); }, isInteractive: (o) => imm.isInteractive(o) });
+new ResizeObserver(() => { _aspect = 0; resize(); }).observe(host);
 walk.onChange = (on) => {
   $('walkBtn').classList.toggle('on', on); $('walkHud').classList.toggle('hidden', !on); document.querySelector('#immBar [data-act=walk]')?.classList.toggle('on', on);
+  ex.onWalkChange(on);
   // inside: tuck the controls panel away so you see the room; bring it back in the overview
   const d = $('dock');
   if (on && !app._inWalk) { app._dockWas = d.classList.contains('collapsed'); d.classList.add('collapsed'); }
@@ -808,7 +814,7 @@ walk.onChange = (on) => {
 })();
 
 // exposed for automated checks
-window.viewer = { imm, setCompare, switchModel, presetView, setCat, setEdges, updateLabelOcclusion, applyVisibility, togglePlanMode, setDebug, setLabels, select, loadModel, startWalk, walk, overview, goToPoint, goRoomVp,
+window.viewer = { imm, ex, setCompare, switchModel, presetView, setCat, setEdges, updateLabelOcclusion, applyVisibility, togglePlanMode, setDebug, setLabels, select, loadModel, startWalk, walk, overview, goToPoint, goRoomVp,
   get camera() { return camera; }, controls, scene, renderer, CONFIG, fmtFt,
   setStatus: (on) => { app.statusMode = on; applyMaterials(); }, goRoom: (name, i = 0) => { const r = app.rooms.find(r => r.name === name); goRoomVp(r, r.vps[i]); },
   pickAt: (x, y) => pick({ clientX: x, clientY: y }), setSection: (on, h) => { $('sectionChk').checked = on; if (h) $('sectionRange').value = h; setSection(); } };

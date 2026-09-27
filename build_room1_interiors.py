@@ -314,7 +314,7 @@ def build_default():
     box("ARTWORK", 1.2, 5.2, YW + 0.02, YW + 0.07, 6.0, 7.8, mat("Art", (0.75, 0.55, 0.4), 0.8), "decor", "framed art print 4'x1'10\"")
     # ceiling & lighting
     z0 = ceiling_band(gyp, 0.5, 1.6, "gypsum perimeter band 1'7\" wide, 6\" drop, curtain pelmet on balcony side", light)
-    downlights([(1.05, -3.0), (1.05, -8.0), (11.8, -2.6), (11.8, -9.3), (6.3, -0.8), (4.0, YW + 0.8), (10.0, -11.9)], z0, light)
+    downlights([(1.05, -3.0), (1.05, -8.0), (11.8, -2.6), (11.8, -9.3), (6.3, -0.8), (4.0, YW + 0.8), (10.0, -10.3)], z0, light)
     # W1: 3-track aluminium slider (2 glass + 1 mesh) + safety grill
     w1_frame(charcoal, "W1: 3-track aluminium sliding window, charcoal powder-coat, 5 mm clear toughened glass, EPDM gaskets")
     sash("W1_SASH_1", W1_X0 + 0.15, 5.55, W1_Z0 + 0.15, W1_Z1 - 0.15, 0.24, 0.32, charcoal, glass, "sliding glass shutter (track 1)")
@@ -428,7 +428,11 @@ def build_B():  # Minimal monochrome - bed head on north wall, media/dresser wal
         base_mat=walnut, base_spec="floating platform bed, walnut veneer, hidden plinth", duvet=white, throw=grey, cushion=mat("Charcoal_Fabric", (0.2, 0.2, 0.22), 0.9), hb_w=5.0))
     box("BEDSIDE_FLOATING_W", 6.1, 7.4, -1.5, -0.05, 1.3, 1.75, walnut, "furniture", "floating bedside drawer (below window sill)")
     box("BEDSIDE_SHELF_E", RW - 0.08, RW, -2.0, -0.6, 2.2, 2.3, walnut, "furniture", "wall shelf (no room for table on this side)")
-    cyl("PENDANT_W", 6.75, -0.8, 0.25, 4.4, 4.9, mat("Opal", (1.0, 0.95, 0.88), 0.4, emit=3.0), "lighting", "opal glass mini pendant")
+    # west bedside light: wall-mounted on the headboard panel, EAST of the window jamb, so the inward-opening
+    # W1 sash (hinged at x~7.2') can swing fully without hitting it (a hanging pendant here was in its path)
+    box("READING_LIGHT_W_BRACKET", 7.55, 7.75, -0.16, -0.08, 4.85, 5.3, black, "lighting", "wall bracket, matt black")
+    box("READING_LIGHT_W_ARM", 7.62, 7.68, -0.5, -0.16, 5.0, 5.06, black, "lighting", "swing arm, matt black")
+    cyl("READING_LIGHT_W", 7.65, -0.55, 0.2, 4.65, 5.0, mat("Opal", (1.0, 0.95, 0.88), 0.4, emit=3.0), "lighting", "wall-mounted swing-arm reading light, opal shade, 2700K (clear of the inward-opening window)")
     # media + dresser wall on the raised wall
     box("MEDIA_WALL_UNIT", 0.5, 7.2, YW, YW + 1.35, 0.6, 1.9, walnut, "furniture", "floating walnut console 6'8\" x 16\"")
     box("MEDIA_WALL_TALL", 5.9, 7.2, YW, YW + 1.35, 0, 8.5, white, "furniture", "tall handleless storage column")
@@ -506,7 +510,7 @@ def build_C():  # Indian modern heritage - premium, bi-fold door, diwan, cane
     # ceiling: single-step tray with cove + teak strip
     z0 = ceiling_band(gyp, 0.75, 2.2, "single-step tray ceiling: 2'2\" gypsum band at 9'3\", cove LED, curtain pelmet", light)
     boxes("CEILING_TEAK_STRIP", [(2.2, RW - 2.2, -2.3, -2.2, z0 - 0.02, z0), (2.2, RW - 2.2, YW + 2.2, YW + 2.3, z0 - 0.02, z0)], teak, "ceiling", "teak veneer edge strip")
-    downlights([(1.1, -1.1), (1.1, -10.0), (11.4, -1.1), (11.4, -10.0), (10.0, -11.9)], z0, light, "brass-trim downlight 7 W, 2700K")
+    downlights([(1.1, -1.1), (1.1, -10.0), (11.4, -1.1), (11.4, -10.0), (10.0, -10.3)], z0, light, "brass-trim downlight 7 W, 2700K")
     blob("CEILING_CANE_PENDANT", 6.3, -5.5, 8.0, 0.8, cane, "lighting", "large cane pendant over room centre", sz=0.7)
     # W1: teak-finish aluminium casement + top fixed light, decorative jaali grill
     w1_frame(teak, "W1: aluminium casement with teak woodgrain finish, 2 inward casements + fixed top light, 6 mm toughened")
@@ -571,7 +575,7 @@ def run():
         # light-emitting fittings -> metadata for the viewer's night / lights mode
         for o in COL.objects:
             n = o.name
-            if o.get("design_category") != "lighting" or n.endswith("_CORD") or "POLE" in n or "BASE" in n or n.endswith("FLOOR_LAMP"): continue
+            if o.get("design_category") != "lighting" or n.endswith("_CORD") or "POLE" in n or "BASE" in n or n.endswith("FLOOR_LAMP") or n.endswith("_ARM") or n.endswith("_BRACKET"): continue
             kind = "spot" if "DOWNLIGHT" in n else ("strip" if any(k in n for k in ("COVE", "LINEAR", "LED")) else "point")
             o["light"] = kind; o["lumens"] = {"spot": 450, "strip": 900, "point": 300}[kind]
         counts[key] = len(COL.objects)

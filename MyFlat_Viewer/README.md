@@ -38,6 +38,8 @@ There are two ways to look at the flat.
 | Move | WASD or the arrow keys. Shift to run. |
 | Step forward / back | mouse wheel |
 | Raise / lower your eyes (to study the ceiling, or a low view) | **R** / **V** (or PageUp / PageDown). It stops short of the ceiling. |
+| See the whole ceiling | **Look at ceiling** in the HUD (or **C**): you stand in the middle of the room, eyes low, looking straight up through a wide lens. Press again to go back. |
+| Wider / narrower lens | trackpad pinch, Ctrl+wheel, **−** / **+**, or the **Lens** slider (35°–110°) |
 | Open / close a door, sash, wardrobe or curtain | click it, or look at it and press **E** |
 | Select a part for the inspector | click it |
 | Leave | **Overview** (top bar or HUD) |
@@ -50,7 +52,7 @@ Walls, furniture and closed glass doors block you. Floors and stairs carry you.
 |---|---|
 | Orbit | left-drag. The camera can't go under the ground. |
 | Pan | right-drag (or two-finger drag) |
-| Zoom | mouse wheel, towards the point under the cursor |
+| Zoom | mouse wheel or pinch, **like zooming a photo**: the point under the cursor stays under the cursor, so you can zoom straight into e.g. the right end of the balcony |
 | Slide the view | WASD or the arrow keys. **Q** / **E** (or PageDown / PageUp) move down / up. Shift is faster. |
 | Go inside at a spot | **double-click a floor** |
 | Preset views | **Top** (plan, roof hidden) · **N S E W** (views *from* that side) · **Iso** |
@@ -58,6 +60,26 @@ Walls, furniture and closed glass doors block you. Floors and stairs carry you.
 | Room views | left panel: click a room to stand inside it. ▸ shows more viewpoints (corners, centre, from above). |
 
 Solid parts such as walls, slabs and ceilings are drawn one-sided. If the overview camera passes into a wall you see through it instead of a white screen.
+
+**Panels**
+
+| Action | How |
+|---|---|
+| Hide / show the left panel | the **‹** tab on the left edge of the view, or **[** |
+| Hide / show the right panel | the **›** tab on the right edge, or **]** |
+| Minimise a control box (Visibility, Section cut, Open / close, Floor plan) | click its title |
+| Fold a side-panel block (Interior design, Rooms, Inspector) | click its title |
+| Hide all bottom controls | **Hide controls** |
+
+These choices are remembered in your browser.
+
+**Information**
+
+| Action | How |
+|---|---|
+| Hover info | **Hover info** (or **I**): point at anything to see its name, type, size, specification, room, design option and status. It works inside and in the overview. |
+| Room size | **Room size** (or **M**): wall-by-wall lengths of the room you're in (or the last room you visited or selected), its overall size, area in sq ft and floor-to-ceiling height. The lines are drawn on the floor and show through furniture. |
+| Part dimensions | **Dimensions**: W × D × H labels on nearby furniture, windows and doors; select an object for dimension lines |
 
 **Other controls**
 
@@ -84,6 +106,8 @@ MyFlat_Viewer/
     config.js           ALL settings: model list, categories, colours, eye height…
     main.js             viewer: loading, cameras, rooms, visibility, status, plan, inspector
     walk.js             first-person walkthrough with collision
+    immersive.js        openable parts (with collisions), lights / night, dimensions, immersive mode
+    extras.js           panels, photo-style zoom, lens / ceiling view, hover info, room size
     styles.css
   models/
     models.json         list of models shown in the dropdown (+ default)
@@ -153,7 +177,7 @@ for opt in ["DEFAULT", "OPTION_A", "OPTION_B", "OPTION_C"]:
          {"DESIGN": opt, "OUT_NAME": "MyFlat_V1_1_Room1_" + opt})
 ```
 
-Tests: `python3 scripts/test_viewer.py` (architecture), `python3 scripts/test_interiors.py` (designs) and `python3 scripts/test_navigation.py` (navigation). All need Playwright.
+Tests: `python3 scripts/test_viewer.py` (architecture), `python3 scripts/test_interiors.py` (designs), `python3 scripts/test_navigation.py` (navigation) and `python3 scripts/test_comfort.py` (panels, zoom, ceiling view, hover info, collisions, room size). All need Playwright.
 
 ## Immersive features
 
@@ -162,6 +186,7 @@ Tests: `python3 scripts/test_viewer.py` (architecture), `python3 scripts/test_in
 | Full-screen immersive mode | **⛶ Immersive** (or **F**): hides all panels and shows a small floating toolbar (Overview, Walk, Room 1, Balcony, Open all, Close all, Lights, Night, Dims, Exit). Esc also exits. |
 | Open / close things | **Double-click** a wardrobe door, loft door, window sash, sliding balcony panel or sheer curtain. In walk mode, click it, or look at it (crosshair) and press **E**. **Open all / Close all** are in the bottom panel. The inspector has an Open / close button for the selected part. |
 | Walk onto the balcony | Open the balcony door first (double-click it, or E in Walk mode). A closed door is solid glass, just like the real one. |
+| Real-world clearances | Opening parts collide with furniture, lamps, plants and decor. A sash or door that meets something stops there and a red note says what it hit, so the viewer also checks the design. (Option B's bedside pendant was in the window's swing, so it was replaced by a wall-mounted reading light. The wardrobe-front downlight in DEFAULT and Option C was moved 1'7" out, clear of the loft doors.) |
 | Lights | **Lights ON/OFF** (**L**) switches every light fitting. **Day / Night** (**N**) darkens the sky; at night the downlights, lamps, cove strips and pendants actually light the room. |
 | Dimensions | **Dimensions**: labels show W × D × H of the nearest visible furniture, wardrobe, window and door parts, plus opening sizes and room sizes. Select any object to get W / D / H dimension lines on it. |
 | Material details | The right panel's **Material & finish schedule** lists, for each design, floor, walls, ceiling, wardrobe, furniture, window, balcony door, lighting and balcony specifications. |

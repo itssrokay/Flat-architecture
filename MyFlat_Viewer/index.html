@@ -35,7 +35,9 @@
   <div class="sep"></div>
   <button id="lightsBtn" class="toggle on" title="Light fittings on/off (L)">Lights ON</button>
   <button id="nightBtn" class="toggle" title="Day / night (N)">Day</button>
+  <button id="roomDimsBtn" class="toggle" title="Wall-by-wall size of the room you are in (M)">Room size</button>
   <button id="dimsBtn" class="toggle" title="Show dimensions of parts; select an object for W/D/H lines">Dimensions</button>
+  <button id="hoverBtn" class="toggle" title="Point at anything to see what it is (I)">Hover info</button>
   <button id="immBtn" class="accent" title="Full-screen immersive mode (F)">⛶ Immersive</button>
   <div class="spacer"></div>
   <button id="resetBtn" title="Reset camera and visibility">Reset</button>
@@ -53,6 +55,10 @@
 
 <main id="viewport">
   <div id="canvasHost"></div>
+  <button id="leftTab" class="edgeTab" title="Hide left panel ( [ )">‹</button>
+  <button id="rightTab" class="edgeTab" title="Hide right panel ( ] )">›</button>
+  <div id="hoverTip" class="hidden"></div>
+  <div id="toast" class="hidden"></div>
   <div id="loading">Loading model…</div>
 
   <button id="dockToggle" class="small">Hide controls ▾</button>
@@ -94,16 +100,20 @@
 
   <div id="legend" class="hidden"></div>
   <div id="walkHud" class="hidden">
-    <b>Inside</b> · <b>drag</b> to look around (also up at the ceiling) · <b>WASD</b> / arrows or <b>mouse wheel</b> to move · Shift to run · <b>R / V</b> raise / lower your eyes · <b>click</b> a door or wardrobe (or <b>E</b>) to open it · L lights · N night
+    <b>Inside</b> · <b>drag</b> to look around (also up at the ceiling) · <b>WASD</b> / arrows or <b>mouse wheel</b> to move · Shift to run · <b>R / V</b> raise / lower your eyes · <b>click</b> a door or wardrobe (or <b>E</b>) to open it · <b>C</b> ceiling · <b>pinch / Ctrl+wheel</b> or − / + lens · L lights · N night
     <div id="walkInfo"></div>
-    <button id="exitWalkBtn" class="small">Overview (step outside)</button>
+    <div class="hudRow">
+      <button id="ceilBtn" class="small toggle" title="Stand in the middle, look straight up with a wide lens (C)">Look at ceiling</button>
+      <label class="lens">Lens <input type="range" id="fovRange" min="35" max="110" step="1" value="60"> <span id="fovVal">60°</span></label>
+      <button id="exitWalkBtn" class="small">Overview (step outside)</button>
+    </div>
   </div>
   <div id="crosshair" class="hidden"></div>
   <div id="interactHint" class="hidden"></div>
   <div id="immBar">
     <button data-act="overview">🏠 Overview</button><button data-act="walk">🚶 Walk</button><button data-act="room1">Room 1</button><button data-act="balcony">Balcony</button>
     <button data-act="open">Open all</button><button data-act="close">Close all</button>
-    <button data-act="lights">💡 Lights</button><button data-act="night">🌙 Night</button><button data-act="dims">📏 Dims</button>
+    <button data-act="lights">💡 Lights</button><button data-act="night">🌙 Night</button><button data-act="roomdims">📐 Room size</button><button data-act="dims">📏 Dims</button><button data-act="hover">🛈 Hover info</button>
     <button data-act="exit">✕ Exit</button>
   </div>
   <div id="compareCaption" class="hidden"><span id="capL"></span><span id="capR"></span></div>

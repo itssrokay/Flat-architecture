@@ -4,9 +4,15 @@
 //   light    = spot | point | strip, lumens                               (light fittings)
 import * as THREE from 'three';
 import { CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
+import { OBB } from 'three/addons/math/OBB.js';
 
 const FT = 0.3048;
 const YAXIS = new THREE.Vector3(0, 1, 0);
+// things a swinging sash / door / sliding panel can bump into
+const OBSTACLE_CATS = ['furniture', 'decor', 'lighting', 'plants'];
+export function prettyName(n) {
+  return (n || '').replace(/^R1_(DEF|OPA|OPB|OPC|A|B|C)_/, '').replace(/\.\d+$/, '').replace(/_/g, ' ').toLowerCase();
+}
 
 export function setupImmersive(ctx) {
   const { app, scene, renderer, controls, walk, hemi, sun, $, fmtFt } = ctx;
@@ -34,7 +40,7 @@ export function setupImmersive(ctx) {
       if (o.isMesh && o.material?.emissive && o.material.emissiveIntensity > 0 && (o.material.emissive.r + o.material.emissive.g + o.material.emissive.b) > 0)
         if (!emissive.has(o.material)) emissive.set(o.material, o.material.emissiveIntensity);
     });
-    buildLights(root); buildDimLabels(root);
+    buildLights(root); buildDimLabels(root); buildObstacles(root);
     applyLighting();
     $('openAllBtn').disabled = $('closeAllBtn').disabled = groups.size === 0;
     $('interactInfo').textContent = groups.size ? `${groups.size} openable parts in this model` : 'No openable parts in this model';
@@ -42,23 +48,72 @@ export function setupImmersive(ctx) {
 
   // ---------------------------------------------------------------- open / close
   function groupOf(o) { for (let p = o; p; p = p.parent) if (p.userData?.interact && p.userData.group) return groups.get(p.userData.group); return null; }
-  function toggle(g, force) { if (!g) return; g.open = force === undefined ? !g.open : force; }
+  function toggle(g, force) { if (!g) return; g.open = force === undefined ? !g.open : force; g.blockedT = null; }
+
+  // ---- collisions: an opening part stops when it touches furniture, a lamp, a plant … (like a real one)
+  let obstacles = [];
+  function catOfO(o) { for (let p = o; p; p = p.parent) if (p.userData?.category) return p.userData.category; return null; }
+  function visibleO(o) { for (let p = o; p; p = p.parent) if (!p.visible) return false; return true; }
+  function obbOf(m, shrink = 0) {
+    if (!m.geometry.boundingBox) m.geometry.computeBoundingBox();
+    const b = m.geometry.boundingBox.clone();
+    if (shrink) { const s = new THREE.Vector3(); b.getSize(s); b.expandByVector(new THREE.Vector3(-Math.min(shrink, s.x * 0.3), -Math.min(shrink, s.y * 0.3), -Math.min(shrink, s.z * 0.3))); }
+    // (OBB.applyMatrix4 doesn't rotate the box centre, so build it from the decomposed world matrix)
+    const pos = new THREE.Vector3(), q = new THREE.Quaternion(), sc = new THREE.Vector3();
+    m.matrixWorld.decompose(pos, q, sc);
+    const hs = b.getSize(new THREE.Vector3()).multiplyScalar(0.5).multiply(new THREE.Vector3(Math.abs(sc.x), Math.abs(sc.y), Math.abs(sc.z)));
+    return new OBB(b.getCenter(new THREE.Vector3()).applyMatrix4(m.matrixWorld), hs, new THREE.Matrix3().setFromMatrix4(new THREE.Matrix4().makeRotationFromQuaternion(q)));
+  }
+  function buildObstacles(root) {
+    root.updateMatrixWorld(true); obstacles = [];
+    // wardrobe internals (LED, loft contents …) sit behind their own doors: not obstacles
+    root.traverse(o => { if (o.isMesh && OBSTACLE_CATS.includes(catOfO(o)) && !groupOf(o) && !/WARDROBE/i.test(o.name)) obstacles.push({ m: o, obb: obbOf(o, 0.004), c: new THREE.Box3().setFromObject(o).getCenter(new THREE.Vector3()) }); });
+    for (const g of groups.values()) {
+      g.meshes = []; for (const it of g.objs) it.o.traverse(o => { if (o.isMesh) g.meshes.push(o); });
+      const c = new THREE.Box3(); g.meshes.forEach(m => c.expandByObject(m)); g.center = c.getCenter(new THREE.Vector3());
+      g.near = obstacles.filter(ob => ob.c.distanceTo(g.center) < 3.5);
+      // anything already touching when closed is not a collision
+      g.ignore = new Set(g.near.filter(ob => collideList(g, [ob])));
+    }
+  }
+  function collideList(g, list) {
+    for (const m of g.meshes) {
+      if (!visibleO(m)) continue;
+      const a = obbOf(m, 0.004);
+      for (const ob of list) if (visibleO(ob.m) && a.intersectsOBB(ob.obb)) return ob;
+    }
+    return null;
+  }
+  function collides(g) { return g.near?.length ? collideList(g, g.near.filter(ob => !g.ignore.has(ob))) : null; }
+  function pose(g, t) {
+    const e = t * t * (3 - 2 * t), m = g.meta;
+    for (const it of g.objs) {
+      if (m.interact === 'hinge') {
+        it.o.quaternion.copy(it.quat).multiply(new THREE.Quaternion().setFromAxisAngle(YAXIS, THREE.MathUtils.degToRad(m.open_deg) * e));
+      } else if (m.interact === 'slide') {
+        const s = m.slide_ft || [0, 0, 0];     // Blender (x, y) ft -> three (x, -z) m
+        it.o.position.copy(it.pos).add(new THREE.Vector3(s[0] * FT * e, s[2] * FT * e, -s[1] * FT * e));
+      } else if (m.interact === 'toggle') {
+        it.o.visible = t < 0.5;
+      }
+      it.o.updateMatrixWorld(true);        // keep collisions / raycasts exact within the same frame
+    }
+  }
   function setAll(open) { for (const g of groups.values()) toggle(g, open); }
   function animate(dt) {
     for (const g of groups.values()) {
-      const target = g.open ? 1 : 0; if (g.t === target) continue;
+      const target = g.open ? 1 : 0; if (g.t === target || (g.open && g.blockedT === g.t)) continue;
+      const prev = g.t;
       g.t = target > g.t ? Math.min(1, g.t + dt / 0.6) : Math.max(0, g.t - dt / 0.6);
-      const e = g.t * g.t * (3 - 2 * g.t); const m = g.meta;
-      for (const it of g.objs) {
-        if (m.interact === 'hinge') {
-          it.o.quaternion.copy(it.quat).multiply(new THREE.Quaternion().setFromAxisAngle(YAXIS, THREE.MathUtils.degToRad(m.open_deg) * e));
-        } else if (m.interact === 'slide') {
-          const s = m.slide_ft || [0, 0, 0];     // Blender (x, y) ft -> three (x, -z) m
-          it.o.position.copy(it.pos).add(new THREE.Vector3(s[0] * FT * e, s[2] * FT * e, -s[1] * FT * e));
-        } else if (m.interact === 'toggle') {
-          it.o.visible = g.t < 0.5;
+      pose(g, g.t);
+      if (target === 1 && g.meta.interact !== 'toggle') {
+        const hit = collides(g);
+        if (hit) {           // back off in small steps to the last free position, then stop there
+          let t = prev; pose(g, t);
+          for (let k = 1; k <= 6; k++) { const tt = prev + (g.t - prev) * k / 6; pose(g, tt); if (collides(g)) { pose(g, t); break; } t = tt; }
+          g.t = t; g.blockedT = t; g.blockedBy = hit.m.name;
+          ctx.onBlocked && ctx.onBlocked(prettyName([...groups].find(([k, v]) => v === g)?.[0] || g.objs[0].o.name), prettyName(hit.m.name));
         }
-        it.o.updateMatrixWorld(true);        // keep collisions / raycasts exact within the same frame
       }
     }
   }
@@ -280,5 +335,5 @@ export function setupImmersive(ctx) {
     }
   }
   return { onModel, update, onSelect: showSelDims, toggle, toggleFor: (o) => toggle(groupOf(o)), isInteractive: (o) => !!groupOf(o),
-           setAll, setLights, setNight, setDims, setImmersive, groups, state: st, lights, floorHit, interactiveHit };
+           setAll, setLights, setNight, setDims, setImmersive, groups, state: st, lights, floorHit, interactiveHit, collides, obstacles: () => obstacles };
 }

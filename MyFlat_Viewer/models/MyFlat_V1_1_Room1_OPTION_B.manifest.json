@@ -1,13 +1,13 @@
 {
  "model": "MyFlat_V1_1_Room1_OPTION_B.glb",
  "source_blend": "MyFlat_V1_1_Room1_Interiors.blend",
- "exported": "2026-09-26T23:05:22",
+ "exported": "2026-09-27T11:25:38",
  "blender": "5.2.2 LTS",
  "units": "metres",
  "up": "+Y",
  "north": "-Z",
  "east": "+X",
- "object_count": 213,
+ "object_count": 214,
  "counts": {
   "walls": 26,
   "floors": 14,
@@ -22,7 +22,7 @@
   "plan_reference": 1,
   "vents": 20,
   "finishes": 4,
-  "lighting": 10,
+  "lighting": 11,
   "furniture": 11,
   "soft_furnishing": 9,
   "wardrobe": 7,
@@ -1307,7 +1307,23 @@
    "parent": null
   },
   {
-   "name": "R1_OPB_PENDANT_W",
+   "name": "R1_OPB_READING_LIGHT_W_BRACKET",
+   "type": "MESH",
+   "category": "lighting",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPB_READING_LIGHT_W_ARM",
+   "type": "MESH",
+   "category": "lighting",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPB_READING_LIGHT_W",
    "type": "MESH",
    "category": "lighting",
    "subtype": "",
@@ -1740,14 +1756,6 @@
   },
   {
    "name": "R1_OPB_BALCONY_LINEAR_LIGHT",
-   "type": "MESH",
-   "category": "lighting",
-   "subtype": "",
-   "status": "DESIGN",
-   "parent": null
-  },
-  {
-   "name": "R1_OPB_PENDANT_W_CORD",
    "type": "MESH",
    "category": "lighting",
    "subtype": "",
