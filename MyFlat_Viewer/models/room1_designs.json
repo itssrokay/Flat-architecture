@@ -1,0 +1,599 @@
+{
+ "DEFAULT": {
+  "title": "DEFAULT · Warm Contemporary",
+  "tagline": "Bed faces the balcony, wardrobe fills the alcove, study-dresser on the thick wall.",
+  "why": "It uses every piece of the L-shaped room for what it is best at. The 5'4\" x 3'4\" alcove beside the door is exactly the size of a 3-door wardrobe, so storage costs no floor space. The bed sits on the only long solid wall (east) and faces the 10'5\" balcony opening, giving the best view and morning light. The 7'3\" thick south wall becomes a study-cum-dresser. That leaves a clear 5'8\" zone between the bed and the balcony and a 3'10\" walkway from the door. Aluminium sliders, laminate and vitrified tile are standard, affordable and low-maintenance in Indian conditions.",
+  "sections": {
+   "Layout": "Queen bed (5'x6'6\") on east wall facing west; bedside tables both sides; study/dresser 4' on thick-wall face; compact lounge chair + floor lamp on north wall; 5'x7' rug.",
+   "Wardrobe": "3-door hinged, 5'3\" x 2' x 7'6\" in the SE alcove + loft to ceiling. Off-white matt laminate with oak inset strips, black profile handles, soft-close hinges. Clears the door jamb by 2\".",
+   "Window W1": "3-track aluminium sliding window (charcoal): 2 glass shutters (5 mm toughened, clear) + 1 SS-304 mosquito-mesh shutter. Flat-bar MS safety grill outside the glass, colour-matched. Black granite inner sill with 4\" ledge + external drip sill. Sheer + sage blackout drape on ceiling track.",
+   "Balcony door": "3-track, 3-panel aluminium slider (1 fixed + 2 sliding), 8 mm clear toughened glass, charcoal frame, D-handle with multipoint lock. Opens 2/3 of the 10'5\" width. Retractable pleated mosquito mesh. Black granite threshold with low-profile track, 2\" step down, sloped nosing (water check). Full-width sheer + blackout drapes stacking at both ends.",
+   "Ceiling & lighting": "Gypsum perimeter band 1'7\" wide, 6\" drop (curtain pelmet on balcony side), central raft at slab level. 2700K LED cove, 7 downlights in the band, 2 adjustable reading wall lights, floor lamp, desk shelf light.",
+   "Balcony": "Anti-skid outdoor tile; built-in teak/WPC bench with cushions against the solid wall (south end); 18\" round side table; vertical-garden panel above bench; areca palm + snake plant at north end; 3 railing planters; IP65 up-down wall light.",
+   "Palette": "Oak, off-white, sage green, rust accents, charcoal metal, warm greige floor."
+  },
+  "schedule": [
+   {
+    "area": "Floor",
+    "items": [
+     [
+      "Tile",
+      "Matte glazed vitrified tile 800×1600 mm, 9 mm, warm greige (Kajaria / Somany / Johnson class)"
+     ],
+     [
+      "Laying",
+      "Long side along the room (E–W), 2 mm epoxy grout in matching colour, 1:4 cement-sand bed"
+     ],
+     [
+      "Skirting",
+      "4\" (100 mm) cut from same tile, flush with plaster line"
+     ],
+     [
+      "Threshold (balcony)",
+      "Black granite, flamed top, 20 mm, 2\" step down with sloped nosing"
+     ]
+    ]
+   },
+   {
+    "area": "Walls",
+    "items": [
+     [
+      "Base",
+      "Cement plaster → 2 coats wall putty → primer"
+     ],
+     [
+      "Paint",
+      "Low-sheen washable emulsion, warm white (e.g. Asian Paints 'Pristine White' family) on 3 walls"
+     ],
+     [
+      "Headboard wall",
+      "Fluted panel 7'8\" × 8': 12 mm BWP plywood base + fluted MDF strips (1\" flutes) wrapped in 0.8 mm oak-grain laminate; brass-finish aluminium cap trim"
+     ],
+     [
+      "Study wall",
+      "Same paint; 4' floating shelf + frameless 5 mm mirror above the desk"
+     ]
+    ]
+   },
+   {
+    "area": "Ceiling",
+    "items": [
+     [
+      "False ceiling",
+      "Perimeter band only: 12.5 mm gypsum board (Gyproc) on GI channel framing, 1'7\" wide, 6\" drop → ceiling at 9'6\" in the band, 10' in the centre"
+     ],
+     [
+      "Cove",
+      "3\" recessed cove on the inner edge of the band with 2700K LED strip (10 W/m, dimmable)"
+     ],
+     [
+      "Curtain pelmet",
+      "Band widened to 2'1\" on the balcony side to hide the curtain track"
+     ],
+     [
+      "Finish",
+      "Ceiling-white matt emulsion"
+     ]
+    ]
+   },
+   {
+    "area": "Wardrobe",
+    "items": [
+     [
+      "Carcass",
+      "18 mm BWR/BWP plywood (or HDHMR), 0.8 mm frosty-white laminate inside, 2' deep"
+     ],
+     [
+      "Shutters",
+      "18 mm ply with 1 mm off-white matt laminate + oak-laminate vertical inset; 3 hinged doors, 7'6\" high"
+     ],
+     [
+      "Hardware",
+      "Hettich/Häfele soft-close hinges (4 per door), 12\" black aluminium bar handles"
+     ],
+     [
+      "Internals",
+      "Section 1: 2 soft-close drawers + shirt hanging rod; Section 2: 5 shelves; Section 3: long hanging (sarees/dresses) + top shelf; LED strip on door sensor"
+     ],
+     [
+      "Loft",
+      "Same carcass to ceiling, push-to-open shutters, for suitcases and quilts"
+     ],
+     [
+      "Plinth",
+      "4\" recessed black plinth so the floor can be mopped"
+     ]
+    ]
+   },
+   {
+    "area": "Bed & furniture",
+    "items": [
+     [
+      "Bed",
+      "Queen 5'×6'6\": 18 mm ply + oak laminate, hydraulic lift storage, upholstered sage headboard (foam + fabric on ply)"
+     ],
+     [
+      "Mattress",
+      "8\" pocket-spring, queen 60\"×78\""
+     ],
+     [
+      "Bedside tables",
+      "18\"×17\", 2 drawers, oak laminate on a recessed charcoal base"
+     ],
+     [
+      "Study-dresser",
+      "4'×1'9\" oak-laminate top at 30\", 2-drawer pedestal, upholstered chair"
+     ],
+     [
+      "Accent",
+      "Compact rust-fabric lounge chair + linen-shade floor lamp; 5'×7' flat-weave wool rug"
+     ]
+    ]
+   },
+   {
+    "area": "Window W1",
+    "items": [
+     [
+      "System",
+      "3-track aluminium sliding window, charcoal powder-coat (Jindal / Aluplast class)"
+     ],
+     [
+      "Shutters",
+      "2 glass shutters (5 mm clear toughened) + 1 SS-304 mosquito-mesh shutter; one glass shutter slides open"
+     ],
+     [
+      "Safety",
+      "Flat-bar MS grill (5\" pitch) outside the glass, powder-coated to match"
+     ],
+     [
+      "Sill",
+      "Black granite inside with 4\" ledge; external sill with drip groove"
+     ],
+     [
+      "Curtains",
+      "Ceiling track: linen-look sheer + sage blackout drape"
+     ]
+    ]
+   },
+   {
+    "area": "Balcony door",
+    "items": [
+     [
+      "System",
+      "3-track, 3-panel aluminium slider, charcoal; 1 fixed + 2 sliding panels → about 7' clear opening"
+     ],
+     [
+      "Glass",
+      "8 mm clear toughened glass, EPDM gaskets, interlock profiles"
+     ],
+     [
+      "Hardware",
+      "D-handle with multipoint lock, stainless rollers"
+     ],
+     [
+      "Mesh",
+      "Retractable pleated mosquito mesh, stacks at the north jamb"
+     ],
+     [
+      "Threshold",
+      "Low-profile bottom track set in black granite, 2\" step and 1:50 fall to the balcony"
+     ],
+     [
+      "Curtains",
+      "Full-width sheer + sage blackout drapes stacking at both ends"
+     ]
+    ]
+   },
+   {
+    "area": "Lighting & electrical",
+    "items": [
+     [
+      "Ambient",
+      "2700K cove LED around the room"
+     ],
+     [
+      "Task",
+      "7 × 6 W COB downlights (3000K) in the band; 2 adjustable reading wall lights at the bed; floor lamp"
+     ],
+     [
+      "Wardrobe",
+      "Sensor-operated LED strip inside"
+     ],
+     [
+      "Switching",
+      "Two-way switching of ambient light at door + bed; USB sockets at both bedsides; AC point above the headboard wall"
+     ]
+    ]
+   },
+   {
+    "area": "Balcony",
+    "items": [
+     [
+      "Floor",
+      "Anti-skid matte outdoor tile 600×600 (R11), laid on waterproofing with 1:100 fall to drain"
+     ],
+     [
+      "Seating",
+      "Built-in teak/WPC bench 2'4\"×1'4\" with storage + outdoor-fabric cushions"
+     ],
+     [
+      "Table",
+      "18\" round teak side table on a powder-coated base"
+     ],
+     [
+      "Greenery",
+      "Modular vertical-garden panel with drip line; areca palm + snake plant; 3 railing planters for herbs/flowers"
+     ],
+     [
+      "Light",
+      "IP65 up-down wall light, warm white"
+     ]
+    ]
+   }
+  ]
+ },
+ "OPTION_A": {
+  "title": "Option A · Japandi Calm",
+  "tagline": "Low platform bed against a slatted thick wall, desk under the window.",
+  "why": "A calmer, more natural room. The bed moves to the thick south wall with an ash slat wall as headboard, and the desk takes the window light. Sliding wardrobe doors avoid swing clearance.",
+  "sections": {
+   "Layout": "Low ash platform bed with head on the 7'3\" thick wall, facing north; slim bedside + stool; desk under W1; low bookcase + pouf on east wall; jute rug.",
+   "Wardrobe": "2-door sliding, ash veneer with grooves, 8'5\" high with open top niche for baskets.",
+   "Window W1": "White uPVC casement pair (outward, friction stays) with 6.38 mm laminated safety glass - no grill; internal roller mesh; solid-wood display sill; bamboo roman blind.",
+   "Balcony door": "White uPVC 2-track 4-panel slider (fixed-slide-slide-fixed), horizontal roller insect screen, Kota-stone threshold, natural linen curtains on a wooden rod.",
+   "Ceiling & lighting": "No gypsum false ceiling. Suspended ash slat raft over the bed, rice-paper pendants, surface downlights.",
+   "Balcony": "WPC deck tiles, floor cushions + low tea table, bamboo privacy screen on railing, palms in terracotta, solar paper lantern.",
+   "Palette": "Light ash, warm white, linen, moss green, black accents, light-oak plank tile."
+  },
+  "schedule": [
+   {
+    "area": "Floor",
+    "items": [
+     [
+      "Tile",
+      "Wood-look vitrified plank 200×1200 mm, light oak, matt"
+     ],
+     [
+      "Laying",
+      "Planks E–W, 1/3 stagger, 2 mm joints"
+     ],
+     [
+      "Skirting",
+      "Solid ash skirting, 3\""
+     ]
+    ]
+   },
+   {
+    "area": "Walls & ceiling",
+    "items": [
+     [
+      "Paint",
+      "Warm white limewash-effect emulsion"
+     ],
+     [
+      "Headboard",
+      "Vertical ash slat wall on the thick south wall: 1.5\" slats at 3\" centres on a black-painted backing, 8'6\" high"
+     ],
+     [
+      "Ceiling",
+      "No gypsum false ceiling. Suspended ash slat raft 6'×6'6\" over the bed; ceiling kept at 10'"
+     ]
+    ]
+   },
+   {
+    "area": "Wardrobe",
+    "items": [
+     [
+      "Type",
+      "2-door sliding, 8'5\" high, open top niche for baskets"
+     ],
+     [
+      "Materials",
+      "HDHMR carcass, ash veneer shutters with grooved lines, matt PU lacquer"
+     ],
+     [
+      "Hardware",
+      "Top-hung soft-close sliding track, recessed finger pulls"
+     ]
+    ]
+   },
+   {
+    "area": "Furniture",
+    "items": [
+     [
+      "Bed",
+      "Low Japanese platform, solid ash, 11\" high"
+     ],
+     [
+      "Desk",
+      "4'4\" solid ash desk under the window with woven-seat chair"
+     ],
+     [
+      "Storage",
+      "Low open ash bookcase 5'10\" long; jute pouf; jute rug 6'×8'"
+     ]
+    ]
+   },
+   {
+    "area": "Window & door",
+    "items": [
+     [
+      "W1",
+      "White uPVC casement pair, outward, friction stays, 6.38 mm laminated safety glass (so no grill), internal roller mesh, solid-wood sill, bamboo roman blind"
+     ],
+     [
+      "Balcony door",
+      "White uPVC 2-track 4-panel slider (fixed–slide–slide–fixed), 5 mm toughened glass, roller insect screen, Kota-stone threshold, linen curtains on a wooden rod"
+     ]
+    ]
+   },
+   {
+    "area": "Lighting",
+    "items": [
+     [
+      "Fittings",
+      "Large rice-paper pendant, 2 paper pendants as bedside lights, surface downlights, all 2700K"
+     ]
+    ]
+   },
+   {
+    "area": "Balcony",
+    "items": [
+     [
+      "Floor",
+      "WPC interlocking deck tiles on the existing tile"
+     ],
+     [
+      "Furniture",
+      "Floor cushions + low tea table"
+     ],
+     [
+      "Privacy",
+      "Bamboo screen fixed inside the railing, 5' high"
+     ],
+     [
+      "Plants",
+      "Bamboo palm / monstera in terracotta; solar paper lantern"
+     ]
+    ]
+   }
+  ]
+ },
+ "OPTION_B": {
+  "title": "Option B · Minimal Modern",
+  "tagline": "Bed on the north wall, TV/dresser wall on the thick wall, lounge corner by the balcony.",
+  "why": "The most different arrangement. The bed's head goes on the north wall beside the window, so the thick wall can host a TV/media and dresser wall viewed from the bed. A reading lounge sits at the balcony corner. Everything is flush and handleless.",
+  "sections": {
+   "Layout": "Floating walnut platform bed, head on north wall (east of W1); floating bedside under the window; 55\" TV + walnut console + tall storage on thick wall; boucle lounge chair + arc lamp at NW corner; slim console on east wall.",
+   "Wardrobe": "Floor-to-false-ceiling 2-door sliding, matt white lacquered glass, full-height mirror panel, handleless.",
+   "Window W1": "Slim black aluminium: fixed pane + inward tilt-and-turn sash, 6 mm low-E glass; invisible grill (SS-316 cables); flush quartz sill; sunscreen roller blind.",
+   "Balcony door": "Black slim lift-and-slide, 2 large panels (1 fixed, 1 sliding), 10 mm low-E toughened glass, 20 mm sightlines; flush quartz threshold with concealed drain; motorised blackout + sunscreen roller blinds in a ceiling pocket; pleated mesh.",
+   "Ceiling & lighting": "Flush gypsum ceiling at 9'5\" with recessed blind pocket and 2 linear LED lines; hidden LED in headboard panel; opal pendant.",
+   "Balcony": "Grey porcelain, fold-down railing table + 2 slim metal chairs, 2 tall concrete-look planters, linear wall light.",
+   "Palette": "White, warm grey, charcoal, walnut, black metal."
+  },
+  "schedule": [
+   {
+    "area": "Floor",
+    "items": [
+     [
+      "Tile",
+      "Large-format 1200×1200 light-grey matte porcelain, 1 mm joints"
+     ],
+     [
+      "Skirting",
+      "Flush shadow-gap skirting (aluminium profile)"
+     ]
+    ]
+   },
+   {
+    "area": "Walls & ceiling",
+    "items": [
+     [
+      "Headboard wall",
+      "Full-height fabric-wrapped acoustic panels (warm grey) with a hidden LED line in the reveal"
+     ],
+     [
+      "TV wall",
+      "Microcement-look panel behind the TV"
+     ],
+     [
+      "Ceiling",
+      "Flush gypsum ceiling at 9'5\" over the whole room, 6\" recessed blind pocket along the balcony, 2 recessed linear LED lines"
+     ]
+    ]
+   },
+   {
+    "area": "Wardrobe",
+    "items": [
+     [
+      "Type",
+      "Floor-to-false-ceiling 2-door sliding, handleless"
+     ],
+     [
+      "Materials",
+      "HDHMR carcass, back-painted matt white lacquered glass shutters, one full-height mirror"
+     ],
+     [
+      "Hardware",
+      "Soft-close sliding system, internal sensor LED"
+     ]
+    ]
+   },
+   {
+    "area": "Furniture",
+    "items": [
+     [
+      "Bed",
+      "Floating walnut-veneer platform bed with integrated padded headboard, head on the north wall"
+     ],
+     [
+      "Media",
+      "Floating walnut console + tall handleless column, 55\" TV viewed from the bed"
+     ],
+     [
+      "Lounge",
+      "Bouclé lounge chair, black metal side table, arc floor lamp, charcoal low-pile rug"
+     ]
+    ]
+   },
+   {
+    "area": "Window & door",
+    "items": [
+     [
+      "W1",
+      "Slim black aluminium: fixed pane + inward tilt-and-turn sash, 6 mm low-E glass, invisible grill (SS-316 cables at 3\" centres) outside, flush quartz sill, sunscreen roller blind"
+     ],
+     [
+      "Balcony door",
+      "Slim black lift-and-slide, 2 large panels (1 fixed + 1 sliding), 10 mm low-E toughened glass, 20 mm sightlines, flush quartz threshold with concealed drain, pleated mesh, motorised blackout + sunscreen blinds"
+     ]
+    ]
+   },
+   {
+    "area": "Balcony",
+    "items": [
+     [
+      "Floor",
+      "Grey outdoor porcelain 600×1200, anti-skid"
+     ],
+     [
+      "Furniture",
+      "Fold-down railing table + 2 slim powder-coated chairs"
+     ],
+     [
+      "Plants & light",
+      "2 tall concrete-look planters with olive trees; linear IP65 wall light"
+     ]
+    ]
+   }
+  ]
+ },
+ "OPTION_C": {
+  "title": "Option C · Indian Modern Heritage",
+  "tagline": "Cane headboard wall, built-in diwan, bi-fold doors that open the whole balcony.",
+  "why": "The premium, distinctive option. A 4-panel bi-fold door folds away completely, so the room and balcony become one space. Cane, teak, brass, block prints and a built-in diwan give it an Indian character without hotel styling.",
+  "sections": {
+   "Layout": "Teak bed on the east wall with a full cane headboard panel and a teal limewash wall; brass dome pendants as bedside lights; built-in diwan (daybed) with bolsters on the thick wall under a teak jaali; low brass-top table; dhurrie rug.",
+   "Wardrobe": "3-door hinged, teak veneer frame with woven cane-mesh insets (breathable for humidity), brass bar handles, loft above.",
+   "Window W1": "Aluminium casement with teak woodgrain finish: 2 inward casements + fixed top light; decorative MS jaali-pattern safety grill; Kota-stone sill; block-print drapes + voile sheer on brass rod.",
+   "Balcony door": "4-panel aluminium bi-fold (teak finish), bottom-rolling, opens the full 10'5\" - shown folded open onto the balcony; pleated mesh stacked at the south jamb; Kota threshold with flush track; block-print curtains.",
+   "Ceiling & lighting": "Single-step tray ceiling (2'2\" band at 9'3\") with cove LED and teak edge strip; large cane pendant; brass-trim downlights.",
+   "Balcony": "Leather-finish Kota stone, rattan armchair + cane side table, terracotta planters (tulsi, jasmine, bougainvillea), pierced brass lantern, jute dhurrie.",
+   "Palette": "Teak, cane, deep teal, terracotta, ivory, brass, terrazzo-look floor."
+  },
+  "schedule": [
+   {
+    "area": "Floor",
+    "items": [
+     [
+      "Tile",
+      "Terrazzo-look vitrified tile 600×600"
+     ],
+     [
+      "Inlay",
+      "Brass-coloured strip border 1' from the walls (visual rug)"
+     ],
+     [
+      "Skirting",
+      "Teak-finish skirting"
+     ]
+    ]
+   },
+   {
+    "area": "Walls",
+    "items": [
+     [
+      "Accent",
+      "Deep teal limewash on the east (bed) wall"
+     ],
+     [
+      "Headboard",
+      "Full-width woven cane panel in a teak frame, 7'×4'6\""
+     ],
+     [
+      "Diwan wall",
+      "CNC teak jaali panel above the built-in diwan"
+     ]
+    ]
+   },
+   {
+    "area": "Ceiling",
+    "items": [
+     [
+      "False ceiling",
+      "Single-step tray: 12.5 mm gypsum band 2'2\" wide at 9'3\", centre at 10'"
+     ],
+     [
+      "Details",
+      "Teak-veneer edge strip, cove LED, brass-trim downlights, large cane pendant"
+     ]
+    ]
+   },
+   {
+    "area": "Wardrobe",
+    "items": [
+     [
+      "Type",
+      "3 hinged doors + loft"
+     ],
+     [
+      "Materials",
+      "Ply carcass, teak-veneer shutters (PU matt) with woven cane-mesh insets - breathable for humidity"
+     ],
+     [
+      "Hardware",
+      "Brass bar handles, soft-close hinges"
+     ]
+    ]
+   },
+   {
+    "area": "Furniture",
+    "items": [
+     [
+      "Bed",
+      "Teak bed with turned legs and under-bed drawers"
+     ],
+     [
+      "Diwan",
+      "Built-in daybed 6'4\"×2'4\" with storage drawers, block-print mattress, gol-takiya bolsters"
+     ],
+     [
+      "Other",
+      "Teak bedsides with cane fronts, brass dome pendants, brass-top low table, cotton dhurrie"
+     ]
+    ]
+   },
+   {
+    "area": "Window & door",
+    "items": [
+     [
+      "W1",
+      "Aluminium with teak woodgrain finish: 2 inward casements + fixed top light, 6 mm toughened glass, decorative MS jaali-pattern grill outside, Kota-stone sill, block-print drapes + voile sheer on a brass rod"
+     ],
+     [
+      "Balcony door",
+      "4-panel aluminium bi-fold (teak finish), bottom-rolling, opens the full 10'5\"; pleated mesh; Kota threshold with flush track"
+     ]
+    ]
+   },
+   {
+    "area": "Balcony",
+    "items": [
+     [
+      "Floor",
+      "Leather-finish Kota stone"
+     ],
+     [
+      "Furniture",
+      "Outdoor-grade synthetic rattan armchair + cane side table, jute dhurrie"
+     ],
+     [
+      "Plants & light",
+      "Terracotta planters (tulsi, jasmine, bougainvillea), pierced brass lantern"
+     ]
+    ]
+   }
+  ]
+ }
+}

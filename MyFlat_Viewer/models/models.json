@@ -1,0 +1,12 @@
+{
+  "default": "MyFlat_V1_1_Room1_DEFAULT.glb",
+  "designNotes": "room1_designs.json",
+  "models": [
+    { "file": "MyFlat_V1_1_Room1_DEFAULT.glb",  "label": "Room 1 · DEFAULT (Warm Contemporary)", "short": "DEFAULT",  "group": "interior", "design": "DEFAULT",  "startView": "Room 1:0", "manifest": "MyFlat_V1_1_Room1_DEFAULT.manifest.json" },
+    { "file": "MyFlat_V1_1_Room1_OPTION_A.glb", "label": "Room 1 · Option A (Japandi Calm)",     "short": "A",        "group": "interior", "design": "OPTION_A", "startView": "Room 1:0", "manifest": "MyFlat_V1_1_Room1_OPTION_A.manifest.json" },
+    { "file": "MyFlat_V1_1_Room1_OPTION_B.glb", "label": "Room 1 · Option B (Minimal Modern)",   "short": "B",        "group": "interior", "design": "OPTION_B", "startView": "Room 1:0", "manifest": "MyFlat_V1_1_Room1_OPTION_B.manifest.json" },
+    { "file": "MyFlat_V1_1_Room1_OPTION_C.glb", "label": "Room 1 · Option C (Indian Modern)",    "short": "C",        "group": "interior", "design": "OPTION_C", "startView": "Room 1:0", "manifest": "MyFlat_V1_1_Room1_OPTION_C.manifest.json" },
+    { "file": "MyFlat_V1_1_Architecture.glb", "label": "V1.1 Architecture (Room 1 corrected)", "short": "V1.1 arch", "group": "architecture", "manifest": "MyFlat_V1_1_Architecture.manifest.json" },
+    { "file": "MyFlat_V1_Architecture.glb",   "label": "V1 Architecture (untouched baseline)", "short": "V1 baseline", "group": "architecture", "manifest": "MyFlat_V1_Architecture.manifest.json" }
+  ]
+}

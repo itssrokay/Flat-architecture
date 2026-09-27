@@ -1,0 +1,38 @@
+MyFlat_V1_Architecture - STATUS & ASSUMPTIONS
+Every object has custom props: status (CONFIRMED / PLAN / DERIVED / PROVISIONAL) + basis.
+Viewport: Solid shading > Color: Object = status map (green CONFIRMED, blue PLAN, yellow DERIVED, orange PROVISIONAL).
+All numbers live in table P of build_MyFlat_V1_Architecture.py (feet). Edit + re-run to rebuild.
+
+CONFIRMED (your answers)
+- Room1<->balcony wall 15"; Room 1 livable width 12'7"
+- Kitchen width = gate + 4'; kitchen gate at west end of its south wall
+- Bathroom 2 width ~4'5"; Room 2 length 23'7" total; Room 2 narrows toward south
+- Room 1 exit 2'2" from passage-south line; balcony opening 19" from south, opening only (no door)
+- Hall Gate = open, no door; W9 (white diamond) = hall<->passage window
+- Window openings 4'x4'; open square open to sky; balcony has railing
+- Pillars on the line of the Hall Gate's east edge; stair internal, entered from the west
+
+PLAN VALUES (drawing, not site-verified)
+- Kitchen depth 7'1"; passage 5'; hall 21' x 32'; Bath 1 4' x 8'6"; Room 2 12'7" (N) / 10'6" (S)
+- Balcony 3'6" x 14'8"; Hall Gate 5'8"; door/window walls as drawn
+
+DERIVED
+- Room 1 N-S 12'6" (south wall aligned with passage south wall; overrides 11'2")
+- Kitchen 7'0"; Bath 2 depth = kitchen; Bath 1 west wall from 4' width
+
+PROVISIONAL
+- Walls 9" external / 5" internal; ceiling 10'0"; roof slab 5"; floor slab 6" + 3" finish
+- Door sizes (rooms 3'0", baths 2'6", R1 exit 2'8"), height 7'0", swing directions, leaves shown open 90 deg
+- Window sills 3'0", positions along walls; W3 bath 2'x2'; W9 2'6"x3'6"
+- Pillars 9" x 15" rectangular; N-S positions 7'6" / 16'6" from hall north wall
+- Beams 9" wide x 12" drop: one N-S over pillars, two E-W through pillars
+- Stair: 7'0" x 10'5" room, 16 risers ~7.8", 10" treads, dog-leg going UP, landing at south,
+  mid divider + handrails; stairwell opening in roof slab (no mumty modelled)
+- Open square: 3'0" parapet + 1'6" grill on south & east (site video); floor 3" lower
+  -> plan's W8 window replaced by parapet (NOTE_W8 object) - CONFIRM
+- Balcony floor 2" lower, curb + 3'3" railing; aligned to north face (sticks out ~8" past Room 1)
+- Bathrooms sunk 1"; thresholds at bathrooms and balcony
+- Vents 6"x6" at 8'9": R1 N x2, KIT N, B2 N, R2 N x2, HALL S x3, B1 W (locations guessed;
+  site-video holes may be scaffold holes) - toggle via walls' "Vents" modifier
+- Hall west wall at 3'10" from Room 1 west face (keeps hall 21'); midpoint would give ~18'2"
+- Room 2 taper placed on the east wall

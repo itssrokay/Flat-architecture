@@ -1,0 +1,37 @@
+MyFlat_Trial_V0 - TRIAL ASSUMPTIONS  (all values editable in build_MyFlat_Trial_V0.py, table P)
+Objects carry a custom property "source" = PLAN / ANSWER / ASSUMED and a "note".
+Orange "A-..." tags in 07_PLACEHOLDERS mark the biggest guesses in the top view.
+
+A1  Walls: external ASSUMED = 9" ; internal ASSUMED = 5" ; Room1-balcony wall = 15" (your answer).
+    Passage south wall ASSUMED = 9" so it lines up with Room 1's south wall.
+A2  Ceiling height ASSUMED = 10'0" ; roof slab 5". Door height ASSUMED = 7'0".
+A3  Room 1 = 12'7" E-W (your answer). N-S ASSUMED = 12'6": south wall put in line with the passage
+    south wall (your G3 answer). This overrides the 11'2" on the plan - with 11'2" the Room 1 exit
+    (2'2" from the south) would run into the kitchen wall.
+A4  Kitchen width = gate + 4' = 7'0" (gate ASSUMED = 3'0"). Kitchen gate at the west end of its south wall.
+A5  Bathroom 2 = 4'5" (your answer) x 7'1" (ASSUMED same depth as kitchen).
+A6  Room 2 = 23'7" N-S (your answer). Width 12'7" at north -> 10'6" at south; ASSUMED the east wall
+    tapers and the west wall stays straight.
+A7  Hall kept at 21' x 32' (plan). This puts the hall west wall 3'10" east of Room 1's west face
+    (about 30% of Room 1, not the exact midpoint). Exactly at midpoint would make the hall ~18'2" wide.
+A8  Bathroom 1 ASSUMED 4' E-W x 8'6" N-S, in the hall's SE corner, sharing its east wall with the open square.
+A9  Stair room ASSUMED 7'0" x 10'5", its west wall 3'6" east of Room 2's west wall line (moved west
+    per your answer). Dog-leg placeholder: 16 risers x 7.5", 10" treads, landing at the south end,
+    going UP (direction assumed). No ceiling over the stair room.
+A10 Open square ASSUMED 10'6" x 10'10", no roof, full-height walls. "Openway" = no wall between it
+    and the stair room.
+A11 Pillars ASSUMED 15" round, centred on the line of the Hall Gate's east edge (your answer).
+    Pillar 2 ASSUMED 7'6" and Pillar 1 16'6" south of the hall's north wall. Room 2 Exit 1 centred
+    on Pillar 2's line ("visible directly").
+A12 Doors: room doors 3'0", bath doors 2'6", Room 1 exit 2'8" (all ASSUMED). Leaves drawn open 90 deg;
+    swings guessed: bathroom doors swing in, Room 2 doors into Room 2, kitchen gate into kitchen,
+    stair door into the stair room, Room 1 exit into the passage.
+A13 Hall Gate 5'8" wide (plan), 7'0" high, no door; ASSUMED to start 1'11" east of the passage's west end.
+A14 Balcony opening ASSUMED 6'0" x 7'0", no door yet, 19" from Room 1's south wall (your answer).
+    Balcony 3'6" x 14'8" (plan) ASSUMED aligned to the north face, so it sticks out ~8" past Room 1's
+    south wall. Floor at same level as rooms, railing 3'3" (ASSUMED).
+A15 Windows: 4' x 4' openings (your answer), sill ASSUMED 3'0" -> W1, W2, W4, W5, W6, W7, W8.
+    W3 (Bath 2) ASSUMED 2' x 2' at 5' sill. W9 = the white diamond, internal hall<->passage window,
+    ASSUMED 2'6" x 3'6" at 3'6" sill. Positions along the walls are estimated from the drawing.
+A16 Bath 2 door ASSUMED 1'9"-4'3" from Room 2's north wall; Room 2 Exit 2 centred on the passage.
+A17 The stair door is treated as the external entry (your note); no other front door modelled.

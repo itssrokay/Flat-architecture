@@ -1,0 +1,170 @@
+# MyFlat Viewer
+
+A local, browser-based 3D inspection tool for the MyFlat architecture model.
+The Blender file is the source of truth; this viewer only displays the GLB exported from it.
+
+## Start it
+
+**Easiest:** double-click `start.command` in Finder. It starts a local web server and opens your browser.
+
+**Or in Terminal:**
+
+```bash
+cd ~/Documents/MyFlat/MyFlat_Viewer
+python3 -m http.server 8080
+```
+
+Then open <http://localhost:8080> in Chrome, Safari or Firefox. Press `Ctrl+C` in the terminal to stop.
+
+If `python3` isn't installed, use Blender's own Python instead:
+
+```bash
+cd ~/Documents/MyFlat/MyFlat_Viewer
+"$(ls /Applications/Blender.app/Contents/Resources/*/python/bin/python3* | head -1)" -m http.server 8080
+```
+
+No `npm install` or internet is needed. Three.js is included in `vendor/`.
+The page must be served over http://; opening `index.html` directly as a file will not load the model.
+
+## Controls
+
+There are two ways to look at the flat.
+
+**Inside (walk mode).** This is where the viewer opens, and where every room button takes you. You stand in the room at eye level.
+
+| Action | How |
+|---|---|
+| Look around, including up at the ceiling | drag with the mouse (or one finger) |
+| Move | WASD or the arrow keys. Shift to run. |
+| Step forward / back | mouse wheel |
+| Raise / lower your eyes (to study the ceiling, or a low view) | **R** / **V** (or PageUp / PageDown). It stops short of the ceiling. |
+| Open / close a door, sash, wardrobe or curtain | click it, or look at it and press **E** |
+| Select a part for the inspector | click it |
+| Leave | **Overview** (top bar or HUD) |
+
+Walls, furniture and closed glass doors block you. Floors and stairs carry you.
+
+**Overview (orbit).** Use this to see the whole flat from outside.
+
+| Action | How |
+|---|---|
+| Orbit | left-drag. The camera can't go under the ground. |
+| Pan | right-drag (or two-finger drag) |
+| Zoom | mouse wheel, towards the point under the cursor |
+| Slide the view | WASD or the arrow keys. **Q** / **E** (or PageDown / PageUp) move down / up. Shift is faster. |
+| Go inside at a spot | **double-click a floor** |
+| Preset views | **Top** (plan, roof hidden) · **N S E W** (views *from* that side) · **Iso** |
+| Perspective / orthographic | **Persp / Ortho** button |
+| Room views | left panel: click a room to stand inside it. ▸ shows more viewpoints (corners, centre, from above). |
+
+Solid parts such as walls, slabs and ceilings are drawn one-sided. If the overview camera passes into a wall you see through it instead of a white screen.
+
+**Other controls**
+
+| Action | How |
+|---|---|
+| Roof | **Roof ON/OFF**. It comes back on automatically when you go inside. |
+| Section cut | bottom panel: tick **Cut above** and drag the height slider |
+| Visibility | category chips, plus **Show all**, **Hide all** and **Reset** |
+| Labels / Edges | toggles in the top bar |
+| Status mode | **Status** colours objects by the Blender `status` property, with a legend and counts |
+| Plan compare | **Plan compare**: top orthographic view, roof off, original plan overlaid; opacity slider; plan over the model or on the floor |
+| Inspector | click any object. **Part of** jumps to the door or window assembly. **Focus** and **Isolate category** buttons. |
+| Debug | **Debug**: name, status and size labels on every object, plus a searchable object list |
+| Save a viewpoint | **Copy current view** copies JSON you can paste into `src/config.js → viewpoints` |
+| Slow computer | open `http://localhost:8080/?lowq=1` (no shadows) |
+
+## Project layout
+
+```
+MyFlat_Viewer/
+  index.html            page + UI layout
+  start.command         double-click launcher (macOS)
+  src/
+    config.js           ALL settings: model list, categories, colours, eye height…
+    main.js             viewer: loading, cameras, rooms, visibility, status, plan, inspector
+    walk.js             first-person walkthrough with collision
+    styles.css
+  models/
+    models.json         list of models shown in the dropdown (+ default)
+    MyFlat_V1_Architecture.glb             exported from Blender
+    MyFlat_V1_Architecture.manifest.json   export report: every object, category, status
+  scripts/
+    export_glb.py       Blender → GLB exporter (never saves the .blend)
+    test_viewer.py      automated browser test (optional, needs Playwright)
+  vendor/three/         Three.js r180 (MIT), used offline
+```
+
+## Replacing the model (V2, V3 …)
+
+1. Open `MyFlat_V2_Architecture.blend` in Blender.
+2. In Blender's Text Editor, open `MyFlat_Viewer/scripts/export_glb.py` and click **Run Script**.
+   It writes `models/MyFlat_V2_Architecture.glb` and a `.manifest.json` next to it, then reverts the .blend so nothing is saved.
+   To run it without opening Blender:
+   ```bash
+   /Applications/Blender.app/Contents/MacOS/Blender -b ~/Documents/MyFlat/MyFlat_V2_Architecture.blend \
+       --python ~/Documents/MyFlat/MyFlat_Viewer/scripts/export_glb.py
+   ```
+3. Add it to `models/models.json` (and make it the default if you like):
+   ```json
+   { "default": "MyFlat_V2_Architecture.glb",
+     "models": [
+       { "file": "MyFlat_V2_Architecture.glb", "label": "V2 Architecture", "manifest": "MyFlat_V2_Architecture.manifest.json" },
+       { "file": "MyFlat_V1_Architecture.glb", "label": "V1 Architecture", "manifest": "MyFlat_V1_Architecture.manifest.json" } ] }
+   ```
+4. Reload the browser and pick it from the dropdown. You can also open `?model=MyFlat_V2_Architecture.glb` directly.
+
+Nothing in the viewer is tied to V1's object names. Rooms, labels, viewpoints, visibility groups, status colours and the plan overlay all come from metadata in the GLB:
+
+- `category`, `room`, `status`, `basis` and `dims_ft` are written by the exporter.
+- The plan overlay is the object named `PLAN_REFERENCE_OVERLAY`.
+
+The status bar checks that every object listed in the manifest is present in the GLB.
+
+## Interior-design variants later
+
+Export a design file, for example `MyFlat_V1_Room1_Japandi.blend`, the same way and add it to `models.json`.
+Objects in collections the exporter doesn't recognise (for example `13_FURNITURE`, `14_LIGHTING`) get a category from the collection name, such as `furniture` or `lighting`. They appear as new visibility chips automatically.
+Glass, colours and textures come through as standard glTF materials.
+
+## Notes and limits
+
+- The floor plan image is **not to scale**. It is stretched to the model extents exactly as in Blender, so treat it as a visual cross-check, not a measurement.
+- Walkthrough collides with walls, pillars, doors, windows, railings and stair parts, and follows floors and steps. Doors are modelled open, so you can walk through doorways.
+- Touch: one-finger drag looks around when you're inside; orbit, pan and zoom work with touch.
+- The section cut is a clean clipping plane. Cut faces are hollow rather than filled.
+
+## Interior design (Room 1)
+
+The viewer opens in **Room 1 · DEFAULT** at eye level. In the left panel, under **Interior design**:
+
+- **DEFAULT / A / B / C** switch between the four Room 1 designs. The camera stays exactly where it is, so you can flip between designs from the same spot.
+- **V1.1 arch / V1 baseline** show the bare architecture. V1 is the untouched baseline.
+- **Compare side by side with** splits the view: the current model on the left, the chosen one on the right, both driven by the same camera. Set it back to *— off —* to return to a single view.
+- The right panel shows the chosen design's notes: why it is the default, layout, wardrobe, window, balcony door, ceiling and lighting, balcony, and palette.
+- Room 1 has extra viewpoints (Rooms → Room 1 ▸): design view, towards the balcony, wardrobe and thick wall, and the balcony.
+
+The designs come from `~/Documents/MyFlat/MyFlat_V1_1_Room1_Interiors.blend`, which holds one collection per option (13_ROOM1_DEFAULT … 16_ROOM1_OPTION_C). They are built by `build_room1_interiors.py`. The architecture files are not modified.
+To re-export after editing the designs, open that .blend and in the Python console run:
+
+```python
+for opt in ["DEFAULT", "OPTION_A", "OPTION_B", "OPTION_C"]:
+    exec(open(bpy.path.abspath("//MyFlat_Viewer/scripts/export_glb.py")).read(),
+         {"DESIGN": opt, "OUT_NAME": "MyFlat_V1_1_Room1_" + opt})
+```
+
+Tests: `python3 scripts/test_viewer.py` (architecture), `python3 scripts/test_interiors.py` (designs) and `python3 scripts/test_navigation.py` (navigation). All need Playwright.
+
+## Immersive features
+
+| Feature | How |
+|---|---|
+| Full-screen immersive mode | **⛶ Immersive** (or **F**): hides all panels and shows a small floating toolbar (Overview, Walk, Room 1, Balcony, Open all, Close all, Lights, Night, Dims, Exit). Esc also exits. |
+| Open / close things | **Double-click** a wardrobe door, loft door, window sash, sliding balcony panel or sheer curtain. In walk mode, click it, or look at it (crosshair) and press **E**. **Open all / Close all** are in the bottom panel. The inspector has an Open / close button for the selected part. |
+| Walk onto the balcony | Open the balcony door first (double-click it, or E in Walk mode). A closed door is solid glass, just like the real one. |
+| Lights | **Lights ON/OFF** (**L**) switches every light fitting. **Day / Night** (**N**) darkens the sky; at night the downlights, lamps, cove strips and pendants actually light the room. |
+| Dimensions | **Dimensions**: labels show W × D × H of the nearest visible furniture, wardrobe, window and door parts, plus opening sizes and room sizes. Select any object to get W / D / H dimension lines on it. |
+| Material details | The right panel's **Material & finish schedule** lists, for each design, floor, walls, ceiling, wardrobe, furniture, window, balcony door, lighting and balcony specifications. |
+
+Openable parts and light fittings are defined in Blender (custom properties `interact`, `group`, `open_deg`, `slide_ft`, `light`, `lumens` set by `build_room1_interiors.py`), so new designs get the same behaviour automatically.
+Test: `python3 scripts/test_immersive.py`.

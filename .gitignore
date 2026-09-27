@@ -1,0 +1,6 @@
+.DS_Store
+*.blend1
+__pycache__/
+*.pyc
+Claude outputs/
+test_shots*/
