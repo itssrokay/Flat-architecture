@@ -5,10 +5,13 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { CONFIG } from './config.js';
-import { Walkthrough } from './walk.js';
-import { setupImmersive } from './immersive.js';
-import { setupExtras } from './extras.js';
+import { CONFIG } from './config.js?v=7';
+import { Walkthrough } from './walk.js?v=7';
+import { setupImmersive } from './immersive.js?v=7';
+import { setupExtras } from './extras.js?v=7';
+// bump together with the ?v= in index.html and the imports above whenever the viewer or models change,
+// so browsers never mix a new page with old cached scripts or models
+const BUILD = '7';
 
 const $ = (id) => document.getElementById(id);
 const FT = 0.3048;
@@ -246,7 +249,7 @@ async function loadModel(file) {
   app.modelFile = file;
   const url = CONFIG.modelDir + file;
   let gltf;
-  try { gltf = await new GLTFLoader().loadAsync(url); }
+  try { gltf = await new GLTFLoader().loadAsync(url + '?v=' + BUILD); }
   catch (e) { $('loading').textContent = `Could not load ${url}. Is the local server running from the MyFlat_Viewer folder? (${e.message || e})`; return; }
   const manifestFile = modelEntry(file).manifest || file.replace(/\.glb$/i, '.manifest.json');
   app.manifest = null;
@@ -714,7 +717,7 @@ async function setCompare(file) {
   if (app.compare) { scene2.remove(app.compare.root); app.compare = null; }
   $('compareSelect').value = file || '';
   if (!file) { $('compareCaption').classList.add('hidden'); labelRenderer.domElement.style.display = ''; _aspect = 0; return; }
-  const gltf = await new GLTFLoader().loadAsync(CONFIG.modelDir + file);
+  const gltf = await new GLTFLoader().loadAsync(CONFIG.modelDir + file + '?v=' + BUILD);
   const root = gltf.scene; const byCat = new Map(), meshes = [], edges = [];
   root.traverse(o => {
     const cat = catOf(o);

@@ -16,4 +16,4 @@ URL="http://localhost:$PORT/"
 echo "MyFlat Viewer running at $URL"
 echo "Keep this window open while you use the viewer. Press Ctrl+C to stop."
 (sleep 1; open "$URL") &
-exec "$PY" -m http.server "$PORT" --bind 127.0.0.1
+exec "$PY" scripts/serve.py "$PORT"
