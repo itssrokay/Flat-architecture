@@ -18,7 +18,7 @@ async def main():
         check("design categories present", all(c in st["cats"] for c in ["furniture", "wardrobe", "fenestration", "lighting", "ceiling"]), ",".join(st["cats"]))
         await pg.wait_for_timeout(2500); await pg.screenshot(path=f"{OUT}/01_default_start.png")
         cam0 = await pg.evaluate("() => viewer.camera.position.toArray()")
-        for key, f in [("A", "OPTION_A"), ("B", "OPTION_B"), ("C", "OPTION_C"), ("D", "OPTION_D"), ("DEF", "DEFAULT")]:
+        for key, f in [("A", "OPTION_A"), ("B", "OPTION_B"), ("C", "OPTION_C"), ("D", "OPTION_D"), ("E", "OPTION_E"), ("DEF", "DEFAULT")]:
             await pg.click(f'#designPanel button[data-file="MyFlat_V1_1_Room1_{f}.glb"]')
             await pg.wait_for_function(f"app.ready && app.modelFile === 'MyFlat_V1_1_Room1_{f}.glb' && !document.getElementById('loading').checkVisibility()")
             await pg.wait_for_timeout(2500); await pg.screenshot(path=f"{OUT}/02_{f}_eye.png")
@@ -33,9 +33,19 @@ async def main():
         check("Option D: budget table shown, rows add up to the total, total within Rs 1.5-2 lakh",
               bud["shown"] and int(bud["total"].replace("₹", "").replace(",", "")) == bud["sum"] and 150000 <= bud["sum"] <= 200000, str(bud))
         await pg.wait_for_timeout(1500); await pg.screenshot(path=f"{OUT}/02b_OPTION_D_budget.png")
+        # Option E: simple & practical, Rs 1-1.3 lakh, standing desk + fan, nothing in the walkways
+        await pg.click('#designPanel button[data-file="MyFlat_V1_1_Room1_OPTION_E.glb"]')
+        await pg.wait_for_function("app.ready && app.modelFile === 'MyFlat_V1_1_Room1_OPTION_E.glb'")
+        be = await pg.evaluate("""() => { const n = app.designNotes.OPTION_E.budget; const sum = n.rows.reduce((s, r) => s + +r[2].replace(/[^0-9]/g, ''), 0);
+            const has = (k) => !!viewer.scene.getObjectByName('R1_OPE_' + k);
+            return { total: n.total, sum, desk: has('STANDING_DESK_TOP'), fan: has('CEILING_FAN_MOTOR'), chair: has('ACCENT_CHAIR'), fc: has('FALSE_CEILING_BAND') }; }""")
+        check("Option E: budget adds up within Rs 1-1.3 lakh; standing desk + fan; no lounge chair, no false ceiling",
+              int(be["total"].replace("₹", "").replace(",", "")) == be["sum"] and 100000 <= be["sum"] <= 130000 and be["desk"] and be["fan"] and not be["chair"] and not be["fc"], str(be))
+        await pg.wait_for_timeout(1500); await pg.screenshot(path=f"{OUT}/02c_OPTION_E_budget.png")
         await pg.click('#designPanel button[data-file="MyFlat_V1_1_Room1_DEFAULT.glb"]')
         await pg.wait_for_function("app.ready && app.modelFile === 'MyFlat_V1_1_Room1_DEFAULT.glb'")
         # W1 placeholder replaced; architecture baseline has no design objects
+        check("DEFAULT: the lounge chair that stood 1 inch from the bed is gone", await pg.evaluate("() => !viewer.scene.getObjectByName('R1_DEF_ACCENT_CHAIR')"))
         rep = await pg.evaluate("() => !viewer.scene.getObjectByName('WINDOW_W1_FRAME') && !!viewer.scene.getObjectByName('R1_DEF_W1_OUTER_FRAME')")
         check("generic W1 replaced by designed window", rep)
         # inspector on a design object

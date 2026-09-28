@@ -96,7 +96,7 @@ export async function setupLearn(ctx) {
     const out = [];
     for (const p of patterns || []) {
       const re = new RegExp(p);
-      for (const o of app.objects) { const n = o.name.replace(/^R1_(DEF|OPA|OPB|OPC|OPD)_/, ''); if (re.test(n) || re.test(o.name)) out.push(o.obj); }
+      for (const o of app.objects) { const n = o.name.replace(/^R1_(DEF|OPA|OPB|OPC|OPD|OPE)_/, ''); if (re.test(n) || re.test(o.name)) out.push(o.obj); }
       if (out.length) break;
     }
     return out;
@@ -147,7 +147,7 @@ export async function setupLearn(ctx) {
   }
   function renderCompare() {
     const c = guide.pages.compare; if (!c) return '';
-    const name = { DEFAULT: 'DEFAULT', OPTION_A: 'A', OPTION_B: 'B', OPTION_C: 'C', OPTION_D: 'D' }, cur = designKey();
+    const name = { DEFAULT: 'DEFAULT', OPTION_A: 'A', OPTION_B: 'B', OPTION_C: 'C', OPTION_D: 'D', OPTION_E: 'E' }, cur = designKey();
     return `<p class="lead">${esc(U('comparelead'))}</p><div class="ctable"><table><tr><th></th>${c.cols.map(k => `<th class="${k === cur ? 'cur' : ''}">${name[k] || k}</th>`).join('')}</tr>` +
       c.rows.map((r, i) => `<tr><td class="rh">${esc(r)}</td>${c.cols.map(k => `<td class="${k === cur ? 'cur' : ''}">${esc(c.cells[k][i])}</td>`).join('')}</tr>`).join('') + `</table></div>`;
   }

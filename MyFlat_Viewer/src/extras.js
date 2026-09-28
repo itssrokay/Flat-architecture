@@ -12,7 +12,7 @@ const store = {
   get(k) { try { return localStorage.getItem('myflat.' + k); } catch (e) { return null; } },
   set(k, v) { try { localStorage.setItem('myflat.' + k, v); } catch (e) { } },
 };
-function pretty(n) { return (n || '').replace(/^R1_(DEF|OPA|OPB|OPC|OPD|A|B|C)_/, '').replace(/\.\d+$/, '').replace(/_/g, ' ').toLowerCase().replace(/^\w/, c => c.toUpperCase()); }
+function pretty(n) { return (n || '').replace(/^R1_(DEF|OPA|OPB|OPC|OPD|OPE|A|B|C)_/, '').replace(/\.\d+$/, '').replace(/_/g, ' ').toLowerCase().replace(/^\w/, c => c.toUpperCase()); }
 
 export function setupExtras(ctx) {
   const { app, scene, renderer, controls, walk, persp, $, fmtFt, CONFIG } = ctx;

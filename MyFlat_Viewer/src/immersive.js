@@ -11,7 +11,7 @@ const YAXIS = new THREE.Vector3(0, 1, 0);
 // things a swinging sash / door / sliding panel can bump into
 const OBSTACLE_CATS = ['furniture', 'decor', 'lighting', 'plants'];
 export function prettyName(n) {
-  return (n || '').replace(/^R1_(DEF|OPA|OPB|OPC|OPD|A|B|C)_/, '').replace(/\.\d+$/, '').replace(/_/g, ' ').toLowerCase();
+  return (n || '').replace(/^R1_(DEF|OPA|OPB|OPC|OPD|OPE|A|B|C)_/, '').replace(/\.\d+$/, '').replace(/_/g, ' ').toLowerCase();
 }
 
 export function setupImmersive(ctx) {

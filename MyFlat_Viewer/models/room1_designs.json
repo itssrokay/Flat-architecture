@@ -4,7 +4,7 @@
   "tagline": "Bed faces the balcony, wardrobe fills the alcove, study-dresser on the thick wall.",
   "why": "It uses every piece of the L-shaped room for what it is best at. The 5'4\" x 3'4\" alcove beside the door is exactly the size of a 3-door wardrobe, so storage costs no floor space. The bed sits on the only long solid wall (east) and faces the 10'5\" balcony opening, giving the best view and morning light. The 7'3\" thick south wall becomes a study-cum-dresser. That leaves a clear 5'8\" zone between the bed and the balcony and a 3'10\" walkway from the door. Aluminium sliders, laminate and vitrified tile are standard, affordable and low-maintenance in Indian conditions.",
   "sections": {
-   "Layout": "Queen bed (5'x6'6\") on east wall facing west; bedside tables both sides; study/dresser 4' on thick-wall face; compact lounge chair + floor lamp on north wall; 5'x7' rug.",
+   "Layout": "Queen bed (5'x6'6\") on east wall facing west; bedside tables both sides; study/dresser 4' on thick-wall face; floor lamp by the study desk (no lounge chair: the room has no free spot for one); 5'x7' rug.",
    "Wardrobe": "3-door hinged, 5'3\" x 2' x 7'6\" in the SE alcove + loft to ceiling. Off-white matt laminate with oak inset strips, black profile handles, soft-close hinges. Clears the door jamb by 2\".",
    "Window W1": "3-track aluminium sliding window (charcoal): 2 glass shutters (5 mm toughened, clear) + 1 SS-304 mosquito-mesh shutter. Flat-bar MS safety grill outside the glass, colour-matched. Black granite inner sill with 4\" ledge + external drip sill. Sheer + sage blackout drape on ceiling track.",
    "Balcony door": "3-track, 3-panel aluminium slider (1 fixed + 2 sliding), 8 mm clear toughened glass, charcoal frame, D-handle with multipoint lock. Opens 2/3 of the 10'5\" width. Retractable pleated mosquito mesh. Black granite threshold with low-profile track, 2\" step down, sloped nosing (water check). Full-width sheer + blackout drapes stacking at both ends.",
@@ -126,7 +126,7 @@
      ],
      [
       "Accent",
-      "Compact rust-fabric lounge chair + linen-shade floor lamp; 5'×7' flat-weave wool rug"
+      "Linen-shade floor lamp beside the study desk; 5'×7' flat-weave wool rug (the old lounge chair was removed: it stood 1\" from the bed)"
      ]
     ]
    },
@@ -848,6 +848,265 @@
      [
       "Light",
       "Solar string lights, IP65 bulkhead"
+     ]
+    ]
+   }
+  ]
+ },
+ "OPTION_E": {
+  "title": "Option E · Simple & Practical",
+  "tagline": "About ₹1,28,900: plain paint, a ready-made bed, a carpenter wardrobe and a standing desk. No panelling, no false ceiling, nothing in the way.",
+  "why": "This is how an interior designer keeps a small bedroom on a budget: spend on what you use every day (a good wardrobe, bed, mattress, a proper desk, a fan and good light) and skip what only looks fancy. The walls are simply painted: one washable paint, two shades. Nothing hangs from the ceiling except the fan and lights, the builder's windows stay, and no furniture stands in a walkway. Unlike DEFAULT there is no lounge chair: this room has no free spot where a chair can be used without blocking the path beside the bed. You sit at the desk, on the bed, or later on the balcony.",
+  "sections": {
+   "Layout": "Bed centred on the east wall (the only long solid wall), facing the balcony. One bedside on the window side and a floating shelf on the door side, so both walkways stay about 2'2\" wide. Standing desk and a full-length mirror on the thick wall. Fan over the foot of the bed. 5' of open floor between the bed and the balcony door.",
+   "Walls & paint": "One washable emulsion everywhere (Asian Paints Apcolite Premium or a Berger / Nerolac equivalent, matt or low-sheen). Warm off-white on three walls, pale sage on the bed wall, ceiling white. Process: fill cracks → sand → primer on the patches → 2 coats. No panelling, wallpaper or texture.",
+   "Ceiling & lighting": "No false ceiling. 1200 mm BLDC fan (~30 W, with remote). 4 surface LED panels (4000K) placed away from the pillows, 2 warm wall reading lights, a 20 W LED batten under the desk shelf. The AC point and pipe sleeve are done now so a split AC can go in later without breaking the new paint.",
+   "Standing desk": "Single-motor electric sit-stand desk, 4'×2', with memory presets. Set the standing height so your elbows are at 90° (about 3'5\" for someone 5'6\"–5'8\"); sitting height about 2'4\". Monitor top at eye level. Anti-fatigue mat to stand on; the mesh chair tucks under when you stand. Daylight comes from the balcony at your side, so there's no glare on the screen.",
+   "Wardrobe": "Local carpenter: 3 hinged doors and a loft up to the ceiling, HDHMR / MR ply body, frosty-white laminate, basic soft-close hinges, SS bar handles. Hinged doors cost less and last longer than sliding ones, and the room door opens outwards, so nothing clashes.",
+   "Window & door": "The builder's aluminium sliders are kept (clean the tracks, oil the rollers). A pleated mosquito mesh is added to the balcony door. Beige blackout eyelet curtains on plain SS rods, with sheers on the balcony door for daytime privacy.",
+   "Palette": "Warm off-white, pale sage, light oak, white, beige, denim blue."
+  },
+  "budget": {
+   "total": "₹1,28,900",
+   "rows": [
+    [
+     "Wardrobe",
+     "3-door hinged + loft, local carpenter, HDHMR / MR ply, 1 mm laminate outside, 0.8 mm inside, 5'3\" × 2' × 9'10\"",
+     "₹37,000"
+    ],
+    [
+     "Bed",
+     "Queen engineered-wood bed with box storage, light-oak finish (Wakefit Orion class)",
+     "₹16,000"
+    ],
+    [
+     "Mattress",
+     "6\" memory-foam / HR-foam, queen",
+     "₹10,000"
+    ],
+    [
+     "Standing desk",
+     "Single-motor electric sit-stand frame + 4'×2' top, 3 memory presets",
+     "₹18,000"
+    ],
+    [
+     "Desk chair",
+     "Basic ergonomic mesh chair for sitting mode",
+     "₹4,000"
+    ],
+    [
+     "Desk wall",
+     "2 floating shelves, 20 W LED batten under the shelf, full-length mirror, anti-fatigue mat",
+     "₹4,900"
+    ],
+    [
+     "Bedside",
+     "1 ready-made bedside table + 1 floating wall shelf",
+     "₹2,300"
+    ],
+    [
+     "Paint",
+     "~560 sq ft walls + ceiling: crack filling, primer on patches, 2 coats washable emulsion (Apcolite Premium class); pale sage on the bed wall",
+     "₹8,500"
+    ],
+    [
+     "Ceiling fan",
+     "1200 mm BLDC fan with remote, incl. fitting",
+     "₹4,000"
+    ],
+    [
+     "Lighting",
+     "4 surface LED panels, 2 wall reading lights, electrician",
+     "₹5,500"
+    ],
+    [
+     "AC provision",
+     "16 A AC point + pipe sleeve for a split AC later (the AC itself is not included)",
+     "₹2,500"
+    ],
+    [
+     "Curtains",
+     "Beige blackout eyelet curtains (balcony 4 + W1 2 panels) + 2 sheers, SS rods",
+     "₹6,500"
+    ],
+    [
+     "Balcony mesh",
+     "Retractable pleated mosquito mesh for the balcony door",
+     "₹6,500"
+    ],
+    [
+     "Soft",
+     "White cotton bedsheet + denim dohar, cushions, 2'×5' cotton runner",
+     "₹2,000"
+    ],
+    [
+     "Balcony",
+     "Tulsi, money plant, snake plant in terracotta pots",
+     "₹1,200"
+    ]
+   ],
+   "note": "2026 metro prices, rounded; get 2–3 local quotes. Not included: the AC itself (roughly ₹35–45k for a 1.5 t inverter split), your monitor and laptop, re-flooring (about ₹30–40k if the floor is bare cement), new windows (the builder's are kept).",
+   "savings": "To bring it close to ₹1 lakh: build the loft later (−₹8k), only touch up the builder's paint if it's in good shape (−₹5.5k), skip the balcony mesh if the door already has one (−₹6.5k), use a dining chair for sitting mode for now (−₹4k), one wall light only (−₹700). That comes to about ₹1,04,200."
+  },
+  "schedule": [
+   {
+    "area": "Floor",
+    "items": [
+     [
+      "Existing",
+      "Keep the builder's floor; deep-clean and re-grout"
+     ],
+     [
+      "Rug",
+      "2'×5' cotton runner on the door side of the bed"
+     ]
+    ]
+   },
+   {
+    "area": "Walls",
+    "items": [
+     [
+      "Prep",
+      "Fill cracks with putty only where needed, sand, primer on the patches"
+     ],
+     [
+      "Paint",
+      "2 coats washable emulsion (Apcolite Premium / Berger / Nerolac equivalent), matt or low-sheen"
+     ],
+     [
+      "Colours",
+      "Warm off-white on 3 walls; pale sage on the bed wall (same paint); ceiling white"
+     ]
+    ]
+   },
+   {
+    "area": "Ceiling",
+    "items": [
+     [
+      "Finish",
+      "Existing plaster, repainted white; no false ceiling"
+     ],
+     [
+      "Fan",
+      "1200 mm BLDC fan, 1'4\" downrod, blades at 8'8\", over the foot of the bed"
+     ],
+     [
+      "Lights",
+      "4 × 15 W surface LED panels, 4000K, away from the pillows"
+     ]
+    ]
+   },
+   {
+    "area": "Wardrobe",
+    "items": [
+     [
+      "Carcass",
+      "18 mm HDHMR / MR ply"
+     ],
+     [
+      "Shutters",
+      "Frosty-white 1 mm laminate, 3 hinged doors"
+     ],
+     [
+      "Hardware",
+      "Basic soft-close hinges, 10\" SS bar handles"
+     ],
+     [
+      "Loft",
+      "Full-width loft to the ceiling"
+     ]
+    ]
+   },
+   {
+    "area": "Furniture",
+    "items": [
+     [
+      "Bed",
+      "Queen engineered-wood bed with box storage, light oak"
+     ],
+     [
+      "Mattress",
+      "6\" memory foam / HR foam"
+     ],
+     [
+      "Bedside",
+      "1 bedside table (window side) + 1 floating shelf (door side)"
+     ]
+    ]
+   },
+   {
+    "area": "Desk corner",
+    "items": [
+     [
+      "Desk",
+      "Single-motor electric sit-stand desk, 4'×2', 2'4\"–3'10\" range"
+     ],
+     [
+      "Screen",
+      "Monitor on a stand, top edge at eye level"
+     ],
+     [
+      "Wall",
+      "2 floating shelves with a 20 W LED batten under the lower one"
+     ],
+     [
+      "Mirror",
+      "Full-length 5'6\"×1'3\" mirror on ply, beside the desk"
+     ],
+     [
+      "Comfort",
+      "Anti-fatigue mat; mesh chair tucks under the desk"
+     ]
+    ]
+   },
+   {
+    "area": "Window & door",
+    "items": [
+     [
+      "W1",
+      "Builder's aluminium slider kept (clean tracks, oil rollers)"
+     ],
+     [
+      "Balcony",
+      "Builder's slider kept + retractable pleated mosquito mesh"
+     ],
+     [
+      "Curtains",
+      "Beige blackout eyelet curtains + sheers on SS rods"
+     ]
+    ]
+   },
+   {
+    "area": "Lighting & electrical",
+    "items": [
+     [
+      "Reading",
+      "2 wall reading lights, 7 W warm white"
+     ],
+     [
+      "Desk",
+      "20 W LED batten under the shelf"
+     ],
+     [
+      "AC",
+      "16 A point + pipe sleeve on the north wall for a 1.5 t split AC later"
+     ],
+     [
+      "Sockets",
+      "2 sockets + USB at the desk, 1 on each side of the bed"
+     ]
+    ]
+   },
+   {
+    "area": "Balcony",
+    "items": [
+     [
+      "Plants",
+      "Tulsi, money plant, snake plant in terracotta pots"
+     ],
+     [
+      "Later",
+      "2 folding chairs when the budget allows (~₹2,500)"
      ]
     ]
    }

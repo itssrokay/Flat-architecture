@@ -23,7 +23,7 @@ async def main():
         errs = []; pg.on("pageerror", lambda e: errs.append(str(e))); pg.on("console", lambda m: m.type == "error" and errs.append(m.text))
         await pg.goto(BASE); await pg.wait_for_function("window.app && app.ready")
         n = await pg.evaluate("() => viewer.imm.groups.size"); check("openable parts found (DEFAULT)", n >= 8, f"{n} groups")
-        for f, label, yft in [("DEFAULT", "DEFAULT", -3.0), ("OPTION_A", "A", -3.0), ("OPTION_B", "B", -4.0), ("OPTION_C", "C", -3.0), ("OPTION_D", "D", -6.0)]:
+        for f, label, yft in [("DEFAULT", "DEFAULT", -3.0), ("OPTION_A", "A", -3.0), ("OPTION_B", "B", -4.0), ("OPTION_C", "C", -3.0), ("OPTION_D", "D", -6.0), ("OPTION_E", "E", -6.0)]:
             if f != "DEFAULT":
                 await pg.evaluate(f"viewer.switchModel('MyFlat_V1_1_Room1_{f}.glb')"); await pg.wait_for_function(f"app.ready && app.modelFile.endsWith('{f}.glb') && viewer.imm.groups.size > 0")
             closed = await pg.evaluate(WALK, [False, yft]); opened = await pg.evaluate(WALK, [True, yft])

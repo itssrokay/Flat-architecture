@@ -732,6 +732,46 @@
    "groupLabel": "Lighting",
    "img": "https://www.google.com/search?tbm=isch&q=pendant+light+bedside",
    "wiki": "https://en.wikipedia.org/w/index.php?search=Pendant+light"
+  },
+  {
+   "term": "BLDC fan",
+   "plain": "A ceiling fan with a brushless (BLDC) motor: uses about 28–35 W instead of 70–75 W for an old fan, runs quietly and usually comes with a remote. Costs a bit more but pays back in electricity.",
+   "match": "CEILING_FAN",
+   "aka": [],
+   "group": "Lighting",
+   "groupLabel": "Lighting",
+   "img": "https://www.google.com/search?tbm=isch&q=BLDC+ceiling+fan+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Brushless+DC+electric+motor"
+  },
+  {
+   "term": "Standing desk",
+   "plain": "A desk whose height changes (by motor or crank) so you can work standing or sitting. Good ones hold their height steadily and have memory buttons for your two heights.",
+   "match": "STANDING_DESK",
+   "aka": [],
+   "group": "Decor",
+   "groupLabel": "Decor",
+   "img": "https://www.google.com/search?tbm=isch&q=electric+standing+desk+home",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Standing+desk"
+  },
+  {
+   "term": "Anti-fatigue mat",
+   "plain": "A cushioned rubber / foam mat to stand on at a standing desk; it makes long standing much easier on the feet and knees.",
+   "match": "ANTI_FATIGUE",
+   "aka": [],
+   "group": "Decor",
+   "groupLabel": "Decor",
+   "img": "https://www.google.com/search?tbm=isch&q=anti+fatigue+mat+standing+desk",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Anti-fatigue+mat"
+  },
+  {
+   "term": "AC point & pipe sleeve",
+   "plain": "Getting ready for an AC before painting: a separate 16 A power point near where the indoor unit will go, and a pipe hole (sleeve) through the outer wall for the copper pipes and drain. Doing it now means no broken paint later.",
+   "match": "AC_SPACE",
+   "aka": [],
+   "group": "Lighting",
+   "groupLabel": "Lighting",
+   "img": "https://www.google.com/search?tbm=isch&q=split+AC+indoor+unit+bedroom+wall+pipe+sleeve",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Air+conditioning"
   }
  ],
  "designs": {
@@ -1383,6 +1423,130 @@
     ],
     "img": "https://www.google.com/search?tbm=isch&q=small+balcony+bistro+set+plants+India"
    }
+  ],
+  "OPTION_E": [
+   {
+    "title": "Floor",
+    "see": "The builder's floor stays. A small cotton runner where you step out of bed.",
+    "layers": [
+     "RCC slab",
+     "Existing floor as handed over (usually vitrified tile)",
+     "Deep-clean + re-grout the joints",
+     "2'×5' cotton runner"
+    ],
+    "simple": "Nothing new is laid. If your floor is bare grey cement (IPS), add vitrified tiles: about ₹30–40k for Room 1.",
+    "where": null,
+    "paint": null,
+    "show": [
+     "RUNNER_RUG",
+     "FLOOR_R1"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=cotton+runner+rug+beside+bed+vitrified+tile"
+   },
+   {
+    "title": "Walls",
+    "see": "Warm off-white walls; the bed wall is a pale sage (a soft grey-green). Just paint.",
+    "layers": [
+     "Brick / block wall (builder)",
+     "Cement plaster (builder)",
+     "Putty only where cracked or uneven (builder's putty kept)",
+     "Primer on the patched spots",
+     "2 coats washable emulsion: warm off-white, pale sage on the bed wall"
+    ],
+    "simple": "One paint, two shades. The sage wall costs nothing extra: it's the same paint tinted a different colour. Washable paint matters in a room with a desk: marks wipe off.",
+    "where": "Putty + primer + paint go on the INSIDE faces of all Room 1 walls and the ceiling. Outside faces of outer walls get exterior paint (no putty). Balcony walls get exterior-grade paint.",
+    "paint": "Mid-range washable emulsion, e.g. Asian Paints Apcolite Premium Emulsion (about ₹270/L), or a Berger / Nerolac equivalent, in matt or low-sheen. Tractor Emulsion is cheaper but marks don't wipe off well. About 10 L for 2 coats of walls + ceiling. Try a sample pot of the sage on the wall first: colours look darker on a big wall.",
+    "show": [
+     "BED_WALL_PALE_SAGE",
+     "^WALL_INT_R1"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=pale+sage+green+bedroom+wall+white+walls+India"
+   },
+   {
+    "title": "Ceiling",
+    "see": "The original flat ceiling, painted white. A fan and 4 flat round lights, nothing else.",
+    "layers": [
+     "RCC slab (your ceiling)",
+     "Plaster / POP punning (builder)",
+     "Putty only where needed",
+     "Primer",
+     "Ceiling-white matt paint, 2 coats"
+    ],
+    "simple": "No false ceiling. The BLDC fan uses about a third of the power of an old fan. The 4 LED panels are screwed directly onto the ceiling, placed so none shines into your eyes when you lie in bed.",
+    "where": null,
+    "paint": null,
+    "show": [
+     "CEILING_FAN_MOTOR",
+     "DOWNLIGHT_1"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=BLDC+ceiling+fan+bedroom+surface+LED+panel+plain+ceiling"
+   },
+   {
+    "title": "Wardrobe",
+    "see": "White 3-door wardrobe with a loft, fitted into the alcove.",
+    "layers": [
+     "18 mm HDHMR or MR plywood body (carpenter)",
+     "Frosty-white 1 mm laminate outside, 0.8 mm inside",
+     "Basic soft-close hinges, steel bar handles",
+     "Loft up to the ceiling for suitcases"
+    ],
+    "simple": "Carpenter-made, plain white: the best value. Hinged doors are cheaper and last longer than sliding ones.",
+    "where": null,
+    "paint": null,
+    "show": [
+     "WARDROBE_CARCASS"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=white+laminate+3+door+wardrobe+with+loft+India"
+   },
+   {
+    "title": "Standing desk",
+    "see": "A desk that goes up and down at the press of a button, with a mirror beside it.",
+    "layers": [
+     "Electric lifting frame (motor inside one leg)",
+     "4'×2' laminated board top",
+     "Monitor on a stand, top edge at eye level",
+     "Anti-fatigue mat on the floor"
+    ],
+    "simple": "Stand for a while, sit for a while: switch every 30–60 minutes. Elbows at 90° when typing. The mesh chair slides under the desk when you stand.",
+    "where": null,
+    "paint": null,
+    "show": [
+     "STANDING_DESK_TOP"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=electric+standing+desk+home+bedroom+India"
+   },
+   {
+    "title": "Window & balcony door",
+    "see": "The builder's white aluminium sliders, kept. A folding mosquito mesh is added to the balcony door.",
+    "layers": [
+     "Builder's aluminium frames and glass (kept)",
+     "Pleated mosquito mesh on the balcony door",
+     "Beige blackout curtains + sheers on SS rods"
+    ],
+    "simple": "Nothing is replaced: cleaning the tracks and oiling the rollers makes old sliders run smoothly again.",
+    "where": null,
+    "paint": null,
+    "show": [
+     "BALCONY_DOOR_FRAME",
+     "W1_OUTER_FRAME"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=pleated+mosquito+mesh+sliding+balcony+door"
+   },
+   {
+    "title": "Balcony",
+    "see": "Existing balcony with 3 potted plants.",
+    "layers": [
+     "Existing balcony floor",
+     "Tulsi, money plant, snake plant in terracotta pots"
+    ],
+    "simple": "Keep it simple now; add 2 folding chairs later (about ₹2,500).",
+    "where": null,
+    "paint": null,
+    "show": [
+     "BALCONY_PLANT_1"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=small+balcony+tulsi+money+plant+terracotta+pots"
+   }
   ]
  },
  "pages": {
@@ -1773,7 +1937,8 @@
     "OPTION_A",
     "OPTION_B",
     "OPTION_C",
-    "OPTION_D"
+    "OPTION_D",
+    "OPTION_E"
    ],
    "cells": {
     "DEFAULT": [
@@ -1820,6 +1985,15 @@
      "Domal 3-track slider",
      "Domal 4-panel slider",
      "₹1.93 lakh"
+    ],
+    "OPTION_E": [
+     "Existing floor + cotton runner",
+     "One washable emulsion (Apcolite-class), pale sage bed wall",
+     "Plain; BLDC fan + surface LED panels",
+     "3-door laminate + loft (carpenter)",
+     "Builder's slider kept",
+     "Builder's slider kept + pleated mesh",
+     "₹1.29 lakh"
     ]
    }
   }

@@ -40,6 +40,7 @@ export const CONFIG = {
     { key: 'balcony',         label: 'Balcony decor' },
     { key: 'plants',          label: 'Plants' },
     { key: 'decor',           label: 'Decor' },
+    { key: 'fixtures',        label: 'Fan & AC' },
   ],
   planCategory: 'plan_reference',            // handled by Plan Compare, not a toggle
   planOverlayName: 'PLAN_REFERENCE_OVERLAY', // object in the GLB carrying the plan image

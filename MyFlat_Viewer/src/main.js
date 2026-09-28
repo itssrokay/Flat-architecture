@@ -5,16 +5,16 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { CONFIG } from './config.js?v=12';
-import { Walkthrough } from './walk.js?v=12';
-import { setupImmersive } from './immersive.js?v=12';
-import { setupExtras } from './extras.js?v=12';
-import { setupLearn } from './learn.js?v=12';
-import { setupI18n } from './i18n.js?v=12';
-import { setupSimple } from './simple.js?v=12';
+import { CONFIG } from './config.js?v=13';
+import { Walkthrough } from './walk.js?v=13';
+import { setupImmersive } from './immersive.js?v=13';
+import { setupExtras } from './extras.js?v=13';
+import { setupLearn } from './learn.js?v=13';
+import { setupI18n } from './i18n.js?v=13';
+import { setupSimple } from './simple.js?v=13';
 // bump together with the ?v= in index.html and the imports above whenever the viewer or models change,
 // so browsers never mix a new page with old cached scripts or models
-const BUILD = '12';
+const BUILD = '13';
 
 const $ = (id) => document.getElementById(id);
 // language (English / Hindi): translates the interface in place; design notes + Learn guide load their Hindi files

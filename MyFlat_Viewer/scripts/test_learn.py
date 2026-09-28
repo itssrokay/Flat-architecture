@@ -17,10 +17,10 @@ async def main():
         n = await pg.evaluate("document.querySelectorAll('#learn .lcard').length")
         check("Learn opens on 'Your room' with surface cards", n >= 6, f"{n} cards")
         await pg.screenshot(path=f"{OUT}/01_your_room.png")
-        for f in ["DEFAULT", "OPTION_A", "OPTION_B", "OPTION_C", "OPTION_D"]:
+        for f in ["DEFAULT", "OPTION_A", "OPTION_B", "OPTION_C", "OPTION_D", "OPTION_E"]:
             await pg.evaluate(f"viewer.switchModel('MyFlat_V1_1_Room1_{f}.glb')"); await pg.wait_for_function(f"app.ready && app.modelFile.endsWith('{f}.glb')")
             miss = await pg.evaluate("""async () => { const g = await fetch('./models/learn_guide.json').then(r => r.json()); const k = '%s';
-              return g.designs[k].filter(c => c.show.length && !c.show.some(p => app.objects.some(o => new RegExp(p).test(o.name.replace(/^R1_(DEF|OPA|OPB|OPC|OPD)_/, '')) || new RegExp(p).test(o.name)))).map(c => c.title); }""" % f)
+              return g.designs[k].filter(c => c.show.length && !c.show.some(p => app.objects.some(o => new RegExp(p).test(o.name.replace(/^R1_(DEF|OPA|OPB|OPC|OPD|OPE)_/, '')) || new RegExp(p).test(o.name)))).map(c => c.title); }""" % f)
             check(f"{f}: every surface card points at a real object", not miss, str(miss))
         await pg.click("#learn .showme >> nth=0"); await pg.wait_for_timeout(300); await pg.wait_for_function("!app.tween")
         ins = await pg.evaluate("document.getElementById('inspector').innerText")
@@ -35,11 +35,11 @@ async def main():
         check("Dictionary search finds 'Wall putty'", "Wall putty" in terms, ", ".join(terms))
         await pg.click("#learn .ltabs button[data-t=compare]"); await pg.wait_for_timeout(300)
         cols = await pg.evaluate("document.querySelectorAll('#learn .ctable th').length")
-        check("Compare table shows all 5 designs", cols == 6, f"{cols - 1} designs")
+        check("Compare table shows all 6 designs", cols == 7, f"{cols - 1} designs")
         await pg.click("#learn .ltabs button[data-t=steps]"); await pg.wait_for_timeout(300)
         steps = await pg.evaluate("document.querySelectorAll('#learn ol.steps li').length")
         check("Step-by-step order of work", steps >= 10, f"{steps} steps")
-        ex = await pg.evaluate("viewer.learn.explain(viewer.scene.getObjectByName('R1_OPD_WARDROBE_CARCASS')).map(t => t.term)")
+        ex = await pg.evaluate("viewer.learn.explain(viewer.scene.getObjectByName('R1_OPE_WARDROBE_CARCASS')).map(t => t.term)")
         check("explain(): wardrobe carcass gets plain-language terms", len(ex) > 0, str(ex))
         check("no JS errors", not errs, "; ".join(errs[:3]))
         await b.close()

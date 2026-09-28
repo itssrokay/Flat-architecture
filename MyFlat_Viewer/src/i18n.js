@@ -40,7 +40,7 @@ const D = {
   // categories
   'Walls': 'दीवारें', 'Floors': 'फ़र्श', 'Ceiling / Roof': 'छत', 'Doors': 'दरवाज़े', 'Windows': 'खिड़कियाँ', 'Pillars': 'पिलर', 'Beams': 'बीम', 'Stairs': 'सीढ़ियाँ',
   'Railings': 'रेलिंग', 'Vents': 'रोशनदान', 'Ground': 'ज़मीन', 'Furniture': 'फ़र्नीचर', 'Wardrobe': 'अलमारी', 'Window & door systems': 'खिड़की-दरवाज़े', 'Curtains & soft': 'पर्दे और कपड़े',
-  'False ceiling': 'फ़ॉल्स सीलिंग', 'Lighting': 'रोशनी', 'Finishes': 'फ़िनिश', 'Balcony decor': 'बालकनी सजावट', 'Plants': 'पौधे', 'Decor': 'सजावट',
+  'False ceiling': 'फ़ॉल्स सीलिंग', 'Lighting': 'रोशनी', 'Finishes': 'फ़िनिश', 'Balcony decor': 'बालकनी सजावट', 'Fan & AC': 'पंखा और AC', 'Plants': 'पौधे', 'Decor': 'सजावट',
   // status names
   'Confirmed': 'पक्का', 'Plan value': 'नक्शे से', 'Derived': 'निकाला गया', 'Provisional': 'अनुमान', 'Reference': 'संदर्भ', 'Interior design': 'इंटीरियर डिज़ाइन',
   // walk HUD, touch, cards
@@ -72,7 +72,7 @@ const RX = [
   [/^Budget · (.+)$/, (m, a) => `बजट · ${a}`],
   [/^(.+) can't open further: it hits the (.+)$/, (m, a, b) => `${a} और नहीं खुल सकता: ${b} से टकरा रहा है`],
   [/^double-click \(or click inside\) to open \/ close$/, () => 'खोलने / बंद करने के लिए डबल-क्लिक करें'],
-  [/^Room 1 · (DEFAULT|Option [A-D]) \((.+)\)$/, (m, a, b) => `कमरा 1 · ${a.replace('Option', 'विकल्प')} (${({ 'Warm Contemporary': 'गर्म समकालीन', 'Japandi Calm': 'जापांडी शांत', 'Minimal Modern': 'मिनिमल मॉडर्न', 'Indian Modern': 'भारतीय आधुनिक', 'Smart Budget': 'स्मार्ट बजट' })[b] || b})`],
+  [/^Room 1 · (DEFAULT|Option [A-E]) \((.+)\)$/, (m, a, b) => `कमरा 1 · ${a.replace('Option', 'विकल्प')} (${({ 'Warm Contemporary': 'गर्म समकालीन', 'Japandi Calm': 'जापांडी शांत', 'Minimal Modern': 'मिनिमल मॉडर्न', 'Indian Modern': 'भारतीय आधुनिक', 'Smart Budget': 'स्मार्ट बजट', 'Simple & Practical': 'सादा और व्यावहारिक' })[b] || b})`],
   [/^V1\.1 Architecture \(Room 1 corrected\)$/, () => 'V1.1 ढाँचा (कमरा 1 सुधारा हुआ)'], [/^V1 Architecture \(untouched baseline\)$/, () => 'V1 ढाँचा (मूल)'],
 ];
 const HTML_BLOCKS = {

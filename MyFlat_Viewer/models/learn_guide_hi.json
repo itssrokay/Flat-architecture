@@ -732,6 +732,54 @@
    "groupLabel": "रोशनी",
    "img": "https://www.google.com/search?tbm=isch&q=pendant+light+bedside",
    "wiki": "https://en.wikipedia.org/w/index.php?search=Pendant+light"
+  },
+  {
+   "term": "पंखा: BLDC",
+   "plain": "ब्रशलेस (BLDC) मोटर वाला सीलिंग फ़ैन: पुराने पंखे के 70–75 W की जगह लगभग 28–35 W लेता है, शांत चलता है और आमतौर पर रिमोट के साथ आता है। थोड़ा महँगा, पर बिजली बिल में पैसा वापस।",
+   "match": "CEILING_FAN",
+   "aka": [
+    "bldc fan"
+   ],
+   "group": "Lighting",
+   "groupLabel": "रोशनी",
+   "img": "https://www.google.com/search?tbm=isch&q=BLDC+ceiling+fan+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Brushless+DC+electric+motor"
+  },
+  {
+   "term": "स्टैंडिंग डेस्क",
+   "plain": "ऐसी डेस्क जिसकी ऊँचाई (मोटर या हैंडल से) बदलती है, ताकि आप खड़े या बैठकर काम कर सकें। अच्छी डेस्क ऊँचाई पर बिना हिले रुकती है और आपकी दोनों ऊँचाइयों के लिए मेमोरी बटन होते हैं।",
+   "match": "STANDING_DESK",
+   "aka": [
+    "standing desk"
+   ],
+   "group": "Decor",
+   "groupLabel": "सजावट",
+   "img": "https://www.google.com/search?tbm=isch&q=electric+standing+desk+home",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Standing+desk"
+  },
+  {
+   "term": "खड़े होने की मैट",
+   "plain": "स्टैंडिंग डेस्क पर खड़े होने के लिए गद्देदार रबर / फ़ोम की मैट; देर तक खड़े रहने में पैरों और घुटनों को आराम देती है।",
+   "match": "ANTI_FATIGUE",
+   "aka": [
+    "anti-fatigue mat"
+   ],
+   "group": "Decor",
+   "groupLabel": "सजावट",
+   "img": "https://www.google.com/search?tbm=isch&q=anti+fatigue+mat+standing+desk",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Anti-fatigue+mat"
+  },
+  {
+   "term": "AC पॉइंट और पाइप स्लीव",
+   "plain": "पेंट से पहले AC की तैयारी: इनडोर यूनिट की जगह के पास अलग 16 A पावर पॉइंट, और बाहरी दीवार में तांबे के पाइप और पानी की नली के लिए छेद (स्लीव)। अभी करवाने से बाद में नया पेंट नहीं टूटता।",
+   "match": "AC_SPACE",
+   "aka": [
+    "ac point & pipe sleeve"
+   ],
+   "group": "Lighting",
+   "groupLabel": "रोशनी",
+   "img": "https://www.google.com/search?tbm=isch&q=split+AC+indoor+unit+bedroom+wall+pipe+sleeve",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Air+conditioning"
   }
  ],
  "designs": {
@@ -1383,6 +1431,130 @@
     ],
     "img": "https://www.google.com/search?tbm=isch&q=small+balcony+bistro+set+plants+India"
    }
+  ],
+  "OPTION_E": [
+   {
+    "title": "फ़र्श",
+    "see": "बिल्डर का फ़र्श ही रहेगा। बेड से उतरने की जगह एक छोटा सूती रनर।",
+    "layers": [
+     "आरसीसी स्लैब",
+     "बिल्डर का दिया फ़र्श (आमतौर पर विट्रिफ़ाइड टाइल)",
+     "गहरी सफ़ाई + जोड़ों में नया ग्राउट",
+     "2'×5' सूती रनर"
+    ],
+    "simple": "कुछ नया नहीं लगता। अगर फ़र्श सादा ग्रे सीमेंट (IPS) है, तो विट्रिफ़ाइड टाइल लगवाएँ: कमरा 1 के लिए लगभग ₹30–40 हज़ार।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "RUNNER_RUG",
+     "FLOOR_R1"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=cotton+runner+rug+beside+bed+vitrified+tile"
+   },
+   {
+    "title": "दीवारें",
+    "see": "गर्म ऑफ़-व्हाइट दीवारें; बेड वाली दीवार हल्की सेज (हल्का धूसर-हरा)। बस पेंट।",
+    "layers": [
+     "ईंट / ब्लॉक की दीवार (बिल्डर)",
+     "सीमेंट प्लास्टर (बिल्डर)",
+     "पुट्टी सिर्फ़ जहाँ दरार या ऊबड़-खाबड़ हो (बिल्डर की पुट्टी रहती है)",
+     "मरम्मत वाली जगह पर प्राइमर",
+     "2 कोट धुलने लायक इमल्शन: गर्म ऑफ़-व्हाइट, बेड वाली दीवार पर हल्का सेज"
+    ],
+    "simple": "एक पेंट, दो रंग। सेज दीवार का कोई अतिरिक्त ख़र्च नहीं: वही पेंट दूसरे रंग में। डेस्क वाले कमरे में धुलने लायक पेंट ज़रूरी है: निशान पोंछने से मिट जाते हैं।",
+    "where": "पुट्टी + प्राइमर + पेंट कमरा 1 की सभी दीवारों के अंदर वाले हिस्से और छत पर। बाहरी दीवारों के बाहर वाले हिस्से पर एक्सटीरियर पेंट (पुट्टी नहीं)। बालकनी की दीवारों पर एक्सटीरियर पेंट।",
+    "paint": "मध्यम श्रेणी का धुलने लायक इमल्शन, जैसे Asian Paints Apcolite Premium Emulsion (लगभग ₹270/लीटर), या Berger / Nerolac का वैसा ही, मैट या हल्की चमक। Tractor Emulsion सस्ता है पर निशान ठीक से नहीं मिटते। दीवार + छत के 2 कोट के लिए लगभग 10 लीटर। सेज रंग का छोटा सैंपल डिब्बा पहले दीवार पर लगाकर देखें: बड़ी दीवार पर रंग गहरा दिखता है।",
+    "show": [
+     "BED_WALL_PALE_SAGE",
+     "^WALL_INT_R1"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=pale+sage+green+bedroom+wall+white+walls+India"
+   },
+   {
+    "title": "छत",
+    "see": "पुरानी सपाट छत, सफ़ेद पेंट। एक पंखा और 4 गोल चपटी लाइटें, बस।",
+    "layers": [
+     "आरसीसी स्लैब (आपकी छत)",
+     "प्लास्टर / POP पनिंग (बिल्डर)",
+     "पुट्टी सिर्फ़ जहाँ ज़रूरत हो",
+     "प्राइमर",
+     "सीलिंग-व्हाइट मैट पेंट, 2 कोट"
+    ],
+    "simple": "फ़ॉल्स सीलिंग नहीं। BLDC पंखा पुराने पंखे की लगभग एक-तिहाई बिजली लेता है। 4 LED पैनल सीधे छत पर लगते हैं, ऐसी जगह कि बेड पर लेटने पर कोई आँखों में न चमके।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "CEILING_FAN_MOTOR",
+     "DOWNLIGHT_1"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=BLDC+ceiling+fan+bedroom+surface+LED+panel+plain+ceiling"
+   },
+   {
+    "title": "अलमारी",
+    "see": "आले में लगी सफ़ेद 3-दरवाज़े की अलमारी, ऊपर लॉफ़्ट।",
+    "layers": [
+     "18 मिमी HDHMR या MR प्लाई का ढाँचा (बढ़ई)",
+     "बाहर फ़्रॉस्टी-व्हाइट 1 मिमी लैमिनेट, अंदर 0.8 मिमी",
+     "सामान्य सॉफ़्ट-क्लोज़ कब्ज़े, स्टील बार हैंडल",
+     "सूटकेस के लिए छत तक लॉफ़्ट"
+    ],
+    "simple": "बढ़ई से बनवाई, सादी सफ़ेद: सबसे किफ़ायती। कब्ज़े वाले दरवाज़े स्लाइडिंग से सस्ते और ज़्यादा टिकाऊ।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "WARDROBE_CARCASS"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=white+laminate+3+door+wardrobe+with+loft+India"
+   },
+   {
+    "title": "स्टैंडिंग डेस्क",
+    "see": "बटन दबाने पर ऊपर-नीचे होने वाली डेस्क, बगल में आईना।",
+    "layers": [
+     "इलेक्ट्रिक उठने वाला फ़्रेम (एक पैर में मोटर)",
+     "4'×2' लैमिनेटेड बोर्ड टॉप",
+     "स्टैंड पर मॉनिटर, ऊपरी किनारा आँखों की ऊँचाई पर",
+     "फ़र्श पर खड़े होने की मैट"
+    ],
+    "simple": "कुछ देर खड़े, कुछ देर बैठकर: हर 30–60 मिनट में बदलें। टाइप करते समय कोहनी 90° पर। खड़े होने पर मेश कुर्सी डेस्क के नीचे खिसका दें।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "STANDING_DESK_TOP"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=electric+standing+desk+home+bedroom+India"
+   },
+   {
+    "title": "खिड़की और बालकनी दरवाज़ा",
+    "see": "बिल्डर के सफ़ेद एल्युमिनियम स्लाइडर वैसे ही। बालकनी दरवाज़े पर मुड़ने वाली मच्छर जाली।",
+    "layers": [
+     "बिल्डर के एल्युमिनियम फ़्रेम और काँच (वैसे ही)",
+     "बालकनी दरवाज़े पर प्लीटेड मच्छर जाली",
+     "स्टील रॉड पर बेज ब्लैकआउट पर्दे + पतले पर्दे"
+    ],
+    "simple": "कुछ बदला नहीं जाता: ट्रैक साफ़ करने और रोलर में तेल डालने से पुराने स्लाइडर फिर आराम से चलते हैं।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "BALCONY_DOOR_FRAME",
+     "W1_OUTER_FRAME"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=pleated+mosquito+mesh+sliding+balcony+door"
+   },
+   {
+    "title": "बालकनी",
+    "see": "मौजूदा बालकनी, 3 गमलों के साथ।",
+    "layers": [
+     "मौजूदा बालकनी फ़र्श",
+     "टेराकोटा गमलों में तुलसी, मनी प्लांट, स्नेक प्लांट"
+    ],
+    "simple": "अभी सादा रखें; बाद में 2 फ़ोल्डिंग कुर्सियाँ (लगभग ₹2,500)।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "BALCONY_PLANT_1"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=small+balcony+tulsi+money+plant+terracotta+pots"
+   }
   ]
  },
  "pages": {
@@ -1773,7 +1945,8 @@
     "OPTION_A",
     "OPTION_B",
     "OPTION_C",
-    "OPTION_D"
+    "OPTION_D",
+    "OPTION_E"
    ],
    "cells": {
     "DEFAULT": [
@@ -1820,6 +1993,15 @@
      "डोमल 3-ट्रैक स्लाइडर",
      "डोमल 4-पल्ले स्लाइडर",
      "₹1.93 लाख"
+    ],
+    "OPTION_E": [
+     "मौजूदा फ़र्श + सूती रनर",
+     "एक धुलने लायक इमल्शन (Apcolite श्रेणी), बेड वाली दीवार हल्की सेज",
+     "सादी; BLDC पंखा + सरफ़ेस LED पैनल",
+     "3-दरवाज़े लैमिनेट + लॉफ़्ट (बढ़ई)",
+     "बिल्डर का स्लाइडर वैसा ही",
+     "बिल्डर का स्लाइडर + प्लीटेड जाली",
+     "₹1.29 लाख"
     ]
    }
   }

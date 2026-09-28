@@ -236,17 +236,17 @@ Glass, colours and textures come through as standard glTF materials.
 
 The viewer opens in **Room 1 · DEFAULT** at eye level. In the left panel, under **Interior design**:
 
-- **DEFAULT / A / B / C / D** switch between the five Room 1 designs. **D (Smart Budget)** is the value option at about ₹1.93 lakh; its notes include an itemised **Budget** table (and where to cut if it runs over). The camera stays exactly where it is, so you can flip between designs from the same spot.
+- **DEFAULT / A / B / C / D / E** switch between the six Room 1 designs. **D (Smart Budget)** is the value option at about ₹1.93 lakh. **E (Simple & Practical)** is the plainest at about ₹1.29 lakh: one paint in two shades, no false ceiling, the builder's windows kept, a BLDC fan, a standing desk, and no furniture in the walkways. D and E notes include an itemised **Budget** table (and where to cut if it runs over). The camera stays exactly where it is, so you can flip between designs from the same spot.
 - **V1.1 arch / V1 baseline** show the bare architecture. V1 is the untouched baseline.
 - **Compare side by side with** splits the view: the current model on the left, the chosen one on the right, both driven by the same camera. Set it back to *— off —* to return to a single view.
 - The right panel shows the chosen design's notes: why it is the default, layout, wardrobe, window, balcony door, ceiling and lighting, balcony, and palette.
 - Room 1 has extra viewpoints (Rooms → Room 1 ▸): design view, towards the balcony, wardrobe and thick wall, and the balcony.
 
-The designs come from `~/Documents/MyFlat/MyFlat_V1_1_Room1_Interiors.blend`, which holds one collection per option (13_ROOM1_DEFAULT … 17_ROOM1_OPTION_D). They are built by `build_room1_interiors.py`. The architecture files are not modified.
+The designs come from `~/Documents/MyFlat/MyFlat_V1_1_Room1_Interiors.blend`, which holds one collection per option (13_ROOM1_DEFAULT … 18_ROOM1_OPTION_E). They are built by `build_room1_interiors.py`. The architecture files are not modified.
 To re-export after editing the designs, open that .blend and in the Python console run:
 
 ```python
-for opt in ["DEFAULT", "OPTION_A", "OPTION_B", "OPTION_C", "OPTION_D"]:
+for opt in ["DEFAULT", "OPTION_A", "OPTION_B", "OPTION_C", "OPTION_D", "OPTION_E"]:
     exec(open(bpy.path.abspath("//MyFlat_Viewer/scripts/export_glb.py")).read(),
          {"DESIGN": opt, "OUT_NAME": "MyFlat_V1_1_Room1_" + opt})
 ```

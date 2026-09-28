@@ -1,6 +1,6 @@
 # Room 1 interior design options for MyFlat V1.1 (architecture frozen).
 # Run with MyFlat_V1_1_Architecture.blend open; adds collections
-#   13_ROOM1_DEFAULT, 14_ROOM1_OPTION_A, 15_ROOM1_OPTION_B, 16_ROOM1_OPTION_C
+#   13_ROOM1_DEFAULT, 14_ROOM1_OPTION_A .. 17_ROOM1_OPTION_D, 18_ROOM1_OPTION_E
 # Every object: design_category, design_option, status=DESIGN, spec.
 # Units: feet. Room 1 frame: x=0 west inner face (balcony opening), x=12.583 east inner face,
 # y=0 north inner face, y=-11.167 face of raised south wall (x 0..7.25), y=-14.5 south wall (x 7.25..12.583).
@@ -17,7 +17,7 @@ H = 10.0
 
 def m(v): return v * FT
 OPT = None; COL = None; MATS = {}
-TAG = {'DEFAULT': 'DEF', 'OPTION_A': 'OPA', 'OPTION_B': 'OPB', 'OPTION_C': 'OPC', 'OPTION_D': 'OPD'}
+TAG = {'DEFAULT': 'DEF', 'OPTION_A': 'OPA', 'OPTION_B': 'OPB', 'OPTION_C': 'OPC', 'OPTION_D': 'OPD', 'OPTION_E': 'OPE'}
 
 def mat(name, rgb, rough=0.6, metal=0.0, alpha=1.0, emit=0.0):
     key = f"{OPT}_{name}"
@@ -305,11 +305,11 @@ def build_default():
     box("STUDY_WALL_SHELF", 1.2, 5.2, YW, YW + 0.8, 5.2, 5.3, oak, "furniture", "floating shelf")
     box("STUDY_MIRROR", 1.8, 3.2, YW, YW + 0.05, 3.2, 5.0, mat("Mirror", (0.85, 0.9, 0.92), 0.02, 1.0), "furniture", "vanity mirror, frameless")
     boxes("STUDY_CHAIR", [(0, 1.5, 0, 1.5, 1.4, 1.55), (0, 1.5, 0, 0.12, 1.55, 2.9), (0.6, 0.9, 0.6, 0.9, 0, 1.4)], sage, "furniture", "upholstered study chair", (2.1, YW + 1.9, 0))
-    # accent chair + floor lamp near north wall
-    boxes("ACCENT_CHAIR", [(0, 2.2, -1.55, 0, 0.5, 1.4), (0, 2.2, -0.3, 0, 1.4, 2.7), (0, 0.25, -1.55, 0, 1.4, 1.9), (1.95, 2.2, -1.55, 0, 1.4, 1.9)], rust, "furniture", "compact lounge chair 26\" wide", (8.1, -0.3, 0))
-    cyl("FLOOR_LAMP", 10.55, -0.9, 0.35, 0, 0.05, charcoal, "lighting", "")
-    cyl("FLOOR_LAMP_POLE", 10.55, -0.9, 0.03, 0.05, 4.8, charcoal, "lighting", "")
-    cyl("FLOOR_LAMP_SHADE", 10.55, -0.9, 0.45, 4.8, 5.5, mat("Linen_Shade", (0.95, 0.9, 0.8), 0.9, emit=1.5), "lighting", "linen shade floor lamp")
+    # floor lamp beside the study desk. (The old lounge chair on the north wall was removed: it stood 1" from the bed
+    # and blocked the 1'11" walkway to the bedside - there is no free spot for a lounge chair in this layout.)
+    cyl("FLOOR_LAMP", 6.55, -10.5, 0.35, 0, 0.05, charcoal, "lighting", "")
+    cyl("FLOOR_LAMP_POLE", 6.55, -10.5, 0.03, 0.05, 4.8, charcoal, "lighting", "")
+    cyl("FLOOR_LAMP_SHADE", 6.55, -10.5, 0.45, 4.8, 5.5, mat("Linen_Shade", (0.95, 0.9, 0.8), 0.9, emit=1.5), "lighting", "linen shade floor lamp by the study desk")
     box("RUG", 3.8, 10.8, -7.6, -1.4, 0.02, 0.05, mat("Rug_Wool", (0.78, 0.72, 0.62), 1.0), "soft_furnishing", "flat-weave wool rug 5'x7'")
     box("ARTWORK", 1.2, 5.2, YW + 0.02, YW + 0.07, 6.0, 7.8, mat("Art", (0.75, 0.55, 0.4), 0.8), "decor", "framed art print 4'x1'10\"")
     # ceiling & lighting
@@ -628,9 +628,102 @@ def build_D():  # Smart budget Indian (Rs 1.5-2 lakh) - same proven layout as DE
     box("BALCONY_LED_STRING", -4.3, -4.2, -13.5, 0.4, 3.3, 3.34, mat("Fairy", (1.0, 0.85, 0.55), 0.5, emit=4.0), "lighting", "solar warm-white string lights along the railing (~Rs 800)")
     outdoor_light(black, "basic IP65 bulkhead light (~Rs 700)")
 
+def build_E():  # Simple & practical (Rs 1-1.3 lakh) for a young adult: plain paint, ready-made bed, carpenter wardrobe, standing desk
+    oak = mat("Light_Oak_Laminate", (0.74, 0.58, 0.42), 0.55); white = mat("Frosty_White_Laminate", (0.94, 0.93, 0.9), 0.5)
+    sage = mat("Pale_Sage_Paint", (0.72, 0.77, 0.68), 0.9)
+    beige = mat("Beige_Blackout", (0.78, 0.72, 0.62), 0.9); sheer = mat("Sheer", (0.97, 0.96, 0.93), 0.9, alpha=0.4)
+    denim = mat("Denim_Cotton", (0.42, 0.5, 0.62), 0.9); linen = mat("White_Cotton", (0.95, 0.94, 0.91), 0.9)
+    whitealu = mat("White_Alu", (0.93, 0.93, 0.92), 0.4, 0.3); black = mat("Black_Metal", (0.1, 0.1, 0.1), 0.5, 0.4)
+    glass = mat("Clear_Glass", (0.75, 0.88, 0.95), 0.05, alpha=0.25); mesh = mat("Mesh", (0.2, 0.2, 0.22), 0.8, alpha=0.55)
+    granite = mat("Granite_Black", (0.1, 0.1, 0.11), 0.25); ss = mat("Steel", (0.75, 0.75, 0.77), 0.3, 1.0)
+    light = mat("LED", (1.0, 0.95, 0.85), 0.5, emit=6.0); fanwhite = mat("Fan_White", (0.93, 0.93, 0.92), 0.4)
+    grey = mat("Grey_Mesh_Fabric", (0.3, 0.31, 0.33), 0.8); rubber = mat("Mat_Rubber", (0.2, 0.2, 0.22), 0.95)
+    mirror = mat("Mirror", (0.85, 0.9, 0.92), 0.02, 1.0)
+    # walls: ONE mid-range washable emulsion everywhere. Warm off-white on 3 walls, pale sage on the bed wall (same paint, another shade)
+    box("BED_WALL_PALE_SAGE", RW - 0.015, RW, DOOR_Y1 + 0.05, 0, 0, H - 0.02, sage, "finishes",
+        "bed wall in pale sage: same washable emulsion as the other walls (Apcolite Premium class), just a different shade - no extra cost")
+    # bed: ready-made queen storage bed, head on the only long solid wall (east), centred on it
+    bed(RW - 0.1, -4.8, 180, 5.0, 6.5, dict(hb_h=3.3, hb_t=0.3, hb_mat=oak, hb_spec="plain panel headboard, light-oak finish (comes with the bed)",
+        base_z=(0.02, 1.15), base_mat=oak, base_spec="Queen 6'6\" x 5' engineered-wood bed with box storage, light-oak finish (Wakefit Orion class, ~Rs 16,000)",
+        duvet=linen, throw=denim, cushion=denim, duvet_spec="plain white cotton bedsheet + denim-blue dohar"))
+    o = bpy.data.objects.get(f"R1_{TAG[OPT]}_BED_MATTRESS")
+    if o: o["spec"] = "Queen 72\"x60\" 6\" memory-foam / HR-foam mattress (Wakefit / Sleepyhead class, ~Rs 10,000)"
+    # one bedside table (window side) + a floating shelf on the door side keeps the 2'2\" walkway free
+    box("BEDSIDE_N", RW - 1.45, RW - 0.15, -1.85, -0.55, 0.0, 1.8, oak, "furniture", "ready-made bedside table with 1 drawer (~Rs 1,700)")
+    box("WALL_SHELF_S", RW - 1.2, RW - 0.05, -9.2, -7.85, 2.0, 2.08, oak, "furniture", "floating wall shelf instead of a 2nd bedside: phone, water, charger - keeps the door-side walkway clear (~Rs 600)")
+    box("WALL_LAMP_N", RW - 0.4, RW - 0.05, -1.35, -1.05, 4.5, 4.95, light, "lighting", "simple wall reading light, 7 W warm-white LED (~Rs 700)")
+    box("WALL_LAMP_S", RW - 0.4, RW - 0.05, -8.7, -8.4, 4.5, 4.95, light, "lighting", "simple wall reading light, 7 W warm-white LED (~Rs 700)")
+    box("RUNNER_RUG", 6.0, 11.4, -9.3, -7.7, 0.01, 0.03, mat("Cotton_Rug", (0.6, 0.62, 0.66), 1.0), "soft_furnishing", "cotton runner 2' x 5' where you step out of bed (~Rs 600)")
+    # wardrobe: local carpenter, fills the alcove (hinged: cheaper and longer-lasting than sliding)
+    wardrobe_alcove(dict(doors=3, body=white, shutter=white,
+                         spec="3-door hinged wardrobe + loft by a local carpenter, 5'3\" x 2' x 9'10\": HDHMR / MR ply carcass, 1 mm laminate outside, 0.8 mm inside (~Rs 37,000 incl. hardware)",
+                         shutter_spec="frosty-white 1 mm laminate shutters, basic soft-close hinges", handle=ss, handle_spec="10\" SS bar handles", loft=True, light=None))
+    # standing desk on the thick wall (daylight from the balcony on the side, no glare on the screen)
+    y0 = YW; top = 3.45
+    box("STANDING_DESK_TOP", 1.3, 5.3, y0 + 0.05, y0 + 2.0, top - 0.08, top, oak, "furniture",
+        "4' x 2' desk top, 25 mm board, light-oak laminate; shown at standing height 3'5\" (goes down to about 2'4\" for sitting)")
+    boxes("STANDING_DESK_FRAME", [(1.75, 2.0, y0 + 0.85, y0 + 1.15, 0.1, top - 0.08), (4.6, 4.85, y0 + 0.85, y0 + 1.15, 0.1, top - 0.08),
+                                  (1.55, 2.2, y0 + 0.2, y0 + 1.8, 0, 0.1), (4.4, 5.05, y0 + 0.2, y0 + 1.8, 0, 0.1), (2.0, 4.6, y0 + 0.9, y0 + 1.1, top - 0.25, top - 0.1)],
+          black, "furniture", "single-motor electric sit-stand frame, 2-stage legs, memory presets, ~70 kg load (~Rs 18,000 with the top)")
+    box("STANDING_DESK_KEYPAD", 4.85, 5.2, y0 + 1.9, y0 + 2.05, top - 0.2, top - 0.1, black, "furniture", "up / down keypad with 3 memory presets")
+    box("MONITOR_STAND", 2.9, 3.7, y0 + 0.35, y0 + 0.85, top, top + 0.04, black, "decor", "monitor stand")
+    box("MONITOR_NECK", 3.25, 3.35, y0 + 0.45, y0 + 0.55, top + 0.04, top + 0.7, black, "decor", "")
+    box("MONITOR", 2.1, 4.5, y0 + 0.5, y0 + 0.58, top + 0.5, top + 1.85, black, "decor", "24\" monitor, top edge at eye level (yours - not in the budget)")
+    box("KEYBOARD", 2.6, 4.0, y0 + 1.15, y0 + 1.55, top, top + 0.04, black, "decor", "")
+    box("LAPTOP", 4.05, 5.1, y0 + 1.05, y0 + 1.75, top, top + 0.05, mat("Laptop", (0.6, 0.6, 0.62), 0.3, 0.6), "decor", "laptop (yours)")
+    for i, z in enumerate((6.0, 7.0)):
+        box(f"DESK_SHELF_{i+1}", 1.3, 5.3, YW, YW + 0.8, z, z + 0.07, oak, "furniture", "floating wall shelf 4' x 10\", laminated ply on concealed brackets (2 for ~Rs 1,500)")
+    box("DESK_LED_BATTEN", 1.6, 5.0, YW + 0.55, YW + 0.7, 5.9, 5.99, light, "lighting", "20 W LED batten under the shelf: even light on the desk, no glare (~Rs 400)")
+    box("ANTI_FATIGUE_MAT", 2.4, 4.6, y0 + 2.1, y0 + 3.6, 0.01, 0.06, rubber, "soft_furnishing", "anti-fatigue standing mat 2'2\" x 1'6\" (~Rs 1,000)")
+    boxes("OFFICE_CHAIR", [(0, 1.5, 0, 1.5, 1.45, 1.6), (0, 1.5, 1.35, 1.5, 1.6, 3.0), (0.68, 0.82, 0.68, 0.82, 0.3, 1.45),
+                           (0.05, 1.45, 0.68, 0.82, 0.12, 0.28), (0.68, 0.82, 0.05, 1.45, 0.12, 0.28)], grey, "furniture",
+          "basic ergonomic mesh chair for sitting mode; tucks under the desk top (~Rs 4,000)", (0.5, y0 + 1.25, 0))
+    box("FULL_LENGTH_MIRROR_FRAME", 5.6, 7.0, YW, YW + 0.03, 0.85, 6.45, oak, "furniture", "")
+    box("FULL_LENGTH_MIRROR", 5.65, 6.95, YW, YW + 0.045, 0.9, 6.4, mirror, "furniture", "full-length mirror 5'6\" x 1'3\" on ply backing: your getting-ready spot (~Rs 2,000)")
+    # ceiling: plain (no false ceiling), BLDC fan over the foot of the bed, 4 surface LED panels away from the pillows
+    fx, fy = 7.4, -5.2
+    cyl("CEILING_FAN_CANOPY", fx, fy, 0.22, H - 0.3, H - 0.02, fanwhite, "fixtures", "")
+    cyl("CEILING_FAN_DOWNROD", fx, fy, 0.04, 8.9, H - 0.3, fanwhite, "fixtures", "")
+    cyl("CEILING_FAN_MOTOR", fx, fy, 0.5, 8.55, 8.9, fanwhite, "fixtures",
+        "1200 mm BLDC ceiling fan with remote, ~30 W (Atomberg Renesa / Crompton Energion class, ~Rs 3,500 + fitting); blades 8'8\" above the floor")
+    for i in range(3):
+        boxes(f"CEILING_FAN_BLADE_{i+1}", [(0.45, 1.97, -0.2, 0.2, 8.66, 8.7)], fanwhite, "fixtures", "1200 mm blade", (fx, fy, 0), math.radians(i * 120))
+    downlights([(2.9, -3.2), (2.9, -8.3), (10.0, -5.0), (10.3, -10.9)], H, light, "15 W surface round LED panel, 4000K neutral white (Philips / Wipro class, ~Rs 600)")
+    box("AC_SPACE_FUTURE", 8.3, 11.3, -0.75, -0.02, 7.7, 8.7, mat("AC_Ghost", (0.92, 0.93, 0.95), 0.5, alpha=0.35), "fixtures",
+        "space kept for a 1.5 t split AC later (the AC is not in the budget): 16 A AC point + pipe sleeve done now, while the walls are open (~Rs 2,500)")
+    # curtains: ready-made beige blackout eyelet curtains on SS rods (no pelmet, no track)
+    track_curtains("W1_CURTAIN", (W1_X0 - 0.8, -0.3), (W1_X1 + 0.8, -0.3), 8.2, sheer, beige, 0.9, "polyester sheer",
+                   "beige blackout eyelet curtains, 2 ready-made panels, on an SS rod", rod_mt=ss, side=-0.12)
+    track_curtains("BALCONY_CURTAIN", (0.4, OPN_Y0 + 0.05), (0.4, OPN_Y1 + 0.3), 8.2, sheer, beige, 1.5, "polyester sheer for daytime privacy",
+                   "beige blackout eyelet curtains, 4 ready-made 7' panels, on an SS rod", rod_mt=ss, side=-0.12)
+    # W1 + balcony door: the builder's aluminium sliders are KEPT (shown as typical white domal sliders)
+    w1_frame(whitealu, "W1: builder's aluminium sliding window, kept as is (clean the tracks, oil the rollers)")
+    sash("W1_SASH_1", W1_X0 + 0.15, 5.55, W1_Z0 + 0.15, W1_Z1 - 0.15, 0.24, 0.32, whitealu, glass, "sliding glass shutter (builder's)")
+    sash("W1_SASH_2", 5.25, W1_X1 - 0.15, W1_Z0 + 0.15, W1_Z1 - 0.15, 0.33, 0.41, whitealu, glass, "sliding glass shutter (builder's)", slide=-1.85)
+    sash("W1_MESH", 5.25, W1_X1 - 0.15, W1_Z0 + 0.15, W1_Z1 - 0.15, 0.43, 0.5, whitealu, mesh, "mosquito mesh shutter (builder's)")
+    w1_grill(black, "builder's MS safety grill, kept")
+    w1_sill(granite, "builder's granite / marble sill, kept")
+    bd_frame(whitealu, "Balcony door: builder's aluminium sliding door, kept as is")
+    q = (OPN_Y1 - OPN_Y0) / 4; yy = OPN_Y0
+    spans = [(yy, yy + q + 0.05), (yy + q - 0.05, yy + 2 * q + 0.03), (yy + 2 * q - 0.03, yy + 3 * q + 0.05), (yy + 3 * q - 0.05, OPN_Y1)]
+    for i, (ya, yb) in enumerate(spans):
+        sliding = i in (1, 2); xc = -0.52 if sliding else -0.74
+        dy = (-(q - 0.15) if i == 1 else (q - 0.15)) if sliding else None
+        hy = yb - 0.3 if i == 1 else ya + 0.3
+        hx = [(xc + 0.06, xc + 0.13, hy - 0.04, hy + 0.04, 3.2, 4.2)] if sliding else []
+        bd_panel(f"BALCONY_DOOR_P{i+1}", xc, ya, yb, whitealu, glass, th=0.06, spec=f"panel {i+1}: builder's glass panel, " + ("sliding" if sliding else "fixed"),
+                 slide_dy=dy, extra=[(f"BALCONY_DOOR_P{i+1}_HANDLE", hx, black)] if hx else None)
+    box("BALCONY_PLEATED_MESH", -0.3, -0.22, OPN_Y1 - 0.45, OPN_Y1 - 0.2, 0.06, OPN_H - 0.2, mesh, "fenestration",
+        "retractable pleated mosquito mesh for the balcony door, stacked open (~Rs 6,500)")
+    threshold(granite, "builder's threshold, kept")
+    # balcony: keep it simple - 3 potted plants (chairs can come later)
+    for i, (x, y, spec) in enumerate(((-3.8, -4.6, "tulsi in a terracotta pot"), (-2.2, 0.2, "money plant on a moss stick"), (-3.8, -2.4, "snake plant"))):
+        plant(f"BALCONY_PLANT_{i+1}", x, y, BAL_Z, 0.4 + 0.1 * (i % 2), 0.9 + 0.3 * (i % 2), 0.55, mat("Terracotta", (0.66, 0.4, 0.28), 0.8), spec + " (3 plants + pots ~Rs 1,200)", 1.3)
+    outdoor_light(black, "builder's balcony light point, kept")
+
 OPTIONS = [("DEFAULT", "13_ROOM1_DEFAULT", build_default), ("OPTION_A", "14_ROOM1_OPTION_A", build_A),
            ("OPTION_B", "15_ROOM1_OPTION_B", build_B), ("OPTION_C", "16_ROOM1_OPTION_C", build_C),
-           ("OPTION_D", "17_ROOM1_OPTION_D", build_D)]
+           ("OPTION_D", "17_ROOM1_OPTION_D", build_D), ("OPTION_E", "18_ROOM1_OPTION_E", build_E)]
 REPLACES = "WINDOW_W1_FRAME,WINDOW_W1_GLASS"   # generic architecture placeholders replaced by the designed window
 
 def run():
