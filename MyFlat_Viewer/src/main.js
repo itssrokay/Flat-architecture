@@ -5,27 +5,30 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { CONFIG } from './config.js?v=14';
-import { Walkthrough } from './walk.js?v=14';
-import { setupImmersive } from './immersive.js?v=14';
-import { setupExtras } from './extras.js?v=14';
-import { setupLearn } from './learn.js?v=14';
-import { setupI18n } from './i18n.js?v=14';
-import { setupSimple } from './simple.js?v=14';
-import { setupEdit } from './edit.js?v=14';
+import { CONFIG } from './config.js?v=15';
+import { Walkthrough } from './walk.js?v=15';
+import { setupImmersive } from './immersive.js?v=15';
+import { setupExtras } from './extras.js?v=15';
+import { setupLearn } from './learn.js?v=15';
+import { setupI18n } from './i18n.js?v=15';
+import { setupSimple } from './simple.js?v=15';
+import { setupEdit } from './edit.js?v=15';
+import { setupChat } from './chat.js?v=15';
 // bump together with the ?v= in index.html and the imports above whenever the viewer or models change,
 // so browsers never mix a new page with old cached scripts or models
-const BUILD = '14';
+const BUILD = '15';
 
 const $ = (id) => document.getElementById(id);
 // language (English / Hindi): translates the interface in place; design notes + Learn guide load their Hindi files
 let simple = null;   // easy mode for phones (simple.js)
 let edit = null;     // ✏️ Customise panel (edit.js)
+let chat = null;     // 💬 Ask (chat.js)
 const i18n = setupI18n({ onChange: async (l) => {
   await loadDesignNotes(); if (app.modelList) buildDesignPanel(app.modelList); updateDesignUI();
   if (learnApi) learnApi.setLang(l);
   if (simple) simple.setLang(l);
   if (edit) edit.render();
+  if (chat) chat.setLang(l);
 } });
 const FT = 0.3048;
 
@@ -837,6 +840,7 @@ new ResizeObserver(() => { _aspect = 0; resize(); }).observe(host);
 setupLearn({ app, $, select, focusObject, scene, build: BUILD, modelEntry, lang: i18n.lang }).then(a => { learnApi = a; window.viewer.learn = a; });
 edit = setupEdit({ app, $, imm, modelEntry, applyVisibility, updateDesignUI, showRight: () => ex.setRight(false) });
 if (app.model) { edit.onModel(app.model); applyVisibility(); imm.onModel(app.model); updateDesignUI(); }
+chat = setupChat({ app, $, edit, walk, modelEntry, lang: i18n.lang, build: BUILD });
 simple = setupSimple({ app, $, walk, imm, ex, renderer, scene, CONFIG, lang: i18n.lang, goRoomVp, overview, presetView, goToPoint,
   TOUCH: TOUCH && QS.get('easy') !== '0', force: QS.get('easy'), resize: () => { _aspect = 0; resize(); } });
 walk.onChange = (on) => {
@@ -859,7 +863,7 @@ walk.onChange = (on) => {
 })();
 
 // exposed for automated checks
-window.viewer = { imm, ex, i18n, simple, edit, setCompare, switchModel, presetView, setCat, setEdges, updateLabelOcclusion, applyVisibility, togglePlanMode, setDebug, setLabels, select, loadModel, startWalk, walk, overview, goToPoint, goRoomVp,
+window.viewer = { imm, ex, i18n, simple, edit, chat, setCompare, switchModel, presetView, setCat, setEdges, updateLabelOcclusion, applyVisibility, togglePlanMode, setDebug, setLabels, select, loadModel, startWalk, walk, overview, goToPoint, goRoomVp,
   get camera() { return camera; }, controls, scene, renderer, CONFIG, fmtFt,
   setStatus: (on) => { app.statusMode = on; applyMaterials(); }, goRoom: (name, i = 0) => { const r = app.rooms.find(r => r.name === name); goRoomVp(r, r.vps[i]); },
   pickAt: (x, y) => pick({ clientX: x, clientY: y }), setSection: (on, h) => { $('sectionChk').checked = on; if (h) $('sectionRange').value = h; setSection(); } };

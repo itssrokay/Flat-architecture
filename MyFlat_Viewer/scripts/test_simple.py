@@ -18,7 +18,7 @@ async def main():
             joy: getComputedStyle(document.getElementById('touchPad')).display, pad: !document.getElementById('sPad').classList.contains('hidden'),
             top: [...document.querySelectorAll('#topbar > *')].filter(e => getComputedStyle(e).display !== 'none').map(e => e.id || e.className) })""")
         check("phone opens in easy mode with the help card, big pad, no joystick", st["simple"] and st["help"] and st["pad"] and st["joy"] == "none", str(st))
-        check("easy mode top bar: only Learn, language, design and the mode switch", set(x for x in st["top"] if x != "spacer") <= {"learnBtn", "langBtn", "modelSelect", "simpleBtn"}, str(st["top"]))
+        check("easy mode top bar: only Learn, Ask, language, design and the mode switch", set(x for x in st["top"] if x != "spacer") <= {"learnBtn", "chatBtn", "langBtn", "modelSelect", "simpleBtn"}, str(st["top"]))
         await pg.screenshot(path=f"{OUT}/01_help.png")
         await pg.click("#simpleHelp .h-ok")
         await pg.screenshot(path=f"{OUT}/02_easy_inside.png")

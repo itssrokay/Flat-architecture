@@ -1,6 +1,27 @@
 {
   "headers": [
-    { "source": "/(.*)\\.(html|js|css|json)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }] },
-    { "source": "/models/(.*)\\.glb", "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }] }
-  ]
+    {
+      "source": "/(.*)\\.(html|js|css|json)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/models/(.*)\\.glb",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    }
+  ],
+  "functions": {
+    "api/chat.js": {
+      "maxDuration": 30
+    }
+  }
 }

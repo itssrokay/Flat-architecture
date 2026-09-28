@@ -56,6 +56,18 @@ There's one link for every device. The viewer picks the layout itself:
 
 Add `?touch=1` to force touch controls, `?hq=1` for shadows on a phone, and `?lang=hi` to open in Hindi.
 
+## 💬 Ask (chatbot)
+
+The **💬 Ask** button opens a chat that knows all six designs, their budgets and materials, your ✏️ Customise choices and live total, the Learn dictionary, room sizes, where you are and what you've selected. It answers in English or Hindi, and when you ask it to change a Customise choice it shows an **Apply** button that changes the 3D.
+
+It uses your **OpenAI API key**, which stays on the server, never in the page:
+
+- **On Vercel (GitHub import):** Root Directory `MyFlat_Viewer`, preset *Other*, no build command. Environment variables: `OPENAI_API_KEY` (required), `CHAT_PASSCODE` (recommended: a word the page asks for once, so strangers with the link can't spend your credit), optionally `OPENAI_MODEL`. The function is `api/chat.js`.
+- **On your Mac:** create a file `MyFlat_Viewer/.env` containing `OPENAI_API_KEY=sk-...` (git-ignores it), then run `start.command`. No passcode locally.
+- **Vercel Drop:** works too, but each drop is a new project, so you'd add the key again every time. Prefer the GitHub import.
+
+Set a monthly spending limit in the OpenAI dashboard. Each question sends about 15–20k tokens of context (cheap with a small model and prompt caching).
+
 ## हिंदी / English
 
 The **हिंदी** button in the top bar switches the whole interface, the design notes and the 📘 Learn guide to Hindi; **EN** switches back. Your choice is remembered. The technical spec lines in the material schedule stay in English, because contractors use those terms.
