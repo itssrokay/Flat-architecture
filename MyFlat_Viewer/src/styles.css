@@ -280,3 +280,23 @@ body.walking #tapInfo { top: 52px; bottom: auto; }
   #touchPad { bottom: 24px; } #joy { width: 104px; height: 104px; } #touchBtns { grid-template-columns: 50px 50px 50px 50px; }
   #touchBtns button { width: 50px; height: 50px; }
 }
+
+/* phones: only the buttons you need */
+@media (max-width: 900px) {
+  #viewButtons, #projBtn, #roofBtn, #labelsBtn, #edgesBtn, #statusBtn, #planBtn, #debugBtn, #hoverBtn { display: none !important; }
+}
+/* language */
+#topbar button.lang { font-weight: 700; background: #eef4ff; border-color: #b9cdf3; }
+body.lang-hi { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Devanagari", "Nirmala UI", Roboto, sans-serif; }
+/* Learn extras */
+#learn .lrow { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+#learn a.lbtn { display: inline-block; text-decoration: none; color: var(--ink); border: 1px solid var(--line); background: #fafaf9; border-radius: 6px; padding: 3px 8px; font-size: 12px; }
+#learn a.lbtn:hover { background: #efeeea; }
+#learn .paint { background: #eef6ee; border-radius: 6px; padding: 5px 8px; font-size: 12.5px; }
+#learn .ftable { border-collapse: collapse; font-size: 12px; width: 100%; margin: 6px 0; }
+#learn .ftable th, #learn .ftable td { border: 1px solid #eadfcb; padding: 4px 6px; vertical-align: top; text-align: left; }
+#learn .ftable th { background: #f6f1e7; }
+#learn .swatches { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+#learn .sw { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; }
+#learn .sw i { width: 22px; height: 22px; border-radius: 5px; background: var(--c); border: 1px solid rgba(0,0,0,.15); display: inline-block; }
+#inspector a, #hoverTip a, #tapInfo a { color: #2563eb; }

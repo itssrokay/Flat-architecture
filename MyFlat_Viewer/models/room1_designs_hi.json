@@ -1,0 +1,861 @@
+{
+ "DEFAULT": {
+  "title": "DEFAULT · गर्म समकालीन",
+  "tagline": "बेड बालकनी की ओर, अलमारी आले में, मोटी दीवार पर स्टडी-ड्रेसर।",
+  "why": "यह L-आकार के कमरे के हर हिस्से का सबसे अच्छा इस्तेमाल करता है। दरवाज़े के पास का 5'4\" x 3'4\" आला ठीक 3-दरवाज़ों की अलमारी के बराबर है, तो सामान रखने में फ़र्श की जगह नहीं जाती। बेड अकेली लंबी ठोस दीवार (पूर्व) पर है और 10'5\" की बालकनी की ओर देखता है — सबसे अच्छा नज़ारा और सुबह की धूप। 7'3\" मोटी दक्षिण दीवार स्टडी-कम-ड्रेसर बनती है। बेड और बालकनी के बीच 5'8\" खुली जगह और दरवाज़े से 3'10\" का रास्ता बचता है। एल्युमिनियम स्लाइडर, लैमिनेट और विट्रिफ़ाइड टाइल भारत में आम, किफ़ायती और कम रखरखाव वाले हैं।",
+  "sections": {
+   "लेआउट": "पूर्व दीवार पर पश्चिम की ओर मुँह किया क्वीन बेड (5'x6'6\"); दोनों ओर साइड टेबल; मोटी दीवार पर 4' स्टडी/ड्रेसर; उत्तर दीवार पर छोटी लाउंज कुर्सी + फ़्लोर लैंप; 5'x7' दरी।",
+   "अलमारी": "3-दरवाज़े कब्ज़े वाली, 5'3\" x 2' x 7'6\" दक्षिण-पूर्व आले में + छत तक लॉफ़्ट। ऑफ़-व्हाइट मैट लैमिनेट पर ओक पट्टियाँ, काले हैंडल, सॉफ़्ट-क्लोज़ कब्ज़े। दरवाज़े की चौखट से 2\" दूर।",
+   "खिड़की W1": "3-ट्रैक एल्युमिनियम स्लाइडिंग खिड़की (चारकोल): 2 काँच पल्ले (5 मिमी टफ़न्ड) + 1 मच्छरदानी पल्ला। काँच के बाहर मेल खाती MS ग्रिल। अंदर काले ग्रेनाइट की सिल + बाहर ड्रिप सिल। छत के ट्रैक पर पारदर्शी + सेज ब्लैकआउट पर्दा।",
+   "बालकनी दरवाज़ा": "3-ट्रैक, 3-पल्ले एल्युमिनियम स्लाइडर (1 स्थिर + 2 सरकने वाले), 8 मिमी टफ़न्ड काँच, चारकोल फ़्रेम, मल्टी-पॉइंट ताले वाला हैंडल। 10'5\" में से 2/3 खुलता है। प्लीटेड मच्छरदानी। काले ग्रेनाइट की दहलीज़, 2\" नीचे कदम और ढलान (पानी रोकने के लिए)। पूरी चौड़ाई के पर्दे।",
+   "छत और रोशनी": "किनारों पर 1'7\" चौड़ा, 6\" नीचा जिप्सम बैंड (बालकनी की ओर पर्दे का पेल्मेट), बीच में असली छत। 2700K LED कोव, बैंड में 7 डाउनलाइट, 2 रीडिंग लाइट, फ़्लोर लैंप, डेस्क लाइट।",
+   "बालकनी": "एंटी-स्किड टाइल; ठोस दीवार (दक्षिण छोर) पर गद्दी वाली बनी हुई सागौन/WPC बेंच; 18\" गोल मेज़; बेंच के ऊपर वर्टिकल गार्डन; उत्तर छोर पर एरिका पाम + स्नेक प्लांट; रेलिंग पर 3 गमले; IP65 दीवार लाइट।",
+   "रंग-योजना": "ओक, ऑफ़-व्हाइट, सेज हरा, जंग जैसे लाल-भूरे एक्सेंट, चारकोल धातु, गर्म ग्रेज फ़र्श।"
+  },
+  "schedule": [
+   {
+    "area": "फ़र्श",
+    "items": [
+     [
+      "टाइल",
+      "Matte glazed vitrified tile 800×1600 mm, 9 mm, warm greige (Kajaria / Somany / Johnson class)"
+     ],
+     [
+      "बिछाई",
+      "Long side along the room (E–W), 2 mm epoxy grout in matching colour, 1:4 cement-sand bed"
+     ],
+     [
+      "स्कर्टिंग",
+      "4\" (100 mm) cut from same tile, flush with plaster line"
+     ],
+     [
+      "दहलीज़ (बालकनी)",
+      "Black granite, flamed top, 20 mm, 2\" step down with sloped nosing"
+     ]
+    ]
+   },
+   {
+    "area": "दीवारें",
+    "items": [
+     [
+      "आधार",
+      "Cement plaster → 2 coats wall putty → primer"
+     ],
+     [
+      "पेंट",
+      "Low-sheen washable emulsion, warm white (e.g. Asian Paints 'Pristine White' family) on 3 walls"
+     ],
+     [
+      "हेडबोर्ड दीवार",
+      "Fluted panel 7'8\" × 8': 12 mm BWP plywood base + fluted MDF strips (1\" flutes) wrapped in 0.8 mm oak-grain laminate; brass-finish aluminium cap trim"
+     ],
+     [
+      "स्टडी दीवार",
+      "Same paint; 4' floating shelf + frameless 5 mm mirror above the desk"
+     ]
+    ]
+   },
+   {
+    "area": "छत",
+    "items": [
+     [
+      "फ़ॉल्स सीलिंग",
+      "Perimeter band only: 12.5 mm gypsum board (Gyproc) on GI channel framing, 1'7\" wide, 6\" drop → ceiling at 9'6\" in the band, 10' in the centre"
+     ],
+     [
+      "कोव",
+      "3\" recessed cove on the inner edge of the band with 2700K LED strip (10 W/m, dimmable)"
+     ],
+     [
+      "पर्दे का पेल्मेट",
+      "Band widened to 2'1\" on the balcony side to hide the curtain track"
+     ],
+     [
+      "फ़िनिश",
+      "Ceiling-white matt emulsion"
+     ]
+    ]
+   },
+   {
+    "area": "अलमारी",
+    "items": [
+     [
+      "ढाँचा",
+      "18 mm BWR/BWP plywood (or HDHMR), 0.8 mm frosty-white laminate inside, 2' deep"
+     ],
+     [
+      "शटर",
+      "18 mm ply with 1 mm off-white matt laminate + oak-laminate vertical inset; 3 hinged doors, 7'6\" high"
+     ],
+     [
+      "हार्डवेयर",
+      "Hettich/Häfele soft-close hinges (4 per door), 12\" black aluminium bar handles"
+     ],
+     [
+      "अंदर",
+      "Section 1: 2 soft-close drawers + shirt hanging rod; Section 2: 5 shelves; Section 3: long hanging (sarees/dresses) + top shelf; LED strip on door sensor"
+     ],
+     [
+      "लॉफ़्ट",
+      "Same carcass to ceiling, push-to-open shutters, for suitcases and quilts"
+     ],
+     [
+      "प्लिंथ",
+      "4\" recessed black plinth so the floor can be mopped"
+     ]
+    ]
+   },
+   {
+    "area": "बेड और फ़र्नीचर",
+    "items": [
+     [
+      "बेड",
+      "Queen 5'×6'6\": 18 mm ply + oak laminate, hydraulic lift storage, upholstered sage headboard (foam + fabric on ply)"
+     ],
+     [
+      "गद्दा",
+      "8\" pocket-spring, queen 60\"×78\""
+     ],
+     [
+      "साइड टेबल",
+      "18\"×17\", 2 drawers, oak laminate on a recessed charcoal base"
+     ],
+     [
+      "स्टडी-ड्रेसर",
+      "4'×1'9\" oak-laminate top at 30\", 2-drawer pedestal, upholstered chair"
+     ],
+     [
+      "एक्सेंट",
+      "Compact rust-fabric lounge chair + linen-shade floor lamp; 5'×7' flat-weave wool rug"
+     ]
+    ]
+   },
+   {
+    "area": "खिड़की W1",
+    "items": [
+     [
+      "सिस्टम",
+      "3-track aluminium sliding window, charcoal powder-coat (Jindal / Aluplast class)"
+     ],
+     [
+      "शटर",
+      "2 glass shutters (5 mm clear toughened) + 1 SS-304 mosquito-mesh shutter; one glass shutter slides open"
+     ],
+     [
+      "सुरक्षा",
+      "Flat-bar MS grill (5\" pitch) outside the glass, powder-coated to match"
+     ],
+     [
+      "सिल",
+      "Black granite inside with 4\" ledge; external sill with drip groove"
+     ],
+     [
+      "पर्दे",
+      "Ceiling track: linen-look sheer + sage blackout drape"
+     ]
+    ]
+   },
+   {
+    "area": "बालकनी दरवाज़ा",
+    "items": [
+     [
+      "सिस्टम",
+      "3-track, 3-panel aluminium slider, charcoal; 1 fixed + 2 sliding panels → about 7' clear opening"
+     ],
+     [
+      "काँच",
+      "8 mm clear toughened glass, EPDM gaskets, interlock profiles"
+     ],
+     [
+      "हार्डवेयर",
+      "D-handle with multipoint lock, stainless rollers"
+     ],
+     [
+      "जाली",
+      "Retractable pleated mosquito mesh, stacks at the north jamb"
+     ],
+     [
+      "दहलीज़",
+      "Low-profile bottom track set in black granite, 2\" step and 1:50 fall to the balcony"
+     ],
+     [
+      "पर्दे",
+      "Full-width sheer + sage blackout drapes stacking at both ends"
+     ]
+    ]
+   },
+   {
+    "area": "रोशनी और बिजली",
+    "items": [
+     [
+      "सामान्य रोशनी",
+      "2700K cove LED around the room"
+     ],
+     [
+      "काम की रोशनी",
+      "7 × 6 W COB downlights (3000K) in the band; 2 adjustable reading wall lights at the bed; floor lamp"
+     ],
+     [
+      "अलमारी",
+      "Sensor-operated LED strip inside"
+     ],
+     [
+      "स्विचिंग",
+      "Two-way switching of ambient light at door + bed; USB sockets at both bedsides; AC point above the headboard wall"
+     ]
+    ]
+   },
+   {
+    "area": "बालकनी",
+    "items": [
+     [
+      "फ़र्श",
+      "Anti-skid matte outdoor tile 600×600 (R11), laid on waterproofing with 1:100 fall to drain"
+     ],
+     [
+      "बैठने की जगह",
+      "Built-in teak/WPC bench 2'4\"×1'4\" with storage + outdoor-fabric cushions"
+     ],
+     [
+      "मेज़",
+      "18\" round teak side table on a powder-coated base"
+     ],
+     [
+      "हरियाली",
+      "Modular vertical-garden panel with drip line; areca palm + snake plant; 3 railing planters for herbs/flowers"
+     ],
+     [
+      "लाइट",
+      "IP65 up-down wall light, warm white"
+     ]
+    ]
+   }
+  ],
+  "schedNote": "(तकनीकी विवरण ठेकेदार के लिए अंग्रेज़ी में)"
+ },
+ "OPTION_A": {
+  "title": "विकल्प A · जापांडी शांत",
+  "tagline": "पट्टियों वाली मोटी दीवार से लगा नीचा बेड, खिड़की के नीचे डेस्क।",
+  "why": "ज़्यादा शांत, प्राकृतिक कमरा। बेड मोटी दक्षिण दीवार पर चला जाता है जहाँ ऐश पट्टियों की दीवार हेडबोर्ड है, और डेस्क को खिड़की की रोशनी मिलती है। स्लाइडिंग अलमारी के दरवाज़ों को खुलने की जगह नहीं चाहिए।",
+  "sections": {
+   "लेआउट": "मोटी 7'3\" दीवार पर सिरहाने वाला नीचा ऐश प्लेटफ़ॉर्म बेड, उत्तर की ओर मुँह; पतली साइड टेबल + स्टूल; W1 के नीचे डेस्क; पूर्व दीवार पर नीची किताबों की अलमारी + पाउफ़; जूट दरी।",
+   "अलमारी": "2-दरवाज़े स्लाइडिंग, खाँचों वाला ऐश विनियर, 8'5\" ऊँची, ऊपर टोकरियों के लिए खुला खाँचा।",
+   "खिड़की W1": "सफ़ेद uPVC केसमेंट जोड़ी (बाहर खुलती), 6.38 मिमी लैमिनेटेड सेफ़्टी ग्लास — ग्रिल नहीं; अंदर रोलर जाली; लकड़ी की सिल; बाँस का रोमन ब्लाइंड।",
+   "बालकनी दरवाज़ा": "सफ़ेद uPVC 2-ट्रैक 4-पल्ले स्लाइडर (स्थिर-सरकता-सरकता-स्थिर), रोलर जाली, कोटा स्टोन दहलीज़, लकड़ी की रॉड पर लिनन पर्दे।",
+   "छत और रोशनी": "जिप्सम फ़ॉल्स सीलिंग नहीं। बेड के ऊपर लटका ऐश पट्टियों का राफ़्ट, चावल-काग़ज़ के पेंडेंट, सरफ़ेस डाउनलाइट।",
+   "बालकनी": "WPC डेक टाइलें, फ़र्श गद्दियाँ + नीची चाय मेज़, रेलिंग पर बाँस की ओट, टेराकोटा गमलों में पाम, सोलर काग़ज़ी लालटेन।",
+   "रंग-योजना": "हल्की ऐश लकड़ी, गर्म सफ़ेद, लिनन, काई हरा, काले एक्सेंट, हल्के ओक जैसी टाइल।"
+  },
+  "schedule": [
+   {
+    "area": "फ़र्श",
+    "items": [
+     [
+      "टाइल",
+      "Wood-look vitrified plank 200×1200 mm, light oak, matt"
+     ],
+     [
+      "बिछाई",
+      "Planks E–W, 1/3 stagger, 2 mm joints"
+     ],
+     [
+      "स्कर्टिंग",
+      "Solid ash skirting, 3\""
+     ]
+    ]
+   },
+   {
+    "area": "दीवारें और छत",
+    "items": [
+     [
+      "पेंट",
+      "Warm white limewash-effect emulsion"
+     ],
+     [
+      "हेडबोर्ड",
+      "Vertical ash slat wall on the thick south wall: 1.5\" slats at 3\" centres on a black-painted backing, 8'6\" high"
+     ],
+     [
+      "छत",
+      "No gypsum false ceiling. Suspended ash slat raft 6'×6'6\" over the bed; ceiling kept at 10'"
+     ]
+    ]
+   },
+   {
+    "area": "अलमारी",
+    "items": [
+     [
+      "प्रकार",
+      "2-door sliding, 8'5\" high, open top niche for baskets"
+     ],
+     [
+      "सामग्री",
+      "HDHMR carcass, ash veneer shutters with grooved lines, matt PU lacquer"
+     ],
+     [
+      "हार्डवेयर",
+      "Top-hung soft-close sliding track, recessed finger pulls"
+     ]
+    ]
+   },
+   {
+    "area": "फ़र्नीचर",
+    "items": [
+     [
+      "बेड",
+      "Low Japanese platform, solid ash, 11\" high"
+     ],
+     [
+      "डेस्क",
+      "4'4\" solid ash desk under the window with woven-seat chair"
+     ],
+     [
+      "भंडारण",
+      "Low open ash bookcase 5'10\" long; jute pouf; jute rug 6'×8'"
+     ]
+    ]
+   },
+   {
+    "area": "खिड़की और दरवाज़ा",
+    "items": [
+     [
+      "W1",
+      "White uPVC casement pair, outward, friction stays, 6.38 mm laminated safety glass (so no grill), internal roller mesh, solid-wood sill, bamboo roman blind"
+     ],
+     [
+      "बालकनी दरवाज़ा",
+      "White uPVC 2-track 4-panel slider (fixed–slide–slide–fixed), 5 mm toughened glass, roller insect screen, Kota-stone threshold, linen curtains on a wooden rod"
+     ]
+    ]
+   },
+   {
+    "area": "रोशनी",
+    "items": [
+     [
+      "फ़िटिंग",
+      "Large rice-paper pendant, 2 paper pendants as bedside lights, surface downlights, all 2700K"
+     ]
+    ]
+   },
+   {
+    "area": "बालकनी",
+    "items": [
+     [
+      "फ़र्श",
+      "WPC interlocking deck tiles on the existing tile"
+     ],
+     [
+      "फ़र्नीचर",
+      "Floor cushions + low tea table"
+     ],
+     [
+      "ओट",
+      "Bamboo screen fixed inside the railing, 5' high"
+     ],
+     [
+      "पौधे",
+      "Bamboo palm / monstera in terracotta; solar paper lantern"
+     ]
+    ]
+   }
+  ],
+  "schedNote": "(तकनीकी विवरण ठेकेदार के लिए अंग्रेज़ी में)"
+ },
+ "OPTION_B": {
+  "title": "विकल्प B · मिनिमल मॉडर्न",
+  "tagline": "उत्तर दीवार पर बेड, मोटी दीवार पर टीवी/ड्रेसर, बालकनी के पास लाउंज कोना।",
+  "why": "सबसे अलग व्यवस्था। बेड का सिरहाना खिड़की के बगल में उत्तर दीवार पर, ताकि मोटी दीवार पर बेड से दिखने वाली टीवी/मीडिया और ड्रेसर दीवार बन सके। बालकनी वाले कोने में पढ़ने की जगह। सब कुछ सपाट और बिना हैंडल।",
+  "sections": {
+   "लेआउट": "उत्तर दीवार (W1 के पूर्व) पर सिरहाने वाला तैरता वॉलनट बेड; खिड़की के नीचे तैरती साइड टेबल; मोटी दीवार पर 55\" टीवी + वॉलनट कंसोल + ऊँची अलमारी; उत्तर-पश्चिम कोने में बूक्ले कुर्सी + आर्क लैंप; पूर्व दीवार पर पतला कंसोल।",
+   "अलमारी": "फ़र्श से फ़ॉल्स सीलिंग तक 2-दरवाज़े स्लाइडिंग, मैट सफ़ेद लैकर्ड ग्लास, पूरी ऊँचाई का आईना, बिना हैंडल।",
+   "खिड़की W1": "पतला काला एल्युमिनियम: स्थिर काँच + अंदर खुलने वाला टिल्ट-एंड-टर्न पल्ला, 6 मिमी लो-ई काँच; इनविज़िबल ग्रिल (स्टील तार); क्वार्ट्ज़ सिल; सनस्क्रीन रोलर ब्लाइंड।",
+   "बालकनी दरवाज़ा": "काला पतला लिफ़्ट-एंड-स्लाइड, 2 बड़े पल्ले (1 स्थिर, 1 सरकता), 10 मिमी लो-ई टफ़न्ड काँच; छिपी नाली वाली क्वार्ट्ज़ दहलीज़; छत के खाँचे में मोटर वाले ब्लैकआउट + सनस्क्रीन ब्लाइंड; प्लीटेड जाली।",
+   "छत और रोशनी": "9'5\" पर पूरी सपाट जिप्सम छत, ब्लाइंड का खाँचा और 2 लंबी LED लाइनें; हेडबोर्ड पैनल में छिपी LED; खिड़की के बगल दीवार पर घूमने वाली रीडिंग लाइट (अंदर खुलने वाले पल्ले से दूर)।",
+   "बालकनी": "ग्रे पोर्सिलेन, रेलिंग पर मोड़ने वाली मेज़ + 2 पतली धातु कुर्सियाँ, 2 ऊँचे कंक्रीट-जैसे गमले, लंबी दीवार लाइट।",
+   "रंग-योजना": "सफ़ेद, गर्म ग्रे, चारकोल, वॉलनट, काली धातु।"
+  },
+  "schedule": [
+   {
+    "area": "फ़र्श",
+    "items": [
+     [
+      "टाइल",
+      "Large-format 1200×1200 light-grey matte porcelain, 1 mm joints"
+     ],
+     [
+      "स्कर्टिंग",
+      "Flush shadow-gap skirting (aluminium profile)"
+     ]
+    ]
+   },
+   {
+    "area": "दीवारें और छत",
+    "items": [
+     [
+      "हेडबोर्ड दीवार",
+      "Full-height fabric-wrapped acoustic panels (warm grey) with a hidden LED line in the reveal"
+     ],
+     [
+      "टीवी दीवार",
+      "Microcement-look panel behind the TV"
+     ],
+     [
+      "छत",
+      "Flush gypsum ceiling at 9'5\" over the whole room, 6\" recessed blind pocket along the balcony, 2 recessed linear LED lines"
+     ]
+    ]
+   },
+   {
+    "area": "अलमारी",
+    "items": [
+     [
+      "प्रकार",
+      "Floor-to-false-ceiling 2-door sliding, handleless"
+     ],
+     [
+      "सामग्री",
+      "HDHMR carcass, back-painted matt white lacquered glass shutters, one full-height mirror"
+     ],
+     [
+      "हार्डवेयर",
+      "Soft-close sliding system, internal sensor LED"
+     ]
+    ]
+   },
+   {
+    "area": "फ़र्नीचर",
+    "items": [
+     [
+      "बेड",
+      "Floating walnut-veneer platform bed with integrated padded headboard, head on the north wall"
+     ],
+     [
+      "मीडिया",
+      "Floating walnut console + tall handleless column, 55\" TV viewed from the bed"
+     ],
+     [
+      "लाउंज",
+      "Bouclé lounge chair, black metal side table, arc floor lamp, charcoal low-pile rug"
+     ]
+    ]
+   },
+   {
+    "area": "खिड़की और दरवाज़ा",
+    "items": [
+     [
+      "W1",
+      "Slim black aluminium: fixed pane + inward tilt-and-turn sash, 6 mm low-E glass, invisible grill (SS-316 cables at 3\" centres) outside, flush quartz sill, sunscreen roller blind"
+     ],
+     [
+      "बालकनी दरवाज़ा",
+      "Slim black lift-and-slide, 2 large panels (1 fixed + 1 sliding), 10 mm low-E toughened glass, 20 mm sightlines, flush quartz threshold with concealed drain, pleated mesh, motorised blackout + sunscreen blinds"
+     ]
+    ]
+   },
+   {
+    "area": "बालकनी",
+    "items": [
+     [
+      "फ़र्श",
+      "Grey outdoor porcelain 600×1200, anti-skid"
+     ],
+     [
+      "फ़र्नीचर",
+      "Fold-down railing table + 2 slim powder-coated chairs"
+     ],
+     [
+      "पौधे और लाइट",
+      "2 tall concrete-look planters with olive trees; linear IP65 wall light"
+     ]
+    ]
+   }
+  ],
+  "schedNote": "(तकनीकी विवरण ठेकेदार के लिए अंग्रेज़ी में)"
+ },
+ "OPTION_C": {
+  "title": "विकल्प C · भारतीय आधुनिक विरासत",
+  "tagline": "बेंत की हेडबोर्ड दीवार, बना हुआ दीवान, पूरी बालकनी खोलने वाले बाई-फ़ोल्ड दरवाज़े।",
+  "why": "महँगा, अलग विकल्प। 4-पल्ले बाई-फ़ोल्ड दरवाज़ा पूरा मुड़ जाता है, तो कमरा और बालकनी एक हो जाते हैं। बेंत, सागौन, पीतल, ब्लॉक प्रिंट और बना हुआ दीवान इसे होटल जैसा नहीं, भारतीय रूप देते हैं।",
+  "sections": {
+   "लेआउट": "पूर्व दीवार पर पूरे बेंत पैनल और टील लाइमवॉश दीवार के साथ सागौन बेड; साइड लाइट के रूप में पीतल के गुंबद पेंडेंट; मोटी दीवार पर सागौन जाली के नीचे गाव-तकियों वाला बना दीवान; पीतल ऊपरी सतह वाली नीची मेज़; दरी।",
+   "अलमारी": "3-दरवाज़े कब्ज़े वाली, सागौन विनियर फ़्रेम में बुने बेंत की जाली (नमी में हवा आती-जाती रहे), पीतल हैंडल, ऊपर लॉफ़्ट।",
+   "खिड़की W1": "सागौन जैसी फ़िनिश वाली एल्युमिनियम केसमेंट: 2 अंदर खुलने वाले पल्ले + ऊपर स्थिर काँच; सजावटी जाली डिज़ाइन की MS ग्रिल; कोटा स्टोन सिल; पीतल रॉड पर ब्लॉक-प्रिंट पर्दे + वॉयल।",
+   "बालकनी दरवाज़ा": "4-पल्ले एल्युमिनियम बाई-फ़ोल्ड (सागौन फ़िनिश), पूरी 10'5\" खुलती — बालकनी पर मुड़ा हुआ दिखाया है; दक्षिण चौखट पर प्लीटेड जाली; फ़र्श से सटे ट्रैक वाली कोटा दहलीज़; ब्लॉक-प्रिंट पर्दे।",
+   "छत और रोशनी": "एक सीढ़ी वाली ट्रे छत (9'3\" पर 2'2\" बैंड), कोव LED और सागौन किनारा; बड़ा बेंत का पेंडेंट; पीतल किनारे वाली डाउनलाइट।",
+   "बालकनी": "लेदर-फ़िनिश कोटा स्टोन, रतन कुर्सी + बेंत की मेज़, टेराकोटा गमले (तुलसी, चमेली, बोगनवेलिया), पीतल की जालीदार लालटेन, जूट दरी।",
+   "रंग-योजना": "सागौन, बेंत, गहरा टील, टेराकोटा, आइवरी, पीतल, टेराज़ो जैसा फ़र्श।"
+  },
+  "schedule": [
+   {
+    "area": "फ़र्श",
+    "items": [
+     [
+      "टाइल",
+      "Terrazzo-look vitrified tile 600×600"
+     ],
+     [
+      "जड़ाई",
+      "Brass-coloured strip border 1' from the walls (visual rug)"
+     ],
+     [
+      "स्कर्टिंग",
+      "Teak-finish skirting"
+     ]
+    ]
+   },
+   {
+    "area": "दीवारें",
+    "items": [
+     [
+      "एक्सेंट",
+      "Deep teal limewash on the east (bed) wall"
+     ],
+     [
+      "हेडबोर्ड",
+      "Full-width woven cane panel in a teak frame, 7'×4'6\""
+     ],
+     [
+      "दीवान वाली दीवार",
+      "CNC teak jaali panel above the built-in diwan"
+     ]
+    ]
+   },
+   {
+    "area": "छत",
+    "items": [
+     [
+      "फ़ॉल्स सीलिंग",
+      "Single-step tray: 12.5 mm gypsum band 2'2\" wide at 9'3\", centre at 10'"
+     ],
+     [
+      "विवरण",
+      "Teak-veneer edge strip, cove LED, brass-trim downlights, large cane pendant"
+     ]
+    ]
+   },
+   {
+    "area": "अलमारी",
+    "items": [
+     [
+      "प्रकार",
+      "3 hinged doors + loft"
+     ],
+     [
+      "सामग्री",
+      "Ply carcass, teak-veneer shutters (PU matt) with woven cane-mesh insets - breathable for humidity"
+     ],
+     [
+      "हार्डवेयर",
+      "Brass bar handles, soft-close hinges"
+     ]
+    ]
+   },
+   {
+    "area": "फ़र्नीचर",
+    "items": [
+     [
+      "बेड",
+      "Teak bed with turned legs and under-bed drawers"
+     ],
+     [
+      "दीवान",
+      "Built-in daybed 6'4\"×2'4\" with storage drawers, block-print mattress, gol-takiya bolsters"
+     ],
+     [
+      "अन्य",
+      "Teak bedsides with cane fronts, brass dome pendants, brass-top low table, cotton dhurrie"
+     ]
+    ]
+   },
+   {
+    "area": "खिड़की और दरवाज़ा",
+    "items": [
+     [
+      "W1",
+      "Aluminium with teak woodgrain finish: 2 inward casements + fixed top light, 6 mm toughened glass, decorative MS jaali-pattern grill outside, Kota-stone sill, block-print drapes + voile sheer on a brass rod"
+     ],
+     [
+      "बालकनी दरवाज़ा",
+      "4-panel aluminium bi-fold (teak finish), bottom-rolling, opens the full 10'5\"; pleated mesh; Kota threshold with flush track"
+     ]
+    ]
+   },
+   {
+    "area": "बालकनी",
+    "items": [
+     [
+      "फ़र्श",
+      "Leather-finish Kota stone"
+     ],
+     [
+      "फ़र्नीचर",
+      "Outdoor-grade synthetic rattan armchair + cane side table, jute dhurrie"
+     ],
+     [
+      "पौधे और लाइट",
+      "Terracotta planters (tulsi, jasmine, bougainvillea), pierced brass lantern"
+     ]
+    ]
+   }
+  ],
+  "schedNote": "(तकनीकी विवरण ठेकेदार के लिए अंग्रेज़ी में)"
+ },
+ "OPTION_D": {
+  "title": "विकल्प D · स्मार्ट बजट (भारतीय)",
+  "tagline": "DEFAULT जैसा ही अच्छा लेआउट, लगभग ₹1,93,300 में: रेडीमेड सामान, लोकल बढ़ई और महँगे फ़िनिश की जगह रंग।",
+  "why": "पैसा वहाँ लगता है जो टिकता है और रोज़ काम आता है: छत तक की लॉफ़्ट वाली अलमारी, बालकनी और खिड़की के लिए ठीक एल्युमिनियम स्लाइडर, और अच्छा गद्दा। बचत वहाँ है जो महँगा है पर कम काम का: फ़ॉल्स सीलिंग नहीं, पैनलिंग नहीं, विनियर या एक्रिलिक नहीं, और मौजूदा फ़र्श ही रहता है। रौनक रंग और भारतीय कपड़ों से आती है: टेराकोटा एक्सेंट दीवार, नील सूती पर्दे, हथकरघा दरी, बेंत का मूढ़ा और मधुबनी प्रिंट। वॉलनट और फ़्रॉस्टी-व्हाइट लैमिनेट बढ़ई के काम को रेडीमेड बेड से मिलाते हैं। लेआउट DEFAULT वाला ही है, जो पहले से ठीक काम करता है।",
+  "sections": {
+   "लेआउट": "पूर्व दीवार पर बालकनी की ओर क्वीन स्टोरेज बेड; दीवार लाइटों के साथ 2 साइड टेबल; 5'4\" आले में 3-दरवाज़े अलमारी + लॉफ़्ट; मोटी दीवार पर शेल्फ़ और आईने वाला दीवार पर टँगा स्टडी-ड्रेसर; खिड़की के पास बेंत का मूढ़ा; 5'×7' दरी।",
+   "अलमारी": "लोकल बढ़ई, MR प्लाईवुड/HDHMR ढाँचा, फ़्रॉस्टी-व्हाइट 1 मिमी लैमिनेट और वॉलनट पट्टी, सामान्य सॉफ़्ट-क्लोज़ कब्ज़े, स्टील D-हैंडल, सूटकेस के लिए ऊपर लॉफ़्ट।",
+   "खिड़की W1": "3-ट्रैक डोमल एल्युमिनियम स्लाइडर (2 काँच + 1 जाली), सफ़ेद; सादी MS ग्रिल (ठीक हो तो वही); ग्रेनाइट टुकड़े की सिल; नील सूती पर्दे + वॉयल।",
+   "बालकनी दरवाज़ा": "2-ट्रैक डोमल एल्युमिनियम स्लाइडिंग दरवाज़ा, 4 पल्ले: बीच के दो पल्ले किनारे के स्थिर पल्लों पर सरककर बीच में लगभग 5' खोलते हैं। प्लीटेड जाली बाद में लग सकती है (लगभग ₹6–8 हज़ार)।",
+   "छत और रोशनी": "फ़ॉल्स सीलिंग नहीं। 5 सरफ़ेस LED डाउनलाइट, लैमिनेटेड प्लाईवुड पेल्मेट के ऊपर LED पट्टी से कोव जैसी रोशनी, बेड के पास 2 दीवार लाइटें।",
+   "बालकनी": "मौजूदा फ़र्श। फ़ोल्डिंग धातु मेज़-कुर्सी, गमलों में तुलसी / मनी प्लांट / स्नेक प्लांट / एरिका पाम, रेलिंग पर सोलर लाइटें, सामान्य बल्कहेड लाइट।",
+   "रंग-योजना": "गर्म सफ़ेद, टेराकोटा, नील, सरसों पीला, वॉलनट, बेंत।"
+  },
+  "budget": {
+   "total": "₹1,93,300",
+   "rows": [
+    [
+     "अलमारी",
+     "3-दरवाज़े + लॉफ़्ट, लोकल बढ़ई, MR प्लाई/HDHMR + 1 मिमी लैमिनेट, 5'3\" × 2' × 9'10\"",
+     "₹46,000"
+    ],
+    [
+     "बालकनी दरवाज़ा",
+     "2-ट्रैक डोमल एल्युमिनियम स्लाइडर, 4 पल्ले (2 सरकते), 5 मिमी टफ़न्ड काँच, 73 वर्ग फ़ुट",
+     "₹40,000"
+    ],
+    [
+     "खिड़की W1",
+     "3-ट्रैक डोमल एल्युमिनियम स्लाइडर (2 काँच + 1 जाली), 16 वर्ग फ़ुट",
+     "₹13,200"
+    ],
+    [
+     "बेड",
+     "क्वीन इंजीनियर्ड वुड स्टोरेज बेड, वॉलनट फ़िनिश (Wakefit Orion जैसा)",
+     "₹16,100"
+    ],
+    [
+     "गद्दा",
+     "6\" ऑर्थोपेडिक मेमोरी फ़ोम, क्वीन",
+     "₹13,000"
+    ],
+    [
+     "साइड टेबल",
+     "2 रेडीमेड, इंजीनियर्ड वुड",
+     "₹4,000"
+    ],
+    [
+     "स्टडी दीवार",
+     "बढ़ई: दीवार पर डेस्क 4'×1'8\" + 2 खुली शेल्फ़ + सादा आईना",
+     "₹9,000"
+    ],
+    [
+     "स्टडी कुर्सी",
+     "धातु + लकड़ी की कैफ़े कुर्सी",
+     "₹3,000"
+    ],
+    [
+     "मूढ़ा",
+     "बेंत का मूढ़ा + सूती गद्दी",
+     "₹1,500"
+    ],
+    [
+     "पेंट",
+     "~590 वर्ग फ़ुट सस्ता/मध्यम इमल्शन + पुट्टी मरम्मत; टेराकोटा एक्सेंट दीवार",
+     "₹9,000"
+    ],
+    [
+     "रोशनी",
+     "5 सरफ़ेस LED डाउनलाइट, पेल्मेट LED पट्टी + ड्राइवर, 2 दीवार लाइट, इलेक्ट्रीशियन",
+     "₹10,500"
+    ],
+    [
+     "पेल्मेट और रॉड",
+     "लैमिनेटेड प्लाई पेल्मेट 11', स्टील पर्दा रॉड",
+     "₹4,000"
+    ],
+    [
+     "पर्दे",
+     "नील सूती पर्दे (बालकनी 4 + W1 2 पल्ले) + वॉयल",
+     "₹7,000"
+    ],
+    [
+     "कपड़े",
+     "सूती दरी 5'×7', ब्लॉक-प्रिंट चादर + दोहर, गद्दियाँ",
+     "₹5,000"
+    ],
+    [
+     "पत्थर",
+     "काले ग्रेनाइट की बालकनी दहलीज़ + W1 सिल",
+     "₹2,500"
+    ],
+    [
+     "बालकनी",
+     "फ़ोल्डिंग बिस्ट्रो सेट, गमलों में 4 पौधे, सोलर लाइटें, बल्कहेड लाइट",
+     "₹8,500"
+    ],
+    [
+     "सजावट",
+     "फ़्रेम किया मधुबनी प्रिंट",
+     "₹1,000"
+    ]
+   ],
+   "note": "2026 महानगर दाम, गोल किए हुए। एल्युमिनियम काम में 18% GST शामिल; बढ़ई के दाम में आमतौर पर नहीं। शामिल नहीं: नया फ़र्श (ज़रूरत हो तो लगभग ₹30–40 हज़ार), AC, पंखा, नई वायरिंग।",
+   "savings": "मौजूदा W1 खिड़की रखें और सिर्फ़ जाली लगवाएँ (−₹10 हज़ार), बालकनी सेट बाद में लें (−₹5 हज़ार), पेल्मेट LED और सोलर लाइटें छोड़ें (−₹3 हज़ार), एक ही साइड टेबल (−₹2 हज़ार)। इससे लगभग ₹1.73 लाख।"
+  },
+  "schedule": [
+   {
+    "area": "फ़र्श",
+    "items": [
+     [
+      "मौजूदा",
+      "Keep the current floor; deep-clean and re-grout"
+     ],
+     [
+      "दरी",
+      "Handloom cotton dhurrie 5'×7' (Panipat)"
+     ]
+    ]
+   },
+   {
+    "area": "दीवारें",
+    "items": [
+     [
+      "पेंट",
+      "Economy/standard emulsion, warm white, over putty patching"
+     ],
+     [
+      "एक्सेंट",
+      "Terracotta emulsion on the bed wall"
+     ],
+     [
+      "कला",
+      "Framed Madhubani print over the desk"
+     ]
+    ]
+   },
+   {
+    "area": "छत",
+    "items": [
+     [
+      "फ़िनिश",
+      "Existing plaster, repainted white; no false ceiling"
+     ],
+     [
+      "पेल्मेट",
+      "Laminated ply box over the balcony curtains, LED strip on top"
+     ]
+    ]
+   },
+   {
+    "area": "अलमारी",
+    "items": [
+     [
+      "ढाँचा",
+      "18 mm MR ply / HDHMR"
+     ],
+     [
+      "शटर",
+      "Frosty-white 1 mm laminate + walnut strip"
+     ],
+     [
+      "हार्डवेयर",
+      "Basic soft-close hinges, SS D-handles"
+     ],
+     [
+      "लॉफ़्ट",
+      "Full-width loft to the ceiling"
+     ]
+    ]
+   },
+   {
+    "area": "फ़र्नीचर",
+    "items": [
+     [
+      "बेड",
+      "Engineered-wood queen with box storage, walnut finish"
+     ],
+     [
+      "गद्दा",
+      "6\" orthopaedic memory foam"
+     ],
+     [
+      "स्टडी",
+      "Wall-hung laminated-ply desk + shelves, cafe chair"
+     ],
+     [
+      "बैठक",
+      "Cane moodha"
+     ]
+    ]
+   },
+   {
+    "area": "खिड़की और दरवाज़ा",
+    "items": [
+     [
+      "W1",
+      "3-track domal aluminium (2 glass + mesh), white"
+     ],
+     [
+      "बालकनी",
+      "2-track domal aluminium, 4 panels (2 sliding), white"
+     ],
+     [
+      "पत्थर",
+      "Black granite threshold and sill"
+     ]
+    ]
+   },
+   {
+    "area": "रोशनी",
+    "items": [
+     [
+      "सामान्य",
+      "5 × 12 W surface LED downlights, 3000K"
+     ],
+     [
+      "मूड लाइट",
+      "LED strip on the curtain pelmet"
+     ],
+     [
+      "साइड",
+      "2 cone wall lights, warm-white bulbs"
+     ]
+    ]
+   },
+   {
+    "area": "कपड़े",
+    "items": [
+     [
+      "पर्दे",
+      "Indigo cotton + voile sheer on SS rods"
+     ],
+     [
+      "बेड",
+      "Jaipuri block-print bedsheet + dohar, mustard cushions"
+     ]
+    ]
+   },
+   {
+    "area": "बालकनी",
+    "items": [
+     [
+      "बैठने की जगह",
+      "Folding metal bistro table + 2 chairs"
+     ],
+     [
+      "पौधे",
+      "Tulsi, money plant, snake plant, areca palm"
+     ],
+     [
+      "लाइट",
+      "Solar string lights, IP65 bulkhead"
+     ]
+    ]
+   }
+  ],
+  "schedNote": "(तकनीकी विवरण ठेकेदार के लिए अंग्रेज़ी में)"
+ }
+}

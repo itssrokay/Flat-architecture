@@ -389,7 +389,7 @@ export function setupExtras(ctx) {
     const inter = ctx.imm.isInteractive(o);
     card.innerHTML = `<div class="ti-head"><b>${esc(u.label || pretty(o.name))}</b><button class="small" data-a="x">✕</button></div>
       <div class="ti-row">${esc(catLabel(u.category))} · ${sizeText(o)}</div>` +
-      (ex1 ? `<div class="ti-row"><b>${esc(ex1.term)}:</b> ${esc(ex1.plain)}</div>` : '') +
+      (ex1 ? `<div class="ti-row"><b>${esc(ex1.term)}:</b> ${esc(ex1.plain)}${ex1.img ? ` <a href="${esc(ex1.img)}" target="_blank" rel="noopener">🖼 See pictures</a>` : ''}</div>` : '') +
       (u.spec ? `<div class="ti-row ti-spec">${esc(u.spec)}</div>` : '') +
       `<div class="ti-btns">${inter ? '<button class="small" data-a="toggle">Open / close</button>' : ''}<button class="small" data-a="more">All details</button></div>`;
     card.classList.remove('hidden');

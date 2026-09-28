@@ -1,13 +1,17 @@
 {
+ "lang": "en",
  "glossary": [
   {
    "term": "RCC",
-   "plain": "Reinforced Cement Concrete: concrete with steel bars (sariya) inside. Your flat's skeleton (pillars, beams, slabs) is RCC. You never break or drill big holes into RCC without an engineer's OK.",
+   "plain": "Reinforced Cement Concrete: concrete with steel bars (sariya) inside. Your flat's skeleton (pillars, beams, slabs) is RCC. Never break or drill big holes into RCC without an engineer's OK.",
    "match": null,
    "aka": [
     "reinforced concrete"
    ],
-   "group": "Structure"
+   "group": "Structure",
+   "groupLabel": "Structure",
+   "img": "https://www.google.com/search?tbm=isch&q=RCC+column+beam+slab+house+construction+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Reinforced+concrete"
   },
   {
    "term": "Pillar / column",
@@ -16,23 +20,32 @@
    "aka": [
     "column"
    ],
-   "group": "Structure"
+   "group": "Structure",
+   "groupLabel": "Structure",
+   "img": "https://www.google.com/search?tbm=isch&q=RCC+column+house+construction",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Column"
   },
   {
    "term": "Beam",
    "plain": "A horizontal RCC member that runs between pillars just under the ceiling, often showing as a 'drop' in the ceiling. Carries the slab. Never cut it.",
    "match": "BEAM",
    "aka": [],
-   "group": "Structure"
+   "group": "Structure",
+   "groupLabel": "Structure",
+   "img": "https://www.google.com/search?tbm=isch&q=RCC+beam+ceiling+drop+house",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Beam+%28structure%29"
   },
   {
    "term": "Slab",
-   "plain": "The flat RCC plate that forms your ceiling and the floor of the flat above (and your floor on top of the one below). About 5–6\" thick.",
+   "plain": "The flat RCC plate that forms your ceiling and the floor of the flat above. About 5–6\" thick.",
    "match": "SLAB",
    "aka": [
     "roof slab"
    ],
-   "group": "Structure"
+   "group": "Structure",
+   "groupLabel": "Structure",
+   "img": "https://www.google.com/search?tbm=isch&q=RCC+slab+ceiling",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Concrete+slab"
   },
   {
    "term": "Brick / block wall",
@@ -42,86 +55,151 @@
     "partition wall",
     "infill wall"
    ],
-   "group": "Structure"
+   "group": "Structure",
+   "groupLabel": "Structure",
+   "img": "https://www.google.com/search?tbm=isch&q=brick+infill+wall+RCC+frame+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Brick"
   },
   {
    "term": "AAC block",
    "plain": "A light, large grey building block used instead of red bricks. Easier to cut, insulates better.",
    "match": null,
    "aka": [],
-   "group": "Structure"
+   "group": "Structure",
+   "groupLabel": "Structure",
+   "img": "https://www.google.com/search?tbm=isch&q=AAC+block+wall",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Autoclaved+aerated+concrete"
   },
   {
    "term": "Raised / thick wall (Room 1)",
-   "plain": "In Room 1's south wall, one 7'3\" long part sticks 3'4\" into the room, so that part of the wall is 3'4\" deep instead of normal thickness. It's solid (not a cupboard). Such thick blocks usually wrap a pillar, a shaft for pipes/wires, or the building's structure next door — ask the builder before cutting into it. The designs use its face for a study desk / dresser.",
+   "plain": "In Room 1's south wall, one 7'3\" long part sticks 3'4\" into the room, so that part of the wall is 3'4\" deep instead of normal thickness. It's solid (not a cupboard). Such thick blocks usually wrap a pillar, a shaft for pipes/wires, or the building's structure — ask the builder before cutting into it. The designs use its face for a study desk / dresser.",
    "match": "WALL_R1_S_RAISED",
    "aka": [
     "raised part",
     "thick wall"
    ],
-   "group": "Structure"
+   "group": "Structure",
+   "groupLabel": "Structure",
+   "img": null,
+   "wiki": null
   },
   {
    "term": "Plaster",
-   "plain": "A 12–15 mm layer of cement and sand spread on bricks to make walls flat. Builders usually hand over walls already plastered (and often with one coat of white paint/putty).",
+   "plain": "A 12–15 mm layer of cement and sand spread on bricks to make walls flat. Builders usually hand over walls already plastered (often with one coat of white putty/paint).",
    "match": null,
    "aka": [
     "cement plaster"
    ],
-   "group": "Walls"
+   "group": "Walls",
+   "groupLabel": "Walls",
+   "img": "https://www.google.com/search?tbm=isch&q=cement+plaster+wall+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Plaster"
   },
   {
    "term": "Opening / lintel",
    "plain": "An opening is the hole left in a wall for a door or window. A lintel is the small concrete beam over the opening that carries the wall above.",
    "match": "OPENING",
    "aka": [],
-   "group": "Structure"
+   "group": "Structure",
+   "groupLabel": "Structure",
+   "img": "https://www.google.com/search?tbm=isch&q=lintel+over+window+opening",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Lintel"
   },
   {
    "term": "Wall putty",
-   "plain": "White paste (cement or acrylic based) spread in 2 thin coats (about 1–1.5 mm) on plaster and sanded smooth. It fills pores and small cracks so paint looks smooth. Used only indoors, on walls and ceiling. Not waterproof, so never on outside walls.",
+   "plain": "White paste (cement or acrylic based) spread in 2 thin coats (about 1–1.5 mm) on plaster and sanded smooth. It fills pores and small cracks so paint looks smooth. Used only indoors, on walls and ceiling — not waterproof, so never on outside walls. e.g. Birla White WallCare, JK WallMaxx (about ₹30–45 per kg).",
    "match": "putty",
    "aka": [
     "putty"
    ],
-   "group": "Walls"
+   "group": "Walls",
+   "groupLabel": "Walls",
+   "img": "https://www.google.com/search?tbm=isch&q=wall+putty+application+before+painting",
+   "wiki": null
   },
   {
    "term": "Primer",
-   "plain": "A first thin coat that makes paint stick and use less paint. Goes on after putty and before the colour coats.",
+   "plain": "A first thin coat that makes paint stick and use less paint. Goes on after putty and before the colour coats (water-based interior wall primer).",
    "match": "primer",
    "aka": [],
-   "group": "Walls"
+   "group": "Walls",
+   "groupLabel": "Walls",
+   "img": "https://www.google.com/search?tbm=isch&q=interior+wall+primer+painting",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Primer+%28paint%29"
   },
   {
    "term": "Emulsion paint",
-   "plain": "Normal water-based wall paint. Economy (e.g. Tractor Emulsion), standard (Apcolite) and premium (Royale) grades differ in washability and finish. 2 coats over primer.",
+   "plain": "Normal water-based wall paint, 2 coats over primer. Three grades (Asian Paints example, 2026 prices for 20 L): economy Tractor Emulsion ~₹212/L, standard Apcolite Premium ~₹437/L, luxury Royale ~₹764/L. Costlier grades are more washable and smoother. Berger, Nerolac and Dulux have similar ranges.",
    "match": "emulsion|ACCENT_WALL|_PAINT",
    "aka": [
     "paint"
    ],
-   "group": "Walls"
+   "group": "Walls",
+   "groupLabel": "Walls",
+   "img": "https://www.google.com/search?tbm=isch&q=Asian+Paints+Tractor+Apcolite+Royale+emulsion",
+   "wiki": null
   },
   {
    "term": "Distemper",
    "plain": "The cheapest chalky wall paint. Marks easily and can't be washed; mostly avoided in bedrooms now.",
    "match": null,
    "aka": [],
-   "group": "Walls"
+   "group": "Walls",
+   "groupLabel": "Walls",
+   "img": "https://www.google.com/search?tbm=isch&q=distemper+paint+wall",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Distemper+%28paint%29"
   },
   {
    "term": "Limewash",
    "plain": "A soft, cloudy-looking lime-based wall finish. Gives a hand-made textured look. Used on the accent wall in Options A and C.",
    "match": "limewash",
    "aka": [],
-   "group": "Walls"
+   "group": "Walls",
+   "groupLabel": "Walls",
+   "img": "https://www.google.com/search?tbm=isch&q=limewash+wall+bedroom",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Whitewash"
   },
   {
    "term": "Accent wall",
-   "plain": "One wall painted or panelled differently to make it the room's focus, usually behind the bed.",
+   "plain": "One wall painted or panelled differently from the others to make it the room's focus, usually the wall behind the bed. In Option D it's the east (bed) wall painted terracotta, the other walls warm white.",
    "match": "ACCENT|HEADBOARD_(WALL|PANEL|SLAT|CANE)",
    "aka": [],
-   "group": "Walls"
+   "group": "Walls",
+   "groupLabel": "Walls",
+   "img": "https://www.google.com/search?tbm=isch&q=terracotta+accent+wall+behind+bed+Indian+bedroom",
+   "wiki": null
+  },
+  {
+   "term": "Terracotta (colour)",
+   "plain": "A warm brownish-orange, the colour of baked clay pots (matka / kulhad). Calm and earthy; pairs well with white, indigo, cane and wood.",
+   "match": "terracotta",
+   "aka": [
+    "brick red"
+   ],
+   "group": "Colours",
+   "groupLabel": "Colours",
+   "img": "https://www.google.com/search?tbm=isch&q=terracotta+wall+colour+bedroom",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Terracotta"
+  },
+  {
+   "term": "Indigo",
+   "plain": "Deep blue from the indigo plant, classic in Indian block-print textiles. Used for Option D's cotton curtains.",
+   "match": "indigo",
+   "aka": [],
+   "group": "Colours",
+   "groupLabel": "Colours",
+   "img": "https://www.google.com/search?tbm=isch&q=indigo+cotton+curtains+bedroom",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Indigo+dye"
+  },
+  {
+   "term": "Greige / sage / teal",
+   "plain": "Greige = grey + beige (DEFAULT's floor). Sage = soft grey-green (DEFAULT's headboard and curtains). Teal = deep blue-green (Option C's accent wall).",
+   "match": "greige|sage|teal",
+   "aka": [],
+   "group": "Colours",
+   "groupLabel": "Colours",
+   "img": "https://www.google.com/search?tbm=isch&q=greige+sage+teal+bedroom+colours",
+   "wiki": null
   },
   {
    "term": "Panelling",
@@ -130,7 +208,10 @@
    "aka": [
     "wall panel"
    ],
-   "group": "Walls"
+   "group": "Walls",
+   "groupLabel": "Walls",
+   "img": "https://www.google.com/search?tbm=isch&q=fluted+wall+panel+behind+bed",
+   "wiki": null
   },
   {
    "term": "POP",
@@ -139,7 +220,10 @@
    "aka": [
     "plaster of paris"
    ],
-   "group": "Ceiling"
+   "group": "Ceiling",
+   "groupLabel": "Ceiling",
+   "img": "https://www.google.com/search?tbm=isch&q=POP+false+ceiling+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Plaster"
   },
   {
    "term": "False ceiling",
@@ -148,7 +232,10 @@
    "aka": [
     "gypsum ceiling"
    ],
-   "group": "Ceiling"
+   "group": "Ceiling",
+   "groupLabel": "Ceiling",
+   "img": "https://www.google.com/search?tbm=isch&q=peripheral+false+ceiling+bedroom+cove+light+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Dropped+ceiling"
   },
   {
    "term": "Gypsum board",
@@ -157,7 +244,10 @@
    "aka": [
     "Gyproc"
    ],
-   "group": "Ceiling"
+   "group": "Ceiling",
+   "groupLabel": "Ceiling",
+   "img": "https://www.google.com/search?tbm=isch&q=gypsum+board+false+ceiling+installation",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Drywall"
   },
   {
    "term": "Cove light",
@@ -166,81 +256,127 @@
    "aka": [
     "cove"
    ],
-   "group": "Lighting"
+   "group": "Lighting",
+   "groupLabel": "Lighting",
+   "img": "https://www.google.com/search?tbm=isch&q=cove+lighting+bedroom+ceiling",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Cove+lighting"
   },
   {
    "term": "Pelmet",
    "plain": "A box or board above the curtains that hides the curtain rod or track. In Option D it's a laminated plywood box with an LED strip on top.",
    "match": "PELMET",
    "aka": [],
-   "group": "Ceiling"
+   "group": "Ceiling",
+   "groupLabel": "Ceiling",
+   "img": "https://www.google.com/search?tbm=isch&q=wooden+curtain+pelmet+with+LED",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Pelmet"
   },
   {
    "term": "Skirting",
    "plain": "A 3–4\" strip at the bottom of the walls (tile, wood or aluminium) that protects the paint from mops and feet.",
    "match": "SKIRTING",
    "aka": [],
-   "group": "Floor"
+   "group": "Floor",
+   "groupLabel": "Floor",
+   "img": "https://www.google.com/search?tbm=isch&q=tile+skirting+floor+wall",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Baseboard"
   },
   {
    "term": "Vitrified tile",
-   "plain": "The most common Indian floor today: a hard, low-porosity ceramic tile fired at high temperature. Doesn't stain easily, cheaper and easier than marble. GVT/PGVT = glazed with a printed design (can look like marble, wood or terrazzo).",
+   "plain": "The most common Indian floor today. Made from clay, quartz, feldspar and silica, pressed and fired at about 1,200 °C, so it becomes dense and glass-like: hard, low water absorption, doesn't stain easily. Cheaper and easier to keep than marble. GVT/PGVT = glazed with a printed design (can look like marble, wood or terrazzo). Brands: Kajaria, Somany, Johnson, Nitco.",
    "match": "vitrified|Tile_Greige|TILE|FLOOR_FINISH",
    "aka": [
     "GVT",
     "PGVT",
     "tile"
    ],
-   "group": "Floor"
+   "group": "Floor",
+   "groupLabel": "Floor",
+   "img": "https://www.google.com/search?tbm=isch&q=vitrified+tile+flooring+bedroom+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Vitrified+tile"
+  },
+  {
+   "term": "IPS / cement floor",
+   "plain": "Indian Patent Stone: a smooth grey cement-concrete floor. Some builders hand over flats with IPS or a rough cement screed so owners can choose tiles. It works, but it's dusty and cold-looking — most people tile over it.",
+   "match": null,
+   "aka": [
+    "IPS flooring",
+    "cement floor"
+   ],
+   "group": "Floor",
+   "groupLabel": "Floor",
+   "img": "https://www.google.com/search?tbm=isch&q=IPS+flooring+cement+floor+India",
+   "wiki": null
   },
   {
    "term": "Porcelain tile",
    "plain": "A denser, premium kind of vitrified tile, often in big slabs (1200×1200 mm or more). Used in Option B.",
    "match": "porcelain",
    "aka": [],
-   "group": "Floor"
+   "group": "Floor",
+   "groupLabel": "Floor",
+   "img": "https://www.google.com/search?tbm=isch&q=large+format+porcelain+tile+bedroom",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Porcelain+tile"
   },
   {
    "term": "Marble",
    "plain": "Natural stone (e.g. Makrana white). Beautiful but porous: it stains, needs polishing and costs more. None of the designs use marble, to keep cost and upkeep down.",
    "match": null,
    "aka": [],
-   "group": "Floor"
+   "group": "Floor",
+   "groupLabel": "Floor",
+   "img": "https://www.google.com/search?tbm=isch&q=Indian+marble+flooring+bedroom",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Marble"
   },
   {
    "term": "Granite",
    "plain": "Hard natural stone, very durable. Used for window sills and door thresholds (black granite) in these designs, not for the whole floor.",
    "match": "granite",
    "aka": [],
-   "group": "Floor"
+   "group": "Floor",
+   "groupLabel": "Floor",
+   "img": "https://www.google.com/search?tbm=isch&q=black+granite+window+sill",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Granite"
   },
   {
    "term": "Kota stone",
    "plain": "A green-grey natural stone from Rajasthan, cheap, tough and cool underfoot. 'Leather finish' = matte textured surface. Used in Option C's balcony.",
    "match": "kota",
    "aka": [],
-   "group": "Floor"
+   "group": "Floor",
+   "groupLabel": "Floor",
+   "img": "https://www.google.com/search?tbm=isch&q=Kota+stone+flooring+balcony",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Kota+stone"
   },
   {
    "term": "Terrazzo",
-   "plain": "A floor with chips of stone set in cement and polished. Options use 'terrazzo-look' tiles (vitrified tiles printed to look like terrazzo).",
+   "plain": "A floor with chips of stone set in cement and polished. The options use 'terrazzo-look' tiles (vitrified tiles printed to look like terrazzo).",
    "match": "terrazzo",
    "aka": [],
-   "group": "Floor"
+   "group": "Floor",
+   "groupLabel": "Floor",
+   "img": "https://www.google.com/search?tbm=isch&q=terrazzo+look+tile+floor",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Terrazzo"
   },
   {
    "term": "Wood-look tile",
    "plain": "Vitrified tile printed and textured like wooden planks. Looks warm, but you can mop it like tile. Used in Option A.",
    "match": "wood-look|plank",
    "aka": [],
-   "group": "Floor"
+   "group": "Floor",
+   "groupLabel": "Floor",
+   "img": "https://www.google.com/search?tbm=isch&q=wood+look+plank+tile+bedroom+India",
+   "wiki": null
   },
   {
    "term": "Grout",
    "plain": "The filler in the gaps between tiles. Epoxy grout is stain-proof and colour-matched; cement grout is cheaper but darkens over time.",
    "match": "grout",
    "aka": [],
-   "group": "Floor"
+   "group": "Floor",
+   "groupLabel": "Floor",
+   "img": "https://www.google.com/search?tbm=isch&q=epoxy+grout+tiles",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Grout"
   },
   {
    "term": "Mortar bed / tile adhesive",
@@ -249,28 +385,40 @@
    "aka": [
     "bedding"
    ],
-   "group": "Floor"
+   "group": "Floor",
+   "groupLabel": "Floor",
+   "img": "https://www.google.com/search?tbm=isch&q=tile+laying+cement+mortar+bed",
+   "wiki": null
   },
   {
    "term": "Threshold",
    "plain": "The stone strip at the bottom of a doorway. At the balcony it also steps down and slopes away so rainwater doesn't come in.",
    "match": "THRESHOLD",
    "aka": [],
-   "group": "Floor"
+   "group": "Floor",
+   "groupLabel": "Floor",
+   "img": "https://www.google.com/search?tbm=isch&q=granite+threshold+balcony+door",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Threshold+%28architecture%29"
   },
   {
    "term": "Anti-skid tile (R11)",
    "plain": "Outdoor tile with a rough surface so it isn't slippery when wet. R11 is a slip-resistance rating.",
    "match": "anti-skid|Outdoor_Tile|R11",
    "aka": [],
-   "group": "Floor"
+   "group": "Floor",
+   "groupLabel": "Floor",
+   "img": "https://www.google.com/search?tbm=isch&q=anti+skid+balcony+tile",
+   "wiki": null
   },
   {
    "term": "Waterproofing",
    "plain": "A chemical coating under balcony and bathroom floors so water doesn't leak to the flat below. Needs a slope (fall) towards the drain.",
    "match": "waterproof",
    "aka": [],
-   "group": "Floor"
+   "group": "Floor",
+   "groupLabel": "Floor",
+   "img": "https://www.google.com/search?tbm=isch&q=balcony+waterproofing+before+tiling",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Waterproofing"
   },
   {
    "term": "Dhurrie",
@@ -279,7 +427,20 @@
    "aka": [
     "rug"
    ],
-   "group": "Decor"
+   "group": "Decor",
+   "groupLabel": "Decor",
+   "img": "https://www.google.com/search?tbm=isch&q=cotton+dhurrie+rug+bedroom",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Dhurrie"
+  },
+  {
+   "term": "Madhubani / moodha / jaali",
+   "plain": "Madhubani: folk painting from Bihar (Option D's framed print). Moodha: a round cane stool. Jaali: a carved lattice screen (Option C).",
+   "match": "MADHUBANI|MOODHA|JAALI",
+   "aka": [],
+   "group": "Decor",
+   "groupLabel": "Decor",
+   "img": "https://www.google.com/search?tbm=isch&q=Madhubani+painting+moodha+cane+stool+jaali",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Madhubani+art"
   },
   {
    "term": "Plywood (MR / BWR / BWP)",
@@ -288,14 +449,20 @@
    "aka": [
     "ply"
    ],
-   "group": "Carpentry"
+   "group": "Carpentry",
+   "groupLabel": "Carpentry",
+   "img": "https://www.google.com/search?tbm=isch&q=plywood+MR+BWP+sheets+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Plywood"
   },
   {
    "term": "HDHMR",
    "plain": "High Density High Moisture Resistance board: a pressed fibre board that's harder and cheaper than good plywood and handles humidity well. Popular for wardrobes now.",
    "match": "HDHMR",
    "aka": [],
-   "group": "Carpentry"
+   "group": "Carpentry",
+   "groupLabel": "Carpentry",
+   "img": "https://www.google.com/search?tbm=isch&q=HDHMR+board+wardrobe",
+   "wiki": null
   },
   {
    "term": "MDF / particle board",
@@ -304,28 +471,40 @@
    "aka": [
     "engineered wood"
    ],
-   "group": "Carpentry"
+   "group": "Carpentry",
+   "groupLabel": "Carpentry",
+   "img": "https://www.google.com/search?tbm=isch&q=MDF+particle+board+engineered+wood+furniture",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Medium-density+fibreboard"
   },
   {
    "term": "Carcass",
    "plain": "The box/body of a wardrobe or cabinet (sides, back, shelves), without the doors.",
    "match": "CARCASS|INTERNALS",
    "aka": [],
-   "group": "Carpentry"
+   "group": "Carpentry",
+   "groupLabel": "Carpentry",
+   "img": "https://www.google.com/search?tbm=isch&q=wardrobe+carcass+internal+shelves",
+   "wiki": null
   },
   {
    "term": "Shutter",
    "plain": "Carpenter's word for a cupboard door.",
    "match": "SHUTTER|WARDROBE_DOOR|LOFT_DOOR|WARDROBE_SLIDER",
    "aka": [],
-   "group": "Carpentry"
+   "group": "Carpentry",
+   "groupLabel": "Carpentry",
+   "img": "https://www.google.com/search?tbm=isch&q=wardrobe+shutters+laminate",
+   "wiki": null
   },
   {
    "term": "Loft",
    "plain": "The storage box above the wardrobe, up to the ceiling, for suitcases and quilts.",
    "match": "LOFT",
    "aka": [],
-   "group": "Carpentry"
+   "group": "Carpentry",
+   "groupLabel": "Carpentry",
+   "img": "https://www.google.com/search?tbm=isch&q=wardrobe+with+loft+India",
+   "wiki": null
   },
   {
    "term": "Laminate",
@@ -334,49 +513,70 @@
    "aka": [
     "sunmica"
    ],
-   "group": "Carpentry"
+   "group": "Carpentry",
+   "groupLabel": "Carpentry",
+   "img": "https://www.google.com/search?tbm=isch&q=laminate+wardrobe+shutters+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=High-pressure+laminate"
   },
   {
    "term": "Veneer",
    "plain": "A real-wood slice (about 0.5 mm) glued on the board, then polished with PU. Looks like real wood, costs more than laminate.",
    "match": "veneer",
    "aka": [],
-   "group": "Carpentry"
+   "group": "Carpentry",
+   "groupLabel": "Carpentry",
+   "img": "https://www.google.com/search?tbm=isch&q=wood+veneer+wardrobe",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Wood+veneer"
   },
   {
    "term": "PU / acrylic / lacquered glass",
    "plain": "Premium door finishes: PU is a paint-like polish, acrylic is a glossy sheet, lacquered glass is back-painted glass. Costlier than laminate.",
-   "match": "\\\\bPU\\\\b|acrylic|lacquer",
+   "match": "\\bPU\\b|acrylic|lacquer",
    "aka": [],
-   "group": "Carpentry"
+   "group": "Carpentry",
+   "groupLabel": "Carpentry",
+   "img": "https://www.google.com/search?tbm=isch&q=lacquered+glass+acrylic+PU+wardrobe",
+   "wiki": null
   },
   {
    "term": "Soft-close hinge",
-   "plain": "A hinge with a small damper so the door closes gently instead of banging. Hettich/Hafele/Ebco are common brands.",
+   "plain": "A hinge with a small damper so the door closes gently instead of banging. Hettich / Hafele / Ebco are common brands.",
    "match": "hinge|soft-close",
    "aka": [],
-   "group": "Carpentry"
+   "group": "Carpentry",
+   "groupLabel": "Carpentry",
+   "img": "https://www.google.com/search?tbm=isch&q=soft+close+hinge+cabinet",
+   "wiki": null
   },
   {
    "term": "Plinth",
    "plain": "The recessed base under a wardrobe or bed so you can mop under the front and your toes don't hit it.",
    "match": "PLINTH",
    "aka": [],
-   "group": "Carpentry"
+   "group": "Carpentry",
+   "groupLabel": "Carpentry",
+   "img": "https://www.google.com/search?tbm=isch&q=recessed+plinth+wardrobe",
+   "wiki": null
   },
   {
    "term": "Domal aluminium",
    "plain": "The common, economical aluminium window/door section in India (27 mm series). Slides on tracks. Good value; slimmer 'system' windows cost more.",
    "match": "domal",
    "aka": [],
-   "group": "Windows & doors"
+   "group": "Windows & doors",
+   "groupLabel": "Windows & doors",
+   "img": "https://www.google.com/search?tbm=isch&q=domal+aluminium+sliding+window+India",
+   "wiki": null
   },
   {
    "term": "uPVC",
    "plain": "Plastic (vinyl) window frames with steel inside. Seals well against dust, noise and rain; white is the standard colour. Used in Option A.",
    "match": "uPVC",
    "aka": [],
-   "group": "Windows & doors"
+   "group": "Windows & doors",
+   "groupLabel": "Windows & doors",
+   "img": "https://www.google.com/search?tbm=isch&q=uPVC+windows+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Polyvinyl+chloride"
   },
   {
    "term": "Sliding window / door",
@@ -386,56 +586,80 @@
     "2-track",
     "3-track"
    ],
-   "group": "Windows & doors"
+   "group": "Windows & doors",
+   "groupLabel": "Windows & doors",
+   "img": "https://www.google.com/search?tbm=isch&q=3+track+aluminium+sliding+window+with+mesh",
+   "wiki": null
   },
   {
    "term": "Casement",
    "plain": "A window that opens on hinges like a door (inward or outward). Seals better than sliding. Inward ones need space in front.",
    "match": "casement|CASEMENT",
    "aka": [],
-   "group": "Windows & doors"
+   "group": "Windows & doors",
+   "groupLabel": "Windows & doors",
+   "img": "https://www.google.com/search?tbm=isch&q=casement+window",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Casement+window"
   },
   {
    "term": "Tilt-and-turn",
    "plain": "A European casement that can tilt at the top for air or swing fully inward to clean. Used in Option B.",
    "match": "tilt",
    "aka": [],
-   "group": "Windows & doors"
+   "group": "Windows & doors",
+   "groupLabel": "Windows & doors",
+   "img": "https://www.google.com/search?tbm=isch&q=tilt+and+turn+window",
+   "wiki": null
   },
   {
    "term": "Bi-fold door",
    "plain": "Panels fold like an accordion and stack at one side, opening almost the whole width. Used in Option C's balcony.",
    "match": "BIFOLD|bi-fold",
    "aka": [],
-   "group": "Windows & doors"
+   "group": "Windows & doors",
+   "groupLabel": "Windows & doors",
+   "img": "https://www.google.com/search?tbm=isch&q=aluminium+bifold+door+balcony",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Folding+door"
   },
   {
    "term": "Toughened glass",
-   "plain": "Glass heat-treated to be ~5× stronger; if it breaks it shatters into small blunt pieces. Standard for doors.",
+   "plain": "Glass heat-treated to be about 5× stronger; if it breaks it shatters into small blunt pieces. Standard for doors.",
    "match": "toughened",
    "aka": [],
-   "group": "Windows & doors"
+   "group": "Windows & doors",
+   "groupLabel": "Windows & doors",
+   "img": "https://www.google.com/search?tbm=isch&q=toughened+glass",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Tempered+glass"
   },
   {
    "term": "Laminated glass",
    "plain": "Two glass sheets with a plastic film between. If it cracks, it stays in place, so it can replace a grill.",
    "match": "laminated safety",
    "aka": [],
-   "group": "Windows & doors"
+   "group": "Windows & doors",
+   "groupLabel": "Windows & doors",
+   "img": "https://www.google.com/search?tbm=isch&q=laminated+safety+glass",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Laminated+glass"
   },
   {
    "term": "Low-E glass",
    "plain": "Glass with a thin coating that keeps out heat from the sun. Keeps rooms cooler; costs more.",
    "match": "low-E",
    "aka": [],
-   "group": "Windows & doors"
+   "group": "Windows & doors",
+   "groupLabel": "Windows & doors",
+   "img": "https://www.google.com/search?tbm=isch&q=low+e+glass+window",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Low+emissivity"
   },
   {
    "term": "Mosquito mesh",
    "plain": "A fine net panel or pleated screen so you can keep the window/door open without insects.",
    "match": "mesh|MESH",
    "aka": [],
-   "group": "Windows & doors"
+   "group": "Windows & doors",
+   "groupLabel": "Windows & doors",
+   "img": "https://www.google.com/search?tbm=isch&q=pleated+mosquito+mesh+door",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Window+screen"
   },
   {
    "term": "Grill",
@@ -444,49 +668,70 @@
    "aka": [
     "grille"
    ],
-   "group": "Windows & doors"
+   "group": "Windows & doors",
+   "groupLabel": "Windows & doors",
+   "img": "https://www.google.com/search?tbm=isch&q=window+safety+grill+India",
+   "wiki": null
   },
   {
    "term": "Sill",
    "plain": "The ledge at the bottom of a window. Inside it's often granite; outside it slopes and has a drip groove so rain drips off instead of running down the wall.",
    "match": "SILL",
    "aka": [],
-   "group": "Windows & doors"
+   "group": "Windows & doors",
+   "groupLabel": "Windows & doors",
+   "img": "https://www.google.com/search?tbm=isch&q=granite+window+sill",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Window+sill"
   },
   {
    "term": "Downlight",
    "plain": "A small round ceiling light pointing down. 'Recessed' ones sit inside a false ceiling; 'surface' ones are screwed onto a plain ceiling (Option D).",
    "match": "DOWNLIGHT",
    "aka": [],
-   "group": "Lighting"
+   "group": "Lighting",
+   "groupLabel": "Lighting",
+   "img": "https://www.google.com/search?tbm=isch&q=surface+LED+downlight+vs+recessed",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Recessed+light"
   },
   {
    "term": "LED strip",
    "plain": "A flexible tape of small LEDs (sold per metre) that needs a 'driver' (power adapter). Used for cove, pelmet, wardrobe and headboard glows.",
    "match": "strip|_LED|LED_|COVE",
    "aka": [],
-   "group": "Lighting"
+   "group": "Lighting",
+   "groupLabel": "Lighting",
+   "img": "https://www.google.com/search?tbm=isch&q=LED+strip+light+cove",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=LED+strip+light"
   },
   {
    "term": "Colour temperature (K)",
    "plain": "How warm or cool light looks: 2700K is warm yellow (cosy, bedrooms), 3000K warm white, 4000K neutral, 6500K cool blue-white (offices).",
    "match": "2700K|3000K|4000K",
    "aka": [],
-   "group": "Lighting"
+   "group": "Lighting",
+   "groupLabel": "Lighting",
+   "img": "https://www.google.com/search?tbm=isch&q=2700K+vs+6500K+light+comparison",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Color+temperature"
   },
   {
    "term": "IP65",
    "plain": "A rating that means a light is dust-tight and safe in rain, needed outdoors on the balcony.",
    "match": "IP65",
    "aka": [],
-   "group": "Lighting"
+   "group": "Lighting",
+   "groupLabel": "Lighting",
+   "img": "https://www.google.com/search?tbm=isch&q=IP65+outdoor+wall+light",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=IP+code"
   },
   {
    "term": "Pendant",
    "plain": "A light hanging from the ceiling on a cord.",
    "match": "PENDANT|PAPER_LAMP",
    "aka": [],
-   "group": "Lighting"
+   "group": "Lighting",
+   "groupLabel": "Lighting",
+   "img": "https://www.google.com/search?tbm=isch&q=pendant+light+bedside",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Pendant+light"
   }
  ],
  "designs": {
@@ -497,14 +742,16 @@
     "layers": [
      "RCC floor slab",
      "Cement-sand bed 1:4, about 40–50 mm (levels the floor)",
-     "Matte vitrified tile, 9 mm, laid lengthwise, grout in the joints"
+     "Matte vitrified tile 800×1600 mm, 9 mm, grout in the joints"
     ],
     "simple": "It is tile, not marble: glazed vitrified tile that looks calm and doesn't stain. Skirting is cut from the same tile.",
+    "where": null,
+    "paint": null,
     "show": [
      "FLOOR_FINISH",
      "SKIRTING"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=greige+matte+vitrified+tile+800x1600+bedroom"
    },
    {
     "title": "Walls (3 walls)",
@@ -517,10 +764,12 @@
      "Emulsion paint, 2 coats"
     ],
     "simple": "Normal painted walls: putty makes them smooth, then primer and 2 coats of washable emulsion.",
+    "where": "Putty + primer + paint go on the INSIDE faces of all Room 1 walls and on the ceiling (every face you see from inside the room, including the thick wall and the alcove). Outside faces of outer walls get the building's exterior paint (no putty — it isn't waterproof). The balcony walls get exterior-grade paint without putty.",
+    "paint": "Standard washable emulsion, low sheen, warm white — e.g. Asian Paints Apcolite Premium (~₹437/L) or Berger/Nerolac equivalent. Ceiling: ceiling-white flat.",
     "show": [
      "^WALL_INT_R1|^WALL_EXT_N_R1|^WALL_EXT_S_R1"
     ],
-    "where": "Putty + primer + paint go on the INSIDE faces of all Room 1 walls and on the ceiling (walls: every face you see from inside the room, including the thick wall and the alcove). Outside faces of outer walls are the building's exterior paint (no putty, it isn't waterproof). The balcony walls get exterior-grade paint without putty."
+    "img": "https://www.google.com/search?tbm=isch&q=warm+white+bedroom+walls"
    },
    {
     "title": "Bed wall (east)",
@@ -533,10 +782,12 @@
      "Brass-finish aluminium cap on top"
     ],
     "simple": "A decorative wooden cladding only on the bed wall; the rest of that wall above 8' is painted.",
+    "where": null,
+    "paint": null,
     "show": [
      "HEADBOARD_WALL_FLUTED"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=fluted+wooden+panel+behind+bed"
    },
    {
     "title": "Ceiling",
@@ -549,10 +800,12 @@
      "Primer + ceiling-white paint"
     ],
     "simple": "A 'band' false ceiling: gypsum board only along the edges (1'7\" wide, 6\" deep), with an LED strip hidden in its inner edge and small downlights in it. The centre is the original concrete ceiling, puttied and painted.",
+    "where": null,
+    "paint": null,
     "show": [
      "FALSE_CEILING"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=peripheral+false+ceiling+cove+light+bedroom"
    },
    {
     "title": "Wardrobe",
@@ -564,10 +817,12 @@
      "Soft-close hinges, black bar handles"
     ],
     "simple": "Carpenter-made wardrobe that fills the alcove, with drawers, shelves, long hanging and a loft for suitcases.",
+    "where": null,
+    "paint": null,
     "show": [
      "WARDROBE_CARCASS"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=3+door+laminate+wardrobe+with+loft+India"
    },
    {
     "title": "Window W1",
@@ -579,10 +834,12 @@
      "Black granite sill inside"
     ],
     "simple": "Sliding window: open one glass panel and slide the net over it.",
+    "where": null,
+    "paint": null,
     "show": [
      "W1_OUTER_FRAME"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=3+track+aluminium+sliding+window+mesh"
    },
    {
     "title": "Balcony door",
@@ -594,10 +851,12 @@
      "Black granite threshold with a small step down to the balcony"
     ],
     "simple": "Sliding glass door that opens about 7' to the balcony.",
+    "where": null,
+    "paint": null,
     "show": [
      "BALCONY_DOOR_FRAME"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=aluminium+sliding+door+balcony+India"
    },
    {
     "title": "Balcony",
@@ -607,10 +866,12 @@
      "Anti-skid outdoor tile 600×600 mm"
     ],
     "simple": "Non-slippery outdoor tile over waterproofing so rain doesn't leak below.",
+    "where": null,
+    "paint": null,
     "show": [
      "BALCONY_FLOOR_FINISH"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=small+balcony+bench+plants+India"
    }
   ],
   "OPTION_A": [
@@ -620,13 +881,15 @@
     "layers": [
      "RCC floor slab",
      "Cement-sand bed 1:4, about 40–50 mm (levels the floor)",
-     "Wood-look vitrified tile planks, grout in the joints"
+     "Wood-look vitrified tile planks 200×1200 mm, grout in the joints"
     ],
     "simple": "Tile that looks like wood: warm like a wooden floor but you can mop it.",
+    "where": null,
+    "paint": null,
     "show": [
      "FLOOR_FINISH"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=wood+look+vitrified+plank+tile+bedroom"
    },
    {
     "title": "Walls",
@@ -639,10 +902,12 @@
      "Limewash-effect emulsion, 2 coats"
     ],
     "simple": "Painted like normal, but with a limewash-effect paint for a soft handmade look.",
+    "where": "Putty + primer + paint go on the INSIDE faces of all Room 1 walls and on the ceiling (every face you see from inside the room, including the thick wall and the alcove). Outside faces of outer walls get the building's exterior paint (no putty — it isn't waterproof). The balcony walls get exterior-grade paint without putty.",
+    "paint": "Limewash-effect special finish (a textured paint applied with a brush in criss-cross strokes) over primer; ceiling-white flat on the ceiling.",
     "show": [
      "^WALL_INT_R1|^WALL_EXT_N_R1"
     ],
-    "where": "Putty + primer + paint go on the INSIDE faces of all Room 1 walls and on the ceiling (walls: every face you see from inside the room, including the thick wall and the alcove). Outside faces of outer walls are the building's exterior paint (no putty, it isn't waterproof). The balcony walls get exterior-grade paint without putty."
+    "img": "https://www.google.com/search?tbm=isch&q=limewash+effect+warm+white+bedroom"
    },
    {
     "title": "Thick wall (bed head)",
@@ -653,10 +918,12 @@
      "1.5\" ash slats at 3\" gaps"
     ],
     "simple": "Wooden slats on the thick south wall where the bed head sits.",
+    "where": null,
+    "paint": null,
     "show": [
      "HEADBOARD_SLAT"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=wooden+slat+wall+behind+bed+japandi"
    },
    {
     "title": "Ceiling",
@@ -669,10 +936,12 @@
      "Ceiling-white matt paint, 2 coats"
     ],
     "simple": "Plain puttied and painted concrete ceiling at 10', plus a 6'×6'6\" frame of ash slats hung over the bed.",
+    "where": null,
+    "paint": null,
     "show": [
      "CEILING_SLAT_RAFT"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=wooden+slat+ceiling+raft+over+bed"
    },
    {
     "title": "Wardrobe",
@@ -683,10 +952,12 @@
      "Top-hung soft-close sliding track"
     ],
     "simple": "Sliding doors need no swing space.",
+    "where": null,
+    "paint": null,
     "show": [
      "WARDROBE_CARCASS"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=sliding+wardrobe+ash+veneer"
    },
    {
     "title": "Window W1",
@@ -697,10 +968,12 @@
      "Roller mosquito mesh inside"
     ],
     "simple": "Casement windows that swing outward.",
+    "where": null,
+    "paint": null,
     "show": [
      "W1_OUTER_FRAME"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=white+uPVC+casement+window"
    },
    {
     "title": "Balcony door",
@@ -711,10 +984,12 @@
      "Kota-stone threshold"
     ],
     "simple": "",
+    "where": null,
+    "paint": null,
     "show": [
      "BALCONY_DOOR_FRAME"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=uPVC+sliding+door+balcony"
    },
    {
     "title": "Balcony",
@@ -724,10 +999,12 @@
      "WPC interlocking deck tiles (no glue)"
     ],
     "simple": "Removable deck tiles; nothing is broken.",
+    "where": null,
+    "paint": null,
     "show": [
      "BALCONY_FLOOR_FINISH"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=WPC+deck+tiles+balcony"
    }
   ],
   "OPTION_B": [
@@ -740,10 +1017,12 @@
      "Large-format porcelain tile, 1 mm joints, grout in the joints"
     ],
     "simple": "Premium big porcelain tiles for a seamless, modern look.",
+    "where": null,
+    "paint": null,
     "show": [
      "FLOOR_FINISH"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=large+format+grey+porcelain+tile+bedroom"
    },
    {
     "title": "Walls",
@@ -756,10 +1035,12 @@
      "Emulsion paint, 2 coats"
     ],
     "simple": "Painted walls plus two feature walls.",
+    "where": "Putty + primer + paint go on the INSIDE faces of all Room 1 walls and on the ceiling (every face you see from inside the room, including the thick wall and the alcove). Outside faces of outer walls get the building's exterior paint (no putty — it isn't waterproof). The balcony walls get exterior-grade paint without putty.",
+    "paint": "Luxury matt emulsion, pure white — e.g. Asian Paints Royale matt (~₹764/L) or equivalent.",
     "show": [
      "^WALL_INT_R1"
     ],
-    "where": "Putty + primer + paint go on the INSIDE faces of all Room 1 walls and on the ceiling (walls: every face you see from inside the room, including the thick wall and the alcove). Outside faces of outer walls are the building's exterior paint (no putty, it isn't waterproof). The balcony walls get exterior-grade paint without putty."
+    "img": "https://www.google.com/search?tbm=isch&q=minimal+white+bedroom+fabric+panel+wall"
    },
    {
     "title": "Ceiling",
@@ -772,10 +1053,12 @@
      "Primer + ceiling-white paint"
     ],
     "simple": "A full gypsum false ceiling over the whole room (not just a band).",
+    "where": null,
+    "paint": null,
     "show": [
      "FALSE_CEILING"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=flush+gypsum+false+ceiling+linear+LED"
    },
    {
     "title": "Wardrobe",
@@ -786,10 +1069,12 @@
      "Soft-close sliding system"
     ],
     "simple": "",
+    "where": null,
+    "paint": null,
     "show": [
      "WARDROBE_CARCASS"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=lacquered+glass+sliding+wardrobe+mirror"
    },
    {
     "title": "Window W1",
@@ -800,10 +1085,12 @@
      "Steel-cable invisible grill outside"
     ],
     "simple": "",
+    "where": null,
+    "paint": null,
     "show": [
      "W1_OUTER_FRAME"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=black+tilt+and+turn+window+invisible+grill"
    },
    {
     "title": "Balcony door",
@@ -814,10 +1101,12 @@
      "Flush quartz threshold"
     ],
     "simple": "",
+    "where": null,
+    "paint": null,
     "show": [
      "BALCONY_DOOR_FRAME"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=lift+and+slide+door+slim+frame"
    },
    {
     "title": "Balcony",
@@ -827,10 +1116,12 @@
      "Anti-skid porcelain 600×1200"
     ],
     "simple": "",
+    "where": null,
+    "paint": null,
     "show": [
      "BALCONY_FLOOR_FINISH"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=grey+outdoor+porcelain+balcony"
    }
   ],
   "OPTION_C": [
@@ -844,11 +1135,13 @@
      "Brass-colour strip inlay border"
     ],
     "simple": "Tile printed like terrazzo; the border strip makes it feel like a rug.",
+    "where": null,
+    "paint": null,
     "show": [
      "FLOOR_FINISH",
      "FLOOR_BORDER"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=terrazzo+look+tile+floor+brass+inlay+border"
    },
    {
     "title": "Walls",
@@ -861,11 +1154,13 @@
      "Teal limewash on the bed wall / warm white emulsion elsewhere"
     ],
     "simple": "",
+    "where": "Putty + primer + paint go on the INSIDE faces of all Room 1 walls and on the ceiling (every face you see from inside the room, including the thick wall and the alcove). Outside faces of outer walls get the building's exterior paint (no putty — it isn't waterproof). The balcony walls get exterior-grade paint without putty.",
+    "paint": "Teal limewash (lime-based paint, brushed) on the bed wall; standard emulsion (Apcolite-class) warm white elsewhere.",
     "show": [
      "ACCENT_WALL_TEAL",
      "^WALL_INT_R1"
     ],
-    "where": "Putty + primer + paint go on the INSIDE faces of all Room 1 walls and on the ceiling (walls: every face you see from inside the room, including the thick wall and the alcove). Outside faces of outer walls are the building's exterior paint (no putty, it isn't waterproof). The balcony walls get exterior-grade paint without putty."
+    "img": "https://www.google.com/search?tbm=isch&q=teal+limewash+accent+wall+bedroom"
    },
    {
     "title": "Headboard & jaali",
@@ -876,11 +1171,13 @@
      "Woven cane mesh / CNC-cut jaali"
     ],
     "simple": "",
+    "where": null,
+    "paint": null,
     "show": [
      "HEADBOARD_CANE",
      "JAALI"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=cane+headboard+wall+teak+jaali"
    },
    {
     "title": "Ceiling",
@@ -894,10 +1191,12 @@
      "Teak-veneer edge strip + cove LED"
     ],
     "simple": "Like DEFAULT's band but wider (2'2\") with a wooden edge.",
+    "where": null,
+    "paint": null,
     "show": [
      "FALSE_CEILING"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=tray+ceiling+cove+light+wooden+edge"
    },
    {
     "title": "Wardrobe",
@@ -908,10 +1207,12 @@
      "Cane-mesh insets, brass handles"
     ],
     "simple": "",
+    "where": null,
+    "paint": null,
     "show": [
      "WARDROBE_CARCASS"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=cane+wardrobe+doors+teak"
    },
    {
     "title": "Window W1",
@@ -923,10 +1224,12 @@
      "Kota-stone sill"
     ],
     "simple": "",
+    "where": null,
+    "paint": null,
     "show": [
      "W1_OUTER_FRAME"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=wood+finish+aluminium+casement+jaali+grill"
    },
    {
     "title": "Balcony door",
@@ -937,10 +1240,12 @@
      "Kota threshold"
     ],
     "simple": "",
+    "where": null,
+    "paint": null,
     "show": [
      "BIFOLD_P1"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=aluminium+bifold+door+balcony"
    },
    {
     "title": "Balcony",
@@ -950,10 +1255,12 @@
      "Kota stone, leather (matte) finish"
     ],
     "simple": "",
+    "where": null,
+    "paint": null,
     "show": [
      "BALCONY_FLOOR_FINISH"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=kota+stone+balcony+leather+finish"
    }
   ],
   "OPTION_D": [
@@ -962,20 +1269,22 @@
     "see": "Your existing floor stays (no new tiles). A cotton dhurrie rug adds colour.",
     "layers": [
      "RCC slab",
-     "Existing floor as handed over by the builder",
+     "Existing floor as handed over by the builder (usually vitrified tile)",
      "Deep-clean + re-grout the joints",
      "Cotton dhurrie 5'×7' on top"
     ],
-    "simple": "Nothing new is laid. If your flat's floor is bare cement (no tiles yet), add vitrified tiles like DEFAULT: about ₹30–40k for Room 1.",
+    "simple": "Nothing new is laid. Most new flats are handed over with vitrified tiles; if yours is marble, that's fine too. If it's bare grey cement (IPS), add vitrified tiles like DEFAULT: about ₹30–40k for Room 1.",
+    "where": null,
+    "paint": null,
     "show": [
      "DHURRIE",
      "FLOOR_R1"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=cotton+dhurrie+rug+on+vitrified+tile+floor+bedroom"
    },
    {
     "title": "Walls",
-    "see": "Warm-white walls; the bed wall is terracotta.",
+    "see": "Warm-white walls; the bed wall is terracotta (a warm clay-pot brown-orange).",
     "layers": [
      "Brick / block wall (builder)",
      "Cement plaster (builder)",
@@ -984,11 +1293,13 @@
      "2 coats emulsion: warm white, terracotta on the bed wall"
     ],
     "simple": "Just paint: no panels or wallpaper. The builder's existing putty is reused and only repaired, which is why it's cheap.",
+    "where": "Putty + primer + paint go on the INSIDE faces of all Room 1 walls and on the ceiling (every face you see from inside the room, including the thick wall and the alcove). Outside faces of outer walls get the building's exterior paint (no putty — it isn't waterproof). The balcony walls get exterior-grade paint without putty.",
+    "paint": "Economy emulsion for the white walls — e.g. Asian Paints Tractor Emulsion (~₹212/L). Terracotta accent: same or Apcolite (~₹437/L) tinted to a terracotta / brick-red shade — buy a small sample pot and try a patch first. About 10–12 L in total for 2 coats.",
     "show": [
      "ACCENT_WALL_TERRACOTTA",
      "^WALL_INT_R1"
     ],
-    "where": "Putty + primer + paint go on the INSIDE faces of all Room 1 walls and on the ceiling (walls: every face you see from inside the room, including the thick wall and the alcove). Outside faces of outer walls are the building's exterior paint (no putty, it isn't waterproof). The balcony walls get exterior-grade paint without putty."
+    "img": "https://www.google.com/search?tbm=isch&q=terracotta+accent+wall+behind+bed+white+walls+Indian+bedroom"
    },
    {
     "title": "Ceiling",
@@ -1001,11 +1312,13 @@
      "Ceiling-white matt paint, 2 coats"
     ],
     "simple": "Nothing is hung from the ceiling. Lights are screwed directly onto it (surface downlights). The soft glow on the balcony side comes from an LED strip on top of the wooden curtain pelmet.",
+    "where": null,
+    "paint": null,
     "show": [
      "DOWNLIGHT_1",
      "CURTAIN_PELMET"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=surface+downlights+plain+ceiling+bedroom+India"
    },
    {
     "title": "Wardrobe",
@@ -1015,11 +1328,13 @@
      "Frosty-white 1 mm laminate + walnut laminate strip",
      "Basic soft-close hinges, steel D-handles"
     ],
-    "simple": "Carpenter-made from economical boards with laminate, the best value finish.",
+    "simple": "Carpenter-made from economical boards with laminate — the best value finish.",
+    "where": null,
+    "paint": null,
     "show": [
      "WARDROBE_CARCASS"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=white+laminate+wardrobe+walnut+strip+loft+India"
    },
    {
     "title": "Window W1",
@@ -1031,10 +1346,12 @@
      "Black granite sill"
     ],
     "simple": "",
+    "where": null,
+    "paint": null,
     "show": [
      "W1_OUTER_FRAME"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=white+domal+aluminium+sliding+window+mesh"
    },
    {
     "title": "Balcony door",
@@ -1045,10 +1362,12 @@
      "Black granite threshold"
     ],
     "simple": "About 5' opens in the middle; the end panels stay fixed.",
+    "where": null,
+    "paint": null,
     "show": [
      "BALCONY_DOOR_FRAME"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=4+panel+aluminium+sliding+door+balcony+India"
    },
    {
     "title": "Balcony",
@@ -1057,76 +1376,452 @@
      "Existing floor (check waterproofing: water shouldn't pool)"
     ],
     "simple": "",
+    "where": null,
+    "paint": null,
     "show": [
      "BALCONY_BISTRO_TABLE_TOP"
     ],
-    "where": null
+    "img": "https://www.google.com/search?tbm=isch&q=small+balcony+bistro+set+plants+India"
    }
   ]
  },
- "compare": {
-  "rows": [
-   "Floor",
-   "Walls",
-   "Ceiling",
-   "Wardrobe",
-   "Window W1",
-   "Balcony door",
-   "Budget idea"
+ "pages": {
+  "ui": {
+   "title": "Learn",
+   "sub": "home-making, explained simply",
+   "tabs": [
+    [
+     "room",
+     "Your room"
+    ],
+    [
+     "basics",
+     "How homes are built"
+    ],
+    [
+     "floorpaint",
+     "Floor & paint"
+    ],
+    [
+     "steps",
+     "Step by step"
+    ],
+    [
+     "compare",
+     "Compare designs"
+    ],
+    [
+     "dict",
+     "Dictionary"
+    ]
+   ],
+   "see": "What you see:",
+   "simple": "In simple words:",
+   "where": "Where exactly:",
+   "paint": "Which paint:",
+   "showme": "👁 Show me",
+   "pics": "🖼 See pictures",
+   "wiki": "📖 Read more",
+   "notin": "Not in this model",
+   "yousee": "you see this",
+   "structure": "structure",
+   "search": "Search: putty, HDHMR, domal, terracotta…",
+   "nomatch": "No match.",
+   "bare": "This model is the bare architecture (no interior design), so there are no finishes to explain. Pick DEFAULT, A, B, C or D under Interior design, or open How homes are built.",
+   "lead": "You're looking at <b>{d}</b>. Each card says what you'll see, what it's made of (the layers from the structure up to what you touch) and where it goes. <b>Show me</b> flies to it; <b>See pictures</b> opens real photos.",
+   "stepslead": "The usual order for doing up one room. Each step has to finish before the next, or work gets damaged and redone.",
+   "stepsnote": "For Option D (budget), steps 2, 5 and 6 are skipped: no civil work, no false ceiling, no new floor.",
+   "comparelead": "The same room, five ways, in plain words."
+  },
+  "svg": {
+   "slab": "SLAB (RCC) = your ceiling",
+   "beam": "BEAM (RCC) under the slab",
+   "pillar": "PILLAR",
+   "brick": "brick / block wall",
+   "filler": "(filler between pillars)",
+   "wallcap": "the wall: bricks, then plaster + putty + paint on the room side",
+   "balcony": "BALCONY (outside)",
+   "thick": "THICK (\"raised\") WALL",
+   "thick2": "solid · 7'3\" × 3'4\"",
+   "alcove": "ALCOVE",
+   "alcove2": "(wardrobe here)",
+   "pillar9": "↖ 9\" pillar",
+   "window": "WINDOW W1 (4')",
+   "opening": "← balcony opening 10'5\"",
+   "door": "door →",
+   "room": "ROOM 1",
+   "size": "12'7\" wide × 14'6\" deep",
+   "north": "N ↑"
+  },
+  "basics": [
+   {
+    "h": "1 · The skeleton: pillars, beams, slab",
+    "svg": "frame",
+    "p": [
+     "Your building stands on an <b>RCC frame</b> (concrete with steel bars): <b>pillars</b> (columns) go up, <b>beams</b> run between them under the ceiling, and a flat <b>slab</b> sits on top — your ceiling and the next flat's floor.",
+     "The walls between the pillars are <b>brick or block</b> 'filler' walls. They don't hold the building up, which is why you can cut small grooves in them for wires, but <b>never</b> in pillars, beams or the slab."
+    ],
+    "buttons": [
+     [
+      "PILLAR_R1_NW|PILLAR_1",
+      "👁 Show me a pillar"
+     ],
+     [
+      "BEAM_",
+      "👁 a beam"
+     ]
+    ]
+   },
+   {
+    "h": "2 · Your Room 1, explained",
+    "svg": "room1",
+    "ul": [
+     "<b>Thick (\"raised\") wall</b>: on the south side, one 7'3\" part of the wall is 3'4\" deep. It's solid, like a big block, not a cupboard. The designs put the study desk / dresser on its face. Ask the builder what's inside before drilling deep (often a pillar or a pipe/wire shaft).",
+     "<b>Alcove</b>: the 5'4\" × 3'4\" pocket next to it, perfect for a wardrobe, so the wardrobe takes no floor space from the room.",
+     "<b>Balcony opening</b>: the whole west side (10'5\") opens to the balcony; there's no gate or frame yet, which is why every design adds a glass door.",
+     "<b>9\" pillar</b> at the north-west corner where the opening ends."
+    ],
+    "buttons": [
+     [
+      "WALL_R1_S_RAISED",
+      "👁 Show me the thick wall"
+     ],
+     [
+      "WARDROBE_CARCASS|WALL_R1_S_RAISED",
+      "👁 the alcove"
+     ]
+    ]
+   },
+   {
+    "h": "3 · What's on a wall, a floor and a ceiling",
+    "svg": null,
+    "stacks": [
+     [
+      "Wall (inside faces)",
+      [
+       "Brick / block",
+       "Cement plaster 12–15 mm",
+       "Wall putty, 2 thin coats",
+       "Primer",
+       "Paint, 2 coats"
+      ]
+     ],
+     [
+      "Floor",
+      [
+       "RCC slab",
+       "Cement-sand bed ~40–50 mm",
+       "Tile (vitrified) or stone, grout in the joints"
+      ]
+     ],
+     [
+      "Ceiling (plain)",
+      [
+       "RCC slab",
+       "Thin plaster / POP punning",
+       "Putty",
+       "Primer",
+       "Ceiling-white paint"
+      ]
+     ],
+     [
+      "Ceiling with a false ceiling",
+      [
+       "RCC slab",
+       "Steel channels hanging from it",
+       "Gypsum board 12.5 mm",
+       "Joint tape + putty",
+       "Primer + paint"
+      ]
+     ]
+    ],
+    "notes": [
+     "<b>Which side gets putty and paint?</b> Only the <b>inside faces</b> of the room's walls and the <b>ceiling</b>. Outside faces of outer walls get exterior paint from the building (putty isn't waterproof, so it's never used outside). The balcony's walls get exterior-grade paint, no putty."
+    ]
+   }
   ],
-  "cols": [
-   "DEFAULT",
-   "OPTION_A",
-   "OPTION_B",
-   "OPTION_C",
-   "OPTION_D"
+  "floorpaint": [
+   {
+    "h": "What is your floor made of?",
+    "p": [
+     "Under every floor is the concrete <b>slab</b>. On it the mason lays a <b>cement-sand bed</b> (~40–50 mm) to make it level, and on that the <b>tiles or stone</b>, with <b>grout</b> filling the joints. So it's never 'just cement' — unless the builder left an <b>IPS</b> (smooth grey cement) floor for you to tile.",
+     "<b>The designs use vitrified tiles, not marble.</b> A vitrified tile is made of clay, quartz, feldspar and silica, pressed and fired at about 1,200 °C until it turns dense and glass-like — hard, hardly absorbs water, doesn't stain. Marble is natural stone: beautiful but porous, needs polishing and costs more."
+    ],
+    "table": [
+     [
+      "Floor type",
+      "What it is",
+      "Used in"
+     ],
+     [
+      "Vitrified tile",
+      "Fired clay-and-glass tile, printed or plain",
+      "DEFAULT, A (wood-look), C (terrazzo-look)"
+     ],
+     [
+      "Porcelain tile",
+      "Denser premium vitrified, big slabs",
+      "B"
+     ],
+     [
+      "Existing floor",
+      "Whatever the builder laid (usually vitrified tile)",
+      "D (budget)"
+     ],
+     [
+      "Kota / granite",
+      "Natural stone",
+      "Balcony (C), sills and thresholds"
+     ],
+     [
+      "Marble",
+      "Natural stone, porous",
+      "Not used"
+     ],
+     [
+      "IPS / cement",
+      "Smooth grey cement floor",
+      "Only if the builder left it — then add tiles"
+     ]
+    ],
+    "links": [
+     [
+      "https://www.google.com/search?tbm=isch&q=vitrified+tile+flooring+bedroom+India",
+      "See vitrified tile floors"
+     ],
+     [
+      "https://www.google.com/search?tbm=isch&q=Indian+marble+flooring+bedroom",
+      "See marble floors"
+     ],
+     [
+      "https://www.google.com/search?tbm=isch&q=IPS+flooring+cement+floor+India",
+      "See IPS cement floors"
+     ]
+    ]
+   },
+   {
+    "h": "Which paint, exactly?",
+    "p": [
+     "Walls and ceiling get the same 4 layers: <b>putty</b> (2 coats) → <b>primer</b> (1 coat) → <b>emulsion paint</b> (2 coats). What changes between designs is the paint grade and colour. Prices below are Asian Paints 20-litre rates (2026); Berger, Nerolac and Dulux have matching ranges at similar prices."
+    ],
+    "table": [
+     [
+      "Product",
+      "What for",
+      "Approx. price"
+     ],
+     [
+      "Wall putty (Birla White WallCare, JK WallMaxx)",
+      "Smoothing walls/ceiling before paint",
+      "₹30–45 per kg"
+     ],
+     [
+      "Interior wall primer (water-based)",
+      "Makes paint stick, saves paint",
+      "cheaper than the paint"
+     ],
+     [
+      "Tractor Emulsion — economy",
+      "Option D walls; ceilings",
+      "~₹212 / L"
+     ],
+     [
+      "Apcolite Premium Emulsion — standard",
+      "DEFAULT, C walls; D accent",
+      "~₹437 / L"
+     ],
+     [
+      "Royale Luxury Emulsion — premium",
+      "Option B walls",
+      "~₹764 / L"
+     ],
+     [
+      "Limewash / limewash-effect",
+      "A walls, C teal accent",
+      "special finish, ask the painter"
+     ],
+     [
+      "Exterior emulsion (e.g. Apex)",
+      "Balcony walls (no putty)",
+      "weather-proof"
+     ]
+    ],
+    "notes": [
+     "<b>How much?</b> Room 1 has about 590 sq ft of wall + ceiling. A litre of emulsion covers roughly 100–120 sq ft per coat, so 2 coats need about 10–12 litres.",
+     "<b>Terracotta accent wall?</b> Terracotta is the warm brown-orange of a clay pot (matka / kulhad). Pick a terracotta or brick-red shade from the shop's colour fan deck, buy a small sample pot and paint a 2'×2' patch first — colours look different on the wall and at night."
+    ],
+    "swatches": [
+     [
+      "#b86b4b",
+      "Terracotta"
+     ],
+     [
+      "#f3eee4",
+      "Warm white"
+     ],
+     [
+      "#344066",
+      "Indigo"
+     ],
+     [
+      "#d9a032",
+      "Mustard"
+     ],
+     [
+      "#8c9a80",
+      "Sage"
+     ],
+     [
+      "#1f6f6f",
+      "Teal"
+     ],
+     [
+      "#cbbfae",
+      "Greige"
+     ]
+    ],
+    "links": [
+     [
+      "https://www.google.com/search?tbm=isch&q=terracotta+accent+wall+bedroom+India",
+      "See terracotta accent walls"
+     ],
+     [
+      "https://www.google.com/search?tbm=isch&q=wall+putty+primer+painting+process+India",
+      "See putty & primer work"
+     ],
+     [
+      "https://www.google.com/search?tbm=isch&q=Asian+Paints+Tractor+Apcolite+Royale+finish+comparison",
+      "Compare paint finishes"
+     ]
+    ]
+   }
   ],
-  "cells": {
-   "DEFAULT": [
-    "Greige vitrified tile 800×1600",
-    "Paint + wooden fluted panel behind bed",
-    "Gypsum band at edges + hidden LED",
-    "3-door laminate + loft",
-    "Aluminium 3-track slider",
-    "3-panel aluminium slider",
-    "Mid"
+  "steps": [
+   [
+    "Measure & decide",
+    "You + designer / Claude",
+    "Fix the layout, the finishes and the budget first. Changes later cost double."
    ],
-   "OPTION_A": [
-    "Wood-look tile planks",
-    "Limewash-effect paint + ash slats",
-    "Plain + wooden slat raft",
-    "2-door sliding, ash veneer",
-    "White uPVC casements",
-    "uPVC 4-panel slider",
-    "Mid"
+   [
+    "Civil work (only if needed)",
+    "Mason",
+    "Breaking / building walls, making openings. Never touch pillars, beams or the slab without an engineer."
    ],
-   "OPTION_B": [
-    "Big grey porcelain 1200×1200",
-    "Paint + fabric panels",
-    "Full gypsum ceiling, LED lines",
-    "Sliding glass + mirror",
-    "Slim black tilt-and-turn",
-    "Slim lift-and-slide",
-    "High"
+   [
+    "Window & door frames",
+    "Aluminium / uPVC fabricator",
+    "Frames go in before the final putty so the edges can be finished neatly."
    ],
-   "OPTION_C": [
-    "Terrazzo-look tile + brass border",
-    "Teal limewash + cane + jaali",
-    "Tray ceiling + cove + teak edge",
-    "Teak veneer + cane",
-    "Teak-look casements",
-    "4-panel bi-fold",
-    "High"
+   [
+    "Electrical & AC piping",
+    "Electrician",
+    "Wires in pipes (conduits) cut into the brick walls: switch boards, light points, AC point. Done before putty and flooring."
    ],
-   "OPTION_D": [
-    "Existing floor + dhurrie",
-    "Paint only (terracotta accent)",
-    "Plain, repainted; surface lights",
-    "3-door laminate + loft (carpenter)",
-    "Domal 3-track slider",
-    "Domal 4-panel slider",
-    "₹1.93 lakh"
+   [
+    "False ceiling frame (if any)",
+    "Gypsum / POP contractor",
+    "Steel channels + gypsum boards, with holes for downlights and a groove for the cove LED."
+   ],
+   [
+    "Flooring (if new)",
+    "Tile mason",
+    "Tiles laid on a cement bed; left to set 2–3 days; skirting fixed. Cover it with sheets afterwards."
+   ],
+   [
+    "Putty & primer",
+    "Painter",
+    "Walls and ceiling: 2 coats of putty, sanding, primer. Dusty work, so before carpentry is finished."
+   ],
+   [
+    "Carpentry",
+    "Carpenter",
+    "Wardrobe, loft, study wall, pelmet. Usually 1–2 weeks for one room."
+   ],
+   [
+    "Final paint coats",
+    "Painter",
+    "2 coats of colour after the carpentry dust is gone. Touch-ups at the very end."
+   ],
+   [
+    "Fittings",
+    "Electrician",
+    "Lights, switches, fan, LED strips and drivers."
+   ],
+   [
+    "Glass, curtains, furniture",
+    "You / vendors",
+    "Window glass & mesh shutters, curtain rods, bed, mattress, rugs, plants."
+   ],
+   [
+    "Deep clean",
+    "Cleaning service",
+    "Acid-free cleaning of tiles, remove paint spots, then move in."
    ]
+  ],
+  "compare": {
+   "rows": [
+    "Floor",
+    "Walls",
+    "Ceiling",
+    "Wardrobe",
+    "Window W1",
+    "Balcony door",
+    "Budget idea"
+   ],
+   "cols": [
+    "DEFAULT",
+    "OPTION_A",
+    "OPTION_B",
+    "OPTION_C",
+    "OPTION_D"
+   ],
+   "cells": {
+    "DEFAULT": [
+     "Greige vitrified tile 800×1600",
+     "Paint (Apcolite-class) + wooden fluted panel behind bed",
+     "Gypsum band at edges + hidden LED",
+     "3-door laminate + loft",
+     "Aluminium 3-track slider",
+     "3-panel aluminium slider",
+     "Mid"
+    ],
+    "OPTION_A": [
+     "Wood-look tile planks",
+     "Limewash-effect paint + ash slats",
+     "Plain + wooden slat raft",
+     "2-door sliding, ash veneer",
+     "White uPVC casements",
+     "uPVC 4-panel slider",
+     "Mid"
+    ],
+    "OPTION_B": [
+     "Big grey porcelain 1200×1200",
+     "Royale-class paint + fabric panels",
+     "Full gypsum ceiling, LED lines",
+     "Sliding glass + mirror",
+     "Slim black tilt-and-turn",
+     "Slim lift-and-slide",
+     "High"
+    ],
+    "OPTION_C": [
+     "Terrazzo-look tile + brass border",
+     "Teal limewash + cane + jaali",
+     "Tray ceiling + cove + teak edge",
+     "Teak veneer + cane",
+     "Teak-look casements",
+     "4-panel bi-fold",
+     "High"
+    ],
+    "OPTION_D": [
+     "Existing floor + dhurrie",
+     "Tractor-class paint, terracotta accent",
+     "Plain, repainted; surface lights",
+     "3-door laminate + loft (carpenter)",
+     "Domal 3-track slider",
+     "Domal 4-panel slider",
+     "₹1.93 lakh"
+    ]
+   }
   }
  }
 }

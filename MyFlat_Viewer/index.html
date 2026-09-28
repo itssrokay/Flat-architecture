@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MyFlat Viewer</title>
-<link rel="stylesheet" href="./src/styles.css?v=10">
+<link rel="stylesheet" href="./src/styles.css?v=11">
 <script type="importmap">
 { "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/addons/" } }
 </script>
@@ -13,6 +13,7 @@
 <header id="topbar">
   <div class="brand desk-only">MyFlat</div>
   <button id="learnBtn" class="toggle learn" title="Beginner's guide: what everything is made of, how homes are built, dictionary (G)">📘 Learn</button>
+  <button id="langBtn" class="lang" title="हिंदी में देखें">हिंदी</button>
   <select id="modelSelect" title="Model"></select>
   <div class="sep"></div>
   <div class="group" id="viewButtons">
@@ -85,7 +86,7 @@
       <h4>Open / close</h4>
       <div class="row"><button id="openAllBtn" class="small">Open all</button><button id="closeAllBtn" class="small">Close all</button></div>
       <div class="note" id="interactInfo"></div>
-      <div class="note">Double-click a wardrobe door, window, balcony door or sheer curtain to open it. Inside (walk mode), just click it, or look at it and press <b>E</b>.</div>
+      <div class="note" id="dockOpenNote">Double-click a wardrobe door, window, balcony door or sheer curtain to open it. Inside (walk mode), just click it, or look at it and press <b>E</b>.</div>
     </section>
     <section id="planSection" class="hidden">
       <h4>Floor plan</h4>
@@ -145,6 +146,6 @@
   </div>
 </aside>
 
-<script type="module" src="./src/main.js?v=10"></script>
+<script type="module" src="./src/main.js?v=11"></script>
 </body>
 </html>

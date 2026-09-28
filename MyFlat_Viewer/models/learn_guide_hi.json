@@ -1,0 +1,1827 @@
+{
+ "lang": "hi",
+ "glossary": [
+  {
+   "term": "आरसीसी (RCC)",
+   "plain": "रीइन्फ़ोर्स्ड सीमेंट कंक्रीट: कंक्रीट जिसके अंदर लोहे की छड़ें (सरिया) होती हैं। आपके फ़्लैट का ढाँचा (पिलर, बीम, स्लैब) आरसीसी का है। इंजीनियर से पूछे बिना इसमें कभी तोड़-फोड़ या बड़े छेद न करें।",
+   "match": null,
+   "aka": [
+    "reinforced concrete"
+   ],
+   "group": "Structure",
+   "groupLabel": "ढाँचा",
+   "img": "https://www.google.com/search?tbm=isch&q=RCC+column+beam+slab+house+construction+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Reinforced+concrete"
+  },
+  {
+   "term": "पिलर / कॉलम",
+   "plain": "एक खड़ा आरसीसी खंभा जो इमारत का वज़न ज़मीन तक पहुँचाता है। इसे कभी न काटें, न छीलें। कमरा 1 के उत्तर-पश्चिम कोने में 9 इंच का पिलर है।",
+   "match": "PILLAR",
+   "aka": [
+    "column"
+   ],
+   "group": "Structure",
+   "groupLabel": "ढाँचा",
+   "img": "https://www.google.com/search?tbm=isch&q=RCC+column+house+construction",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Column"
+  },
+  {
+   "term": "बीम",
+   "plain": "छत के ठीक नीचे पिलरों के बीच चलने वाला आड़ा आरसीसी हिस्सा, जो छत में एक 'उभार' जैसा दिखता है। यह स्लैब को संभालता है। इसे कभी न काटें।",
+   "match": "BEAM",
+   "aka": [],
+   "group": "Structure",
+   "groupLabel": "ढाँचा",
+   "img": "https://www.google.com/search?tbm=isch&q=RCC+beam+ceiling+drop+house",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Beam+%28structure%29"
+  },
+  {
+   "term": "स्लैब",
+   "plain": "आरसीसी की सपाट प्लेट जो आपकी छत है और ऊपर वाले फ़्लैट का फ़र्श। लगभग 5–6 इंच मोटी।",
+   "match": "SLAB",
+   "aka": [
+    "roof slab"
+   ],
+   "group": "Structure",
+   "groupLabel": "ढाँचा",
+   "img": "https://www.google.com/search?tbm=isch&q=RCC+slab+ceiling",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Concrete+slab"
+  },
+  {
+   "term": "ईंट / ब्लॉक की दीवार",
+   "plain": "पिलरों के बीच की ज़्यादातर दीवारें सिर्फ़ 'भराव' की दीवारें होती हैं — लाल ईंट या AAC ब्लॉक की, फिर प्लास्टर। बाहरी दीवार 9 इंच, अंदर की 4.5 इंच। स्विच और पाइप के लिए इन्हें काटा जा सकता है (आरसीसी को नहीं)।",
+   "match": "^WALL_(INT|EXT)",
+   "aka": [
+    "partition wall",
+    "infill wall"
+   ],
+   "group": "Structure",
+   "groupLabel": "ढाँचा",
+   "img": "https://www.google.com/search?tbm=isch&q=brick+infill+wall+RCC+frame+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Brick"
+  },
+  {
+   "term": "AAC ब्लॉक",
+   "plain": "लाल ईंट की जगह इस्तेमाल होने वाला हल्का, बड़ा, ग्रे ब्लॉक। काटना आसान, गर्मी-ठंड से बेहतर बचाव।",
+   "match": null,
+   "aka": [],
+   "group": "Structure",
+   "groupLabel": "ढाँचा",
+   "img": "https://www.google.com/search?tbm=isch&q=AAC+block+wall",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Autoclaved+aerated+concrete"
+  },
+  {
+   "term": "मोटी ('उठी हुई') दीवार (कमरा 1)",
+   "plain": "कमरा 1 की दक्षिण दीवार का 7'3\" लंबा एक हिस्सा कमरे में 3'4\" आगे निकला है, यानी वहाँ दीवार 3'4\" गहरी है। यह ठोस है (अलमारी नहीं)। ऐसे मोटे हिस्से अक्सर किसी पिलर, पाइप/तारों के शाफ़्ट या ढाँचे को ढकते हैं — इसमें काटने से पहले बिल्डर से पूछें। डिज़ाइनों में इसके सामने स्टडी डेस्क / ड्रेसर है।",
+   "match": "WALL_R1_S_RAISED",
+   "aka": [
+    "raised part",
+    "thick wall"
+   ],
+   "group": "Structure",
+   "groupLabel": "ढाँचा",
+   "img": null,
+   "wiki": null
+  },
+  {
+   "term": "प्लास्टर",
+   "plain": "दीवार को सपाट बनाने के लिए ईंटों पर लगाई जाने वाली सीमेंट-रेत की 12–15 मिमी परत। बिल्डर आमतौर पर दीवारें प्लास्टर करके (अक्सर सफ़ेद पुट्टी/पेंट की एक परत के साथ) देते हैं।",
+   "match": null,
+   "aka": [
+    "cement plaster"
+   ],
+   "group": "Walls",
+   "groupLabel": "दीवारें",
+   "img": "https://www.google.com/search?tbm=isch&q=cement+plaster+wall+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Plaster"
+  },
+  {
+   "term": "ओपनिंग / लिंटल",
+   "plain": "ओपनिंग दीवार में दरवाज़े या खिड़की के लिए छोड़ी गई जगह है। लिंटल उसके ऊपर की छोटी कंक्रीट बीम है जो ऊपर की दीवार संभालती है।",
+   "match": "OPENING",
+   "aka": [],
+   "group": "Structure",
+   "groupLabel": "ढाँचा",
+   "img": "https://www.google.com/search?tbm=isch&q=lintel+over+window+opening",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Lintel"
+  },
+  {
+   "term": "वॉल पुट्टी",
+   "plain": "सफ़ेद पेस्ट (सीमेंट या एक्रिलिक आधारित) जो प्लास्टर पर 2 पतली परतों (लगभग 1–1.5 मिमी) में लगाकर घिसा जाता है। यह छेद और बारीक दरारें भरता है ताकि पेंट चिकना दिखे। सिर्फ़ अंदर, दीवार और छत पर — यह वॉटरप्रूफ़ नहीं है, इसलिए बाहरी दीवार पर कभी नहीं। जैसे Birla White WallCare, JK WallMaxx (लगभग ₹30–45 प्रति किलो)।",
+   "match": "putty",
+   "aka": [
+    "putty"
+   ],
+   "group": "Walls",
+   "groupLabel": "दीवारें",
+   "img": "https://www.google.com/search?tbm=isch&q=wall+putty+application+before+painting",
+   "wiki": null
+  },
+  {
+   "term": "प्राइमर",
+   "plain": "पहली पतली परत जिससे पेंट अच्छे से चिपकता है और कम लगता है। पुट्टी के बाद और रंग की परतों से पहले लगती है (पानी-आधारित इंटीरियर वॉल प्राइमर)।",
+   "match": "primer",
+   "aka": [],
+   "group": "Walls",
+   "groupLabel": "दीवारें",
+   "img": "https://www.google.com/search?tbm=isch&q=interior+wall+primer+painting",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Primer+%28paint%29"
+  },
+  {
+   "term": "इमल्शन पेंट",
+   "plain": "सामान्य पानी-आधारित दीवार का पेंट, प्राइमर के ऊपर 2 परतें। तीन श्रेणियाँ (Asian Paints उदाहरण, 2026, 20 लीटर के दाम): सस्ता Tractor Emulsion ~₹212/लीटर, मध्यम Apcolite Premium ~₹437/लीटर, महँगा Royale ~₹764/लीटर। महँगे पेंट ज़्यादा धुलने लायक और चिकने होते हैं। Berger, Nerolac, Dulux में भी ऐसी ही रेंज है।",
+   "match": "emulsion|ACCENT_WALL|_PAINT",
+   "aka": [
+    "paint"
+   ],
+   "group": "Walls",
+   "groupLabel": "दीवारें",
+   "img": "https://www.google.com/search?tbm=isch&q=Asian+Paints+Tractor+Apcolite+Royale+emulsion",
+   "wiki": null
+  },
+  {
+   "term": "डिस्टेंपर",
+   "plain": "सबसे सस्ता चूने जैसा पेंट। जल्दी दाग लगते हैं और धो नहीं सकते; अब बेडरूम में कम इस्तेमाल होता है।",
+   "match": null,
+   "aka": [],
+   "group": "Walls",
+   "groupLabel": "दीवारें",
+   "img": "https://www.google.com/search?tbm=isch&q=distemper+paint+wall",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Distemper+%28paint%29"
+  },
+  {
+   "term": "लाइमवॉश",
+   "plain": "चूने पर आधारित हल्का, बादल-जैसा दिखने वाला फ़िनिश। हाथ से बने टेक्सचर जैसा लगता है। विकल्प A और C की एक्सेंट दीवार पर।",
+   "match": "limewash",
+   "aka": [],
+   "group": "Walls",
+   "groupLabel": "दीवारें",
+   "img": "https://www.google.com/search?tbm=isch&q=limewash+wall+bedroom",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Whitewash"
+  },
+  {
+   "term": "एक्सेंट वॉल",
+   "plain": "कमरे की एक दीवार जो बाकी से अलग रंग या पैनल की होती है ताकि वही ध्यान खींचे — आमतौर पर बेड के पीछे वाली। विकल्प D में पूर्व (बेड) वाली दीवार टेराकोटा रंग की है, बाकी दीवारें हल्की सफ़ेद।",
+   "match": "ACCENT|HEADBOARD_(WALL|PANEL|SLAT|CANE)",
+   "aka": [],
+   "group": "Walls",
+   "groupLabel": "दीवारें",
+   "img": "https://www.google.com/search?tbm=isch&q=terracotta+accent+wall+behind+bed+Indian+bedroom",
+   "wiki": null
+  },
+  {
+   "term": "टेराकोटा (रंग)",
+   "plain": "पकी मिट्टी के घड़े या कुल्हड़ जैसा गर्म भूरा-नारंगी रंग। शांत और मिट्टी जैसा; सफ़ेद, नील, बेंत और लकड़ी के साथ अच्छा लगता है।",
+   "match": "terracotta",
+   "aka": [
+    "brick red"
+   ],
+   "group": "Colours",
+   "groupLabel": "रंग",
+   "img": "https://www.google.com/search?tbm=isch&q=terracotta+wall+colour+bedroom",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Terracotta"
+  },
+  {
+   "term": "नील (इंडिगो)",
+   "plain": "नील के पौधे से बना गहरा नीला रंग, भारतीय ब्लॉक-प्रिंट कपड़ों में आम। विकल्प D के सूती पर्दों में।",
+   "match": "indigo",
+   "aka": [],
+   "group": "Colours",
+   "groupLabel": "रंग",
+   "img": "https://www.google.com/search?tbm=isch&q=indigo+cotton+curtains+bedroom",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Indigo+dye"
+  },
+  {
+   "term": "ग्रेज / सेज / टील",
+   "plain": "ग्रेज = ग्रे + बेज (DEFAULT का फ़र्श)। सेज = हल्का धूसर-हरा (DEFAULT का हेडबोर्ड और पर्दे)। टील = गहरा नीला-हरा (विकल्प C की एक्सेंट दीवार)।",
+   "match": "greige|sage|teal",
+   "aka": [],
+   "group": "Colours",
+   "groupLabel": "रंग",
+   "img": "https://www.google.com/search?tbm=isch&q=greige+sage+teal+bedroom+colours",
+   "wiki": null
+  },
+  {
+   "term": "पैनलिंग",
+   "plain": "दीवार पर लगाए गए बोर्ड (धारीदार, पट्टियों वाले, कपड़े या बेंत के) — सुंदरता और थोड़ी आवाज़ कम करने के लिए। पेंट से काफ़ी महँगा।",
+   "match": "FLUTED|SLAT|PANEL_WALL|CANE_PANEL|JAALI",
+   "aka": [
+    "wall panel"
+   ],
+   "group": "Walls",
+   "groupLabel": "दीवारें",
+   "img": "https://www.google.com/search?tbm=isch&q=fluted+wall+panel+behind+bed",
+   "wiki": null
+  },
+  {
+   "term": "पीओपी (POP)",
+   "plain": "प्लास्टर ऑफ़ पेरिस। छत की चिकनी फ़िनिशिंग, कॉर्निस और पुराने तरह की फ़ॉल्स सीलिंग में। अब ज़्यादातर जिप्सम बोर्ड इस्तेमाल होता है।",
+   "match": null,
+   "aka": [
+    "plaster of paris"
+   ],
+   "group": "Ceiling",
+   "groupLabel": "छत",
+   "img": "https://www.google.com/search?tbm=isch&q=POP+false+ceiling+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Plaster"
+  },
+  {
+   "term": "फ़ॉल्स सीलिंग",
+   "plain": "कंक्रीट की छत के नीचे स्टील चैनल और जिप्सम बोर्ड से लटकाई गई दूसरी छत। तार छुपाती है, छिपी (कोव) लाइट और अंदर धँसी डाउनलाइट की जगह देती है। 'बैंड' फ़ॉल्स सीलिंग सिर्फ़ किनारों पर होती है।",
+   "match": "FALSE_CEILING|CEILING_BAND|TRAY",
+   "aka": [
+    "gypsum ceiling"
+   ],
+   "group": "Ceiling",
+   "groupLabel": "छत",
+   "img": "https://www.google.com/search?tbm=isch&q=peripheral+false+ceiling+bedroom+cove+light+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Dropped+ceiling"
+  },
+  {
+   "term": "जिप्सम बोर्ड",
+   "plain": "12.5 मिमी सफ़ेद बोर्ड (Gyproc आदि) जो स्टील फ़्रेम पर पेंच से लगता है — फ़ॉल्स सीलिंग या पार्टीशन के लिए। जोड़ों पर टेप, पुट्टी और पेंट होता है, तो यह सामान्य छत जैसा दिखता है।",
+   "match": "gypsum",
+   "aka": [
+    "Gyproc"
+   ],
+   "group": "Ceiling",
+   "groupLabel": "छत",
+   "img": "https://www.google.com/search?tbm=isch&q=gypsum+board+false+ceiling+installation",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Drywall"
+  },
+  {
+   "term": "कोव लाइट",
+   "plain": "फ़ॉल्स सीलिंग के खाँचे (या पेल्मेट) में छिपी LED पट्टी — छत पर हल्की रोशनी दिखती है, लाइट ख़ुद नहीं।",
+   "match": "COVE|PELMET_LED",
+   "aka": [
+    "cove"
+   ],
+   "group": "Lighting",
+   "groupLabel": "रोशनी",
+   "img": "https://www.google.com/search?tbm=isch&q=cove+lighting+bedroom+ceiling",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Cove+lighting"
+  },
+  {
+   "term": "पेल्मेट",
+   "plain": "पर्दों के ऊपर का बॉक्स या बोर्ड जो पर्दे की रॉड/ट्रैक छुपाता है। विकल्प D में यह लैमिनेटेड प्लाईवुड का बॉक्स है जिसके ऊपर LED पट्टी है।",
+   "match": "PELMET",
+   "aka": [],
+   "group": "Ceiling",
+   "groupLabel": "छत",
+   "img": "https://www.google.com/search?tbm=isch&q=wooden+curtain+pelmet+with+LED",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Pelmet"
+  },
+  {
+   "term": "स्कर्टिंग",
+   "plain": "दीवार के निचले हिस्से पर 3–4 इंच की पट्टी (टाइल, लकड़ी या एल्युमिनियम) जो पोछे और पैरों से पेंट बचाती है।",
+   "match": "SKIRTING",
+   "aka": [],
+   "group": "Floor",
+   "groupLabel": "फ़र्श",
+   "img": "https://www.google.com/search?tbm=isch&q=tile+skirting+floor+wall",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Baseboard"
+  },
+  {
+   "term": "विट्रिफ़ाइड टाइल",
+   "plain": "आज भारत में सबसे आम फ़र्श। मिट्टी, क्वार्ट्ज़, फ़ेल्डस्पार और सिलिका को दबाकर लगभग 1,200 °C पर पकाया जाता है, जिससे यह घना और काँच जैसा बनता है: सख़्त, पानी कम सोखता है, जल्दी दाग नहीं लगते। मार्बल से सस्ता और रखरखाव आसान। GVT/PGVT = ऊपर छपा डिज़ाइन (मार्बल, लकड़ी या टेराज़ो जैसा दिख सकता है)। ब्रांड: Kajaria, Somany, Johnson, Nitco।",
+   "match": "vitrified|Tile_Greige|TILE|FLOOR_FINISH",
+   "aka": [
+    "GVT",
+    "PGVT",
+    "tile"
+   ],
+   "group": "Floor",
+   "groupLabel": "फ़र्श",
+   "img": "https://www.google.com/search?tbm=isch&q=vitrified+tile+flooring+bedroom+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Vitrified+tile"
+  },
+  {
+   "term": "आईपीएस / सीमेंट फ़र्श",
+   "plain": "इंडियन पेटेंट स्टोन: चिकना ग्रे सीमेंट-कंक्रीट फ़र्श। कुछ बिल्डर IPS या खुरदरे सीमेंट के साथ फ़्लैट देते हैं ताकि मालिक ख़ुद टाइल चुने। चल जाता है, पर धूल वाला और फीका लगता है — ज़्यादातर लोग इस पर टाइल लगवाते हैं।",
+   "match": null,
+   "aka": [
+    "IPS flooring",
+    "cement floor"
+   ],
+   "group": "Floor",
+   "groupLabel": "फ़र्श",
+   "img": "https://www.google.com/search?tbm=isch&q=IPS+flooring+cement+floor+India",
+   "wiki": null
+  },
+  {
+   "term": "पोर्सिलेन टाइल",
+   "plain": "विट्रिफ़ाइड टाइल की ज़्यादा घनी, महँगी किस्म, अक्सर बड़े स्लैब (1200×1200 मिमी या ज़्यादा)। विकल्प B में।",
+   "match": "porcelain",
+   "aka": [],
+   "group": "Floor",
+   "groupLabel": "फ़र्श",
+   "img": "https://www.google.com/search?tbm=isch&q=large+format+porcelain+tile+bedroom",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Porcelain+tile"
+  },
+  {
+   "term": "मार्बल (संगमरमर)",
+   "plain": "प्राकृतिक पत्थर (जैसे मकराना सफ़ेद)। सुंदर पर छिद्रयुक्त: दाग लगते हैं, पॉलिश चाहिए और महँगा है। ख़र्च और रखरखाव कम रखने के लिए किसी डिज़ाइन में मार्बल नहीं है।",
+   "match": null,
+   "aka": [],
+   "group": "Floor",
+   "groupLabel": "फ़र्श",
+   "img": "https://www.google.com/search?tbm=isch&q=Indian+marble+flooring+bedroom",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Marble"
+  },
+  {
+   "term": "ग्रेनाइट",
+   "plain": "सख़्त प्राकृतिक पत्थर, बहुत टिकाऊ। इन डिज़ाइनों में खिड़की की सिल और दरवाज़े की दहलीज़ (काला ग्रेनाइट) में, पूरे फ़र्श में नहीं।",
+   "match": "granite",
+   "aka": [],
+   "group": "Floor",
+   "groupLabel": "फ़र्श",
+   "img": "https://www.google.com/search?tbm=isch&q=black+granite+window+sill",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Granite"
+  },
+  {
+   "term": "कोटा स्टोन",
+   "plain": "राजस्थान का हरा-ग्रे प्राकृतिक पत्थर — सस्ता, मज़बूत और पैरों को ठंडा लगता है। 'लेदर फ़िनिश' = मैट, हल्का खुरदरा। विकल्प C की बालकनी में।",
+   "match": "kota",
+   "aka": [],
+   "group": "Floor",
+   "groupLabel": "फ़र्श",
+   "img": "https://www.google.com/search?tbm=isch&q=Kota+stone+flooring+balcony",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Kota+stone"
+  },
+  {
+   "term": "टेराज़ो",
+   "plain": "सीमेंट में पत्थर के टुकड़े जमाकर घिसा गया फ़र्श। विकल्पों में 'टेराज़ो-जैसी' टाइल है (विट्रिफ़ाइड टाइल जिस पर टेराज़ो छपा है)।",
+   "match": "terrazzo",
+   "aka": [],
+   "group": "Floor",
+   "groupLabel": "फ़र्श",
+   "img": "https://www.google.com/search?tbm=isch&q=terrazzo+look+tile+floor",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Terrazzo"
+  },
+  {
+   "term": "लकड़ी-जैसी टाइल",
+   "plain": "लकड़ी के तख़्तों जैसी छपी और टेक्सचर वाली विट्रिफ़ाइड टाइल। गर्म दिखती है, पर टाइल की तरह पोछा लगा सकते हैं। विकल्प A में।",
+   "match": "wood-look|plank",
+   "aka": [],
+   "group": "Floor",
+   "groupLabel": "फ़र्श",
+   "img": "https://www.google.com/search?tbm=isch&q=wood+look+plank+tile+bedroom+India",
+   "wiki": null
+  },
+  {
+   "term": "ग्राउट",
+   "plain": "टाइलों के बीच की दरार का भराव। एपॉक्सी ग्राउट पर दाग नहीं लगते और रंग मिलता है; सीमेंट ग्राउट सस्ता है पर समय के साथ काला पड़ता है।",
+   "match": "grout",
+   "aka": [],
+   "group": "Floor",
+   "groupLabel": "फ़र्श",
+   "img": "https://www.google.com/search?tbm=isch&q=epoxy+grout+tiles",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Grout"
+  },
+  {
+   "term": "मसाला बेड / टाइल एडहेसिव",
+   "plain": "जिस पर टाइल बैठती है: 1:4 सीमेंट-रेत का लगभग 40–50 मिमी मोटा बेड, या पहले से सपाट फ़र्श पर टाइल एडहेसिव की पतली परत।",
+   "match": null,
+   "aka": [
+    "bedding"
+   ],
+   "group": "Floor",
+   "groupLabel": "फ़र्श",
+   "img": "https://www.google.com/search?tbm=isch&q=tile+laying+cement+mortar+bed",
+   "wiki": null
+  },
+  {
+   "term": "दहलीज़ (थ्रेशोल्ड)",
+   "plain": "दरवाज़े के नीचे की पत्थर की पट्टी। बालकनी पर यह नीचे की ओर ढलान वाली होती है ताकि बारिश का पानी अंदर न आए।",
+   "match": "THRESHOLD",
+   "aka": [],
+   "group": "Floor",
+   "groupLabel": "फ़र्श",
+   "img": "https://www.google.com/search?tbm=isch&q=granite+threshold+balcony+door",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Threshold+%28architecture%29"
+  },
+  {
+   "term": "एंटी-स्किड टाइल (R11)",
+   "plain": "बाहर की खुरदरी टाइल ताकि गीली होने पर फिसलन न हो। R11 फिसलन-रोधी रेटिंग है।",
+   "match": "anti-skid|Outdoor_Tile|R11",
+   "aka": [],
+   "group": "Floor",
+   "groupLabel": "फ़र्श",
+   "img": "https://www.google.com/search?tbm=isch&q=anti+skid+balcony+tile",
+   "wiki": null
+  },
+  {
+   "term": "वॉटरप्रूफ़िंग",
+   "plain": "बालकनी और बाथरूम के फ़र्श के नीचे रसायनिक परत ताकि पानी नीचे वाले फ़्लैट में न रिसे। नाली की ओर ढलान चाहिए।",
+   "match": "waterproof",
+   "aka": [],
+   "group": "Floor",
+   "groupLabel": "फ़र्श",
+   "img": "https://www.google.com/search?tbm=isch&q=balcony+waterproofing+before+tiling",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Waterproofing"
+  },
+  {
+   "term": "दरी",
+   "plain": "सूती या जूट की बुनी हुई सपाट दरी (पानीपत, जयपुर)। सस्ती, धुलने लायक, पूरी तरह भारतीय।",
+   "match": "DHURRIE|RUG",
+   "aka": [
+    "rug"
+   ],
+   "group": "Decor",
+   "groupLabel": "सजावट",
+   "img": "https://www.google.com/search?tbm=isch&q=cotton+dhurrie+rug+bedroom",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Dhurrie"
+  },
+  {
+   "term": "मधुबनी / मूढ़ा / जाली",
+   "plain": "मधुबनी: बिहार की लोक चित्रकला (विकल्प D का फ़्रेम किया प्रिंट)। मूढ़ा: बेंत का गोल स्टूल। जाली: नक्काशीदार जालीदार पैनल (विकल्प C)।",
+   "match": "MADHUBANI|MOODHA|JAALI",
+   "aka": [],
+   "group": "Decor",
+   "groupLabel": "सजावट",
+   "img": "https://www.google.com/search?tbm=isch&q=Madhubani+painting+moodha+cane+stool+jaali",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Madhubani+art"
+  },
+  {
+   "term": "प्लाईवुड (MR / BWR / BWP)",
+   "plain": "लकड़ी की पतली परतें चिपकाकर बना 18 मिमी का बोर्ड। MR = नमी-रोधी (सूखे कमरों के लिए ठीक), BWR/BWP = उबलते पानी से भी सुरक्षित (नम जगहों के लिए, महँगा)।",
+   "match": "\\bply\\b|plywood|MR ply|BWP|BWR",
+   "aka": [
+    "ply"
+   ],
+   "group": "Carpentry",
+   "groupLabel": "बढ़ईगिरी",
+   "img": "https://www.google.com/search?tbm=isch&q=plywood+MR+BWP+sheets+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Plywood"
+  },
+  {
+   "term": "एचडीएचएमआर (HDHMR)",
+   "plain": "हाई डेंसिटी हाई मॉइस्चर रेज़िस्टेंस बोर्ड: दबाया हुआ फ़ाइबर बोर्ड जो अच्छे प्लाईवुड से सख़्त और सस्ता है, नमी भी झेलता है। आजकल अलमारियों में लोकप्रिय।",
+   "match": "HDHMR",
+   "aka": [],
+   "group": "Carpentry",
+   "groupLabel": "बढ़ईगिरी",
+   "img": "https://www.google.com/search?tbm=isch&q=HDHMR+board+wardrobe",
+   "wiki": null
+  },
+  {
+   "term": "एमडीएफ / पार्टिकल बोर्ड",
+   "plain": "सस्ते दबाए हुए लकड़ी के बोर्ड। MDF चिकना होता है (नक्काशी/धारियों के लिए अच्छा); पार्टिकल बोर्ड सबसे सस्ता, रेडीमेड फ़र्नीचर और 'इंजीनियर्ड वुड' में।",
+   "match": "MDF|particle|engineered",
+   "aka": [
+    "engineered wood"
+   ],
+   "group": "Carpentry",
+   "groupLabel": "बढ़ईगिरी",
+   "img": "https://www.google.com/search?tbm=isch&q=MDF+particle+board+engineered+wood+furniture",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Medium-density+fibreboard"
+  },
+  {
+   "term": "कारकस (ढाँचा)",
+   "plain": "अलमारी या कैबिनेट का बक्सा/ढाँचा (साइड, पीछे, शेल्फ़), दरवाज़ों के बिना।",
+   "match": "CARCASS|INTERNALS",
+   "aka": [],
+   "group": "Carpentry",
+   "groupLabel": "बढ़ईगिरी",
+   "img": "https://www.google.com/search?tbm=isch&q=wardrobe+carcass+internal+shelves",
+   "wiki": null
+  },
+  {
+   "term": "शटर",
+   "plain": "अलमारी के दरवाज़े के लिए बढ़ई का शब्द।",
+   "match": "SHUTTER|WARDROBE_DOOR|LOFT_DOOR|WARDROBE_SLIDER",
+   "aka": [],
+   "group": "Carpentry",
+   "groupLabel": "बढ़ईगिरी",
+   "img": "https://www.google.com/search?tbm=isch&q=wardrobe+shutters+laminate",
+   "wiki": null
+  },
+  {
+   "term": "लॉफ़्ट (टांड)",
+   "plain": "अलमारी के ऊपर छत तक का सामान रखने का बक्सा — सूटकेस और रज़ाई के लिए।",
+   "match": "LOFT",
+   "aka": [],
+   "group": "Carpentry",
+   "groupLabel": "बढ़ईगिरी",
+   "img": "https://www.google.com/search?tbm=isch&q=wardrobe+with+loft+India",
+   "wiki": null
+  },
+  {
+   "term": "लैमिनेट (सनमाइका)",
+   "plain": "बोर्ड पर चिपकाई जाने वाली 0.8–1 मिमी की छपी प्लास्टिक शीट (लकड़ी जैसी, सफ़ेद, रंगीन)। मज़बूत, साफ़ करना आसान और सबसे किफ़ायती फ़िनिश।",
+   "match": "laminate",
+   "aka": [
+    "sunmica"
+   ],
+   "group": "Carpentry",
+   "groupLabel": "बढ़ईगिरी",
+   "img": "https://www.google.com/search?tbm=isch&q=laminate+wardrobe+shutters+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=High-pressure+laminate"
+  },
+  {
+   "term": "विनियर",
+   "plain": "असली लकड़ी की पतली परत (लगभग 0.5 मिमी) जो बोर्ड पर चिपकाकर PU पॉलिश की जाती है। असली लकड़ी जैसी दिखती है, लैमिनेट से महँगी।",
+   "match": "veneer",
+   "aka": [],
+   "group": "Carpentry",
+   "groupLabel": "बढ़ईगिरी",
+   "img": "https://www.google.com/search?tbm=isch&q=wood+veneer+wardrobe",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Wood+veneer"
+  },
+  {
+   "term": "PU / एक्रिलिक / लैकर्ड ग्लास",
+   "plain": "महँगे दरवाज़ा फ़िनिश: PU पेंट जैसी पॉलिश है, एक्रिलिक चमकदार शीट, लैकर्ड ग्लास पीछे से रंगा काँच। लैमिनेट से महँगे।",
+   "match": "\\bPU\\b|acrylic|lacquer",
+   "aka": [],
+   "group": "Carpentry",
+   "groupLabel": "बढ़ईगिरी",
+   "img": "https://www.google.com/search?tbm=isch&q=lacquered+glass+acrylic+PU+wardrobe",
+   "wiki": null
+  },
+  {
+   "term": "सॉफ़्ट-क्लोज़ कब्ज़ा",
+   "plain": "छोटे डैम्पर वाला कब्ज़ा ताकि दरवाज़ा धीरे से बंद हो, ज़ोर से नहीं। Hettich / Hafele / Ebco आम ब्रांड हैं।",
+   "match": "hinge|soft-close",
+   "aka": [],
+   "group": "Carpentry",
+   "groupLabel": "बढ़ईगिरी",
+   "img": "https://www.google.com/search?tbm=isch&q=soft+close+hinge+cabinet",
+   "wiki": null
+  },
+  {
+   "term": "प्लिंथ",
+   "plain": "अलमारी या बेड के नीचे पीछे धँसा आधार ताकि आगे पोछा लग सके और पैर न टकराएँ।",
+   "match": "PLINTH",
+   "aka": [],
+   "group": "Carpentry",
+   "groupLabel": "बढ़ईगिरी",
+   "img": "https://www.google.com/search?tbm=isch&q=recessed+plinth+wardrobe",
+   "wiki": null
+  },
+  {
+   "term": "डोमल एल्युमिनियम",
+   "plain": "भारत में आम, किफ़ायती एल्युमिनियम खिड़की/दरवाज़ा सेक्शन (27 मिमी सीरीज़)। ट्रैक पर सरकता है। अच्छा सौदा; पतले 'सिस्टम' विंडो महँगे हैं।",
+   "match": "domal",
+   "aka": [],
+   "group": "Windows & doors",
+   "groupLabel": "खिड़की और दरवाज़े",
+   "img": "https://www.google.com/search?tbm=isch&q=domal+aluminium+sliding+window+India",
+   "wiki": null
+  },
+  {
+   "term": "यूपीवीसी (uPVC)",
+   "plain": "प्लास्टिक (विनाइल) की खिड़की के फ़्रेम जिनके अंदर स्टील होता है। धूल, शोर और बारिश को अच्छे से रोकते हैं; सफ़ेद सामान्य रंग है। विकल्प A में।",
+   "match": "uPVC",
+   "aka": [],
+   "group": "Windows & doors",
+   "groupLabel": "खिड़की और दरवाज़े",
+   "img": "https://www.google.com/search?tbm=isch&q=uPVC+windows+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Polyvinyl+chloride"
+  },
+  {
+   "term": "स्लाइडिंग खिड़की / दरवाज़ा",
+   "plain": "पल्ले 2 या 3 ट्रैक पर बगल में सरकते हैं। 3-ट्रैक में 2 काँच + 1 मच्छरदानी पल्ला होता है। कमरे में नहीं खुलता, तो किसी चीज़ से नहीं टकराता।",
+   "match": "slid|SASH_2|DOOR_P\\d|[23]-track",
+   "aka": [
+    "2-track",
+    "3-track"
+   ],
+   "group": "Windows & doors",
+   "groupLabel": "खिड़की और दरवाज़े",
+   "img": "https://www.google.com/search?tbm=isch&q=3+track+aluminium+sliding+window+with+mesh",
+   "wiki": null
+  },
+  {
+   "term": "केसमेंट",
+   "plain": "दरवाज़े की तरह कब्ज़ों पर खुलने वाली खिड़की (अंदर या बाहर)। स्लाइडिंग से बेहतर बंद होती है। अंदर खुलने वाली के सामने जगह चाहिए।",
+   "match": "casement|CASEMENT",
+   "aka": [],
+   "group": "Windows & doors",
+   "groupLabel": "खिड़की और दरवाज़े",
+   "img": "https://www.google.com/search?tbm=isch&q=casement+window",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Casement+window"
+  },
+  {
+   "term": "टिल्ट-एंड-टर्न",
+   "plain": "यूरोपीय खिड़की जो हवा के लिए ऊपर से झुक सकती है या साफ़ करने के लिए पूरी अंदर खुल सकती है। विकल्प B में।",
+   "match": "tilt",
+   "aka": [],
+   "group": "Windows & doors",
+   "groupLabel": "खिड़की और दरवाज़े",
+   "img": "https://www.google.com/search?tbm=isch&q=tilt+and+turn+window",
+   "wiki": null
+  },
+  {
+   "term": "बाई-फ़ोल्ड दरवाज़ा",
+   "plain": "पल्ले अकॉर्डियन की तरह मुड़कर एक तरफ़ इकट्ठे हो जाते हैं, लगभग पूरी चौड़ाई खुल जाती है। विकल्प C की बालकनी में।",
+   "match": "BIFOLD|bi-fold",
+   "aka": [],
+   "group": "Windows & doors",
+   "groupLabel": "खिड़की और दरवाज़े",
+   "img": "https://www.google.com/search?tbm=isch&q=aluminium+bifold+door+balcony",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Folding+door"
+  },
+  {
+   "term": "टफ़न्ड ग्लास",
+   "plain": "गर्म करके लगभग 5 गुना मज़बूत बनाया गया काँच; टूटे तो छोटे, कुंद टुकड़ों में बिखरता है। दरवाज़ों के लिए मानक।",
+   "match": "toughened",
+   "aka": [],
+   "group": "Windows & doors",
+   "groupLabel": "खिड़की और दरवाज़े",
+   "img": "https://www.google.com/search?tbm=isch&q=toughened+glass",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Tempered+glass"
+  },
+  {
+   "term": "लैमिनेटेड ग्लास",
+   "plain": "दो काँच की शीट और बीच में प्लास्टिक फ़िल्म। टूटने पर भी अपनी जगह रहता है, इसलिए ग्रिल की जगह ले सकता है।",
+   "match": "laminated safety",
+   "aka": [],
+   "group": "Windows & doors",
+   "groupLabel": "खिड़की और दरवाज़े",
+   "img": "https://www.google.com/search?tbm=isch&q=laminated+safety+glass",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Laminated+glass"
+  },
+  {
+   "term": "लो-ई ग्लास",
+   "plain": "पतली परत वाला काँच जो धूप की गर्मी रोकता है। कमरे ठंडे रहते हैं; महँगा।",
+   "match": "low-E",
+   "aka": [],
+   "group": "Windows & doors",
+   "groupLabel": "खिड़की और दरवाज़े",
+   "img": "https://www.google.com/search?tbm=isch&q=low+e+glass+window",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Low+emissivity"
+  },
+  {
+   "term": "मच्छरदानी जाली",
+   "plain": "बारीक जाली का पल्ला या प्लीटेड स्क्रीन ताकि खिड़की/दरवाज़ा खुला रहे और कीड़े न आएँ।",
+   "match": "mesh|MESH",
+   "aka": [],
+   "group": "Windows & doors",
+   "groupLabel": "खिड़की और दरवाज़े",
+   "img": "https://www.google.com/search?tbm=isch&q=pleated+mosquito+mesh+door",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Window+screen"
+  },
+  {
+   "term": "ग्रिल",
+   "plain": "सुरक्षा के लिए खिड़की के काँच के बाहर लोहे की छड़ें। 'इनविज़िबल ग्रिल' = पतले स्टील तार, विकल्प B में।",
+   "match": "GRILL|grill",
+   "aka": [
+    "grille"
+   ],
+   "group": "Windows & doors",
+   "groupLabel": "खिड़की और दरवाज़े",
+   "img": "https://www.google.com/search?tbm=isch&q=window+safety+grill+India",
+   "wiki": null
+  },
+  {
+   "term": "सिल",
+   "plain": "खिड़की के नीचे का किनारा। अंदर अक्सर ग्रेनाइट; बाहर ढलान और ड्रिप खाँचा ताकि बारिश का पानी दीवार पर न बहे।",
+   "match": "SILL",
+   "aka": [],
+   "group": "Windows & doors",
+   "groupLabel": "खिड़की और दरवाज़े",
+   "img": "https://www.google.com/search?tbm=isch&q=granite+window+sill",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Window+sill"
+  },
+  {
+   "term": "डाउनलाइट",
+   "plain": "नीचे की ओर रोशनी देने वाली छोटी गोल छत की लाइट। 'रिसेस्ड' फ़ॉल्स सीलिंग के अंदर लगती है; 'सरफ़ेस' सादी छत पर पेंच से लगती है (विकल्प D)।",
+   "match": "DOWNLIGHT",
+   "aka": [],
+   "group": "Lighting",
+   "groupLabel": "रोशनी",
+   "img": "https://www.google.com/search?tbm=isch&q=surface+LED+downlight+vs+recessed",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Recessed+light"
+  },
+  {
+   "term": "LED स्ट्रिप",
+   "plain": "छोटी LED वाली लचीली पट्टी (मीटर में बिकती है), जिसे 'ड्राइवर' (पावर एडॉप्टर) चाहिए। कोव, पेल्मेट, अलमारी और हेडबोर्ड की रोशनी के लिए।",
+   "match": "strip|_LED|LED_|COVE",
+   "aka": [],
+   "group": "Lighting",
+   "groupLabel": "रोशनी",
+   "img": "https://www.google.com/search?tbm=isch&q=LED+strip+light+cove",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=LED+strip+light"
+  },
+  {
+   "term": "रंग तापमान (K)",
+   "plain": "रोशनी कितनी गर्म या ठंडी दिखती है: 2700K गर्म पीली (आरामदायक, बेडरूम), 3000K गर्म सफ़ेद, 4000K सामान्य, 6500K ठंडी नीली-सफ़ेद (ऑफ़िस)।",
+   "match": "2700K|3000K|4000K",
+   "aka": [],
+   "group": "Lighting",
+   "groupLabel": "रोशनी",
+   "img": "https://www.google.com/search?tbm=isch&q=2700K+vs+6500K+light+comparison",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Color+temperature"
+  },
+  {
+   "term": "IP65",
+   "plain": "रेटिंग जिसका मतलब है लाइट धूल-रोधी और बारिश में सुरक्षित — बालकनी में ज़रूरी।",
+   "match": "IP65",
+   "aka": [],
+   "group": "Lighting",
+   "groupLabel": "रोशनी",
+   "img": "https://www.google.com/search?tbm=isch&q=IP65+outdoor+wall+light",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=IP+code"
+  },
+  {
+   "term": "पेंडेंट लाइट",
+   "plain": "छत से तार पर लटकने वाली लाइट।",
+   "match": "PENDANT|PAPER_LAMP",
+   "aka": [],
+   "group": "Lighting",
+   "groupLabel": "रोशनी",
+   "img": "https://www.google.com/search?tbm=isch&q=pendant+light+bedside",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Pendant+light"
+  }
+ ],
+ "designs": {
+  "DEFAULT": [
+   {
+    "title": "फ़र्श",
+    "see": "गर्म हल्के ग्रे-बेज (ग्रेज) रंग की बड़ी मैट टाइलें, 800×1600 मिमी (लगभग 2.6' × 5.2')।",
+    "layers": [
+     "आरसीसी फ़र्श स्लैब",
+     "सीमेंट-रेत बेड 1:4, लगभग 40–50 मिमी (फ़र्श सपाट करता है)",
+     "मैट विट्रिफ़ाइड टाइल 800×1600 मिमी, 9 मिमी, जोड़ों में ग्राउट"
+    ],
+    "simple": "यह टाइल है, मार्बल नहीं: ग्लेज़्ड विट्रिफ़ाइड टाइल जो शांत दिखती है और दाग नहीं लगते। स्कर्टिंग उसी टाइल से कटी है।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "FLOOR_FINISH",
+     "SKIRTING"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=greige+matte+vitrified+tile+800x1600+bedroom"
+   },
+   {
+    "title": "दीवारें (3 दीवारें)",
+    "see": "चिकनी हल्की-गर्म सफ़ेद रंगी दीवारें।",
+    "layers": [
+     "ईंट / ब्लॉक की दीवार (बिल्डर की बनाई)",
+     "सीमेंट प्लास्टर 12–15 मिमी (बिल्डर)",
+     "वॉल पुट्टी, 2 परत, घिसी हुई",
+     "प्राइमर, 1 परत",
+     "इमल्शन पेंट, 2 परत"
+    ],
+    "simple": "सामान्य रंगी दीवारें: पुट्टी से चिकनी, फिर प्राइमर और धुलने लायक इमल्शन की 2 परतें।",
+    "where": "पुट्टी + प्राइमर + पेंट कमरा 1 की सभी दीवारों के अंदर वाले हिस्से और छत पर लगते हैं (कमरे के अंदर से दिखने वाली हर सतह, मोटी दीवार और आला भी)। बाहरी दीवारों के बाहर वाले हिस्से पर इमारत का बाहरी पेंट होता है (पुट्टी नहीं — वह वॉटरप्रूफ़ नहीं है)। बालकनी की दीवारों पर बिना पुट्टी के बाहरी (एक्सटीरियर) पेंट।",
+    "paint": "मध्यम श्रेणी का धुलने लायक इमल्शन, हल्की चमक, गर्म सफ़ेद — जैसे Asian Paints Apcolite Premium (~₹437/लीटर) या Berger/Nerolac का समान। छत: सीलिंग-व्हाइट मैट।",
+    "show": [
+     "^WALL_INT_R1|^WALL_EXT_N_R1|^WALL_EXT_S_R1"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=warm+white+bedroom+walls"
+   },
+   {
+    "title": "बेड वाली दीवार (पूर्व)",
+    "see": "बेड के पीछे लकड़ी का धारीदार पैनल, 7'8\" चौड़ा × 8' ऊँचा, ऊपर पीतल जैसी पतली पट्टी।",
+    "layers": [
+     "पीछे रंगी दीवार",
+     "दीवार पर पेंच से लगा 12 मिमी प्लाईवुड बेस",
+     "धारीदार MDF पट्टियाँ (1\" खाँचे)",
+     "पट्टियों पर 0.8 मिमी ओक जैसा लैमिनेट",
+     "ऊपर पीतल-फ़िनिश एल्युमिनियम कैप"
+    ],
+    "simple": "सिर्फ़ बेड वाली दीवार पर सजावटी लकड़ी का पैनल; 8' से ऊपर का हिस्सा रंगा है।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "HEADBOARD_WALL_FLUTED"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=fluted+wooden+panel+behind+bed"
+   },
+   {
+    "title": "छत",
+    "see": "किनारों पर नीची पट्टी (बैंड) जिसमें छिपी गर्म रोशनी है; बीच में पूरी 10' ऊँचाई।",
+    "layers": [
+     "आरसीसी स्लैब",
+     "स्लैब से लटके स्टील (GI) चैनल",
+     "चैनलों पर पेंच से लगा 12.5 मिमी जिप्सम बोर्ड",
+     "जोड़ पर टेप + पुट्टी, घिसाई",
+     "प्राइमर + सीलिंग-व्हाइट पेंट"
+    ],
+    "simple": "'बैंड' फ़ॉल्स सीलिंग: सिर्फ़ किनारों पर जिप्सम बोर्ड (1'7\" चौड़ा, 6\" गहरा), भीतरी किनारे में छिपी LED पट्टी और छोटी डाउनलाइट। बीच में असली कंक्रीट छत, पुट्टी और पेंट के साथ।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "FALSE_CEILING"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=peripheral+false+ceiling+cove+light+bedroom"
+   },
+   {
+    "title": "अलमारी",
+    "see": "ओक पट्टी वाली 3-दरवाज़ों की ऑफ़-व्हाइट अलमारी, ऊपर लॉफ़्ट, 5'3\" चौड़ी।",
+    "layers": [
+     "18 मिमी प्लाईवुड (या HDHMR) ढाँचा",
+     "दरवाज़ों पर ऑफ़-व्हाइट 1 मिमी लैमिनेट, अंदर फ़्रॉस्टी-व्हाइट",
+     "हर दरवाज़े पर ओक जैसी लैमिनेट पट्टी",
+     "सॉफ़्ट-क्लोज़ कब्ज़े, काले हैंडल"
+    ],
+    "simple": "बढ़ई की बनाई अलमारी जो आले में पूरी फ़िट है — दराज़, शेल्फ़, लंबे कपड़े टाँगने की जगह और सूटकेस के लिए लॉफ़्ट।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "WARDROBE_CARCASS"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=3+door+laminate+wardrobe+with+loft+India"
+   },
+   {
+    "title": "खिड़की W1",
+    "see": "चारकोल रंग की सरकने वाली एल्युमिनियम खिड़की, मच्छरदानी पल्ला और बाहर ग्रिल।",
+    "layers": [
+     "एल्युमिनियम फ़्रेम, चारकोल पाउडर-कोट",
+     "3 ट्रैक पर 2 काँच पल्ले (5 मिमी टफ़न्ड) + 1 जाली पल्ला",
+     "काँच के बाहर स्टील ग्रिल",
+     "अंदर काले ग्रेनाइट की सिल"
+    ],
+    "simple": "स्लाइडिंग खिड़की: एक काँच पल्ला खोलें और उस पर जाली सरका दें।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "W1_OUTER_FRAME"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=3+track+aluminium+sliding+window+mesh"
+   },
+   {
+    "title": "बालकनी दरवाज़ा",
+    "see": "चारकोल फ़्रेम में तीन बड़े काँच पल्ले; दो सरकते हैं।",
+    "layers": [
+     "एल्युमिनियम 3-ट्रैक फ़्रेम",
+     "8 मिमी टफ़न्ड काँच पल्ले",
+     "एक तरफ़ प्लीटेड मच्छरदानी",
+     "बालकनी की ओर छोटे कदम के साथ काले ग्रेनाइट की दहलीज़"
+    ],
+    "simple": "सरकने वाला काँच का दरवाज़ा जो बालकनी की ओर लगभग 7' खुलता है।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "BALCONY_DOOR_FRAME"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=aluminium+sliding+door+balcony+India"
+   },
+   {
+    "title": "बालकनी",
+    "see": "बाहर की एंटी-स्किड टाइलें, बनी हुई बेंच, पौधे।",
+    "layers": [
+     "स्लैब पर वॉटरप्रूफ़िंग, नाली की ओर ढलान",
+     "एंटी-स्किड बाहरी टाइल 600×600 मिमी"
+    ],
+    "simple": "वॉटरप्रूफ़िंग के ऊपर न फिसलने वाली टाइल ताकि बारिश का पानी नीचे न रिसे।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "BALCONY_FLOOR_FINISH"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=small+balcony+bench+plants+India"
+   }
+  ],
+  "OPTION_A": [
+   {
+    "title": "फ़र्श",
+    "see": "हल्के ओक रंग की पट्टियाँ, 200×1200 मिमी।",
+    "layers": [
+     "आरसीसी फ़र्श स्लैब",
+     "सीमेंट-रेत बेड 1:4, लगभग 40–50 मिमी (फ़र्श सपाट करता है)",
+     "लकड़ी जैसी विट्रिफ़ाइड टाइल पट्टियाँ 200×1200 मिमी, जोड़ों में ग्राउट"
+    ],
+    "simple": "लकड़ी जैसी दिखने वाली टाइल: लकड़ी के फ़र्श जैसी गर्माहट, पर पोछा लग सकता है।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "FLOOR_FINISH"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=wood+look+vitrified+plank+tile+bedroom"
+   },
+   {
+    "title": "दीवारें",
+    "see": "नरम, हल्की बादल जैसी गर्म सफ़ेद दीवारें।",
+    "layers": [
+     "ईंट / ब्लॉक की दीवार (बिल्डर की बनाई)",
+     "सीमेंट प्लास्टर 12–15 मिमी (बिल्डर)",
+     "वॉल पुट्टी, 2 परत, घिसी हुई",
+     "प्राइमर, 1 परत",
+     "लाइमवॉश-इफ़ेक्ट इमल्शन, 2 परत"
+    ],
+    "simple": "सामान्य तरह से रंगी, पर लाइमवॉश-इफ़ेक्ट पेंट से हाथ से बने जैसा नरम लुक।",
+    "where": "पुट्टी + प्राइमर + पेंट कमरा 1 की सभी दीवारों के अंदर वाले हिस्से और छत पर लगते हैं (कमरे के अंदर से दिखने वाली हर सतह, मोटी दीवार और आला भी)। बाहरी दीवारों के बाहर वाले हिस्से पर इमारत का बाहरी पेंट होता है (पुट्टी नहीं — वह वॉटरप्रूफ़ नहीं है)। बालकनी की दीवारों पर बिना पुट्टी के बाहरी (एक्सटीरियर) पेंट।",
+    "paint": "प्राइमर के ऊपर लाइमवॉश-इफ़ेक्ट स्पेशल फ़िनिश (ब्रश से आड़ी-तिरछी लगाई टेक्सचर पेंट); छत पर सीलिंग-व्हाइट मैट।",
+    "show": [
+     "^WALL_INT_R1|^WALL_EXT_N_R1"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=limewash+effect+warm+white+bedroom"
+   },
+   {
+    "title": "मोटी दीवार (बेड का सिरहाना)",
+    "see": "बेड के पीछे काली पृष्ठभूमि पर ऐश लकड़ी की खड़ी पट्टियाँ, 8'6\" ऊँची।",
+    "layers": [
+     "रंगी दीवार (काली)",
+     "लकड़ी की बैटन",
+     "3\" अंतर पर 1.5\" ऐश पट्टियाँ"
+    ],
+    "simple": "मोटी दक्षिण दीवार पर लकड़ी की पट्टियाँ, जहाँ बेड का सिरहाना है।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "HEADBOARD_SLAT"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=wooden+slat+wall+behind+bed+japandi"
+   },
+   {
+    "title": "छत",
+    "see": "फ़ॉल्स सीलिंग नहीं; बेड के ऊपर लकड़ी की पट्टियों का 'राफ़्ट' लटका है।",
+    "layers": [
+     "आरसीसी स्लैब (आपकी छत)",
+     "पतला प्लास्टर / POP पनिंग (बिल्डर)",
+     "पुट्टी, 2 परत",
+     "प्राइमर",
+     "सीलिंग-व्हाइट मैट पेंट, 2 परत"
+    ],
+    "simple": "10' पर सादी पुट्टी-पेंट वाली कंक्रीट छत, और बेड के ऊपर 6'×6'6\" का ऐश पट्टियों का फ़्रेम।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "CEILING_SLAT_RAFT"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=wooden+slat+ceiling+raft+over+bed"
+   },
+   {
+    "title": "अलमारी",
+    "see": "हल्की लकड़ी की 2-दरवाज़ों वाली स्लाइडिंग अलमारी, खाँचों के साथ।",
+    "layers": [
+     "HDHMR ढाँचा",
+     "PU मैट पॉलिश वाले ऐश विनियर दरवाज़े",
+     "ऊपर लटका सॉफ़्ट-क्लोज़ स्लाइडिंग ट्रैक"
+    ],
+    "simple": "सरकने वाले दरवाज़ों को खुलने की जगह नहीं चाहिए।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "WARDROBE_CARCASS"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=sliding+wardrobe+ash+veneer"
+   },
+   {
+    "title": "खिड़की W1",
+    "see": "बाहर की ओर खुलने वाली सफ़ेद uPVC खिड़कियों की जोड़ी।",
+    "layers": [
+     "सफ़ेद uPVC फ़्रेम",
+     "लैमिनेटेड सेफ़्टी ग्लास (ग्रिल की ज़रूरत नहीं)",
+     "अंदर रोलर मच्छरदानी"
+    ],
+    "simple": "बाहर की ओर खुलने वाली केसमेंट खिड़कियाँ।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "W1_OUTER_FRAME"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=white+uPVC+casement+window"
+   },
+   {
+    "title": "बालकनी दरवाज़ा",
+    "see": "सफ़ेद uPVC 4-पल्ले स्लाइडर (बीच के दो सरकते हैं)।",
+    "layers": [
+     "uPVC 2-ट्रैक फ़्रेम",
+     "5 मिमी टफ़न्ड काँच",
+     "कोटा स्टोन दहलीज़"
+    ],
+    "simple": "",
+    "where": null,
+    "paint": null,
+    "show": [
+     "BALCONY_DOOR_FRAME"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=uPVC+sliding+door+balcony"
+   },
+   {
+    "title": "बालकनी",
+    "see": "मौजूदा टाइलों पर क्लिक होने वाली लकड़ी जैसी डेक टाइलें।",
+    "layers": [
+     "मौजूदा बालकनी टाइल",
+     "WPC इंटरलॉकिंग डेक टाइलें (बिना गोंद)"
+    ],
+    "simple": "हटाने लायक डेक टाइलें; कुछ तोड़ा नहीं जाता।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "BALCONY_FLOOR_FINISH"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=WPC+deck+tiles+balcony"
+   }
+  ],
+  "OPTION_B": [
+   {
+    "title": "फ़र्श",
+    "see": "बहुत बड़ी हल्की ग्रे टाइलें, 1200×1200 मिमी, लगभग न दिखने वाले जोड़।",
+    "layers": [
+     "आरसीसी फ़र्श स्लैब",
+     "सीमेंट-रेत बेड 1:4, लगभग 40–50 मिमी (फ़र्श सपाट करता है)",
+     "बड़ी पोर्सिलेन टाइल, 1 मिमी जोड़, जोड़ों में ग्राउट"
+    ],
+    "simple": "बिना जोड़ जैसा आधुनिक लुक देने वाली बड़ी पोर्सिलेन टाइलें।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "FLOOR_FINISH"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=large+format+grey+porcelain+tile+bedroom"
+   },
+   {
+    "title": "दीवारें",
+    "see": "सफ़ेद दीवारें; बेड के पीछे ग्रे कपड़े के पैनल; टीवी के पीछे कंक्रीट जैसा पैनल।",
+    "layers": [
+     "ईंट / ब्लॉक की दीवार (बिल्डर की बनाई)",
+     "सीमेंट प्लास्टर 12–15 मिमी (बिल्डर)",
+     "वॉल पुट्टी, 2 परत, घिसी हुई",
+     "प्राइमर, 1 परत",
+     "इमल्शन पेंट, 2 परत"
+    ],
+    "simple": "रंगी दीवारें और दो ख़ास दीवारें।",
+    "where": "पुट्टी + प्राइमर + पेंट कमरा 1 की सभी दीवारों के अंदर वाले हिस्से और छत पर लगते हैं (कमरे के अंदर से दिखने वाली हर सतह, मोटी दीवार और आला भी)। बाहरी दीवारों के बाहर वाले हिस्से पर इमारत का बाहरी पेंट होता है (पुट्टी नहीं — वह वॉटरप्रूफ़ नहीं है)। बालकनी की दीवारों पर बिना पुट्टी के बाहरी (एक्सटीरियर) पेंट।",
+    "paint": "महँगा मैट इमल्शन, शुद्ध सफ़ेद — जैसे Asian Paints Royale मैट (~₹764/लीटर) या समान।",
+    "show": [
+     "^WALL_INT_R1"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=minimal+white+bedroom+fabric+panel+wall"
+   },
+   {
+    "title": "छत",
+    "see": "9'5\" पर पूरी नीची सपाट छत, 2 लंबी LED लाइनें और ब्लाइंड के लिए खाँचा।",
+    "layers": [
+     "आरसीसी स्लैब",
+     "स्लैब से लटके स्टील (GI) चैनल",
+     "चैनलों पर पेंच से लगा 12.5 मिमी जिप्सम बोर्ड",
+     "जोड़ पर टेप + पुट्टी, घिसाई",
+     "प्राइमर + सीलिंग-व्हाइट पेंट"
+    ],
+    "simple": "पूरे कमरे पर जिप्सम फ़ॉल्स सीलिंग (सिर्फ़ किनारे नहीं)।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "FALSE_CEILING"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=flush+gypsum+false+ceiling+linear+LED"
+   },
+   {
+    "title": "अलमारी",
+    "see": "फ़र्श से छत तक सफ़ेद काँच की स्लाइडिंग अलमारी, आईने के साथ।",
+    "layers": [
+     "HDHMR ढाँचा",
+     "पीछे से रंगे सफ़ेद काँच के दरवाज़े",
+     "सॉफ़्ट-क्लोज़ स्लाइडिंग सिस्टम"
+    ],
+    "simple": "",
+    "where": null,
+    "paint": null,
+    "show": [
+     "WARDROBE_CARCASS"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=lacquered+glass+sliding+wardrobe+mirror"
+   },
+   {
+    "title": "खिड़की W1",
+    "see": "पतली काली खिड़की: एक स्थिर काँच + एक टिल्ट-एंड-टर्न पल्ला, इनविज़िबल ग्रिल।",
+    "layers": [
+     "पतला काला एल्युमिनियम",
+     "6 मिमी लो-ई काँच",
+     "बाहर स्टील तार की इनविज़िबल ग्रिल"
+    ],
+    "simple": "",
+    "where": null,
+    "paint": null,
+    "show": [
+     "W1_OUTER_FRAME"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=black+tilt+and+turn+window+invisible+grill"
+   },
+   {
+    "title": "बालकनी दरवाज़ा",
+    "see": "दो बहुत बड़े काँच पल्ले (लिफ़्ट-एंड-स्लाइड)।",
+    "layers": [
+     "पतला एल्युमिनियम लिफ़्ट-एंड-स्लाइड",
+     "10 मिमी लो-ई टफ़न्ड काँच",
+     "फ़र्श से सटी क्वार्ट्ज़ दहलीज़"
+    ],
+    "simple": "",
+    "where": null,
+    "paint": null,
+    "show": [
+     "BALCONY_DOOR_FRAME"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=lift+and+slide+door+slim+frame"
+   },
+   {
+    "title": "बालकनी",
+    "see": "ग्रे बाहरी पोर्सिलेन।",
+    "layers": [
+     "वॉटरप्रूफ़िंग",
+     "एंटी-स्किड पोर्सिलेन 600×1200"
+    ],
+    "simple": "",
+    "where": null,
+    "paint": null,
+    "show": [
+     "BALCONY_FLOOR_FINISH"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=grey+outdoor+porcelain+balcony"
+   }
+  ],
+  "OPTION_C": [
+   {
+    "title": "फ़र्श",
+    "see": "टेराज़ो जैसी (चित्तीदार) टाइलें, दीवारों से 1' दूर पीतल रंग की पट्टी का बॉर्डर।",
+    "layers": [
+     "आरसीसी फ़र्श स्लैब",
+     "सीमेंट-रेत बेड 1:4, लगभग 40–50 मिमी (फ़र्श सपाट करता है)",
+     "टेराज़ो जैसी विट्रिफ़ाइड टाइल 600×600, जोड़ों में ग्राउट",
+     "पीतल रंग की पट्टी का बॉर्डर"
+    ],
+    "simple": "टेराज़ो जैसी छपी टाइल; बॉर्डर पट्टी से यह दरी जैसा लगता है।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "FLOOR_FINISH",
+     "FLOOR_BORDER"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=terrazzo+look+tile+floor+brass+inlay+border"
+   },
+   {
+    "title": "दीवारें",
+    "see": "बेड के पीछे गहरा टील लाइमवॉश, बाकी जगह गर्म सफ़ेद।",
+    "layers": [
+     "ईंट / ब्लॉक की दीवार (बिल्डर की बनाई)",
+     "सीमेंट प्लास्टर 12–15 मिमी (बिल्डर)",
+     "वॉल पुट्टी, 2 परत, घिसी हुई",
+     "प्राइमर, 1 परत",
+     "बेड वाली दीवार पर टील लाइमवॉश / बाकी गर्म सफ़ेद इमल्शन"
+    ],
+    "simple": "",
+    "where": "पुट्टी + प्राइमर + पेंट कमरा 1 की सभी दीवारों के अंदर वाले हिस्से और छत पर लगते हैं (कमरे के अंदर से दिखने वाली हर सतह, मोटी दीवार और आला भी)। बाहरी दीवारों के बाहर वाले हिस्से पर इमारत का बाहरी पेंट होता है (पुट्टी नहीं — वह वॉटरप्रूफ़ नहीं है)। बालकनी की दीवारों पर बिना पुट्टी के बाहरी (एक्सटीरियर) पेंट।",
+    "paint": "बेड वाली दीवार पर टील लाइमवॉश (चूने आधारित पेंट, ब्रश से); बाकी जगह मध्यम श्रेणी (Apcolite जैसा) गर्म सफ़ेद इमल्शन।",
+    "show": [
+     "ACCENT_WALL_TEAL",
+     "^WALL_INT_R1"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=teal+limewash+accent+wall+bedroom"
+   },
+   {
+    "title": "हेडबोर्ड और जाली",
+    "see": "बेड के पीछे सागौन फ़्रेम में बुना बेंत का पैनल; दीवान के ऊपर सागौन की नक्काशीदार जाली।",
+    "layers": [
+     "प्लाईवुड फ़्रेम",
+     "सागौन विनियर",
+     "बुना बेंत / CNC-कटी जाली"
+    ],
+    "simple": "",
+    "where": null,
+    "paint": null,
+    "show": [
+     "HEADBOARD_CANE",
+     "JAALI"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=cane+headboard+wall+teak+jaali"
+   },
+   {
+    "title": "छत",
+    "see": "सीढ़ीदार (ट्रे) छत: किनारे नीचे, बीच में ऊँची, छिपी रोशनी और सागौन किनारा।",
+    "layers": [
+     "आरसीसी स्लैब",
+     "स्लैब से लटके स्टील (GI) चैनल",
+     "चैनलों पर पेंच से लगा 12.5 मिमी जिप्सम बोर्ड",
+     "जोड़ पर टेप + पुट्टी, घिसाई",
+     "प्राइमर + सीलिंग-व्हाइट पेंट",
+     "सागौन विनियर किनारा + कोव LED"
+    ],
+    "simple": "DEFAULT के बैंड जैसी पर चौड़ी (2'2\") और लकड़ी के किनारे वाली।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "FALSE_CEILING"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=tray+ceiling+cove+light+wooden+edge"
+   },
+   {
+    "title": "अलमारी",
+    "see": "बेंत की जाली वाले सागौन दरवाज़े, ऊपर लॉफ़्ट।",
+    "layers": [
+     "प्लाईवुड ढाँचा",
+     "PU मैट वाला सागौन विनियर",
+     "बेंत की जाली, पीतल के हैंडल"
+    ],
+    "simple": "",
+    "where": null,
+    "paint": null,
+    "show": [
+     "WARDROBE_CARCASS"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=cane+wardrobe+doors+teak"
+   },
+   {
+    "title": "खिड़की W1",
+    "see": "अंदर खुलने वाली सागौन-जैसी एल्युमिनियम केसमेंट, जाली डिज़ाइन की ग्रिल।",
+    "layers": [
+     "एल्युमिनियम, लकड़ी जैसी फ़िनिश",
+     "6 मिमी टफ़न्ड काँच",
+     "सजावटी स्टील जाली ग्रिल",
+     "कोटा स्टोन सिल"
+    ],
+    "simple": "",
+    "where": null,
+    "paint": null,
+    "show": [
+     "W1_OUTER_FRAME"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=wood+finish+aluminium+casement+jaali+grill"
+   },
+   {
+    "title": "बालकनी दरवाज़ा",
+    "see": "4-पल्ले बाई-फ़ोल्ड जो पूरा मुड़कर हट जाता है।",
+    "layers": [
+     "एल्युमिनियम बाई-फ़ोल्ड, सागौन फ़िनिश",
+     "टफ़न्ड काँच",
+     "कोटा दहलीज़"
+    ],
+    "simple": "",
+    "where": null,
+    "paint": null,
+    "show": [
+     "BIFOLD_P1"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=aluminium+bifold+door+balcony"
+   },
+   {
+    "title": "बालकनी",
+    "see": "लेदर-फ़िनिश कोटा स्टोन।",
+    "layers": [
+     "वॉटरप्रूफ़िंग",
+     "कोटा स्टोन, लेदर (मैट) फ़िनिश"
+    ],
+    "simple": "",
+    "where": null,
+    "paint": null,
+    "show": [
+     "BALCONY_FLOOR_FINISH"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=kota+stone+balcony+leather+finish"
+   }
+  ],
+  "OPTION_D": [
+   {
+    "title": "फ़र्श",
+    "see": "आपका मौजूदा फ़र्श रहेगा (नई टाइल नहीं)। सूती दरी रंग जोड़ती है।",
+    "layers": [
+     "आरसीसी स्लैब",
+     "बिल्डर का दिया मौजूदा फ़र्श (आमतौर पर विट्रिफ़ाइड टाइल)",
+     "गहरी सफ़ाई + जोड़ों में नया ग्राउट",
+     "ऊपर सूती दरी 5'×7'"
+    ],
+    "simple": "कुछ नया नहीं लगता। ज़्यादातर नए फ़्लैट विट्रिफ़ाइड टाइल के साथ मिलते हैं; मार्बल हो तो भी ठीक। अगर सादा ग्रे सीमेंट (IPS) है, तो DEFAULT जैसी विट्रिफ़ाइड टाइल लगवाएँ: कमरा 1 के लिए लगभग ₹30–40 हज़ार।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "DHURRIE",
+     "FLOOR_R1"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=cotton+dhurrie+rug+on+vitrified+tile+floor+bedroom"
+   },
+   {
+    "title": "दीवारें",
+    "see": "गर्म सफ़ेद दीवारें; बेड वाली दीवार टेराकोटा (मिट्टी के घड़े जैसा भूरा-नारंगी)।",
+    "layers": [
+     "ईंट / ब्लॉक दीवार (बिल्डर)",
+     "सीमेंट प्लास्टर (बिल्डर)",
+     "सिर्फ़ दरार/ऊबड़-खाबड़ जगह पुट्टी (बिल्डर की पुट्टी रहेगी)",
+     "पैच पर प्राइमर",
+     "इमल्शन की 2 परत: गर्म सफ़ेद, बेड वाली दीवार टेराकोटा"
+    ],
+    "simple": "सिर्फ़ पेंट: कोई पैनल या वॉलपेपर नहीं। बिल्डर की पुट्टी ही रहती है, बस मरम्मत — इसीलिए सस्ता।",
+    "where": "पुट्टी + प्राइमर + पेंट कमरा 1 की सभी दीवारों के अंदर वाले हिस्से और छत पर लगते हैं (कमरे के अंदर से दिखने वाली हर सतह, मोटी दीवार और आला भी)। बाहरी दीवारों के बाहर वाले हिस्से पर इमारत का बाहरी पेंट होता है (पुट्टी नहीं — वह वॉटरप्रूफ़ नहीं है)। बालकनी की दीवारों पर बिना पुट्टी के बाहरी (एक्सटीरियर) पेंट।",
+    "paint": "सफ़ेद दीवारों के लिए सस्ता इमल्शन — जैसे Asian Paints Tractor Emulsion (~₹212/लीटर)। टेराकोटा एक्सेंट: वही या Apcolite (~₹437/लीटर), टेराकोटा / ईंट-लाल शेड में — पहले छोटा सैंपल डिब्बा लेकर एक हिस्से पर आज़माएँ। 2 परतों के लिए कुल लगभग 10–12 लीटर।",
+    "show": [
+     "ACCENT_WALL_TERRACOTTA",
+     "^WALL_INT_R1"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=terracotta+accent+wall+behind+bed+white+walls+Indian+bedroom"
+   },
+   {
+    "title": "छत",
+    "see": "असली सपाट छत, नया सफ़ेद पेंट। फ़ॉल्स सीलिंग नहीं।",
+    "layers": [
+     "आरसीसी स्लैब (आपकी छत)",
+     "पतला प्लास्टर / POP पनिंग (बिल्डर)",
+     "पुट्टी, 2 परत",
+     "प्राइमर",
+     "सीलिंग-व्हाइट मैट पेंट, 2 परत"
+    ],
+    "simple": "छत से कुछ नहीं लटकता। लाइटें सीधे छत पर पेंच से लगती हैं (सरफ़ेस डाउनलाइट)। बालकनी की तरफ़ की हल्की रोशनी लकड़ी के पर्दे वाले पेल्मेट के ऊपर LED पट्टी से आती है।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "DOWNLIGHT_1",
+     "CURTAIN_PELMET"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=surface+downlights+plain+ceiling+bedroom+India"
+   },
+   {
+    "title": "अलमारी",
+    "see": "अखरोट (वॉलनट) पट्टी वाली सफ़ेद 3-दरवाज़ों की अलमारी, लॉफ़्ट के साथ।",
+    "layers": [
+     "18 मिमी MR प्लाईवुड या HDHMR ढाँचा (बढ़ई)",
+     "फ़्रॉस्टी-व्हाइट 1 मिमी लैमिनेट + वॉलनट लैमिनेट पट्टी",
+     "सामान्य सॉफ़्ट-क्लोज़ कब्ज़े, स्टील D-हैंडल"
+    ],
+    "simple": "किफ़ायती बोर्ड और लैमिनेट से बढ़ई की बनाई — सबसे अच्छी कीमत वाला फ़िनिश।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "WARDROBE_CARCASS"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=white+laminate+wardrobe+walnut+strip+loft+India"
+   },
+   {
+    "title": "खिड़की W1",
+    "see": "जाली पल्ले वाली सफ़ेद एल्युमिनियम स्लाइडिंग खिड़की; बाहर सादी काली ग्रिल।",
+    "layers": [
+     "डोमल एल्युमिनियम 3-ट्रैक फ़्रेम, सफ़ेद",
+     "2 काँच पल्ले (5 मिमी टफ़न्ड) + 1 जाली",
+     "सादी MS ग्रिल (मौजूदा ही)",
+     "काले ग्रेनाइट की सिल"
+    ],
+    "simple": "",
+    "where": null,
+    "paint": null,
+    "show": [
+     "W1_OUTER_FRAME"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=white+domal+aluminium+sliding+window+mesh"
+   },
+   {
+    "title": "बालकनी दरवाज़ा",
+    "see": "सफ़ेद एल्युमिनियम स्लाइडिंग दरवाज़ा, 4 पल्ले; बीच के दो अलग-अलग सरकते हैं।",
+    "layers": [
+     "डोमल एल्युमिनियम 2-ट्रैक फ़्रेम",
+     "5 मिमी टफ़न्ड काँच",
+     "काले ग्रेनाइट की दहलीज़"
+    ],
+    "simple": "बीच में लगभग 5' खुलता है; किनारे के पल्ले स्थिर रहते हैं।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "BALCONY_DOOR_FRAME"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=4+panel+aluminium+sliding+door+balcony+India"
+   },
+   {
+    "title": "बालकनी",
+    "see": "मौजूदा बालकनी फ़र्श; फ़ोल्डिंग मेज़-कुर्सियाँ; पौधे।",
+    "layers": [
+     "मौजूदा फ़र्श (वॉटरप्रूफ़िंग जाँचें: पानी जमा न हो)"
+    ],
+    "simple": "",
+    "where": null,
+    "paint": null,
+    "show": [
+     "BALCONY_BISTRO_TABLE_TOP"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=small+balcony+bistro+set+plants+India"
+   }
+  ]
+ },
+ "pages": {
+  "ui": {
+   "title": "सीखें",
+   "sub": "घर बनाना, आसान भाषा में",
+   "tabs": [
+    [
+     "room",
+     "आपका कमरा"
+    ],
+    [
+     "basics",
+     "घर कैसे बनता है"
+    ],
+    [
+     "floorpaint",
+     "फ़र्श और पेंट"
+    ],
+    [
+     "steps",
+     "काम का क्रम"
+    ],
+    [
+     "compare",
+     "डिज़ाइन तुलना"
+    ],
+    [
+     "dict",
+     "शब्दकोश"
+    ]
+   ],
+   "see": "क्या दिखेगा:",
+   "simple": "आसान शब्दों में:",
+   "where": "ठीक कहाँ:",
+   "paint": "कौन-सा पेंट:",
+   "showme": "👁 दिखाओ",
+   "pics": "🖼 तस्वीरें देखें",
+   "wiki": "📖 और पढ़ें",
+   "notin": "इस मॉडल में नहीं",
+   "yousee": "यह दिखता है",
+   "structure": "ढाँचा",
+   "search": "खोजें: पुट्टी, HDHMR, डोमल, टेराकोटा…",
+   "nomatch": "कुछ नहीं मिला।",
+   "bare": "यह मॉडल सिर्फ़ ढाँचा है (कोई इंटीरियर डिज़ाइन नहीं), इसलिए समझाने को कोई फ़िनिश नहीं। बाईं ओर इंटीरियर डिज़ाइन में DEFAULT, A, B, C या D चुनें, या 'घर कैसे बनता है' खोलें।",
+   "lead": "आप <b>{d}</b> देख रहे हैं। हर कार्ड बताता है क्या दिखेगा, किससे बना है (ढाँचे से लेकर जो आप छूते हैं, तक की परतें) और कहाँ लगेगा। <b>दिखाओ</b> वहाँ ले जाता है; <b>तस्वीरें देखें</b> असली फ़ोटो खोलता है।",
+   "stepslead": "एक कमरे का काम आमतौर पर इसी क्रम में होता है। हर कदम अगले से पहले पूरा होना चाहिए, वरना काम ख़राब होकर दोबारा करना पड़ता है।",
+   "stepsnote": "विकल्प D (बजट) में कदम 2, 5 और 6 नहीं होते: कोई तोड़-फोड़ नहीं, फ़ॉल्स सीलिंग नहीं, नया फ़र्श नहीं।",
+   "comparelead": "एक ही कमरा, पाँच तरह से, आसान शब्दों में।"
+  },
+  "svg": {
+   "slab": "स्लैब (RCC) = आपकी छत",
+   "beam": "बीम (RCC) स्लैब के नीचे",
+   "pillar": "पिलर",
+   "brick": "ईंट / ब्लॉक की दीवार",
+   "filler": "(पिलरों के बीच भराव)",
+   "wallcap": "दीवार: ईंटें, फिर कमरे की तरफ़ प्लास्टर + पुट्टी + पेंट",
+   "balcony": "बालकनी (बाहर)",
+   "thick": "मोटी ('उठी') दीवार",
+   "thick2": "ठोस · 7'3\" × 3'4\"",
+   "alcove": "आला",
+   "alcove2": "(यहाँ अलमारी)",
+   "pillar9": "↖ 9\" पिलर",
+   "window": "खिड़की W1 (4')",
+   "opening": "← बालकनी की खुली जगह 10'5\"",
+   "door": "दरवाज़ा →",
+   "room": "कमरा 1",
+   "size": "12'7\" चौड़ा × 14'6\" गहरा",
+   "north": "उ ↑"
+  },
+  "basics": [
+   {
+    "h": "1 · ढाँचा: पिलर, बीम, स्लैब",
+    "svg": "frame",
+    "p": [
+     "आपकी इमारत <b>आरसीसी ढाँचे</b> (सरिया वाला कंक्रीट) पर खड़ी है: <b>पिलर</b> ऊपर जाते हैं, उनके बीच छत के नीचे <b>बीम</b> चलती हैं, और ऊपर सपाट <b>स्लैब</b> है — आपकी छत और ऊपर वाले फ़्लैट का फ़र्श।",
+     "पिलरों के बीच की दीवारें <b>ईंट या ब्लॉक</b> की 'भराव' दीवारें हैं। ये इमारत का वज़न नहीं उठातीं, इसलिए तारों के लिए इनमें छोटे खाँचे काटे जा सकते हैं, पर पिलर, बीम या स्लैब में <b>कभी नहीं</b>।"
+    ],
+    "buttons": [
+     [
+      "PILLAR_R1_NW|PILLAR_1",
+      "👁 पिलर दिखाओ"
+     ],
+     [
+      "BEAM_",
+      "👁 बीम"
+     ]
+    ]
+   },
+   {
+    "h": "2 · आपका कमरा 1, समझिए",
+    "svg": "room1",
+    "ul": [
+     "<b>मोटी ('उठी') दीवार</b>: दक्षिण की ओर दीवार का 7'3\" हिस्सा 3'4\" गहरा है। यह ठोस है, बड़े ब्लॉक जैसा, अलमारी नहीं। डिज़ाइनों में इसके सामने स्टडी डेस्क / ड्रेसर है। गहरा छेद करने से पहले बिल्डर से पूछें कि अंदर क्या है (अक्सर पिलर या पाइप/तार का शाफ़्ट)।",
+     "<b>आला</b>: उसके बगल का 5'4\" × 3'4\" का खाँचा, अलमारी के लिए एकदम सही, ताकि अलमारी कमरे की जगह न ले।",
+     "<b>बालकनी की खुली जगह</b>: पूरी पश्चिम दिशा (10'5\") बालकनी की ओर खुली है; अभी कोई गेट या फ़्रेम नहीं, इसलिए हर डिज़ाइन में काँच का दरवाज़ा है।",
+     "<b>9\" पिलर</b> उत्तर-पश्चिम कोने में जहाँ खुली जगह ख़त्म होती है।"
+    ],
+    "buttons": [
+     [
+      "WALL_R1_S_RAISED",
+      "👁 मोटी दीवार दिखाओ"
+     ],
+     [
+      "WARDROBE_CARCASS|WALL_R1_S_RAISED",
+      "👁 आला"
+     ]
+    ]
+   },
+   {
+    "h": "3 · दीवार, फ़र्श और छत पर क्या-क्या होता है",
+    "svg": null,
+    "stacks": [
+     [
+      "दीवार (अंदर की सतह)",
+      [
+       "ईंट / ब्लॉक",
+       "सीमेंट प्लास्टर 12–15 मिमी",
+       "वॉल पुट्टी, 2 पतली परत",
+       "प्राइमर",
+       "पेंट, 2 परत"
+      ]
+     ],
+     [
+      "फ़र्श",
+      [
+       "आरसीसी स्लैब",
+       "सीमेंट-रेत बेड ~40–50 मिमी",
+       "टाइल (विट्रिफ़ाइड) या पत्थर, जोड़ों में ग्राउट"
+      ]
+     ],
+     [
+      "छत (सादी)",
+      [
+       "आरसीसी स्लैब",
+       "पतला प्लास्टर / POP पनिंग",
+       "पुट्टी",
+       "प्राइमर",
+       "सीलिंग-व्हाइट पेंट"
+      ]
+     ],
+     [
+      "फ़ॉल्स सीलिंग वाली छत",
+      [
+       "आरसीसी स्लैब",
+       "उससे लटके स्टील चैनल",
+       "जिप्सम बोर्ड 12.5 मिमी",
+       "जोड़ पर टेप + पुट्टी",
+       "प्राइमर + पेंट"
+      ]
+     ]
+    ],
+    "notes": [
+     "<b>पुट्टी और पेंट किस तरफ़?</b> सिर्फ़ कमरे की दीवारों की <b>अंदर वाली सतह</b> और <b>छत</b> पर। बाहरी दीवारों की बाहर वाली सतह पर इमारत का बाहरी पेंट होता है (पुट्टी वॉटरप्रूफ़ नहीं, इसलिए बाहर कभी नहीं)। बालकनी की दीवारों पर बिना पुट्टी का बाहरी पेंट।"
+    ]
+   }
+  ],
+  "floorpaint": [
+   {
+    "h": "आपका फ़र्श किस चीज़ का बना है?",
+    "p": [
+     "हर फ़र्श के नीचे कंक्रीट का <b>स्लैब</b> है। उस पर मिस्त्री सपाट करने के लिए <b>सीमेंट-रेत का बेड</b> (~40–50 मिमी) डालता है, और उस पर <b>टाइल या पत्थर</b>, जोड़ों में <b>ग्राउट</b>। तो यह 'सिर्फ़ सीमेंट' नहीं होता — जब तक बिल्डर ने टाइल लगवाने के लिए <b>IPS</b> (चिकना ग्रे सीमेंट) फ़र्श न छोड़ा हो।",
+     "<b>डिज़ाइनों में विट्रिफ़ाइड टाइल है, मार्बल नहीं।</b> विट्रिफ़ाइड टाइल मिट्टी, क्वार्ट्ज़, फ़ेल्डस्पार और सिलिका को दबाकर लगभग 1,200 °C पर पकाकर बनती है, जब तक वह घनी और काँच जैसी न हो जाए — सख़्त, पानी लगभग नहीं सोखती, दाग नहीं लगते। मार्बल प्राकृतिक पत्थर है: सुंदर पर छिद्रयुक्त, पॉलिश चाहिए और महँगा।"
+    ],
+    "table": [
+     [
+      "फ़र्श का प्रकार",
+      "क्या है",
+      "कहाँ"
+     ],
+     [
+      "विट्रिफ़ाइड टाइल",
+      "पकी मिट्टी-काँच की टाइल, छपी या सादी",
+      "DEFAULT, A (लकड़ी-जैसी), C (टेराज़ो-जैसी)"
+     ],
+     [
+      "पोर्सिलेन टाइल",
+      "ज़्यादा घनी महँगी विट्रिफ़ाइड, बड़े स्लैब",
+      "B"
+     ],
+     [
+      "मौजूदा फ़र्श",
+      "जो बिल्डर ने लगाया (आमतौर पर विट्रिफ़ाइड टाइल)",
+      "D (बजट)"
+     ],
+     [
+      "कोटा / ग्रेनाइट",
+      "प्राकृतिक पत्थर",
+      "बालकनी (C), सिल और दहलीज़"
+     ],
+     [
+      "मार्बल",
+      "प्राकृतिक पत्थर, छिद्रयुक्त",
+      "इस्तेमाल नहीं"
+     ],
+     [
+      "IPS / सीमेंट",
+      "चिकना ग्रे सीमेंट फ़र्श",
+      "सिर्फ़ अगर बिल्डर ने छोड़ा हो — तब टाइल लगवाएँ"
+     ]
+    ],
+    "links": [
+     [
+      "https://www.google.com/search?tbm=isch&q=vitrified+tile+flooring+bedroom+India",
+      "विट्रिफ़ाइड टाइल फ़र्श देखें"
+     ],
+     [
+      "https://www.google.com/search?tbm=isch&q=Indian+marble+flooring+bedroom",
+      "मार्बल फ़र्श देखें"
+     ],
+     [
+      "https://www.google.com/search?tbm=isch&q=IPS+flooring+cement+floor+India",
+      "IPS सीमेंट फ़र्श देखें"
+     ]
+    ]
+   },
+   {
+    "h": "ठीक कौन-सा पेंट?",
+    "p": [
+     "दीवार और छत पर एक-सी 4 परतें: <b>पुट्टी</b> (2 परत) → <b>प्राइमर</b> (1 परत) → <b>इमल्शन पेंट</b> (2 परत)। डिज़ाइनों में फ़र्क सिर्फ़ पेंट की श्रेणी और रंग का है। नीचे के दाम Asian Paints के 20 लीटर के (2026) हैं; Berger, Nerolac और Dulux में भी मिलते-जुलते दाम हैं।"
+    ],
+    "table": [
+     [
+      "उत्पाद",
+      "किसलिए",
+      "लगभग दाम"
+     ],
+     [
+      "वॉल पुट्टी (Birla White WallCare, JK WallMaxx)",
+      "पेंट से पहले दीवार/छत चिकनी करना",
+      "₹30–45 प्रति किलो"
+     ],
+     [
+      "इंटीरियर वॉल प्राइमर (पानी-आधारित)",
+      "पेंट चिपकाता है, पेंट बचाता है",
+      "पेंट से सस्ता"
+     ],
+     [
+      "Tractor Emulsion — सस्ता",
+      "विकल्प D की दीवारें; छतें",
+      "~₹212 / लीटर"
+     ],
+     [
+      "Apcolite Premium Emulsion — मध्यम",
+      "DEFAULT, C की दीवारें; D एक्सेंट",
+      "~₹437 / लीटर"
+     ],
+     [
+      "Royale Luxury Emulsion — महँगा",
+      "विकल्प B की दीवारें",
+      "~₹764 / लीटर"
+     ],
+     [
+      "लाइमवॉश / लाइमवॉश-इफ़ेक्ट",
+      "A की दीवारें, C की टील एक्सेंट",
+      "ख़ास फ़िनिश, पेंटर से पूछें"
+     ],
+     [
+      "एक्सटीरियर इमल्शन (जैसे Apex)",
+      "बालकनी की दीवारें (बिना पुट्टी)",
+      "मौसम-रोधी"
+     ]
+    ],
+    "notes": [
+     "<b>कितना लगेगा?</b> कमरा 1 में दीवार + छत लगभग 590 वर्ग फ़ुट है। एक लीटर इमल्शन एक परत में लगभग 100–120 वर्ग फ़ुट ढकता है, तो 2 परतों के लिए लगभग 10–12 लीटर।",
+     "<b>टेराकोटा एक्सेंट दीवार?</b> टेराकोटा मिट्टी के घड़े या कुल्हड़ जैसा गर्म भूरा-नारंगी रंग है। दुकान के रंग-कार्ड (फ़ैन डेक) से टेराकोटा या ईंट-लाल शेड चुनें, छोटा सैंपल डिब्बा लेकर पहले 2'×2' हिस्से पर लगाएँ — दीवार पर और रात में रंग अलग दिखते हैं।"
+    ],
+    "swatches": [
+     [
+      "#b86b4b",
+      "टेराकोटा"
+     ],
+     [
+      "#f3eee4",
+      "गर्म सफ़ेद"
+     ],
+     [
+      "#344066",
+      "नील"
+     ],
+     [
+      "#d9a032",
+      "सरसों पीला"
+     ],
+     [
+      "#8c9a80",
+      "सेज हरा"
+     ],
+     [
+      "#1f6f6f",
+      "टील"
+     ],
+     [
+      "#cbbfae",
+      "ग्रेज"
+     ]
+    ],
+    "links": [
+     [
+      "https://www.google.com/search?tbm=isch&q=terracotta+accent+wall+bedroom+India",
+      "टेराकोटा एक्सेंट दीवारें देखें"
+     ],
+     [
+      "https://www.google.com/search?tbm=isch&q=wall+putty+primer+painting+process+India",
+      "पुट्टी और प्राइमर का काम देखें"
+     ],
+     [
+      "https://www.google.com/search?tbm=isch&q=Asian+Paints+Tractor+Apcolite+Royale+finish+comparison",
+      "पेंट फ़िनिश की तुलना देखें"
+     ]
+    ]
+   }
+  ],
+  "steps": [
+   [
+    "नापें और तय करें",
+    "आप + डिज़ाइनर / Claude",
+    "पहले लेआउट, फ़िनिश और बजट तय करें। बाद में बदलाव दोगुना महँगा पड़ता है।"
+   ],
+   [
+    "सिविल काम (ज़रूरत हो तो)",
+    "मिस्त्री",
+    "दीवार तोड़ना/बनाना, ओपनिंग बनाना। इंजीनियर के बिना पिलर, बीम या स्लैब को कभी न छुएँ।"
+   ],
+   [
+    "खिड़की और दरवाज़े के फ़्रेम",
+    "एल्युमिनियम / uPVC फ़ैब्रिकेटर",
+    "फ़्रेम आख़िरी पुट्टी से पहले लगते हैं ताकि किनारे साफ़ बनें।"
+   ],
+   [
+    "बिजली और AC पाइपिंग",
+    "इलेक्ट्रीशियन",
+    "ईंट की दीवारों में खाँचे काटकर पाइप में तार: स्विच बोर्ड, लाइट पॉइंट, AC पॉइंट। पुट्टी और फ़र्श से पहले।"
+   ],
+   [
+    "फ़ॉल्स सीलिंग ढाँचा (हो तो)",
+    "जिप्सम / POP ठेकेदार",
+    "स्टील चैनल + जिप्सम बोर्ड, डाउनलाइट के छेद और कोव LED के खाँचे के साथ।"
+   ],
+   [
+    "फ़र्श (नया हो तो)",
+    "टाइल मिस्त्री",
+    "सीमेंट बेड पर टाइल; 2–3 दिन जमने दें; स्कर्टिंग लगे। बाद में चादर से ढकें।"
+   ],
+   [
+    "पुट्टी और प्राइमर",
+    "पेंटर",
+    "दीवार और छत: पुट्टी की 2 परत, घिसाई, प्राइमर। धूल वाला काम, इसलिए बढ़ईगिरी पूरी होने से पहले।"
+   ],
+   [
+    "बढ़ईगिरी",
+    "बढ़ई",
+    "अलमारी, लॉफ़्ट, स्टडी वॉल, पेल्मेट। एक कमरे में आमतौर पर 1–2 हफ़्ते।"
+   ],
+   [
+    "पेंट की आख़िरी परतें",
+    "पेंटर",
+    "बढ़ईगिरी की धूल जाने के बाद रंग की 2 परतें। सबसे आख़िर में टच-अप।"
+   ],
+   [
+    "फ़िटिंग",
+    "इलेक्ट्रीशियन",
+    "लाइटें, स्विच, पंखा, LED पट्टी और ड्राइवर।"
+   ],
+   [
+    "काँच, पर्दे, फ़र्नीचर",
+    "आप / दुकानदार",
+    "खिड़की का काँच और जाली, पर्दे की रॉड, बेड, गद्दा, दरी, पौधे।"
+   ],
+   [
+    "गहरी सफ़ाई",
+    "सफ़ाई सेवा",
+    "टाइलों की बिना-एसिड सफ़ाई, पेंट के धब्बे हटाएँ, फिर रहने आएँ।"
+   ]
+  ],
+  "compare": {
+   "rows": [
+    "फ़र्श",
+    "दीवारें",
+    "छत",
+    "अलमारी",
+    "खिड़की W1",
+    "बालकनी दरवाज़ा",
+    "बजट"
+   ],
+   "cols": [
+    "DEFAULT",
+    "OPTION_A",
+    "OPTION_B",
+    "OPTION_C",
+    "OPTION_D"
+   ],
+   "cells": {
+    "DEFAULT": [
+     "ग्रेज विट्रिफ़ाइड टाइल 800×1600",
+     "पेंट (Apcolite श्रेणी) + बेड के पीछे लकड़ी का धारीदार पैनल",
+     "किनारों पर जिप्सम बैंड + छिपी LED",
+     "3-दरवाज़े लैमिनेट + लॉफ़्ट",
+     "एल्युमिनियम 3-ट्रैक स्लाइडर",
+     "3-पल्ले एल्युमिनियम स्लाइडर",
+     "मध्यम"
+    ],
+    "OPTION_A": [
+     "लकड़ी-जैसी टाइल पट्टियाँ",
+     "लाइमवॉश-इफ़ेक्ट पेंट + ऐश पट्टियाँ",
+     "सादी + लकड़ी का राफ़्ट",
+     "2-दरवाज़े स्लाइडिंग, ऐश विनियर",
+     "सफ़ेद uPVC केसमेंट",
+     "uPVC 4-पल्ले स्लाइडर",
+     "मध्यम"
+    ],
+    "OPTION_B": [
+     "बड़ी ग्रे पोर्सिलेन 1200×1200",
+     "Royale श्रेणी पेंट + कपड़े के पैनल",
+     "पूरी जिप्सम छत, LED लाइनें",
+     "स्लाइडिंग काँच + आईना",
+     "पतली काली टिल्ट-एंड-टर्न",
+     "पतला लिफ़्ट-एंड-स्लाइड",
+     "ऊँचा"
+    ],
+    "OPTION_C": [
+     "टेराज़ो-जैसी टाइल + पीतल बॉर्डर",
+     "टील लाइमवॉश + बेंत + जाली",
+     "ट्रे छत + कोव + सागौन किनारा",
+     "सागौन विनियर + बेंत",
+     "सागौन-जैसी केसमेंट",
+     "4-पल्ले बाई-फ़ोल्ड",
+     "ऊँचा"
+    ],
+    "OPTION_D": [
+     "मौजूदा फ़र्श + दरी",
+     "Tractor श्रेणी पेंट, टेराकोटा एक्सेंट",
+     "सादी, नया पेंट; सरफ़ेस लाइटें",
+     "3-दरवाज़े लैमिनेट + लॉफ़्ट (बढ़ई)",
+     "डोमल 3-ट्रैक स्लाइडर",
+     "डोमल 4-पल्ले स्लाइडर",
+     "₹1.93 लाख"
+    ]
+   }
+  }
+ }
+}

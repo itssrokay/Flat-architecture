@@ -5,16 +5,22 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { CONFIG } from './config.js?v=10';
-import { Walkthrough } from './walk.js?v=10';
-import { setupImmersive } from './immersive.js?v=10';
-import { setupExtras } from './extras.js?v=10';
-import { setupLearn } from './learn.js?v=10';
+import { CONFIG } from './config.js?v=11';
+import { Walkthrough } from './walk.js?v=11';
+import { setupImmersive } from './immersive.js?v=11';
+import { setupExtras } from './extras.js?v=11';
+import { setupLearn } from './learn.js?v=11';
+import { setupI18n } from './i18n.js?v=11';
 // bump together with the ?v= in index.html and the imports above whenever the viewer or models change,
 // so browsers never mix a new page with old cached scripts or models
-const BUILD = '10';
+const BUILD = '11';
 
 const $ = (id) => document.getElementById(id);
+// language (English / Hindi): translates the interface in place; design notes + Learn guide load their Hindi files
+const i18n = setupI18n({ onChange: async (l) => {
+  await loadDesignNotes(); if (app.modelList) buildDesignPanel(app.modelList); updateDesignUI();
+  if (learnApi) learnApi.setLang(l);
+} });
 const FT = 0.3048;
 
 // ------------------------------------------------------------------ formatting
@@ -184,7 +190,7 @@ async function loadModelList() {
   let list = { default: CONFIG.defaultModel, models: [{ file: CONFIG.defaultModel, label: CONFIG.defaultModel }] };
   try { const r = await fetch(CONFIG.modelsIndex, { cache: 'no-store' }); if (r.ok) list = await r.json(); } catch (e) { /* use default */ }
   app.modelList = list;
-  try { if (list.designNotes) { const r = await fetch(CONFIG.modelDir + list.designNotes, { cache: 'no-store' }); if (r.ok) app.designNotes = await r.json(); } } catch (e) { }
+  await loadDesignNotes();
   buildDesignPanel(list);
   const sel = $('modelSelect'); sel.innerHTML = '';
   for (const m of list.models) { const o = document.createElement('option'); o.value = m.file; o.textContent = m.label || m.file; o.dataset.manifest = m.manifest || ''; sel.appendChild(o); }
@@ -196,6 +202,12 @@ async function loadModelList() {
   return file;
 }
 
+// design notes in the current language (room1_designs.json / room1_designs_hi.json)
+async function loadDesignNotes() {
+  const f = app.modelList?.designNotes; if (!f) return;
+  const name = i18n.lang === 'hi' ? f.replace(/\.json$/, '_hi.json') : f;
+  try { const r = await fetch(CONFIG.modelDir + name + '?v=' + BUILD, { cache: 'no-store' }); if (r.ok) app.designNotes = await r.json(); } catch (e) { }
+}
 function modelEntry(file) { return (app.modelList?.models || []).find(m => m.file === file) || { file }; }
 function buildDesignPanel(list) {
   const p = $('designPanel'); p.innerHTML = '';
@@ -233,7 +245,7 @@ function updateDesignUI() {
       `<tr class="tot"><td>Total</td><td class="amt">${n.budget.total}</td></tr></table>` +
       (n.budget.note ? `<div class="bnote">${n.budget.note}</div>` : '') + (n.budget.savings ? `<div class="bnote"><b>If it runs over:</b> ${n.budget.savings.replace(/^If it runs over:\s*/, '')}</div>` : '') + `</details>` : '') +
     Object.entries(n.sections).map(([k, v]) => `<details><summary>${k}</summary><div>${v}</div></details>`).join('') +
-    (n.schedule ? `<details class="sched" open><summary>Material & finish schedule</summary>` + n.schedule.map(g =>
+    (n.schedule ? `<details class="sched" open><summary>Material & finish schedule</summary>` + (n.schedNote ? `<div class="bnote">${n.schedNote}</div>` : '') + n.schedule.map(g =>
       `<div class="sg">${g.area}</div><table>${g.items.map(r => `<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join('')}</table>`).join('') + `</details>` : '');
 }
 
@@ -810,7 +822,7 @@ const ex = setupExtras({ app, scene, renderer, controls, walk, persp, $, fmtFt, 
   TOUCH, imm, overview, goToPoint,
   resize: () => { _aspect = 0; resize(); }, isInteractive: (o) => imm.isInteractive(o) });
 new ResizeObserver(() => { _aspect = 0; resize(); }).observe(host);
-setupLearn({ app, $, select, focusObject, scene, build: BUILD, modelEntry }).then(a => { learnApi = a; window.viewer.learn = a; });
+setupLearn({ app, $, select, focusObject, scene, build: BUILD, modelEntry, lang: i18n.lang }).then(a => { learnApi = a; window.viewer.learn = a; });
 walk.onChange = (on) => {
   $('walkBtn').classList.toggle('on', on); $('walkHud').classList.toggle('hidden', !on); document.querySelector('#immBar [data-act=walk]')?.classList.toggle('on', on);
   ex.onWalkChange(on);
@@ -831,7 +843,7 @@ walk.onChange = (on) => {
 })();
 
 // exposed for automated checks
-window.viewer = { imm, ex, setCompare, switchModel, presetView, setCat, setEdges, updateLabelOcclusion, applyVisibility, togglePlanMode, setDebug, setLabels, select, loadModel, startWalk, walk, overview, goToPoint, goRoomVp,
+window.viewer = { imm, ex, i18n, setCompare, switchModel, presetView, setCat, setEdges, updateLabelOcclusion, applyVisibility, togglePlanMode, setDebug, setLabels, select, loadModel, startWalk, walk, overview, goToPoint, goRoomVp,
   get camera() { return camera; }, controls, scene, renderer, CONFIG, fmtFt,
   setStatus: (on) => { app.statusMode = on; applyMaterials(); }, goRoom: (name, i = 0) => { const r = app.rooms.find(r => r.name === name); goRoomVp(r, r.vps[i]); },
   pickAt: (x, y) => pick({ clientX: x, clientY: y }), setSection: (on, h) => { $('sectionChk').checked = on; if (h) $('sectionRange').value = h; setSection(); } };

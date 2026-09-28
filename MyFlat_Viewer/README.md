@@ -38,6 +38,28 @@ The page must be served over http://; opening `index.html` directly as a file wi
 
 With **Hover info** on, pointing at anything also gives a one-line plain explanation. The inspector shows the same under *In simple words*. The content is in `models/learn_guide.json`, so it can be edited without touching code.
 
+## Put it online (Vercel)
+
+The whole viewer is a static website, so you can host it anywhere.
+
+1. Go to <https://vercel.com/drop> and sign in.
+2. Drag the **`MyFlat_Viewer`** folder (the one with `index.html` inside) onto the page.
+3. Give it a project name and click **Deploy**. You get a link like `https://myflat-viewer.vercel.app`.
+
+To update it later, drop the folder again. Each drop makes a new project and link; to keep one link, connect the GitHub repo in Vercel instead, with the root directory set to `MyFlat_Viewer`. `vercel.json` sets sensible caching. The site is public to anyone who has the link, and it shows your flat's layout, so share it carefully.
+
+There's one link for every device. The viewer picks the layout itself:
+
+- **Phones and tablets** (touch screen): joystick and touch controls, and no shadows, to stay smooth.
+- **Narrow screens** (≤ 900 px wide): a short top bar, with the side panels sliding in from the ‹ › tabs.
+- **Computers**: the full layout.
+
+Add `?touch=1` to force touch controls, `?hq=1` for shadows on a phone, and `?lang=hi` to open in Hindi.
+
+## हिंदी / English
+
+The **हिंदी** button in the top bar switches the whole interface, the design notes and the 📘 Learn guide to Hindi; **EN** switches back. Your choice is remembered. The technical spec lines in the material schedule stay in English, because contractors use those terms.
+
 ## On a phone or tablet
 
 Start the viewer with `start.command` (or `python3 scripts/serve.py 8080 --lan`). It prints an address like `http://192.168.1.23:8080/`: open that on a phone on the same Wi-Fi. If macOS asks whether Python may accept incoming connections, click Allow. The viewer switches to touch controls on its own:
@@ -138,6 +160,7 @@ MyFlat_Viewer/
     immersive.js        openable parts (with collisions), lights / night, dimensions, immersive mode
     extras.js           panels, photo-style zoom, lens / ceiling view, hover info, room size
     learn.js            beginner's guide (📘 Learn) + plain-language explanations
+    i18n.js             English / Hindi switch for the interface
     styles.css
   models/
     models.json         list of models shown in the dropdown (+ default)
@@ -207,7 +230,7 @@ for opt in ["DEFAULT", "OPTION_A", "OPTION_B", "OPTION_C", "OPTION_D"]:
          {"DESIGN": opt, "OUT_NAME": "MyFlat_V1_1_Room1_" + opt})
 ```
 
-Tests: `python3 scripts/test_viewer.py` (architecture), `python3 scripts/test_interiors.py` (designs), `python3 scripts/test_navigation.py` (navigation) `python3 scripts/test_comfort.py` (panels, zoom, ceiling view, hover info, collisions, room size) `python3 scripts/test_learn.py` (beginner's guide) and `python3 scripts/test_mobile.py` (phone + window closing). All need Playwright.
+Tests: `python3 scripts/test_viewer.py` (architecture), `python3 scripts/test_interiors.py` (designs), `python3 scripts/test_navigation.py` (navigation) `python3 scripts/test_comfort.py` (panels, zoom, ceiling view, hover info, collisions, room size) `python3 scripts/test_learn.py` (beginner's guide) and `python3 scripts/test_mobile.py` (phone + window closing) and `python3 scripts/test_lang.py` (Hindi switch, phone top bar). All need Playwright.
 
 ## Immersive features
 
