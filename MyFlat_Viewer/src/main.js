@@ -5,21 +5,24 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { CONFIG } from './config.js?v=11';
-import { Walkthrough } from './walk.js?v=11';
-import { setupImmersive } from './immersive.js?v=11';
-import { setupExtras } from './extras.js?v=11';
-import { setupLearn } from './learn.js?v=11';
-import { setupI18n } from './i18n.js?v=11';
+import { CONFIG } from './config.js?v=12';
+import { Walkthrough } from './walk.js?v=12';
+import { setupImmersive } from './immersive.js?v=12';
+import { setupExtras } from './extras.js?v=12';
+import { setupLearn } from './learn.js?v=12';
+import { setupI18n } from './i18n.js?v=12';
+import { setupSimple } from './simple.js?v=12';
 // bump together with the ?v= in index.html and the imports above whenever the viewer or models change,
 // so browsers never mix a new page with old cached scripts or models
-const BUILD = '11';
+const BUILD = '12';
 
 const $ = (id) => document.getElementById(id);
 // language (English / Hindi): translates the interface in place; design notes + Learn guide load their Hindi files
+let simple = null;   // easy mode for phones (simple.js)
 const i18n = setupI18n({ onChange: async (l) => {
   await loadDesignNotes(); if (app.modelList) buildDesignPanel(app.modelList); updateDesignUI();
   if (learnApi) learnApi.setLang(l);
+  if (simple) simple.setLang(l);
 } });
 const FT = 0.3048;
 
@@ -119,7 +122,7 @@ const debugGroup = new THREE.Group(); debugGroup.visible = false; scene.add(debu
 const selBox = new THREE.Box3Helper(new THREE.Box3(), 0xff2d55); selBox.visible = false; scene.add(selBox);
 const edgeMat = new THREE.LineBasicMaterial({ color: '#2b3036', transparent: true, opacity: 0.55, clippingPlanes: [app.sectionPlane] });
 
-const walk = new Walkthrough({ app, persp, renderer, controls, CONFIG, onInfo: (t) => { $('walkInfo').textContent = t; $('walkInfoMini').textContent = t.replace(/ · eye.*$/, ''); } });
+const walk = new Walkthrough({ app, persp, renderer, controls, CONFIG, onInfo: (t) => { app.walkInfoRaw = t; $('walkInfo').textContent = t; $('walkInfoMini').textContent = t.replace(/ · eye.*$/, ''); } });
 
 function resize() {
   const w = host.clientWidth, h = host.clientHeight;
@@ -170,7 +173,10 @@ function stepTween(dt) {
 }
 
 function presetView(name) {
-  const c = app.center, D = app.size * 1.6, halfH = app.size * 0.62, y = app.bbox.min.y + 1.5;
+  const c = app.center, D = app.size * 1.6, y = app.bbox.min.y + 1.5;
+  // plan view fits the whole flat on any screen shape (a tall phone needs more height to show the full width)
+  const bs = app.bbox.getSize(new THREE.Vector3()), asp = host.clientWidth / Math.max(1, host.clientHeight);
+  const halfH = Math.max(app.size * 0.62, (bs.x / 2) / asp * 1.1, bs.z / 2 * 1.15);
   const views = {
     top:   { pos: new THREE.Vector3(c.x, c.y + D * 2, c.z + 0.001), target: c.clone(), ortho: true, halfH },
     north: { pos: new THREE.Vector3(c.x, y, c.z - D), target: new THREE.Vector3(c.x, y, c.z), ortho: app.ortho, halfH: halfH * 0.7 },
@@ -795,7 +801,7 @@ const clock = new THREE.Clock();
 function loop() {
   const dt = Math.min(0.25, clock.getDelta());
   if (walk.active) walk.update(dt); else { stepTween(dt); orbitKeys(dt); controls.update(); }
-  imm.update(dt); ex.update(dt);
+  imm.update(dt); ex.update(dt); if (simple) simple.update(dt);
   if (selBox.visible && app.selected) selBox.box.setFromObject(app.selected);
   const now = performance.now(); if (now - (app._occT || 0) > 200) { app._occT = now; updateLabelOcclusion(); }
   const camName = walk.active ? 'Walkthrough' : (app.ortho ? 'Orthographic' : 'Perspective');
@@ -823,9 +829,11 @@ const ex = setupExtras({ app, scene, renderer, controls, walk, persp, $, fmtFt, 
   resize: () => { _aspect = 0; resize(); }, isInteractive: (o) => imm.isInteractive(o) });
 new ResizeObserver(() => { _aspect = 0; resize(); }).observe(host);
 setupLearn({ app, $, select, focusObject, scene, build: BUILD, modelEntry, lang: i18n.lang }).then(a => { learnApi = a; window.viewer.learn = a; });
+simple = setupSimple({ app, $, walk, imm, ex, renderer, scene, CONFIG, lang: i18n.lang, goRoomVp, overview, presetView, goToPoint,
+  TOUCH: TOUCH && QS.get('easy') !== '0', force: QS.get('easy'), resize: () => { _aspect = 0; resize(); } });
 walk.onChange = (on) => {
   $('walkBtn').classList.toggle('on', on); $('walkHud').classList.toggle('hidden', !on); document.querySelector('#immBar [data-act=walk]')?.classList.toggle('on', on);
-  ex.onWalkChange(on);
+  ex.onWalkChange(on); if (simple) simple.onWalkChange(on);
   // inside: tuck the controls panel away so you see the room; bring it back in the overview
   const d = $('dock');
   if (on && !app._inWalk) { app._dockWas = d.classList.contains('collapsed'); d.classList.add('collapsed'); }
@@ -843,7 +851,7 @@ walk.onChange = (on) => {
 })();
 
 // exposed for automated checks
-window.viewer = { imm, ex, i18n, setCompare, switchModel, presetView, setCat, setEdges, updateLabelOcclusion, applyVisibility, togglePlanMode, setDebug, setLabels, select, loadModel, startWalk, walk, overview, goToPoint, goRoomVp,
+window.viewer = { imm, ex, i18n, simple, setCompare, switchModel, presetView, setCat, setEdges, updateLabelOcclusion, applyVisibility, togglePlanMode, setDebug, setLabels, select, loadModel, startWalk, walk, overview, goToPoint, goRoomVp,
   get camera() { return camera; }, controls, scene, renderer, CONFIG, fmtFt,
   setStatus: (on) => { app.statusMode = on; applyMaterials(); }, goRoom: (name, i = 0) => { const r = app.rooms.find(r => r.name === name); goRoomVp(r, r.vps[i]); },
   pickAt: (x, y) => pick({ clientX: x, clientY: y }), setSection: (on, h) => { $('sectionChk').checked = on; if (h) $('sectionRange').value = h; setSection(); } };

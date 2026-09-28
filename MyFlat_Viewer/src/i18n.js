@@ -86,7 +86,7 @@ export function setupI18n({ onChange } = {}) {
   try { lang = new URLSearchParams(location.search).get('lang') || localStorage.getItem('myflat.lang') || 'en'; } catch (e) { }
   if (lang !== 'hi') lang = 'en';
   const orig = new WeakMap(), mine = new WeakMap(), origAttr = new WeakMap(), origHTML = new Map();
-  const SKIP = (el) => el && el.closest && el.closest('script,style,#statusbar,#learn,textarea,input,.why,.bnote,.sched td:nth-child(2),.budget .bd');
+  const SKIP = (el) => el && el.closest && el.closest('script,style,#statusbar,#learn,#simpleBtn,#simpleUI,#placesSheet,#simpleHelp,textarea,input,.why,.bnote,.sched td:nth-child(2),.budget .bd');
   function tr(s) {
     const t = s.trim(); if (!t) return null;
     let out = D[t];

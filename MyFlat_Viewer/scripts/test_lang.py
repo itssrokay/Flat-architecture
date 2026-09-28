@@ -35,7 +35,7 @@ async def main():
         # phone top bar
         ctx = await b.new_context(viewport={"width": 390, "height": 844}, is_mobile=True, has_touch=True)
         pg = await ctx.new_page(); pg.set_default_timeout(120000)
-        await pg.goto(BASE + "?touch=1"); await pg.wait_for_function("window.app && app.ready")
+        await pg.goto(BASE + "?touch=1&easy=0"); await pg.wait_for_function("window.app && app.ready")
         vis = await pg.evaluate("""() => [...document.querySelectorAll('#topbar > *')].filter(e => getComputedStyle(e).display !== 'none').map(e => e.id || e.className || e.tagName)""")
         hidden = await pg.evaluate("""() => ['viewButtons','projBtn','roofBtn','labelsBtn','edgesBtn','statusBtn','planBtn','debugBtn'].every(id => getComputedStyle(document.getElementById(id)).display === 'none')""")
         check("phone: top bar keeps only the useful buttons", hidden and "learnBtn" in vis and "langBtn" in vis and "walkBtn" in vis, ", ".join(vis))

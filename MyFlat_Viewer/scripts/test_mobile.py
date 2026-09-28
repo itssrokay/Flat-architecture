@@ -54,7 +54,7 @@ async def main():
                                   user_agent="Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148")
         pg = await ctx.new_page(); pg.set_default_timeout(120000); cdp = await ctx.new_cdp_session(pg)
         errs = []; pg.on("pageerror", lambda e: errs.append(str(e)))
-        await pg.goto(BASE_NOQ + "?touch=1"); await pg.wait_for_function("window.app && app.ready"); await pg.wait_for_timeout(1500)
+        await pg.goto(BASE_NOQ + "?touch=1&easy=0"); await pg.wait_for_function("window.app && app.ready"); await pg.wait_for_timeout(1500)
         lay = await pg.evaluate("""() => ({ w: viewer.renderer.domElement.clientWidth, left: getComputedStyle(document.getElementById('left')).display,
             touch: document.body.classList.contains('touch'), status: getComputedStyle(document.getElementById('statusBtn')).display,
             pad: !document.getElementById('touchPad').classList.contains('hidden'), hudMin: document.getElementById('walkHud').classList.contains('min'),

@@ -62,7 +62,28 @@ The **हिंदी** button in the top bar switches the whole interface, the 
 
 ## On a phone or tablet
 
-Start the viewer with `start.command` (or `python3 scripts/serve.py 8080 --lan`). It prints an address like `http://192.168.1.23:8080/`: open that on a phone on the same Wi-Fi. If macOS asks whether Python may accept incoming connections, click Allow. The viewer switches to touch controls on its own:
+Start the viewer with `start.command` (or `python3 scripts/serve.py 8080 --lan`). It prints an address like `http://192.168.1.23:8080/`: open that on a phone on the same Wi-Fi. If macOS asks whether Python may accept incoming connections, click Allow. The viewer switches to touch controls on its own.
+
+### Easy mode (default on phones)
+
+Made for someone who has never used a 3D app. Big labelled buttons, nothing else on screen:
+
+| Button / gesture | What it does |
+|---|---|
+| ▲ Walk / ▼ Step back | hold to walk, let go to stop |
+| ↰ Turn left / ↱ Turn right | hold to turn |
+| ⤒ Look up / ⤓ Look down | hold to tilt your head |
+| Tap the floor | you walk there by yourself (tap a bed or table to walk up to it) |
+| Tap a door, window, wardrobe | it opens; tap again to close |
+| 📍 Places | a big list: Room 1 views, balcony, wardrobe, ceiling, every room |
+| 🏠 Whole house | the plan from above; tap any room to go inside |
+| ↺ Straighten | levels the view if you got lost looking at the floor |
+| ? Help | the how-to card (shown once on first open) |
+
+**⚙ All controls** in the top bar switches to the full touch controls below (joystick etc.); **👍 Easy mode** switches back. The choice is remembered. Add `?easy=1` or `?easy=0` to the address to force it. Everything is in Hindi too (हिंदी button).
+
+### All controls (touch)
+
 
 | Action | How |
 |---|---|

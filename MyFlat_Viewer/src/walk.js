@@ -10,6 +10,7 @@ export class Walkthrough {
     Object.assign(this, { app, cam: persp, renderer, controls, C: CONFIG, onInfo });
     this.active = false; this.keys = new Set(); this.yaw = 0; this.pitch = 0; this.feet = 0;
     this.eyeOffset = 0; this.nudge = 0; this.joy = { x: 0, y: 0 };   // joy: on-screen joystick (touch), -1..1
+    this.turn = 0; this.look = 0; this.auto = null; this.lookK = 1;   // simple mode: turn / look buttons, tap-to-walk target
     this.ray = new THREE.Raycaster(); this.onChange = null; this.drag = null; this.dragMoved = 0;
     const el = renderer.domElement;
     document.addEventListener('keydown', (e) => {
@@ -27,7 +28,7 @@ export class Walkthrough {
       if (!this.active || !this.drag || e.pointerId !== this.drag.id) return;
       const dx = e.clientX - this.drag.x, dy = e.clientY - this.drag.y; this.drag.x = e.clientX; this.drag.y = e.clientY;
       this.dragMoved += Math.abs(dx) + Math.abs(dy);
-      const k = e.pointerType === 'touch' ? 0.006 : 0.0045;
+      const k = (e.pointerType === 'touch' ? 0.006 : 0.0045) * this.lookK;
       this.yaw += dx * k; this.pitch += dy * k;      // "grab the view": drag left = turn right, drag down = look up
       this.pitch = Math.max(-1.45, Math.min(1.45, this.pitch));
     });
@@ -94,6 +95,19 @@ export class Walkthrough {
     if (k.has('KeyD') || k.has('ArrowRight')) s += 1;
     if (k.has('KeyA') || k.has('ArrowLeft')) s -= 1;
     f -= this.joy.y; s += this.joy.x;
+    if (this.turn) this.yaw -= this.turn * dt * 1.3;                       // ↰ / ↱ buttons
+    if (this.look) this.pitch = Math.max(-1.2, Math.min(1.45, this.pitch + this.look * dt * 0.9));
+    if (this.auto) {                                                        // tap-to-walk: turn towards the spot, then walk to it
+      const dx = this.auto.x - this.cam.position.x, dz = this.auto.z - this.cam.position.z, dist = Math.hypot(dx, dz);
+      if (dist < 0.25 || f || s || this.turn) { this.auto = null; this.onAutoStop && this.onAutoStop(dist < 0.25); }
+      else {
+        const want = Math.atan2(-dx, -dz); let d = want - this.yaw; d = Math.atan2(Math.sin(d), Math.cos(d));
+        this.yaw += Math.sign(d) * Math.min(Math.abs(d), dt * 2.4);
+        this.auto.trying = Math.abs(d) < 0.7; if (this.auto.trying) f = Math.min(1, dist * 1.2);
+        this.pitch += (0 - this.pitch) * Math.min(1, dt * 2);               // level the view while walking
+        this.auto.t = (this.auto.t || 0) + dt;
+      }
+    }
     if (k.has('KeyR') || k.has('PageUp')) this.eyeOffset = Math.min(1.15, this.eyeOffset + dt * 0.9);
     if (k.has('KeyV') || k.has('PageDown')) this.eyeOffset = Math.max(-1.0, this.eyeOffset - dt * 0.9);
     const speed = C.walkSpeed * ((k.has('ShiftLeft') || k.has('ShiftRight')) ? C.runMultiplier : 1);
@@ -125,6 +139,11 @@ export class Walkthrough {
       this.ray.set(new THREE.Vector3(p.x, this.feet + 1.0, p.z), new THREE.Vector3(0, 1, 0)); this.ray.far = 4;
       const h = this.ray.intersectObjects(this.visibleIn(['ceiling', 'roof', 'beams', 'lighting']), false);
       if (h.length) { const maxY = h[0].point.y - 0.25; if (eyeY > maxY) { eyeY = Math.max(this.feet + 1.0, maxY); this.eyeOffset = eyeY - this.feet - C.eyeHeight; } }
+    }
+    if (this.auto) {   // stuck against something? stop trying
+      const moved = Math.hypot(p.x - this.cam.position.x, p.z - this.cam.position.z);
+      this.auto.still = moved < 0.002 && this.auto.trying ? (this.auto.still || 0) + dt : 0;
+      if (this.auto.still > 0.5) { this.auto = null; this.onAutoStop && this.onAutoStop(false); }
     }
     this.cam.position.set(p.x, eyeY, p.z);
     this.cam.rotation.set(this.pitch, this.yaw, 0, 'YXZ');

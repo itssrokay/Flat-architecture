@@ -385,7 +385,12 @@ export function setupExtras(ctx) {
   function onSelect(o) {
     const card = $('tapInfo');
     if (!ctx.TOUCH || !o) { card.classList.add('hidden'); return; }
-    const u = o.userData || {}; const ex1 = ctx.explain ? ctx.explain(o)[0] : null;
+    const u = o.userData || {};
+    // easy mode: a tap on the floor walks, a tap on a door opens it; the card is only for furniture & things in the room
+    if (document.body.classList.contains('simple')) {
+      let cat = null; for (let p = o; p && !cat; p = p.parent) cat = p.userData?.category || null;
+      if (ctx.imm.isInteractive(o) || ['floors', 'walls', 'ceiling', 'roof', 'finishes', 'context', 'stairs', 'beams', 'columns', 'plan_reference', 'openings', 'doors', 'windows'].includes(cat)) { card.classList.add('hidden'); return; }
+    } const ex1 = ctx.explain ? ctx.explain(o)[0] : null;
     const inter = ctx.imm.isInteractive(o);
     card.innerHTML = `<div class="ti-head"><b>${esc(u.label || pretty(o.name))}</b><button class="small" data-a="x">✕</button></div>
       <div class="ti-row">${esc(catLabel(u.category))} · ${sizeText(o)}</div>` +

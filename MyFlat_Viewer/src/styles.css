@@ -300,3 +300,55 @@ body.lang-hi { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto
 #learn .sw { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; }
 #learn .sw i { width: 22px; height: 22px; border-radius: 5px; background: var(--c); border: 1px solid rgba(0,0,0,.15); display: inline-block; }
 #inspector a, #hoverTip a, #tapInfo a { color: #2563eb; }
+
+/* ================================================================ easy mode (big buttons, for phones) */
+.simpleToggle { font-weight: 600; white-space: nowrap; }
+body.simple { --lw: 0px; --rw: 0px; }
+body.simple #left, body.simple #right, body.simple #dock, body.simple #dockToggle, body.simple #touchPad, body.simple #walkHud,
+body.simple #crosshair, body.simple #immBar, body.simple .edgeTab, body.simple #statusbar, body.simple #topbar .sep, body.simple #topbar .brand { display: none !important; }
+body.simple #topbar > *:not(#learnBtn):not(#langBtn):not(#modelSelect):not(#simpleBtn):not(.spacer) { display: none !important; }
+body.simple #topbar button, body.simple #topbar select { font-size: 15px; padding: 7px 10px; }
+body.simple #modelSelect { max-width: 42vw; }
+#simpleUI { position: absolute; inset: 0; pointer-events: none; z-index: 7; display: flex; flex-direction: column; justify-content: space-between;
+  font-size: 16px; padding: 8px 8px calc(10px + env(safe-area-inset-bottom)); }
+#simpleUI.hidden { display: none; }
+#simpleUI button { pointer-events: auto; touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+.s-top { display: flex; flex-direction: column; gap: 6px; align-items: stretch; }
+.s-top .s-where { align-self: flex-start; }
+.s-where { background: rgba(20,22,26,.78); color: #fff; padding: 6px 12px; border-radius: 18px; font-size: 15px; max-width: 100%;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.s-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; max-width: 460px; }
+.s-row .s-btn { display: flex; flex-direction: column; align-items: center; gap: 1px; font-size: 13px; padding: 5px 2px; line-height: 1.15; }
+.s-row .s-btn b { font-size: 20px; line-height: 1.1; }
+.s-btn { background: #fff; color: #111; border: 2px solid #1f2328; border-radius: 12px; font-size: 16px; font-weight: 600; padding: 9px 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.18); min-height: 46px; }
+.s-btn:active { background: #e8eefc; }
+.s-tip { align-self: center; background: rgba(20,22,26,.72); color: #fff; font-size: 14px; padding: 6px 12px; border-radius: 14px;
+  text-align: center; max-width: 94%; margin-top: auto; margin-bottom: 8px; }
+.s-pad { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; width: 100%; max-width: 420px; align-self: center; }
+.s-pad.hidden { display: none; }
+.s-pad button { background: rgba(255,255,255,.94); color: #111; border: 2px solid #1f2328; border-radius: 16px; min-height: 76px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; box-shadow: 0 3px 8px rgba(0,0,0,.22); padding: 4px; }
+.s-pad button b { font-size: 30px; line-height: 1; }
+.s-pad button span { font-size: 14px; font-weight: 600; }
+.s-pad button.s-main { background: #2563eb; color: #fff; border-color: #1e40af; }
+.s-pad button.down { transform: scale(.95); background: #cfe0ff; }
+.s-pad button.s-main.down { background: #1e40af; }
+#placesSheet, #simpleHelp { position: absolute; inset: 0; z-index: 30; background: rgba(0,0,0,.45); display: flex; align-items: flex-end; justify-content: center; }
+#placesSheet.hidden, #simpleHelp.hidden { display: none; }
+#placesSheet > * { width: 100%; max-width: 520px; }
+.p-head { background: #fff; display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; border-radius: 16px 16px 0 0; font-size: 18px; }
+.p-list { background: #fff; max-height: 70vh; overflow-y: auto; padding: 4px 12px calc(14px + env(safe-area-inset-bottom)); display: flex; flex-direction: column; gap: 8px; }
+.p-item { text-align: left; font-size: 18px; padding: 14px 14px; border: 2px solid #d7dbe2; border-radius: 12px; background: #f7f8fa; color: #111; min-height: 56px; }
+.p-item:active { background: #e8eefc; border-color: #2563eb; }
+#simpleHelp { align-items: center; padding: 14px; }
+.h-card { background: #fff; border-radius: 16px; padding: 16px; max-width: 460px; width: 100%; max-height: 90%; overflow-y: auto; }
+.h-card h3 { margin: 0 0 10px; font-size: 20px; }
+.h-row { display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.4; margin-bottom: 10px; }
+.h-row b { font-size: 20px; min-width: 64px; text-align: center; }
+.h-ok { width: 100%; margin-top: 6px; background: #2563eb; color: #fff; border-color: #1e40af; font-size: 18px; }
+body.simple #tapInfo, body.simple.walking #tapInfo { top: auto; bottom: 230px; }
+@media (orientation: landscape) and (max-height: 500px) {
+  .s-pad { max-width: 330px; align-self: flex-end; } .s-pad button { min-height: 58px; } .s-pad button b { font-size: 24px; }
+  .s-tip { display: none; }
+}
