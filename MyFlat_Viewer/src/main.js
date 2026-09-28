@@ -5,13 +5,14 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { CONFIG } from './config.js?v=8';
-import { Walkthrough } from './walk.js?v=8';
-import { setupImmersive } from './immersive.js?v=8';
-import { setupExtras } from './extras.js?v=8';
+import { CONFIG } from './config.js?v=9';
+import { Walkthrough } from './walk.js?v=9';
+import { setupImmersive } from './immersive.js?v=9';
+import { setupExtras } from './extras.js?v=9';
+import { setupLearn } from './learn.js?v=9';
 // bump together with the ?v= in index.html and the imports above whenever the viewer or models change,
 // so browsers never mix a new page with old cached scripts or models
-const BUILD = '8';
+const BUILD = '9';
 
 const $ = (id) => document.getElementById(id);
 const FT = 0.3048;
@@ -333,6 +334,7 @@ async function loadModel(file) {
         if (!vp.roofOff && !CONFIG.startInOverview) walk.enter(vp.pos.clone(), vp.target.clone()); } }
   }
   imm.onModel(root); ex.onModel(root);
+  if (learnApi) learnApi.onModel();
   updateDesignUI();
   if (app.compare) $('capL').innerHTML = `<b>${modelEntry(file).label || file}</b>`;
   app.ready = true;
@@ -611,6 +613,7 @@ function renderInspector(o) {
   add('Basis', ud.basis);
   if (ud.design_option) add('Design option', ud.design_option);
   add('Specification', ud.spec);
+  if (learnApi) add('In simple words', learnApi.explainHTML(o));
   add('Room', ud.room);
   if (ud.dims_ft) {
     const [x, y, z] = ud.dims_ft;
@@ -798,9 +801,11 @@ function loop() {
 const imm = setupImmersive({ app, scene, renderer, controls, walk, hemi, sun, $, fmtFt, getCamera: () => camera, resize: () => { _aspect = 0; resize(); },
   onBlocked: (what, by) => ex && ex.toast(`${what[0].toUpperCase() + what.slice(1)} can't open further: it hits the ${by}`),
   startWalk: () => startWalk(), overview, goToPoint, goRoom: (n, i) => { const r = app.rooms.find(x => x.name === n); if (r && r.vps[i]) goRoomVp(r, r.vps[i]); } });
-const ex = setupExtras({ app, scene, renderer, controls, walk, persp, $, fmtFt, CONFIG, getCamera: () => camera,
+let learnApi = null;
+const ex = setupExtras({ app, scene, renderer, controls, walk, persp, $, fmtFt, CONFIG, getCamera: () => camera, explain: (o) => learnApi ? learnApi.explain(o) : [],
   resize: () => { _aspect = 0; resize(); }, isInteractive: (o) => imm.isInteractive(o) });
 new ResizeObserver(() => { _aspect = 0; resize(); }).observe(host);
+setupLearn({ app, $, select, focusObject, scene, build: BUILD, modelEntry }).then(a => { learnApi = a; window.viewer.learn = a; });
 walk.onChange = (on) => {
   $('walkBtn').classList.toggle('on', on); $('walkHud').classList.toggle('hidden', !on); document.querySelector('#immBar [data-act=walk]')?.classList.toggle('on', on);
   ex.onWalkChange(on);

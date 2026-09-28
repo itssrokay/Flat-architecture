@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MyFlat Viewer</title>
-<link rel="stylesheet" href="./src/styles.css?v=8">
+<link rel="stylesheet" href="./src/styles.css?v=9">
 <script type="importmap">
 { "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/addons/" } }
 </script>
@@ -12,6 +12,7 @@
 <body>
 <header id="topbar">
   <div class="brand">MyFlat</div>
+  <button id="learnBtn" class="toggle learn" title="Beginner's guide: what everything is made of, how homes are built, dictionary (G)">📘 Learn</button>
   <select id="modelSelect" title="Model"></select>
   <div class="sep"></div>
   <div class="group" id="viewButtons">
@@ -111,7 +112,7 @@
   <div id="crosshair" class="hidden"></div>
   <div id="interactHint" class="hidden"></div>
   <div id="immBar">
-    <button data-act="overview">🏠 Overview</button><button data-act="walk">🚶 Walk</button><button data-act="room1">Room 1</button><button data-act="balcony">Balcony</button>
+    <button data-act="learn">📘 Learn</button><button data-act="overview">🏠 Overview</button><button data-act="walk">🚶 Walk</button><button data-act="room1">Room 1</button><button data-act="balcony">Balcony</button>
     <button data-act="open">Open all</button><button data-act="close">Close all</button>
     <button data-act="lights">💡 Lights</button><button data-act="night">🌙 Night</button><button data-act="roomdims">📐 Room size</button><button data-act="dims">📏 Dims</button><button data-act="hover">🛈 Hover info</button>
     <button data-act="exit">✕ Exit</button>
@@ -131,6 +132,6 @@
   </div>
 </aside>
 
-<script type="module" src="./src/main.js?v=8"></script>
+<script type="module" src="./src/main.js?v=9"></script>
 </body>
 </html>

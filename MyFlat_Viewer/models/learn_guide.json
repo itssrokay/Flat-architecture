@@ -1,0 +1,1132 @@
+{
+ "glossary": [
+  {
+   "term": "RCC",
+   "plain": "Reinforced Cement Concrete: concrete with steel bars (sariya) inside. Your flat's skeleton (pillars, beams, slabs) is RCC. You never break or drill big holes into RCC without an engineer's OK.",
+   "match": null,
+   "aka": [
+    "reinforced concrete"
+   ],
+   "group": "Structure"
+  },
+  {
+   "term": "Pillar / column",
+   "plain": "A vertical RCC post that carries the building's weight down to the ground. Never cut or chip it. In Room 1 there is a 9\" pillar at the north-west corner.",
+   "match": "PILLAR",
+   "aka": [
+    "column"
+   ],
+   "group": "Structure"
+  },
+  {
+   "term": "Beam",
+   "plain": "A horizontal RCC member that runs between pillars just under the ceiling, often showing as a 'drop' in the ceiling. Carries the slab. Never cut it.",
+   "match": "BEAM",
+   "aka": [],
+   "group": "Structure"
+  },
+  {
+   "term": "Slab",
+   "plain": "The flat RCC plate that forms your ceiling and the floor of the flat above (and your floor on top of the one below). About 5–6\" thick.",
+   "match": "SLAB",
+   "aka": [
+    "roof slab"
+   ],
+   "group": "Structure"
+  },
+  {
+   "term": "Brick / block wall",
+   "plain": "Most walls between pillars are just 'filler' walls made of red bricks or AAC blocks, then plastered. 9\" for outer walls, 4.5\" for inner ones. You can cut these for switches and pipes (not RCC).",
+   "match": "^WALL_(INT|EXT)",
+   "aka": [
+    "partition wall",
+    "infill wall"
+   ],
+   "group": "Structure"
+  },
+  {
+   "term": "AAC block",
+   "plain": "A light, large grey building block used instead of red bricks. Easier to cut, insulates better.",
+   "match": null,
+   "aka": [],
+   "group": "Structure"
+  },
+  {
+   "term": "Raised / thick wall (Room 1)",
+   "plain": "In Room 1's south wall, one 7'3\" long part sticks 3'4\" into the room, so that part of the wall is 3'4\" deep instead of normal thickness. It's solid (not a cupboard). Such thick blocks usually wrap a pillar, a shaft for pipes/wires, or the building's structure next door — ask the builder before cutting into it. The designs use its face for a study desk / dresser.",
+   "match": "WALL_R1_S_RAISED",
+   "aka": [
+    "raised part",
+    "thick wall"
+   ],
+   "group": "Structure"
+  },
+  {
+   "term": "Plaster",
+   "plain": "A 12–15 mm layer of cement and sand spread on bricks to make walls flat. Builders usually hand over walls already plastered (and often with one coat of white paint/putty).",
+   "match": null,
+   "aka": [
+    "cement plaster"
+   ],
+   "group": "Walls"
+  },
+  {
+   "term": "Opening / lintel",
+   "plain": "An opening is the hole left in a wall for a door or window. A lintel is the small concrete beam over the opening that carries the wall above.",
+   "match": "OPENING",
+   "aka": [],
+   "group": "Structure"
+  },
+  {
+   "term": "Wall putty",
+   "plain": "White paste (cement or acrylic based) spread in 2 thin coats (about 1–1.5 mm) on plaster and sanded smooth. It fills pores and small cracks so paint looks smooth. Used only indoors, on walls and ceiling. Not waterproof, so never on outside walls.",
+   "match": "putty",
+   "aka": [
+    "putty"
+   ],
+   "group": "Walls"
+  },
+  {
+   "term": "Primer",
+   "plain": "A first thin coat that makes paint stick and use less paint. Goes on after putty and before the colour coats.",
+   "match": "primer",
+   "aka": [],
+   "group": "Walls"
+  },
+  {
+   "term": "Emulsion paint",
+   "plain": "Normal water-based wall paint. Economy (e.g. Tractor Emulsion), standard (Apcolite) and premium (Royale) grades differ in washability and finish. 2 coats over primer.",
+   "match": "emulsion|ACCENT_WALL|_PAINT",
+   "aka": [
+    "paint"
+   ],
+   "group": "Walls"
+  },
+  {
+   "term": "Distemper",
+   "plain": "The cheapest chalky wall paint. Marks easily and can't be washed; mostly avoided in bedrooms now.",
+   "match": null,
+   "aka": [],
+   "group": "Walls"
+  },
+  {
+   "term": "Limewash",
+   "plain": "A soft, cloudy-looking lime-based wall finish. Gives a hand-made textured look. Used on the accent wall in Options A and C.",
+   "match": "limewash",
+   "aka": [],
+   "group": "Walls"
+  },
+  {
+   "term": "Accent wall",
+   "plain": "One wall painted or panelled differently to make it the room's focus, usually behind the bed.",
+   "match": "ACCENT|HEADBOARD_(WALL|PANEL|SLAT|CANE)",
+   "aka": [],
+   "group": "Walls"
+  },
+  {
+   "term": "Panelling",
+   "plain": "Boards fixed on a wall (fluted, slatted, fabric or cane) for looks and a bit of sound softening. Costs much more than paint.",
+   "match": "FLUTED|SLAT|PANEL_WALL|CANE_PANEL|JAALI",
+   "aka": [
+    "wall panel"
+   ],
+   "group": "Walls"
+  },
+  {
+   "term": "POP",
+   "plain": "Plaster of Paris. Used for smooth ceiling finishing, cornices and older-style false ceilings. Gypsum board has mostly replaced POP false ceilings.",
+   "match": null,
+   "aka": [
+    "plaster of paris"
+   ],
+   "group": "Ceiling"
+  },
+  {
+   "term": "False ceiling",
+   "plain": "A second ceiling hung below the concrete slab using steel channels and gypsum boards. Hides wires, gives space for hidden (cove) lights and recessed downlights. A 'band' or 'peripheral' false ceiling covers only the edges of the room.",
+   "match": "FALSE_CEILING|CEILING_BAND|TRAY",
+   "aka": [
+    "gypsum ceiling"
+   ],
+   "group": "Ceiling"
+  },
+  {
+   "term": "Gypsum board",
+   "plain": "12.5 mm white board (Gyproc etc.) screwed to a steel frame to make a false ceiling or partition. Joints are taped, puttied and painted, so it looks like a normal ceiling.",
+   "match": "gypsum",
+   "aka": [
+    "Gyproc"
+   ],
+   "group": "Ceiling"
+  },
+  {
+   "term": "Cove light",
+   "plain": "A hidden LED strip tucked in a groove of the false ceiling (or on a pelmet), so you see a soft glow on the ceiling but not the light itself.",
+   "match": "COVE|PELMET_LED",
+   "aka": [
+    "cove"
+   ],
+   "group": "Lighting"
+  },
+  {
+   "term": "Pelmet",
+   "plain": "A box or board above the curtains that hides the curtain rod or track. In Option D it's a laminated plywood box with an LED strip on top.",
+   "match": "PELMET",
+   "aka": [],
+   "group": "Ceiling"
+  },
+  {
+   "term": "Skirting",
+   "plain": "A 3–4\" strip at the bottom of the walls (tile, wood or aluminium) that protects the paint from mops and feet.",
+   "match": "SKIRTING",
+   "aka": [],
+   "group": "Floor"
+  },
+  {
+   "term": "Vitrified tile",
+   "plain": "The most common Indian floor today: a hard, low-porosity ceramic tile fired at high temperature. Doesn't stain easily, cheaper and easier than marble. GVT/PGVT = glazed with a printed design (can look like marble, wood or terrazzo).",
+   "match": "vitrified|Tile_Greige|TILE|FLOOR_FINISH",
+   "aka": [
+    "GVT",
+    "PGVT",
+    "tile"
+   ],
+   "group": "Floor"
+  },
+  {
+   "term": "Porcelain tile",
+   "plain": "A denser, premium kind of vitrified tile, often in big slabs (1200×1200 mm or more). Used in Option B.",
+   "match": "porcelain",
+   "aka": [],
+   "group": "Floor"
+  },
+  {
+   "term": "Marble",
+   "plain": "Natural stone (e.g. Makrana white). Beautiful but porous: it stains, needs polishing and costs more. None of the designs use marble, to keep cost and upkeep down.",
+   "match": null,
+   "aka": [],
+   "group": "Floor"
+  },
+  {
+   "term": "Granite",
+   "plain": "Hard natural stone, very durable. Used for window sills and door thresholds (black granite) in these designs, not for the whole floor.",
+   "match": "granite",
+   "aka": [],
+   "group": "Floor"
+  },
+  {
+   "term": "Kota stone",
+   "plain": "A green-grey natural stone from Rajasthan, cheap, tough and cool underfoot. 'Leather finish' = matte textured surface. Used in Option C's balcony.",
+   "match": "kota",
+   "aka": [],
+   "group": "Floor"
+  },
+  {
+   "term": "Terrazzo",
+   "plain": "A floor with chips of stone set in cement and polished. Options use 'terrazzo-look' tiles (vitrified tiles printed to look like terrazzo).",
+   "match": "terrazzo",
+   "aka": [],
+   "group": "Floor"
+  },
+  {
+   "term": "Wood-look tile",
+   "plain": "Vitrified tile printed and textured like wooden planks. Looks warm, but you can mop it like tile. Used in Option A.",
+   "match": "wood-look|plank",
+   "aka": [],
+   "group": "Floor"
+  },
+  {
+   "term": "Grout",
+   "plain": "The filler in the gaps between tiles. Epoxy grout is stain-proof and colour-matched; cement grout is cheaper but darkens over time.",
+   "match": "grout",
+   "aka": [],
+   "group": "Floor"
+  },
+  {
+   "term": "Mortar bed / tile adhesive",
+   "plain": "What the tile sits on: a 1:4 cement-sand bed about 40–50 mm thick, or a thin layer of tile adhesive on an already-level floor.",
+   "match": null,
+   "aka": [
+    "bedding"
+   ],
+   "group": "Floor"
+  },
+  {
+   "term": "Threshold",
+   "plain": "The stone strip at the bottom of a doorway. At the balcony it also steps down and slopes away so rainwater doesn't come in.",
+   "match": "THRESHOLD",
+   "aka": [],
+   "group": "Floor"
+  },
+  {
+   "term": "Anti-skid tile (R11)",
+   "plain": "Outdoor tile with a rough surface so it isn't slippery when wet. R11 is a slip-resistance rating.",
+   "match": "anti-skid|Outdoor_Tile|R11",
+   "aka": [],
+   "group": "Floor"
+  },
+  {
+   "term": "Waterproofing",
+   "plain": "A chemical coating under balcony and bathroom floors so water doesn't leak to the flat below. Needs a slope (fall) towards the drain.",
+   "match": "waterproof",
+   "aka": [],
+   "group": "Floor"
+  },
+  {
+   "term": "Dhurrie",
+   "plain": "A flat woven cotton or jute rug (Panipat, Jaipur). Cheap, washable, very Indian.",
+   "match": "DHURRIE|RUG",
+   "aka": [
+    "rug"
+   ],
+   "group": "Decor"
+  },
+  {
+   "term": "Plywood (MR / BWR / BWP)",
+   "plain": "Thin wooden sheets glued in layers into an 18 mm board. MR = moisture resistant (fine for dry rooms), BWR/BWP = boiling-water resistant/proof (for damp areas, costlier).",
+   "match": "\\bply\\b|plywood|MR ply|BWP|BWR",
+   "aka": [
+    "ply"
+   ],
+   "group": "Carpentry"
+  },
+  {
+   "term": "HDHMR",
+   "plain": "High Density High Moisture Resistance board: a pressed fibre board that's harder and cheaper than good plywood and handles humidity well. Popular for wardrobes now.",
+   "match": "HDHMR",
+   "aka": [],
+   "group": "Carpentry"
+  },
+  {
+   "term": "MDF / particle board",
+   "plain": "Cheaper pressed-wood boards. MDF is smooth (good for carving/flutes); particle board is the cheapest, used in ready-made furniture and 'engineered wood'.",
+   "match": "MDF|particle|engineered",
+   "aka": [
+    "engineered wood"
+   ],
+   "group": "Carpentry"
+  },
+  {
+   "term": "Carcass",
+   "plain": "The box/body of a wardrobe or cabinet (sides, back, shelves), without the doors.",
+   "match": "CARCASS|INTERNALS",
+   "aka": [],
+   "group": "Carpentry"
+  },
+  {
+   "term": "Shutter",
+   "plain": "Carpenter's word for a cupboard door.",
+   "match": "SHUTTER|WARDROBE_DOOR|LOFT_DOOR|WARDROBE_SLIDER",
+   "aka": [],
+   "group": "Carpentry"
+  },
+  {
+   "term": "Loft",
+   "plain": "The storage box above the wardrobe, up to the ceiling, for suitcases and quilts.",
+   "match": "LOFT",
+   "aka": [],
+   "group": "Carpentry"
+  },
+  {
+   "term": "Laminate",
+   "plain": "A 0.8–1 mm printed plastic sheet glued on the board (wood-grain, white, colours). Tough, easy to clean and the most economical finish.",
+   "match": "laminate",
+   "aka": [
+    "sunmica"
+   ],
+   "group": "Carpentry"
+  },
+  {
+   "term": "Veneer",
+   "plain": "A real-wood slice (about 0.5 mm) glued on the board, then polished with PU. Looks like real wood, costs more than laminate.",
+   "match": "veneer",
+   "aka": [],
+   "group": "Carpentry"
+  },
+  {
+   "term": "PU / acrylic / lacquered glass",
+   "plain": "Premium door finishes: PU is a paint-like polish, acrylic is a glossy sheet, lacquered glass is back-painted glass. Costlier than laminate.",
+   "match": "\\\\bPU\\\\b|acrylic|lacquer",
+   "aka": [],
+   "group": "Carpentry"
+  },
+  {
+   "term": "Soft-close hinge",
+   "plain": "A hinge with a small damper so the door closes gently instead of banging. Hettich/Hafele/Ebco are common brands.",
+   "match": "hinge|soft-close",
+   "aka": [],
+   "group": "Carpentry"
+  },
+  {
+   "term": "Plinth",
+   "plain": "The recessed base under a wardrobe or bed so you can mop under the front and your toes don't hit it.",
+   "match": "PLINTH",
+   "aka": [],
+   "group": "Carpentry"
+  },
+  {
+   "term": "Domal aluminium",
+   "plain": "The common, economical aluminium window/door section in India (27 mm series). Slides on tracks. Good value; slimmer 'system' windows cost more.",
+   "match": "domal",
+   "aka": [],
+   "group": "Windows & doors"
+  },
+  {
+   "term": "uPVC",
+   "plain": "Plastic (vinyl) window frames with steel inside. Seals well against dust, noise and rain; white is the standard colour. Used in Option A.",
+   "match": "uPVC",
+   "aka": [],
+   "group": "Windows & doors"
+  },
+  {
+   "term": "Sliding window / door",
+   "plain": "Panels move sideways on 2 or 3 tracks. 3-track lets you have 2 glass panels + 1 mosquito-mesh panel. Doesn't swing into the room, so nothing gets in its way.",
+   "match": "slid|SASH_2|DOOR_P\\d|[23]-track",
+   "aka": [
+    "2-track",
+    "3-track"
+   ],
+   "group": "Windows & doors"
+  },
+  {
+   "term": "Casement",
+   "plain": "A window that opens on hinges like a door (inward or outward). Seals better than sliding. Inward ones need space in front.",
+   "match": "casement|CASEMENT",
+   "aka": [],
+   "group": "Windows & doors"
+  },
+  {
+   "term": "Tilt-and-turn",
+   "plain": "A European casement that can tilt at the top for air or swing fully inward to clean. Used in Option B.",
+   "match": "tilt",
+   "aka": [],
+   "group": "Windows & doors"
+  },
+  {
+   "term": "Bi-fold door",
+   "plain": "Panels fold like an accordion and stack at one side, opening almost the whole width. Used in Option C's balcony.",
+   "match": "BIFOLD|bi-fold",
+   "aka": [],
+   "group": "Windows & doors"
+  },
+  {
+   "term": "Toughened glass",
+   "plain": "Glass heat-treated to be ~5× stronger; if it breaks it shatters into small blunt pieces. Standard for doors.",
+   "match": "toughened",
+   "aka": [],
+   "group": "Windows & doors"
+  },
+  {
+   "term": "Laminated glass",
+   "plain": "Two glass sheets with a plastic film between. If it cracks, it stays in place, so it can replace a grill.",
+   "match": "laminated safety",
+   "aka": [],
+   "group": "Windows & doors"
+  },
+  {
+   "term": "Low-E glass",
+   "plain": "Glass with a thin coating that keeps out heat from the sun. Keeps rooms cooler; costs more.",
+   "match": "low-E",
+   "aka": [],
+   "group": "Windows & doors"
+  },
+  {
+   "term": "Mosquito mesh",
+   "plain": "A fine net panel or pleated screen so you can keep the window/door open without insects.",
+   "match": "mesh|MESH",
+   "aka": [],
+   "group": "Windows & doors"
+  },
+  {
+   "term": "Grill",
+   "plain": "Metal bars outside the window glass for safety. 'Invisible grill' = thin steel cables, used in Option B.",
+   "match": "GRILL|grill",
+   "aka": [
+    "grille"
+   ],
+   "group": "Windows & doors"
+  },
+  {
+   "term": "Sill",
+   "plain": "The ledge at the bottom of a window. Inside it's often granite; outside it slopes and has a drip groove so rain drips off instead of running down the wall.",
+   "match": "SILL",
+   "aka": [],
+   "group": "Windows & doors"
+  },
+  {
+   "term": "Downlight",
+   "plain": "A small round ceiling light pointing down. 'Recessed' ones sit inside a false ceiling; 'surface' ones are screwed onto a plain ceiling (Option D).",
+   "match": "DOWNLIGHT",
+   "aka": [],
+   "group": "Lighting"
+  },
+  {
+   "term": "LED strip",
+   "plain": "A flexible tape of small LEDs (sold per metre) that needs a 'driver' (power adapter). Used for cove, pelmet, wardrobe and headboard glows.",
+   "match": "strip|_LED|LED_|COVE",
+   "aka": [],
+   "group": "Lighting"
+  },
+  {
+   "term": "Colour temperature (K)",
+   "plain": "How warm or cool light looks: 2700K is warm yellow (cosy, bedrooms), 3000K warm white, 4000K neutral, 6500K cool blue-white (offices).",
+   "match": "2700K|3000K|4000K",
+   "aka": [],
+   "group": "Lighting"
+  },
+  {
+   "term": "IP65",
+   "plain": "A rating that means a light is dust-tight and safe in rain, needed outdoors on the balcony.",
+   "match": "IP65",
+   "aka": [],
+   "group": "Lighting"
+  },
+  {
+   "term": "Pendant",
+   "plain": "A light hanging from the ceiling on a cord.",
+   "match": "PENDANT|PAPER_LAMP",
+   "aka": [],
+   "group": "Lighting"
+  }
+ ],
+ "designs": {
+  "DEFAULT": [
+   {
+    "title": "Floor",
+    "see": "Big matte tiles in a warm light grey-beige (greige), 800×1600 mm (about 2.6' × 5.2').",
+    "layers": [
+     "RCC floor slab",
+     "Cement-sand bed 1:4, about 40–50 mm (levels the floor)",
+     "Matte vitrified tile, 9 mm, laid lengthwise, grout in the joints"
+    ],
+    "simple": "It is tile, not marble: glazed vitrified tile that looks calm and doesn't stain. Skirting is cut from the same tile.",
+    "show": [
+     "FLOOR_FINISH",
+     "SKIRTING"
+    ],
+    "where": null
+   },
+   {
+    "title": "Walls (3 walls)",
+    "see": "Smooth warm-white painted walls.",
+    "layers": [
+     "Brick / block wall (built by the builder)",
+     "Cement plaster 12–15 mm (builder)",
+     "Wall putty, 2 coats, sanded",
+     "Primer, 1 coat",
+     "Emulsion paint, 2 coats"
+    ],
+    "simple": "Normal painted walls: putty makes them smooth, then primer and 2 coats of washable emulsion.",
+    "show": [
+     "^WALL_INT_R1|^WALL_EXT_N_R1|^WALL_EXT_S_R1"
+    ],
+    "where": "Putty + primer + paint go on the INSIDE faces of all Room 1 walls and on the ceiling (walls: every face you see from inside the room, including the thick wall and the alcove). Outside faces of outer walls are the building's exterior paint (no putty, it isn't waterproof). The balcony walls get exterior-grade paint without putty."
+   },
+   {
+    "title": "Bed wall (east)",
+    "see": "A wooden fluted panel behind the bed, 7'8\" wide × 8' high, with a thin brass-look strip on top.",
+    "layers": [
+     "Painted wall behind",
+     "12 mm plywood base screwed to the wall",
+     "Fluted MDF strips (1\" grooves)",
+     "0.8 mm oak-look laminate wrapped on the strips",
+     "Brass-finish aluminium cap on top"
+    ],
+    "simple": "A decorative wooden cladding only on the bed wall; the rest of that wall above 8' is painted.",
+    "show": [
+     "HEADBOARD_WALL_FLUTED"
+    ],
+    "where": null
+   },
+   {
+    "title": "Ceiling",
+    "see": "A lowered strip (band) around the edges with hidden warm light; the middle stays at the full 10'.",
+    "layers": [
+     "RCC slab",
+     "Steel (GI) channels hung from the slab",
+     "12.5 mm gypsum board screwed to the channels",
+     "Joint tape + putty, sanded",
+     "Primer + ceiling-white paint"
+    ],
+    "simple": "A 'band' false ceiling: gypsum board only along the edges (1'7\" wide, 6\" deep), with an LED strip hidden in its inner edge and small downlights in it. The centre is the original concrete ceiling, puttied and painted.",
+    "show": [
+     "FALSE_CEILING"
+    ],
+    "where": null
+   },
+   {
+    "title": "Wardrobe",
+    "see": "3-door off-white wardrobe with an oak strip, loft above, 5'3\" wide.",
+    "layers": [
+     "18 mm plywood (or HDHMR) body",
+     "Off-white 1 mm laminate on doors, frosty-white inside",
+     "Oak-look laminate strip on each door",
+     "Soft-close hinges, black bar handles"
+    ],
+    "simple": "Carpenter-made wardrobe that fills the alcove, with drawers, shelves, long hanging and a loft for suitcases.",
+    "show": [
+     "WARDROBE_CARCASS"
+    ],
+    "where": null
+   },
+   {
+    "title": "Window W1",
+    "see": "A charcoal aluminium window that slides, with a mosquito-net panel and a grill outside.",
+    "layers": [
+     "Aluminium frame, charcoal powder-coated",
+     "2 glass panels (5 mm toughened) + 1 mesh panel on 3 tracks",
+     "Steel grill outside the glass",
+     "Black granite sill inside"
+    ],
+    "simple": "Sliding window: open one glass panel and slide the net over it.",
+    "show": [
+     "W1_OUTER_FRAME"
+    ],
+    "where": null
+   },
+   {
+    "title": "Balcony door",
+    "see": "Three big glass panels in a charcoal frame; two slide.",
+    "layers": [
+     "Aluminium 3-track frame",
+     "8 mm toughened glass panels",
+     "Pleated mosquito net at one side",
+     "Black granite threshold with a small step down to the balcony"
+    ],
+    "simple": "Sliding glass door that opens about 7' to the balcony.",
+    "show": [
+     "BALCONY_DOOR_FRAME"
+    ],
+    "where": null
+   },
+   {
+    "title": "Balcony",
+    "see": "Outdoor anti-skid tiles, a built-in bench, plants.",
+    "layers": [
+     "Waterproofing on the slab, sloping to the drain",
+     "Anti-skid outdoor tile 600×600 mm"
+    ],
+    "simple": "Non-slippery outdoor tile over waterproofing so rain doesn't leak below.",
+    "show": [
+     "BALCONY_FLOOR_FINISH"
+    ],
+    "where": null
+   }
+  ],
+  "OPTION_A": [
+   {
+    "title": "Floor",
+    "see": "Light-oak coloured planks, 200×1200 mm.",
+    "layers": [
+     "RCC floor slab",
+     "Cement-sand bed 1:4, about 40–50 mm (levels the floor)",
+     "Wood-look vitrified tile planks, grout in the joints"
+    ],
+    "simple": "Tile that looks like wood: warm like a wooden floor but you can mop it.",
+    "show": [
+     "FLOOR_FINISH"
+    ],
+    "where": null
+   },
+   {
+    "title": "Walls",
+    "see": "Soft, slightly cloudy warm-white walls.",
+    "layers": [
+     "Brick / block wall (built by the builder)",
+     "Cement plaster 12–15 mm (builder)",
+     "Wall putty, 2 coats, sanded",
+     "Primer, 1 coat",
+     "Limewash-effect emulsion, 2 coats"
+    ],
+    "simple": "Painted like normal, but with a limewash-effect paint for a soft handmade look.",
+    "show": [
+     "^WALL_INT_R1|^WALL_EXT_N_R1"
+    ],
+    "where": "Putty + primer + paint go on the INSIDE faces of all Room 1 walls and on the ceiling (walls: every face you see from inside the room, including the thick wall and the alcove). Outside faces of outer walls are the building's exterior paint (no putty, it isn't waterproof). The balcony walls get exterior-grade paint without putty."
+   },
+   {
+    "title": "Thick wall (bed head)",
+    "see": "Vertical ash-wood slats on a black backing behind the bed, 8'6\" high.",
+    "layers": [
+     "Painted wall (black)",
+     "Wooden battens",
+     "1.5\" ash slats at 3\" gaps"
+    ],
+    "simple": "Wooden slats on the thick south wall where the bed head sits.",
+    "show": [
+     "HEADBOARD_SLAT"
+    ],
+    "where": null
+   },
+   {
+    "title": "Ceiling",
+    "see": "No false ceiling; a wooden slat 'raft' hangs over the bed.",
+    "layers": [
+     "RCC slab (your ceiling)",
+     "Thin plaster / POP punning (builder)",
+     "Putty, 2 coats",
+     "Primer",
+     "Ceiling-white matt paint, 2 coats"
+    ],
+    "simple": "Plain puttied and painted concrete ceiling at 10', plus a 6'×6'6\" frame of ash slats hung over the bed.",
+    "show": [
+     "CEILING_SLAT_RAFT"
+    ],
+    "where": null
+   },
+   {
+    "title": "Wardrobe",
+    "see": "2-door sliding wardrobe in light wood with grooves.",
+    "layers": [
+     "HDHMR body",
+     "Ash veneer doors with PU matt polish",
+     "Top-hung soft-close sliding track"
+    ],
+    "simple": "Sliding doors need no swing space.",
+    "show": [
+     "WARDROBE_CARCASS"
+    ],
+    "where": null
+   },
+   {
+    "title": "Window W1",
+    "see": "White uPVC pair of windows opening outward.",
+    "layers": [
+     "White uPVC frame",
+     "Laminated safety glass (so no grill needed)",
+     "Roller mosquito mesh inside"
+    ],
+    "simple": "Casement windows that swing outward.",
+    "show": [
+     "W1_OUTER_FRAME"
+    ],
+    "where": null
+   },
+   {
+    "title": "Balcony door",
+    "see": "White uPVC 4-panel slider (middle two slide).",
+    "layers": [
+     "uPVC 2-track frame",
+     "5 mm toughened glass",
+     "Kota-stone threshold"
+    ],
+    "simple": "",
+    "show": [
+     "BALCONY_DOOR_FRAME"
+    ],
+    "where": null
+   },
+   {
+    "title": "Balcony",
+    "see": "Wooden-look deck tiles clicked over the existing tiles.",
+    "layers": [
+     "Existing balcony tile",
+     "WPC interlocking deck tiles (no glue)"
+    ],
+    "simple": "Removable deck tiles; nothing is broken.",
+    "show": [
+     "BALCONY_FLOOR_FINISH"
+    ],
+    "where": null
+   }
+  ],
+  "OPTION_B": [
+   {
+    "title": "Floor",
+    "see": "Very large light-grey tiles, 1200×1200 mm, nearly invisible joints.",
+    "layers": [
+     "RCC floor slab",
+     "Cement-sand bed 1:4, about 40–50 mm (levels the floor)",
+     "Large-format porcelain tile, 1 mm joints, grout in the joints"
+    ],
+    "simple": "Premium big porcelain tiles for a seamless, modern look.",
+    "show": [
+     "FLOOR_FINISH"
+    ],
+    "where": null
+   },
+   {
+    "title": "Walls",
+    "see": "White walls; grey fabric panels behind the bed; concrete-look panel behind the TV.",
+    "layers": [
+     "Brick / block wall (built by the builder)",
+     "Cement plaster 12–15 mm (builder)",
+     "Wall putty, 2 coats, sanded",
+     "Primer, 1 coat",
+     "Emulsion paint, 2 coats"
+    ],
+    "simple": "Painted walls plus two feature walls.",
+    "show": [
+     "^WALL_INT_R1"
+    ],
+    "where": "Putty + primer + paint go on the INSIDE faces of all Room 1 walls and on the ceiling (walls: every face you see from inside the room, including the thick wall and the alcove). Outside faces of outer walls are the building's exterior paint (no putty, it isn't waterproof). The balcony walls get exterior-grade paint without putty."
+   },
+   {
+    "title": "Ceiling",
+    "see": "A fully lowered flat ceiling at 9'5\" with 2 long LED lines and a slot for blinds.",
+    "layers": [
+     "RCC slab",
+     "Steel (GI) channels hung from the slab",
+     "12.5 mm gypsum board screwed to the channels",
+     "Joint tape + putty, sanded",
+     "Primer + ceiling-white paint"
+    ],
+    "simple": "A full gypsum false ceiling over the whole room (not just a band).",
+    "show": [
+     "FALSE_CEILING"
+    ],
+    "where": null
+   },
+   {
+    "title": "Wardrobe",
+    "see": "Floor-to-ceiling sliding wardrobe in white glass with a mirror.",
+    "layers": [
+     "HDHMR body",
+     "Back-painted white glass doors",
+     "Soft-close sliding system"
+    ],
+    "simple": "",
+    "show": [
+     "WARDROBE_CARCASS"
+    ],
+    "where": null
+   },
+   {
+    "title": "Window W1",
+    "see": "Slim black window: one fixed pane + one tilt-and-turn sash, invisible grill.",
+    "layers": [
+     "Slim black aluminium",
+     "6 mm low-E glass",
+     "Steel-cable invisible grill outside"
+    ],
+    "simple": "",
+    "show": [
+     "W1_OUTER_FRAME"
+    ],
+    "where": null
+   },
+   {
+    "title": "Balcony door",
+    "see": "Two huge glass panels (lift-and-slide).",
+    "layers": [
+     "Slim aluminium lift-and-slide",
+     "10 mm low-E toughened glass",
+     "Flush quartz threshold"
+    ],
+    "simple": "",
+    "show": [
+     "BALCONY_DOOR_FRAME"
+    ],
+    "where": null
+   },
+   {
+    "title": "Balcony",
+    "see": "Grey outdoor porcelain.",
+    "layers": [
+     "Waterproofing",
+     "Anti-skid porcelain 600×1200"
+    ],
+    "simple": "",
+    "show": [
+     "BALCONY_FLOOR_FINISH"
+    ],
+    "where": null
+   }
+  ],
+  "OPTION_C": [
+   {
+    "title": "Floor",
+    "see": "Terrazzo-look tiles (speckled), with a brass-coloured strip border 1' from the walls.",
+    "layers": [
+     "RCC floor slab",
+     "Cement-sand bed 1:4, about 40–50 mm (levels the floor)",
+     "Terrazzo-look vitrified tile 600×600, grout in the joints",
+     "Brass-colour strip inlay border"
+    ],
+    "simple": "Tile printed like terrazzo; the border strip makes it feel like a rug.",
+    "show": [
+     "FLOOR_FINISH",
+     "FLOOR_BORDER"
+    ],
+    "where": null
+   },
+   {
+    "title": "Walls",
+    "see": "Deep teal limewash behind the bed, warm white elsewhere.",
+    "layers": [
+     "Brick / block wall (built by the builder)",
+     "Cement plaster 12–15 mm (builder)",
+     "Wall putty, 2 coats, sanded",
+     "Primer, 1 coat",
+     "Teal limewash on the bed wall / warm white emulsion elsewhere"
+    ],
+    "simple": "",
+    "show": [
+     "ACCENT_WALL_TEAL",
+     "^WALL_INT_R1"
+    ],
+    "where": "Putty + primer + paint go on the INSIDE faces of all Room 1 walls and on the ceiling (walls: every face you see from inside the room, including the thick wall and the alcove). Outside faces of outer walls are the building's exterior paint (no putty, it isn't waterproof). The balcony walls get exterior-grade paint without putty."
+   },
+   {
+    "title": "Headboard & jaali",
+    "see": "Woven cane panel in a teak frame behind the bed; carved teak jaali over the diwan.",
+    "layers": [
+     "Plywood frame",
+     "Teak veneer",
+     "Woven cane mesh / CNC-cut jaali"
+    ],
+    "simple": "",
+    "show": [
+     "HEADBOARD_CANE",
+     "JAALI"
+    ],
+    "where": null
+   },
+   {
+    "title": "Ceiling",
+    "see": "A stepped (tray) ceiling: lower band around, higher in the middle, with hidden light and a teak edge.",
+    "layers": [
+     "RCC slab",
+     "Steel (GI) channels hung from the slab",
+     "12.5 mm gypsum board screwed to the channels",
+     "Joint tape + putty, sanded",
+     "Primer + ceiling-white paint",
+     "Teak-veneer edge strip + cove LED"
+    ],
+    "simple": "Like DEFAULT's band but wider (2'2\") with a wooden edge.",
+    "show": [
+     "FALSE_CEILING"
+    ],
+    "where": null
+   },
+   {
+    "title": "Wardrobe",
+    "see": "Teak doors with cane-mesh insets, loft above.",
+    "layers": [
+     "Plywood body",
+     "Teak veneer with PU matt",
+     "Cane-mesh insets, brass handles"
+    ],
+    "simple": "",
+    "show": [
+     "WARDROBE_CARCASS"
+    ],
+    "where": null
+   },
+   {
+    "title": "Window W1",
+    "see": "Teak-look aluminium casements opening inward, jaali-pattern grill.",
+    "layers": [
+     "Aluminium, wood-grain finish",
+     "6 mm toughened glass",
+     "Decorative steel jaali grill",
+     "Kota-stone sill"
+    ],
+    "simple": "",
+    "show": [
+     "W1_OUTER_FRAME"
+    ],
+    "where": null
+   },
+   {
+    "title": "Balcony door",
+    "see": "4-panel bi-fold that folds away completely.",
+    "layers": [
+     "Aluminium bi-fold, teak finish",
+     "Toughened glass",
+     "Kota threshold"
+    ],
+    "simple": "",
+    "show": [
+     "BIFOLD_P1"
+    ],
+    "where": null
+   },
+   {
+    "title": "Balcony",
+    "see": "Leather-finish Kota stone.",
+    "layers": [
+     "Waterproofing",
+     "Kota stone, leather (matte) finish"
+    ],
+    "simple": "",
+    "show": [
+     "BALCONY_FLOOR_FINISH"
+    ],
+    "where": null
+   }
+  ],
+  "OPTION_D": [
+   {
+    "title": "Floor",
+    "see": "Your existing floor stays (no new tiles). A cotton dhurrie rug adds colour.",
+    "layers": [
+     "RCC slab",
+     "Existing floor as handed over by the builder",
+     "Deep-clean + re-grout the joints",
+     "Cotton dhurrie 5'×7' on top"
+    ],
+    "simple": "Nothing new is laid. If your flat's floor is bare cement (no tiles yet), add vitrified tiles like DEFAULT: about ₹30–40k for Room 1.",
+    "show": [
+     "DHURRIE",
+     "FLOOR_R1"
+    ],
+    "where": null
+   },
+   {
+    "title": "Walls",
+    "see": "Warm-white walls; the bed wall is terracotta.",
+    "layers": [
+     "Brick / block wall (builder)",
+     "Cement plaster (builder)",
+     "Putty patching only where cracked/uneven (builder's putty kept)",
+     "Primer on patches",
+     "2 coats emulsion: warm white, terracotta on the bed wall"
+    ],
+    "simple": "Just paint: no panels or wallpaper. The builder's existing putty is reused and only repaired, which is why it's cheap.",
+    "show": [
+     "ACCENT_WALL_TERRACOTTA",
+     "^WALL_INT_R1"
+    ],
+    "where": "Putty + primer + paint go on the INSIDE faces of all Room 1 walls and on the ceiling (walls: every face you see from inside the room, including the thick wall and the alcove). Outside faces of outer walls are the building's exterior paint (no putty, it isn't waterproof). The balcony walls get exterior-grade paint without putty."
+   },
+   {
+    "title": "Ceiling",
+    "see": "The original flat ceiling, freshly painted white. No false ceiling.",
+    "layers": [
+     "RCC slab (your ceiling)",
+     "Thin plaster / POP punning (builder)",
+     "Putty, 2 coats",
+     "Primer",
+     "Ceiling-white matt paint, 2 coats"
+    ],
+    "simple": "Nothing is hung from the ceiling. Lights are screwed directly onto it (surface downlights). The soft glow on the balcony side comes from an LED strip on top of the wooden curtain pelmet.",
+    "show": [
+     "DOWNLIGHT_1",
+     "CURTAIN_PELMET"
+    ],
+    "where": null
+   },
+   {
+    "title": "Wardrobe",
+    "see": "White 3-door wardrobe with a walnut strip and a loft.",
+    "layers": [
+     "18 mm MR plywood or HDHMR body (carpenter)",
+     "Frosty-white 1 mm laminate + walnut laminate strip",
+     "Basic soft-close hinges, steel D-handles"
+    ],
+    "simple": "Carpenter-made from economical boards with laminate, the best value finish.",
+    "show": [
+     "WARDROBE_CARCASS"
+    ],
+    "where": null
+   },
+   {
+    "title": "Window W1",
+    "see": "White aluminium sliding window with a net panel; plain black grill outside.",
+    "layers": [
+     "Domal aluminium 3-track frame, white",
+     "2 glass panels (5 mm toughened) + 1 mesh",
+     "Plain MS grill (reuse existing)",
+     "Black granite sill"
+    ],
+    "simple": "",
+    "show": [
+     "W1_OUTER_FRAME"
+    ],
+    "where": null
+   },
+   {
+    "title": "Balcony door",
+    "see": "White aluminium sliding door, 4 panels; the middle two slide apart.",
+    "layers": [
+     "Domal aluminium 2-track frame",
+     "5 mm toughened glass",
+     "Black granite threshold"
+    ],
+    "simple": "About 5' opens in the middle; the end panels stay fixed.",
+    "show": [
+     "BALCONY_DOOR_FRAME"
+    ],
+    "where": null
+   },
+   {
+    "title": "Balcony",
+    "see": "Existing balcony floor; folding table and chairs; plants.",
+    "layers": [
+     "Existing floor (check waterproofing: water shouldn't pool)"
+    ],
+    "simple": "",
+    "show": [
+     "BALCONY_BISTRO_TABLE_TOP"
+    ],
+    "where": null
+   }
+  ]
+ },
+ "compare": {
+  "rows": [
+   "Floor",
+   "Walls",
+   "Ceiling",
+   "Wardrobe",
+   "Window W1",
+   "Balcony door",
+   "Budget idea"
+  ],
+  "cols": [
+   "DEFAULT",
+   "OPTION_A",
+   "OPTION_B",
+   "OPTION_C",
+   "OPTION_D"
+  ],
+  "cells": {
+   "DEFAULT": [
+    "Greige vitrified tile 800×1600",
+    "Paint + wooden fluted panel behind bed",
+    "Gypsum band at edges + hidden LED",
+    "3-door laminate + loft",
+    "Aluminium 3-track slider",
+    "3-panel aluminium slider",
+    "Mid"
+   ],
+   "OPTION_A": [
+    "Wood-look tile planks",
+    "Limewash-effect paint + ash slats",
+    "Plain + wooden slat raft",
+    "2-door sliding, ash veneer",
+    "White uPVC casements",
+    "uPVC 4-panel slider",
+    "Mid"
+   ],
+   "OPTION_B": [
+    "Big grey porcelain 1200×1200",
+    "Paint + fabric panels",
+    "Full gypsum ceiling, LED lines",
+    "Sliding glass + mirror",
+    "Slim black tilt-and-turn",
+    "Slim lift-and-slide",
+    "High"
+   ],
+   "OPTION_C": [
+    "Terrazzo-look tile + brass border",
+    "Teal limewash + cane + jaali",
+    "Tray ceiling + cove + teak edge",
+    "Teak veneer + cane",
+    "Teak-look casements",
+    "4-panel bi-fold",
+    "High"
+   ],
+   "OPTION_D": [
+    "Existing floor + dhurrie",
+    "Paint only (terracotta accent)",
+    "Plain, repainted; surface lights",
+    "3-door laminate + loft (carpenter)",
+    "Domal 3-track slider",
+    "Domal 4-panel slider",
+    "₹1.93 lakh"
+   ]
+  }
+ }
+}

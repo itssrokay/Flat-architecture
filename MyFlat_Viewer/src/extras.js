@@ -175,6 +175,7 @@ export function setupExtras(ctx) {
         u.design_option ? ['Design', esc(u.design_option)] : null,
         st ? ['Status', esc(st)] : null,
         u.basis ? ['Basis', esc(u.basis)] : null,
+        ...(ctx.explain ? ctx.explain(o).slice(0, 1).map(t => ['Simply', `<b>${esc(t.term)}</b>: ${esc(t.plain.length > 230 ? t.plain.slice(0, 227) + '…' : t.plain)}`]) : []),
         ctx.isInteractive(o) ? ['', '<i>double-click (or click inside) to open / close</i>'] : null,
       ].filter(Boolean);
       tip.innerHTML = `<b>${esc(u.label || pretty(o.name))}</b><table>${rows.map(r => `<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join('')}</table>`;

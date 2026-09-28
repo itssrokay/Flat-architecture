@@ -26,6 +26,18 @@ cd ~/Documents/MyFlat/MyFlat_Viewer
 No `npm install` or internet is needed. Three.js is included in `vendor/`.
 The page must be served over http://; opening `index.html` directly as a file will not load the model.
 
+## New to home interiors? Press 📘 Learn
+
+**📘 Learn** (top-left, or **G**) opens a beginner's guide next to the 3D view:
+
+- **Your room**: every surface of the design you're looking at (floor, walls, bed wall, ceiling, wardrobe, window, balcony door, balcony). Each one says what you'll see, what it's made of layer by layer (from the concrete up to what you touch), and exactly where the putty and paint go. **Show me** flies to that part.
+- **How homes are built**: pillars, beams, slab and brick walls; your Room 1 plan explained (the thick "raised" wall, the alcove, the balcony opening, the pillar); what goes on a wall, a floor and a ceiling.
+- **Step by step**: the order the work happens in, and who does each step.
+- **Compare designs**: the 5 designs side by side in plain words.
+- **Dictionary**: about 60 terms (putty, vitrified tile, HDHMR, domal, 2700K …), searchable, with **Show me** where the thing exists in the model.
+
+With **Hover info** on, pointing at anything also gives a one-line plain explanation. The inspector shows the same under *In simple words*. The content is in `models/learn_guide.json`, so it can be edited without touching code.
+
 ## Controls
 
 There are two ways to look at the flat.
@@ -108,6 +120,7 @@ MyFlat_Viewer/
     walk.js             first-person walkthrough with collision
     immersive.js        openable parts (with collisions), lights / night, dimensions, immersive mode
     extras.js           panels, photo-style zoom, lens / ceiling view, hover info, room size
+    learn.js            beginner's guide (📘 Learn) + plain-language explanations
     styles.css
   models/
     models.json         list of models shown in the dropdown (+ default)
@@ -177,7 +190,7 @@ for opt in ["DEFAULT", "OPTION_A", "OPTION_B", "OPTION_C", "OPTION_D"]:
          {"DESIGN": opt, "OUT_NAME": "MyFlat_V1_1_Room1_" + opt})
 ```
 
-Tests: `python3 scripts/test_viewer.py` (architecture), `python3 scripts/test_interiors.py` (designs), `python3 scripts/test_navigation.py` (navigation) and `python3 scripts/test_comfort.py` (panels, zoom, ceiling view, hover info, collisions, room size). All need Playwright.
+Tests: `python3 scripts/test_viewer.py` (architecture), `python3 scripts/test_interiors.py` (designs), `python3 scripts/test_navigation.py` (navigation) `python3 scripts/test_comfort.py` (panels, zoom, ceiling view, hover info, collisions, room size) and `python3 scripts/test_learn.py` (beginner's guide). All need Playwright.
 
 ## Immersive features
 
