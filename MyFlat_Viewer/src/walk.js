@@ -9,7 +9,7 @@ export class Walkthrough {
   constructor({ app, persp, renderer, controls, CONFIG, onInfo }) {
     Object.assign(this, { app, cam: persp, renderer, controls, C: CONFIG, onInfo });
     this.active = false; this.keys = new Set(); this.yaw = 0; this.pitch = 0; this.feet = 0;
-    this.eyeOffset = 0; this.nudge = 0;
+    this.eyeOffset = 0; this.nudge = 0; this.joy = { x: 0, y: 0 };   // joy: on-screen joystick (touch), -1..1
     this.ray = new THREE.Raycaster(); this.onChange = null; this.drag = null; this.dragMoved = 0;
     const el = renderer.domElement;
     document.addEventListener('keydown', (e) => {
@@ -93,13 +93,14 @@ export class Walkthrough {
     if (k.has('KeyS') || k.has('ArrowDown')) f -= 1;
     if (k.has('KeyD') || k.has('ArrowRight')) s += 1;
     if (k.has('KeyA') || k.has('ArrowLeft')) s -= 1;
+    f -= this.joy.y; s += this.joy.x;
     if (k.has('KeyR') || k.has('PageUp')) this.eyeOffset = Math.min(1.15, this.eyeOffset + dt * 0.9);
     if (k.has('KeyV') || k.has('PageDown')) this.eyeOffset = Math.max(-1.0, this.eyeOffset - dt * 0.9);
     const speed = C.walkSpeed * ((k.has('ShiftLeft') || k.has('ShiftRight')) ? C.runMultiplier : 1);
     const fwd = new THREE.Vector3(-Math.sin(this.yaw), 0, -Math.cos(this.yaw));
     const right = new THREE.Vector3(Math.cos(this.yaw), 0, -Math.sin(this.yaw));
     const mv = fwd.clone().multiplyScalar(f).add(right.multiplyScalar(s));
-    if (mv.lengthSq() > 0) mv.normalize().multiplyScalar(speed * dt);
+    if (mv.lengthSq() > 0) mv.normalize().multiplyScalar(speed * dt * Math.min(1, Math.hypot(f, s)));
     if (this.nudge) {   // mouse wheel: step forward / back smoothly
       const step = Math.sign(this.nudge) * Math.min(Math.abs(this.nudge), dt * 3.0);
       mv.addScaledVector(fwd, step); this.nudge -= step; if (Math.abs(this.nudge) < 1e-3) this.nudge = 0;

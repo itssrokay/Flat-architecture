@@ -31,11 +31,21 @@ export function setupExtras(ctx) {
 
   // =================================================================== 1. panels
   const body = document.body;
-  function setLeft(hide) { body.classList.toggle('no-left', hide); $('leftTab').textContent = hide ? '›' : '‹'; $('leftTab').title = hide ? 'Show left panel ( [ )' : 'Hide left panel ( [ )'; store.set('noLeft', hide ? 1 : 0); ctx.resize(); }
-  function setRight(hide) { body.classList.toggle('no-right', hide); $('rightTab').textContent = hide ? '‹' : '›'; $('rightTab').title = hide ? 'Show right panel ( ] )' : 'Hide right panel ( ] )'; store.set('noRight', hide ? 1 : 0); ctx.resize(); }
-  $('leftTab').onclick = () => setLeft(!body.classList.contains('no-left'));
-  $('rightTab').onclick = () => setRight(!body.classList.contains('no-right'));
-  setLeft(store.get('noLeft') === '1'); setRight(store.get('noRight') === '1');
+  // narrow screens (phones): the side panels slide over the view instead of taking space
+  const narrow = () => window.innerWidth <= 900;
+  const leftHidden = () => narrow() ? !body.classList.contains('m-left') : body.classList.contains('no-left');
+  const rightHidden = () => narrow() ? !body.classList.contains('m-right') : body.classList.contains('no-right');
+  function setLeft(hide) {
+    if (narrow()) { body.classList.toggle('m-left', !hide); if (!hide) body.classList.remove('m-right'); $('leftTab').textContent = hide ? '›' : '‹'; if (!hide) $('rightTab').textContent = '‹'; return; }
+    body.classList.toggle('no-left', hide); $('leftTab').textContent = hide ? '›' : '‹'; $('leftTab').title = hide ? 'Show left panel ( [ )' : 'Hide left panel ( [ )'; store.set('noLeft', hide ? 1 : 0); ctx.resize(); }
+  function setRight(hide) {
+    if (narrow()) { body.classList.toggle('m-right', !hide); if (!hide) body.classList.remove('m-left'); $('rightTab').textContent = hide ? '‹' : '›'; if (!hide) $('leftTab').textContent = '›'; return; }
+    body.classList.toggle('no-right', hide); $('rightTab').textContent = hide ? '‹' : '›'; $('rightTab').title = hide ? 'Show right panel ( ] )' : 'Hide right panel ( ] )'; store.set('noRight', hide ? 1 : 0); ctx.resize(); }
+  $('leftTab').onclick = () => setLeft(!leftHidden());
+  $('rightTab').onclick = () => setRight(!rightHidden());
+  if (narrow()) { setLeft(true); setRight(true); $('dock').classList.add('collapsed'); $('dockToggle').textContent = 'Controls ▴'; }
+  else { setLeft(store.get('noLeft') === '1'); setRight(store.get('noRight') === '1'); }
+  el.addEventListener('pointerdown', () => { if (narrow()) { setLeft(true); setRight(true); } });   // tap the view to close a slide-over panel
   document.querySelectorAll('#dock section').forEach((sec, i) => {
     const h = sec.querySelector('h4'); if (!h) return;
     const key = 'sec.' + (sec.id || h.textContent.trim());
@@ -72,7 +82,7 @@ export function setupExtras(ctx) {
       return;
     }
     if (cam().isOrthographicCamera) return;    // orthographic views keep OrbitControls' zoom-to-cursor
-    e.preventDefault();
+    e.preventDefault(); e.stopImmediatePropagation();   // (OrbitControls still handles touch pinch)
     let d = e.deltaY * (e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? 400 : 1);
     const k = e.ctrlKey ? 0.012 : 0.0018;      // trackpad pinch sends small ctrl+wheel deltas
     const log = THREE.MathUtils.clamp(d * k, -0.7, 0.7);
@@ -120,8 +130,8 @@ export function setupExtras(ctx) {
   $('ceilBtn').onclick = () => lookAtCeiling();
   document.addEventListener('keydown', (e) => {
     if (/INPUT|SELECT|TEXTAREA/.test(document.activeElement?.tagName)) return;
-    if (e.code === 'BracketLeft') setLeft(!body.classList.contains('no-left'));
-    if (e.code === 'BracketRight') setRight(!body.classList.contains('no-right'));
+    if (e.code === 'BracketLeft') setLeft(!leftHidden());
+    if (e.code === 'BracketRight') setRight(!rightHidden());
     if (e.code === 'KeyI') setHover(!hoverOn);
     if (e.code === 'KeyM') setRoomDims(!roomDimsOn);
     if (!walk.active) return;
@@ -130,6 +140,9 @@ export function setupExtras(ctx) {
     if (e.code === 'Equal' || e.code === 'NumpadAdd') setFov(walkFov - 8);
   });
   function onWalkChange(on) {
+    body.classList.toggle('walking', on);
+    $('touchPad').classList.toggle('hidden', !(on && ctx.TOUCH));
+    if (!on) { walk.joy.x = walk.joy.y = 0; }
     if (on) { persp.fov = walkFov; } else { persp.fov = 60; ceilingMode = null; $('ceilBtn').classList.remove('on'); }
     persp.updateProjectionMatrix();
   }
@@ -308,18 +321,97 @@ export function setupExtras(ctx) {
     if (a === 'hover') setHover(!hoverOn); else if (a === 'roomdims') setRoomDims(!roomDimsOn);
   });
 
+  // =================================================================== walk HUD: minimise
+  const hud = $('walkHud');
+  function setHudMin(min) { hud.classList.toggle('min', min); store.set('hudMin', min ? 1 : 0); }
+  $('hudMin').onclick = () => setHudMin(true);
+  hud.querySelector('.hudMini').onclick = () => setHudMin(false);
+  setHudMin(store.get('hudMin') ? store.get('hudMin') === '1' : !!ctx.TOUCH);   // phones start minimised
+
+  // =================================================================== touch: joystick, buttons, pinch lens, double-tap, tap info
+  const joy = $('joy'), knob = $('joyKnob'); let joyId = null;
+  function joyMove(e) {
+    const r = joy.getBoundingClientRect(), R = r.width / 2;
+    let dx = e.clientX - (r.left + R), dy = e.clientY - (r.top + R); const d = Math.hypot(dx, dy), max = R * 0.8;
+    if (d > max) { dx *= max / d; dy *= max / d; }
+    knob.style.transform = `translate(${dx}px, ${dy}px)`;
+    walk.joy.x = dx / max; walk.joy.y = dy / max;
+  }
+  joy.addEventListener('pointerdown', (e) => { joyId = e.pointerId; joy.setPointerCapture(e.pointerId); joyMove(e); e.preventDefault(); e.stopPropagation(); });
+  joy.addEventListener('pointermove', (e) => { if (e.pointerId === joyId) joyMove(e); });
+  const joyEnd = (e) => { if (e.pointerId !== joyId) return; joyId = null; knob.style.transform = ''; walk.joy.x = walk.joy.y = 0; };
+  joy.addEventListener('pointerup', joyEnd); joy.addEventListener('pointercancel', joyEnd);
+  $('touchBtns').querySelectorAll('button').forEach(b => {
+    const k = { up: 'KeyR', down: 'KeyV' }[b.dataset.t];
+    b.addEventListener('pointerdown', (e) => { e.preventDefault(); e.stopPropagation();
+      if (k) { walk.keys.add(k); b.setPointerCapture(e.pointerId); }
+      else if (b.dataset.t === 'use') ctx.imm.useCenter();
+      else if (b.dataset.t === 'ceil') lookAtCeiling();
+    });
+    const up = () => { if (k) walk.keys.delete(k); };
+    b.addEventListener('pointerup', up); b.addEventListener('pointercancel', up); b.addEventListener('lostpointercapture', up);
+  });
+  // two fingers inside = pinch the lens; double-tap outside = the same as double-click
+  const touches = new Map(); let pinch = null, tap = null, lastTap = null;
+  el.addEventListener('pointerdown', (e) => {
+    if (e.pointerType !== 'touch') return;
+    touches.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    tap = touches.size === 1 ? { x: e.clientX, y: e.clientY, t: performance.now() } : null;
+    if (touches.size === 2 && walk.active) {
+      const [a, b] = [...touches.values()]; pinch = { d: Math.hypot(a.x - b.x, a.y - b.y), fov: walkFov }; walk.drag = null;
+    }
+  });
+  el.addEventListener('pointermove', (e) => {
+    if (!touches.has(e.pointerId)) return;
+    touches.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (pinch && touches.size === 2 && walk.active) { const [a, b] = [...touches.values()]; const d = Math.hypot(a.x - b.x, a.y - b.y); if (d > 10) setFov(pinch.fov * pinch.d / d); walk.drag = null; }
+  });
+  const touchEnd = (e) => {
+    if (!touches.has(e.pointerId)) return;
+    touches.delete(e.pointerId); if (touches.size < 2) pinch = null;
+    if (tap && e.type === 'pointerup' && !walk.active) {
+      const now = performance.now(), moved = Math.hypot(e.clientX - tap.x, e.clientY - tap.y);
+      if (moved < 12 && now - tap.t < 350) {
+        if (lastTap && now - lastTap.t < 380 && Math.hypot(e.clientX - lastTap.x, e.clientY - lastTap.y) < 40) {
+          lastTap = null;
+          el.dispatchEvent(new MouseEvent('dblclick', { clientX: e.clientX, clientY: e.clientY, bubbles: true }));
+        } else lastTap = { x: e.clientX, y: e.clientY, t: now };
+      }
+    }
+    tap = null;
+  };
+  el.addEventListener('pointerup', touchEnd); el.addEventListener('pointercancel', touchEnd);
+  // tap info: on touch screens there's no hover, so a tap shows a small card about what you tapped
+  function onSelect(o) {
+    const card = $('tapInfo');
+    if (!ctx.TOUCH || !o) { card.classList.add('hidden'); return; }
+    const u = o.userData || {}; const ex1 = ctx.explain ? ctx.explain(o)[0] : null;
+    const inter = ctx.imm.isInteractive(o);
+    card.innerHTML = `<div class="ti-head"><b>${esc(u.label || pretty(o.name))}</b><button class="small" data-a="x">✕</button></div>
+      <div class="ti-row">${esc(catLabel(u.category))} · ${sizeText(o)}</div>` +
+      (ex1 ? `<div class="ti-row"><b>${esc(ex1.term)}:</b> ${esc(ex1.plain)}</div>` : '') +
+      (u.spec ? `<div class="ti-row ti-spec">${esc(u.spec)}</div>` : '') +
+      `<div class="ti-btns">${inter ? '<button class="small" data-a="toggle">Open / close</button>' : ''}<button class="small" data-a="more">All details</button></div>`;
+    card.classList.remove('hidden');
+    card.querySelectorAll('button').forEach(b => b.onclick = () => {
+      const a = b.dataset.a;
+      if (a === 'x') card.classList.add('hidden');
+      else if (a === 'toggle') ctx.imm.toggleFor(o);
+      else if (a === 'more') { card.classList.add('hidden'); setRight(false); }
+    });
+  }
+
   // =================================================================== toast
   let toastT = 0;
   function toast(msg) { const t = $('toast'); t.textContent = msg; t.classList.remove('hidden'); clearTimeout(toastT); toastT = setTimeout(() => t.classList.add('hidden'), 3200); }
 
   function update(dt) {
-    controls.enableZoom = !!cam().isOrthographicCamera;
     if (!walk.active) stepZoom(dt); else zoom = null;
     updateHover();
     if (roomDimsOn) { const now = performance.now(); if (now - rdT > 400) { rdT = now; refreshRoomDims(false); } }
   }
   function onModel() { hoverObj = null; hoverBox.visible = false; if (roomDimsOn) { roomDimsFor = null; refreshRoomDims(true); } }
-  return { update, onModel, onWalkChange, setLeft, setRight, setHover, setRoomDims, lookAtCeiling, setFov, toast, floorOutline,
+  return { update, onModel, onWalkChange, onSelect, setHudMin, setLeft, setRight, setHover, setRoomDims, lookAtCeiling, setFov, toast, floorOutline,
     state: () => ({ hoverOn, roomDimsOn, roomDimsFor, walkFov, ceiling: !!ceilingMode, zooming: !!zoom }),
     roomDimLabels: () => rdGroup.children.filter(o => o.isCSS2DObject).map(o => o.element.innerText || o.element.textContent) };
 }

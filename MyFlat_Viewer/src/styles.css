@@ -227,3 +227,56 @@ body.immersive #learn { bottom: 0; }
 #learn .stackh .layer.base { color: #fff; }
 #learn .stackh .yousee { margin-left: auto; font-size: 10px; background: #7a4d0f; color: #fff; border-radius: 999px; padding: 0 6px; white-space: nowrap; font-weight: 600; }
 #learn .stackh .yousee.dark { background: #333; }
+
+/* ---------------- phones & tablets ---------------- */
+html, body { height: 100%; } body { height: 100dvh; }
+body:not(.touch) .hint-touch, body.touch .hint-desk { display: none; }
+body.touch #hoverBtn { display: none; }
+#walkHud { max-width: min(720px, calc(100% - 24px)); padding-right: 30px; }
+#walkHud .hudMin { position: absolute; top: 4px; right: 6px; margin: 0; padding: 0 7px; line-height: 20px; background: rgba(255,255,255,.15); color: #fff; border: 1px solid rgba(255,255,255,.3); }
+#walkHud.min { padding: 5px 12px; cursor: pointer; }
+#walkHud.min .hudFull, #walkHud.min .hudMin { display: none; }
+#walkHud:not(.min) .hudMini { display: none; }
+#walkHud .hudMini { font-size: 12px; white-space: nowrap; }
+#walkHud .hudMini .more { opacity: .7; margin-left: 4px; }
+#touchPad { position: absolute; left: 0; right: 0; bottom: 30px; height: 150px; pointer-events: none; z-index: 6; }
+#joy { pointer-events: auto; position: absolute; left: 18px; bottom: 8px; width: 128px; height: 128px; border-radius: 50%;
+  background: rgba(20,22,26,.30); border: 2px solid rgba(255,255,255,.7); touch-action: none; }
+#joyKnob { position: absolute; left: 50%; top: 50%; width: 54px; height: 54px; margin: -27px 0 0 -27px; border-radius: 50%;
+  background: rgba(255,255,255,.9); box-shadow: 0 2px 8px rgba(0,0,0,.3); pointer-events: none; }
+#touchBtns { pointer-events: auto; position: absolute; right: 14px; bottom: 10px; display: grid; grid-template-columns: 58px 58px; gap: 10px; }
+#touchBtns button { width: 58px; height: 58px; border-radius: 50%; font-size: 22px; padding: 0; background: rgba(20,22,26,.55); color: #fff;
+  border: 2px solid rgba(255,255,255,.6); touch-action: none; }
+#tapInfo { position: absolute; left: 8px; right: 8px; bottom: 32px; z-index: 8; background: #fff; border-radius: 14px; padding: 9px 12px;
+  box-shadow: 0 6px 24px rgba(0,0,0,.22); max-height: 42%; overflow-y: auto; font-size: 12.5px; line-height: 1.4; max-width: 520px; margin: 0 auto; }
+body.walking #tapInfo { top: 52px; bottom: auto; }
+#tapInfo .ti-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-size: 14px; }
+#tapInfo .ti-row { margin-top: 4px; } #tapInfo .ti-spec { color: var(--muted); font-size: 11.5px; }
+#tapInfo .ti-btns { display: flex; gap: 6px; margin-top: 8px; } #tapInfo .ti-btns button { padding: 7px 12px; }
+
+@media (max-width: 900px) {
+  body { grid-template-rows: 46px 1fr; }
+  #topbar { padding: 0 6px; gap: 4px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  #topbar::-webkit-scrollbar { display: none; }
+  #topbar .desk-only, #topbar .sep, #topbar .spacer { display: none !important; }
+  #topbar button, #topbar select { padding: 7px 9px; font-size: 13px; flex: none; }
+  #modelSelect { max-width: 150px; }
+  body.m-left #left, body.m-right #right { display: block !important; position: fixed; top: 46px; bottom: 0; width: min(86vw, 340px);
+    z-index: 30; box-shadow: 0 0 30px rgba(0,0,0,.25); overflow-y: auto; -webkit-overflow-scrolling: touch; }
+  body.m-left #left { left: 0; } body.m-right #right { right: 0; }
+  .edgeTab { padding: 22px 7px; font-size: 16px; }
+  #dock { right: 10px; bottom: 30px; max-height: 55%; overflow-y: auto; }
+  #dock section { max-width: 100%; min-width: 0; flex: 1 1 100%; }
+  #dockToggle { bottom: 30px; }
+  body.walking #dockToggle { display: none; }
+  #learn { width: 100%; }
+  #walkHud { font-size: 11.5px; top: 6px; }
+  #walkHud .lens input { width: 80px; }
+  #immBar { flex-wrap: wrap; justify-content: center; max-width: calc(100% - 16px); }
+  #statusbar { font-size: 10px; }
+  #legend { max-width: 70%; }
+}
+@media (max-width: 900px) and (orientation: landscape) and (max-height: 500px) {
+  #touchPad { bottom: 24px; } #joy { width: 104px; height: 104px; } #touchBtns { grid-template-columns: 50px 50px 50px 50px; }
+  #touchBtns button { width: 50px; height: 50px; }
+}

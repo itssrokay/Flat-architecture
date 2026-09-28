@@ -15,5 +15,6 @@ while lsof -iTCP:"$PORT" -sTCP:LISTEN >/dev/null 2>&1; do PORT=$((PORT+1)); done
 URL="http://localhost:$PORT/"
 echo "MyFlat Viewer running at $URL"
 echo "Keep this window open while you use the viewer. Press Ctrl+C to stop."
+echo "Phones / tablets on the same Wi-Fi can use the address printed below."
 (sleep 1; open "$URL") &
-exec "$PY" scripts/serve.py "$PORT"
+exec "$PY" scripts/serve.py "$PORT" --lan

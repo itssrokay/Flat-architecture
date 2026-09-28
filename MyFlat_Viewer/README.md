@@ -38,6 +38,23 @@ The page must be served over http://; opening `index.html` directly as a file wi
 
 With **Hover info** on, pointing at anything also gives a one-line plain explanation. The inspector shows the same under *In simple words*. The content is in `models/learn_guide.json`, so it can be edited without touching code.
 
+## On a phone or tablet
+
+Start the viewer with `start.command` (or `python3 scripts/serve.py 8080 --lan`). It prints an address like `http://192.168.1.23:8080/`: open that on a phone on the same Wi-Fi. If macOS asks whether Python may accept incoming connections, click Allow. The viewer switches to touch controls on its own:
+
+| Action | How |
+|---|---|
+| Walk | the **joystick** at the bottom left (push further to walk faster) |
+| Look around | drag anywhere with one finger |
+| Wider lens (see the whole ceiling) | **pinch** with two fingers, or ⤒ for *Look at ceiling* |
+| Raise / lower your eyes | ⬆ / ⬇ (hold) |
+| Open / close doors, windows, wardrobes | tap them, or ✋ for what the circle points at |
+| What is this? | tap anything: a card shows its name, size and a plain explanation |
+| Overview | one finger rotates, two fingers pinch-zoom and pan; **double-tap a floor** to go in there |
+| Panels (designs, rooms, notes) | the **›** and **‹** tabs at the edges slide them over the view; tap the view to close them |
+
+The "Inside" box starts minimised on phones. Tap it to see its buttons, or tap **–** on a computer to minimise it. Shadows are off on phones to keep them smooth; add `?hq=1` to the address to turn them on.
+
 ## Controls
 
 There are two ways to look at the flat.
@@ -190,14 +207,14 @@ for opt in ["DEFAULT", "OPTION_A", "OPTION_B", "OPTION_C", "OPTION_D"]:
          {"DESIGN": opt, "OUT_NAME": "MyFlat_V1_1_Room1_" + opt})
 ```
 
-Tests: `python3 scripts/test_viewer.py` (architecture), `python3 scripts/test_interiors.py` (designs), `python3 scripts/test_navigation.py` (navigation) `python3 scripts/test_comfort.py` (panels, zoom, ceiling view, hover info, collisions, room size) and `python3 scripts/test_learn.py` (beginner's guide). All need Playwright.
+Tests: `python3 scripts/test_viewer.py` (architecture), `python3 scripts/test_interiors.py` (designs), `python3 scripts/test_navigation.py` (navigation) `python3 scripts/test_comfort.py` (panels, zoom, ceiling view, hover info, collisions, room size) `python3 scripts/test_learn.py` (beginner's guide) and `python3 scripts/test_mobile.py` (phone + window closing). All need Playwright.
 
 ## Immersive features
 
 | Feature | How |
 |---|---|
 | Full-screen immersive mode | **⛶ Immersive** (or **F**): hides all panels and shows a small floating toolbar (Overview, Walk, Room 1, Balcony, Open all, Close all, Lights, Night, Dims, Exit). Esc also exits. |
-| Open / close things | **Double-click** a wardrobe door, loft door, window sash, sliding balcony panel or sheer curtain. In walk mode, click it, or look at it (crosshair) and press **E**. **Open all / Close all** are in the bottom panel. The inspector has an Open / close button for the selected part. |
+| Open / close things | **Double-click** a wardrobe door, loft door, window sash, sliding balcony panel or sheer curtain (a sash that has slid behind a fixed pane is closed by clicking anywhere on that window). In walk mode, click it, or look at it (crosshair) and press **E**. **Open all / Close all** are in the bottom panel. The inspector has an Open / close button for the selected part. |
 | Walk onto the balcony | Open the balcony door first (double-click it, or E in Walk mode). A closed door is solid glass, just like the real one. |
 | Real-world clearances | Opening parts collide with furniture, lamps, plants and decor. A sash or door that meets something stops there and a red note says what it hit, so the viewer also checks the design. (Option B's bedside pendant was in the window's swing, so it was replaced by a wall-mounted reading light. The wardrobe-front downlight in DEFAULT and Option C was moved 1'7" out, clear of the loft doors.) |
 | Lights | **Lights ON/OFF** (**L**) switches every light fitting. **Day / Night** (**N**) darkens the sky; at night the downlights, lamps, cove strips and pendants actually light the room. |

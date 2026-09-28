@@ -5,14 +5,14 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { CONFIG } from './config.js?v=9';
-import { Walkthrough } from './walk.js?v=9';
-import { setupImmersive } from './immersive.js?v=9';
-import { setupExtras } from './extras.js?v=9';
-import { setupLearn } from './learn.js?v=9';
+import { CONFIG } from './config.js?v=10';
+import { Walkthrough } from './walk.js?v=10';
+import { setupImmersive } from './immersive.js?v=10';
+import { setupExtras } from './extras.js?v=10';
+import { setupLearn } from './learn.js?v=10';
 // bump together with the ?v= in index.html and the imports above whenever the viewer or models change,
 // so browsers never mix a new page with old cached scripts or models
-const BUILD = '9';
+const BUILD = '10';
 
 const $ = (id) => document.getElementById(id);
 const FT = 0.3048;
@@ -48,9 +48,13 @@ window.app = app; // handy for debugging in the browser console
 
 // ------------------------------------------------------------------ renderer / scene
 const host = $('canvasHost');
-const LOWQ = new URLSearchParams(location.search).has('lowq');   // ?lowq=1 -> no shadows (slow/old GPUs)
-const renderer = new THREE.WebGLRenderer({ antialias: !LOWQ, preserveDrawingBuffer: true });
-renderer.setPixelRatio(LOWQ ? 1 : Math.min(window.devicePixelRatio, 2));
+const QS = new URLSearchParams(location.search);
+// phones / tablets: touch controls, and no shadows unless ?hq=1 (keeps them smooth and cool)
+const TOUCH = QS.has('touch') || matchMedia('(pointer: coarse)').matches;
+if (TOUCH) document.body.classList.add('touch');
+const LOWQ = QS.has('lowq') || (TOUCH && !QS.has('hq'));   // ?lowq=1 -> no shadows (slow/old GPUs)
+const renderer = new THREE.WebGLRenderer({ antialias: !QS.has('lowq'), preserveDrawingBuffer: true });
+renderer.setPixelRatio(QS.has('lowq') ? 1 : Math.min(window.devicePixelRatio, TOUCH ? 1.5 : 2));
 renderer.shadowMap.enabled = !LOWQ;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.localClippingEnabled = true;
@@ -109,7 +113,7 @@ const debugGroup = new THREE.Group(); debugGroup.visible = false; scene.add(debu
 const selBox = new THREE.Box3Helper(new THREE.Box3(), 0xff2d55); selBox.visible = false; scene.add(selBox);
 const edgeMat = new THREE.LineBasicMaterial({ color: '#2b3036', transparent: true, opacity: 0.55, clippingPlanes: [app.sectionPlane] });
 
-const walk = new Walkthrough({ app, persp, renderer, controls, CONFIG, onInfo: (t) => { $('walkInfo').textContent = t; } });
+const walk = new Walkthrough({ app, persp, renderer, controls, CONFIG, onInfo: (t) => { $('walkInfo').textContent = t; $('walkInfoMini').textContent = t.replace(/ · eye.*$/, ''); } });
 
 function resize() {
   const w = host.clientWidth, h = host.clientHeight;
@@ -591,9 +595,9 @@ function pick(ev) {
 function namedOf(o) { for (let p = o; p; p = p.parent) if (p.userData && p.userData.category) return p; return o; }
 function select(o) {
   app.selected = o ? namedOf(o) : null;
-  if (!app.selected) { selBox.visible = false; renderInspector(null); updateObjList(); imm.onSelect(null); return; }
+  if (!app.selected) { selBox.visible = false; renderInspector(null); updateObjList(); imm.onSelect(null); ex.onSelect(null); return; }
   selBox.box.setFromObject(app.selected); selBox.visible = !(app.compare && app.compare.root.getObjectById(app.selected.id));
-  renderInspector(app.selected); updateObjList(); imm.onSelect(app.selected);
+  renderInspector(app.selected); updateObjList(); imm.onSelect(app.selected); ex.onSelect(app.selected);
 }
 function focusObject(o) {
   const b = new THREE.Box3().setFromObject(o); const c = b.getCenter(new THREE.Vector3()); const s = b.getSize(new THREE.Vector3()).length();
@@ -803,6 +807,7 @@ const imm = setupImmersive({ app, scene, renderer, controls, walk, hemi, sun, $,
   startWalk: () => startWalk(), overview, goToPoint, goRoom: (n, i) => { const r = app.rooms.find(x => x.name === n); if (r && r.vps[i]) goRoomVp(r, r.vps[i]); } });
 let learnApi = null;
 const ex = setupExtras({ app, scene, renderer, controls, walk, persp, $, fmtFt, CONFIG, getCamera: () => camera, explain: (o) => learnApi ? learnApi.explain(o) : [],
+  TOUCH, imm, overview, goToPoint,
   resize: () => { _aspect = 0; resize(); }, isInteractive: (o) => imm.isInteractive(o) });
 new ResizeObserver(() => { _aspect = 0; resize(); }).observe(host);
 setupLearn({ app, $, select, focusObject, scene, build: BUILD, modelEntry }).then(a => { learnApi = a; window.viewer.learn = a; });

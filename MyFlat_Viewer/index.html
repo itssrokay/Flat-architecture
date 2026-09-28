@@ -4,33 +4,33 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MyFlat Viewer</title>
-<link rel="stylesheet" href="./src/styles.css?v=9">
+<link rel="stylesheet" href="./src/styles.css?v=10">
 <script type="importmap">
 { "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/addons/" } }
 </script>
 </head>
 <body>
 <header id="topbar">
-  <div class="brand">MyFlat</div>
+  <div class="brand desk-only">MyFlat</div>
   <button id="learnBtn" class="toggle learn" title="Beginner's guide: what everything is made of, how homes are built, dictionary (G)">📘 Learn</button>
   <select id="modelSelect" title="Model"></select>
   <div class="sep"></div>
   <div class="group" id="viewButtons">
     <button data-view="top" title="Plan view (hides the roof)">Top</button>
-    <button data-view="north">N</button>
-    <button data-view="south">S</button>
-    <button data-view="east">E</button>
-    <button data-view="west">W</button>
+    <button class="desk-only" data-view="north">N</button>
+    <button class="desk-only" data-view="south">S</button>
+    <button class="desk-only" data-view="east">E</button>
+    <button class="desk-only" data-view="west">W</button>
     <button data-view="iso">Iso</button>
   </div>
-  <button id="projBtn" class="toggle" title="Perspective / orthographic">Persp</button>
+  <button id="projBtn" class="desk-only toggle" title="Perspective / orthographic">Persp</button>
   <div class="sep"></div>
   <button id="roofBtn" class="toggle on">Roof ON</button>
   <button id="labelsBtn" class="toggle on">Labels</button>
-  <button id="edgesBtn" class="toggle on" title="Outline edges">Edges</button>
-  <button id="statusBtn" class="toggle">Status</button>
-  <button id="planBtn" class="toggle">Plan compare</button>
-  <button id="debugBtn" class="toggle">Debug</button>
+  <button id="edgesBtn" class="desk-only toggle on" title="Outline edges">Edges</button>
+  <button id="statusBtn" class="desk-only toggle">Status</button>
+  <button id="planBtn" class="desk-only toggle">Plan compare</button>
+  <button id="debugBtn" class="desk-only toggle">Debug</button>
   <button id="overviewBtn" title="Step outside and see the whole flat (orbit)">Overview</button>
   <button id="walkBtn" class="toggle accent" title="Stand inside at eye level">Walk</button>
   <div class="sep"></div>
@@ -38,7 +38,7 @@
   <button id="nightBtn" class="toggle" title="Day / night (N)">Day</button>
   <button id="roomDimsBtn" class="toggle" title="Wall-by-wall size of the room you are in (M)">Room size</button>
   <button id="dimsBtn" class="toggle" title="Show dimensions of parts; select an object for W/D/H lines">Dimensions</button>
-  <button id="hoverBtn" class="toggle" title="Point at anything to see what it is (I)">Hover info</button>
+  <button id="hoverBtn" class="desk-only toggle" title="Point at anything to see what it is (I)">Hover info</button>
   <button id="immBtn" class="accent" title="Full-screen immersive mode (F)">⛶ Immersive</button>
   <div class="spacer"></div>
   <button id="resetBtn" title="Reset camera and visibility">Reset</button>
@@ -101,14 +101,27 @@
 
   <div id="legend" class="hidden"></div>
   <div id="walkHud" class="hidden">
-    <b>Inside</b> · <b>drag</b> to look around (also up at the ceiling) · <b>WASD</b> / arrows or <b>mouse wheel</b> to move · Shift to run · <b>R / V</b> raise / lower your eyes · <b>click</b> a door or wardrobe (or <b>E</b>) to open it · <b>C</b> ceiling · <b>pinch / Ctrl+wheel</b> or − / + lens · L lights · N night
-    <div id="walkInfo"></div>
-    <div class="hudRow">
-      <button id="ceilBtn" class="small toggle" title="Stand in the middle, look straight up with a wide lens (C)">Look at ceiling</button>
-      <label class="lens">Lens <input type="range" id="fovRange" min="35" max="110" step="1" value="60"> <span id="fovVal">60°</span></label>
-      <button id="exitWalkBtn" class="small">Overview (step outside)</button>
+    <button id="hudMin" class="hudMin" title="Minimise this box">–</button>
+    <div class="hudFull">
+      <div class="hint-desk"><b>Inside</b> · <b>drag</b> to look around (also up at the ceiling) · <b>WASD</b> / arrows or <b>mouse wheel</b> to move · Shift to run · <b>R / V</b> raise / lower your eyes · <b>click</b> a door, window or wardrobe (or <b>E</b>) to open / close it · <b>C</b> ceiling · <b>pinch / Ctrl+wheel</b> or − / + lens · L lights · N night</div>
+      <div class="hint-touch"><b>Inside</b> · drag to look · <b>joystick</b> (bottom-left) to walk · <b>tap</b> a door, window or wardrobe to open / close · <b>pinch</b> for a wider lens · ⬆ ⬇ raise / lower your eyes</div>
+      <div id="walkInfo"></div>
+      <div class="hudRow">
+        <button id="ceilBtn" class="small toggle" title="Stand in the middle, look straight up with a wide lens (C)">Look at ceiling</button>
+        <label class="lens">Lens <input type="range" id="fovRange" min="35" max="110" step="1" value="60"> <span id="fovVal">60°</span></label>
+        <button id="exitWalkBtn" class="small">Overview (step outside)</button>
+      </div>
+    </div>
+    <div class="hudMini" title="Show the controls"><b>Inside</b> <span id="walkInfoMini"></span> <span class="more">▾</span></div>
+  </div>
+  <div id="touchPad" class="hidden">
+    <div id="joy"><div id="joyKnob"></div></div>
+    <div id="touchBtns">
+      <button data-t="up" title="Raise eyes">⬆</button><button data-t="down" title="Lower eyes">⬇</button>
+      <button data-t="use" title="Open / close what the circle points at">✋</button><button data-t="ceil" title="Look at ceiling">⤒</button>
     </div>
   </div>
+  <div id="tapInfo" class="hidden"></div>
   <div id="crosshair" class="hidden"></div>
   <div id="interactHint" class="hidden"></div>
   <div id="immBar">
@@ -132,6 +145,6 @@
   </div>
 </aside>
 
-<script type="module" src="./src/main.js?v=9"></script>
+<script type="module" src="./src/main.js?v=10"></script>
 </body>
 </html>

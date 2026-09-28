@@ -71,6 +71,7 @@ export function setupImmersive(ctx) {
     for (const g of groups.values()) {
       g.meshes = []; for (const it of g.objs) it.o.traverse(o => { if (o.isMesh) g.meshes.push(o); });
       const c = new THREE.Box3(); g.meshes.forEach(m => c.expandByObject(m)); g.center = c.getCenter(new THREE.Vector3());
+      g.home = c.clone().expandByScalar(0.12);      // where the part sits when closed (for clicking a frame / fixed pane)
       g.near = obstacles.filter(ob => ob.c.distanceTo(g.center) < 3.5);
       // anything already touching when closed is not a collision
       g.ignore = new Set(g.near.filter(ob => collideList(g, [ob])));
@@ -123,10 +124,26 @@ export function setupImmersive(ctx) {
     const hits = ray.intersectObjects(cands, false);
     for (const h of hits) {
       const g = groupOf(h.object); if (g) return { g, hit: h };
-      const cat = h.object.userData?.category || h.object.parent?.userData?.category;
-      if (!['soft_furnishing', 'lighting'].includes(cat)) return null;   // something solid is in front
+      const cat = catOfO(h.object);
+      if (['soft_furnishing', 'lighting'].includes(cat)) continue;
+      // a window / door frame, fixed pane or mesh: an opened sliding sash often hides behind these, so
+      // clicking anywhere on the window operates the part that belongs there (prefer one that is open)
+      if (['fenestration', 'windows'].includes(cat)) { const n = partAt(h.point); if (n) return { g: n, hit: h }; }
+      return null;                                               // something solid is in front
     }
     return null;
+  }
+  function partAt(p) {
+    let best = null, score = Infinity;
+    for (const g of groups.values()) {
+      if (!g.home || g.meta.interact === 'toggle') continue;
+      let box = g.home.containsPoint(p) ? g.home : null;
+      if (!box && g.t > 0) { const b = new THREE.Box3(); g.meshes.forEach(m => b.expandByObject(m)); b.expandByScalar(0.12); if (b.containsPoint(p)) box = b; }  // where it is now
+      if (!box) continue;
+      const s = box.getSize(new THREE.Vector3()); const v = s.x * s.y * s.z - (g.open ? 1e6 : 0);
+      if (v < score) { score = v; best = g; }
+    }
+    return best;
   }
   function ndcFromEvent(ev) {
     const r = renderer.domElement.getBoundingClientRect();
@@ -154,7 +171,7 @@ export function setupImmersive(ctx) {
   // walk mode: a click (not a drag) on a door / sash / wardrobe within reach opens or closes it
   renderer.domElement.addEventListener('pointerup', (ev) => {
     if (!walk.active || walk.dragMoved > 5 || (ev.pointerType === 'mouse' && ev.button !== 0)) return;
-    const h = interactiveHit(ndcFromEvent(ev), 3.5); if (h) toggle(h.g);
+    const h = interactiveHit(ndcFromEvent(ev), 6); if (h) toggle(h.g);
   });
   let hoverT = 0;
   renderer.domElement.addEventListener('pointermove', (ev) => {
@@ -180,7 +197,7 @@ export function setupImmersive(ctx) {
     const hint = $('interactHint'); $('crosshair').classList.toggle('hidden', !walk.active);
     if (!walk.active) { hint.classList.add('hidden'); return; }
     const h = interactiveHit(center, 3.2);
-    if (h) { hint.textContent = `E · ${h.g.open ? 'Close' : (h.g.meta.label || 'Open')}`; hint.classList.remove('hidden'); } else hint.classList.add('hidden');
+    if (h) { hint.textContent = `${document.body.classList.contains('touch') ? '✋' : 'E'} · ${h.g.open ? 'Close' : (h.g.meta.label || 'Open')}`; hint.classList.remove('hidden'); } else hint.classList.add('hidden');
   }
 
   // ---------------------------------------------------------------- lights & night
@@ -334,6 +351,6 @@ export function setupImmersive(ctx) {
       let k = 0; for (const x of c) { if (k >= 28) break; if (seen(x.l)) { x.l.visible = true; k++; } }
     }
   }
-  return { onModel, update, onSelect: showSelDims, toggle, toggleFor: (o) => toggle(groupOf(o)), isInteractive: (o) => !!groupOf(o),
+  return { onModel, update, onSelect: showSelDims, toggle, useCenter, partAt, toggleFor: (o) => toggle(groupOf(o)), isInteractive: (o) => !!groupOf(o),
            setAll, setLights, setNight, setDims, setImmersive, groups, state: st, lights, floorHit, interactiveHit, collides, obstacles: () => obstacles };
 }
