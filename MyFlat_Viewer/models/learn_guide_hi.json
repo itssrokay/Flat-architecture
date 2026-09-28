@@ -780,6 +780,42 @@
    "groupLabel": "रोशनी",
    "img": "https://www.google.com/search?tbm=isch&q=split+AC+indoor+unit+bedroom+wall+pipe+sleeve",
    "wiki": "https://en.wikipedia.org/w/index.php?search=Air+conditioning"
+  },
+  {
+   "term": "पेगबोर्ड",
+   "plain": "छोटे छेदों वाला बोर्ड; हुक और छोटी शेल्फ़ कहीं भी लग जाती हैं, दोबारा ड्रिल किए बिना बैग, हेडफ़ोन और सामान टाँग सकते हैं।",
+   "match": "PEGBOARD",
+   "aka": [
+    "pegboard"
+   ],
+   "group": "Carpentry",
+   "groupLabel": "बढ़ईगिरी",
+   "img": "https://www.google.com/search?tbm=isch&q=pegboard+wall+organiser+home",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Pegboard"
+  },
+  {
+   "term": "जिप्सम प्लास्टर (पनिंग)",
+   "plain": "रेत-सीमेंट प्लास्टर की जगह सीधे कंक्रीट या ईंट पर लगने वाला पतला, चिकना, सफ़ेद प्लास्टर (6–12 मिमी)। घंटों में सूखता है, कम दरार आती है, और पुट्टी-पेंट के लिए तैयार। सादी आरसीसी छत पर लगता है।",
+   "match": "CEILING_PAINT",
+   "aka": [
+    "gypsum plaster (punning)"
+   ],
+   "group": "Ceiling",
+   "groupLabel": "छत",
+   "img": "https://www.google.com/search?tbm=isch&q=gypsum+plaster+ceiling+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Gypsum+plaster"
+  },
+  {
+   "term": "आईना कैबिनेट",
+   "plain": "उथली दीवार कैबिनेट जिसका दरवाज़ा आईना है: एक ही जगह में सामान और पूरी लंबाई का आईना।",
+   "match": "MIRROR_CABINET",
+   "aka": [
+    "mirror cabinet"
+   ],
+   "group": "Carpentry",
+   "groupLabel": "बढ़ईगिरी",
+   "img": "https://www.google.com/search?tbm=isch&q=full+length+mirror+cabinet+jewellery+storage",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Medicine+cabinet"
   }
  ],
  "designs": {
@@ -1472,39 +1508,57 @@
    },
    {
     "title": "छत",
-    "see": "पुरानी सपाट छत, सफ़ेद पेंट। एक पंखा और 4 गोल चपटी लाइटें, बस।",
+    "see": "अभी: सादा ग्रे कंक्रीट (रूफ़ स्लैब का निचला हिस्सा)। बाद में: चिकनी, सफ़ेद, पंखा और 4 चपटी लाइटें।",
     "layers": [
-     "आरसीसी स्लैब (आपकी छत)",
-     "प्लास्टर / POP पनिंग (बिल्डर)",
-     "पुट्टी सिर्फ़ जहाँ ज़रूरत हो",
+     "आरसीसी रूफ़ स्लैब (लोहे की छड़ों वाला 5\" कंक्रीट)",
+     "पंखे का हुक एंकर + लाइट के तारों के लिए पतले सरफ़ेस कंड्यूट",
+     "~12 मिमी जिप्सम प्लास्टर (पनिंग)",
+     "पुट्टी",
      "प्राइमर",
      "सीलिंग-व्हाइट मैट पेंट, 2 कोट"
     ],
-    "simple": "फ़ॉल्स सीलिंग नहीं। BLDC पंखा पुराने पंखे की लगभग एक-तिहाई बिजली लेता है। 4 LED पैनल सीधे छत पर लगते हैं, ऐसी जगह कि बेड पर लेटने पर कोई आँखों में न चमके।",
+    "simple": "'स्लैब' आपकी छत है: कंक्रीट की एक मोटी चादर। अंदर से उसका निचला हिस्सा दिखता है, जो अभी खुरदुरा और ग्रे है। जिप्सम प्लास्टर उसे चिकना करता है; फिर दीवार की तरह पेंट। फ़ॉल्स सीलिंग की ज़रूरत नहीं। अगर ऊपर टैरेस है, तो पहले वहाँ वॉटरप्रूफ़िंग और सफ़ेद कोट करवाएँ ताकि कमरा ठंडा रहे।",
     "where": null,
-    "paint": null,
+    "paint": "सीलिंग-व्हाइट मैट इमल्शन, पुट्टी और प्राइमर के ऊपर 2 कोट।",
     "show": [
-     "CEILING_FAN_MOTOR",
-     "DOWNLIGHT_1"
+     "CEILING_PAINT",
+     "CEILING_FAN_MOTOR"
     ],
-    "img": "https://www.google.com/search?tbm=isch&q=BLDC+ceiling+fan+bedroom+surface+LED+panel+plain+ceiling"
+    "img": "https://www.google.com/search?tbm=isch&q=gypsum+plaster+punning+on+RCC+ceiling+before+after"
    },
    {
     "title": "अलमारी",
-    "see": "आले में लगी सफ़ेद 3-दरवाज़े की अलमारी, ऊपर लॉफ़्ट।",
+    "see": "2 स्लाइडिंग दरवाज़ों वाली सफ़ेद अलमारी, आगे वाले पर आईना; ऊपर लॉफ़्ट।",
     "layers": [
-     "18 मिमी HDHMR या MR प्लाई का ढाँचा (बढ़ई)",
-     "बाहर फ़्रॉस्टी-व्हाइट 1 मिमी लैमिनेट, अंदर 0.8 मिमी",
-     "सामान्य सॉफ़्ट-क्लोज़ कब्ज़े, स्टील बार हैंडल",
-     "सूटकेस के लिए छत तक लॉफ़्ट"
+     "18 मिमी HDHMR या MR प्लाई ढाँचा (बढ़ई)",
+     "फ़्रॉस्टी-व्हाइट 1 मिमी लैमिनेट",
+     "सॉफ़्ट-क्लोज़ एल्युमिनियम स्लाइडिंग ट्रैक (ऊपर + नीचे)",
+     "आगे वाले दरवाज़े पर 5 मिमी आईना",
+     "छत तक लॉफ़्ट"
     ],
-    "simple": "बढ़ई से बनवाई, सादी सफ़ेद: सबसे किफ़ायती। कब्ज़े वाले दरवाज़े स्लाइडिंग से सस्ते और ज़्यादा टिकाऊ।",
+    "simple": "स्लाइडिंग दरवाज़े प्रवेश में नहीं खुलते। एक बार में आधी अलमारी दिखती है; ट्रैक साफ़ रखें। कब्ज़े वाले दरवाज़े सस्ते हैं: ✏️ बदलें में बदलें।",
     "where": null,
     "paint": null,
     "show": [
      "WARDROBE_CARCASS"
     ],
-    "img": "https://www.google.com/search?tbm=isch&q=white+laminate+3+door+wardrobe+with+loft+India"
+    "img": "https://www.google.com/search?tbm=isch&q=2+door+sliding+wardrobe+with+mirror+white+laminate+India"
+   },
+   {
+    "title": "आईना और पेगबोर्ड",
+    "see": "आईना अलमारी के दरवाज़े पर; डेस्क के बगल वाली दीवार पर पेगबोर्ड।",
+    "layers": [
+     "स्लाइडिंग दरवाज़े पर चिपका 5 मिमी आईना",
+     "3'5\"×1'5\" पेगबोर्ड, हुक के साथ"
+    ],
+    "simple": "आईना वहीं सबसे काम का है जहाँ आप तैयार होते हैं। ✏️ बदलें में और विकल्प: पीछे सामान रखने वाली आईना कैबिनेट, या सादा दीवार आईना।",
+    "where": null,
+    "paint": null,
+    "show": [
+     "WARDROBE_SLIDER_1_MIRROR",
+     "PEGBOARD"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=pegboard+organiser+desk+wall+bedroom"
    },
    {
     "title": "स्टैंडिंग डेस्क",
@@ -1997,11 +2051,11 @@
     "OPTION_E": [
      "मौजूदा फ़र्श + सूती रनर",
      "एक धुलने लायक इमल्शन (Apcolite श्रेणी), बेड वाली दीवार हल्की सेज",
-     "सादी; BLDC पंखा + सरफ़ेस LED पैनल",
-     "3-दरवाज़े लैमिनेट + लॉफ़्ट (बढ़ई)",
+     "सादा स्लैब → जिप्सम प्लास्टर + पेंट; BLDC पंखा",
+     "आईने वाली 2-दरवाज़े स्लाइडिंग + लॉफ़्ट (बढ़ई)",
      "बिल्डर का स्लाइडर वैसा ही",
      "बिल्डर का स्लाइडर + प्लीटेड जाली",
-     "₹1.29 लाख"
+     "₹1.48 लाख (बजट पसंद ₹1.28 लाख)"
     ]
    }
   }

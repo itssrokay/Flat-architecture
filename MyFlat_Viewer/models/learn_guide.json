@@ -772,6 +772,36 @@
    "groupLabel": "Lighting",
    "img": "https://www.google.com/search?tbm=isch&q=split+AC+indoor+unit+bedroom+wall+pipe+sleeve",
    "wiki": "https://en.wikipedia.org/w/index.php?search=Air+conditioning"
+  },
+  {
+   "term": "Pegboard",
+   "plain": "A board full of small holes; hooks and small shelves clip in anywhere, so you can rearrange bags, headphones and tools without drilling again.",
+   "match": "PEGBOARD",
+   "aka": [],
+   "group": "Carpentry",
+   "groupLabel": "Carpentry",
+   "img": "https://www.google.com/search?tbm=isch&q=pegboard+wall+organiser+home",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Pegboard"
+  },
+  {
+   "term": "Gypsum plaster (punning)",
+   "plain": "A thin, smooth, white plaster (6–12 mm) applied straight onto concrete or brick instead of sand-cement plaster. Sets in hours, doesn't crack as easily, and is ready for putty and paint. Used on bare RCC ceilings.",
+   "match": "CEILING_PAINT",
+   "aka": [],
+   "group": "Ceiling",
+   "groupLabel": "Ceiling",
+   "img": "https://www.google.com/search?tbm=isch&q=gypsum+plaster+ceiling+India",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Gypsum+plaster"
+  },
+  {
+   "term": "Mirror cabinet",
+   "plain": "A shallow wall cabinet whose door is a mirror: storage and a full-length mirror in the same wall space.",
+   "match": "MIRROR_CABINET",
+   "aka": [],
+   "group": "Carpentry",
+   "groupLabel": "Carpentry",
+   "img": "https://www.google.com/search?tbm=isch&q=full+length+mirror+cabinet+jewellery+storage",
+   "wiki": "https://en.wikipedia.org/w/index.php?search=Medicine+cabinet"
   }
  ],
  "designs": {
@@ -1464,39 +1494,57 @@
    },
    {
     "title": "Ceiling",
-    "see": "The original flat ceiling, painted white. A fan and 4 flat round lights, nothing else.",
+    "see": "Now: bare grey concrete (the underside of the roof slab). After: smooth, white, with a fan and 4 flat lights.",
     "layers": [
-     "RCC slab (your ceiling)",
-     "Plaster / POP punning (builder)",
-     "Putty only where needed",
+     "RCC roof slab (5\" concrete with steel bars)",
+     "Fan-hook anchor + thin surface conduits for the light wires",
+     "~12 mm gypsum plaster (punning)",
+     "Putty",
      "Primer",
      "Ceiling-white matt paint, 2 coats"
     ],
-    "simple": "No false ceiling. The BLDC fan uses about a third of the power of an old fan. The 4 LED panels are screwed directly onto the ceiling, placed so none shines into your eyes when you lie in bed.",
+    "simple": "The 'slab' is your roof: one thick sheet of concrete. From inside you see its underside, which is rough and grey today. Gypsum plaster makes it smooth; then it's painted like a wall. No false ceiling needed. If the terrace is above you, waterproof it and coat it white on top first to keep the room cooler.",
     "where": null,
-    "paint": null,
+    "paint": "Ceiling-white matt emulsion (e.g. Asian Paints ceiling white or any matt white emulsion), 2 coats over putty and primer.",
     "show": [
-     "CEILING_FAN_MOTOR",
-     "DOWNLIGHT_1"
+     "CEILING_PAINT",
+     "CEILING_FAN_MOTOR"
     ],
-    "img": "https://www.google.com/search?tbm=isch&q=BLDC+ceiling+fan+bedroom+surface+LED+panel+plain+ceiling"
+    "img": "https://www.google.com/search?tbm=isch&q=gypsum+plaster+punning+on+RCC+ceiling+before+after"
    },
    {
     "title": "Wardrobe",
-    "see": "White 3-door wardrobe with a loft, fitted into the alcove.",
+    "see": "White wardrobe with 2 sliding doors and a mirror on the front one; loft above.",
     "layers": [
      "18 mm HDHMR or MR plywood body (carpenter)",
-     "Frosty-white 1 mm laminate outside, 0.8 mm inside",
-     "Basic soft-close hinges, steel bar handles",
-     "Loft up to the ceiling for suitcases"
+     "Frosty-white 1 mm laminate",
+     "Soft-close aluminium sliding track (top + bottom)",
+     "5 mm mirror on the front door",
+     "Loft up to the ceiling"
     ],
-    "simple": "Carpenter-made, plain white: the best value. Hinged doors are cheaper and last longer than sliding ones.",
+    "simple": "Sliding doors never swing into the entrance. You see half the wardrobe at a time; keep the track clean. Hinged doors are cheaper: switch in ✏️ Customise.",
     "where": null,
     "paint": null,
     "show": [
      "WARDROBE_CARCASS"
     ],
-    "img": "https://www.google.com/search?tbm=isch&q=white+laminate+3+door+wardrobe+with+loft+India"
+    "img": "https://www.google.com/search?tbm=isch&q=2+door+sliding+wardrobe+with+mirror+white+laminate+India"
+   },
+   {
+    "title": "Mirror & pegboard",
+    "see": "The mirror is on the wardrobe door; the wall beside the desk holds a pegboard.",
+    "layers": [
+     "5 mm mirror bonded to the sliding door",
+     "Pegboard 3'5\"×1'5\" on spacers, with hooks"
+    ],
+    "simple": "A mirror is most useful where you get dressed. Other choices in ✏️ Customise: a mirror cabinet with storage behind it, or a plain wall mirror.",
+    "where": null,
+    "paint": null,
+    "show": [
+     "WARDROBE_SLIDER_1_MIRROR",
+     "PEGBOARD"
+    ],
+    "img": "https://www.google.com/search?tbm=isch&q=pegboard+organiser+desk+wall+bedroom"
    },
    {
     "title": "Standing desk",
@@ -1989,11 +2037,11 @@
     "OPTION_E": [
      "Existing floor + cotton runner",
      "One washable emulsion (Apcolite-class), pale sage bed wall",
-     "Plain; BLDC fan + surface LED panels",
-     "3-door laminate + loft (carpenter)",
+     "Bare slab → gypsum plaster + paint; BLDC fan",
+     "2-door sliding with mirror + loft (carpenter)",
      "Builder's slider kept",
      "Builder's slider kept + pleated mesh",
-     "₹1.29 lakh"
+     "₹1.48 lakh (₹1.28 lakh budget pick)"
     ]
    }
   }

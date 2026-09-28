@@ -39,8 +39,8 @@ async def main():
         be = await pg.evaluate("""() => { const n = app.designNotes.OPTION_E.budget; const sum = n.rows.reduce((s, r) => s + +r[2].replace(/[^0-9]/g, ''), 0);
             const has = (k) => !!viewer.scene.getObjectByName('R1_OPE_' + k);
             return { total: n.total, sum, desk: has('STANDING_DESK_TOP'), fan: has('CEILING_FAN_MOTOR'), chair: has('ACCENT_CHAIR'), fc: has('FALSE_CEILING_BAND') }; }""")
-        check("Option E: budget adds up within Rs 1-1.3 lakh; standing desk + fan; no lounge chair, no false ceiling",
-              int(be["total"].replace("₹", "").replace(",", "")) == be["sum"] and 100000 <= be["sum"] <= 130000 and be["desk"] and be["fan"] and not be["chair"] and not be["fc"], str(be))
+        check("Option E: budget rows add up (recommended ~Rs 1.48 lakh); standing desk + fan; no lounge chair, no false ceiling",
+              int(be["total"].replace("₹", "").replace(",", "")) == be["sum"] and 130000 <= be["sum"] <= 160000 and be["desk"] and be["fan"] and not be["chair"] and not be["fc"], str(be))
         await pg.wait_for_timeout(1500); await pg.screenshot(path=f"{OUT}/02c_OPTION_E_budget.png")
         await pg.click('#designPanel button[data-file="MyFlat_V1_1_Room1_DEFAULT.glb"]')
         await pg.wait_for_function("app.ready && app.modelFile === 'MyFlat_V1_1_Room1_DEFAULT.glb'")

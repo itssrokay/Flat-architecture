@@ -5,24 +5,27 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { CONFIG } from './config.js?v=13';
-import { Walkthrough } from './walk.js?v=13';
-import { setupImmersive } from './immersive.js?v=13';
-import { setupExtras } from './extras.js?v=13';
-import { setupLearn } from './learn.js?v=13';
-import { setupI18n } from './i18n.js?v=13';
-import { setupSimple } from './simple.js?v=13';
+import { CONFIG } from './config.js?v=14';
+import { Walkthrough } from './walk.js?v=14';
+import { setupImmersive } from './immersive.js?v=14';
+import { setupExtras } from './extras.js?v=14';
+import { setupLearn } from './learn.js?v=14';
+import { setupI18n } from './i18n.js?v=14';
+import { setupSimple } from './simple.js?v=14';
+import { setupEdit } from './edit.js?v=14';
 // bump together with the ?v= in index.html and the imports above whenever the viewer or models change,
 // so browsers never mix a new page with old cached scripts or models
-const BUILD = '13';
+const BUILD = '14';
 
 const $ = (id) => document.getElementById(id);
 // language (English / Hindi): translates the interface in place; design notes + Learn guide load their Hindi files
 let simple = null;   // easy mode for phones (simple.js)
+let edit = null;     // ✏️ Customise panel (edit.js)
 const i18n = setupI18n({ onChange: async (l) => {
   await loadDesignNotes(); if (app.modelList) buildDesignPanel(app.modelList); updateDesignUI();
   if (learnApi) learnApi.setLang(l);
   if (simple) simple.setLang(l);
+  if (edit) edit.render();
 } });
 const FT = 0.3048;
 
@@ -241,9 +244,10 @@ function switchModel(file) {
 }
 function updateDesignUI() {
   document.querySelectorAll('#designPanel button').forEach(b => b.classList.toggle('cur', b.dataset.file === app.modelFile));
-  const m = modelEntry(app.modelFile); const n = m.design && app.designNotes?.[m.design]; const el = $('designNotes');
-  if (!n) { el.classList.add('hidden'); return; }
+  const m = modelEntry(app.modelFile); const n0 = m.design && app.designNotes?.[m.design]; const el = $('designNotes');
+  if (!n0) { el.classList.add('hidden'); return; }
   el.classList.remove('hidden');
+  const n = (n0.budget && app.editBudget) ? { ...n0, budget: app.editBudget(m.design, n0.budget) } : n0;
   el.innerHTML = `<div class="t">${n.title}</div><div class="tag">${n.tagline}</div>` +
     `<details ${m.design === 'DEFAULT' ? 'open' : ''}><summary>${m.design === 'DEFAULT' ? 'Why this is the default' : 'Concept'}</summary><div class="why">${n.why}</div></details>` +
     (n.budget ? `<details class="budget" open><summary>Budget · ${n.budget.total}</summary><table>` +
@@ -329,6 +333,7 @@ async function loadModel(file) {
   controls.maxDistance = app.size * 6; persp.far = app.size * 20; persp.updateProjectionMatrix();
 
   buildRooms(); buildCategoryToggles(); buildRoomList(); buildDebug(); buildLegend(); updateObjList();
+  if (edit) edit.onModel(root);          // design variants + colours (before visibility)
   applyVisibility(); applyMaterials(); setSection(); setPlan();
   $('sectionRange').max = (app.bbox.max.y + 0.3).toFixed(2);
 
@@ -483,10 +488,10 @@ function applyVisibility() {
     const on = app.catVisible[cat] !== false;
     for (const o of objs) {
       // an object is shown if its own category is on; children with their own category decide for themselves
-      o.visible = on;
+      o.visible = on && !o.userData._variantOff;
     }
   }
-  if (app.compare) for (const [cat, objs] of app.compare.byCat) for (const o of objs) o.visible = cat !== CONFIG.planCategory && app.catVisible[cat] !== false;
+  if (app.compare) for (const [cat, objs] of app.compare.byCat) for (const o of objs) o.visible = cat !== CONFIG.planCategory && app.catVisible[cat] !== false && !o.userData._variantOff;
   document.querySelectorAll('#catToggles .chip').forEach(ch => ch.classList.toggle('on', app.catVisible[ch.dataset.cat] !== false));
   const roofOn = app.catVisible.roof !== false;
   $('roofBtn').classList.toggle('on', roofOn); $('roofBtn').textContent = roofOn ? 'Roof ON' : 'Roof OFF';
@@ -762,6 +767,7 @@ async function setCompare(file) {
   sun2.position.copy(sun.position); sun2.target.position.copy(sun.target.position);
   const sc = sun2.shadow.camera; Object.assign(sc, { left: sun.shadow.camera.left, right: sun.shadow.camera.right, top: sun.shadow.camera.top, bottom: sun.shadow.camera.bottom, near: 1, far: 80 }); sc.updateProjectionMatrix();
   scene2.add(root); app.compare = { root, byCat, meshes, edges, file };
+  if (edit) edit.onCompare(root, file, meshes);
   applyVisibility();
   labelRenderer.domElement.style.display = 'none';
   $('capL').innerHTML = `<b>${modelEntry(app.modelFile).label || app.modelFile}</b>`; $('capR').innerHTML = `<b>${modelEntry(file).label || file}</b>`;
@@ -829,6 +835,8 @@ const ex = setupExtras({ app, scene, renderer, controls, walk, persp, $, fmtFt, 
   resize: () => { _aspect = 0; resize(); }, isInteractive: (o) => imm.isInteractive(o) });
 new ResizeObserver(() => { _aspect = 0; resize(); }).observe(host);
 setupLearn({ app, $, select, focusObject, scene, build: BUILD, modelEntry, lang: i18n.lang }).then(a => { learnApi = a; window.viewer.learn = a; });
+edit = setupEdit({ app, $, imm, modelEntry, applyVisibility, updateDesignUI, showRight: () => ex.setRight(false) });
+if (app.model) { edit.onModel(app.model); applyVisibility(); imm.onModel(app.model); updateDesignUI(); }
 simple = setupSimple({ app, $, walk, imm, ex, renderer, scene, CONFIG, lang: i18n.lang, goRoomVp, overview, presetView, goToPoint,
   TOUCH: TOUCH && QS.get('easy') !== '0', force: QS.get('easy'), resize: () => { _aspect = 0; resize(); } });
 walk.onChange = (on) => {
@@ -851,7 +859,7 @@ walk.onChange = (on) => {
 })();
 
 // exposed for automated checks
-window.viewer = { imm, ex, i18n, simple, setCompare, switchModel, presetView, setCat, setEdges, updateLabelOcclusion, applyVisibility, togglePlanMode, setDebug, setLabels, select, loadModel, startWalk, walk, overview, goToPoint, goRoomVp,
+window.viewer = { imm, ex, i18n, simple, edit, setCompare, switchModel, presetView, setCat, setEdges, updateLabelOcclusion, applyVisibility, togglePlanMode, setDebug, setLabels, select, loadModel, startWalk, walk, overview, goToPoint, goRoomVp,
   get camera() { return camera; }, controls, scene, renderer, CONFIG, fmtFt,
   setStatus: (on) => { app.statusMode = on; applyMaterials(); }, goRoom: (name, i = 0) => { const r = app.rooms.find(r => r.name === name); goRoomVp(r, r.vps[i]); },
   pickAt: (x, y) => pick({ clientX: x, clientY: y }), setSection: (on, h) => { $('sectionChk').checked = on; if (h) $('sectionRange').value = h; setSection(); } };

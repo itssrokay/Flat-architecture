@@ -161,7 +161,8 @@ def wardrobe_alcove(style):
             left = (i % 2 == 0); hx = xa if left else xb
             bx = [(xa, xb, yf - 0.06, yf, zb, top)]
             hb = [((xb - 0.12, xb - 0.08) if left else (xa + 0.08, xa + 0.12)) + (yf, yf + 0.06, 3.0, 5.2)]
-            it = HINGE(f"WARDROBE_DOOR_{i+1}", 100 if left else -100, "Open / close wardrobe door")
+            deg = 90 if i == 0 else 100          # the leftmost door stops against the thick wall's step face
+            it = HINGE(f"WARDROBE_DOOR_{i+1}", deg if left else -deg, "Open / close wardrobe door")
             boxes(f"WARDROBE_DOOR_{i+1}", bx, sh, "wardrobe", style["shutter_spec"], pivot=(hx, yf), interact=it)
             boxes(f"WARDROBE_DOOR_{i+1}_HANDLE", hb, hd, "wardrobe", style["handle_spec"], pivot=(hx, yf), interact=it)
             if ins:
@@ -307,9 +308,9 @@ def build_default():
     boxes("STUDY_CHAIR", [(0, 1.5, 0, 1.5, 1.4, 1.55), (0, 1.5, 0, 0.12, 1.55, 2.9), (0.6, 0.9, 0.6, 0.9, 0, 1.4)], sage, "furniture", "upholstered study chair", (2.1, YW + 1.9, 0))
     # floor lamp beside the study desk. (The old lounge chair on the north wall was removed: it stood 1" from the bed
     # and blocked the 1'11" walkway to the bedside - there is no free spot for a lounge chair in this layout.)
-    cyl("FLOOR_LAMP", 6.55, -10.5, 0.35, 0, 0.05, charcoal, "lighting", "")
-    cyl("FLOOR_LAMP_POLE", 6.55, -10.5, 0.03, 0.05, 4.8, charcoal, "lighting", "")
-    cyl("FLOOR_LAMP_SHADE", 6.55, -10.5, 0.45, 4.8, 5.5, mat("Linen_Shade", (0.95, 0.9, 0.8), 0.9, emit=1.5), "lighting", "linen shade floor lamp by the study desk")
+    cyl("FLOOR_LAMP", 6.05, -10.5, 0.35, 0, 0.05, charcoal, "lighting", "")
+    cyl("FLOOR_LAMP_POLE", 6.05, -10.5, 0.03, 0.05, 4.8, charcoal, "lighting", "")
+    cyl("FLOOR_LAMP_SHADE", 6.05, -10.5, 0.45, 4.8, 5.5, mat("Linen_Shade", (0.95, 0.9, 0.8), 0.9, emit=1.5), "lighting", "linen shade floor lamp by the study desk")
     box("RUG", 3.8, 10.8, -7.6, -1.4, 0.02, 0.05, mat("Rug_Wool", (0.78, 0.72, 0.62), 1.0), "soft_furnishing", "flat-weave wool rug 5'x7'")
     box("ARTWORK", 1.2, 5.2, YW + 0.02, YW + 0.07, 6.0, 7.8, mat("Art", (0.75, 0.55, 0.4), 0.8), "decor", "framed art print 4'x1'10\"")
     # ceiling & lighting
@@ -642,6 +643,15 @@ def build_E():  # Simple & practical (Rs 1-1.3 lakh) for a young adult: plain pa
     # walls: ONE mid-range washable emulsion everywhere. Warm off-white on 3 walls, pale sage on the bed wall (same paint, another shade)
     box("BED_WALL_PALE_SAGE", RW - 0.015, RW, DOOR_Y1 + 0.05, 0, 0, H - 0.02, sage, "finishes",
         "bed wall in pale sage: same washable emulsion as the other walls (Apcolite Premium class), just a different shade - no extra cost")
+    # paint "skins" on the other Room 1 walls + the ceiling (lets the viewer recolour them; builder walls stay as they are)
+    t = 0.012; wp = mat("Warm_Offwhite_Paint", (0.94, 0.92, 0.87), 0.9); cp = mat("Ceiling_White_Paint", (0.97, 0.97, 0.96), 0.95)
+    boxes("WALL_PAINT", [(0.08, W1_X0, -t, 0, 0, H), (W1_X1, RW, -t, 0, 0, H), (W1_X0, W1_X1, -t, 0, 0, W1_Z0), (W1_X0, W1_X1, -t, 0, W1_Z1, H),
+                         (0.08, 0.08 + t, -0.75, -t, 0, H), (0.0, t, OPN_Y0, OPN_Y1, OPN_H, H),
+                         (0, XSTEP, YW, YW + t, 0, H), (XSTEP, XSTEP + t, YS, YW, 0, H), (XSTEP, RW, YS, YS + t, 0, H),
+                         (RW - t, RW, YS, DOOR_Y0, 0, H), (RW - t, RW, DOOR_Y0, DOOR_Y1, 7.0, H)], wp, "finishes",
+          "walls: 2 coats washable emulsion (Apcolite Premium class), warm off-white")
+    boxes("CEILING_PAINT", [(0, RW, YW, 0, H - t, H), (XSTEP, RW, YS, YW, H - t, H)], cp, "finishes",
+          "ceiling: the bare RCC slab gets ~12 mm gypsum plaster (punning), putty, primer and 2 coats ceiling-white paint")
     # bed: ready-made queen storage bed, head on the only long solid wall (east), centred on it
     bed(RW - 0.1, -4.8, 180, 5.0, 6.5, dict(hb_h=3.3, hb_t=0.3, hb_mat=oak, hb_spec="plain panel headboard, light-oak finish (comes with the bed)",
         base_z=(0.02, 1.15), base_mat=oak, base_spec="Queen 6'6\" x 5' engineered-wood bed with box storage, light-oak finish (Wakefit Orion class, ~Rs 16,000)",
@@ -654,10 +664,21 @@ def build_E():  # Simple & practical (Rs 1-1.3 lakh) for a young adult: plain pa
     box("WALL_LAMP_N", RW - 0.4, RW - 0.05, -1.35, -1.05, 4.5, 4.95, light, "lighting", "simple wall reading light, 7 W warm-white LED (~Rs 700)")
     box("WALL_LAMP_S", RW - 0.4, RW - 0.05, -8.7, -8.4, 4.5, 4.95, light, "lighting", "simple wall reading light, 7 W warm-white LED (~Rs 700)")
     box("RUNNER_RUG", 6.0, 11.4, -9.3, -7.7, 0.01, 0.03, mat("Cotton_Rug", (0.6, 0.62, 0.66), 1.0), "soft_furnishing", "cotton runner 2' x 5' where you step out of bed (~Rs 600)")
-    # wardrobe: local carpenter, fills the alcove (hinged: cheaper and longer-lasting than sliding)
+    # wardrobe: local carpenter, fills the alcove. Two front options (viewer "Customise"): sliding (recommended) or hinged
     wardrobe_alcove(dict(doors=3, body=white, shutter=white,
-                         spec="3-door hinged wardrobe + loft by a local carpenter, 5'3\" x 2' x 9'10\": HDHMR / MR ply carcass, 1 mm laminate outside, 0.8 mm inside (~Rs 37,000 incl. hardware)",
-                         shutter_spec="frosty-white 1 mm laminate shutters, basic soft-close hinges", handle=ss, handle_spec="10\" SS bar handles", loft=True, light=None))
+                         spec="wardrobe by a local carpenter, 5'3\" x 2' x 7'6\" + loft: HDHMR / MR ply carcass, 1 mm laminate outside, 0.8 mm inside",
+                         shutter_spec="frosty-white 1 mm laminate hinged shutters, basic soft-close hinges", handle=ss, handle_spec="10\" SS bar handles", loft=True, light=None))
+    x0, x1, yf, zb, top = XSTEP + 0.05, RW - 0.05, YS + 2.0, 0.33, 7.5; half = (x1 - x0) / 2
+    box("WARDROBE_SLIDE_TRACK_TOP", x0, x1, yf - 0.14, yf + 0.02, top - 0.1, top, whitealu, "wardrobe", "soft-close aluminium top track (Ebco / Hettich basic class)")
+    box("WARDROBE_SLIDE_TRACK_BOTTOM", x0, x1, yf - 0.14, yf + 0.02, zb - 0.04, zb, whitealu, "wardrobe", "bottom guide track")
+    p1 = (x0 + half / 2, yf - 0.02); p2 = (x1 - half / 2, yf - 0.09)
+    it1 = SLIDE("WARDROBE_SLIDER_1", dx=half - 0.2, label="Slide wardrobe door"); it2 = SLIDE("WARDROBE_SLIDER_2", dx=-(half - 0.2), label="Slide wardrobe door")
+    boxes("WARDROBE_SLIDER_1", [(x0, x0 + half + 0.05, yf - 0.05, yf + 0.01, zb, top - 0.1)], white, "wardrobe", "front sliding shutter, 18 mm board + frosty-white laminate", pivot=p1, interact=it1)
+    boxes("WARDROBE_SLIDER_1_PULL", [(x0 + 0.12, x0 + 0.18, yf + 0.01, yf + 0.05, 2.8, 5.2)], ss, "wardrobe", "slim SS pull", pivot=p1, interact=it1)
+    boxes("WARDROBE_SLIDER_1_MIRROR", [(x0 + 0.3, x0 + half - 0.2, yf + 0.01, yf + 0.035, 0.9, top - 0.7)], mirror, "wardrobe",
+          "full-length 5 mm mirror on the sliding shutter: dress where your clothes are, and it bounces balcony light into the alcove", pivot=p1, interact=it1)
+    boxes("WARDROBE_SLIDER_2", [(x1 - half - 0.05, x1, yf - 0.12, yf - 0.06, zb, top - 0.1)], white, "wardrobe", "rear sliding shutter, 18 mm board + frosty-white laminate", pivot=p2, interact=it2)
+    boxes("WARDROBE_SLIDER_2_PULL", [(x1 - 0.18, x1 - 0.12, yf - 0.06, yf - 0.02, 2.8, 5.2)], ss, "wardrobe", "slim SS pull", pivot=p2, interact=it2)
     # standing desk on the thick wall (daylight from the balcony on the side, no glare on the screen)
     y0 = YW; top = 3.45
     box("STANDING_DESK_TOP", 1.3, 5.3, y0 + 0.05, y0 + 2.0, top - 0.08, top, oak, "furniture",
@@ -678,8 +699,29 @@ def build_E():  # Simple & practical (Rs 1-1.3 lakh) for a young adult: plain pa
     boxes("OFFICE_CHAIR", [(0, 1.5, 0, 1.5, 1.45, 1.6), (0, 1.5, 1.35, 1.5, 1.6, 3.0), (0.68, 0.82, 0.68, 0.82, 0.3, 1.45),
                            (0.05, 1.45, 0.68, 0.82, 0.12, 0.28), (0.68, 0.82, 0.05, 1.45, 0.12, 0.28)], grey, "furniture",
           "basic ergonomic mesh chair for sitting mode; tucks under the desk top (~Rs 4,000)", (0.5, y0 + 1.25, 0))
+    # fold-down wall desk (the cheaper "desk" choice in Customise)
+    box("FOLD_DESK_TOP", 1.5, 5.0, YW + 0.05, YW + 1.5, 2.42, 2.5, oak, "furniture", "wall-mounted fold-down desk 3'6\" x 1'6\" on folding steel brackets, folds flat to 3\" (~Rs 4,500)")
+    boxes("FOLD_DESK_BRACKETS", [(1.9, 2.0, YW, YW + 1.3, 2.1, 2.42), (4.5, 4.6, YW, YW + 1.3, 2.1, 2.42)], black, "furniture", "folding shelf brackets, 40 kg")
+    box("FOLD_LAPTOP", 2.6, 3.7, YW + 0.4, YW + 1.1, 2.5, 2.55, mat("Laptop", (0.6, 0.6, 0.62), 0.3, 0.6), "decor", "laptop (yours)")
+    # mirror choices: on the wardrobe slider (+ pegboard here) / mirror cabinet / plain wall mirror
+    inner = mat("Cabinet_Inside", (0.93, 0.92, 0.9), 0.6)
+    y1c = YW + 0.42
+    boxes("MIRROR_CABINET_BODY", [(5.6, 7.0, YW, YW + 0.04, 0.9, 6.4), (5.6, 5.65, YW, y1c, 0.9, 6.4), (6.95, 7.0, YW, y1c, 0.9, 6.4),
+                                  (5.6, 7.0, YW, y1c, 6.35, 6.4), (5.6, 7.0, YW, y1c, 0.9, 0.95)], oak, "furniture",
+          "tall mirror cabinet 5'6\" x 1'5\" x 5\" deep: grooming, jewellery hooks, hair-dryer socket inside (carpenter, ~Rs 6,500)")
+    boxes("MIRROR_CABINET_SHELVES", [(5.65, 6.95, YW + 0.04, YW + 0.38, z, z + 0.05) for z in (2.0, 3.1, 4.2, 5.2)], inner, "furniture", "4 shallow shelves")
+    boxes("MIRROR_CABINET_ITEMS", [(5.75, 5.95, YW + 0.1, YW + 0.3, 2.05, 2.6), (6.1, 6.3, YW + 0.1, YW + 0.3, 2.05, 2.45), (6.5, 6.8, YW + 0.1, YW + 0.3, 3.15, 3.5),
+                                   (5.8, 6.2, YW + 0.1, YW + 0.3, 4.25, 4.5), (5.7, 6.9, YW + 0.3, YW + 0.33, 5.6, 5.64)], mat("Jars", (0.75, 0.6, 0.55), 0.5), "decor", "things you keep in it (for scale)")
+    box("MIRROR_CABINET_LED", 5.65, 6.95, YW + 0.32, YW + 0.36, 6.26, 6.32, light, "furniture", "LED strip inside, switches on when the door opens")
+    itc = HINGE("MIRROR_CABINET_DOOR", -95, "Open / close mirror cabinet")
+    boxes("MIRROR_CABINET_DOOR", [(5.6, 7.0, y1c, y1c + 0.05, 0.9, 6.4)], oak, "furniture", "cabinet door", pivot=(7.0, y1c + 0.025), interact=itc)
+    boxes("MIRROR_CABINET_MIRROR", [(5.68, 6.92, y1c + 0.05, y1c + 0.07, 1.0, 6.3)], mirror, "furniture", "full-length mirror on the cabinet door", pivot=(7.0, y1c + 0.025), interact=itc)
+    peg = mat("Pegboard", (0.86, 0.8, 0.7), 0.7)
+    box("PEGBOARD", 5.6, 7.0, YW, YW + 0.06, 2.8, 6.2, peg, "furniture", "pegboard organiser 3'5\" x 1'5\" with hooks: bag, headphones, keys, cables (~Rs 1,500)")
+    boxes("PEGBOARD_ITEMS", [(5.8, 6.6, YW + 0.06, YW + 0.4, 3.2, 4.3), (6.7, 6.9, YW + 0.06, YW + 0.25, 4.8, 5.5), (5.8, 6.3, YW + 0.06, YW + 0.12, 5.4, 5.9)],
+          mat("Pegboard_Items", (0.3, 0.35, 0.45), 0.8), "decor", "bag, headphones, keys (for scale)")
     box("FULL_LENGTH_MIRROR_FRAME", 5.6, 7.0, YW, YW + 0.03, 0.85, 6.45, oak, "furniture", "")
-    box("FULL_LENGTH_MIRROR", 5.65, 6.95, YW, YW + 0.045, 0.9, 6.4, mirror, "furniture", "full-length mirror 5'6\" x 1'3\" on ply backing: your getting-ready spot (~Rs 2,000)")
+    box("FULL_LENGTH_MIRROR", 5.65, 6.95, YW, YW + 0.045, 0.9, 6.4, mirror, "furniture", "plain full-length mirror 5'6\" x 1'3\" on ply backing (~Rs 2,000)")
     # ceiling: plain (no false ceiling), BLDC fan over the foot of the bed, 4 surface LED panels away from the pillows
     fx, fy = 7.4, -5.2
     cyl("CEILING_FAN_CANOPY", fx, fy, 0.22, H - 0.3, H - 0.02, fanwhite, "fixtures", "")
@@ -720,6 +762,33 @@ def build_E():  # Simple & practical (Rs 1-1.3 lakh) for a young adult: plain pa
     for i, (x, y, spec) in enumerate(((-3.8, -4.6, "tulsi in a terracotta pot"), (-2.2, 0.2, "money plant on a moss stick"), (-3.8, -2.4, "snake plant"))):
         plant(f"BALCONY_PLANT_{i+1}", x, y, BAL_Z, 0.4 + 0.1 * (i % 2), 0.9 + 0.3 * (i % 2), 0.55, mat("Terracotta", (0.66, 0.4, 0.28), 0.8), spec + " (3 plants + pots ~Rs 1,200)", 1.3)
     outdoor_light(black, "builder's balcony light point, kept")
+    # W1 alternative: uPVC tilt-and-turn (2 sashes opening INTO the room; tilt = safe ventilation, turn = easy cleaning)
+    upvc = mat("uPVC_White", (0.95, 0.95, 0.94), 0.35)
+    boxes("W1TT_FRAME", [(W1_X0, W1_X0 + 0.2, 0.2, 0.55, W1_Z0, W1_Z1), (W1_X1 - 0.2, W1_X1, 0.2, 0.55, W1_Z0, W1_Z1), (W1_X0, W1_X1, 0.2, 0.55, W1_Z0, W1_Z0 + 0.2),
+                         (W1_X0, W1_X1, 0.2, 0.55, W1_Z1 - 0.2, W1_Z1), (5.35, 5.45, 0.2, 0.55, W1_Z0, W1_Z1)], upvc, "fenestration",
+          "W1 option: uPVC tilt-and-turn window, 2 sashes, 5 mm toughened glass, multi-point lock (Fenesta / AIS class, ~Rs 2,500-4,000 per sq ft fitted)")
+    sash("W1TT_L", W1_X0 + 0.2, 5.35, W1_Z0 + 0.2, W1_Z1 - 0.2, 0.22, 0.34, upvc, glass, "tilt-and-turn sash (opens inwards)", fw=0.16, hinge=("L", "in", 85))
+    sash("W1TT_R", 5.45, W1_X1 - 0.2, W1_Z0 + 0.2, W1_Z1 - 0.2, 0.22, 0.34, upvc, glass, "tilt-and-turn sash (opens inwards)", fw=0.16, hinge=("R", "in", 85))
+    box("W1TT_ROLLER_MESH", W1_X0 + 0.1, W1_X1 - 0.1, 0.46, 0.56, W1_Z1 - 0.3, W1_Z1 - 0.1, upvc, "fenestration", "roller mosquito mesh cassette (pulls down outside the glass)")
+    # balcony alternative: folding bistro set
+    boxes("BALCONY_BISTRO_TABLE", [(-0.05, 0.05, -0.05, 0.05, 0, 2.3)], black, "balcony", "folding metal bistro table + 2 chairs (~Rs 5,000)", (-2.75, -11.6, 0))
+    cyl("BALCONY_BISTRO_TABLE_TOP", -2.75, -11.6, 0.95, 2.3, 2.38, black, "balcony", "24\" round top, sits at the south end clear of the door")
+    for i, y in enumerate((-12.55, -9.35)):
+        boxes(f"BALCONY_BISTRO_CHAIR_{i+1}", [(0, 1.3, 0, 1.3, 1.45, 1.55), (0, 1.3, 0 if i == 0 else 1.2, 0.1 if i == 0 else 1.3, 1.55, 3.0),
+                                           (0.05, 0.12, 0.05, 0.12, 0, 1.45), (1.18, 1.25, 0.05, 0.12, 0, 1.45), (0.05, 0.12, 1.18, 1.25, 0, 1.45), (1.18, 1.25, 1.18, 1.25, 0, 1.45)],
+              black, "balcony", "folding metal bistro chair", (-3.25, y - 0.65, 0))
+    # ---- variants for the viewer's "Customise" panel (object is shown only when every condition holds)
+    VAR = [(("WARDROBE_DOOR_",), "wardrobe=hinged"), (("WARDROBE_SLIDE", "WARDROBE_SLIDER_1_PULL", "WARDROBE_SLIDER_2"), "wardrobe=sliding"),
+           (("WARDROBE_SLIDER_1",), "wardrobe=sliding"), (("WARDROBE_SLIDER_1_MIRROR",), "wardrobe=sliding&mirror=wardrobe"),
+           (("WARDROBE_LOFT",), "loft=now"),
+           (("STANDING_DESK", "MONITOR", "KEYBOARD", "LAPTOP", "ANTI_FATIGUE_MAT"), "desk=standing"), (("FOLD_DESK", "FOLD_LAPTOP"), "desk=fold"),
+           (("MIRROR_CABINET",), "mirror=cabinet"), (("PEGBOARD",), "mirror=wardrobe"), (("FULL_LENGTH_MIRROR",), "mirror=wall"),
+           (("W1_OUTER_FRAME", "W1_SASH_", "W1_MESH"), "window=slider"), (("W1TT_",), "window=tt"), (("BALCONY_BISTRO",), "balcony=set")]
+    pre = f"R1_{TAG[OPT]}_"
+    for o in COL.objects:
+        n = o.name[len(pre):] if o.name.startswith(pre) else o.name
+        for prefixes, v in VAR:          # later rules win (e.g. the mirror on slider 1)
+            if n.startswith(prefixes): o["variant"] = v
 
 OPTIONS = [("DEFAULT", "13_ROOM1_DEFAULT", build_default), ("OPTION_A", "14_ROOM1_OPTION_A", build_A),
            ("OPTION_B", "15_ROOM1_OPTION_B", build_B), ("OPTION_C", "16_ROOM1_OPTION_C", build_C),

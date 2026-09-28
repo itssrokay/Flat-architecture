@@ -40,7 +40,7 @@ const D = {
   // categories
   'Walls': 'दीवारें', 'Floors': 'फ़र्श', 'Ceiling / Roof': 'छत', 'Doors': 'दरवाज़े', 'Windows': 'खिड़कियाँ', 'Pillars': 'पिलर', 'Beams': 'बीम', 'Stairs': 'सीढ़ियाँ',
   'Railings': 'रेलिंग', 'Vents': 'रोशनदान', 'Ground': 'ज़मीन', 'Furniture': 'फ़र्नीचर', 'Wardrobe': 'अलमारी', 'Window & door systems': 'खिड़की-दरवाज़े', 'Curtains & soft': 'पर्दे और कपड़े',
-  'False ceiling': 'फ़ॉल्स सीलिंग', 'Lighting': 'रोशनी', 'Finishes': 'फ़िनिश', 'Balcony decor': 'बालकनी सजावट', 'Fan & AC': 'पंखा और AC', 'Plants': 'पौधे', 'Decor': 'सजावट',
+  'False ceiling': 'फ़ॉल्स सीलिंग', 'Lighting': 'रोशनी', 'Finishes': 'फ़िनिश', 'Balcony decor': 'बालकनी सजावट', 'Fan & AC': 'पंखा और AC', '✏️ Customise': '✏️ बदलें', 'Plants': 'पौधे', 'Decor': 'सजावट',
   // status names
   'Confirmed': 'पक्का', 'Plan value': 'नक्शे से', 'Derived': 'निकाला गया', 'Provisional': 'अनुमान', 'Reference': 'संदर्भ', 'Interior design': 'इंटीरियर डिज़ाइन',
   // walk HUD, touch, cards
@@ -86,7 +86,7 @@ export function setupI18n({ onChange } = {}) {
   try { lang = new URLSearchParams(location.search).get('lang') || localStorage.getItem('myflat.lang') || 'en'; } catch (e) { }
   if (lang !== 'hi') lang = 'en';
   const orig = new WeakMap(), mine = new WeakMap(), origAttr = new WeakMap(), origHTML = new Map();
-  const SKIP = (el) => el && el.closest && el.closest('script,style,#statusbar,#learn,#simpleBtn,#simpleUI,#placesSheet,#simpleHelp,textarea,input,.why,.bnote,.sched td:nth-child(2),.budget .bd');
+  const SKIP = (el) => el && el.closest && el.closest('script,style,#statusbar,#learn,#simpleBtn,#simpleUI,#editPanel,#placesSheet,#simpleHelp,textarea,input,.why,.bnote,.sched td:nth-child(2),.budget .bd');
   function tr(s) {
     const t = s.trim(); if (!t) return null;
     let out = D[t];

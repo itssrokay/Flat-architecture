@@ -855,98 +855,138 @@
  },
  "OPTION_E": {
   "title": "Option E · Simple & Practical",
-  "tagline": "About ₹1,28,900: plain paint, a ready-made bed, a carpenter wardrobe and a standing desk. No panelling, no false ceiling, nothing in the way.",
+  "tagline": "About ₹1,47,900 as recommended (₹1,28,400 with the 'Within ₹1.3 lakh' pick): plain paint, a sliding wardrobe with the mirror on its door, a standing desk. ✏️ Customise changes the 3D, colours and budget.",
   "why": "This is how an interior designer keeps a small bedroom on a budget: spend on what you use every day (a good wardrobe, bed, mattress, a proper desk, a fan and good light) and skip what only looks fancy. The walls are simply painted: one washable paint, two shades. Nothing hangs from the ceiling except the fan and lights, the builder's windows stay, and no furniture stands in a walkway. Unlike DEFAULT there is no lounge chair: this room has no free spot where a chair can be used without blocking the path beside the bed. You sit at the desk, on the bed, or later on the balcony.",
   "sections": {
-   "Layout": "Bed centred on the east wall (the only long solid wall), facing the balcony. One bedside on the window side and a floating shelf on the door side, so both walkways stay about 2'2\" wide. Standing desk and a full-length mirror on the thick wall. Fan over the foot of the bed. 5' of open floor between the bed and the balcony door.",
-   "Walls & paint": "One washable emulsion everywhere (Asian Paints Apcolite Premium or a Berger / Nerolac equivalent, matt or low-sheen). Warm off-white on three walls, pale sage on the bed wall, ceiling white. Process: fill cracks → sand → primer on the patches → 2 coats. No panelling, wallpaper or texture.",
-   "Ceiling & lighting": "No false ceiling. 1200 mm BLDC fan (~30 W, with remote). 4 surface LED panels (4000K) placed away from the pillows, 2 warm wall reading lights, a 20 W LED batten under the desk shelf. The AC point and pipe sleeve are done now so a split AC can go in later without breaking the new paint.",
-   "Standing desk": "Single-motor electric sit-stand desk, 4'×2', with memory presets. Set the standing height so your elbows are at 90° (about 3'5\" for someone 5'6\"–5'8\"); sitting height about 2'4\". Monitor top at eye level. Anti-fatigue mat to stand on; the mesh chair tucks under when you stand. Daylight comes from the balcony at your side, so there's no glare on the screen.",
-   "Wardrobe": "Local carpenter: 3 hinged doors and a loft up to the ceiling, HDHMR / MR ply body, frosty-white laminate, basic soft-close hinges, SS bar handles. Hinged doors cost less and last longer than sliding ones, and the room door opens outwards, so nothing clashes.",
-   "Window & door": "The builder's aluminium sliders are kept (clean the tracks, oil the rollers). A pleated mosquito mesh is added to the balcony door. Beige blackout eyelet curtains on plain SS rods, with sheers on the balcony door for daytime privacy.",
-   "Palette": "Warm off-white, pale sage, light oak, white, beige, denim blue."
+   "Layout": "Bed centred on the east wall (the only long solid wall), facing the balcony. One bedside on the window side and a floating shelf on the door side, so both walkways stay about 2'2\" wide. Standing desk and a pegboard on the thick wall. Sliding wardrobe with the full-length mirror on its door, right by the room's entrance. Fan over the foot of the bed. 5' of open floor between the bed and the balcony door.",
+   "Wardrobe & mirror": "Sliding doors, because the wardrobe sits right at the room's entrance: hinged doors would swing into your path. The mirror goes on the front sliding door, so you dress where your clothes are and it throws balcony light into the alcove. The wall that had the mirror becomes a pegboard for your bag, headphones and keys. Prefer to see the whole wardrobe at once? Choose hinged doors in ✏️ Customise.",
+   "Ceiling (bare concrete now)": "Your ceiling is the underside of the RCC roof slab. It needs: ~12 mm gypsum plaster (punning) to make it smooth → putty → primer → 2 coats ceiling-white paint. Before plastering, fix the fan hook (anchor fastener rated for a fan) and run the light wires in thin surface conduits, because RCC can't be cut for pipes. If the flat has a terrace above, get the roof waterproofed and coated with heat-reflective white paint first.",
+   "Walls & paint": "One washable emulsion everywhere (Asian Paints Apcolite Premium or a Berger / Nerolac equivalent, matt or low-sheen). Warm off-white on three walls, pale sage on the bed wall, ceiling white. Process: fill cracks → sand → primer on the patches → 2 coats. If the walls are still grey cement, they need 2 full coats of putty first (choose 'Bare cement plaster' in ✏️ Customise).",
+   "Lighting & fan": "1200 mm BLDC fan (~30 W, with remote). 4 surface LED panels (4000K) placed away from the pillows, 2 warm wall reading lights, a 20 W LED batten under the desk shelf. AC point and pipe sleeve done now for a split AC later.",
+   "Standing desk": "Single-motor electric sit-stand desk, 4'×2', with memory presets. Set the standing height so your elbows are at 90° (about 3'5\" for someone 5'6\"–5'8\"); sitting height about 2'4\". Monitor top at eye level. Anti-fatigue mat; the mesh chair tucks under when you stand.",
+   "Window & door": "The builder's aluminium sliders are kept (clean the tracks, oil the rollers). A pleated mosquito mesh is added to the balcony door. Beige blackout eyelet curtains on plain SS rods. Upgrade W1 to a uPVC tilt-and-turn window in ✏️ Customise if you want quieter, dust-tight, rain-safe ventilation.",
+   "Palette": "Warm off-white, pale sage, light oak, white, beige, denim blue. Change any of them in ✏️ Customise."
   },
   "budget": {
-   "total": "₹1,28,900",
+   "total": "₹1,47,900",
    "rows": [
     [
      "Wardrobe",
-     "3-door hinged + loft, local carpenter, HDHMR / MR ply, 1 mm laminate outside, 0.8 mm inside, 5'3\" × 2' × 9'10\"",
-     "₹37,000"
+     "2-door sliding, soft-close aluminium track, local carpenter, HDHMR / MR ply, 1 mm laminate, 5'3\" × 2' × 7'6\"",
+     "₹38,000",
+     "wardrobe"
+    ],
+    [
+     "Loft",
+     "Loft above the wardrobe up to the ceiling, 3 hinged shutters",
+     "₹8,000",
+     "loft"
     ],
     [
      "Bed",
      "Queen engineered-wood bed with box storage, light-oak finish (Wakefit Orion class)",
-     "₹16,000"
+     "₹16,000",
+     "bed"
     ],
     [
      "Mattress",
      "6\" memory-foam / HR-foam, queen",
-     "₹10,000"
+     "₹10,000",
+     "mattress"
     ],
     [
      "Standing desk",
      "Single-motor electric sit-stand frame + 4'×2' top, 3 memory presets",
-     "₹18,000"
+     "₹18,000",
+     "desk"
     ],
     [
      "Desk chair",
      "Basic ergonomic mesh chair for sitting mode",
-     "₹4,000"
+     "₹4,000",
+     "chair"
     ],
     [
      "Desk wall",
-     "2 floating shelves, 20 W LED batten under the shelf, full-length mirror, anti-fatigue mat",
-     "₹4,900"
+     "2 floating shelves, 20 W LED batten under the shelf, anti-fatigue mat",
+     "₹2,900",
+     "deskwall"
+    ],
+    [
+     "Mirror",
+     "Full-length mirror on the wardrobe's front sliding door",
+     "₹3,000",
+     "mirror"
+    ],
+    [
+     "Pegboard",
+     "Pegboard organiser beside the desk: bag, headphones, keys, cables",
+     "₹1,500",
+     "pegboard"
     ],
     [
      "Bedside",
      "1 ready-made bedside table + 1 floating wall shelf",
-     "₹2,300"
+     "₹2,300",
+     "bedside"
     ],
     [
      "Paint",
-     "~560 sq ft walls + ceiling: crack filling, primer on patches, 2 coats washable emulsion (Apcolite Premium class); pale sage on the bed wall",
-     "₹8,500"
+     "~560 sq ft walls: crack filling, primer on patches, 2 coats washable emulsion (Apcolite Premium class); ceiling paint; pale sage bed wall",
+     "₹8,500",
+     "paint"
+    ],
+    [
+     "Ceiling finish",
+     "Bare RCC slab: ~12 mm gypsum plaster (punning) + full putty on ~160 sq ft, fan-hook anchor, surface conduit for the lights",
+     "₹7,500",
+     "ceiling"
     ],
     [
      "Ceiling fan",
      "1200 mm BLDC fan with remote, incl. fitting",
-     "₹4,000"
+     "₹4,000",
+     "fan"
     ],
     [
      "Lighting",
      "4 surface LED panels, 2 wall reading lights, electrician",
-     "₹5,500"
+     "₹5,500",
+     "lighting"
     ],
     [
      "AC provision",
      "16 A AC point + pipe sleeve for a split AC later (the AC itself is not included)",
-     "₹2,500"
+     "₹2,500",
+     "ac"
     ],
     [
      "Curtains",
      "Beige blackout eyelet curtains (balcony 4 + W1 2 panels) + 2 sheers, SS rods",
-     "₹6,500"
+     "₹6,500",
+     "curtains"
     ],
     [
      "Balcony mesh",
      "Retractable pleated mosquito mesh for the balcony door",
-     "₹6,500"
+     "₹6,500",
+     "mesh"
     ],
     [
      "Soft",
      "White cotton bedsheet + denim dohar, cushions, 2'×5' cotton runner",
-     "₹2,000"
+     "₹2,000",
+     "soft"
     ],
     [
      "Balcony",
      "Tulsi, money plant, snake plant in terracotta pots",
-     "₹1,200"
+     "₹1,200",
+     "balcony"
     ]
    ],
-   "note": "2026 metro prices, rounded; get 2–3 local quotes. Not included: the AC itself (roughly ₹35–45k for a 1.5 t inverter split), your monitor and laptop, re-flooring (about ₹30–40k if the floor is bare cement), new windows (the builder's are kept).",
-   "savings": "To bring it close to ₹1 lakh: build the loft later (−₹8k), only touch up the builder's paint if it's in good shape (−₹5.5k), skip the balcony mesh if the door already has one (−₹6.5k), use a dining chair for sitting mode for now (−₹4k), one wall light only (−₹700). That comes to about ₹1,04,200."
+   "note": "2026 metro prices, rounded; get 2–3 local quotes. Includes finishing the bare concrete ceiling. Not included: the AC itself (roughly ₹35–45k for a 1.5 t inverter split), your monitor and laptop, re-flooring (about ₹30–40k if the floor is bare cement), terrace waterproofing if the roof is above you.",
+   "savings": "Use ✏️ Customise → 'Within ₹1.3 lakh' (hinged wardrobe, loft later, plain mirror: ₹1,28,400) or 'Tightest' (also a fold-down desk: ₹1,13,900)."
   },
   "schedule": [
    {
@@ -983,12 +1023,20 @@
     "area": "Ceiling",
     "items": [
      [
+      "Now",
+      "Bare RCC slab (underside of the roof slab)"
+     ],
+     [
       "Finish",
-      "Existing plaster, repainted white; no false ceiling"
+      "~12 mm gypsum plaster (punning) → putty → primer → 2 coats ceiling white; no false ceiling"
+     ],
+     [
+      "Before plaster",
+      "Fan-hook anchor fastener; surface PVC conduits for light points"
      ],
      [
       "Fan",
-      "1200 mm BLDC fan, 1'4\" downrod, blades at 8'8\", over the foot of the bed"
+      "1200 mm BLDC fan, 1'4\" downrod, blades at 8'8\""
      ],
      [
       "Lights",
@@ -1004,16 +1052,16 @@
       "18 mm HDHMR / MR ply"
      ],
      [
-      "Shutters",
-      "Frosty-white 1 mm laminate, 3 hinged doors"
+      "Doors",
+      "2 sliding shutters, frosty-white 1 mm laminate, soft-close aluminium track"
      ],
      [
-      "Hardware",
-      "Basic soft-close hinges, 10\" SS bar handles"
+      "Mirror",
+      "5 mm full-length mirror on the front slider"
      ],
      [
       "Loft",
-      "Full-width loft to the ceiling"
+      "Full-width loft to the ceiling, 3 hinged shutters"
      ]
     ]
    },
@@ -1050,12 +1098,12 @@
       "2 floating shelves with a 20 W LED batten under the lower one"
      ],
      [
-      "Mirror",
-      "Full-length 5'6\"×1'3\" mirror on ply, beside the desk"
-     ],
-     [
       "Comfort",
       "Anti-fatigue mat; mesh chair tucks under the desk"
+     ],
+     [
+      "Pegboard",
+      "3'5\"×1'5\" pegboard with hooks beside the desk"
      ]
     ]
    },
@@ -1110,6 +1158,640 @@
      ]
     ]
    }
-  ]
+  ],
+  "edit": {
+   "ui": {
+    "btn": "✏️ Customise",
+    "title": "Customise Option E",
+    "intro": "Pick options: the 3D model, colours and budget update at once. Saved on this device; 'Copy link' shares your version.",
+    "total": "Your total",
+    "vs": "vs recommended",
+    "presets": "Quick picks",
+    "reset": "Reset",
+    "copy": "Copy link",
+    "copied": "Link copied",
+    "budgetOnly": "budget only",
+    "colours": "Colours (₹0)",
+    "choices": "Your choices"
+   },
+   "order": [
+    "wardrobe",
+    "loft",
+    "bed",
+    "mattress",
+    "desk",
+    "chair",
+    "deskwall",
+    "mirror",
+    "pegboard",
+    "bedside",
+    "paint",
+    "ceiling",
+    "fan",
+    "lighting",
+    "ac",
+    "curtains",
+    "mesh",
+    "window",
+    "soft",
+    "balcony"
+   ],
+   "groups": [
+    {
+     "key": "wardrobe",
+     "label": "Wardrobe doors",
+     "visual": true,
+     "default": "sliding",
+     "options": [
+      {
+       "id": "sliding",
+       "label": "Sliding (2 doors)",
+       "note": "No swing: the doors never block the room's entrance. You see half the wardrobe at a time; clean the track monthly.",
+       "rows": {
+        "wardrobe": [
+         "Wardrobe",
+         "2-door sliding, soft-close aluminium track, local carpenter, HDHMR / MR ply, 1 mm laminate, 5'3\" × 2' × 7'6\"",
+         "₹38,000"
+        ]
+       }
+      },
+      {
+       "id": "hinged",
+       "label": "Hinged (3 doors)",
+       "note": "Cheapest and longest-lasting; you see everything at once, but each door needs ~1'9\" of free space to swing.",
+       "rows": {
+        "wardrobe": [
+         "Wardrobe",
+         "3-door hinged, local carpenter, HDHMR / MR ply, 1 mm laminate, basic soft-close hinges, 5'3\" × 2' × 7'6\"",
+         "₹29,000"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "loft",
+     "label": "Loft above the wardrobe",
+     "visual": true,
+     "default": "now",
+     "options": [
+      {
+       "id": "now",
+       "label": "Build now",
+       "note": "Suitcases, quilts and winter clothes go up here.",
+       "rows": {
+        "loft": [
+         "Loft",
+         "Loft above the wardrobe up to the ceiling, 3 hinged shutters",
+         "₹8,000"
+        ]
+       }
+      },
+      {
+       "id": "later",
+       "label": "Later",
+       "note": "Saves ₹8,000 now; the carpenter can add it any time.",
+       "rows": {
+        "loft": null
+       }
+      }
+     ]
+    },
+    {
+     "key": "mirror",
+     "label": "Mirror",
+     "visual": true,
+     "default": "wardrobe",
+     "options": [
+      {
+       "id": "wardrobe",
+       "label": "On the wardrobe slider",
+       "note": "Dress where your clothes are; it reflects balcony light into the alcove. The wall beside the desk becomes a pegboard. Needs sliding doors.",
+       "rows": {
+        "mirror": [
+         "Mirror",
+         "Full-length mirror on the wardrobe's front sliding door",
+         "₹3,000"
+        ],
+        "pegboard": [
+         "Pegboard",
+         "Pegboard organiser beside the desk: bag, headphones, keys, cables",
+         "₹1,500"
+        ]
+       }
+      },
+      {
+       "id": "cabinet",
+       "label": "Mirror cabinet",
+       "note": "A 5\"-deep cabinet behind the mirror: skincare, jewellery hooks, hair dryer with its own socket, LED inside.",
+       "rows": {
+        "mirror": [
+         "Mirror",
+         "Tall mirror cabinet beside the desk: mirror door, 4 shelves, jewellery hooks, LED, socket inside",
+         "₹6,500"
+        ],
+        "pegboard": null
+       }
+      },
+      {
+       "id": "wall",
+       "label": "Plain wall mirror",
+       "note": "Cheapest: a full-length mirror fixed on the thick wall.",
+       "rows": {
+        "mirror": [
+         "Mirror",
+         "Plain full-length wall mirror on ply",
+         "₹2,000"
+        ],
+        "pegboard": null
+       }
+      }
+     ]
+    },
+    {
+     "key": "desk",
+     "label": "Desk",
+     "visual": true,
+     "default": "standing",
+     "options": [
+      {
+       "id": "standing",
+       "label": "Electric standing desk",
+       "note": "Sit or stand at the press of a button.",
+       "rows": {
+        "desk": [
+         "Standing desk",
+         "Single-motor electric sit-stand frame + 4'×2' top, 3 memory presets",
+         "₹18,000"
+        ],
+        "deskwall": [
+         "Desk wall",
+         "2 floating shelves, 20 W LED batten under the shelf, anti-fatigue mat",
+         "₹2,900"
+        ]
+       }
+      },
+      {
+       "id": "fold",
+       "label": "Fold-down wall desk",
+       "note": "Folds flat against the wall when not in use; sitting only. Saves ₹14,500.",
+       "rows": {
+        "desk": [
+         "Desk",
+         "Wall-mounted fold-down desk 3'6\"×1'6\" on folding steel brackets",
+         "₹4,500"
+        ],
+        "deskwall": [
+         "Desk wall",
+         "2 floating shelves, 20 W LED batten under the shelf",
+         "₹1,900"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "window",
+     "label": "Window W1",
+     "visual": true,
+     "default": "slider",
+     "options": [
+      {
+       "id": "slider",
+       "label": "Builder's slider (keep)",
+       "note": "Clean the tracks, oil the rollers. ₹0.",
+       "rows": {
+        "window": null
+       }
+      },
+      {
+       "id": "tt",
+       "label": "uPVC tilt-and-turn",
+       "note": "Tilts in at the top for rain-safe, secure ventilation; swings fully in for cleaning; seals out dust and noise far better. Pricey.",
+       "rows": {
+        "window": [
+         "Window W1",
+         "uPVC tilt-and-turn, 2 sashes, roller mosquito mesh, ~16 sq ft fitted",
+         "₹48,000"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "ceiling",
+     "label": "Ceiling (it's bare concrete now)",
+     "visual": false,
+     "default": "gypsum",
+     "options": [
+      {
+       "id": "gypsum",
+       "label": "Gypsum plaster + paint",
+       "note": "Recommended: a thin smooth coat hides the slab's form-marks and unevenness.",
+       "rows": {
+        "ceiling": [
+         "Ceiling finish",
+         "Bare RCC slab: ~12 mm gypsum plaster (punning) + full putty on ~160 sq ft, fan-hook anchor, surface conduit for the lights",
+         "₹7,500"
+        ]
+       }
+      },
+      {
+       "id": "putty",
+       "label": "Putty + paint only",
+       "note": "Only if the concrete is already smooth and level (check with a torch held flat against it).",
+       "rows": {
+        "ceiling": [
+         "Ceiling finish",
+         "Concrete already smooth: full putty on the slab + fan-hook anchor + surface conduit",
+         "₹3,000"
+        ]
+       }
+      },
+      {
+       "id": "pop",
+       "label": "Plaster + POP border with cove light",
+       "note": "A 1'6\" border hides the light wiring and gives a soft glow. Not shown in 3D.",
+       "rows": {
+        "ceiling": [
+         "Ceiling finish",
+         "Gypsum plaster + 1'6\" POP border around the room with a hidden LED cove + fan-hook anchor",
+         "₹16,000"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "walls",
+     "label": "Walls today",
+     "visual": false,
+     "default": "putty",
+     "options": [
+      {
+       "id": "putty",
+       "label": "Builder's putty done",
+       "note": "White, smooth walls: only patch cracks.",
+       "rows": {
+        "paint": [
+         "Paint",
+         "~560 sq ft walls: crack filling, primer on patches, 2 coats washable emulsion (Apcolite Premium class); ceiling paint; pale sage bed wall",
+         "₹8,500"
+        ]
+       }
+      },
+      {
+       "id": "bare",
+       "label": "Bare cement plaster",
+       "note": "Grey walls need 2 full coats of putty first (+₹5,000).",
+       "rows": {
+        "paint": [
+         "Paint",
+         "Bare cement-plaster walls: full 2-coat putty, primer, 2 coats washable emulsion; ceiling paint",
+         "₹13,500"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "balcony",
+     "label": "Balcony",
+     "visual": true,
+     "default": "plants",
+     "options": [
+      {
+       "id": "plants",
+       "label": "Plants only",
+       "note": "",
+       "rows": {
+        "balcony": [
+         "Balcony",
+         "Tulsi, money plant, snake plant in terracotta pots",
+         "₹1,200"
+        ]
+       }
+      },
+      {
+       "id": "set",
+       "label": "Plants + bistro set",
+       "note": "A folding table and 2 chairs for morning tea.",
+       "rows": {
+        "balcony": [
+         "Balcony",
+         "Plants in terracotta pots + folding bistro table and 2 chairs",
+         "₹6,200"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "colours": [
+    {
+     "key": "c_walls",
+     "mat": "Warm_Offwhite_Paint",
+     "label": "Wall colour",
+     "default": "offwhite",
+     "options": [
+      {
+       "id": "offwhite",
+       "label": "Warm off-white",
+       "rgb": [
+        0.94,
+        0.92,
+        0.87
+       ]
+      },
+      {
+       "id": "ivory",
+       "label": "Ivory",
+       "rgb": [
+        0.96,
+        0.93,
+        0.82
+       ]
+      },
+      {
+       "id": "grey",
+       "label": "Light grey",
+       "rgb": [
+        0.86,
+        0.86,
+        0.85
+       ]
+      },
+      {
+       "id": "peach",
+       "label": "Soft peach",
+       "rgb": [
+        0.96,
+        0.86,
+        0.78
+       ]
+      },
+      {
+       "id": "mint",
+       "label": "Pale mint",
+       "rgb": [
+        0.86,
+        0.92,
+        0.87
+       ]
+      }
+     ]
+    },
+    {
+     "key": "c_bedwall",
+     "mat": "Pale_Sage_Paint",
+     "label": "Bed wall colour",
+     "default": "sage",
+     "options": [
+      {
+       "id": "sage",
+       "label": "Pale sage",
+       "rgb": [
+        0.72,
+        0.77,
+        0.68
+       ]
+      },
+      {
+       "id": "terracotta",
+       "label": "Terracotta",
+       "rgb": [
+        0.72,
+        0.42,
+        0.3
+       ]
+      },
+      {
+       "id": "blue",
+       "label": "Powder blue",
+       "rgb": [
+        0.66,
+        0.76,
+        0.86
+       ]
+      },
+      {
+       "id": "rose",
+       "label": "Dusty rose",
+       "rgb": [
+        0.84,
+        0.66,
+        0.64
+       ]
+      },
+      {
+       "id": "beige",
+       "label": "Warm beige",
+       "rgb": [
+        0.86,
+        0.78,
+        0.66
+       ]
+      },
+      {
+       "id": "same",
+       "label": "Same as walls",
+       "rgb": null
+      }
+     ]
+    },
+    {
+     "key": "c_curtains",
+     "mat": "Beige_Blackout",
+     "label": "Curtains",
+     "default": "beige",
+     "options": [
+      {
+       "id": "beige",
+       "label": "Beige",
+       "rgb": [
+        0.78,
+        0.72,
+        0.62
+       ]
+      },
+      {
+       "id": "grey",
+       "label": "Grey",
+       "rgb": [
+        0.55,
+        0.56,
+        0.58
+       ]
+      },
+      {
+       "id": "olive",
+       "label": "Olive",
+       "rgb": [
+        0.45,
+        0.48,
+        0.3
+       ]
+      },
+      {
+       "id": "navy",
+       "label": "Navy",
+       "rgb": [
+        0.16,
+        0.2,
+        0.34
+       ]
+      },
+      {
+       "id": "mustard",
+       "label": "Mustard",
+       "rgb": [
+        0.8,
+        0.6,
+        0.2
+       ]
+      }
+     ]
+    },
+    {
+     "key": "c_wood",
+     "mat": "Light_Oak_Laminate",
+     "label": "Wood finish (bed, desk, shelves)",
+     "default": "oak",
+     "options": [
+      {
+       "id": "oak",
+       "label": "Light oak",
+       "rgb": [
+        0.74,
+        0.58,
+        0.42
+       ]
+      },
+      {
+       "id": "walnut",
+       "label": "Walnut",
+       "rgb": [
+        0.42,
+        0.28,
+        0.18
+       ]
+      },
+      {
+       "id": "teak",
+       "label": "Teak",
+       "rgb": [
+        0.6,
+        0.4,
+        0.22
+       ]
+      },
+      {
+       "id": "white",
+       "label": "White",
+       "rgb": [
+        0.93,
+        0.92,
+        0.9
+       ]
+      }
+     ]
+    },
+    {
+     "key": "c_wardrobe",
+     "mat": "Frosty_White_Laminate",
+     "label": "Wardrobe laminate",
+     "default": "white",
+     "options": [
+      {
+       "id": "white",
+       "label": "Frosty white",
+       "rgb": [
+        0.94,
+        0.93,
+        0.9
+       ]
+      },
+      {
+       "id": "grey",
+       "label": "Light grey",
+       "rgb": [
+        0.8,
+        0.8,
+        0.79
+       ]
+      },
+      {
+       "id": "sage",
+       "label": "Sage",
+       "rgb": [
+        0.62,
+        0.68,
+        0.58
+       ]
+      },
+      {
+       "id": "oak",
+       "label": "Oak",
+       "rgb": [
+        0.74,
+        0.58,
+        0.42
+       ]
+      },
+      {
+       "id": "blue",
+       "label": "Pastel blue",
+       "rgb": [
+        0.7,
+        0.78,
+        0.86
+       ]
+      }
+     ]
+    }
+   ],
+   "requires": [
+    {
+     "when": [
+      "mirror",
+      "wardrobe"
+     ],
+     "need": [
+      "wardrobe",
+      "sliding"
+     ],
+     "else": [
+      "mirror",
+      "cabinet"
+     ]
+    }
+   ],
+   "presets": [
+    {
+     "id": "recommended",
+     "label": "Recommended",
+     "choices": {}
+    },
+    {
+     "id": "budget",
+     "label": "Within ₹1.3 lakh",
+     "choices": {
+      "wardrobe": "hinged",
+      "loft": "later",
+      "mirror": "wall"
+     }
+    },
+    {
+     "id": "tight",
+     "label": "Tightest",
+     "choices": {
+      "wardrobe": "hinged",
+      "loft": "later",
+      "mirror": "wall",
+      "desk": "fold"
+     }
+    }
+   ]
+  }
  }
 }

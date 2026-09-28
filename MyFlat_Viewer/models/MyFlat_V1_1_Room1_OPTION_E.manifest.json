@@ -1,13 +1,13 @@
 {
  "model": "MyFlat_V1_1_Room1_OPTION_E.glb",
  "source_blend": "MyFlat_V1_1_Room1_Interiors.blend",
- "exported": "2026-09-28T13:56:30",
+ "exported": "2026-09-28T15:48:00",
  "blender": "5.2.2 LTS",
  "units": "metres",
  "up": "+Y",
  "north": "-Z",
  "east": "+X",
- "object_count": 237,
+ "object_count": 267,
  "counts": {
   "walls": 26,
   "floors": 14,
@@ -21,15 +21,16 @@
   "context": 1,
   "plan_reference": 1,
   "vents": 20,
-  "finishes": 1,
-  "furniture": 12,
+  "finishes": 3,
+  "furniture": 20,
   "soft_furnishing": 15,
   "lighting": 8,
-  "wardrobe": 14,
-  "decor": 7,
+  "wardrobe": 21,
+  "decor": 10,
   "fixtures": 7,
-  "fenestration": 24,
-  "plants": 6
+  "fenestration": 30,
+  "plants": 6,
+  "balcony": 4
  },
  "design_option": "OPTION_E",
  "replaced": [
@@ -1202,6 +1203,22 @@
    "parent": null
   },
   {
+   "name": "R1_OPE_WALL_PAINT",
+   "type": "MESH",
+   "category": "finishes",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_CEILING_PAINT",
+   "type": "MESH",
+   "category": "finishes",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
    "name": "R1_OPE_BED_HEADBOARD",
    "type": "MESH",
    "category": "furniture",
@@ -1426,6 +1443,62 @@
    "parent": null
   },
   {
+   "name": "R1_OPE_WARDROBE_SLIDE_TRACK_TOP",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_WARDROBE_SLIDE_TRACK_BOTTOM",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_WARDROBE_SLIDER_1",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_WARDROBE_SLIDER_1_PULL",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_WARDROBE_SLIDER_1_MIRROR",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_WARDROBE_SLIDER_2",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_WARDROBE_SLIDER_2_PULL",
+   "type": "MESH",
+   "category": "wardrobe",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
    "name": "R1_OPE_STANDING_DESK_TOP",
    "type": "MESH",
    "category": "furniture",
@@ -1525,6 +1598,94 @@
    "name": "R1_OPE_OFFICE_CHAIR",
    "type": "MESH",
    "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_FOLD_DESK_TOP",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_FOLD_DESK_BRACKETS",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_FOLD_LAPTOP",
+   "type": "MESH",
+   "category": "decor",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_MIRROR_CABINET_BODY",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_MIRROR_CABINET_SHELVES",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_MIRROR_CABINET_ITEMS",
+   "type": "MESH",
+   "category": "decor",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_MIRROR_CABINET_LED",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_MIRROR_CABINET_DOOR",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_MIRROR_CABINET_MIRROR",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_PEGBOARD",
+   "type": "MESH",
+   "category": "furniture",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_PEGBOARD_ITEMS",
+   "type": "MESH",
+   "category": "decor",
    "subtype": "",
    "status": "DESIGN",
    "parent": null
@@ -1941,6 +2102,86 @@
    "name": "R1_OPE_BALCONY_WALL_LIGHT",
    "type": "MESH",
    "category": "lighting",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_W1TT_FRAME",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_W1TT_L_SASH",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_W1TT_L_GLASS",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_W1TT_R_SASH",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_W1TT_R_GLASS",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_W1TT_ROLLER_MESH",
+   "type": "MESH",
+   "category": "fenestration",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_BALCONY_BISTRO_TABLE",
+   "type": "MESH",
+   "category": "balcony",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_BALCONY_BISTRO_TABLE_TOP",
+   "type": "MESH",
+   "category": "balcony",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_BALCONY_BISTRO_CHAIR_1",
+   "type": "MESH",
+   "category": "balcony",
+   "subtype": "",
+   "status": "DESIGN",
+   "parent": null
+  },
+  {
+   "name": "R1_OPE_BALCONY_BISTRO_CHAIR_2",
+   "type": "MESH",
+   "category": "balcony",
    "subtype": "",
    "status": "DESIGN",
    "parent": null
