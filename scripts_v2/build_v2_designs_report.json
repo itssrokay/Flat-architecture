@@ -1,0 +1,61 @@
+{
+ "room1": [
+  [
+   "13_ROOM1_DEFAULT",
+   105,
+   "DEFAULT",
+   "WINDOW_W1_FRAME,WINDOW_W1_GLASS"
+  ],
+  [
+   "14_ROOM1_OPTION_A",
+   75,
+   "OPTION_A",
+   "WINDOW_W1_FRAME,WINDOW_W1_GLASS"
+  ],
+  [
+   "15_ROOM1_OPTION_B",
+   71,
+   "OPTION_B",
+   "WINDOW_W1_FRAME,WINDOW_W1_GLASS"
+  ],
+  [
+   "16_ROOM1_OPTION_C",
+   102,
+   "OPTION_C",
+   "WINDOW_W1_FRAME,WINDOW_W1_GLASS"
+  ],
+  [
+   "17_ROOM1_OPTION_D",
+   94,
+   "OPTION_D",
+   "WINDOW_W1_FRAME,WINDOW_W1_GLASS"
+  ],
+  [
+   "18_ROOM1_OPTION_E",
+   124,
+   "OPTION_E",
+   "WINDOW_W1_FRAME,WINDOW_W1_GLASS"
+  ]
+ ],
+ "ensuite": {
+  "objects": 42,
+  "notes": [
+   "FLOOR_R2 trimmed",
+   "W4 frosted"
+  ]
+ },
+ "hall": {
+  "door": "DOOR_MAIN_LEAF",
+  "geyser": "R2B_GEYSER",
+  "HALL_REC": 80,
+  "HALL_BUDGET": 45,
+  "HALL_LONG": 79,
+  "HALL_MARBLE": 79,
+  "HALL_PANEL": 92,
+  "HALL_BEST": 92
+ },
+ "room2_bedroom": {
+  "objects": 38
+ },
+ "n_obj": 1330
+}

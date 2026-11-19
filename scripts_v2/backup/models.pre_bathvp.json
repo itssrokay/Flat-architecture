@@ -1,0 +1,2063 @@
+{
+ "default": "MyFlat_V2_Hall_BestOfBoth.glb",
+ "designNotes": "room1_designs.json",
+ "models": [
+  {
+   "file": "MyFlat_V2_Hall_BestOfBoth.glb",
+   "label": "V2 · Best of both: 2×4 / 2×2 matt GVT, flat laminate TV wall, gypsum border",
+   "short": "★ Best of both",
+   "group": "version",
+   "design": "HALL_BEST",
+   "startView": "Hall:0",
+   "manifest": "MyFlat_V2_Hall_BestOfBoth.manifest.json",
+   "viewpoints": {
+    "Hall": [
+     {
+      "name": "TV wall (from the sofa)",
+      "pos": [
+       4.328,
+       1.5,
+       9.174
+      ],
+      "target": [
+       2.012,
+       1.25,
+       9.174
+      ]
+     },
+     {
+      "name": "Main door (just inside)",
+      "pos": [
+       2.53,
+       1.6,
+       6.962
+      ],
+      "target": [
+       5.182,
+       1.2,
+       9.449
+      ]
+     },
+     {
+      "name": "Whole hall (from the south-east corner)",
+      "pos": [
+       6.706,
+       1.65,
+       13.411
+      ],
+      "target": [
+       3.048,
+       0.9,
+       7.315
+      ]
+     },
+     {
+      "name": "Dining & window",
+      "pos": [
+       5.121,
+       1.6,
+       10.82
+      ],
+      "target": [
+       3.505,
+       0.9,
+       12.802
+      ]
+     },
+     {
+      "name": "Towards the arch",
+      "pos": [
+       3.658,
+       1.6,
+       8.23
+      ],
+      "target": [
+       4.816,
+       1.4,
+       3.962
+      ]
+     }
+    ],
+    "Room 2": [
+     {
+      "name": "Bed & wardrobe (from the desk)",
+      "pos": [
+       10.912,
+       1.6,
+       6.096
+      ],
+      "target": [
+       9.906,
+       0.9,
+       2.591
+      ]
+     },
+     {
+      "name": "Bedroom towards the bathroom door",
+      "pos": [
+       8.961,
+       1.6,
+       6.888
+      ],
+      "target": [
+       9.449,
+       1.2,
+       2.042
+      ]
+     },
+     {
+      "name": "Desk & window",
+      "pos": [
+       9.601,
+       1.6,
+       3.658
+      ],
+      "target": [
+       11.735,
+       1.0,
+       5.334
+      ]
+     }
+    ],
+    "Room 2 Bath": [
+     {
+      "name": "Tub (from the door)",
+      "pos": [
+       8.931,
+       1.6,
+       1.676
+      ],
+      "target": [
+       12.04,
+       0.8,
+       0.366
+      ]
+     },
+     {
+      "name": "Vanity & door (from the tub)",
+      "pos": [
+       11.43,
+       1.6,
+       1.097
+      ],
+      "target": [
+       9.144,
+       1.0,
+       1.829
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "MyFlat_V2_Hall_Recommended.glb",
+   "label": "V2 · Recommended: matt tiles + WPC TV wall",
+   "short": "Recommended",
+   "group": "version",
+   "design": "HALL_REC",
+   "startView": "Hall:0",
+   "manifest": "MyFlat_V2_Hall_Recommended.manifest.json",
+   "viewpoints": {
+    "Hall": [
+     {
+      "name": "TV wall (from the sofa)",
+      "pos": [
+       4.328,
+       1.5,
+       9.174
+      ],
+      "target": [
+       2.012,
+       1.25,
+       9.174
+      ]
+     },
+     {
+      "name": "Main door (just inside)",
+      "pos": [
+       2.53,
+       1.6,
+       6.962
+      ],
+      "target": [
+       5.182,
+       1.2,
+       9.449
+      ]
+     },
+     {
+      "name": "Whole hall (from the south-east corner)",
+      "pos": [
+       6.706,
+       1.65,
+       13.411
+      ],
+      "target": [
+       3.048,
+       0.9,
+       7.315
+      ]
+     },
+     {
+      "name": "Dining & window",
+      "pos": [
+       5.121,
+       1.6,
+       10.82
+      ],
+      "target": [
+       3.505,
+       0.9,
+       12.802
+      ]
+     },
+     {
+      "name": "Towards the arch",
+      "pos": [
+       3.658,
+       1.6,
+       8.23
+      ],
+      "target": [
+       4.816,
+       1.4,
+       3.962
+      ]
+     }
+    ],
+    "Room 2": [
+     {
+      "name": "Bed & wardrobe (from the desk)",
+      "pos": [
+       10.912,
+       1.6,
+       6.096
+      ],
+      "target": [
+       9.906,
+       0.9,
+       2.591
+      ]
+     },
+     {
+      "name": "Bedroom towards the bathroom door",
+      "pos": [
+       8.961,
+       1.6,
+       6.888
+      ],
+      "target": [
+       9.449,
+       1.2,
+       2.042
+      ]
+     },
+     {
+      "name": "Desk & window",
+      "pos": [
+       9.601,
+       1.6,
+       3.658
+      ],
+      "target": [
+       11.735,
+       1.0,
+       5.334
+      ]
+     }
+    ],
+    "Room 2 Bath": [
+     {
+      "name": "Tub (from the door)",
+      "pos": [
+       8.931,
+       1.6,
+       1.676
+      ],
+      "target": [
+       12.04,
+       0.8,
+       0.366
+      ]
+     },
+     {
+      "name": "Vanity & door (from the tub)",
+      "pos": [
+       11.43,
+       1.6,
+       1.097
+      ],
+      "target": [
+       9.144,
+       1.0,
+       1.829
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "MyFlat_V2_Hall_Budget.glb",
+   "label": "V2 · Budget plain: double-charge tiles + plain paint",
+   "short": "Budget plain",
+   "group": "version",
+   "design": "HALL_BUDGET",
+   "startView": "Hall:0",
+   "manifest": "MyFlat_V2_Hall_Budget.manifest.json",
+   "viewpoints": {
+    "Hall": [
+     {
+      "name": "TV wall (from the sofa)",
+      "pos": [
+       4.328,
+       1.5,
+       9.174
+      ],
+      "target": [
+       2.012,
+       1.25,
+       9.174
+      ]
+     },
+     {
+      "name": "Main door (just inside)",
+      "pos": [
+       2.53,
+       1.6,
+       6.962
+      ],
+      "target": [
+       5.182,
+       1.2,
+       9.449
+      ]
+     },
+     {
+      "name": "Whole hall (from the south-east corner)",
+      "pos": [
+       6.706,
+       1.65,
+       13.411
+      ],
+      "target": [
+       3.048,
+       0.9,
+       7.315
+      ]
+     },
+     {
+      "name": "Dining & window",
+      "pos": [
+       5.121,
+       1.6,
+       10.82
+      ],
+      "target": [
+       3.505,
+       0.9,
+       12.802
+      ]
+     },
+     {
+      "name": "Towards the arch",
+      "pos": [
+       3.658,
+       1.6,
+       8.23
+      ],
+      "target": [
+       4.816,
+       1.4,
+       3.962
+      ]
+     }
+    ],
+    "Room 2": [
+     {
+      "name": "Bed & wardrobe (from the desk)",
+      "pos": [
+       10.912,
+       1.6,
+       6.096
+      ],
+      "target": [
+       9.906,
+       0.9,
+       2.591
+      ]
+     },
+     {
+      "name": "Bedroom towards the bathroom door",
+      "pos": [
+       8.961,
+       1.6,
+       6.888
+      ],
+      "target": [
+       9.449,
+       1.2,
+       2.042
+      ]
+     },
+     {
+      "name": "Desk & window",
+      "pos": [
+       9.601,
+       1.6,
+       3.658
+      ],
+      "target": [
+       11.735,
+       1.0,
+       5.334
+      ]
+     }
+    ],
+    "Room 2 Bath": [
+     {
+      "name": "Tub (from the door)",
+      "pos": [
+       8.931,
+       1.6,
+       1.676
+      ],
+      "target": [
+       12.04,
+       0.8,
+       0.366
+      ]
+     },
+     {
+      "name": "Vanity & door (from the tub)",
+      "pos": [
+       11.43,
+       1.6,
+       1.097
+      ],
+      "target": [
+       9.144,
+       1.0,
+       1.829
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "MyFlat_V2_Hall_LongLasting.glb",
+   "label": "V2 · Long-lasting: full-body tiles + porcelain slab TV wall",
+   "short": "Long-lasting",
+   "group": "version",
+   "design": "HALL_LONG",
+   "startView": "Hall:0",
+   "manifest": "MyFlat_V2_Hall_LongLasting.manifest.json",
+   "viewpoints": {
+    "Hall": [
+     {
+      "name": "TV wall (from the sofa)",
+      "pos": [
+       4.328,
+       1.5,
+       9.174
+      ],
+      "target": [
+       2.012,
+       1.25,
+       9.174
+      ]
+     },
+     {
+      "name": "Main door (just inside)",
+      "pos": [
+       2.53,
+       1.6,
+       6.962
+      ],
+      "target": [
+       5.182,
+       1.2,
+       9.449
+      ]
+     },
+     {
+      "name": "Whole hall (from the south-east corner)",
+      "pos": [
+       6.706,
+       1.65,
+       13.411
+      ],
+      "target": [
+       3.048,
+       0.9,
+       7.315
+      ]
+     },
+     {
+      "name": "Dining & window",
+      "pos": [
+       5.121,
+       1.6,
+       10.82
+      ],
+      "target": [
+       3.505,
+       0.9,
+       12.802
+      ]
+     },
+     {
+      "name": "Towards the arch",
+      "pos": [
+       3.658,
+       1.6,
+       8.23
+      ],
+      "target": [
+       4.816,
+       1.4,
+       3.962
+      ]
+     }
+    ],
+    "Room 2": [
+     {
+      "name": "Bed & wardrobe (from the desk)",
+      "pos": [
+       10.912,
+       1.6,
+       6.096
+      ],
+      "target": [
+       9.906,
+       0.9,
+       2.591
+      ]
+     },
+     {
+      "name": "Bedroom towards the bathroom door",
+      "pos": [
+       8.961,
+       1.6,
+       6.888
+      ],
+      "target": [
+       9.449,
+       1.2,
+       2.042
+      ]
+     },
+     {
+      "name": "Desk & window",
+      "pos": [
+       9.601,
+       1.6,
+       3.658
+      ],
+      "target": [
+       11.735,
+       1.0,
+       5.334
+      ]
+     }
+    ],
+    "Room 2 Bath": [
+     {
+      "name": "Tub (from the door)",
+      "pos": [
+       8.931,
+       1.6,
+       1.676
+      ],
+      "target": [
+       12.04,
+       0.8,
+       0.366
+      ]
+     },
+     {
+      "name": "Vanity & door (from the tub)",
+      "pos": [
+       11.43,
+       1.6,
+       1.097
+      ],
+      "target": [
+       9.144,
+       1.0,
+       1.829
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "MyFlat_V2_Hall_Marble.glb",
+   "label": "V2 · Marble classic: marble hall + limewash TV wall",
+   "short": "Marble classic",
+   "group": "version",
+   "design": "HALL_MARBLE",
+   "startView": "Hall:0",
+   "manifest": "MyFlat_V2_Hall_Marble.manifest.json",
+   "viewpoints": {
+    "Hall": [
+     {
+      "name": "TV wall (from the sofa)",
+      "pos": [
+       4.328,
+       1.5,
+       9.174
+      ],
+      "target": [
+       2.012,
+       1.25,
+       9.174
+      ]
+     },
+     {
+      "name": "Main door (just inside)",
+      "pos": [
+       2.53,
+       1.6,
+       6.962
+      ],
+      "target": [
+       5.182,
+       1.2,
+       9.449
+      ]
+     },
+     {
+      "name": "Whole hall (from the south-east corner)",
+      "pos": [
+       6.706,
+       1.65,
+       13.411
+      ],
+      "target": [
+       3.048,
+       0.9,
+       7.315
+      ]
+     },
+     {
+      "name": "Dining & window",
+      "pos": [
+       5.121,
+       1.6,
+       10.82
+      ],
+      "target": [
+       3.505,
+       0.9,
+       12.802
+      ]
+     },
+     {
+      "name": "Towards the arch",
+      "pos": [
+       3.658,
+       1.6,
+       8.23
+      ],
+      "target": [
+       4.816,
+       1.4,
+       3.962
+      ]
+     }
+    ],
+    "Room 2": [
+     {
+      "name": "Bed & wardrobe (from the desk)",
+      "pos": [
+       10.912,
+       1.6,
+       6.096
+      ],
+      "target": [
+       9.906,
+       0.9,
+       2.591
+      ]
+     },
+     {
+      "name": "Bedroom towards the bathroom door",
+      "pos": [
+       8.961,
+       1.6,
+       6.888
+      ],
+      "target": [
+       9.449,
+       1.2,
+       2.042
+      ]
+     },
+     {
+      "name": "Desk & window",
+      "pos": [
+       9.601,
+       1.6,
+       3.658
+      ],
+      "target": [
+       11.735,
+       1.0,
+       5.334
+      ]
+     }
+    ],
+    "Room 2 Bath": [
+     {
+      "name": "Tub (from the door)",
+      "pos": [
+       8.931,
+       1.6,
+       1.676
+      ],
+      "target": [
+       12.04,
+       0.8,
+       0.366
+      ]
+     },
+     {
+      "name": "Vanity & door (from the tub)",
+      "pos": [
+       11.43,
+       1.6,
+       1.097
+      ],
+      "target": [
+       9.144,
+       1.0,
+       1.829
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "MyFlat_V2_Hall_Panelled.glb",
+   "label": "V2 · Panelled hall: WPC feature wall, half-wall panels, wrapped pillars",
+   "short": "Panelled hall",
+   "group": "version",
+   "design": "HALL_PANEL",
+   "startView": "Hall:0",
+   "manifest": "MyFlat_V2_Hall_Panelled.manifest.json",
+   "viewpoints": {
+    "Hall": [
+     {
+      "name": "TV wall (from the sofa)",
+      "pos": [
+       4.328,
+       1.5,
+       9.174
+      ],
+      "target": [
+       2.012,
+       1.25,
+       9.174
+      ]
+     },
+     {
+      "name": "Main door (just inside)",
+      "pos": [
+       2.53,
+       1.6,
+       6.962
+      ],
+      "target": [
+       5.182,
+       1.2,
+       9.449
+      ]
+     },
+     {
+      "name": "Whole hall (from the south-east corner)",
+      "pos": [
+       6.706,
+       1.65,
+       13.411
+      ],
+      "target": [
+       3.048,
+       0.9,
+       7.315
+      ]
+     },
+     {
+      "name": "Dining & window",
+      "pos": [
+       5.121,
+       1.6,
+       10.82
+      ],
+      "target": [
+       3.505,
+       0.9,
+       12.802
+      ]
+     },
+     {
+      "name": "Towards the arch",
+      "pos": [
+       3.658,
+       1.6,
+       8.23
+      ],
+      "target": [
+       4.816,
+       1.4,
+       3.962
+      ]
+     }
+    ],
+    "Room 2": [
+     {
+      "name": "Bed & wardrobe (from the desk)",
+      "pos": [
+       10.912,
+       1.6,
+       6.096
+      ],
+      "target": [
+       9.906,
+       0.9,
+       2.591
+      ]
+     },
+     {
+      "name": "Bedroom towards the bathroom door",
+      "pos": [
+       8.961,
+       1.6,
+       6.888
+      ],
+      "target": [
+       9.449,
+       1.2,
+       2.042
+      ]
+     },
+     {
+      "name": "Desk & window",
+      "pos": [
+       9.601,
+       1.6,
+       3.658
+      ],
+      "target": [
+       11.735,
+       1.0,
+       5.334
+      ]
+     }
+    ],
+    "Room 2 Bath": [
+     {
+      "name": "Tub (from the door)",
+      "pos": [
+       8.931,
+       1.6,
+       1.676
+      ],
+      "target": [
+       12.04,
+       0.8,
+       0.366
+      ]
+     },
+     {
+      "name": "Vanity & door (from the tub)",
+      "pos": [
+       11.43,
+       1.6,
+       1.097
+      ],
+      "target": [
+       9.144,
+       1.0,
+       1.829
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "MyFlat_V2_Room2_Ensuite.glb",
+   "label": "V2 · Room 2 en-suite bath with tub (behind the cross wall)",
+   "short": "Room 2 bath",
+   "group": "version",
+   "design": "ROOM2_ENSUITE",
+   "startView": "Room 2 Bath:0",
+   "manifest": "MyFlat_V2_Room2_Ensuite.manifest.json",
+   "viewpoints": {
+    "Hall": [
+     {
+      "name": "TV wall (from the sofa)",
+      "pos": [
+       4.328,
+       1.5,
+       9.174
+      ],
+      "target": [
+       2.012,
+       1.25,
+       9.174
+      ]
+     },
+     {
+      "name": "Main door (just inside)",
+      "pos": [
+       2.53,
+       1.6,
+       6.962
+      ],
+      "target": [
+       5.182,
+       1.2,
+       9.449
+      ]
+     },
+     {
+      "name": "Whole hall (from the south-east corner)",
+      "pos": [
+       6.706,
+       1.65,
+       13.411
+      ],
+      "target": [
+       3.048,
+       0.9,
+       7.315
+      ]
+     },
+     {
+      "name": "Dining & window",
+      "pos": [
+       5.121,
+       1.6,
+       10.82
+      ],
+      "target": [
+       3.505,
+       0.9,
+       12.802
+      ]
+     },
+     {
+      "name": "Towards the arch",
+      "pos": [
+       3.658,
+       1.6,
+       8.23
+      ],
+      "target": [
+       4.816,
+       1.4,
+       3.962
+      ]
+     }
+    ],
+    "Room 2": [
+     {
+      "name": "Bed & wardrobe (from the desk)",
+      "pos": [
+       10.912,
+       1.6,
+       6.096
+      ],
+      "target": [
+       9.906,
+       0.9,
+       2.591
+      ]
+     },
+     {
+      "name": "Bedroom towards the bathroom door",
+      "pos": [
+       8.961,
+       1.6,
+       6.888
+      ],
+      "target": [
+       9.449,
+       1.2,
+       2.042
+      ]
+     },
+     {
+      "name": "Desk & window",
+      "pos": [
+       9.601,
+       1.6,
+       3.658
+      ],
+      "target": [
+       11.735,
+       1.0,
+       5.334
+      ]
+     }
+    ],
+    "Room 2 Bath": [
+     {
+      "name": "Tub (from the door)",
+      "pos": [
+       8.931,
+       1.6,
+       1.676
+      ],
+      "target": [
+       12.04,
+       0.8,
+       0.366
+      ]
+     },
+     {
+      "name": "Vanity & door (from the tub)",
+      "pos": [
+       11.43,
+       1.6,
+       1.097
+      ],
+      "target": [
+       9.144,
+       1.0,
+       1.829
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "MyFlat_V2_Room1_DEFAULT.glb",
+   "label": "Room 1 · DEFAULT (Warm Contemporary)",
+   "short": "DEFAULT",
+   "group": "interior",
+   "design": "DEFAULT",
+   "startView": "Room 1:0",
+   "manifest": "MyFlat_V2_Room1_DEFAULT.manifest.json",
+   "viewpoints": {
+    "Hall": [
+     {
+      "name": "TV wall (from the sofa)",
+      "pos": [
+       4.328,
+       1.5,
+       9.174
+      ],
+      "target": [
+       2.012,
+       1.25,
+       9.174
+      ]
+     },
+     {
+      "name": "Main door (just inside)",
+      "pos": [
+       2.53,
+       1.6,
+       6.962
+      ],
+      "target": [
+       5.182,
+       1.2,
+       9.449
+      ]
+     },
+     {
+      "name": "Whole hall (from the south-east corner)",
+      "pos": [
+       6.706,
+       1.65,
+       13.411
+      ],
+      "target": [
+       3.048,
+       0.9,
+       7.315
+      ]
+     },
+     {
+      "name": "Dining & window",
+      "pos": [
+       5.121,
+       1.6,
+       10.82
+      ],
+      "target": [
+       3.505,
+       0.9,
+       12.802
+      ]
+     },
+     {
+      "name": "Towards the arch",
+      "pos": [
+       3.658,
+       1.6,
+       8.23
+      ],
+      "target": [
+       4.816,
+       1.4,
+       3.962
+      ]
+     }
+    ],
+    "Room 2": [
+     {
+      "name": "Bed & wardrobe (from the desk)",
+      "pos": [
+       10.912,
+       1.6,
+       6.096
+      ],
+      "target": [
+       9.906,
+       0.9,
+       2.591
+      ]
+     },
+     {
+      "name": "Bedroom towards the bathroom door",
+      "pos": [
+       8.961,
+       1.6,
+       6.888
+      ],
+      "target": [
+       9.449,
+       1.2,
+       2.042
+      ]
+     },
+     {
+      "name": "Desk & window",
+      "pos": [
+       9.601,
+       1.6,
+       3.658
+      ],
+      "target": [
+       11.735,
+       1.0,
+       5.334
+      ]
+     }
+    ],
+    "Room 2 Bath": [
+     {
+      "name": "Tub (from the door)",
+      "pos": [
+       8.931,
+       1.6,
+       1.676
+      ],
+      "target": [
+       12.04,
+       0.8,
+       0.366
+      ]
+     },
+     {
+      "name": "Vanity & door (from the tub)",
+      "pos": [
+       11.43,
+       1.6,
+       1.097
+      ],
+      "target": [
+       9.144,
+       1.0,
+       1.829
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "MyFlat_V2_Room1_OPTION_A.glb",
+   "label": "Room 1 · Option A (Japandi Calm)",
+   "short": "A",
+   "group": "interior",
+   "design": "OPTION_A",
+   "startView": "Room 1:0",
+   "manifest": "MyFlat_V2_Room1_OPTION_A.manifest.json",
+   "viewpoints": {
+    "Hall": [
+     {
+      "name": "TV wall (from the sofa)",
+      "pos": [
+       4.328,
+       1.5,
+       9.174
+      ],
+      "target": [
+       2.012,
+       1.25,
+       9.174
+      ]
+     },
+     {
+      "name": "Main door (just inside)",
+      "pos": [
+       2.53,
+       1.6,
+       6.962
+      ],
+      "target": [
+       5.182,
+       1.2,
+       9.449
+      ]
+     },
+     {
+      "name": "Whole hall (from the south-east corner)",
+      "pos": [
+       6.706,
+       1.65,
+       13.411
+      ],
+      "target": [
+       3.048,
+       0.9,
+       7.315
+      ]
+     },
+     {
+      "name": "Dining & window",
+      "pos": [
+       5.121,
+       1.6,
+       10.82
+      ],
+      "target": [
+       3.505,
+       0.9,
+       12.802
+      ]
+     },
+     {
+      "name": "Towards the arch",
+      "pos": [
+       3.658,
+       1.6,
+       8.23
+      ],
+      "target": [
+       4.816,
+       1.4,
+       3.962
+      ]
+     }
+    ],
+    "Room 2": [
+     {
+      "name": "Bed & wardrobe (from the desk)",
+      "pos": [
+       10.912,
+       1.6,
+       6.096
+      ],
+      "target": [
+       9.906,
+       0.9,
+       2.591
+      ]
+     },
+     {
+      "name": "Bedroom towards the bathroom door",
+      "pos": [
+       8.961,
+       1.6,
+       6.888
+      ],
+      "target": [
+       9.449,
+       1.2,
+       2.042
+      ]
+     },
+     {
+      "name": "Desk & window",
+      "pos": [
+       9.601,
+       1.6,
+       3.658
+      ],
+      "target": [
+       11.735,
+       1.0,
+       5.334
+      ]
+     }
+    ],
+    "Room 2 Bath": [
+     {
+      "name": "Tub (from the door)",
+      "pos": [
+       8.931,
+       1.6,
+       1.676
+      ],
+      "target": [
+       12.04,
+       0.8,
+       0.366
+      ]
+     },
+     {
+      "name": "Vanity & door (from the tub)",
+      "pos": [
+       11.43,
+       1.6,
+       1.097
+      ],
+      "target": [
+       9.144,
+       1.0,
+       1.829
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "MyFlat_V2_Room1_OPTION_B.glb",
+   "label": "Room 1 · Option B (Minimal Modern)",
+   "short": "B",
+   "group": "interior",
+   "design": "OPTION_B",
+   "startView": "Room 1:0",
+   "manifest": "MyFlat_V2_Room1_OPTION_B.manifest.json",
+   "viewpoints": {
+    "Hall": [
+     {
+      "name": "TV wall (from the sofa)",
+      "pos": [
+       4.328,
+       1.5,
+       9.174
+      ],
+      "target": [
+       2.012,
+       1.25,
+       9.174
+      ]
+     },
+     {
+      "name": "Main door (just inside)",
+      "pos": [
+       2.53,
+       1.6,
+       6.962
+      ],
+      "target": [
+       5.182,
+       1.2,
+       9.449
+      ]
+     },
+     {
+      "name": "Whole hall (from the south-east corner)",
+      "pos": [
+       6.706,
+       1.65,
+       13.411
+      ],
+      "target": [
+       3.048,
+       0.9,
+       7.315
+      ]
+     },
+     {
+      "name": "Dining & window",
+      "pos": [
+       5.121,
+       1.6,
+       10.82
+      ],
+      "target": [
+       3.505,
+       0.9,
+       12.802
+      ]
+     },
+     {
+      "name": "Towards the arch",
+      "pos": [
+       3.658,
+       1.6,
+       8.23
+      ],
+      "target": [
+       4.816,
+       1.4,
+       3.962
+      ]
+     }
+    ],
+    "Room 2": [
+     {
+      "name": "Bed & wardrobe (from the desk)",
+      "pos": [
+       10.912,
+       1.6,
+       6.096
+      ],
+      "target": [
+       9.906,
+       0.9,
+       2.591
+      ]
+     },
+     {
+      "name": "Bedroom towards the bathroom door",
+      "pos": [
+       8.961,
+       1.6,
+       6.888
+      ],
+      "target": [
+       9.449,
+       1.2,
+       2.042
+      ]
+     },
+     {
+      "name": "Desk & window",
+      "pos": [
+       9.601,
+       1.6,
+       3.658
+      ],
+      "target": [
+       11.735,
+       1.0,
+       5.334
+      ]
+     }
+    ],
+    "Room 2 Bath": [
+     {
+      "name": "Tub (from the door)",
+      "pos": [
+       8.931,
+       1.6,
+       1.676
+      ],
+      "target": [
+       12.04,
+       0.8,
+       0.366
+      ]
+     },
+     {
+      "name": "Vanity & door (from the tub)",
+      "pos": [
+       11.43,
+       1.6,
+       1.097
+      ],
+      "target": [
+       9.144,
+       1.0,
+       1.829
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "MyFlat_V2_Room1_OPTION_C.glb",
+   "label": "Room 1 · Option C (Indian Modern)",
+   "short": "C",
+   "group": "interior",
+   "design": "OPTION_C",
+   "startView": "Room 1:0",
+   "manifest": "MyFlat_V2_Room1_OPTION_C.manifest.json",
+   "viewpoints": {
+    "Hall": [
+     {
+      "name": "TV wall (from the sofa)",
+      "pos": [
+       4.328,
+       1.5,
+       9.174
+      ],
+      "target": [
+       2.012,
+       1.25,
+       9.174
+      ]
+     },
+     {
+      "name": "Main door (just inside)",
+      "pos": [
+       2.53,
+       1.6,
+       6.962
+      ],
+      "target": [
+       5.182,
+       1.2,
+       9.449
+      ]
+     },
+     {
+      "name": "Whole hall (from the south-east corner)",
+      "pos": [
+       6.706,
+       1.65,
+       13.411
+      ],
+      "target": [
+       3.048,
+       0.9,
+       7.315
+      ]
+     },
+     {
+      "name": "Dining & window",
+      "pos": [
+       5.121,
+       1.6,
+       10.82
+      ],
+      "target": [
+       3.505,
+       0.9,
+       12.802
+      ]
+     },
+     {
+      "name": "Towards the arch",
+      "pos": [
+       3.658,
+       1.6,
+       8.23
+      ],
+      "target": [
+       4.816,
+       1.4,
+       3.962
+      ]
+     }
+    ],
+    "Room 2": [
+     {
+      "name": "Bed & wardrobe (from the desk)",
+      "pos": [
+       10.912,
+       1.6,
+       6.096
+      ],
+      "target": [
+       9.906,
+       0.9,
+       2.591
+      ]
+     },
+     {
+      "name": "Bedroom towards the bathroom door",
+      "pos": [
+       8.961,
+       1.6,
+       6.888
+      ],
+      "target": [
+       9.449,
+       1.2,
+       2.042
+      ]
+     },
+     {
+      "name": "Desk & window",
+      "pos": [
+       9.601,
+       1.6,
+       3.658
+      ],
+      "target": [
+       11.735,
+       1.0,
+       5.334
+      ]
+     }
+    ],
+    "Room 2 Bath": [
+     {
+      "name": "Tub (from the door)",
+      "pos": [
+       8.931,
+       1.6,
+       1.676
+      ],
+      "target": [
+       12.04,
+       0.8,
+       0.366
+      ]
+     },
+     {
+      "name": "Vanity & door (from the tub)",
+      "pos": [
+       11.43,
+       1.6,
+       1.097
+      ],
+      "target": [
+       9.144,
+       1.0,
+       1.829
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "MyFlat_V2_Room1_OPTION_D.glb",
+   "label": "Room 1 · Option D (Smart Budget)",
+   "short": "D",
+   "group": "interior",
+   "design": "OPTION_D",
+   "startView": "Room 1:0",
+   "manifest": "MyFlat_V2_Room1_OPTION_D.manifest.json",
+   "viewpoints": {
+    "Hall": [
+     {
+      "name": "TV wall (from the sofa)",
+      "pos": [
+       4.328,
+       1.5,
+       9.174
+      ],
+      "target": [
+       2.012,
+       1.25,
+       9.174
+      ]
+     },
+     {
+      "name": "Main door (just inside)",
+      "pos": [
+       2.53,
+       1.6,
+       6.962
+      ],
+      "target": [
+       5.182,
+       1.2,
+       9.449
+      ]
+     },
+     {
+      "name": "Whole hall (from the south-east corner)",
+      "pos": [
+       6.706,
+       1.65,
+       13.411
+      ],
+      "target": [
+       3.048,
+       0.9,
+       7.315
+      ]
+     },
+     {
+      "name": "Dining & window",
+      "pos": [
+       5.121,
+       1.6,
+       10.82
+      ],
+      "target": [
+       3.505,
+       0.9,
+       12.802
+      ]
+     },
+     {
+      "name": "Towards the arch",
+      "pos": [
+       3.658,
+       1.6,
+       8.23
+      ],
+      "target": [
+       4.816,
+       1.4,
+       3.962
+      ]
+     }
+    ],
+    "Room 2": [
+     {
+      "name": "Bed & wardrobe (from the desk)",
+      "pos": [
+       10.912,
+       1.6,
+       6.096
+      ],
+      "target": [
+       9.906,
+       0.9,
+       2.591
+      ]
+     },
+     {
+      "name": "Bedroom towards the bathroom door",
+      "pos": [
+       8.961,
+       1.6,
+       6.888
+      ],
+      "target": [
+       9.449,
+       1.2,
+       2.042
+      ]
+     },
+     {
+      "name": "Desk & window",
+      "pos": [
+       9.601,
+       1.6,
+       3.658
+      ],
+      "target": [
+       11.735,
+       1.0,
+       5.334
+      ]
+     }
+    ],
+    "Room 2 Bath": [
+     {
+      "name": "Tub (from the door)",
+      "pos": [
+       8.931,
+       1.6,
+       1.676
+      ],
+      "target": [
+       12.04,
+       0.8,
+       0.366
+      ]
+     },
+     {
+      "name": "Vanity & door (from the tub)",
+      "pos": [
+       11.43,
+       1.6,
+       1.097
+      ],
+      "target": [
+       9.144,
+       1.0,
+       1.829
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "MyFlat_V2_Room1_OPTION_E.glb",
+   "label": "Room 1 · Option E (Simple & Practical)",
+   "short": "E",
+   "group": "interior",
+   "design": "OPTION_E",
+   "startView": "Room 1:0",
+   "manifest": "MyFlat_V2_Room1_OPTION_E.manifest.json",
+   "viewpoints": {
+    "Hall": [
+     {
+      "name": "TV wall (from the sofa)",
+      "pos": [
+       4.328,
+       1.5,
+       9.174
+      ],
+      "target": [
+       2.012,
+       1.25,
+       9.174
+      ]
+     },
+     {
+      "name": "Main door (just inside)",
+      "pos": [
+       2.53,
+       1.6,
+       6.962
+      ],
+      "target": [
+       5.182,
+       1.2,
+       9.449
+      ]
+     },
+     {
+      "name": "Whole hall (from the south-east corner)",
+      "pos": [
+       6.706,
+       1.65,
+       13.411
+      ],
+      "target": [
+       3.048,
+       0.9,
+       7.315
+      ]
+     },
+     {
+      "name": "Dining & window",
+      "pos": [
+       5.121,
+       1.6,
+       10.82
+      ],
+      "target": [
+       3.505,
+       0.9,
+       12.802
+      ]
+     },
+     {
+      "name": "Towards the arch",
+      "pos": [
+       3.658,
+       1.6,
+       8.23
+      ],
+      "target": [
+       4.816,
+       1.4,
+       3.962
+      ]
+     }
+    ],
+    "Room 2": [
+     {
+      "name": "Bed & wardrobe (from the desk)",
+      "pos": [
+       10.912,
+       1.6,
+       6.096
+      ],
+      "target": [
+       9.906,
+       0.9,
+       2.591
+      ]
+     },
+     {
+      "name": "Bedroom towards the bathroom door",
+      "pos": [
+       8.961,
+       1.6,
+       6.888
+      ],
+      "target": [
+       9.449,
+       1.2,
+       2.042
+      ]
+     },
+     {
+      "name": "Desk & window",
+      "pos": [
+       9.601,
+       1.6,
+       3.658
+      ],
+      "target": [
+       11.735,
+       1.0,
+       5.334
+      ]
+     }
+    ],
+    "Room 2 Bath": [
+     {
+      "name": "Tub (from the door)",
+      "pos": [
+       8.931,
+       1.6,
+       1.676
+      ],
+      "target": [
+       12.04,
+       0.8,
+       0.366
+      ]
+     },
+     {
+      "name": "Vanity & door (from the tub)",
+      "pos": [
+       11.43,
+       1.6,
+       1.097
+      ],
+      "target": [
+       9.144,
+       1.0,
+       1.829
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "MyFlat_V2_Architecture.glb",
+   "label": "V2 · Bare structure (site-measured, 13 Nov)",
+   "short": "V2 bare structure",
+   "group": "architecture",
+   "startView": "Hall:1",
+   "manifest": "MyFlat_V2_Architecture.manifest.json",
+   "viewpoints": {
+    "Hall": [
+     {
+      "name": "TV wall (from the sofa)",
+      "pos": [
+       4.328,
+       1.5,
+       9.174
+      ],
+      "target": [
+       2.012,
+       1.25,
+       9.174
+      ]
+     },
+     {
+      "name": "Main door (just inside)",
+      "pos": [
+       2.53,
+       1.6,
+       6.962
+      ],
+      "target": [
+       5.182,
+       1.2,
+       9.449
+      ]
+     },
+     {
+      "name": "Whole hall (from the south-east corner)",
+      "pos": [
+       6.706,
+       1.65,
+       13.411
+      ],
+      "target": [
+       3.048,
+       0.9,
+       7.315
+      ]
+     },
+     {
+      "name": "Dining & window",
+      "pos": [
+       5.121,
+       1.6,
+       10.82
+      ],
+      "target": [
+       3.505,
+       0.9,
+       12.802
+      ]
+     },
+     {
+      "name": "Towards the arch",
+      "pos": [
+       3.658,
+       1.6,
+       8.23
+      ],
+      "target": [
+       4.816,
+       1.4,
+       3.962
+      ]
+     }
+    ],
+    "Room 2": [
+     {
+      "name": "Bed & wardrobe (from the desk)",
+      "pos": [
+       10.912,
+       1.6,
+       6.096
+      ],
+      "target": [
+       9.906,
+       0.9,
+       2.591
+      ]
+     },
+     {
+      "name": "Bedroom towards the bathroom door",
+      "pos": [
+       8.961,
+       1.6,
+       6.888
+      ],
+      "target": [
+       9.449,
+       1.2,
+       2.042
+      ]
+     },
+     {
+      "name": "Desk & window",
+      "pos": [
+       9.601,
+       1.6,
+       3.658
+      ],
+      "target": [
+       11.735,
+       1.0,
+       5.334
+      ]
+     }
+    ],
+    "Room 2 Bath": [
+     {
+      "name": "Tub (from the door)",
+      "pos": [
+       8.931,
+       1.6,
+       1.676
+      ],
+      "target": [
+       12.04,
+       0.8,
+       0.366
+      ]
+     },
+     {
+      "name": "Vanity & door (from the tub)",
+      "pos": [
+       11.43,
+       1.6,
+       1.097
+      ],
+      "target": [
+       9.144,
+       1.0,
+       1.829
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

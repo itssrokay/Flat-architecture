@@ -140,6 +140,13 @@ export async function setupLearn(ctx) {
       (b.notes || []).map(n => `<p class="where">${n}</p>`).join('') +
       `<div class="lrow">${b.links.map(([u, t]) => `<a class="small lbtn" href="${esc(u)}" target="_blank" rel="noopener">🖼 ${esc(t)}</a>`).join('')}</div></div>`).join('');
   }
+  function renderCeiling() {
+    return (guide.pages.ceiling || []).map(b => `<div class="lcard"><h4>${esc(b.h)}</h4>` + (b.p || []).map(p => `<p>${p}</p>`).join('') +
+      (b.ul ? `<ul>${b.ul.map(x => `<li>${x}</li>`).join('')}</ul>` : '') +
+      (b.table ? `<div class="ctable"><table class="ftable">${b.table.map((r, i) => `<tr>${r.map(c => i === 0 ? `<th>${esc(c)}</th>` : `<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</table></div>` : '') +
+      (b.notes || []).map(n => `<p class="where">${n}</p>`).join('') +
+      ((b.links || []).length ? `<div class="lrow">${b.links.map(([u, t]) => `<a class="small lbtn" href="${esc(u)}" target="_blank" rel="noopener">🖼 ${esc(t)}</a>`).join('')}</div>` : '') + `</div>`).join('');
+  }
   function renderSteps() {
     return `<p class="lead">${esc(U('stepslead'))}</p><ol class="steps">` +
       guide.pages.steps.map(([a, who, t]) => `<li><b>${esc(a)}</b> <span class="who">${esc(who)}</span><div>${esc(t)}</div></li>`).join('') +
@@ -173,7 +180,7 @@ export async function setupLearn(ctx) {
     if (!open || !guide) return;
     box.querySelectorAll('.ltabs button').forEach(b => b.classList.toggle('on', b.dataset.t === tab));
     const body = $('learnBody');
-    body.innerHTML = ({ room: renderRoom, basics: renderBasics, floorpaint: renderFloorPaint, steps: renderSteps, compare: renderCompare, dict: renderDict }[tab] || renderRoom)();
+    body.innerHTML = ({ room: renderRoom, basics: renderBasics, floorpaint: renderFloorPaint, ceiling: renderCeiling, steps: renderSteps, compare: renderCompare, dict: renderDict }[tab] || renderRoom)();
     body.querySelectorAll('.showme').forEach(b => b.onclick = () => { const c = guide.designs[designKey()][+b.dataset.i]; if (!showMe(c.show)) b.textContent = U('notin'); });
     body.querySelectorAll('.showme2').forEach(b => b.onclick = () => { if (!showMe(b.dataset.p.split('|'))) b.textContent = U('notin'); });
     body.querySelectorAll('.showterm').forEach(b => b.onclick = () => {

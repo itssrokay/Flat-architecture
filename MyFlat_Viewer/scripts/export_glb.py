@@ -73,6 +73,7 @@ def local_dims_ft(o, dg):
 
 
 DESIGN = globals().get("DESIGN")        # None -> architecture (+ nothing tagged as design)
+DESIGNS = list(globals().get("DESIGNS") or ([DESIGN] if DESIGN else []))   # several options in one GLB, e.g. ["DEFAULT", "HALL_REC"]
 OUT_NAME = globals().get("OUT_NAME")
 
 
@@ -81,7 +82,7 @@ def export():
     name = OUT_NAME or os.path.splitext(os.path.basename(src))[0] or "model"
     replaced = set()
     for c in bpy.data.collections:
-        if DESIGN and c.get("design_option") == DESIGN and c.get("replaces"):
+        if c.get("design_option") in DESIGNS and c.get("replaces"):
             replaced |= set(c["replaces"].split(","))
     os.makedirs(OUT_DIR, exist_ok=True)
     glb = os.path.join(OUT_DIR, name + ".glb")
@@ -100,7 +101,7 @@ def export():
         if n.endswith("_CUTTER") or n.startswith(SKIP_PREFIX) or n in SKIP_EXACT: continue
         if o.type not in ('MESH', 'EMPTY'): continue
         opt = o.get("design_option")
-        if opt and opt != DESIGN: continue
+        if opt and opt not in DESIGNS: continue
         if n in replaced: continue
         top = tops.get(n, "")
         cat, sub = classify(o, top)
@@ -121,7 +122,7 @@ def export():
     man = {"model": name + ".glb", "source_blend": os.path.basename(src),
            "exported": datetime.datetime.now().isoformat(timespec="seconds"),
            "blender": bpy.app.version_string, "units": "metres", "up": "+Y", "north": "-Z", "east": "+X",
-           "object_count": len(rows), "counts": counts, "design_option": DESIGN, "replaced": sorted(replaced), "rooms": ROOM_FLOORS, "objects": rows}
+           "object_count": len(rows), "counts": counts, "design_option": "+".join(DESIGNS) or None, "replaced": sorted(replaced), "rooms": ROOM_FLOORS, "objects": rows}
     with open(os.path.join(OUT_DIR, name + ".manifest.json"), "w") as f: json.dump(man, f, indent=1)
     return glb, len(rows), counts
 

@@ -326,7 +326,11 @@ export function setupExtras(ctx) {
   function setHudMin(min) { hud.classList.toggle('min', min); store.set('hudMin', min ? 1 : 0); }
   $('hudMin').onclick = () => setHudMin(true);
   hud.querySelector('.hudMini').onclick = () => setHudMin(false);
-  setHudMin(store.get('hudMin') ? store.get('hudMin') === '1' : !!ctx.TOUCH);   // phones start minimised
+  if (store.get('hudMin')) setHudMin(store.get('hudMin') === '1');
+  else {   // first visit: show the help, fold it to one line once you start walking around
+    hud.classList.toggle('min', !!ctx.TOUCH);
+    let t = null; new MutationObserver(() => { if (!hud.classList.contains('hidden') && !t) t = setTimeout(() => hud.classList.add('min'), 7000); }).observe(hud, { attributes: true, attributeFilter: ['class'] });
+  }
 
   // =================================================================== touch: joystick, buttons, pinch lens, double-tap, tap info
   const joy = $('joy'), knob = $('joyKnob'); let joyId = null;

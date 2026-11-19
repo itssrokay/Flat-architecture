@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MyFlat Viewer</title>
+<link rel="stylesheet" href="./src/styles.css?v=24">
+<script type="importmap">
+{ "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/addons/" } }
+</script>
+</head>
+<body>
+<header id="topbar">
+  <div class="brand desk-only">MyFlat</div>
+  <select id="modelSelect" title="Choose a plan"></select>
+  <button id="walkBtn" class="toggle accent" title="Stand inside at eye level">Walk</button>
+  <button id="overviewBtn" title="Step outside and see the whole flat (orbit)">Overview</button>
+  <button id="lightsBtn" class="toggle on" title="Light fittings on/off (L)">Lights ON</button>
+  <button id="nightBtn" class="toggle" title="Day / night (N)">Day</button>
+  <button id="editBtn" class="toggle hidden" title="Change wardrobe, mirror, desk, window, colours: the 3D and budget update">✏️ Customise</button>
+  <div class="spacer"></div>
+  <button id="simpleBtn" class="simpleToggle" title="Easy mode: big buttons for walking around">👍 Easy mode</button>
+  <button id="learnBtn" class="toggle learn" title="Beginner's guide: what everything is made of, how homes are built, dictionary (G)">📘 Learn</button>
+  <button id="chatBtn" class="toggle chatb" title="Ask anything about your flat, the designs, materials and budget">💬 Ask</button>
+  <button id="langBtn" class="lang" title="हिंदी में देखें">हिंदी</button>
+  <button id="moreBtn" class="toggle" aria-expanded="false" title="More views, measuring and tools">More ▾</button>
+</header>
+<div id="moreMenu" class="hidden">
+  <div class="mg"><h5>View</h5>
+    <div class="mrow group" id="viewButtons">
+      <button data-view="top" title="Plan view (hides the roof)">Top</button>
+      <button data-view="north">N</button><button data-view="south">S</button><button data-view="east">E</button><button data-view="west">W</button>
+      <button data-view="iso">Iso</button>
+    </div>
+    <div class="mrow">
+      <button id="projBtn" class="toggle" title="Perspective / orthographic">Persp</button>
+      <button id="roofBtn" class="toggle on">Roof ON</button>
+      <button id="labelsBtn" class="toggle on">Labels</button>
+      <button id="edgesBtn" class="toggle on" title="Outline edges">Edges</button>
+      <button id="immBtn" class="accent" title="Full-screen immersive mode (F)">⛶ Immersive</button>
+    </div>
+  </div>
+  <div class="mg"><h5>Measure</h5>
+    <div class="mrow">
+      <button id="roomDimsBtn" class="toggle" title="Wall-by-wall size of the room you are in (M)">Room size</button>
+      <button id="dimsBtn" class="toggle" title="Show dimensions of parts; select an object for W/D/H lines">Dimensions</button>
+      <button id="hoverBtn" class="toggle" title="Point at anything to see what it is (I)">Hover info</button>
+    </div>
+  </div>
+  <div class="mg"><h5>Tools</h5>
+    <div class="mrow">
+      <button id="statusBtn" class="toggle">Status</button>
+      <button id="planBtn" class="toggle">Plan compare</button>
+      <button id="debugBtn" class="toggle">Debug</button>
+      <button id="resetBtn" title="Reset camera and visibility">Reset</button>
+    </div>
+  </div>
+</div>
+
+<aside id="left">
+  <h3>Plans</h3>
+  <div id="designPanel"></div>
+  <h3 style="margin-top:14px">Rooms</h3>
+  <div id="roomList"></div>
+  <details class="tools"><summary>More tools</summary>
+    <div class="cmp"><span>Compare side by side with</span><select id="compareSelect"></select></div>
+    <button id="copyViewBtn" class="small">Copy current view</button>
+  </details>
+</aside>
+
+<main id="viewport">
+  <div id="canvasHost"></div>
+  <button id="leftTab" class="edgeTab" title="Hide left panel ( [ )">‹</button>
+  <button id="rightTab" class="edgeTab" title="Hide right panel ( ] )">›</button>
+  <div id="hoverTip" class="hidden"></div>
+  <div id="toast" class="hidden"></div>
+  <div id="loading">Loading model…</div>
+
+  <button id="dockToggle" class="small">Controls ▴</button>
+  <div id="dock" class="collapsed">
+    <section>
+      <h4>Visibility</h4>
+      <div id="catToggles"></div>
+      <div class="row">
+        <button id="showAllBtn" class="small">Show all</button>
+        <button id="hideAllBtn" class="small">Hide all</button>
+        <button id="resetVisBtn" class="small">Reset</button>
+      </div>
+    </section>
+    <section>
+      <h4>Section cut</h4>
+      <label class="chk"><input type="checkbox" id="sectionChk"> Cut above</label>
+      <input type="range" id="sectionRange" min="0.2" max="4.2" step="0.05" value="1.4">
+      <div class="val" id="sectionVal"></div>
+      <h4>Model opacity</h4>
+      <input type="range" id="modelOpacity" min="0.1" max="1" step="0.05" value="1">
+    </section>
+    <section>
+      <h4>Open / close</h4>
+      <div class="row"><button id="openAllBtn" class="small">Open all</button><button id="closeAllBtn" class="small">Close all</button></div>
+      <div class="note" id="interactInfo"></div>
+      <div class="note" id="dockOpenNote">Double-click a wardrobe door, window, balcony door or sheer curtain to open it. Inside (walk mode), just click it, or look at it and press <b>E</b>.</div>
+    </section>
+    <section id="planSection" class="hidden">
+      <h4>Floor plan</h4>
+      <label class="chk"><input type="checkbox" id="planChk" checked> Show plan</label>
+      <input type="range" id="planOpacity" min="0" max="1" step="0.05" value="0.55">
+      <div class="row">
+        <label class="chk"><input type="radio" name="planPos" value="above" checked> Over model</label>
+        <label class="chk"><input type="radio" name="planPos" value="floor"> On floor</label>
+      </div>
+      <div class="note">The original plan is not to scale. It is stretched to the model's extents exactly as in Blender (PLAN_REFERENCE_OVERLAY).</div>
+    </section>
+  </div>
+
+  <div id="legend" class="hidden"></div>
+  <div id="walkHud" class="hidden">
+    <button id="hudMin" class="hudMin" title="Minimise this box">–</button>
+    <div class="hudFull">
+      <div class="hint-desk"><b>Inside</b> · <b>drag</b> to look around (also up at the ceiling) · <b>WASD</b> / arrows or <b>mouse wheel</b> to move · Shift to run · <b>R / V</b> raise / lower your eyes · <b>click</b> a door, window or wardrobe (or <b>E</b>) to open / close it · <b>C</b> ceiling · <b>pinch / Ctrl+wheel</b> or − / + lens · L lights · N night</div>
+      <div class="hint-touch"><b>Inside</b> · drag to look · <b>joystick</b> (bottom-left) to walk · <b>tap</b> a door, window or wardrobe to open / close · <b>pinch</b> for a wider lens · ⬆ ⬇ raise / lower your eyes</div>
+      <div id="walkInfo"></div>
+      <div class="hudRow">
+        <button id="ceilBtn" class="small toggle" title="Stand in the middle, look straight up with a wide lens (C)">Look at ceiling</button>
+        <label class="lens">Lens <input type="range" id="fovRange" min="35" max="110" step="1" value="60"> <span id="fovVal">60°</span></label>
+        <button id="exitWalkBtn" class="small">Overview (step outside)</button>
+      </div>
+    </div>
+    <div class="hudMini" title="Show the controls"><b>Inside</b> <span id="walkInfoMini"></span> <span class="more">▾</span></div>
+  </div>
+  <div id="touchPad" class="hidden">
+    <div id="joy"><div id="joyKnob"></div></div>
+    <div id="touchBtns">
+      <button data-t="up" title="Raise eyes">⬆</button><button data-t="down" title="Lower eyes">⬇</button>
+      <button data-t="use" title="Open / close what the circle points at">✋</button><button data-t="ceil" title="Look at ceiling">⤒</button>
+    </div>
+  </div>
+  <div id="tapInfo" class="hidden"></div>
+  <div id="crosshair" class="hidden"></div>
+  <div id="interactHint" class="hidden"></div>
+  <div id="immBar">
+    <button data-act="learn">📘 Learn</button><button data-act="overview">🏠 Overview</button><button data-act="walk">🚶 Walk</button><button data-act="room1">Room 1</button><button data-act="balcony">Balcony</button>
+    <button data-act="open">Open all</button><button data-act="close">Close all</button>
+    <button data-act="lights">💡 Lights</button><button data-act="night">🌙 Night</button><button data-act="roomdims">📐 Room size</button><button data-act="dims">📏 Dims</button><button data-act="hover">🛈 Hover info</button>
+    <button data-act="exit">✕ Exit</button>
+  </div>
+  <div id="compareCaption" class="hidden"><span id="capL"></span><span id="capR"></span></div>
+  <div id="statusbar"></div>
+</main>
+
+<aside id="right">
+  <div id="editPanel" class="hidden"></div>
+  <div id="designNotes" class="hidden"></div>
+  <h3>Inspector</h3>
+  <div id="inspector" class="empty">Click any wall, door, window, pillar, beam or step.</div>
+  <div id="debugPanel" class="hidden">
+    <h3>Objects</h3>
+    <input id="objSearch" placeholder="Filter by name, category, status…">
+    <div id="objList"></div>
+  </div>
+</aside>
+
+<script type="module" src="./src/main.js?v=24"></script>
+<script type="module" src="./src/declutter.js?v=24"></script>
+<script type="module" src="./src/inside.js?v=24"></script>
+</body>
+</html>

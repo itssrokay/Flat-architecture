@@ -5,18 +5,18 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { CONFIG } from './config.js?v=15';
-import { Walkthrough } from './walk.js?v=15';
-import { setupImmersive } from './immersive.js?v=15';
-import { setupExtras } from './extras.js?v=15';
-import { setupLearn } from './learn.js?v=15';
-import { setupI18n } from './i18n.js?v=15';
-import { setupSimple } from './simple.js?v=15';
-import { setupEdit } from './edit.js?v=15';
-import { setupChat } from './chat.js?v=15';
+import { CONFIG } from './config.js?v=35';
+import { Walkthrough } from './walk.js?v=35';
+import { setupImmersive } from './immersive.js?v=35';
+import { setupExtras } from './extras.js?v=35';
+import { setupLearn } from './learn.js?v=35';
+import { setupI18n } from './i18n.js?v=35';
+import { setupSimple } from './simple.js?v=35';
+import { setupEdit } from './edit.js?v=35';
+import { setupChat } from './chat.js?v=35';
 // bump together with the ?v= in index.html and the imports above whenever the viewer or models change,
 // so browsers never mix a new page with old cached scripts or models
-const BUILD = '15';
+const BUILD = '35';
 
 const $ = (id) => document.getElementById(id);
 // language (English / Hindi): translates the interface in place; design notes + Learn guide load their Hindi files
@@ -129,6 +129,7 @@ const selBox = new THREE.Box3Helper(new THREE.Box3(), 0xff2d55); selBox.visible 
 const edgeMat = new THREE.LineBasicMaterial({ color: '#2b3036', transparent: true, opacity: 0.55, clippingPlanes: [app.sectionPlane] });
 
 const walk = new Walkthrough({ app, persp, renderer, controls, CONFIG, onInfo: (t) => { app.walkInfoRaw = t; $('walkInfo').textContent = t; $('walkInfoMini').textContent = t.replace(/ · eye.*$/, ''); } });
+{ const _enter = walk.enter.bind(walk); walk.enter = (...a) => { if (app._autoSection) { app._autoSection = false; $('sectionChk').checked = false; setSection(); } return _enter(...a); }; }
 
 function resize() {
   const w = host.clientWidth, h = host.clientHeight;
@@ -205,7 +206,10 @@ async function loadModelList() {
   await loadDesignNotes();
   buildDesignPanel(list);
   const sel = $('modelSelect'); sel.innerHTML = '';
-  for (const m of list.models) { const o = document.createElement('option'); o.value = m.file; o.textContent = m.label || m.file; o.dataset.manifest = m.manifest || ''; sel.appendChild(o); }
+  const og = {}; const GT = { version: 'Flat plans', interior: 'Room 1 interior', architecture: 'Architecture only' };
+  for (const g of ['version', 'interior', 'architecture']) { const e = document.createElement('optgroup'); e.label = GT[g]; og[g] = e; }
+  for (const m of list.models) { const o = document.createElement('option'); o.value = m.file; o.textContent = m.label || m.file; o.dataset.manifest = m.manifest || ''; (og[m.group || 'architecture'] || og.architecture).appendChild(o); }
+  for (const g of ['version', 'interior', 'architecture']) if (og[g].children.length) sel.appendChild(og[g]);
   const urlModel = new URLSearchParams(location.search).get('model');
   const file = urlModel || list.default || list.models[0]?.file;
   if (urlModel && ![...sel.options].some(o => o.value === urlModel)) { const o = document.createElement('option'); o.value = urlModel; o.textContent = urlModel; sel.appendChild(o); }
@@ -223,18 +227,26 @@ async function loadDesignNotes() {
 function modelEntry(file) { return (app.modelList?.models || []).find(m => m.file === file) || { file }; }
 function buildDesignPanel(list) {
   const p = $('designPanel'); p.innerHTML = '';
-  const groups = [['interior', 'Room 1 interior'], ['architecture', 'Architecture only']];
+  const groups = [['version', 'Flat plans'], ['interior', 'Room 1 interior'], ['architecture', 'Architecture only']];
+  const cur = new URLSearchParams(location.search).get('model') || app.modelFile || list.default;
   for (const [g, title] of groups) {
     const items = list.models.filter(m => (m.group || 'architecture') === g);
     if (!items.length) continue;
-    const h = document.createElement('div'); h.className = 'grp'; h.textContent = title; p.appendChild(h);
+    let host = p;
+    if (g === 'version') { /* shown first, no sub-heading: the panel heading already says Plans */ }
+    else {   // less-used groups are folded away until opened
+      const d = document.createElement('details'); d.className = 'grpd'; d.open = items.some(m => m.file === cur);
+      const sm = document.createElement('summary'); sm.textContent = title; d.appendChild(sm);
+      host = document.createElement('div'); host.className = 'grpw'; d.appendChild(host); p.appendChild(d);
+    }
     for (const m of items) {
       const b = document.createElement('button'); b.dataset.file = m.file;
       const note = m.design && app.designNotes?.[m.design];
       const sub = (note ? note.title.split('·')[1]?.trim() || '' : (m.label || '').replace(/\(.*\)/, '')) + (note?.budget ? ` · ${note.budget.total}` : '');
-      b.innerHTML = `${m.short || m.label}<small>${g === 'interior' ? sub : (m.label || '')}</small>`;
+      b.innerHTML = `${m.short || m.label}<small>${g === 'interior' ? sub : (note?.budget ? note.budget.total.replace(/\d[\d,]*/g, x => (parseInt(x.replace(/,/g, '')) / 1e5).toFixed(2)) + ' L' : '')}</small>`;
+      b.title = m.label || m.file;
       b.onclick = () => switchModel(m.file);
-      p.appendChild(b);
+      host.appendChild(b);
     }
   }
   const cs = $('compareSelect'); cs.innerHTML = '<option value="">— off —</option>';
@@ -251,13 +263,14 @@ function updateDesignUI() {
   if (!n0) { el.classList.add('hidden'); return; }
   el.classList.remove('hidden');
   const n = (n0.budget && app.editBudget) ? { ...n0, budget: app.editBudget(m.design, n0.budget) } : n0;
-  el.innerHTML = `<div class="t">${n.title}</div><div class="tag">${n.tagline}</div>` +
+  const vk = Object.keys(n.sections || {}).find(k => k === 'Verdict' || k === 'फ़ैसला');
+  el.innerHTML = `<div class="t">${n.title}</div><div class="tag">${n.tagline}</div>` + (vk ? `<div class="verdict"><b>${vk}:</b> ${n.sections[vk]}</div>` : '') +
     `<details ${m.design === 'DEFAULT' ? 'open' : ''}><summary>${m.design === 'DEFAULT' ? 'Why this is the default' : 'Concept'}</summary><div class="why">${n.why}</div></details>` +
-    (n.budget ? `<details class="budget" open><summary>Budget · ${n.budget.total}</summary><table>` +
+    (n.budget ? `<details class="budget"><summary>Budget · ${n.budget.total}</summary><table>` +
       n.budget.rows.map(r => `<tr><td>${r[0]}<div class="bd">${r[1]}</div></td><td class="amt">${r[2]}</td></tr>`).join('') +
       `<tr class="tot"><td>Total</td><td class="amt">${n.budget.total}</td></tr></table>` +
       (n.budget.note ? `<div class="bnote">${n.budget.note}</div>` : '') + (n.budget.savings ? `<div class="bnote"><b>If it runs over:</b> ${n.budget.savings.replace(/^If it runs over:\s*/, '')}</div>` : '') + `</details>` : '') +
-    Object.entries(n.sections).map(([k, v]) => `<details><summary>${k}</summary><div>${v}</div></details>`).join('') +
+    Object.entries(n.sections || {}).filter(([k]) => k !== vk).map(([k, v]) => `<details><summary>${k}</summary><div>${v}</div></details>`).join('') +
     (n.schedule ? `<details class="sched" open><summary>Material & finish schedule</summary>` + (n.schedNote ? `<div class="bnote">${n.schedNote}</div>` : '') + n.schedule.map(g =>
       `<div class="sg">${g.area}</div><table>${g.items.map(r => `<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join('')}</table>`).join('') + `</details>` : '');
 }
@@ -405,7 +418,8 @@ function makeViewpoints(room) {
   const w = b.max.x - b.min.x, d = b.max.z - b.min.z;
   const ins = Math.min(0.45, w * 0.18, d * 0.18);
   const vps = [];
-  for (const v of (CONFIG.viewpoints[room.name] || []))
+  const mvp = modelEntry(app.modelFile).viewpoints;          // per-model viewpoints (V2 layout differs)
+  for (const v of ((mvp && mvp[room.name]) || CONFIG.viewpoints[room.name] || []))
     vps.push({ name: v.name, pos: new THREE.Vector3(...v.pos), target: new THREE.Vector3(...v.target) });
   // corners (north = -Z, east = +X); only if the corner is really inside this room
   const corners = { SW: [b.min.x + ins, b.max.z - ins], NE: [b.max.x - ins, b.min.z + ins], NW: [b.min.x + ins, b.min.z + ins], SE: [b.max.x - ins, b.max.z - ins] };
@@ -451,6 +465,8 @@ function overview() {
   app.pendingWalk = null;
   if (walk.active) walk.exit();
   presetView('iso');
+  setCat('roof', false);                                   // dollhouse: see (and click) everything inside
+  if (!$('sectionChk').checked) { app._autoSection = true; $('sectionRange').value = 1.3; $('sectionChk').checked = true; setSection(); }   // cut-away: walls stop at 1.5 m so furniture shows
 }
 
 function buildRoomList() {
@@ -616,6 +632,13 @@ function pick(ev) {
   raycaster.setFromCamera(ndc, camera);
   const cands = pool.filter(m => { for (let p = m; p; p = p.parent) if (!p.visible) return false; return catOf(m) !== 'context' && catOf(m) !== CONFIG.planCategory; });
   const hits = raycaster.intersectObjects(cands, false).filter(h => !app.sectionPlane || h.point.y <= app.sectionPlane.constant + 1e-3);
+  // from outside / above (overview), clicks go through the roof slab to the things inside
+  if (!walk.active) { const top = app.bbox ? app.bbox.max.y - 0.6 : 3; if (camera.position.y > top) { const k = hits.findIndex(h => catOf(h.object) !== 'roof'); if (k > 0) hits.splice(0, k); else if (k < 0) hits.length = 0; } }
+  // overview: things first. If a wall / pillar / beam is hit first and a piece of furniture or a fitting sits just behind it, pick the thing.
+  if (!walk.active && hits.length > 1) {
+    const STRUCT = new Set(['walls', 'pillars', 'beams', 'roof', 'ceiling', 'railings', 'stairs', 'wall_finish', 'finishes']);
+    if (STRUCT.has(catOf(hits[0].object))) { const t = hits.find(h => !STRUCT.has(catOf(h.object)) && !['floors', 'doors', 'windows', 'fenestration', 'context'].includes(catOf(h.object)) && h.distance - hits[0].distance < 3.2); if (t) hits.unshift(t); }
+  }
   select(hits.length ? hits[0].object : null);
 }
 function namedOf(o) { for (let p = o; p; p = p.parent) if (p.userData && p.userData.category) return p; return o; }

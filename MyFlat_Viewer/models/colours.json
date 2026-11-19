@@ -1,0 +1,1422 @@
+{
+ "shades": [
+  {
+   "code": "9909",
+   "n": "Hint of Peach",
+   "hex": "#FCE2CB",
+   "fam": "orange",
+   "url": "https://www.asianpaints.com/colour-catalogue/orange-wall-colours/hint-of-peach-n.html"
+  },
+  {
+   "code": "8019",
+   "n": "Coral Rocks",
+   "hex": "#F7DCC6",
+   "fam": "pink",
+   "url": "https://www.asianpaints.com/colour-catalogue/pink-wall-colours/coral-rocks.html"
+  },
+  {
+   "code": "7986",
+   "n": "Marigold",
+   "hex": "#FCDAB7",
+   "fam": "orange",
+   "url": "https://www.asianpaints.com/colour-catalogue/orange-wall-colours/marigold.html"
+  },
+  {
+   "code": "7960",
+   "n": "Mango Shake",
+   "hex": "#FEC882",
+   "fam": "orange",
+   "url": "https://www.asianpaints.com/colour-catalogue/orange-wall-colours/mango-shake.html"
+  },
+  {
+   "code": "8017",
+   "n": "Peach Carnation",
+   "hex": "#EFBE9F",
+   "fam": "pink",
+   "url": "https://www.asianpaints.com/colour-catalogue/pink-wall-colours/peach-carnation.html"
+  },
+  {
+   "code": "9910",
+   "n": "Peach Pie",
+   "hex": "#FEBD8E",
+   "fam": "orange",
+   "url": "https://www.asianpaints.com/colour-catalogue/orange-wall-colours/peach-pie-n.html"
+  },
+  {
+   "code": "9936",
+   "n": "Peach Bellini",
+   "hex": "#FEBC85",
+   "fam": "orange",
+   "url": "https://www.asianpaints.com/colour-catalogue/orange-wall-colours/peach-bellini-n.html"
+  },
+  {
+   "code": "8000",
+   "n": "Perfect Peach",
+   "hex": "#F8B592",
+   "fam": "orange",
+   "url": "https://www.asianpaints.com/colour-catalogue/orange-wall-colours/perfect-peach.html"
+  },
+  {
+   "code": "7999",
+   "n": "Orange Silk",
+   "hex": "#F0A27C",
+   "fam": "orange",
+   "url": "https://www.asianpaints.com/colour-catalogue/orange-wall-colours/orange-silk.html"
+  },
+  {
+   "code": "7998",
+   "n": "String of Beads",
+   "hex": "#E68D60",
+   "fam": "orange",
+   "url": "https://www.asianpaints.com/colour-catalogue/orange-wall-colours/string-of-beads.html"
+  },
+  {
+   "code": "9920",
+   "n": "Deccan Earth",
+   "hex": "#D5825C",
+   "fam": "orange",
+   "url": "https://www.asianpaints.com/colour-catalogue/orange-wall-colours/deccan-earth-n.html"
+  },
+  {
+   "code": "9982",
+   "n": "Russet Rust",
+   "hex": "#C05F54",
+   "fam": "red",
+   "url": "https://www.asianpaints.com/colour-catalogue/red-wall-colours/russet-rust-n.html"
+  },
+  {
+   "code": "7865",
+   "n": "Wild Yellow",
+   "hex": "#FCECB3",
+   "fam": "yellow",
+   "url": "https://www.asianpaints.com/colour-catalogue/yellow-wall-colours/wild-yellow.html"
+  },
+  {
+   "code": "7912",
+   "n": "Yellow Tulip",
+   "hex": "#FEE19D",
+   "fam": "yellow",
+   "url": "https://www.asianpaints.com/colour-catalogue/yellow-wall-colours/yellow-tulip.html"
+  },
+  {
+   "code": "7864",
+   "n": "Lemon Burst",
+   "hex": "#FEE795",
+   "fam": "yellow",
+   "url": "https://www.asianpaints.com/colour-catalogue/yellow-wall-colours/lemon-burst.html"
+  },
+  {
+   "code": "7830",
+   "n": "Lemonade",
+   "hex": "#EDCD61",
+   "fam": "yellow",
+   "url": "https://www.asianpaints.com/colour-catalogue/yellow-wall-colours/lemonade.html"
+  },
+  {
+   "code": "9874",
+   "n": "Tangerine Yellow",
+   "hex": "#F2D15D",
+   "fam": "yellow",
+   "url": "https://www.asianpaints.com/colour-catalogue/yellow-wall-colours/tangerine-yellow-n.html"
+  },
+  {
+   "code": "7894",
+   "n": "Sunny Day",
+   "hex": "#F9C455",
+   "fam": "yellow",
+   "url": "https://www.asianpaints.com/colour-catalogue/yellow-wall-colours/sunny-day.html"
+  },
+  {
+   "code": "9758",
+   "n": "Mint Frosting",
+   "hex": "#DEF0DB",
+   "fam": "green",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/mint-frosting-n.html"
+  },
+  {
+   "code": "7588",
+   "n": "Alpine Green",
+   "hex": "#DDECDE",
+   "fam": "green",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/alpine-green.html"
+  },
+  {
+   "code": "7516",
+   "n": "Fresh Mint",
+   "hex": "#D1EBE1",
+   "fam": "green",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/fresh-mint.html"
+  },
+  {
+   "code": "7460",
+   "n": "Crystal River",
+   "hex": "#D1E8E2",
+   "fam": "green",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/crystal-river.html"
+  },
+  {
+   "code": "7507",
+   "n": "Baby Aqua",
+   "hex": "#C2E8E2",
+   "fam": "green",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/baby-aqua.html"
+  },
+  {
+   "code": "7562",
+   "n": "Sea Nymph",
+   "hex": "#B7D9C8",
+   "fam": "green",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/sea-nymph.html"
+  },
+  {
+   "code": "7506",
+   "n": "Aqua Fusion",
+   "hex": "#A8E3DE",
+   "fam": "green",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/aqua-fusion.html"
+  },
+  {
+   "code": "7505",
+   "n": "Turquoise Treat",
+   "hex": "#84D9D5",
+   "fam": "green",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/turquoise-treat.html"
+  },
+  {
+   "code": "7504",
+   "n": "Ocean Breeze",
+   "hex": "#72CECB",
+   "fam": "green",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/ocean-breeze.html"
+  },
+  {
+   "code": "7512",
+   "n": "Caribbean Green",
+   "hex": "#63CCC3",
+   "fam": "green",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/caribbean-green.html"
+  },
+  {
+   "code": "7362",
+   "n": "Sky Watch",
+   "hex": "#A4D4E3",
+   "fam": "blue",
+   "url": "https://www.asianpaints.com/colour-catalogue/blue-wall-colours/sky-watch.html"
+  },
+  {
+   "code": "7361",
+   "n": "Morning Frost",
+   "hex": "#82C5DD",
+   "fam": "blue",
+   "url": "https://www.asianpaints.com/colour-catalogue/blue-wall-colours/morning-frost.html"
+  },
+  {
+   "code": "7409",
+   "n": "Paradise Bay",
+   "hex": "#7BCBDD",
+   "fam": "blue",
+   "url": "https://www.asianpaints.com/colour-catalogue/blue-wall-colours/paradise-bay.html"
+  },
+  {
+   "code": "9209",
+   "n": "Water Jet",
+   "hex": "#78C6E6",
+   "fam": "blue",
+   "url": "https://www.asianpaints.com/colour-catalogue/blue-wall-colours/water-jet.html"
+  },
+  {
+   "code": "7326",
+   "n": "Soothing Sapphire",
+   "hex": "#2B88BE",
+   "fam": "blue",
+   "url": "https://www.asianpaints.com/colour-catalogue/blue-wall-colours/soothing-sapphire.html"
+  },
+  {
+   "code": "9666",
+   "n": "Dal Lake Blue",
+   "hex": "#078BBE",
+   "fam": "blue",
+   "url": "https://www.asianpaints.com/colour-catalogue/blue-wall-colours/dal-lake-blue-n.html"
+  },
+  {
+   "code": "9651",
+   "n": "Pangong Blue",
+   "hex": "#407EB6",
+   "fam": "blue",
+   "url": "https://www.asianpaints.com/colour-catalogue/blue-wall-colours/pangong-blue-n.html"
+  },
+  {
+   "code": "7147",
+   "n": "Lavender Laugh",
+   "hex": "#DED6DC",
+   "fam": "purple",
+   "url": "https://www.asianpaints.com/colour-catalogue/purple-wall-colours/lavender-laugh.html"
+  },
+  {
+   "code": "9609",
+   "n": "Lilac Tint",
+   "hex": "#D8CDE2",
+   "fam": "purple",
+   "url": "https://www.asianpaints.com/colour-catalogue/purple-wall-colours/lilac-tint-n.html"
+  },
+  {
+   "code": "9602",
+   "n": "Catmint Blossom",
+   "hex": "#CAB1DA",
+   "fam": "purple",
+   "url": "https://www.asianpaints.com/colour-catalogue/purple-wall-colours/catmint-blossom-n.html"
+  },
+  {
+   "code": "7112",
+   "n": "Wisteria",
+   "hex": "#C8A8CF",
+   "fam": "purple",
+   "url": "https://www.asianpaints.com/colour-catalogue/purple-wall-colours/wisteria.html"
+  },
+  {
+   "code": "9610",
+   "n": "Lavender Lyric",
+   "hex": "#B1A0C2",
+   "fam": "purple",
+   "url": "https://www.asianpaints.com/colour-catalogue/purple-wall-colours/lavender-lyric-n.html"
+  },
+  {
+   "code": "8049",
+   "n": "Rose Glow",
+   "hex": "#FAC9C1",
+   "fam": "pink",
+   "url": "https://www.asianpaints.com/colour-catalogue/pink-wall-colours/rose-glow.html"
+  },
+  {
+   "code": "8122",
+   "n": "Peach Blossom",
+   "hex": "#EDC4CB",
+   "fam": "pink",
+   "url": "https://www.asianpaints.com/colour-catalogue/pink-wall-colours/peach-blossom.html"
+  },
+  {
+   "code": "9409",
+   "n": "Pink Essence",
+   "hex": "#F3B7B9",
+   "fam": "pink",
+   "url": "https://www.asianpaints.com/colour-catalogue/pink-wall-colours/pink-essence.html"
+  },
+  {
+   "code": "9416",
+   "n": "Twilight Pink",
+   "hex": "#E1A5CA",
+   "fam": "pink",
+   "url": "https://www.asianpaints.com/colour-catalogue/pink-wall-colours/twilight-pink.html"
+  },
+  {
+   "code": "9414",
+   "n": "Pink Flower",
+   "hex": "#CF78AA",
+   "fam": "pink",
+   "url": "https://www.asianpaints.com/colour-catalogue/pink-wall-colours/pink-flower.html"
+  },
+  {
+   "code": "L145",
+   "n": "White Cameo",
+   "hex": "#F7F0E6",
+   "fam": "white",
+   "url": "https://www.asianpaints.com/colour-catalogue/off-white-wall-colours/white-cameo.html"
+  },
+  {
+   "code": "8116",
+   "n": "Soft Breeze",
+   "hex": "#F7EAE5",
+   "fam": "white",
+   "url": "https://www.asianpaints.com/colour-catalogue/off-white-wall-colours/soft-breeze.html"
+  },
+  {
+   "code": "9436",
+   "n": "Air Breeze",
+   "hex": "#F3EDE8",
+   "fam": "white",
+   "url": "https://www.asianpaints.com/colour-catalogue/off-white-wall-colours/air-breeze.html"
+  },
+  {
+   "code": "7940",
+   "n": "Pale Pearl",
+   "hex": "#F2ECDE",
+   "fam": "white",
+   "url": "https://www.asianpaints.com/colour-catalogue/off-white-wall-colours/pale-pearl.html"
+  },
+  {
+   "code": "7831",
+   "n": "Brazen Gold",
+   "hex": "#F0D579",
+   "fam": "earth",
+   "url": "https://www.asianpaints.com/colour-catalogue/yellow-wall-colours/brazen-gold.html"
+  },
+  {
+   "code": "7880",
+   "n": "Honey Mustard",
+   "hex": "#EBCB8E",
+   "fam": "earth",
+   "url": "https://www.asianpaints.com/colour-catalogue/yellow-wall-colours/honey-mustard.html"
+  },
+  {
+   "code": "9896",
+   "n": "Marigold Garland",
+   "hex": "#FEBF69",
+   "fam": "earth",
+   "url": "https://www.asianpaints.com/colour-catalogue/yellow-wall-colours/marigold-garland-n.html"
+  },
+  {
+   "code": "7942",
+   "n": "Lily Gold",
+   "hex": "#FEBB39",
+   "fam": "earth",
+   "url": "https://www.asianpaints.com/colour-catalogue/yellow-wall-colours/lily-gold.html"
+  },
+  {
+   "code": "7926",
+   "n": "Light Ochre",
+   "hex": "#E2A754",
+   "fam": "earth",
+   "url": "https://www.asianpaints.com/colour-catalogue/yellow-wall-colours/light-ochre.html"
+  },
+  {
+   "code": "7925",
+   "n": "True Ochre",
+   "hex": "#D2953C",
+   "fam": "earth",
+   "url": "https://www.asianpaints.com/colour-catalogue/yellow-wall-colours/true-ochre.html"
+  },
+  {
+   "code": "9886",
+   "n": "Mustard Wood",
+   "hex": "#C4943B",
+   "fam": "earth",
+   "url": "https://www.asianpaints.com/colour-catalogue/yellow-wall-colours/mustard-wood-n.html"
+  },
+  {
+   "code": "9988",
+   "n": "Rich Maple",
+   "hex": "#CB6755",
+   "fam": "earth",
+   "url": "https://www.asianpaints.com/colour-catalogue/pink-wall-colours/rich-maple-n.html"
+  },
+  {
+   "code": "8053",
+   "n": "Ginger Pop",
+   "hex": "#C65C51",
+   "fam": "earth",
+   "url": "https://www.asianpaints.com/colour-catalogue/pink-wall-colours/ginger-pop.html"
+  },
+  {
+   "code": "8029",
+   "n": "Red Earth",
+   "hex": "#B9584B",
+   "fam": "earth",
+   "url": "https://www.asianpaints.com/colour-catalogue/pink-wall-colours/red-earth.html"
+  },
+  {
+   "code": "7624",
+   "n": "Dry Sage",
+   "hex": "#A2BFA6",
+   "fam": "deep",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/dry-sage.html"
+  },
+  {
+   "code": "2463",
+   "n": "Opaline Green",
+   "hex": "#88A68B",
+   "fam": "deep",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/opaline-green.html"
+  },
+  {
+   "code": "7622",
+   "n": "Olive Path",
+   "hex": "#6F8D6E",
+   "fam": "deep",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/olive-path.html"
+  },
+  {
+   "code": "2361",
+   "n": "Mehendi",
+   "hex": "#5A6D52",
+   "fam": "deep",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/mehendi-n.html"
+  },
+  {
+   "code": "9755",
+   "n": "Pine Lake",
+   "hex": "#2F805B",
+   "fam": "deep",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/pine-lake-n.html"
+  },
+  {
+   "code": "7509",
+   "n": "Emerald Accent",
+   "hex": "#007364",
+   "fam": "deep",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/emerald-accent.html"
+  },
+  {
+   "code": "9703",
+   "n": "Hawaiian Blue",
+   "hex": "#3AB4B9",
+   "fam": "deep",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/hawaiian-blue-n.html"
+  },
+  {
+   "code": "9697",
+   "n": "Ajrakh Blue",
+   "hex": "#008B95",
+   "fam": "deep",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/ajrakh-blue-n.html"
+  },
+  {
+   "code": "9692",
+   "n": "Signature Teal",
+   "hex": "#007A7D",
+   "fam": "deep",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/signature-teal-n.html"
+  },
+  {
+   "code": "9700",
+   "n": "Prussian Teal",
+   "hex": "#235F69",
+   "fam": "deep",
+   "url": "https://www.asianpaints.com/colour-catalogue/green-wall-colours/prussian-teal-n.html"
+  },
+  {
+   "code": "7246",
+   "n": "Ink Blue",
+   "hex": "#507BB2",
+   "fam": "deep",
+   "url": "https://www.asianpaints.com/colour-catalogue/blue-wall-colours/ink-blue.html"
+  },
+  {
+   "code": "9637",
+   "n": "Placid Blue",
+   "hex": "#5981B6",
+   "fam": "deep",
+   "url": "https://www.asianpaints.com/colour-catalogue/blue-wall-colours/placid-blue-n.html"
+  },
+  {
+   "code": "9647",
+   "n": "Naval Club",
+   "hex": "#305B90",
+   "fam": "deep",
+   "url": "https://www.asianpaints.com/colour-catalogue/blue-wall-colours/naval-club-n.html"
+  },
+  {
+   "code": "1306",
+   "n": "Oriental Blue",
+   "hex": "#2E5282",
+   "fam": "deep",
+   "url": "https://www.asianpaints.com/colour-catalogue/blue-wall-colours/oriental-blue.html"
+  },
+  {
+   "code": "8132",
+   "n": "Pale Blush",
+   "hex": "#F4E8E7",
+   "fam": "pink",
+   "url": "https://www.asianpaints.com/colour-catalogue/pink-wall-colours/pale-blush.html"
+  },
+  {
+   "code": "9426",
+   "n": "Candy Floss",
+   "hex": "#EFCFE4",
+   "fam": "pink",
+   "url": "https://www.asianpaints.com/colour-catalogue/pink-wall-colours/candy-floss.html"
+  },
+  {
+   "code": "8064",
+   "n": "Tinker Bell",
+   "hex": "#FAADAB",
+   "fam": "pink",
+   "url": "https://www.asianpaints.com/colour-catalogue/pink-wall-colours/tinker-bell.html"
+  },
+  {
+   "code": "8063",
+   "n": "Pink Candy",
+   "hex": "#F29495",
+   "fam": "pink",
+   "url": "https://www.asianpaints.com/colour-catalogue/pink-wall-colours/pink-candy.html"
+  },
+  {
+   "code": "9593",
+   "n": "Pastell Rosa",
+   "hex": "#CCA1C8",
+   "fam": "purple",
+   "url": "https://www.asianpaints.com/colour-catalogue/pink-wall-colours/pastell-rosa-n.html"
+  },
+  {
+   "code": "9594",
+   "n": "True Violet",
+   "hex": "#B987B7",
+   "fam": "purple",
+   "url": "https://www.asianpaints.com/colour-catalogue/pink-wall-colours/true-violet-n.html"
+  },
+  {
+   "code": "9597",
+   "n": "Blue Plum",
+   "hex": "#955D8F",
+   "fam": "purple",
+   "url": "https://www.asianpaints.com/colour-catalogue/pink-wall-colours/blue-plum-n.html"
+  },
+  {
+   "code": "9584",
+   "n": "Fervent Fuchsia",
+   "hex": "#B05987",
+   "fam": "pink",
+   "url": "https://www.asianpaints.com/colour-catalogue/pink-wall-colours/fervent-fuchsia-n.html"
+  },
+  {
+   "code": "8165",
+   "n": "Royal Satin",
+   "hex": "#6D4358",
+   "fam": "purple",
+   "url": "https://www.asianpaints.com/colour-catalogue/pink-wall-colours/royal-satin.html"
+  },
+  {
+   "code": "L124",
+   "n": "Pure Ivory",
+   "hex": "#F3EEDD",
+   "fam": "white",
+   "url": "https://www.asianpaints.com/colour-catalogue/off-white-wall-colours/pure-ivory.html"
+  },
+  {
+   "code": "L134",
+   "n": "Double Cream",
+   "hex": "#F0EADA",
+   "fam": "white",
+   "url": "https://www.asianpaints.com/colour-catalogue/off-white-wall-colours/double-cream.html"
+  },
+  {
+   "code": "7860",
+   "n": "Thick Cream",
+   "hex": "#F4EED9",
+   "fam": "white",
+   "url": "https://www.asianpaints.com/colour-catalogue/off-white-wall-colours/thick-cream.html"
+  },
+  {
+   "code": "8020",
+   "n": "Desert Ivory",
+   "hex": "#F5E8D9",
+   "fam": "white",
+   "url": "https://www.asianpaints.com/colour-catalogue/off-white-wall-colours/desert-ivory.html"
+  },
+  {
+   "code": "0307",
+   "n": "Cream",
+   "hex": "#F1E3C8",
+   "fam": "white",
+   "url": "https://www.asianpaints.com/colour-catalogue/off-white-wall-colours/cream.html"
+  }
+ ],
+ "families": [
+  [
+   "orange",
+   [
+    "Peach & orange",
+    "पीच और नारंगी"
+   ]
+  ],
+  [
+   "yellow",
+   [
+    "Yellow",
+    "पीला"
+   ]
+  ],
+  [
+   "green",
+   [
+    "Mint, pista & sea green",
+    "पुदीना, पिस्ता और समुद्री हरा"
+   ]
+  ],
+  [
+   "blue",
+   [
+    "Sky & blue",
+    "आसमानी और नीला"
+   ]
+  ],
+  [
+   "purple",
+   [
+    "Lavender",
+    "लैवेंडर"
+   ]
+  ],
+  [
+   "pink",
+   [
+    "Pink & rose",
+    "गुलाबी"
+   ]
+  ],
+  [
+   "red",
+   [
+    "Earthy red",
+    "मिट्टी जैसा लाल"
+   ]
+  ],
+  [
+   "earth",
+   [
+    "Haldi, ochre & terracotta",
+    "हल्दी, गेरुआ और टेराकोटा"
+   ]
+  ],
+  [
+   "deep",
+   [
+    "Deep greens, teal & royal blue (accent only)",
+    "गहरा हरा, टील और रॉयल नीला (सिर्फ़ एक्सेंट)"
+   ]
+  ],
+  [
+   "white",
+   [
+    "Off-white",
+    "ऑफ़-व्हाइट"
+   ]
+  ]
+ ],
+ "rooms": [
+  {
+   "k": "hall",
+   "n": [
+    "Hall + passage",
+    "हॉल + पैसेज"
+   ],
+   "rooms": [
+    "Hall",
+    "Passage"
+   ],
+   "acc": "N",
+   "accN": [
+    "arch wall (north), seen as you enter",
+    "मेहराब वाली दीवार (उत्तर), घुसते ही दिखती है"
+   ]
+  },
+  {
+   "k": "room1",
+   "n": [
+    "Room 1",
+    "कमरा 1"
+   ],
+   "rooms": [
+    "Room 1"
+   ],
+   "acc": "E",
+   "accN": [
+    "bed-head wall (east)",
+    "बेड के सिरहाने की दीवार (पूर्व)"
+   ]
+  },
+  {
+   "k": "room2",
+   "n": [
+    "Room 2 bedroom",
+    "कमरा 2 बेडरूम"
+   ],
+   "rooms": [
+    "Room 2"
+   ],
+   "acc": "N",
+   "accN": [
+    "bed-head wall (the cross wall, north)",
+    "बेड के सिरहाने की दीवार (आड़ी दीवार, उत्तर)"
+   ]
+  },
+  {
+   "k": "bath",
+   "n": [
+    "Bathrooms (above tiles)",
+    "बाथरूम (टाइल के ऊपर)"
+   ],
+   "rooms": [
+    "Room 2 Bath",
+    "Bathroom 1",
+    "Bathroom 2"
+   ],
+   "acc": "",
+   "accN": [
+    "no accent",
+    "एक्सेंट नहीं"
+   ]
+  }
+ ],
+ "keep": [
+  "Kitchen",
+  "Stair",
+  "Open Square",
+  "Balcony"
+ ],
+ "schemes": [
+  {
+   "k": "peach",
+   "n": [
+    "Peach welcome",
+    "पीच स्वागत"
+   ],
+   "mood": [
+    "warm, festive, glows in evening light",
+    "गर्म, त्योहार जैसा, शाम की रोशनी में चमकता"
+   ],
+   "rooms": {
+    "hall": [
+     "9909",
+     "8000"
+    ],
+    "room1": [
+     "7865",
+     "7960"
+    ],
+    "room2": [
+     "8019",
+     "9409"
+    ],
+    "bath": [
+     "7940",
+     null
+    ]
+   },
+   "why": [
+    "Peach is the most-recommended cheerful wall colour for Indian halls (Asian Paints, Berger); Berger also calls it a good Vastu shade. Light Hint of Peach on most walls, deeper Perfect Peach only on the arch wall.",
+    "भारतीय हॉल के लिए पीच सबसे ज़्यादा सुझाया जाने वाला खुशनुमा रंग है (Asian Paints, Berger); Berger इसे वास्तु के लिए भी अच्छा बताता है। ज़्यादातर दीवारों पर हल्का Hint of Peach, गहरा Perfect Peach सिर्फ़ मेहराब वाली दीवार पर।"
+   ],
+   "tags": [
+    "bright",
+    "parents",
+    "vastu"
+   ]
+  },
+  {
+   "k": "mint",
+   "n": [
+    "Pista & sea green",
+    "पिस्ता और समुद्री हरा"
+   ],
+   "mood": [
+    "cool and fresh for Bihar's summer",
+    "बिहार की गर्मी में ठंडा और ताज़ा"
+   ],
+   "rooms": {
+    "hall": [
+     "9758",
+     "7505"
+    ],
+    "room1": [
+     "7516",
+     "7562"
+    ],
+    "room2": [
+     "7507",
+     "7504"
+    ],
+    "bath": [
+     "7460",
+     null
+    ]
+   },
+   "why": [
+    "Greens feel cooler in hot months and go well with wooden furniture. Pale Mint Frosting keeps the hall bright; Turquoise Treat gives one lively wall.",
+    "हरे रंग गर्मी में ठंडे लगते हैं और लकड़ी के फ़र्नीचर के साथ अच्छे लगते हैं। हल्का Mint Frosting हॉल को उजला रखता है; Turquoise Treat एक दीवार को जीवंत बनाता है।"
+   ],
+   "tags": [
+    "calm",
+    "bright"
+   ]
+  },
+  {
+   "k": "sunsky",
+   "n": [
+    "Sunshine & sky",
+    "धूप और आसमान"
+   ],
+   "mood": [
+    "bright and happy, kids love it",
+    "चमकीला और खुशहाल, बच्चों को पसंद"
+   ],
+   "rooms": {
+    "hall": [
+     "7865",
+     "7362"
+    ],
+    "room1": [
+     "7912",
+     "7361"
+    ],
+    "room2": [
+     "7362",
+     "7894"
+    ],
+    "bath": [
+     "9758",
+     null
+    ]
+   },
+   "why": [
+    "Yellow + blue is the classic warm-cool pair Asian Paints suggests for lively rooms; yellow walls make a hall feel sunny even on cloudy days.",
+    "पीला + नीला वह क्लासिक गर्म-ठंडा जोड़ा है जो Asian Paints जीवंत कमरों के लिए सुझाता है; पीली दीवारें बादल वाले दिन भी हॉल को धूप जैसा बनाती हैं।"
+   ],
+   "tags": [
+    "bright"
+   ]
+  },
+  {
+   "k": "lavender",
+   "n": [
+    "Lavender & rose",
+    "लैवेंडर और गुलाब"
+   ],
+   "mood": [
+    "soft, traditional, restful bedrooms",
+    "नरम, पारंपरिक, आरामदायक बेडरूम"
+   ],
+   "rooms": {
+    "hall": [
+     "7147",
+     "9602"
+    ],
+    "room1": [
+     "9609",
+     "9610"
+    ],
+    "room2": [
+     "8049",
+     "9416"
+    ],
+    "bath": [
+     "9436",
+     null
+    ]
+   },
+   "why": [
+    "Pink + lavender is one of Asian Paints' suggested pairs for bedrooms and relaxed living; light pinks, blues and greens are the usual Vastu-friendly bedroom colours.",
+    "गुलाबी + लैवेंडर बेडरूम और आरामदायक बैठक के लिए Asian Paints का सुझाया जोड़ा है; हल्के गुलाबी, नीले और हरे रंग बेडरूम के लिए वास्तु के अनुकूल माने जाते हैं।"
+   ],
+   "tags": [
+    "calm"
+   ]
+  },
+  {
+   "k": "festive",
+   "n": [
+    "Marigold festive",
+    "गेंदा उत्सव"
+   ],
+   "mood": [
+    "rich Indian colours, bold accent walls",
+    "गहरे भारतीय रंग, बोल्ड एक्सेंट दीवार"
+   ],
+   "rooms": {
+    "hall": [
+     "7986",
+     "9920"
+    ],
+    "room1": [
+     "7960",
+     "9666"
+    ],
+    "room2": [
+     "9910",
+     "9651"
+    ],
+    "bath": [
+     "7865",
+     null
+    ]
+   },
+   "why": [
+    "Marigold with an earthy Deccan Earth wall echoes Indian festive colours; deep blue accents in the bedrooms balance the warmth. Deep accents need 3 coats.",
+    "गेंदा रंग के साथ मिट्टी जैसी Deccan Earth दीवार त्योहार वाले भारतीय रंग देती है; बेडरूम में गहरा नीला एक्सेंट गर्मी को संतुलित करता है। गहरे एक्सेंट को 3 कोट चाहिए।"
+   ],
+   "tags": [
+    "bold",
+    "bright",
+    "parents"
+   ]
+  },
+  {
+   "k": "coral",
+   "n": [
+    "Coral & teal",
+    "कोरल और टील"
+   ],
+   "mood": [
+    "modern and lively",
+    "मॉडर्न और जीवंत"
+   ],
+   "rooms": {
+    "hall": [
+     "8019",
+     "7512"
+    ],
+    "room1": [
+     "8017",
+     "7504"
+    ],
+    "room2": [
+     "8122",
+     "9416"
+    ],
+    "bath": [
+     "7460",
+     null
+    ]
+   },
+   "why": [
+    "Coral + peach is an Asian Paints living-room pick; a teal accent adds contrast that still feels fresh.",
+    "कोरल + पीच Asian Paints का बैठक वाला सुझाव है; टील एक्सेंट ताज़ा लगने वाला कंट्रास्ट जोड़ता है।"
+   ],
+   "tags": [
+    "bold",
+    "trend"
+   ]
+  },
+  {
+   "k": "haldi",
+   "n": [
+    "Haldi & mehendi",
+    "हल्दी और मेहंदी"
+   ],
+   "mood": [
+    "traditional North-Indian warmth, wedding-house feel",
+    "पारंपरिक उत्तर भारतीय गर्माहट, शादी वाले घर जैसा"
+   ],
+   "rooms": {
+    "hall": [
+     "7880",
+     "9886"
+    ],
+    "room1": [
+     "9758",
+     "7622"
+    ],
+    "room2": [
+     "7865",
+     "2361"
+    ],
+    "bath": [
+     "7865",
+     null
+    ]
+   },
+   "why": [
+    "Turmeric yellow with henna green, two colours every Indian family knows. Honey Mustard on the hall with a Mustard Wood arch wall; sage-olive greens in the bedrooms keep it calm. Designers in Asian Paints' magazine note mustard/ochre and sage are back in Indian homes.",
+    "हल्दी जैसा पीला और मेहंदी जैसा हरा, दो रंग जो हर भारतीय परिवार जानता है। हॉल में Honey Mustard, मेहराब पर Mustard Wood; बेडरूम में सेज-ऑलिव हरा शांत रखता है।"
+   ],
+   "tags": [
+    "bright",
+    "parents",
+    "trend"
+   ]
+  },
+  {
+   "k": "royal",
+   "n": [
+    "Royal blue & cream",
+    "रॉयल नीला और क्रीम"
+   ],
+   "mood": [
+    "rich, classy, cool in summer",
+    "शाही, क्लासी, गर्मी में ठंडा"
+   ],
+   "rooms": {
+    "hall": [
+     "L134",
+     "1306"
+    ],
+    "room1": [
+     "7362",
+     "9647"
+    ],
+    "room2": [
+     "8132",
+     "7246"
+    ],
+    "bath": [
+     "9436",
+     null
+    ]
+   },
+   "why": [
+    "Cream walls with one deep royal-blue wall look rich without making the room dark; blue is cooling and a Vastu-friendly bedroom colour. Deep blue needs 3 coats over a tinted primer.",
+    "क्रीम दीवारें और एक गहरी रॉयल नीली दीवार, कमरा गहरा किए बिना शाही लगता है; नीला ठंडक देता है और बेडरूम के लिए वास्तु-अनुकूल है। गहरे नीले को टिंटेड प्राइमर पर 3 कोट चाहिए।"
+   ],
+   "tags": [
+    "bold",
+    "calm"
+   ]
+  },
+  {
+   "k": "terracotta",
+   "n": [
+    "Terracotta & ivory",
+    "टेराकोटा और आइवरी"
+   ],
+   "mood": [
+    "earthy, mitti-ghar warmth",
+    "मिट्टी के घर जैसी गर्माहट"
+   ],
+   "rooms": {
+    "hall": [
+     "8020",
+     "8029"
+    ],
+    "room1": [
+     "0307",
+     "9988"
+    ],
+    "room2": [
+     "8049",
+     "8053"
+    ],
+    "bath": [
+     "7940",
+     null
+    ]
+   },
+   "why": [
+    "Brick and clay reds on ivory: a warm, grounded Indian look that Asian Paints' designers say is replacing grey-beige. Keep terracotta to one wall per room; it hides marks well in the hall.",
+    "आइवरी पर ईंट-मिट्टी जैसा लाल: गर्म, ज़मीनी भारतीय लुक, जिसे Asian Paints के डिज़ाइनर ग्रे-बेज की जगह ले रहा बताते हैं। हर कमरे में टेराकोटा एक दीवार पर रखें; हॉल में दाग भी कम दिखते हैं।"
+   ],
+   "tags": [
+    "bold",
+    "trend"
+   ]
+  },
+  {
+   "k": "rani",
+   "n": [
+    "Rani pink & gold",
+    "रानी गुलाबी और सुनहरा"
+   ],
+   "mood": [
+    "festive, joyful, for those who love pink",
+    "उत्सव जैसा, खुशनुमा, गुलाबी पसंद करने वालों के लिए"
+   ],
+   "rooms": {
+    "hall": [
+     "7865",
+     "9584"
+    ],
+    "room1": [
+     "9426",
+     "9597"
+    ],
+    "room2": [
+     "8064",
+     "8063"
+    ],
+    "bath": [
+     "8132",
+     null
+    ]
+   },
+   "why": [
+    "Bright pink with golden yellow is the classic Indian festive pair (think wedding marigolds and rani-pink saris). Fuchsia only on the hall arch wall; softer Candy Floss and Tinker Bell in bedrooms.",
+    "चमकीला गुलाबी और सुनहरा पीला क्लासिक भारतीय उत्सव जोड़ा है (शादी के गेंदे और रानी-गुलाबी साड़ी)। फ़ुशिया सिर्फ़ हॉल की मेहराब दीवार पर; बेडरूम में हल्का Candy Floss और Tinker Bell।"
+   ],
+   "tags": [
+    "bright",
+    "parents",
+    "bold"
+   ]
+  },
+  {
+   "k": "peacock",
+   "n": [
+    "Peacock teal & yellow",
+    "मोरपंखी टील और पीला"
+   ],
+   "mood": [
+    "vivid, artistic, Ajrakh-print colours",
+    "चटक, कलात्मक, अजरख प्रिंट जैसे रंग"
+   ],
+   "rooms": {
+    "hall": [
+     "7865",
+     "9692"
+    ],
+    "room1": [
+     "7516",
+     "7509"
+    ],
+    "room2": [
+     "9758",
+     "9697"
+    ],
+    "bath": [
+     "7460",
+     null
+    ]
+   },
+   "why": [
+    "Peacock teal against sunny yellow echoes Indian textiles (Ajrakh, Banarasi). One deep teal wall per room, pale mint or yellow on the rest.",
+    "धूप जैसे पीले के साथ मोरपंखी टील भारतीय कपड़ों (अजरख, बनारसी) जैसा है। हर कमरे में एक गहरी टील दीवार, बाकी पर हल्का पुदीना या पीला।"
+   ],
+   "tags": [
+    "bold",
+    "bright"
+   ]
+  },
+  {
+   "k": "sage",
+   "n": [
+    "Sage & ivory (2026 trend)",
+    "सेज और आइवरी (2026 ट्रेंड)"
+   ],
+   "mood": [
+    "calm, modern, the young-couple pick",
+    "शांत, मॉडर्न, युवाओं की पसंद"
+   ],
+   "rooms": {
+    "hall": [
+     "L124",
+     "7624"
+    ],
+    "room1": [
+     "7860",
+     "2463"
+    ],
+    "room2": [
+     "7624",
+     "9755"
+    ],
+    "bath": [
+     "L124",
+     null
+    ]
+   },
+   "why": [
+    "Asian Paints' Colour of the Year 2026, Moonlit Silk, is a warm luminous neutral green (its exact shade isn't published online yet, so Dry Sage is used as the closest verified shade). Pantone's 2026 pick is a soft white. A middle ground between 'dull' off-white and loud colours.",
+    "Asian Paints का 2026 का कलर ऑफ़ द ईयर Moonlit Silk एक गर्म, चमकदार न्यूट्रल हरा है (उसका सही शेड अभी ऑनलाइन नहीं, इसलिए सबसे करीब Dry Sage लिया है)। फीके ऑफ़-व्हाइट और तेज़ रंगों के बीच का रास्ता।"
+   ],
+   "tags": [
+    "calm",
+    "trend"
+   ]
+  },
+  {
+   "k": "vastu",
+   "n": [
+    "Vastu-safe light",
+    "वास्तु-अनुकूल हल्के रंग"
+   ],
+   "mood": [
+    "light colours by the Vastu book",
+    "वास्तु के हिसाब से हल्के रंग"
+   ],
+   "rooms": {
+    "hall": [
+     "0307",
+     "7588"
+    ],
+    "room1": [
+     "7362",
+     null
+    ],
+    "room2": [
+     "8049",
+     null
+    ],
+    "bath": [
+     "9436",
+     null
+    ]
+   },
+   "why": [
+    "Asian Paints' Vastu guide says living rooms do best in light shades (cream, light green, soft yellow, light blue) and pairs cream with light green; bedrooms in light blue and pink. Avoid dark red, black, heavy grey and deep purple in the hall.",
+    "Asian Paints की वास्तु गाइड के अनुसार बैठक में हल्के रंग (क्रीम, हल्का हरा, हल्का पीला, हल्का नीला) सबसे अच्छे, क्रीम के साथ हल्का हरा; बेडरूम में हल्का नीला और गुलाबी। हॉल में गहरा लाल, काला, ज़्यादा ग्रे और गहरा बैंगनी न लगाएँ।"
+   ],
+   "tags": [
+    "vastu",
+    "calm",
+    "parents"
+   ]
+  },
+  {
+   "k": "white",
+   "n": [
+    "Safe white (the old plan)",
+    "सादा सफ़ेद (पुराना प्लान)"
+   ],
+   "mood": [
+    "for comparison only",
+    "सिर्फ़ तुलना के लिए"
+   ],
+   "rooms": {
+    "hall": [
+     "7940",
+     "8116"
+    ],
+    "room1": [
+     "L145",
+     null
+    ],
+    "room2": [
+     "L145",
+     null
+    ],
+    "bath": [
+     "L145",
+     null
+    ]
+   },
+   "why": [
+    "The quiet off-white look from the earlier plan, kept here so you can compare.",
+    "पहले प्लान का शांत ऑफ़-व्हाइट लुक, तुलना के लिए।"
+   ],
+   "tags": [
+    "calm"
+   ]
+  }
+ ],
+ "tagn": {
+  "bright": [
+   "Bright & cheerful",
+   "चमकीले"
+  ],
+  "parents": [
+   "Parents' pick",
+   "माता-पिता की पसंद"
+  ],
+  "calm": [
+   "Calm",
+   "शांत"
+  ],
+  "bold": [
+   "Bold accent",
+   "बोल्ड"
+  ],
+  "trend": [
+   "Trending 2026",
+   "2026 ट्रेंड"
+  ],
+  "vastu": [
+   "Vastu",
+   "वास्तु"
+  ]
+ },
+ "voices": [
+  [
+   "Indian designers: 'Colour is culture, particularly in India'; the all-beige look is called a Western, social-media-driven trend (Asian Paints Beautiful Homes).",
+   "भारतीय डिज़ाइनर: 'रंग संस्कृति है, ख़ासकर भारत में'; सब-कुछ बेज वाला लुक पश्चिमी, सोशल-मीडिया ट्रेंड कहा गया (Beautiful Homes)।"
+  ],
+  [
+   "Indians abroad: plain grey-white homes feel uncomfortable; colour is tied to festivals like Diwali and Holi (Blind thread). Realtors still advise neutrals for resale.",
+   "विदेश में रहने वाले भारतीय: सादे ग्रे-सफ़ेद घर अजीब लगते हैं; रंग दिवाली-होली से जुड़ा है (Blind)। प्रॉपर्टी वाले बेचने के लिए फिर भी हल्के रंग सुझाते हैं।"
+  ],
+  [
+   "Homeowners: an off-white living room started looking 'really dull' after 4 years; ivory + muted gold, ocean blue + cream, or sunny yellow were the suggested fixes (NoBroker forum).",
+   "घर-मालिक: ऑफ़-व्हाइट बैठक 4 साल बाद 'बहुत फीकी' लगने लगी; आइवरी + सुनहरा, समुद्री नीला + क्रीम या धूप जैसा पीला सुझाया गया (NoBroker)।"
+  ],
+  [
+   "Families often split: one wants bright yellow, the other something soothing. The usual compromise is one bright accent wall, not the whole room (NoBroker kids-room thread).",
+   "परिवार में अक्सर मतभेद: एक को चटक पीला, दूसरे को शांत रंग। आम समझौता: पूरा कमरा नहीं, एक चटक एक्सेंट दीवार (NoBroker)।"
+  ],
+  [
+   "Parents following Vastu chose cream, beige and pastel shades and avoided black and grey (NoBroker). Sage green living rooms get good reviews from people who painted them.",
+   "वास्तु मानने वाले माता-पिता ने क्रीम, बेज और पेस्टल चुने, काला-ग्रे नहीं (NoBroker)। जिन्होंने सेज ग्रीन बैठक बनाई, उन्हें पसंद आई।"
+  ],
+  [
+   "Designer pairs suggested for living rooms: Dry Sage 7624 + light grey, Light Sky 7331 + white, Terracotta 0427 + Desert Dune 8754, Beige 0302 + Diced Olive 7784 (NoBroker).",
+   "बैठक के लिए डिज़ाइनर जोड़े: Dry Sage 7624 + हल्का ग्रे, Light Sky 7331 + सफ़ेद, Terracotta 0427 + Desert Dune 8754, Beige 0302 + Diced Olive 7784 (NoBroker)।"
+  ]
+ ],
+ "tips": [
+  [
+   "Screen colours are only indicative (Asian Paints says so). Buy sample pots of 2–3 favourites and paint a 2 × 2 ft patch on two walls; look in morning and evening light before deciding.",
+   "स्क्रीन के रंग सिर्फ़ अंदाज़ा हैं (Asian Paints भी यही कहता है)। 2–3 पसंदीदा रंगों के सैंपल डिब्बे लेकर दो दीवारों पर 2 × 2 फीट का पैच लगाएँ; फ़ैसले से पहले सुबह और शाम की रोशनी में देखें।"
+  ],
+  [
+   "Keep the bright colour on one accent wall per room and a lighter shade of the same family on the rest; the room looks colourful but not small.",
+   "हर कमरे में चमकीला रंग एक एक्सेंट दीवार पर, बाकी पर उसी परिवार का हल्का रंग; कमरा रंगीन लगेगा पर छोटा नहीं।"
+  ],
+  [
+   "Ceilings stay white (White Cameo or similar) so the room stays bright.",
+   "छत सफ़ेद रखें (White Cameo या ऐसा), ताकि कमरा उजला रहे।"
+  ],
+  [
+   "Deep accents (Deccan Earth, Dal Lake Blue, Pangong Blue) need 3 coats and a tinted primer; pastels need 2 coats over white putty.",
+   "गहरे एक्सेंट (Deccan Earth, Dal Lake Blue, Pangong Blue) को 3 कोट और टिंटेड प्राइमर चाहिए; हल्के रंगों को सफ़ेद पुट्टी पर 2 कोट।"
+  ],
+  [
+   "Bedrooms: light blue, pink, green or yellow are the usual Vastu-friendly picks; avoid black, grey and brown there.",
+   "बेडरूम: हल्का नीला, गुलाबी, हरा या पीला आमतौर पर वास्तु के अनुकूल; वहाँ काला, ग्रे और भूरा न लगाएँ।"
+  ],
+  [
+   "Use the same product grade everywhere (Apcolite Premium or Royale) so colours look even; ask the dealer to tint by code, not by 'similar shade'.",
+   "हर जगह एक ही ग्रेड (Apcolite Premium या Royale) ताकि रंग एक जैसे दिखें; डीलर से कोड से टिंट कराएँ, 'मिलता-जुलता रंग' से नहीं।"
+  ],
+  [
+   "Use at most three colours in a room (two light + one accent), keep neighbouring rooms in related colour families, and never paint the ceiling dark (Asian Paints, 6 mistakes).",
+   "एक कमरे में ज़्यादा से ज़्यादा तीन रंग (दो हल्के + एक एक्सेंट), पास वाले कमरों में मिलते-जुलते रंग, और छत कभी गहरी नहीं (Asian Paints)।"
+  ]
+ ],
+ "sources": [
+  [
+   "Asian Paints colour catalogue (shade data)",
+   "https://www.asianpaints.com/colour-catalogue.html"
+  ],
+  [
+   "Asian Paints: colour combinations for your living room",
+   "https://www.asianpaints.com/blogs/colour-combinations-for-your-living-room.html"
+  ],
+  [
+   "Asian Paints: best interior colour combinations for Indian homes",
+   "https://www.asianpaints.com/blogs/best-interior-colour-combination-for-indian-homes.html"
+  ],
+  [
+   "Berger: peach colour combinations",
+   "https://www.bergerpaints.com/blogs/peach-colour-combination-for-walls"
+  ],
+  [
+   "Urban Company: Asian Paints combinations for Indian homes",
+   "https://www.urbancompany.com/blog/our-favourite-asian-paints-colour-combination-for-indian-homes"
+  ],
+  [
+   "Square Yards: wall colour combinations (incl. Vastu notes)",
+   "https://www.squareyards.com/blog/wall-colour-combination-decart"
+  ],
+  [
+   "Beautiful Homes: Indian homes broke up with brown",
+   "https://www.beautifulhomes.asianpaints.com/magazine/lifestyle/features/have-indian-homes-finally-broken-up-with-brown.html"
+  ],
+  [
+   "Beautiful Homes: Sarah Sham, beige to bright",
+   "https://www.beautifulhomes.asianpaints.com/magazine/decor-advice/design-and-style/sarah-sham-on-indian-homes-going-from-beige-to-bright"
+  ],
+  [
+   "Beautiful Homes: neutrals vs bright, designers' views",
+   "https://beautifulhomes.asianpaints.com/magazine/lifestyle/features/soothing-neutrals-vs-bright-colours-opinion-by-interior-designers.html"
+  ],
+  [
+   "Asian Paints: living room Vastu colours",
+   "https://www.asianpaints.com/blogs/living-room-vastu-colours.html"
+  ],
+  [
+   "Asian Paints: 6 mistakes picking wall colours",
+   "https://www.asianpaints.com/blogs/6-mistakes-to-avoid-when-picking-wall-paint-colours.html"
+  ],
+  [
+   "Asian Paints ColourNext 2026 (Moonlit Silk)",
+   "https://www.asianpaints.com/content/ap/en/home/colour-next.html"
+  ],
+  [
+   "NoBroker forum: best living room colour",
+   "https://www.nobroker.in/forum/which-color-is-best-for-living-room-asian-paints/"
+  ],
+  [
+   "NoBroker forum: kids' room colour",
+   "https://www.nobroker.in/forum/which-colour-is-best-for-kids-room/"
+  ],
+  [
+   "Blind: why Indians paint rooms in bright colours",
+   "https://www.teamblind.com/post/why-do-indians-paint-bedrooms-in-different-bright-colors-kcubod7e"
+  ]
+ ]
+}

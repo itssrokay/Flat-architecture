@@ -41,6 +41,8 @@ export const CONFIG = {
     { key: 'plants',          label: 'Plants' },
     { key: 'decor',           label: 'Decor' },
     { key: 'fixtures',        label: 'Fan & AC' },
+    { key: 'sanitaryware',    label: 'Bathroom fittings' },
+    { key: 'wall_finish',     label: 'Wall panels & trims' },
   ],
   planCategory: 'plan_reference',            // handled by Plan Compare, not a toggle
   planOverlayName: 'PLAN_REFERENCE_OVERLAY', // object in the GLB carrying the plan image
@@ -56,16 +58,22 @@ export const CONFIG = {
   },
   noStatus: { label: 'No status in model', color: '#d0d0d0' },
 
-  collideCategories: ['walls', 'pillars', 'doors', 'windows', 'railings', 'stairs', 'furniture', 'wardrobe', 'fenestration', 'plants', 'balcony'],
+  collideCategories: ['walls', 'pillars', 'doors', 'windows', 'railings', 'stairs', 'furniture', 'wardrobe', 'fenestration', 'plants', 'balcony', 'sanitaryware'],
   groundCategories: ['floors', 'stairs', 'roof'],
 
-  roomOrder: ['Room 1', 'Kitchen', 'Bathroom 1', 'Bathroom 2', 'Passage', 'Hall', 'Room 2',
+  roomOrder: ['Room 1', 'Kitchen', 'Bathroom 1', 'Bathroom 2', 'Passage', 'Hall', 'Room 2', 'Room 2 Bath',
               'Balcony', 'Stair', 'Open Square'],
 
   // Optional hand-made viewpoints (model coordinates, metres, Y up, north = -Z).
   // Use "Copy current view" in the app to generate an entry, then paste it here.
   // Example: 'Room 1': [{ name: 'Balcony door', pos: [0.5, 1.6, -2], target: [-1, 1.5, -2] }]
   viewpoints: {
+    'Hall': [
+      { name: 'TV wall (from the sofa)', pos: [4.05, 1.5, 6.32], target: [1.19, 1.25, 6.32] },
+      { name: 'Main door (just inside)', pos: [1.7, 1.6, 9.22], target: [6.4, 1.3, 7.6] },
+      { name: 'Whole hall (from the south-east corner)', pos: [5.79, 1.65, 13.41], target: [2.44, 0.9, 6.1] },
+      { name: 'Dining & window', pos: [3.96, 1.6, 9.0], target: [2.9, 0.9, 13.1] },
+    ],
     'Room 1': [
       { name: 'Design view (from balcony door)', pos: [0.244, 1.585, 2.591], target: [3.505, 1.006, 0.914] },
       { name: 'Towards balcony (from door side)', pos: [3.597, 1.585, 2.804], target: [0.152, 1.158, 1.067] },

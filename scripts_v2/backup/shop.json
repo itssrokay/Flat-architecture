@@ -1,0 +1,640 @@
+{
+ "items": [
+  {
+   "k": "sofa",
+   "match": "SOFA",
+   "n": [
+    "3-seater sofa",
+    "3-सीटर सोफ़ा"
+   ],
+   "size": [
+    "about 7 ft, fabric, oatmeal / beige",
+    "लगभग 7 फीट, कपड़ा, बेज"
+   ],
+   "qty": 1,
+   "budget": {
+    "band": "₹12,000–25,000",
+    "url": "https://www.amazon.in/s?k=3+seater+fabric+sofa+beige&rh=p_36%3A1200000-2500000"
+   },
+   "mid": {
+    "band": "₹25,000–50,000",
+    "url": "https://www.amazon.in/s?k=3+seater+fabric+sofa+premium&rh=p_36%3A2500000-5000000"
+   },
+   "ex": [
+    {
+     "t": "Sofa Architect Chilly 3-seater, beige",
+     "url": "https://www.amazon.in/dp/B08DR7NKQG"
+    },
+    {
+     "t": "Sofa Architect Harlem 3-seater, beige",
+     "url": "https://www.amazon.in/dp/B08BXLMWLM"
+    }
+   ],
+   "why": [
+    "A 7 ft 3-seater fits the hall with 8 ft to the TV; washable fabric covers beat leatherette in Bihar's heat.",
+    "7 फीट का 3-सीटर हॉल में TV से 8 फीट दूरी पर फ़िट; बिहार की गर्मी में रेक्सीन से धुलने वाला कपड़ा बेहतर।"
+   ],
+   "tip": [
+    "Buying by photo: check seat depth (about 22 inch) and foam density; cheap foam sags in a year.",
+    "फ़ोटो देखकर ख़रीदना: सीट की गहराई (लगभग 22 इंच) और फ़ोम की डेंसिटी देखें; सस्ता फ़ोम एक साल में बैठ जाता है।"
+   ]
+  },
+  {
+   "k": "bed",
+   "match": "_BED_",
+   "n": [
+    "Queen bed with storage",
+    "स्टोरेज वाला क्वीन बेड"
+   ],
+   "size": [
+    "5 × 6½ ft (Room 1)",
+    "5 × 6½ फीट (कमरा 1)"
+   ],
+   "qty": 1,
+   "budget": {
+    "band": "₹10,000–20,000",
+    "url": "https://www.amazon.in/s?k=queen+size+bed+with+storage+engineered+wood&rh=p_36%3A1000000-2000000"
+   },
+   "mid": {
+    "band": "₹20,000–40,000",
+    "url": "https://www.amazon.in/s?k=sheesham+wood+queen+size+bed+with+storage&rh=p_36%3A2000000-4000000"
+   },
+   "ex": [
+    {
+     "t": "WOODLAB sheesham queen bed, 4 drawers",
+     "url": "https://www.amazon.in/dp/B08ZJJ5NJ2"
+    },
+    {
+     "t": "TG Furniture sheesham queen bed, pull-out storage",
+     "url": "https://www.amazon.in/dp/B09CQ17VXR"
+    }
+   ],
+   "note": [
+    "Mattress not included: budget ₹8–15k (6 inch).",
+    "गद्दा अलग: ₹8–15 हज़ार (6 इंच)।"
+   ],
+   "why": [
+    "Queen size with drawers gives storage without a separate trunk.",
+    "दराज़ वाला क्वीन बेड, अलग संदूक की ज़रूरत नहीं।"
+   ],
+   "tip": [
+    "Engineered-wood beds on a damp floor swell at the base; keep them off the wet-mop line or choose solid wood.",
+    "नम फ़र्श पर इंजीनियर्ड वुड का बेड नीचे से फूलता है; पोंछे के पानी से बचाएँ या ठोस लकड़ी लें।"
+   ]
+  },
+  {
+   "k": "coffee",
+   "match": "COFFEE_TABLE",
+   "n": [
+    "Coffee table with shelf",
+    "शेल्फ़ वाली सेंटर टेबल"
+   ],
+   "size": [
+    "about 4 × 2½ ft",
+    "लगभग 4 × 2½ फीट"
+   ],
+   "qty": 1,
+   "budget": {
+    "band": "₹2,000–6,000",
+    "url": "https://www.amazon.in/s?k=wooden+coffee+table+with+shelf&rh=p_36%3A200000-600000"
+   },
+   "mid": {
+    "band": "₹6,000–15,000",
+    "url": "https://www.amazon.in/s?k=solid+wood+coffee+table+with+shelf&rh=p_36%3A600000-1500000"
+   },
+   "ex": [],
+   "why": [
+    "A lower shelf keeps remotes and papers off the top.",
+    "नीचे की शेल्फ़ पर रिमोट और काग़ज़, ऊपर साफ़।"
+   ],
+   "tip": [
+    "Glass tops scratch and show dust; wood or laminate is easier.",
+    "काँच का टॉप खरोंच और धूल दिखाता है; लकड़ी या लैमिनेट आसान।"
+   ]
+  },
+  {
+   "k": "side",
+   "match": "SIDE_TABLE",
+   "n": [
+    "Round side table",
+    "गोल साइड टेबल"
+   ],
+   "size": [
+    "about 1½ ft across",
+    "लगभग 1½ फीट"
+   ],
+   "qty": 1,
+   "budget": {
+    "band": "₹1,000–3,000",
+    "url": "https://www.amazon.in/s?k=round+side+table+metal+base+wooden+top&rh=p_36%3A100000-300000"
+   },
+   "mid": {
+    "band": "₹3,000–8,000",
+    "url": "https://www.amazon.in/s?k=round+side+table+metal+base+wooden+top&rh=p_36%3A300000-800000"
+   },
+   "ex": [],
+   "why": [
+    "A small round table beside the sofa holds tea without blocking the walkway.",
+    "सोफ़े के बगल में छोटी गोल टेबल चाय रखने के लिए, रास्ता नहीं रुकता।"
+   ],
+   "tip": [
+    "Check the base is heavy enough not to tip.",
+    "देखें कि नीचे का हिस्सा इतना भारी हो कि पलटे नहीं।"
+   ]
+  },
+  {
+   "k": "lamp",
+   "match": "FLOOR_LAMP",
+   "n": [
+    "Floor lamp",
+    "फ़्लोर लैंप"
+   ],
+   "size": [
+    "about 5½ ft, fabric shade",
+    "लगभग 5½ फीट, कपड़े का शेड"
+   ],
+   "qty": 1,
+   "budget": {
+    "band": "₹1,500–4,000",
+    "url": "https://www.amazon.in/s?k=tripod+floor+lamp+fabric+shade&rh=p_36%3A150000-400000"
+   },
+   "mid": {
+    "band": "₹4,000–10,000",
+    "url": "https://www.amazon.in/s?k=floor+lamp+linen+shade+living+room&rh=p_36%3A400000-1000000"
+   },
+   "ex": [
+    {
+     "t": "VDIX tripod floor lamp, wooden stand",
+     "url": "https://www.amazon.in/dp/B0BH1449NG"
+    },
+    {
+     "t": "Wooden tripod floor lamp with shelves, beige shade",
+     "url": "https://www.amazon.in/dp/B0H18V3JNX"
+    }
+   ],
+   "why": [
+    "Warm light at sitting height for the evening, instead of all tube lights.",
+    "शाम को बैठने की ऊँचाई पर गर्म रोशनी, सब ट्यूबलाइट की जगह।"
+   ],
+   "tip": [
+    "Use a 2700–3000K warm LED bulb; cool white looks harsh with fabric shades.",
+    "2700–3000K गर्म LED बल्ब लगाएँ; ठंडी सफ़ेद रोशनी कपड़े के शेड में चुभती है।"
+   ]
+  },
+  {
+   "k": "pendant",
+   "match": "PENDANT",
+   "n": [
+    "Pendant lights over the dining table",
+    "डाइनिंग के ऊपर लटकती लाइट"
+   ],
+   "size": [
+    "black metal cone, about 10–12 inch; need 2",
+    "काला धातु का कोन, 10–12 इंच; 2 चाहिए"
+   ],
+   "qty": 2,
+   "budget": {
+    "band": "₹500–1,500",
+    "url": "https://www.amazon.in/s?k=black+metal+cone+pendant+light&rh=p_36%3A50000-150000"
+   },
+   "mid": {
+    "band": "₹1,500–5,000",
+    "url": "https://www.amazon.in/s?k=black+metal+pendant+light+dining&rh=p_36%3A150000-500000"
+   },
+   "ex": [
+    {
+     "t": "Lexton metal cone pendant light",
+     "url": "https://www.amazon.in/dp/B0CB1D1MHR"
+    }
+   ],
+   "why": [
+    "Two pendants about 2½ ft above the table light the food, not your eyes.",
+    "टेबल से लगभग 2½ फीट ऊपर दो पेंडेंट, रोशनी खाने पर, आँखों में नहीं।"
+   ],
+   "tip": [
+    "Hanging them too high (like a fan) or using bare cool-white bulbs.",
+    "पंखे जितना ऊँचा लटकाना या खुले ठंडे सफ़ेद बल्ब।"
+   ]
+  },
+  {
+   "k": "dining",
+   "match": "DINING_",
+   "n": [
+    "Dining set",
+    "डाइनिंग सेट"
+   ],
+   "size": [
+    "6-seater about 6 × 3 ft (budget plan: 4-seater)",
+    "6-सीटर लगभग 6 × 3 फीट (बजट: 4-सीटर)"
+   ],
+   "qty": 1,
+   "budget": {
+    "band": "₹10,000–20,000",
+    "url": "https://www.amazon.in/s?k=4+seater+dining+table+set+wooden&rh=p_36%3A1000000-2000000"
+   },
+   "mid": {
+    "band": "₹25,000–55,000",
+    "url": "https://www.amazon.in/s?k=sheesham+6+seater+dining+table+set+cushioned+chairs&rh=p_36%3A2500000-5500000"
+   },
+   "ex": [
+    {
+     "t": "WOODSTAGE sheesham 6-seater with cushioned chairs",
+     "url": "https://www.amazon.in/dp/B0BNX5346F"
+    }
+   ],
+   "why": [
+    "6 seats with cushioned chairs near the window; a 4-seater if space or budget is tight.",
+    "खिड़की के पास गद्दे वाली कुर्सियों के साथ 6 सीट; जगह या बजट कम हो तो 4।"
+   ],
+   "tip": [
+    "Allow 3 ft behind each chair to pull it out; measure before buying.",
+    "हर कुर्सी के पीछे 3 फीट जगह छोड़ें; ख़रीदने से पहले नापें।"
+   ]
+  },
+  {
+   "k": "tvunit",
+   "match": "TV_(CABINET|CONSOLE|UNIT)",
+   "n": [
+    "Low TV cabinet",
+    "नीची TV कैबिनेट"
+   ],
+   "size": [
+    "about 6 ft, closed, floor-standing",
+    "लगभग 6 फीट, बंद, ज़मीन पर"
+   ],
+   "qty": 1,
+   "budget": {
+    "band": "₹5,000–10,000",
+    "url": "https://www.amazon.in/s?k=tv+unit+floor+standing+6+feet&rh=p_36%3A500000-1000000"
+   },
+   "mid": {
+    "band": "₹10,000–25,000",
+    "url": "https://www.amazon.in/s?k=tv+unit+floor+standing+6+feet+solid+wood&rh=p_36%3A1000000-2500000"
+   },
+   "ex": [],
+   "why": [
+    "A closed, floor-standing cabinet hides wires and puts no load on the wall.",
+    "बंद, ज़मीन पर खड़ी कैबिनेट तार छिपाती है, दीवार पर भार नहीं।"
+   ],
+   "tip": [
+    "No cut-outs at the back for cables and air: the set-top box overheats.",
+    "पीछे तार और हवा के लिए कटआउट नहीं: सेट-टॉप बॉक्स गरम होता है।"
+   ]
+  },
+  {
+   "k": "curtains",
+   "match": "CURTAIN",
+   "n": [
+    "Curtains for window W7",
+    "खिड़की W7 के पर्दे"
+   ],
+   "size": [
+    "7 ft, set of 2, blackout",
+    "7 फीट, 2 का सेट, ब्लैकआउट"
+   ],
+   "qty": 1,
+   "budget": {
+    "band": "₹700–1,500",
+    "url": "https://www.amazon.in/s?k=blackout+curtains+7+feet+set+of+2+beige&rh=p_36%3A70000-150000"
+   },
+   "mid": {
+    "band": "₹1,500–4,000",
+    "url": "https://www.amazon.in/s?k=linen+curtains+7+feet+set+of+2&rh=p_36%3A150000-400000"
+   },
+   "ex": [
+    {
+     "t": "Cortina 80–90% blackout door curtains, 7 ft, set of 2",
+     "url": "https://www.amazon.in/dp/B0F23RVLCS"
+    },
+    {
+     "t": "LINENWALAS 100% blackout curtains, 7 ft, set of 2",
+     "url": "https://www.amazon.in/dp/B0F3DG85RP"
+    }
+   ],
+   "why": [
+    "Full-height blackout curtains block the west sun and make the window look taller.",
+    "पूरी ऊँचाई के ब्लैकआउट पर्दे पश्चिमी धूप रोकते हैं, खिड़की ऊँची दिखती है।"
+   ],
+   "tip": [
+    "Rod just above the window and short curtains make the room look low; mount the rod near the ceiling.",
+    "खिड़की के ठीक ऊपर रॉड और छोटे पर्दे से कमरा नीचा लगता है; रॉड छत के पास लगाएँ।"
+   ]
+  },
+  {
+   "k": "rug",
+   "match": "RUG",
+   "n": [
+    "Rug under the sofa",
+    "सोफ़े के नीचे दरी"
+   ],
+   "size": [
+    "6 × 9 ft or 8 × 8 ft, cotton (washable)",
+    "6 × 9 या 8 × 8 फीट, सूती (धुलने वाली)"
+   ],
+   "qty": 1,
+   "budget": {
+    "band": "₹2,000–5,000",
+    "url": "https://www.amazon.in/s?k=cotton+dhurrie+6x9+feet&rh=p_36%3A200000-500000"
+   },
+   "mid": {
+    "band": "₹5,000–16,000",
+    "url": "https://www.amazon.in/s?k=handwoven+rug+6x9+feet+living+room&rh=p_36%3A500000-1600000"
+   },
+   "ex": [
+    {
+     "t": "Jaipur Rugs soft dhurrie, striped, 6 × 9 ft",
+     "url": "https://www.amazon.in/dp/B0DTDQ3J16"
+    }
+   ],
+   "why": [
+    "A washable cotton rug warms the floor in winter and defines the sitting area.",
+    "धुलने वाली सूती दरी जाड़े में फ़र्श गर्म रखती है और बैठने की जगह तय करती है।"
+   ],
+   "tip": [
+    "Thick shaggy carpets trap Bihar's dust; flat-weave is easier.",
+    "मोटे झबरीले कालीन में धूल भरती है; सपाट बुनाई आसान।"
+   ]
+  },
+  {
+   "k": "art",
+   "match": "WALL_ART",
+   "n": [
+    "Framed wall art",
+    "फ़्रेम वाली पेंटिंग"
+   ],
+   "size": [
+    "about 3 × 2½ ft, or a set of 3",
+    "लगभग 3 × 2½ फीट, या 3 का सेट"
+   ],
+   "qty": 1,
+   "budget": {
+    "band": "₹500–1,500",
+    "url": "https://www.amazon.in/s?k=boho+abstract+framed+wall+art&rh=p_36%3A50000-150000"
+   },
+   "mid": {
+    "band": "₹1,500–5,000",
+    "url": "https://www.amazon.in/s?k=boho+abstract+framed+canvas+wall+art+large&rh=p_36%3A150000-500000"
+   },
+   "ex": [
+    {
+     "t": "Livin'luxe boho arch print, golden frame",
+     "url": "https://www.amazon.in/dp/B0F8B46H82"
+    }
+   ],
+   "why": [
+    "One large print above eye level finishes the wall cheaply.",
+    "आँख की ऊँचाई पर एक बड़ी पेंटिंग, सस्ते में दीवार पूरी।"
+   ],
+   "tip": [
+    "Many small frames scattered look messy; hang its centre about 5 ft from the floor.",
+    "बिखरे छोटे फ़्रेम अव्यवस्थित लगते हैं; बीच का हिस्सा फ़र्श से लगभग 5 फीट।"
+   ]
+  },
+  {
+   "k": "plant",
+   "match": "PLANT",
+   "n": [
+    "Plant pots",
+    "गमले"
+   ],
+   "size": [
+    "12–14 inch pot; buy the areca palm / snake plant at a local nursery",
+    "12–14 इंच गमला; पौधा (एरेका पाम / स्नेक प्लांट) लोकल नर्सरी से"
+   ],
+   "qty": 1,
+   "budget": {
+    "band": "₹500–1,500",
+    "url": "https://www.amazon.in/s?k=ceramic+planter+pot+12+inch&rh=p_36%3A50000-150000"
+   },
+   "mid": {
+    "band": "₹1,500–4,000",
+    "url": "https://www.amazon.in/s?k=large+ceramic+planter+pot+with+stand&rh=p_36%3A150000-400000"
+   },
+   "ex": [],
+   "why": [
+    "Areca palm and snake plant cope with indoor light and Bihar's heat.",
+    "एरेका पाम और स्नेक प्लांट घर की रोशनी और बिहार की गर्मी झेलते हैं।"
+   ],
+   "tip": [
+    "No saucer under the pot: water stains the tiles and grout.",
+    "गमले के नीचे प्लेट नहीं: पानी से टाइल और ग्राउट पर दाग।"
+   ]
+  },
+  {
+   "k": "fan",
+   "match": "FAN_",
+   "n": [
+    "BLDC ceiling fan",
+    "BLDC पंखा"
+   ],
+   "size": [
+    "1200 mm, 5-star (about 30 W)",
+    "1200 mm, 5-स्टार (लगभग 30 W)"
+   ],
+   "qty": 1,
+   "budget": {
+    "band": "₹2,500–4,000",
+    "url": "https://www.amazon.in/s?k=BLDC+ceiling+fan+1200mm&rh=p_36%3A250000-400000"
+   },
+   "mid": {
+    "band": "₹4,000–7,000",
+    "url": "https://www.amazon.in/s?k=BLDC+ceiling+fan+1200mm+remote+premium&rh=p_36%3A400000-700000"
+   },
+   "ex": [
+    {
+     "t": "atomberg Efficio 1200 mm BLDC",
+     "url": "https://www.amazon.in/dp/B071Y7K862"
+    },
+    {
+     "t": "atomberg Renesa Enzel 1200 mm BLDC",
+     "url": "https://www.amazon.in/dp/B0CHJNJJDP"
+    }
+   ],
+   "why": [
+    "A BLDC fan uses about 30 W instead of about 75 W and runs well on an inverter.",
+    "BLDC पंखा लगभग 75 W की जगह लगभग 30 W लेता है और इन्वर्टर पर अच्छा चलता है।"
+   ],
+   "tip": [
+    "Hanging it from a false ceiling; it must hang from the slab hook.",
+    "फ़ॉल्स सीलिंग से लटकाना; स्लैब के हुक से ही लटकाएँ।"
+   ]
+  },
+  {
+   "k": "downlight",
+   "match": "DOWNLIGHT",
+   "n": [
+    "LED downlights",
+    "LED डाउनलाइट"
+   ],
+   "size": [
+    "10–12 W, 3000K warm white; about 8 for the hall",
+    "10–12 W, 3000K गर्म रोशनी; हॉल में लगभग 8"
+   ],
+   "qty": 8,
+   "budget": {
+    "band": "₹150–400",
+    "url": "https://www.amazon.in/s?k=12W+LED+round+panel+downlight+warm+white&rh=p_36%3A15000-40000"
+   },
+   "mid": {
+    "band": "₹400–1,200",
+    "url": "https://www.amazon.in/s?k=COB+LED+downlight+12W+3000K+anti+glare&rh=p_36%3A40000-120000"
+   },
+   "ex": [],
+   "why": [
+    "Warm 3000K downlights in the border give even light without glare.",
+    "बॉर्डर में 3000K गर्म डाउनलाइट, बिना चौंध एक जैसी रोशनी।"
+   ],
+   "tip": [
+    "Mixing warm and cool bulbs in one room; buy one colour temperature.",
+    "एक कमरे में गर्म और ठंडे बल्ब मिलाना; एक ही रंग की रोशनी लें।"
+   ]
+  },
+  {
+   "k": "cove",
+   "match": "COVE_LED|_LED$|TV_PANEL_LED|TV_WALL_LED",
+   "n": [
+    "LED strip (cove / TV wall)",
+    "LED पट्टी (कोव / TV दीवार)"
+   ],
+   "size": [
+    "warm white 3000K, 5 m with driver",
+    "गर्म सफ़ेद 3000K, 5 मीटर, ड्राइवर के साथ"
+   ],
+   "qty": 1,
+   "budget": {
+    "band": "₹500–1,200",
+    "url": "https://www.amazon.in/s?k=LED+strip+light+warm+white+5+meter+with+adapter&rh=p_36%3A50000-120000"
+   },
+   "mid": {
+    "band": "₹1,200–3,000",
+    "url": "https://www.amazon.in/s?k=COB+LED+strip+24V+warm+white+5+meter&rh=p_36%3A120000-300000"
+   },
+   "ex": [],
+   "why": [
+    "A hidden strip gives soft evening light on the ceiling and TV wall.",
+    "छिपी पट्टी छत और TV दीवार पर शाम को हल्की रोशनी देती है।"
+   ],
+   "tip": [
+    "Cheap strips with no aluminium channel overheat and die; use a channel and a proper driver.",
+    "बिना एल्युमिनियम चैनल की सस्ती पट्टी गरम होकर ख़राब; चैनल और सही ड्राइवर लगाएँ।"
+   ]
+  },
+  {
+   "k": "shoe",
+   "match": "SHOE_(CABINET|RACK)",
+   "n": [
+    "Shoe cabinet",
+    "जूते की अलमारी"
+   ],
+   "size": [
+    "about 3½ ft wide, with doors",
+    "लगभग 3½ फीट चौड़ी, दरवाज़े वाली"
+   ],
+   "qty": 1,
+   "budget": {
+    "band": "₹2,000–5,000",
+    "url": "https://www.amazon.in/s?k=shoe+cabinet+with+doors+engineered+wood&rh=p_36%3A200000-500000"
+   },
+   "mid": {
+    "band": "₹5,000–12,000",
+    "url": "https://www.amazon.in/s?k=shoe+cabinet+with+doors+wooden+large&rh=p_36%3A500000-1200000"
+   },
+   "ex": [
+    {
+     "t": "LERIMO Elano 2-door shoe cabinet",
+     "url": "https://www.amazon.in/dp/B0FHW9ZXGG"
+    }
+   ],
+   "why": [
+    "Closed doors keep shoe dust and smell out of the hall.",
+    "बंद दरवाज़े जूतों की धूल और गंध हॉल से बाहर रखते हैं।"
+   ],
+   "tip": [
+    "Open racks by the main door fill the entry with clutter.",
+    "मुख्य दरवाज़े के पास खुले रैक से एंट्री अव्यवस्थित।"
+   ]
+  },
+  {
+   "k": "geyser",
+   "match": "GEYSER",
+   "n": [
+    "Geyser for the tub room",
+    "टब वाले बाथरूम का गीज़र"
+   ],
+   "size": [
+    "50 L, 5-star, vertical",
+    "50 लीटर, 5-स्टार, खड़ा"
+   ],
+   "qty": 1,
+   "budget": {
+    "band": "₹6,000–10,000",
+    "url": "https://www.amazon.in/s?k=50+litre+geyser+5+star&rh=p_36%3A600000-1000000"
+   },
+   "mid": {
+    "band": "₹10,000–18,000",
+    "url": "https://www.amazon.in/s?k=50+litre+geyser+5+star+vertical+glass+lined&rh=p_36%3A1000000-1800000"
+   },
+   "ex": [
+    {
+     "t": "Bajaj Arrmand 50 L",
+     "url": "https://www.amazon.in/dp/B0D49Q51WN"
+    },
+    {
+     "t": "Racold Platinum Nxt 50 L vertical",
+     "url": "https://www.amazon.in/dp/B0CYLH96QR"
+    }
+   ],
+   "why": [
+    "A 50 L geyser gives enough hot water for the tub; 15 L doesn't.",
+    "50 लीटर का गीज़र टब के लिए काफ़ी गर्म पानी देता है; 15 लीटर नहीं।"
+   ],
+   "tip": [
+    "No separate 16 A point and earthing, or no pressure valve fitted.",
+    "अलग 16 A पॉइंट और अर्थिंग नहीं, या प्रेशर वाल्व नहीं लगाया।"
+   ]
+  },
+  {
+   "k": "mesh",
+   "match": "",
+   "n": [
+    "Mosquito mesh door",
+    "मच्छर-जाली दरवाज़ा"
+   ],
+   "size": [
+    "one per room door; measure each door",
+    "हर कमरे के दरवाज़े पर एक; हर दरवाज़ा नापें"
+   ],
+   "qty": 1,
+   "budget": {
+    "band": "₹300–1,000",
+    "url": "https://www.amazon.in/s?k=magnetic+mosquito+net+for+door&rh=p_36%3A30000-100000"
+   },
+   "mid": {
+    "band": "₹2,000–6,000",
+    "url": "https://www.amazon.in/s?k=aluminium+frame+mosquito+net+door&rh=p_36%3A200000-600000"
+   },
+   "ex": [
+    {
+     "t": "LifeKrafts magnetic mosquito net for door",
+     "url": "https://www.amazon.in/dp/B08M5TTT9P"
+    }
+   ],
+   "note": [
+    "A hinged aluminium door from a local fabricator is sturdier: about ₹4–6k per door.",
+    "लोकल कारीगर से कब्ज़े वाला एल्युमिनियम दरवाज़ा ज़्यादा मज़बूत: लगभग ₹4–6 हज़ार प्रति दरवाज़ा।"
+   ],
+   "why": [
+    "A hinged mesh door lets air in at night without mosquitoes.",
+    "जाली वाला दरवाज़ा रात में हवा आने देता है, मच्छर नहीं।"
+   ],
+   "tip": [
+    "A gap at the bottom when it shuts; that is where mosquitoes get in.",
+    "बंद होने पर नीचे गैप; मच्छर वहीं से आते हैं।"
+   ]
+  }
+ ],
+ "note": [
+  "Amazon doesn't let me read its pages, so I couldn't check today's prices. The two links open Amazon already filtered to a budget band and a mid-range band; the examples are real listings to compare. Check size, reviews and return policy before buying.",
+  "Amazon अपने पेज मुझे पढ़ने नहीं देता, इसलिए आज का दाम जाँच नहीं पाया। दोनों लिंक Amazon को बजट और मिड-रेंज दाम पर छाँटकर खोलते हैं; उदाहरण असली लिस्टिंग हैं। ख़रीदने से पहले साइज़, रिव्यू और रिटर्न पॉलिसी देखें।"
+ ]
+}

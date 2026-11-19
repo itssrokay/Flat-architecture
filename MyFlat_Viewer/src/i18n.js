@@ -19,7 +19,12 @@ const D = {
   '🏠 Overview': '🏠 बाहर से', '🚶 Walk': '🚶 अंदर', '💡 Lights': '💡 लाइट', '🌙 Night': '🌙 रात', '📐 Room size': '📐 कमरे का नाप', '📏 Dims': '📏 नाप',
   '🛈 Hover info': '🛈 जानकारी', '✕ Exit': '✕ बाहर', 'Room 1': 'कमरा 1', 'Balcony': 'बालकनी', 'Open all': 'सब खोलें', 'Close all': 'सब बंद करें',
   // left panel
-  'Interior design': 'इंटीरियर डिज़ाइन', 'Room 1 interior': 'कमरा 1 इंटीरियर', 'Architecture only': 'सिर्फ़ ढाँचा', 'Compare side by side with': 'इसके साथ तुलना करें',
+  '★ Best of both': '★ दोनों का सबसे अच्छा', 'Recommended': 'सुझाया गया',
+  'More ▾': 'और ▾', 'View': 'देखें', 'Measure': 'नाप', 'Tools': 'टूल', 'Plans': 'प्लान', 'Flat plans': 'घर के प्लान', 'More tools': 'और टूल',
+  '★ Recommended': '★ सुझाया गया', 'Budget plain': 'कम बजट, सादा', 'Long-lasting': 'सबसे टिकाऊ', 'Marble classic': 'मार्बल क्लासिक', 'Panelled hall': 'पैनल वाला हॉल',
+  'Room 2 bath (V1.2)': 'कमरा 2 बाथ (V1.2)', 'Dining & window': 'डाइनिंग और खिड़की', 'TV wall (from the sofa)': 'TV दीवार (सोफ़े से)',
+  'Main door (just inside)': 'मुख्य दरवाज़ा (अंदर से)', 'Whole hall (from the south-east corner)': 'पूरा हॉल (दक्षिण-पूर्व कोने से)',
+  'Interior design': 'इंटीरियर डिज़ाइन', 'Room 1 interior': 'कमरा 1 इंटीरियर', 'Architecture only': 'सिर्फ़ ढाँचा', 'Layout versions': 'लेआउट वर्ज़न', 'Bathroom fittings': 'बाथरूम फ़िटिंग', 'Wall panels & trims': 'दीवार पैनल और पट्टी', 'Compare side by side with': 'इसके साथ तुलना करें',
   '— off —': '— बंद —', 'Rooms': 'कमरे', 'Click a room for an eye-level view. Arrows show extra viewpoints.': 'कमरे पर क्लिक करें और अंदर पहुँचें। तीर से और जगहें दिखती हैं।',
   'Copy current view': 'यह व्यू कॉपी करें', 'Copied ✓': 'कॉपी हुआ ✓',
   'Design view (from balcony door)': 'डिज़ाइन व्यू (बालकनी दरवाज़े से)', 'Towards balcony (from door side)': 'बालकनी की ओर (दरवाज़े से)', 'Wardrobe & thick wall': 'अलमारी और मोटी दीवार',

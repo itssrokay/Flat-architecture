@@ -1,0 +1,2256 @@
+{
+ "DEFAULT": {
+  "title": "DEFAULT · गर्म समकालीन",
+  "tagline": "बेड बालकनी की ओर, अलमारी आले में, मोटी दीवार पर स्टडी-ड्रेसर।",
+  "why": "यह L-आकार के कमरे के हर हिस्से का सबसे अच्छा इस्तेमाल करता है। दरवाज़े के पास का 5'4\" x 3'4\" आला ठीक 3-दरवाज़ों की अलमारी के बराबर है, तो सामान रखने में फ़र्श की जगह नहीं जाती। बेड अकेली लंबी ठोस दीवार (पूर्व) पर है और 10'5\" की बालकनी की ओर देखता है — सबसे अच्छा नज़ारा और सुबह की धूप। 7'3\" मोटी दक्षिण दीवार स्टडी-कम-ड्रेसर बनती है। बेड और बालकनी के बीच 5'8\" खुली जगह और दरवाज़े से 3'10\" का रास्ता बचता है। एल्युमिनियम स्लाइडर, लैमिनेट और विट्रिफ़ाइड टाइल भारत में आम, किफ़ायती और कम रखरखाव वाले हैं।",
+  "sections": {
+   "लेआउट": "पूर्व दीवार पर पश्चिम की ओर मुँह किया क्वीन बेड (5'x6'6\"); दोनों ओर साइड टेबल; मोटी दीवार पर 4' स्टडी/ड्रेसर; स्टडी डेस्क के पास फ़्लोर लैंप (लाउंज कुर्सी नहीं: कमरे में उसके लिए खाली जगह नहीं है); 5'x7' दरी।",
+   "अलमारी": "3-दरवाज़े कब्ज़े वाली, 5'3\" x 2' x 7'6\" दक्षिण-पूर्व आले में + छत तक लॉफ़्ट। ऑफ़-व्हाइट मैट लैमिनेट पर ओक पट्टियाँ, काले हैंडल, सॉफ़्ट-क्लोज़ कब्ज़े। दरवाज़े की चौखट से 2\" दूर।",
+   "खिड़की W1": "3-ट्रैक एल्युमिनियम स्लाइडिंग खिड़की (चारकोल): 2 काँच पल्ले (5 मिमी टफ़न्ड) + 1 मच्छरदानी पल्ला। काँच के बाहर मेल खाती MS ग्रिल। अंदर काले ग्रेनाइट की सिल + बाहर ड्रिप सिल। छत के ट्रैक पर पारदर्शी + सेज ब्लैकआउट पर्दा।",
+   "बालकनी दरवाज़ा": "3-ट्रैक, 3-पल्ले एल्युमिनियम स्लाइडर (1 स्थिर + 2 सरकने वाले), 8 मिमी टफ़न्ड काँच, चारकोल फ़्रेम, मल्टी-पॉइंट ताले वाला हैंडल। 10'5\" में से 2/3 खुलता है। प्लीटेड मच्छरदानी। काले ग्रेनाइट की दहलीज़, 2\" नीचे कदम और ढलान (पानी रोकने के लिए)। पूरी चौड़ाई के पर्दे।",
+   "छत और रोशनी": "किनारों पर 1'7\" चौड़ा, 6\" नीचा जिप्सम बैंड (बालकनी की ओर पर्दे का पेल्मेट), बीच में असली छत। 2700K LED कोव, बैंड में 7 डाउनलाइट, 2 रीडिंग लाइट, फ़्लोर लैंप, डेस्क लाइट।",
+   "बालकनी": "एंटी-स्किड टाइल; ठोस दीवार (दक्षिण छोर) पर गद्दी वाली बनी हुई सागौन/WPC बेंच; 18\" गोल मेज़; बेंच के ऊपर वर्टिकल गार्डन; उत्तर छोर पर एरिका पाम + स्नेक प्लांट; रेलिंग पर 3 गमले; IP65 दीवार लाइट।",
+   "रंग-योजना": "ओक, ऑफ़-व्हाइट, सेज हरा, जंग जैसे लाल-भूरे एक्सेंट, चारकोल धातु, गर्म ग्रेज फ़र्श।"
+  },
+  "schedule": [
+   {
+    "area": "फ़र्श",
+    "items": [
+     [
+      "टाइल",
+      "Matte glazed vitrified tile 800×1600 mm, 9 mm, warm greige (Kajaria / Somany / Johnson class)"
+     ],
+     [
+      "बिछाई",
+      "Long side along the room (E–W), 2 mm epoxy grout in matching colour, 1:4 cement-sand bed"
+     ],
+     [
+      "स्कर्टिंग",
+      "4\" (100 mm) cut from same tile, flush with plaster line"
+     ],
+     [
+      "दहलीज़ (बालकनी)",
+      "Black granite, flamed top, 20 mm, 2\" step down with sloped nosing"
+     ]
+    ]
+   },
+   {
+    "area": "दीवारें",
+    "items": [
+     [
+      "आधार",
+      "Cement plaster → 2 coats wall putty → primer"
+     ],
+     [
+      "पेंट",
+      "Low-sheen washable emulsion, warm white (e.g. Asian Paints 'Pristine White' family) on 3 walls"
+     ],
+     [
+      "हेडबोर्ड दीवार",
+      "Fluted panel 7'8\" × 8': 12 mm BWP plywood base + fluted MDF strips (1\" flutes) wrapped in 0.8 mm oak-grain laminate; brass-finish aluminium cap trim"
+     ],
+     [
+      "स्टडी दीवार",
+      "Same paint; 4' floating shelf + frameless 5 mm mirror above the desk"
+     ]
+    ]
+   },
+   {
+    "area": "छत",
+    "items": [
+     [
+      "फ़ॉल्स सीलिंग",
+      "Perimeter band only: 12.5 mm gypsum board (Gyproc) on GI channel framing, 1'7\" wide, 6\" drop → ceiling at 9'6\" in the band, 10' in the centre"
+     ],
+     [
+      "कोव",
+      "3\" recessed cove on the inner edge of the band with 2700K LED strip (10 W/m, dimmable)"
+     ],
+     [
+      "पर्दे का पेल्मेट",
+      "Band widened to 2'1\" on the balcony side to hide the curtain track"
+     ],
+     [
+      "फ़िनिश",
+      "Ceiling-white matt emulsion"
+     ]
+    ]
+   },
+   {
+    "area": "अलमारी",
+    "items": [
+     [
+      "ढाँचा",
+      "18 mm BWR/BWP plywood (or HDHMR), 0.8 mm frosty-white laminate inside, 2' deep"
+     ],
+     [
+      "शटर",
+      "18 mm ply with 1 mm off-white matt laminate + oak-laminate vertical inset; 3 hinged doors, 7'6\" high"
+     ],
+     [
+      "हार्डवेयर",
+      "Hettich/Häfele soft-close hinges (4 per door), 12\" black aluminium bar handles"
+     ],
+     [
+      "अंदर",
+      "Section 1: 2 soft-close drawers + shirt hanging rod; Section 2: 5 shelves; Section 3: long hanging (sarees/dresses) + top shelf; LED strip on door sensor"
+     ],
+     [
+      "लॉफ़्ट",
+      "Same carcass to ceiling, push-to-open shutters, for suitcases and quilts"
+     ],
+     [
+      "प्लिंथ",
+      "4\" recessed black plinth so the floor can be mopped"
+     ]
+    ]
+   },
+   {
+    "area": "बेड और फ़र्नीचर",
+    "items": [
+     [
+      "बेड",
+      "Queen 5'×6'6\": 18 mm ply + oak laminate, hydraulic lift storage, upholstered sage headboard (foam + fabric on ply)"
+     ],
+     [
+      "गद्दा",
+      "8\" pocket-spring, queen 60\"×78\""
+     ],
+     [
+      "साइड टेबल",
+      "18\"×17\", 2 drawers, oak laminate on a recessed charcoal base"
+     ],
+     [
+      "स्टडी-ड्रेसर",
+      "4'×1'9\" oak-laminate top at 30\", 2-drawer pedestal, upholstered chair"
+     ],
+     [
+      "एक्सेंट",
+      "Linen-shade floor lamp beside the study desk; 5'×7' flat-weave wool rug (the old lounge chair was removed: it stood 1\" from the bed)"
+     ]
+    ]
+   },
+   {
+    "area": "खिड़की W1",
+    "items": [
+     [
+      "सिस्टम",
+      "3-track aluminium sliding window, charcoal powder-coat (Jindal / Aluplast class)"
+     ],
+     [
+      "शटर",
+      "2 glass shutters (5 mm clear toughened) + 1 SS-304 mosquito-mesh shutter; one glass shutter slides open"
+     ],
+     [
+      "सुरक्षा",
+      "Flat-bar MS grill (5\" pitch) outside the glass, powder-coated to match"
+     ],
+     [
+      "सिल",
+      "Black granite inside with 4\" ledge; external sill with drip groove"
+     ],
+     [
+      "पर्दे",
+      "Ceiling track: linen-look sheer + sage blackout drape"
+     ]
+    ]
+   },
+   {
+    "area": "बालकनी दरवाज़ा",
+    "items": [
+     [
+      "सिस्टम",
+      "3-track, 3-panel aluminium slider, charcoal; 1 fixed + 2 sliding panels → about 7' clear opening"
+     ],
+     [
+      "काँच",
+      "8 mm clear toughened glass, EPDM gaskets, interlock profiles"
+     ],
+     [
+      "हार्डवेयर",
+      "D-handle with multipoint lock, stainless rollers"
+     ],
+     [
+      "जाली",
+      "Retractable pleated mosquito mesh, stacks at the north jamb"
+     ],
+     [
+      "दहलीज़",
+      "Low-profile bottom track set in black granite, 2\" step and 1:50 fall to the balcony"
+     ],
+     [
+      "पर्दे",
+      "Full-width sheer + sage blackout drapes stacking at both ends"
+     ]
+    ]
+   },
+   {
+    "area": "रोशनी और बिजली",
+    "items": [
+     [
+      "सामान्य रोशनी",
+      "2700K cove LED around the room"
+     ],
+     [
+      "काम की रोशनी",
+      "7 × 6 W COB downlights (3000K) in the band; 2 adjustable reading wall lights at the bed; floor lamp"
+     ],
+     [
+      "अलमारी",
+      "Sensor-operated LED strip inside"
+     ],
+     [
+      "स्विचिंग",
+      "Two-way switching of ambient light at door + bed; USB sockets at both bedsides; AC point above the headboard wall"
+     ]
+    ]
+   },
+   {
+    "area": "बालकनी",
+    "items": [
+     [
+      "फ़र्श",
+      "Anti-skid matte outdoor tile 600×600 (R11), laid on waterproofing with 1:100 fall to drain"
+     ],
+     [
+      "बैठने की जगह",
+      "Built-in teak/WPC bench 2'4\"×1'4\" with storage + outdoor-fabric cushions"
+     ],
+     [
+      "मेज़",
+      "18\" round teak side table on a powder-coated base"
+     ],
+     [
+      "हरियाली",
+      "Modular vertical-garden panel with drip line; areca palm + snake plant; 3 railing planters for herbs/flowers"
+     ],
+     [
+      "लाइट",
+      "IP65 up-down wall light, warm white"
+     ]
+    ]
+   }
+  ],
+  "schedNote": "(तकनीकी विवरण ठेकेदार के लिए अंग्रेज़ी में)"
+ },
+ "OPTION_A": {
+  "title": "विकल्प A · जापांडी शांत",
+  "tagline": "पट्टियों वाली मोटी दीवार से लगा नीचा बेड, खिड़की के नीचे डेस्क।",
+  "why": "ज़्यादा शांत, प्राकृतिक कमरा। बेड मोटी दक्षिण दीवार पर चला जाता है जहाँ ऐश पट्टियों की दीवार हेडबोर्ड है, और डेस्क को खिड़की की रोशनी मिलती है। स्लाइडिंग अलमारी के दरवाज़ों को खुलने की जगह नहीं चाहिए।",
+  "sections": {
+   "लेआउट": "मोटी 7'3\" दीवार पर सिरहाने वाला नीचा ऐश प्लेटफ़ॉर्म बेड, उत्तर की ओर मुँह; पतली साइड टेबल + स्टूल; W1 के नीचे डेस्क; पूर्व दीवार पर नीची किताबों की अलमारी + पाउफ़; जूट दरी।",
+   "अलमारी": "2-दरवाज़े स्लाइडिंग, खाँचों वाला ऐश विनियर, 8'5\" ऊँची, ऊपर टोकरियों के लिए खुला खाँचा।",
+   "खिड़की W1": "सफ़ेद uPVC केसमेंट जोड़ी (बाहर खुलती), 6.38 मिमी लैमिनेटेड सेफ़्टी ग्लास — ग्रिल नहीं; अंदर रोलर जाली; लकड़ी की सिल; बाँस का रोमन ब्लाइंड।",
+   "बालकनी दरवाज़ा": "सफ़ेद uPVC 2-ट्रैक 4-पल्ले स्लाइडर (स्थिर-सरकता-सरकता-स्थिर), रोलर जाली, कोटा स्टोन दहलीज़, लकड़ी की रॉड पर लिनन पर्दे।",
+   "छत और रोशनी": "जिप्सम फ़ॉल्स सीलिंग नहीं। बेड के ऊपर लटका ऐश पट्टियों का राफ़्ट, चावल-काग़ज़ के पेंडेंट, सरफ़ेस डाउनलाइट।",
+   "बालकनी": "WPC डेक टाइलें, फ़र्श गद्दियाँ + नीची चाय मेज़, रेलिंग पर बाँस की ओट, टेराकोटा गमलों में पाम, सोलर काग़ज़ी लालटेन।",
+   "रंग-योजना": "हल्की ऐश लकड़ी, गर्म सफ़ेद, लिनन, काई हरा, काले एक्सेंट, हल्के ओक जैसी टाइल।"
+  },
+  "schedule": [
+   {
+    "area": "फ़र्श",
+    "items": [
+     [
+      "टाइल",
+      "Wood-look vitrified plank 200×1200 mm, light oak, matt"
+     ],
+     [
+      "बिछाई",
+      "Planks E–W, 1/3 stagger, 2 mm joints"
+     ],
+     [
+      "स्कर्टिंग",
+      "Solid ash skirting, 3\""
+     ]
+    ]
+   },
+   {
+    "area": "दीवारें और छत",
+    "items": [
+     [
+      "पेंट",
+      "Warm white limewash-effect emulsion"
+     ],
+     [
+      "हेडबोर्ड",
+      "Vertical ash slat wall on the thick south wall: 1.5\" slats at 3\" centres on a black-painted backing, 8'6\" high"
+     ],
+     [
+      "छत",
+      "No gypsum false ceiling. Suspended ash slat raft 6'×6'6\" over the bed; ceiling kept at 10'"
+     ]
+    ]
+   },
+   {
+    "area": "अलमारी",
+    "items": [
+     [
+      "प्रकार",
+      "2-door sliding, 8'5\" high, open top niche for baskets"
+     ],
+     [
+      "सामग्री",
+      "HDHMR carcass, ash veneer shutters with grooved lines, matt PU lacquer"
+     ],
+     [
+      "हार्डवेयर",
+      "Top-hung soft-close sliding track, recessed finger pulls"
+     ]
+    ]
+   },
+   {
+    "area": "फ़र्नीचर",
+    "items": [
+     [
+      "बेड",
+      "Low Japanese platform, solid ash, 11\" high"
+     ],
+     [
+      "डेस्क",
+      "4'4\" solid ash desk under the window with woven-seat chair"
+     ],
+     [
+      "भंडारण",
+      "Low open ash bookcase 5'10\" long; jute pouf; jute rug 6'×8'"
+     ]
+    ]
+   },
+   {
+    "area": "खिड़की और दरवाज़ा",
+    "items": [
+     [
+      "W1",
+      "White uPVC casement pair, outward, friction stays, 6.38 mm laminated safety glass (so no grill), internal roller mesh, solid-wood sill, bamboo roman blind"
+     ],
+     [
+      "बालकनी दरवाज़ा",
+      "White uPVC 2-track 4-panel slider (fixed–slide–slide–fixed), 5 mm toughened glass, roller insect screen, Kota-stone threshold, linen curtains on a wooden rod"
+     ]
+    ]
+   },
+   {
+    "area": "रोशनी",
+    "items": [
+     [
+      "फ़िटिंग",
+      "Large rice-paper pendant, 2 paper pendants as bedside lights, surface downlights, all 2700K"
+     ]
+    ]
+   },
+   {
+    "area": "बालकनी",
+    "items": [
+     [
+      "फ़र्श",
+      "WPC interlocking deck tiles on the existing tile"
+     ],
+     [
+      "फ़र्नीचर",
+      "Floor cushions + low tea table"
+     ],
+     [
+      "ओट",
+      "Bamboo screen fixed inside the railing, 5' high"
+     ],
+     [
+      "पौधे",
+      "Bamboo palm / monstera in terracotta; solar paper lantern"
+     ]
+    ]
+   }
+  ],
+  "schedNote": "(तकनीकी विवरण ठेकेदार के लिए अंग्रेज़ी में)"
+ },
+ "OPTION_B": {
+  "title": "विकल्प B · मिनिमल मॉडर्न",
+  "tagline": "उत्तर दीवार पर बेड, मोटी दीवार पर टीवी/ड्रेसर, बालकनी के पास लाउंज कोना।",
+  "why": "सबसे अलग व्यवस्था। बेड का सिरहाना खिड़की के बगल में उत्तर दीवार पर, ताकि मोटी दीवार पर बेड से दिखने वाली टीवी/मीडिया और ड्रेसर दीवार बन सके। बालकनी वाले कोने में पढ़ने की जगह। सब कुछ सपाट और बिना हैंडल।",
+  "sections": {
+   "लेआउट": "उत्तर दीवार (W1 के पूर्व) पर सिरहाने वाला तैरता वॉलनट बेड; खिड़की के नीचे तैरती साइड टेबल; मोटी दीवार पर 55\" टीवी + वॉलनट कंसोल + ऊँची अलमारी; उत्तर-पश्चिम कोने में बूक्ले कुर्सी + आर्क लैंप; पूर्व दीवार पर पतला कंसोल।",
+   "अलमारी": "फ़र्श से फ़ॉल्स सीलिंग तक 2-दरवाज़े स्लाइडिंग, मैट सफ़ेद लैकर्ड ग्लास, पूरी ऊँचाई का आईना, बिना हैंडल।",
+   "खिड़की W1": "पतला काला एल्युमिनियम: स्थिर काँच + अंदर खुलने वाला टिल्ट-एंड-टर्न पल्ला, 6 मिमी लो-ई काँच; इनविज़िबल ग्रिल (स्टील तार); क्वार्ट्ज़ सिल; सनस्क्रीन रोलर ब्लाइंड।",
+   "बालकनी दरवाज़ा": "काला पतला लिफ़्ट-एंड-स्लाइड, 2 बड़े पल्ले (1 स्थिर, 1 सरकता), 10 मिमी लो-ई टफ़न्ड काँच; छिपी नाली वाली क्वार्ट्ज़ दहलीज़; छत के खाँचे में मोटर वाले ब्लैकआउट + सनस्क्रीन ब्लाइंड; प्लीटेड जाली।",
+   "छत और रोशनी": "9'5\" पर पूरी सपाट जिप्सम छत, ब्लाइंड का खाँचा और 2 लंबी LED लाइनें; हेडबोर्ड पैनल में छिपी LED; खिड़की के बगल दीवार पर घूमने वाली रीडिंग लाइट (अंदर खुलने वाले पल्ले से दूर)।",
+   "बालकनी": "ग्रे पोर्सिलेन, रेलिंग पर मोड़ने वाली मेज़ + 2 पतली धातु कुर्सियाँ, 2 ऊँचे कंक्रीट-जैसे गमले, लंबी दीवार लाइट।",
+   "रंग-योजना": "सफ़ेद, गर्म ग्रे, चारकोल, वॉलनट, काली धातु।"
+  },
+  "schedule": [
+   {
+    "area": "फ़र्श",
+    "items": [
+     [
+      "टाइल",
+      "Large-format 1200×1200 light-grey matte porcelain, 1 mm joints"
+     ],
+     [
+      "स्कर्टिंग",
+      "Flush shadow-gap skirting (aluminium profile)"
+     ]
+    ]
+   },
+   {
+    "area": "दीवारें और छत",
+    "items": [
+     [
+      "हेडबोर्ड दीवार",
+      "Full-height fabric-wrapped acoustic panels (warm grey) with a hidden LED line in the reveal"
+     ],
+     [
+      "टीवी दीवार",
+      "Microcement-look panel behind the TV"
+     ],
+     [
+      "छत",
+      "Flush gypsum ceiling at 9'5\" over the whole room, 6\" recessed blind pocket along the balcony, 2 recessed linear LED lines"
+     ]
+    ]
+   },
+   {
+    "area": "अलमारी",
+    "items": [
+     [
+      "प्रकार",
+      "Floor-to-false-ceiling 2-door sliding, handleless"
+     ],
+     [
+      "सामग्री",
+      "HDHMR carcass, back-painted matt white lacquered glass shutters, one full-height mirror"
+     ],
+     [
+      "हार्डवेयर",
+      "Soft-close sliding system, internal sensor LED"
+     ]
+    ]
+   },
+   {
+    "area": "फ़र्नीचर",
+    "items": [
+     [
+      "बेड",
+      "Floating walnut-veneer platform bed with integrated padded headboard, head on the north wall"
+     ],
+     [
+      "मीडिया",
+      "Floating walnut console + tall handleless column, 55\" TV viewed from the bed"
+     ],
+     [
+      "लाउंज",
+      "Bouclé lounge chair, black metal side table, arc floor lamp, charcoal low-pile rug"
+     ]
+    ]
+   },
+   {
+    "area": "खिड़की और दरवाज़ा",
+    "items": [
+     [
+      "W1",
+      "Slim black aluminium: fixed pane + inward tilt-and-turn sash, 6 mm low-E glass, invisible grill (SS-316 cables at 3\" centres) outside, flush quartz sill, sunscreen roller blind"
+     ],
+     [
+      "बालकनी दरवाज़ा",
+      "Slim black lift-and-slide, 2 large panels (1 fixed + 1 sliding), 10 mm low-E toughened glass, 20 mm sightlines, flush quartz threshold with concealed drain, pleated mesh, motorised blackout + sunscreen blinds"
+     ]
+    ]
+   },
+   {
+    "area": "बालकनी",
+    "items": [
+     [
+      "फ़र्श",
+      "Grey outdoor porcelain 600×1200, anti-skid"
+     ],
+     [
+      "फ़र्नीचर",
+      "Fold-down railing table + 2 slim powder-coated chairs"
+     ],
+     [
+      "पौधे और लाइट",
+      "2 tall concrete-look planters with olive trees; linear IP65 wall light"
+     ]
+    ]
+   }
+  ],
+  "schedNote": "(तकनीकी विवरण ठेकेदार के लिए अंग्रेज़ी में)"
+ },
+ "OPTION_C": {
+  "title": "विकल्प C · भारतीय आधुनिक विरासत",
+  "tagline": "बेंत की हेडबोर्ड दीवार, बना हुआ दीवान, पूरी बालकनी खोलने वाले बाई-फ़ोल्ड दरवाज़े।",
+  "why": "महँगा, अलग विकल्प। 4-पल्ले बाई-फ़ोल्ड दरवाज़ा पूरा मुड़ जाता है, तो कमरा और बालकनी एक हो जाते हैं। बेंत, सागौन, पीतल, ब्लॉक प्रिंट और बना हुआ दीवान इसे होटल जैसा नहीं, भारतीय रूप देते हैं।",
+  "sections": {
+   "लेआउट": "पूर्व दीवार पर पूरे बेंत पैनल और टील लाइमवॉश दीवार के साथ सागौन बेड; साइड लाइट के रूप में पीतल के गुंबद पेंडेंट; मोटी दीवार पर सागौन जाली के नीचे गाव-तकियों वाला बना दीवान; पीतल ऊपरी सतह वाली नीची मेज़; दरी।",
+   "अलमारी": "3-दरवाज़े कब्ज़े वाली, सागौन विनियर फ़्रेम में बुने बेंत की जाली (नमी में हवा आती-जाती रहे), पीतल हैंडल, ऊपर लॉफ़्ट।",
+   "खिड़की W1": "सागौन जैसी फ़िनिश वाली एल्युमिनियम केसमेंट: 2 अंदर खुलने वाले पल्ले + ऊपर स्थिर काँच; सजावटी जाली डिज़ाइन की MS ग्रिल; कोटा स्टोन सिल; पीतल रॉड पर ब्लॉक-प्रिंट पर्दे + वॉयल।",
+   "बालकनी दरवाज़ा": "4-पल्ले एल्युमिनियम बाई-फ़ोल्ड (सागौन फ़िनिश), पूरी 10'5\" खुलती — बालकनी पर मुड़ा हुआ दिखाया है; दक्षिण चौखट पर प्लीटेड जाली; फ़र्श से सटे ट्रैक वाली कोटा दहलीज़; ब्लॉक-प्रिंट पर्दे।",
+   "छत और रोशनी": "एक सीढ़ी वाली ट्रे छत (9'3\" पर 2'2\" बैंड), कोव LED और सागौन किनारा; बड़ा बेंत का पेंडेंट; पीतल किनारे वाली डाउनलाइट।",
+   "बालकनी": "लेदर-फ़िनिश कोटा स्टोन, रतन कुर्सी + बेंत की मेज़, टेराकोटा गमले (तुलसी, चमेली, बोगनवेलिया), पीतल की जालीदार लालटेन, जूट दरी।",
+   "रंग-योजना": "सागौन, बेंत, गहरा टील, टेराकोटा, आइवरी, पीतल, टेराज़ो जैसा फ़र्श।"
+  },
+  "schedule": [
+   {
+    "area": "फ़र्श",
+    "items": [
+     [
+      "टाइल",
+      "Terrazzo-look vitrified tile 600×600"
+     ],
+     [
+      "जड़ाई",
+      "Brass-coloured strip border 1' from the walls (visual rug)"
+     ],
+     [
+      "स्कर्टिंग",
+      "Teak-finish skirting"
+     ]
+    ]
+   },
+   {
+    "area": "दीवारें",
+    "items": [
+     [
+      "एक्सेंट",
+      "Deep teal limewash on the east (bed) wall"
+     ],
+     [
+      "हेडबोर्ड",
+      "Full-width woven cane panel in a teak frame, 7'×4'6\""
+     ],
+     [
+      "दीवान वाली दीवार",
+      "CNC teak jaali panel above the built-in diwan"
+     ]
+    ]
+   },
+   {
+    "area": "छत",
+    "items": [
+     [
+      "फ़ॉल्स सीलिंग",
+      "Single-step tray: 12.5 mm gypsum band 2'2\" wide at 9'3\", centre at 10'"
+     ],
+     [
+      "विवरण",
+      "Teak-veneer edge strip, cove LED, brass-trim downlights, large cane pendant"
+     ]
+    ]
+   },
+   {
+    "area": "अलमारी",
+    "items": [
+     [
+      "प्रकार",
+      "3 hinged doors + loft"
+     ],
+     [
+      "सामग्री",
+      "Ply carcass, teak-veneer shutters (PU matt) with woven cane-mesh insets - breathable for humidity"
+     ],
+     [
+      "हार्डवेयर",
+      "Brass bar handles, soft-close hinges"
+     ]
+    ]
+   },
+   {
+    "area": "फ़र्नीचर",
+    "items": [
+     [
+      "बेड",
+      "Teak bed with turned legs and under-bed drawers"
+     ],
+     [
+      "दीवान",
+      "Built-in daybed 6'4\"×2'4\" with storage drawers, block-print mattress, gol-takiya bolsters"
+     ],
+     [
+      "अन्य",
+      "Teak bedsides with cane fronts, brass dome pendants, brass-top low table, cotton dhurrie"
+     ]
+    ]
+   },
+   {
+    "area": "खिड़की और दरवाज़ा",
+    "items": [
+     [
+      "W1",
+      "Aluminium with teak woodgrain finish: 2 inward casements + fixed top light, 6 mm toughened glass, decorative MS jaali-pattern grill outside, Kota-stone sill, block-print drapes + voile sheer on a brass rod"
+     ],
+     [
+      "बालकनी दरवाज़ा",
+      "4-panel aluminium bi-fold (teak finish), bottom-rolling, opens the full 10'5\"; pleated mesh; Kota threshold with flush track"
+     ]
+    ]
+   },
+   {
+    "area": "बालकनी",
+    "items": [
+     [
+      "फ़र्श",
+      "Leather-finish Kota stone"
+     ],
+     [
+      "फ़र्नीचर",
+      "Outdoor-grade synthetic rattan armchair + cane side table, jute dhurrie"
+     ],
+     [
+      "पौधे और लाइट",
+      "Terracotta planters (tulsi, jasmine, bougainvillea), pierced brass lantern"
+     ]
+    ]
+   }
+  ],
+  "schedNote": "(तकनीकी विवरण ठेकेदार के लिए अंग्रेज़ी में)"
+ },
+ "OPTION_D": {
+  "title": "विकल्प D · स्मार्ट बजट (भारतीय)",
+  "tagline": "DEFAULT जैसा ही अच्छा लेआउट, लगभग ₹1,93,300 में: रेडीमेड सामान, लोकल बढ़ई और महँगे फ़िनिश की जगह रंग।",
+  "why": "पैसा वहाँ लगता है जो टिकता है और रोज़ काम आता है: छत तक की लॉफ़्ट वाली अलमारी, बालकनी और खिड़की के लिए ठीक एल्युमिनियम स्लाइडर, और अच्छा गद्दा। बचत वहाँ है जो महँगा है पर कम काम का: फ़ॉल्स सीलिंग नहीं, पैनलिंग नहीं, विनियर या एक्रिलिक नहीं, और मौजूदा फ़र्श ही रहता है। रौनक रंग और भारतीय कपड़ों से आती है: टेराकोटा एक्सेंट दीवार, नील सूती पर्दे, हथकरघा दरी, बेंत का मूढ़ा और मधुबनी प्रिंट। वॉलनट और फ़्रॉस्टी-व्हाइट लैमिनेट बढ़ई के काम को रेडीमेड बेड से मिलाते हैं। लेआउट DEFAULT वाला ही है, जो पहले से ठीक काम करता है।",
+  "sections": {
+   "लेआउट": "पूर्व दीवार पर बालकनी की ओर क्वीन स्टोरेज बेड; दीवार लाइटों के साथ 2 साइड टेबल; 5'4\" आले में 3-दरवाज़े अलमारी + लॉफ़्ट; मोटी दीवार पर शेल्फ़ और आईने वाला दीवार पर टँगा स्टडी-ड्रेसर; खिड़की के पास बेंत का मूढ़ा; 5'×7' दरी।",
+   "अलमारी": "लोकल बढ़ई, MR प्लाईवुड/HDHMR ढाँचा, फ़्रॉस्टी-व्हाइट 1 मिमी लैमिनेट और वॉलनट पट्टी, सामान्य सॉफ़्ट-क्लोज़ कब्ज़े, स्टील D-हैंडल, सूटकेस के लिए ऊपर लॉफ़्ट।",
+   "खिड़की W1": "3-ट्रैक डोमल एल्युमिनियम स्लाइडर (2 काँच + 1 जाली), सफ़ेद; सादी MS ग्रिल (ठीक हो तो वही); ग्रेनाइट टुकड़े की सिल; नील सूती पर्दे + वॉयल।",
+   "बालकनी दरवाज़ा": "2-ट्रैक डोमल एल्युमिनियम स्लाइडिंग दरवाज़ा, 4 पल्ले: बीच के दो पल्ले किनारे के स्थिर पल्लों पर सरककर बीच में लगभग 5' खोलते हैं। प्लीटेड जाली बाद में लग सकती है (लगभग ₹6–8 हज़ार)।",
+   "छत और रोशनी": "फ़ॉल्स सीलिंग नहीं। 5 सरफ़ेस LED डाउनलाइट, लैमिनेटेड प्लाईवुड पेल्मेट के ऊपर LED पट्टी से कोव जैसी रोशनी, बेड के पास 2 दीवार लाइटें।",
+   "बालकनी": "मौजूदा फ़र्श। फ़ोल्डिंग धातु मेज़-कुर्सी, गमलों में तुलसी / मनी प्लांट / स्नेक प्लांट / एरिका पाम, रेलिंग पर सोलर लाइटें, सामान्य बल्कहेड लाइट।",
+   "रंग-योजना": "गर्म सफ़ेद, टेराकोटा, नील, सरसों पीला, वॉलनट, बेंत।"
+  },
+  "budget": {
+   "total": "₹1,93,300",
+   "rows": [
+    [
+     "अलमारी",
+     "3-दरवाज़े + लॉफ़्ट, लोकल बढ़ई, MR प्लाई/HDHMR + 1 मिमी लैमिनेट, 5'3\" × 2' × 9'10\"",
+     "₹46,000"
+    ],
+    [
+     "बालकनी दरवाज़ा",
+     "2-ट्रैक डोमल एल्युमिनियम स्लाइडर, 4 पल्ले (2 सरकते), 5 मिमी टफ़न्ड काँच, 73 वर्ग फ़ुट",
+     "₹40,000"
+    ],
+    [
+     "खिड़की W1",
+     "3-ट्रैक डोमल एल्युमिनियम स्लाइडर (2 काँच + 1 जाली), 16 वर्ग फ़ुट",
+     "₹13,200"
+    ],
+    [
+     "बेड",
+     "क्वीन इंजीनियर्ड वुड स्टोरेज बेड, वॉलनट फ़िनिश (Wakefit Orion जैसा)",
+     "₹16,100"
+    ],
+    [
+     "गद्दा",
+     "6\" ऑर्थोपेडिक मेमोरी फ़ोम, क्वीन",
+     "₹13,000"
+    ],
+    [
+     "साइड टेबल",
+     "2 रेडीमेड, इंजीनियर्ड वुड",
+     "₹4,000"
+    ],
+    [
+     "स्टडी दीवार",
+     "बढ़ई: दीवार पर डेस्क 4'×1'8\" + 2 खुली शेल्फ़ + सादा आईना",
+     "₹9,000"
+    ],
+    [
+     "स्टडी कुर्सी",
+     "धातु + लकड़ी की कैफ़े कुर्सी",
+     "₹3,000"
+    ],
+    [
+     "मूढ़ा",
+     "बेंत का मूढ़ा + सूती गद्दी",
+     "₹1,500"
+    ],
+    [
+     "पेंट",
+     "~590 वर्ग फ़ुट सस्ता/मध्यम इमल्शन + पुट्टी मरम्मत; टेराकोटा एक्सेंट दीवार",
+     "₹9,000"
+    ],
+    [
+     "रोशनी",
+     "5 सरफ़ेस LED डाउनलाइट, पेल्मेट LED पट्टी + ड्राइवर, 2 दीवार लाइट, इलेक्ट्रीशियन",
+     "₹10,500"
+    ],
+    [
+     "पेल्मेट और रॉड",
+     "लैमिनेटेड प्लाई पेल्मेट 11', स्टील पर्दा रॉड",
+     "₹4,000"
+    ],
+    [
+     "पर्दे",
+     "नील सूती पर्दे (बालकनी 4 + W1 2 पल्ले) + वॉयल",
+     "₹7,000"
+    ],
+    [
+     "कपड़े",
+     "सूती दरी 5'×7', ब्लॉक-प्रिंट चादर + दोहर, गद्दियाँ",
+     "₹5,000"
+    ],
+    [
+     "पत्थर",
+     "काले ग्रेनाइट की बालकनी दहलीज़ + W1 सिल",
+     "₹2,500"
+    ],
+    [
+     "बालकनी",
+     "फ़ोल्डिंग बिस्ट्रो सेट, गमलों में 4 पौधे, सोलर लाइटें, बल्कहेड लाइट",
+     "₹8,500"
+    ],
+    [
+     "सजावट",
+     "फ़्रेम किया मधुबनी प्रिंट",
+     "₹1,000"
+    ]
+   ],
+   "note": "2026 महानगर दाम, गोल किए हुए। एल्युमिनियम काम में 18% GST शामिल; बढ़ई के दाम में आमतौर पर नहीं। शामिल नहीं: नया फ़र्श (ज़रूरत हो तो लगभग ₹30–40 हज़ार), AC, पंखा, नई वायरिंग।",
+   "savings": "मौजूदा W1 खिड़की रखें और सिर्फ़ जाली लगवाएँ (−₹10 हज़ार), बालकनी सेट बाद में लें (−₹5 हज़ार), पेल्मेट LED और सोलर लाइटें छोड़ें (−₹3 हज़ार), एक ही साइड टेबल (−₹2 हज़ार)। इससे लगभग ₹1.73 लाख।"
+  },
+  "schedule": [
+   {
+    "area": "फ़र्श",
+    "items": [
+     [
+      "मौजूदा",
+      "Keep the current floor; deep-clean and re-grout"
+     ],
+     [
+      "दरी",
+      "Handloom cotton dhurrie 5'×7' (Panipat)"
+     ]
+    ]
+   },
+   {
+    "area": "दीवारें",
+    "items": [
+     [
+      "पेंट",
+      "Economy/standard emulsion, warm white, over putty patching"
+     ],
+     [
+      "एक्सेंट",
+      "Terracotta emulsion on the bed wall"
+     ],
+     [
+      "कला",
+      "Framed Madhubani print over the desk"
+     ]
+    ]
+   },
+   {
+    "area": "छत",
+    "items": [
+     [
+      "फ़िनिश",
+      "Existing plaster, repainted white; no false ceiling"
+     ],
+     [
+      "पेल्मेट",
+      "Laminated ply box over the balcony curtains, LED strip on top"
+     ]
+    ]
+   },
+   {
+    "area": "अलमारी",
+    "items": [
+     [
+      "ढाँचा",
+      "18 mm MR ply / HDHMR"
+     ],
+     [
+      "शटर",
+      "Frosty-white 1 mm laminate + walnut strip"
+     ],
+     [
+      "हार्डवेयर",
+      "Basic soft-close hinges, SS D-handles"
+     ],
+     [
+      "लॉफ़्ट",
+      "Full-width loft to the ceiling"
+     ]
+    ]
+   },
+   {
+    "area": "फ़र्नीचर",
+    "items": [
+     [
+      "बेड",
+      "Engineered-wood queen with box storage, walnut finish"
+     ],
+     [
+      "गद्दा",
+      "6\" orthopaedic memory foam"
+     ],
+     [
+      "स्टडी",
+      "Wall-hung laminated-ply desk + shelves, cafe chair"
+     ],
+     [
+      "बैठक",
+      "Cane moodha"
+     ]
+    ]
+   },
+   {
+    "area": "खिड़की और दरवाज़ा",
+    "items": [
+     [
+      "W1",
+      "3-track domal aluminium (2 glass + mesh), white"
+     ],
+     [
+      "बालकनी",
+      "2-track domal aluminium, 4 panels (2 sliding), white"
+     ],
+     [
+      "पत्थर",
+      "Black granite threshold and sill"
+     ]
+    ]
+   },
+   {
+    "area": "रोशनी",
+    "items": [
+     [
+      "सामान्य",
+      "5 × 12 W surface LED downlights, 3000K"
+     ],
+     [
+      "मूड लाइट",
+      "LED strip on the curtain pelmet"
+     ],
+     [
+      "साइड",
+      "2 cone wall lights, warm-white bulbs"
+     ]
+    ]
+   },
+   {
+    "area": "कपड़े",
+    "items": [
+     [
+      "पर्दे",
+      "Indigo cotton + voile sheer on SS rods"
+     ],
+     [
+      "बेड",
+      "Jaipuri block-print bedsheet + dohar, mustard cushions"
+     ]
+    ]
+   },
+   {
+    "area": "बालकनी",
+    "items": [
+     [
+      "बैठने की जगह",
+      "Folding metal bistro table + 2 chairs"
+     ],
+     [
+      "पौधे",
+      "Tulsi, money plant, snake plant, areca palm"
+     ],
+     [
+      "लाइट",
+      "Solar string lights, IP65 bulkhead"
+     ]
+    ]
+   }
+  ],
+  "schedNote": "(तकनीकी विवरण ठेकेदार के लिए अंग्रेज़ी में)"
+ },
+ "OPTION_E": {
+  "title": "विकल्प E · सादा और व्यावहारिक",
+  "tagline": "सुझाए गए रूप में लगभग ₹1,47,900 ('₹1.3 लाख के अंदर' चुनने पर ₹1,28,400): सादा पेंट, दरवाज़े पर आईने वाली स्लाइडिंग अलमारी, स्टैंडिंग डेस्क। ✏️ बदलें से 3D, रंग और बजट बदलते हैं।",
+  "why": "एक इंटीरियर डिज़ाइनर कम बजट में छोटे बेडरूम को ऐसे ही रखता है: पैसा उन चीज़ों पर जो रोज़ काम आती हैं (अच्छी अलमारी, बेड, गद्दा, ठीक डेस्क, पंखा और अच्छी रोशनी), और जो सिर्फ़ दिखावे की हैं उन्हें छोड़ें। दीवारों पर सिर्फ़ पेंट है: एक ही धुलने लायक पेंट, दो रंग। छत पर पंखे और लाइटों के सिवा कुछ नहीं लटकता, बिल्डर की खिड़कियाँ वैसी ही रहती हैं, और कोई फ़र्नीचर रास्ते में नहीं है। DEFAULT की तरह यहाँ लाउंज कुर्सी नहीं है: इस कमरे में ऐसी खाली जगह नहीं है जहाँ कुर्सी बेड के पास का रास्ता रोके बिना इस्तेमाल हो सके। बैठने के लिए डेस्क, बेड, या बाद में बालकनी।",
+  "sections": {
+   "लेआउट": "बेड पूर्व दीवार (अकेली लंबी ठोस दीवार) के बीच में, बालकनी की ओर मुँह। खिड़की की तरफ़ एक साइड टेबल और दरवाज़े की तरफ़ दीवार शेल्फ़, ताकि दोनों तरफ़ का रास्ता लगभग 2'2\" चौड़ा रहे। मोटी दीवार पर स्टैंडिंग डेस्क और पेगबोर्ड। कमरे के प्रवेश के पास स्लाइडिंग अलमारी, उसके दरवाज़े पर पूरी लंबाई का आईना। पंखा बेड के पैरों की तरफ़ के ऊपर। बेड और बालकनी दरवाज़े के बीच 5' खुली जगह।",
+   "अलमारी और आईना": "स्लाइडिंग दरवाज़े, क्योंकि अलमारी ठीक कमरे के प्रवेश पर है: कब्ज़े वाले दरवाज़े आपके रास्ते में खुलते। आईना आगे वाले स्लाइडिंग दरवाज़े पर, ताकि जहाँ कपड़े हैं वहीं तैयार हों, और यह बालकनी की रोशनी आले में लौटाता है। जिस दीवार पर आईना था, वहाँ बैग, हेडफ़ोन और चाबियों के लिए पेगबोर्ड। पूरी अलमारी एक साथ देखनी है? ✏️ बदलें में कब्ज़े वाले दरवाज़े चुनें।",
+   "छत (अभी सादा कंक्रीट)": "आपकी छत आरसीसी रूफ़ स्लैब का निचला हिस्सा है। इस पर चाहिए: चिकना करने के लिए ~12 मिमी जिप्सम प्लास्टर (पनिंग) → पुट्टी → प्राइमर → 2 कोट सीलिंग-व्हाइट पेंट। प्लास्टर से पहले पंखे का हुक (पंखे के लिए रेटेड एंकर फ़ास्टनर) लगवाएँ और लाइट के तार पतले सरफ़ेस कंड्यूट में चलवाएँ, क्योंकि आरसीसी में पाइप के लिए काट नहीं सकते। अगर ऊपर छत (टैरेस) है, तो पहले वॉटरप्रूफ़िंग और गर्मी लौटाने वाला सफ़ेद कोट करवाएँ।",
+   "दीवारें और पेंट": "हर जगह एक ही धुलने लायक इमल्शन (Asian Paints Apcolite Premium या Berger / Nerolac का वैसा ही, मैट या हल्की चमक)। तीन दीवारें गर्म ऑफ़-व्हाइट, बेड वाली दीवार हल्की सेज, छत सफ़ेद। तरीका: दरारें भरें → घिसें → मरम्मत पर प्राइमर → 2 कोट। अगर दीवारें अभी ग्रे सीमेंट की हैं, तो पहले पूरी पुट्टी के 2 कोट (✏️ बदलें में 'सादा सीमेंट प्लास्टर' चुनें)।",
+   "रोशनी और पंखा": "1200 मिमी BLDC पंखा (~30 W, रिमोट के साथ)। 4 सरफ़ेस LED पैनल (4000K) तकियों से दूर, 2 गर्म रोशनी वाली दीवार रीडिंग लाइट, डेस्क शेल्फ़ के नीचे 20 W LED बैटन। बाद में स्प्लिट AC के लिए पॉइंट और पाइप स्लीव अभी।",
+   "स्टैंडिंग डेस्क": "सिंगल-मोटर इलेक्ट्रिक सिट-स्टैंड डेस्क, 4'×2', मेमोरी बटन के साथ। खड़े होने की ऊँचाई ऐसी कि कोहनी 90° पर हो (5'6\"–5'8\" के लिए लगभग 3'5\"); बैठने पर लगभग 2'4\"। मॉनिटर का ऊपरी किनारा आँखों की ऊँचाई पर। खड़े होने की मैट; खड़े होने पर मेश कुर्सी डेस्क के नीचे।",
+   "खिड़की और दरवाज़ा": "बिल्डर के एल्युमिनियम स्लाइडर वैसे ही (ट्रैक साफ़ करें, रोलर में तेल)। बालकनी दरवाज़े पर प्लीटेड मच्छर जाली। सादी स्टील रॉड पर बेज ब्लैकआउट आईलेट पर्दे। कम शोर, धूल-रोधी और बारिश में भी सुरक्षित हवा चाहिए तो ✏️ बदलें में W1 को uPVC टिल्ट-एंड-टर्न चुनें।",
+   "रंग-योजना": "गर्म ऑफ़-व्हाइट, हल्का सेज, हल्का ओक, सफ़ेद, बेज, डेनिम नीला। ✏️ बदलें में कोई भी रंग बदलें।"
+  },
+  "budget": {
+   "total": "₹1,47,900",
+   "rows": [
+    [
+     "अलमारी",
+     "2-दरवाज़े स्लाइडिंग, सॉफ़्ट-क्लोज़ एल्युमिनियम ट्रैक, लोकल बढ़ई, HDHMR / MR प्लाई, 1 मिमी लैमिनेट, 5'3\" × 2' × 7'6\"",
+     "₹38,000",
+     "wardrobe"
+    ],
+    [
+     "लॉफ़्ट",
+     "अलमारी के ऊपर छत तक लॉफ़्ट, 3 कब्ज़े वाले दरवाज़े",
+     "₹8,000",
+     "loft"
+    ],
+    [
+     "बेड",
+     "क्वीन इंजीनियर्ड वुड बेड, बॉक्स स्टोरेज, हल्की ओक फ़िनिश (Wakefit Orion जैसा)",
+     "₹16,000",
+     "bed"
+    ],
+    [
+     "गद्दा",
+     "6\" मेमोरी फ़ोम / HR फ़ोम, क्वीन",
+     "₹10,000",
+     "mattress"
+    ],
+    [
+     "स्टैंडिंग डेस्क",
+     "सिंगल-मोटर इलेक्ट्रिक सिट-स्टैंड फ़्रेम + 4'×2' टॉप, 3 मेमोरी बटन",
+     "₹18,000",
+     "desk"
+    ],
+    [
+     "डेस्क कुर्सी",
+     "बैठकर काम के लिए सामान्य एर्गोनॉमिक मेश कुर्सी",
+     "₹4,000",
+     "chair"
+    ],
+    [
+     "डेस्क वाली दीवार",
+     "2 दीवार शेल्फ़, शेल्फ़ के नीचे 20 W LED बैटन, खड़े होने की मैट",
+     "₹2,900",
+     "deskwall"
+    ],
+    [
+     "आईना",
+     "अलमारी के आगे वाले स्लाइडिंग दरवाज़े पर पूरी लंबाई का आईना",
+     "₹3,000",
+     "mirror"
+    ],
+    [
+     "पेगबोर्ड",
+     "डेस्क के बगल में पेगबोर्ड: बैग, हेडफ़ोन, चाबियाँ, तार",
+     "₹1,500",
+     "pegboard"
+    ],
+    [
+     "साइड टेबल",
+     "1 रेडीमेड साइड टेबल + 1 दीवार शेल्फ़",
+     "₹2,300",
+     "bedside"
+    ],
+    [
+     "पेंट",
+     "~560 वर्ग फ़ुट दीवारें: दरारें भरना, मरम्मत पर प्राइमर, 2 कोट धुलने लायक इमल्शन (Apcolite Premium श्रेणी); छत का पेंट; बेड वाली दीवार हल्की सेज",
+     "₹8,500",
+     "paint"
+    ],
+    [
+     "छत की फ़िनिश",
+     "सादा आरसीसी स्लैब: ~12 मिमी जिप्सम प्लास्टर (पनिंग) + पूरी पुट्टी, ~160 वर्ग फ़ुट, पंखे का हुक एंकर, लाइटों के लिए सरफ़ेस कंड्यूट",
+     "₹7,500",
+     "ceiling"
+    ],
+    [
+     "सीलिंग फ़ैन",
+     "1200 मिमी BLDC पंखा, रिमोट के साथ, लगवाई सहित",
+     "₹4,000",
+     "fan"
+    ],
+    [
+     "रोशनी",
+     "4 सरफ़ेस LED पैनल, 2 दीवार रीडिंग लाइट, इलेक्ट्रीशियन",
+     "₹5,500",
+     "lighting"
+    ],
+    [
+     "AC की तैयारी",
+     "बाद में स्प्लिट AC के लिए 16 A पॉइंट + पाइप स्लीव (AC खुद शामिल नहीं)",
+     "₹2,500",
+     "ac"
+    ],
+    [
+     "पर्दे",
+     "बेज ब्लैकआउट आईलेट पर्दे (बालकनी 4 + W1 2 पल्ले) + 2 पतले पर्दे, स्टील रॉड",
+     "₹6,500",
+     "curtains"
+    ],
+    [
+     "बालकनी जाली",
+     "बालकनी दरवाज़े के लिए खिसकने वाली प्लीटेड मच्छर जाली",
+     "₹6,500",
+     "mesh"
+    ],
+    [
+     "कपड़े",
+     "सफ़ेद सूती चादर + डेनिम नीली दोहर, कुशन, 2'×5' सूती रनर",
+     "₹2,000",
+     "soft"
+    ],
+    [
+     "बालकनी",
+     "टेराकोटा गमलों में तुलसी, मनी प्लांट, स्नेक प्लांट",
+     "₹1,200",
+     "balcony"
+    ]
+   ],
+   "note": "2026 के महानगर दाम, गोल अंकों में; 2–3 लोकल कोटेशन लें। सादी कंक्रीट छत की फ़िनिश शामिल। शामिल नहीं: AC खुद (1.5 टन इन्वर्टर स्प्लिट लगभग ₹35–45 हज़ार), आपका मॉनिटर और लैपटॉप, नया फ़र्श (सादा सीमेंट हो तो लगभग ₹30–40 हज़ार), ऊपर छत हो तो टैरेस वॉटरप्रूफ़िंग।",
+   "savings": "✏️ बदलें → '₹1.3 लाख के अंदर' (कब्ज़े वाली अलमारी, लॉफ़्ट बाद में, सादा आईना: ₹1,28,400) या 'सबसे कम' (साथ में मुड़ने वाली डेस्क: ₹1,13,900)।"
+  },
+  "schedule": [
+   {
+    "area": "Floor",
+    "items": [
+     [
+      "Existing",
+      "Keep the builder's floor; deep-clean and re-grout"
+     ],
+     [
+      "Rug",
+      "2'×5' cotton runner on the door side of the bed"
+     ]
+    ]
+   },
+   {
+    "area": "Walls",
+    "items": [
+     [
+      "Prep",
+      "Fill cracks with putty only where needed, sand, primer on the patches"
+     ],
+     [
+      "Paint",
+      "2 coats washable emulsion (Apcolite Premium / Berger / Nerolac equivalent), matt or low-sheen"
+     ],
+     [
+      "Colours",
+      "Warm off-white on 3 walls; pale sage on the bed wall (same paint); ceiling white"
+     ]
+    ]
+   },
+   {
+    "area": "Ceiling",
+    "items": [
+     [
+      "Now",
+      "Bare RCC slab (underside of the roof slab)"
+     ],
+     [
+      "Finish",
+      "~12 mm gypsum plaster (punning) → putty → primer → 2 coats ceiling white; no false ceiling"
+     ],
+     [
+      "Before plaster",
+      "Fan-hook anchor fastener; surface PVC conduits for light points"
+     ],
+     [
+      "Fan",
+      "1200 mm BLDC fan, 1'4\" downrod, blades at 8'8\""
+     ],
+     [
+      "Lights",
+      "4 × 15 W surface LED panels, 4000K, away from the pillows"
+     ]
+    ]
+   },
+   {
+    "area": "Wardrobe",
+    "items": [
+     [
+      "Carcass",
+      "18 mm HDHMR / MR ply"
+     ],
+     [
+      "Doors",
+      "2 sliding shutters, frosty-white 1 mm laminate, soft-close aluminium track"
+     ],
+     [
+      "Mirror",
+      "5 mm full-length mirror on the front slider"
+     ],
+     [
+      "Loft",
+      "Full-width loft to the ceiling, 3 hinged shutters"
+     ]
+    ]
+   },
+   {
+    "area": "Furniture",
+    "items": [
+     [
+      "Bed",
+      "Queen engineered-wood bed with box storage, light oak"
+     ],
+     [
+      "Mattress",
+      "6\" memory foam / HR foam"
+     ],
+     [
+      "Bedside",
+      "1 bedside table (window side) + 1 floating shelf (door side)"
+     ]
+    ]
+   },
+   {
+    "area": "Desk corner",
+    "items": [
+     [
+      "Desk",
+      "Single-motor electric sit-stand desk, 4'×2', 2'4\"–3'10\" range"
+     ],
+     [
+      "Screen",
+      "Monitor on a stand, top edge at eye level"
+     ],
+     [
+      "Wall",
+      "2 floating shelves with a 20 W LED batten under the lower one"
+     ],
+     [
+      "Comfort",
+      "Anti-fatigue mat; mesh chair tucks under the desk"
+     ],
+     [
+      "Pegboard",
+      "3'5\"×1'5\" pegboard with hooks beside the desk"
+     ]
+    ]
+   },
+   {
+    "area": "Window & door",
+    "items": [
+     [
+      "W1",
+      "Builder's aluminium slider kept (clean tracks, oil rollers)"
+     ],
+     [
+      "Balcony",
+      "Builder's slider kept + retractable pleated mosquito mesh"
+     ],
+     [
+      "Curtains",
+      "Beige blackout eyelet curtains + sheers on SS rods"
+     ]
+    ]
+   },
+   {
+    "area": "Lighting & electrical",
+    "items": [
+     [
+      "Reading",
+      "2 wall reading lights, 7 W warm white"
+     ],
+     [
+      "Desk",
+      "20 W LED batten under the shelf"
+     ],
+     [
+      "AC",
+      "16 A point + pipe sleeve on the north wall for a 1.5 t split AC later"
+     ],
+     [
+      "Sockets",
+      "2 sockets + USB at the desk, 1 on each side of the bed"
+     ]
+    ]
+   },
+   {
+    "area": "Balcony",
+    "items": [
+     [
+      "Plants",
+      "Tulsi, money plant, snake plant in terracotta pots"
+     ],
+     [
+      "Later",
+      "2 folding chairs when the budget allows (~₹2,500)"
+     ]
+    ]
+   }
+  ],
+  "schedNote": "(तकनीकी विवरण ठेकेदार के लिए अंग्रेज़ी में)",
+  "edit": {
+   "ui": {
+    "btn": "✏️ बदलें",
+    "title": "विकल्प E अपने हिसाब से",
+    "intro": "विकल्प चुनें: 3D मॉडल, रंग और बजट तुरंत बदलते हैं। इसी डिवाइस पर सेव; 'लिंक कॉपी करें' से अपना वर्ज़न भेजें।",
+    "total": "आपका कुल",
+    "vs": "सुझाए गए से",
+    "presets": "तुरंत चुनें",
+    "reset": "रीसेट",
+    "copy": "लिंक कॉपी करें",
+    "copied": "लिंक कॉपी हुआ",
+    "budgetOnly": "सिर्फ़ बजट",
+    "colours": "रंग (₹0)",
+    "choices": "आपकी पसंद"
+   },
+   "order": [
+    "wardrobe",
+    "loft",
+    "bed",
+    "mattress",
+    "desk",
+    "chair",
+    "deskwall",
+    "mirror",
+    "pegboard",
+    "bedside",
+    "paint",
+    "ceiling",
+    "fan",
+    "lighting",
+    "ac",
+    "curtains",
+    "mesh",
+    "window",
+    "soft",
+    "balcony"
+   ],
+   "groups": [
+    {
+     "key": "wardrobe",
+     "label": "अलमारी के दरवाज़े",
+     "visual": true,
+     "default": "sliding",
+     "options": [
+      {
+       "id": "sliding",
+       "label": "स्लाइडिंग (2 दरवाज़े)",
+       "note": "खुलने की जगह नहीं चाहिए: दरवाज़े कमरे के प्रवेश को नहीं रोकते। एक बार में आधी अलमारी दिखती है; ट्रैक हर महीने साफ़ करें।",
+       "rows": {
+        "wardrobe": [
+         "अलमारी",
+         "2-दरवाज़े स्लाइडिंग, सॉफ़्ट-क्लोज़ एल्युमिनियम ट्रैक, लोकल बढ़ई, HDHMR / MR प्लाई, 1 मिमी लैमिनेट, 5'3\" × 2' × 7'6\"",
+         "₹38,000"
+        ]
+       }
+      },
+      {
+       "id": "hinged",
+       "label": "कब्ज़े वाले (3 दरवाज़े)",
+       "note": "सबसे सस्ता और टिकाऊ; सब कुछ एक साथ दिखता है, पर हर दरवाज़े को खुलने के लिए ~1'9\" जगह चाहिए।",
+       "rows": {
+        "wardrobe": [
+         "अलमारी",
+         "3-दरवाज़े कब्ज़े वाली, लोकल बढ़ई, HDHMR / MR प्लाई, 1 मिमी लैमिनेट, सामान्य सॉफ़्ट-क्लोज़ कब्ज़े, 5'3\" × 2' × 7'6\"",
+         "₹29,000"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "loft",
+     "label": "अलमारी के ऊपर लॉफ़्ट",
+     "visual": true,
+     "default": "now",
+     "options": [
+      {
+       "id": "now",
+       "label": "अभी बनवाएँ",
+       "note": "सूटकेस, रज़ाई और सर्दी के कपड़े यहाँ ऊपर।",
+       "rows": {
+        "loft": [
+         "लॉफ़्ट",
+         "अलमारी के ऊपर छत तक लॉफ़्ट, 3 कब्ज़े वाले दरवाज़े",
+         "₹8,000"
+        ]
+       }
+      },
+      {
+       "id": "later",
+       "label": "बाद में",
+       "note": "अभी ₹8,000 बचते हैं; बढ़ई बाद में कभी भी बना सकता है।",
+       "rows": {
+        "loft": null
+       }
+      }
+     ]
+    },
+    {
+     "key": "mirror",
+     "label": "आईना",
+     "visual": true,
+     "default": "wardrobe",
+     "options": [
+      {
+       "id": "wardrobe",
+       "label": "अलमारी के स्लाइडर पर",
+       "note": "जहाँ कपड़े हैं वहीं तैयार हों; बालकनी की रोशनी आले में लौटाता है। डेस्क के बगल वाली दीवार पर पेगबोर्ड। स्लाइडिंग दरवाज़े चाहिए।",
+       "rows": {
+        "mirror": [
+         "आईना",
+         "अलमारी के आगे वाले स्लाइडिंग दरवाज़े पर पूरी लंबाई का आईना",
+         "₹3,000"
+        ],
+        "pegboard": [
+         "पेगबोर्ड",
+         "डेस्क के बगल में पेगबोर्ड: बैग, हेडफ़ोन, चाबियाँ, तार",
+         "₹1,500"
+        ]
+       }
+      },
+      {
+       "id": "cabinet",
+       "label": "आईने वाली कैबिनेट",
+       "note": "आईने के पीछे 5\" गहरी कैबिनेट: स्किनकेयर, गहनों के हुक, अपने सॉकेट के साथ हेयर ड्रायर, अंदर LED।",
+       "rows": {
+        "mirror": [
+         "आईना",
+         "डेस्क के बगल में लंबी आईने वाली कैबिनेट: आईने का दरवाज़ा, 4 शेल्फ़, गहनों के हुक, LED, अंदर सॉकेट",
+         "₹6,500"
+        ],
+        "pegboard": null
+       }
+      },
+      {
+       "id": "wall",
+       "label": "सादा दीवार आईना",
+       "note": "सबसे सस्ता: मोटी दीवार पर पूरी लंबाई का आईना।",
+       "rows": {
+        "mirror": [
+         "आईना",
+         "प्लाई पर सादा पूरी लंबाई का दीवार आईना",
+         "₹2,000"
+        ],
+        "pegboard": null
+       }
+      }
+     ]
+    },
+    {
+     "key": "desk",
+     "label": "डेस्क",
+     "visual": true,
+     "default": "standing",
+     "options": [
+      {
+       "id": "standing",
+       "label": "इलेक्ट्रिक स्टैंडिंग डेस्क",
+       "note": "बटन दबाकर बैठें या खड़े हों।",
+       "rows": {
+        "desk": [
+         "स्टैंडिंग डेस्क",
+         "सिंगल-मोटर इलेक्ट्रिक सिट-स्टैंड फ़्रेम + 4'×2' टॉप, 3 मेमोरी बटन",
+         "₹18,000"
+        ],
+        "deskwall": [
+         "डेस्क वाली दीवार",
+         "2 दीवार शेल्फ़, शेल्फ़ के नीचे 20 W LED बैटन, खड़े होने की मैट",
+         "₹2,900"
+        ]
+       }
+      },
+      {
+       "id": "fold",
+       "label": "दीवार पर मुड़ने वाली डेस्क",
+       "note": "काम न हो तो दीवार से सटकर मुड़ जाती है; सिर्फ़ बैठकर। ₹14,500 बचते हैं।",
+       "rows": {
+        "desk": [
+         "डेस्क",
+         "दीवार पर मुड़ने वाली डेस्क 3'6\"×1'6\", फ़ोल्डिंग स्टील ब्रैकेट",
+         "₹4,500"
+        ],
+        "deskwall": [
+         "डेस्क वाली दीवार",
+         "2 दीवार शेल्फ़, शेल्फ़ के नीचे 20 W LED बैटन",
+         "₹1,900"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "window",
+     "label": "खिड़की W1",
+     "visual": true,
+     "default": "slider",
+     "options": [
+      {
+       "id": "slider",
+       "label": "बिल्डर का स्लाइडर (वही)",
+       "note": "ट्रैक साफ़ करें, रोलर में तेल। ₹0।",
+       "rows": {
+        "window": null
+       }
+      },
+      {
+       "id": "tt",
+       "label": "uPVC टिल्ट-एंड-टर्न",
+       "note": "ऊपर से अंदर झुकती है: बारिश में भी सुरक्षित हवा; पूरी अंदर खुलती है: सफ़ाई आसान; धूल और शोर बहुत कम। महँगी।",
+       "rows": {
+        "window": [
+         "खिड़की W1",
+         "uPVC टिल्ट-एंड-टर्न, 2 पल्ले, रोलर मच्छर जाली, ~16 वर्ग फ़ुट लगवाई सहित",
+         "₹48,000"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "ceiling",
+     "label": "छत (अभी सादा कंक्रीट)",
+     "visual": false,
+     "default": "gypsum",
+     "options": [
+      {
+       "id": "gypsum",
+       "label": "जिप्सम प्लास्टर + पेंट",
+       "note": "सुझाव: पतली चिकनी परत स्लैब के निशान और ऊबड़-खाबड़पन छिपाती है।",
+       "rows": {
+        "ceiling": [
+         "छत की फ़िनिश",
+         "सादा आरसीसी स्लैब: ~12 मिमी जिप्सम प्लास्टर (पनिंग) + पूरी पुट्टी, ~160 वर्ग फ़ुट, पंखे का हुक एंकर, लाइटों के लिए सरफ़ेस कंड्यूट",
+         "₹7,500"
+        ]
+       }
+      },
+      {
+       "id": "putty",
+       "label": "सिर्फ़ पुट्टी + पेंट",
+       "note": "सिर्फ़ तब जब कंक्रीट पहले से चिकना और समतल हो (टॉर्च को सटाकर तिरछी रोशनी से जाँचें)।",
+       "rows": {
+        "ceiling": [
+         "छत की फ़िनिश",
+         "कंक्रीट पहले से चिकना: स्लैब पर पूरी पुट्टी + पंखे का हुक एंकर + सरफ़ेस कंड्यूट",
+         "₹3,000"
+        ]
+       }
+      },
+      {
+       "id": "pop",
+       "label": "प्लास्टर + POP बॉर्डर और कोव लाइट",
+       "note": "1'6\" का बॉर्डर लाइट के तार छिपाता है और हल्की रोशनी देता है। 3D में नहीं दिखाया।",
+       "rows": {
+        "ceiling": [
+         "छत की फ़िनिश",
+         "जिप्सम प्लास्टर + कमरे के चारों ओर 1'6\" POP बॉर्डर, छिपी LED कोव + पंखे का हुक एंकर",
+         "₹16,000"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "walls",
+     "label": "दीवारें अभी",
+     "visual": false,
+     "default": "putty",
+     "options": [
+      {
+       "id": "putty",
+       "label": "बिल्डर की पुट्टी हो चुकी",
+       "note": "सफ़ेद, चिकनी दीवारें: सिर्फ़ दरारें भरें।",
+       "rows": {
+        "paint": [
+         "पेंट",
+         "~560 वर्ग फ़ुट दीवारें: दरारें भरना, मरम्मत पर प्राइमर, 2 कोट धुलने लायक इमल्शन (Apcolite Premium श्रेणी); छत का पेंट; बेड वाली दीवार हल्की सेज",
+         "₹8,500"
+        ]
+       }
+      },
+      {
+       "id": "bare",
+       "label": "सादा सीमेंट प्लास्टर",
+       "note": "ग्रे दीवारों पर पहले पूरी पुट्टी के 2 कोट (+₹5,000)।",
+       "rows": {
+        "paint": [
+         "पेंट",
+         "सादी सीमेंट-प्लास्टर दीवारें: पूरी पुट्टी के 2 कोट, प्राइमर, 2 कोट धुलने लायक इमल्शन; छत का पेंट",
+         "₹13,500"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "balcony",
+     "label": "बालकनी",
+     "visual": true,
+     "default": "plants",
+     "options": [
+      {
+       "id": "plants",
+       "label": "सिर्फ़ पौधे",
+       "note": "",
+       "rows": {
+        "balcony": [
+         "बालकनी",
+         "टेराकोटा गमलों में तुलसी, मनी प्लांट, स्नेक प्लांट",
+         "₹1,200"
+        ]
+       }
+      },
+      {
+       "id": "set",
+       "label": "पौधे + छोटी मेज़-कुर्सी",
+       "note": "सुबह की चाय के लिए फ़ोल्डिंग मेज़ और 2 कुर्सियाँ।",
+       "rows": {
+        "balcony": [
+         "बालकनी",
+         "टेराकोटा गमलों में पौधे + फ़ोल्डिंग मेज़ और 2 कुर्सियाँ",
+         "₹6,200"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "colours": [
+    {
+     "key": "c_walls",
+     "mat": "Warm_Offwhite_Paint",
+     "label": "दीवार का रंग",
+     "default": "offwhite",
+     "options": [
+      {
+       "id": "offwhite",
+       "label": "गर्म ऑफ़-व्हाइट",
+       "rgb": [
+        0.94,
+        0.92,
+        0.87
+       ]
+      },
+      {
+       "id": "ivory",
+       "label": "आइवरी",
+       "rgb": [
+        0.96,
+        0.93,
+        0.82
+       ]
+      },
+      {
+       "id": "grey",
+       "label": "हल्का धूसर",
+       "rgb": [
+        0.86,
+        0.86,
+        0.85
+       ]
+      },
+      {
+       "id": "peach",
+       "label": "हल्का पीच",
+       "rgb": [
+        0.96,
+        0.86,
+        0.78
+       ]
+      },
+      {
+       "id": "mint",
+       "label": "हल्का पुदीना हरा",
+       "rgb": [
+        0.86,
+        0.92,
+        0.87
+       ]
+      }
+     ]
+    },
+    {
+     "key": "c_bedwall",
+     "mat": "Pale_Sage_Paint",
+     "label": "बेड वाली दीवार का रंग",
+     "default": "sage",
+     "options": [
+      {
+       "id": "sage",
+       "label": "हल्का सेज",
+       "rgb": [
+        0.72,
+        0.77,
+        0.68
+       ]
+      },
+      {
+       "id": "terracotta",
+       "label": "टेराकोटा",
+       "rgb": [
+        0.72,
+        0.42,
+        0.3
+       ]
+      },
+      {
+       "id": "blue",
+       "label": "पाउडर ब्लू",
+       "rgb": [
+        0.66,
+        0.76,
+        0.86
+       ]
+      },
+      {
+       "id": "rose",
+       "label": "धूल भरा गुलाबी",
+       "rgb": [
+        0.84,
+        0.66,
+        0.64
+       ]
+      },
+      {
+       "id": "beige",
+       "label": "गर्म बेज",
+       "rgb": [
+        0.86,
+        0.78,
+        0.66
+       ]
+      },
+      {
+       "id": "same",
+       "label": "दीवारों जैसा",
+       "rgb": null
+      }
+     ]
+    },
+    {
+     "key": "c_curtains",
+     "mat": "Beige_Blackout",
+     "label": "पर्दे",
+     "default": "beige",
+     "options": [
+      {
+       "id": "beige",
+       "label": "बेज",
+       "rgb": [
+        0.78,
+        0.72,
+        0.62
+       ]
+      },
+      {
+       "id": "grey",
+       "label": "धूसर",
+       "rgb": [
+        0.55,
+        0.56,
+        0.58
+       ]
+      },
+      {
+       "id": "olive",
+       "label": "ऑलिव हरा",
+       "rgb": [
+        0.45,
+        0.48,
+        0.3
+       ]
+      },
+      {
+       "id": "navy",
+       "label": "गहरा नीला",
+       "rgb": [
+        0.16,
+        0.2,
+        0.34
+       ]
+      },
+      {
+       "id": "mustard",
+       "label": "सरसों पीला",
+       "rgb": [
+        0.8,
+        0.6,
+        0.2
+       ]
+      }
+     ]
+    },
+    {
+     "key": "c_wood",
+     "mat": "Light_Oak_Laminate",
+     "label": "लकड़ी की फ़िनिश (बेड, डेस्क, शेल्फ़)",
+     "default": "oak",
+     "options": [
+      {
+       "id": "oak",
+       "label": "हल्का ओक",
+       "rgb": [
+        0.74,
+        0.58,
+        0.42
+       ]
+      },
+      {
+       "id": "walnut",
+       "label": "वॉलनट",
+       "rgb": [
+        0.42,
+        0.28,
+        0.18
+       ]
+      },
+      {
+       "id": "teak",
+       "label": "सागौन",
+       "rgb": [
+        0.6,
+        0.4,
+        0.22
+       ]
+      },
+      {
+       "id": "white",
+       "label": "सफ़ेद",
+       "rgb": [
+        0.93,
+        0.92,
+        0.9
+       ]
+      }
+     ]
+    },
+    {
+     "key": "c_wardrobe",
+     "mat": "Frosty_White_Laminate",
+     "label": "अलमारी का लैमिनेट",
+     "default": "white",
+     "options": [
+      {
+       "id": "white",
+       "label": "फ़्रॉस्टी सफ़ेद",
+       "rgb": [
+        0.94,
+        0.93,
+        0.9
+       ]
+      },
+      {
+       "id": "grey",
+       "label": "हल्का धूसर",
+       "rgb": [
+        0.8,
+        0.8,
+        0.79
+       ]
+      },
+      {
+       "id": "sage",
+       "label": "सेज",
+       "rgb": [
+        0.62,
+        0.68,
+        0.58
+       ]
+      },
+      {
+       "id": "oak",
+       "label": "ओक",
+       "rgb": [
+        0.74,
+        0.58,
+        0.42
+       ]
+      },
+      {
+       "id": "blue",
+       "label": "हल्का नीला",
+       "rgb": [
+        0.7,
+        0.78,
+        0.86
+       ]
+      }
+     ]
+    }
+   ],
+   "requires": [
+    {
+     "when": [
+      "mirror",
+      "wardrobe"
+     ],
+     "need": [
+      "wardrobe",
+      "sliding"
+     ],
+     "else": [
+      "mirror",
+      "cabinet"
+     ]
+    }
+   ],
+   "presets": [
+    {
+     "id": "recommended",
+     "label": "सुझाया गया",
+     "choices": {}
+    },
+    {
+     "id": "budget",
+     "label": "₹1.3 लाख के अंदर",
+     "choices": {
+      "wardrobe": "hinged",
+      "loft": "later",
+      "mirror": "wall"
+     }
+    },
+    {
+     "id": "tight",
+     "label": "सबसे कम",
+     "choices": {
+      "wardrobe": "hinged",
+      "loft": "later",
+      "mirror": "wall",
+      "desk": "fold"
+     }
+    }
+   ]
+  }
+ },
+ "ROOM2_ENSUITE": {
+  "title": "V1.2 · कमरा 2 अटैच्ड बाथ (टब के साथ)",
+  "tagline": "कमरा 2 के उत्तरी सिरे पर एक दीवार से Bath 2 और नया टब-रूम मिलकर एक बाथरूम बन जाते हैं, और कमरा 2 में बस एक दरवाज़ा खुलता है।",
+  "why": "Bath 2 पहले से सिर्फ़ कमरा 2 में खुलता है, और कमरा 2 सबसे लंबा कमरा है (23'7\")। उत्तरी दीवार से 4'11\" पर 5\" की दीवार बनाने से Bath 2 के ठीक बगल में टब-रूम बन जाता है। Bath 2 का पुराना दरवाज़ा खुला रहता है, इसलिए WC और टब-रूम एक ही बाथरूम की तरह काम करते हैं। अंदर आने-जाने का रास्ता बस नया 2'6\" का दरवाज़ा है। दीवार इससे आगे दक्षिण में नहीं जा सकती: पूर्वी खिड़की W5 उत्तरी दीवार से 5'5\" पर शुरू होती है।",
+  "budget": {
+   "total": "₹1,85,000",
+   "rows": [
+    [
+     "पार्टिशन दीवार",
+     "कमरा 2 के आर-पार 5\" AAC/ईंट की दीवार (12'7\" × 10'), दरवाज़े पर लिंटल, दोनों तरफ़ प्लास्टर",
+     "₹14,000"
+    ],
+    [
+     "वॉटरप्रूफ़िंग",
+     "टब-रूम के फ़र्श पर, सभी दीवारों पर 1' ऊपर तक और टब के आसपास 3' ऊपर तक PU/सीमेंटीशियस कोटिंग",
+     "₹9,000"
+    ],
+    [
+     "फ़र्श टाइल",
+     "एंटी-स्किड मैट विट्रिफ़ाइड 600×600, ~62 वर्ग फ़ुट, कमरा 2 से ½\" नीचे, फ़्लोर ट्रैप के साथ",
+     "₹7,500"
+    ],
+    [
+     "दीवार टाइल",
+     "7' तक मैट 300×600 (~220 वर्ग फ़ुट) + टब के पीछे सेज-हरी फ़ीचर टाइल",
+     "₹26,000"
+    ],
+    [
+     "प्लंबिंग",
+     "CPVC गर्म/ठंडे पानी की लाइनें, टब और फ़्लोर ट्रैप की निकासी Bath 2 के स्टैक तक, कंसील्ड मिक्सर बॉडी",
+     "₹18,000"
+    ],
+    [
+     "बाथटब",
+     "1500×750 मिमी एक्रिलिक ड्रॉप-इन टब, 4\" के प्लिंथ पर, सर्विस पैनल वाला टाइल्ड एप्रन",
+     "₹32,000"
+    ],
+    [
+     "टब फ़िटिंग",
+     "डायवर्टर वाला वॉल मिक्सर, स्पाउट, स्लाइड रेल + हैंड शावर",
+     "₹12,000"
+    ],
+    [
+     "वैनिटी",
+     "दीवार पर टँगी 750 मिमी WPC वैनिटी, क्वार्ट्ज़ टॉप, काउंटर बेसिन, ऊँची टोंटी, आईना",
+     "₹19,000"
+    ],
+    [
+     "Bath 2 (WC)",
+     "क्लोज़-कपल्ड EWC, छोटा वॉल बेसिन, हेल्थ फ़ॉसेट, आईना",
+     "₹15,500"
+    ],
+    [
+     "दरवाज़ा",
+     "WPC फ़्रेम + फ़्लश दरवाज़ा 2'6\" × 7', प्राइवेसी लॉक, ग्रेनाइट दहलीज़",
+     "₹9,500"
+    ],
+    [
+     "बिजली",
+     "15 लीटर गीज़र + 16 A पॉइंट, एग्ज़ॉस्ट फ़ैन, 3 IP44 डाउनलाइट, आईने की लाइट, स्विच",
+     "₹17,000"
+    ],
+    [
+     "फ़िनिशिंग",
+     "W4 पर फ़्रॉस्टेड फ़िल्म, पर्दा + रॉड, तौलिया रेल, हुक, टाइल के ऊपर पेंट",
+     "₹5,500"
+    ]
+   ],
+   "note": "बेंगलुरु 2026 के मोटे अनुमान, मिड-रेंज ब्रांड, मज़दूरी सहित। ये योजना के आँकड़े हैं, सप्लायर के कोटेशन नहीं।",
+   "savings": "अगर बजट बढ़ जाए: साधारण 1500 मिमी एक्रिलिक टब (लगभग ₹18,000), थर्मोस्टैटिक की जगह सादा डायवर्टर, सिरेमिक दीवार टाइल और रेडीमेड PVC वैनिटी से खर्च लगभग ₹1.5 लाख रह जाता है।"
+  },
+  "sections": {
+   "लेआउट": "टब-रूम उत्तर में 12'7\" से घटकर 12'2\" × 4'11\" खुली जगह। टब उत्तर-पूर्वी कोने में उत्तरी दीवार के साथ। आईने वाली वैनिटी नई दीवार पर, दरवाज़े के बगल में। गीज़र पश्चिमी दीवार पर ऊपर। Bath 2 (4'5\" × 7'1\") में WC और छोटा हाथ धोने का बेसिन रहता है; वहाँ उसके पुराने दरवाज़े से जाते हैं, जिसमें अब पल्ला नहीं है।",
+   "एक दरवाज़ा": "नया दरवाज़ा नई दीवार में है, कमरा 2 की पश्चिमी दीवार से 9\" पर। यह बाथरूम के अंदर खुलता है और इसका कब्ज़ा पूर्वी चौखट पर है, इसलिए खुला दरवाज़ा दीवार के साथ लग जाता है और Bath 2 के रास्ते या वैनिटी को नहीं रोकता। कमरा 2 में बाथरूम का कोई और दरवाज़ा नहीं है।",
+   "बाथटब": "1500 × 750 मिमी एक्रिलिक सोकिंग टब (लगभग 180 लीटर), 4\" के प्लिंथ पर टाइल वाले चिनाई के घेरे में बैठाया गया। प्लिंथ से निकासी पाइप को Bath 2 के स्टैक तक ढलान मिलता है। डायवर्टर वाला वॉल मिक्सर, स्पाउट और स्लाइड रेल पर हैंड शावर, ताकि टब शावर का काम भी करे। रॉड पर लगा PEVA पर्दा छींटे अंदर रखता है।",
+   "पानी और वॉटरप्रूफ़िंग": "टब-रूम का फ़र्श कमरा 2 से ½\" नीचे है और टब के पास फ़्लोर ट्रैप की ओर ढलान है; दरवाज़े पर ग्रेनाइट की दहलीज़। टाइल से पहले पूरे फ़र्श पर, हर दीवार पर 1' ऊपर तक और टब के आसपास 3' ऊपर तक वॉटरप्रूफ़िंग। गर्म और ठंडे पानी की सप्लाई CPVC में, निकासी PVC में, साझा पश्चिमी दीवार से होकर मौजूदा Bath 2 स्टैक तक।",
+   "रोशनी और हवा": "खिड़की W4 अब बाथरूम की खिड़की है, इसलिए उस पर फ़्रॉस्टेड फ़िल्म लगेगी। टब के ऊपर के मौजूदा ऊँचे वेंट में 150 मिमी का एग्ज़ॉस्ट फ़ैन। दो IP44 डाउनलाइट और आईने की लाइट, सब 3000K गर्म सफ़ेद। 15 लीटर गीज़र अपने 16 A पॉइंट पर।",
+   "बदलाव के बाद कमरा 2": "कमरा 2 अब 18'3\" लंबा है; नई दीवार के पास 12'1\" चौड़ा, आगे घटकर 10'6\"। दोनों पूर्वी खिड़कियाँ (W5 और W6) और पैसेज व हॉल के दोनों दरवाज़े वैसे ही रहते हैं। उत्तरी खिड़की W4 बाथरूम में चली जाती है।",
+   "रंग": "7' तक गर्म-ग्रे मैट टाइल, टब के पीछे सेज-हरी फ़ीचर दीवार, ओक वैनिटी, सफ़ेद सैनिटरीवेयर, क्रोम फ़िटिंग।"
+  },
+  "schedule": [
+   {
+    "area": "Floor",
+    "items": [
+     [
+      "Tub room",
+      "Anti-skid matt vitrified 600×600, warm grey, ½\" drop, floor trap"
+     ],
+     [
+      "Threshold",
+      "Granite strip at the door"
+     ]
+    ]
+   },
+   {
+    "area": "Walls",
+    "items": [
+     [
+      "Tiles",
+      "Matt ceramic 300×600 to 7'"
+     ],
+     [
+      "Feature",
+      "Sage-green tile behind the tub and on the east wall"
+     ],
+     [
+      "Above",
+      "Washable anti-fungal emulsion"
+     ]
+    ]
+   },
+   {
+    "area": "Bath",
+    "items": [
+     [
+      "Tub",
+      "Acrylic 1500×750 drop-in, tiled apron, service panel"
+     ],
+     [
+      "Mixer",
+      "Wall mixer + diverter, spout, hand shower on a slide rail"
+     ],
+     [
+      "Curtain",
+      "PEVA curtain on a chrome rod"
+     ]
+    ]
+   },
+   {
+    "area": "Vanity",
+    "items": [
+     [
+      "Cabinet",
+      "Wall-hung 750×450 WPC, oak laminate, 2 drawers"
+     ],
+     [
+      "Top & basin",
+      "20 mm quartz, counter-top ceramic basin 400 mm, tall pillar tap"
+     ],
+     [
+      "Mirror",
+      "Frameless 650×750 with an IP44 LED light above"
+     ]
+    ]
+   },
+   {
+    "area": "Bath 2 (WC)",
+    "items": [
+     [
+      "WC",
+      "Close-coupled EWC, dual flush, soft-close seat"
+     ],
+     [
+      "Basin",
+      "Wall-hung 450 mm + small mirror"
+     ],
+     [
+      "Doorway",
+      "Existing opening kept, no door leaf"
+     ]
+    ]
+   },
+   {
+    "area": "Door & services",
+    "items": [
+     [
+      "Door",
+      "WPC frame + flush door 2'6\"×7', privacy lock"
+     ],
+     [
+      "Geyser",
+      "15 L storage, 5-star, 16 A point"
+     ],
+     [
+      "Fan",
+      "150 mm exhaust in the existing vent"
+     ],
+     [
+      "Window W4",
+      "Frosted film"
+     ]
+    ]
+   }
+  ]
+ },
+ "HALL_REC": {
+  "title": "V1.3 · सुझाया गया",
+  "tagline": "पूरे घर में मैट GVT टाइल, धातु की पट्टी वाली 8 फीट की WPC फ्लूटेड TV दीवार, बाथरूम में एंटी-स्किड और बाहर कोटा।",
+  "why": "ज़्यादातर परिवारों के लिए मेरी पसंद: अच्छा दिखता है, देखभाल लगभग नहीं, और ख़र्च बीच का। मुख्य दरवाज़ा (3 फीट, हॉल की पश्चिमी दीवार के बीच में) खुलते ही जूते की अलमारी वाली जगह। TV दीवार दरवाज़े के उत्तर में, बीम के ठीक नीचे; डाइनिंग टेबल दक्षिण में, खिड़की W7 के पास।",
+  "budget": {
+   "total": "₹1,95,000–3,26,000",
+   "rows": [
+    [
+     "फ़र्श",
+     "हॉल, पैसेज, कमरा 2 और रसोई में मैट GVT 600×1200; बाथरूम में एंटी-स्किड R11; आँगन में कोटा (बिछाई समेत)",
+     "₹1,35,000–2,27,000"
+    ],
+    [
+     "स्कर्टिंग",
+     "पूरे घर में 4 इंच टाइल स्कर्टिंग",
+     "₹20,000–30,000"
+    ],
+    [
+     "हॉल पेंट",
+     "पुट्टी और प्राइमर पर प्रीमियम धुलने वाला इमल्शन, लगभग 900 वर्ग फुट",
+     "₹22,000–36,000"
+    ],
+    [
+     "TV दीवार",
+     "WPC फ्लूटेड पैनल 8 फीट × 8'5\" (लगभग 70 वर्ग फुट), काली एल्युमिनियम पट्टी, LED पट्टी",
+     "₹16,000–29,000"
+    ],
+    [
+     "खंभे",
+     "दोनों खंभों पर 304 स्टील कॉर्नर गार्ड",
+     "₹2,000–4,000"
+    ]
+   ],
+   "note": "फ़र्नीचर, लाइट और पंखा सिर्फ़ लेआउट दिखाने के लिए हैं, इस कुल में नहीं। 2026 के मोटे अंदाज़े, पक्का रेट नहीं।"
+  },
+  "sections": {
+   "फ़ायदे": "<ul><li>मैट टाइल धूल छिपाती है और गीले पैर से सुरक्षित है</li><li>पूरे घर में एक टाइल से घर बड़ा लगता है</li><li>WPC वॉटरप्रूफ़ है, दीमक नहीं लगती, TV के तार छिपाता है</li><li>देखभाल लगभग नहीं: पोंछा और कपड़ा</li></ul>",
+   "कमियाँ": "<ul><li>GVT में गहरा चटका लगे तो नीचे का रंग दिखता है (एक डिब्बा बचाकर रखें)</li><li>WPC दूर से लकड़ी जैसा, पास से नहीं</li><li>पेंट हर 6–8 साल में दोबारा</li></ul>",
+   "कितना चलेगा": "<ul><li>फ़र्श टाइल: 15–25 साल</li><li>WPC TV दीवार: 12–15 साल</li><li>प्रीमियम पेंट: 6–8 साल</li></ul>",
+   "फ़ैसला": "पैसे के हिसाब से सबसे बढ़िया। बहुत तंग बजट न हो, या 25 साल के लिए एक बार में काम न कराना हो, तो यही लें।"
+  }
+ },
+ "HALL_BUDGET": {
+  "title": "V1.3 · सादा बजट",
+  "tagline": "डबल चार्ज टाइल, सादा धुलने वाला पेंट, दीवार पर TV, और कुछ फ़ालतू नहीं। कमरा 1 में ऑप्शन D (स्मार्ट बजट)।",
+  "why": "पैसा वहीं लगता है जहाँ टिकाऊ हो: मज़बूत टाइल, बाथरूम में एंटी-स्किड और बाहर कोटा। बाक़ी सब बाद में, कुछ तोड़े बिना, अपग्रेड हो सकता है। मुख्य दरवाज़ा (3 फीट, हॉल की पश्चिमी दीवार के बीच में) खुलते ही जूते की अलमारी वाली जगह। TV दीवार दरवाज़े के उत्तर में, बीम के ठीक नीचे; डाइनिंग टेबल दक्षिण में, खिड़की W7 के पास।",
+  "budget": {
+   "total": "₹1,58,000–2,47,000",
+   "rows": [
+    [
+     "फ़र्श",
+     "हॉल, पैसेज, कमरा 2 और रसोई में डबल चार्ज 600×600; बाथरूम में एंटी-स्किड R11; आँगन में कोटा (बिछाई समेत)",
+     "₹1,24,000–1,94,000"
+    ],
+    [
+     "स्कर्टिंग",
+     "पूरे घर में 4 इंच टाइल स्कर्टिंग",
+     "₹20,000–30,000"
+    ],
+    [
+     "हॉल पेंट",
+     "किफ़ायती धुलने वाला इमल्शन (जैसे एशियन पेंट्स ट्रैक्टर इमल्शन या बर्जर बाइसन ग्लो), लगभग 900 वर्ग फुट",
+     "₹11,000–18,000"
+    ],
+    [
+     "TV",
+     "दीवार ब्रैकेट, तार के लिए PVC केसिंग, लैमिनेट शेल्फ़",
+     "₹3,000–5,000"
+    ]
+   ],
+   "note": "फ़र्नीचर, लाइट और पंखा सिर्फ़ लेआउट दिखाने के लिए हैं, इस कुल में नहीं। 2026 के मोटे अंदाज़े, पक्का रेट नहीं।"
+  },
+  "sections": {
+   "फ़ायदे": "<ul><li>सबसे कम ख़र्च</li><li>डबल चार्ज टाइल बहुत मज़बूत, छोटे चटके मुश्किल से दिखते</li><li>पेंट के अलावा कोई देखभाल नहीं</li><li>WPC TV दीवार बाद में, फ़र्श छेड़े बिना</li></ul>",
+   "कमियाँ": "<ul><li>सादा लुक; 2 × 2 फीट टाइल में जोड़ ज़्यादा दिखते</li><li>डबल चार्ज में पत्थर या लकड़ी वाले लुक कम</li><li>किफ़ायती पेंट हर 4–5 साल में दोबारा</li><li>केसिंग न हो तो TV के तार दिखते</li></ul>",
+   "कितना चलेगा": "<ul><li>फ़र्श टाइल: 20–25 साल</li><li>किफ़ायती पेंट: 4–5 साल</li></ul>",
+   "फ़ैसला": "अभी बजट तंग हो तो यही लें। फ़र्श सुझाए गए प्लान से भी ज़्यादा चलेगा; सजावट बाद में हो सकती है।"
+  }
+ },
+ "HALL_LONG": {
+  "title": "V1.3 · लंबे समय तक चलने वाला",
+  "tagline": "फुल बॉडी टाइल का फ़र्श, स्टील पट्टी वाली पोर्सलेन स्लैब TV दीवार और स्टील गार्ड। एक बार बनवाएँ, 25 साल छोड़ दें।",
+  "why": "उस परिवार के लिए जो काम एक ही बार कराना चाहता है। हर चीज़ अपनी तरह की सबसे मज़बूत: टाइल में पूरा रंग, ऐसी दीवार जो न फीकी पड़े न फूले, और स्टील जिसमें जंग नहीं। मुख्य दरवाज़ा (3 फीट, हॉल की पश्चिमी दीवार के बीच में) खुलते ही जूते की अलमारी वाली जगह। TV दीवार दरवाज़े के उत्तर में, बीम के ठीक नीचे; डाइनिंग टेबल दक्षिण में, खिड़की W7 के पास।",
+  "budget": {
+   "total": "₹2,30,000–3,85,000",
+   "rows": [
+    [
+     "फ़र्श",
+     "हॉल, पैसेज, कमरा 2 और रसोई में फुल बॉडी मैट 600×1200; बाथरूम में एंटी-स्किड R11; आँगन में कोटा (बिछाई समेत)",
+     "₹1,68,000–2,81,000"
+    ],
+    [
+     "स्कर्टिंग",
+     "पूरे घर में 4 इंच फुल बॉडी टाइल स्कर्टिंग",
+     "₹20,000–30,000"
+    ],
+    [
+     "हॉल पेंट",
+     "पुट्टी और प्राइमर पर प्रीमियम धुलने वाला इमल्शन, लगभग 900 वर्ग फुट",
+     "₹22,000–36,000"
+    ],
+    [
+     "TV दीवार",
+     "पोर्सलेन स्लैब 800×1600 (लगभग 70 वर्ग फुट), 304 ब्रश्ड स्टील पट्टी, ग्रेनाइट टॉप वाली कंसोल",
+     "₹17,000–33,000"
+    ],
+    [
+     "खंभे",
+     "दोनों खंभों पर 5 फीट तक 304 स्टील कॉर्नर गार्ड",
+     "₹3,000–5,000"
+    ]
+   ],
+   "note": "फ़र्नीचर, लाइट और पंखा सिर्फ़ लेआउट दिखाने के लिए हैं, इस कुल में नहीं। 2026 के मोटे अंदाज़े, पक्का रेट नहीं।"
+  },
+  "sections": {
+   "फ़ायदे": "<ul><li>सबसे लंबी उम्र वाली टाइल: चटके और खरोंच मुश्किल से दिखते</li><li>पोर्सलेन स्लैब दीवार वॉटरप्रूफ़, फीकी नहीं पड़ती, पोंछकर साफ़</li><li>स्टेनलेस स्टील की पट्टी और गार्ड में कभी जंग नहीं</li><li>न पॉलिश, न सीलिंग, न बदलना</li></ul>",
+   "कमियाँ": "<ul><li>सुझाए गए प्लान से लगभग ₹35,000–60,000 ज़्यादा</li><li>बड़ी स्लैब के लिए माहिर मिस्त्री और सावधानी चाहिए</li><li>बाद में लुक बदलना मुश्किल</li><li>फुल बॉडी में डिज़ाइन कम</li></ul>",
+   "कितना चलेगा": "<ul><li>फ़र्श टाइल: 25–30+ साल</li><li>पोर्सलेन TV दीवार: 25+ साल</li><li>स्टील पट्टी: घर की पूरी उम्र</li><li>पेंट: 6–8 साल</li></ul>",
+   "फ़ैसला": "अगर हॉल का काम एक बार कराकर 20–25 साल न छूना हो तो यही लें। शुरू में महँगा, पर लंबे समय में सबसे सस्ता पड़ता है।"
+  }
+ },
+ "HALL_MARBLE": {
+  "title": "V1.3 · मार्बल क्लासिक",
+  "tagline": "हॉल और पैसेज में हरे बॉर्डर वाला देसी सफ़ेद मार्बल, सागौन शेल्फ़ वाली लाइमवॉश TV दीवार। कमरा 1 में ऑप्शन C (भारतीय मॉडर्न)।",
+  "why": "बिहार के बहुत से घरों का पसंदीदा पारंपरिक लुक: बिना जोड़ वाला चमकदार मार्बल, गर्मी में ठंडा, और घिसाई से फिर नया जैसा। ख़र्च और देखभाल कम रखने के लिए बाक़ी घर में मैट GVT। मुख्य दरवाज़ा (3 फीट, हॉल की पश्चिमी दीवार के बीच में) खुलते ही जूते की अलमारी वाली जगह। TV दीवार दरवाज़े के उत्तर में, बीम के ठीक नीचे; डाइनिंग टेबल दक्षिण में, खिड़की W7 के पास।",
+  "budget": {
+   "total": "₹2,47,000–4,58,000",
+   "rows": [
+    [
+     "फ़र्श",
+     "हॉल और पैसेज में देसी सफ़ेद मार्बल (राजनगर / मकराना), घिसाई-पॉलिश समेत; कमरा 2 और रसोई में मैट GVT; बाथरूम में एंटी-स्किड; आँगन में कोटा (बिछाई समेत)",
+     "₹1,83,000–3,49,000"
+    ],
+    [
+     "बॉर्डर",
+     "हॉल के चारों ओर 6 इंच हरे मार्बल का बॉर्डर",
+     "₹9,000–15,000"
+    ],
+    [
+     "स्कर्टिंग",
+     "पूरे घर में 4 इंच मार्बल / टाइल स्कर्टिंग",
+     "₹20,000–30,000"
+    ],
+    [
+     "हॉल पेंट",
+     "पुट्टी और प्राइमर पर प्रीमियम धुलने वाला इमल्शन, लगभग 900 वर्ग फुट",
+     "₹22,000–36,000"
+    ],
+    [
+     "TV दीवार",
+     "8 फीट चौड़ी गर्म मिट्टी रंग की लाइमवॉश दीवार, सागौन की चार लटकती शेल्फ़",
+     "₹11,000–24,000"
+    ],
+    [
+     "खंभे",
+     "दोनों खंभों पर 304 स्टील कॉर्नर गार्ड",
+     "₹2,000–4,000"
+    ]
+   ],
+   "note": "फ़र्नीचर, लाइट और पंखा सिर्फ़ लेआउट दिखाने के लिए हैं, इस कुल में नहीं। 2026 के मोटे अंदाज़े, पक्का रेट नहीं।"
+  },
+  "sections": {
+   "फ़ायदे": "<ul><li>पुराना शानदार लुक, टाइल जैसे जोड़ नहीं</li><li>घिसाई-पॉलिश से फिर नया जैसा</li><li>बिहार की गर्मी में पैर को ठंडा</li><li>लाइमवॉश और सागौन से गर्म, प्राकृतिक एहसास</li></ul>",
+   "कमियाँ": "<ul><li>हल्दी, तेल से दाग; नींबू, दही से धब्बे</li><li>जाड़े में बर्फ़ जैसा ठंडा; दरी चाहिए</li><li>हर 8–12 साल में घिसाई; खारा पानी चमक मार देता है</li><li>यहाँ सबसे महँगा और बिछाई में सबसे ज़्यादा समय</li></ul>",
+   "कितना चलेगा": "<ul><li>मार्बल: 50+ साल, हर 8–12 साल में घिसाई</li><li>लाइमवॉश: हर 5–8 साल में नया कोट</li><li>सागौन शेल्फ़: कभी-कभी पॉलिश के साथ दशकों</li></ul>",
+   "फ़ैसला": "तभी लें जब परिवार सच में मार्बल चाहता हो और देखभाल के लिए तैयार हो। वैसा ही लुक बहुत कम झंझट में चाहिए तो हॉल में चमकदार मार्बल-लुक टाइल लें।"
+  }
+ },
+ "HALL_PANEL": {
+  "title": "V1.3 · पैनल वाला हॉल",
+  "tagline": "पूरी TV दीवार पर फ्लूटेड WPC, हॉल में 3 फीट की सेज-हरी आधी दीवार पैनलिंग शैम्पेन एल्युमिनियम पट्टी के साथ, और दोनों खंभे पूरी ऊँचाई तक ढके।",
+  "why": "गर्म, सजे हुए, होटल-लॉबी जैसे लुक के लिए। पैनल निचली दीवार को पोंछे, कुर्सी और रगड़ से बचाते हैं, इसलिए पेंट सिर्फ़ ऊपर के हिस्से पर करना पड़ता है। फ़र्श सुझाए गए प्लान वाली मैट GVT। मुख्य दरवाज़ा (3 फीट, पश्चिमी दीवार के बीच में) TV दीवार और जूते की अलमारी के बीच खुलता है।",
+  "budget": {
+   "total": "₹2,44,000–4,22,000",
+   "rows": [
+    [
+     "फ़र्श",
+     "हॉल, पैसेज, कमरा 2 और रसोई में मैट GVT 600×1200; बाथरूम में एंटी-स्किड R11; आँगन में कोटा (बिछाई समेत)",
+     "₹1,35,000–2,27,000"
+    ],
+    [
+     "स्कर्टिंग",
+     "हॉल के बाहर 4 इंच टाइल स्कर्टिंग",
+     "₹20,000–30,000"
+    ],
+    [
+     "पेंट",
+     "पैनल के ऊपर प्रीमियम धुलने वाला इमल्शन",
+     "₹18,000–30,000"
+    ],
+    [
+     "फ़ीचर दीवार",
+     "दरवाज़े के उत्तर वाली पूरी दीवार पर फ्लूटेड WPC (लगभग 110 वर्ग फुट), काली पट्टी, LED",
+     "₹25,000–45,000"
+    ],
+    [
+     "आधी दीवार पैनल",
+     "3 फीट के WPC / HDHMR पैनल, मोल्डिंग पट्टियाँ, लगभग 160 वर्ग फुट, शैम्पेन एल्युमिनियम कैप",
+     "₹33,000–67,000"
+    ],
+    [
+     "खंभे",
+     "दोनों खंभे पूरी ऊँचाई तक फ्लूटेड WPC से ढके (लगभग 72 वर्ग फुट)",
+     "₹13,000–23,000"
+    ]
+   ],
+   "note": "फ़र्नीचर, लाइट और पंखा सिर्फ़ लेआउट के लिए हैं, इस कुल में नहीं। 2026 के मोटे अंदाज़े, पक्का रेट नहीं। पैनल के दाम कंपनी-कंपनी बहुत बदलते हैं: कोटेशन पर पैनल की कंपनी और मोटाई लिखवाएँ।"
+  },
+  "sections": {
+   "फ़ायदे": "<ul><li>बिना ज़्यादा फ़र्नीचर के गर्म, शानदार लुक</li><li>आधी दीवार के पैनल पोंछे, कुर्सी और जूतों की रगड़ झेलते हैं; निचली दीवार पर कभी पेंट नहीं</li><li>WPC वॉटरप्रूफ़, दीमक नहीं लगती, टेढ़ा प्लास्टर और तार छिपाता है</li><li>ढके खंभों के कोने नहीं टूटते और सुंदर लगते हैं</li></ul>",
+   "कमियाँ": "<ul><li>सबसे ज़्यादा पैनल का काम, इसलिए महँगे प्लान में से एक</li><li>पैनल दीवार ढक देते हैं: सीलन हो तो पहले ठीक करें, वरना पीछे फैलेगी</li><li>धारियों में धूल जमती है; हफ़्ते में एक बार झाड़ें</li><li>बहुत ज़्यादा लकड़ी का रंग भारी लग सकता है; बाक़ी दीवारें हल्की रखें</li></ul>",
+   "कितना चलेगा": "<ul><li>WPC फ़ीचर दीवार और खंभे: 12–15 साल</li><li>आधी दीवार पैनल: 10–15 साल</li><li>फ़र्श टाइल: 15–25 साल</li><li>पैनल के ऊपर पेंट: 6–8 साल</li></ul>",
+   "फ़ैसला": "पैनलिंग बहुत पसंद हो और दीवारें सूखी हों तो यही लें। कम बजट में सिर्फ़ फ्लूटेड TV दीवार रखें (सुझाया गया प्लान) और आधी दीवार पैनल बाद में लगवाएँ।"
+  }
+ },
+ "HALL_BEST": {
+  "title": "V1.4 · दोनों का सबसे अच्छा",
+  "tagline": "चिकनी मैट GVT (हॉल और पैसेज में 2×4 फीट, कमरों में 2×2 फीट), नीची कैबिनेट के ऊपर एक सपाट लैमिनेट TV पैनल, एंट्री पर टाइल की पट्टी, खंभों पर स्टील गार्ड, और कोव लाइट वाला पतला जिप्सम बॉर्डर।",
+  "why": "इसमें मेरी गाइड के बिहार के हिसाब से चुने फ़र्श और दीवार, और Materials Field Guide की सस्ती, आसानी से साफ़ होने वाली TV दीवार, टाइल साइज़ की सावधानी और छत की सलाह मिलाई है। हर सतह चिकनी है, धारियों में धूल नहीं। टब वाले बाथरूम का गीज़र अब 50 लीटर है, क्योंकि 15 लीटर से टब नहीं भरता।",
+  "budget": {
+   "total": "₹2,12,000–3,55,000",
+   "rows": [
+    [
+     "फ़र्श",
+     "चिकनी मैट GVT: हॉल और पैसेज में 600×1200, कमरा 2 और रसोई में 600×600, एक ही शेड; बाथरूम में एंटी-स्किड R11; आँगन में कोटा (बिछाई समेत)",
+     "₹1,30,000–2,15,000"
+    ],
+    [
+     "स्कर्टिंग",
+     "4 इंच टाइल स्कर्टिंग",
+     "₹20,000–30,000"
+    ],
+    [
+     "हॉल का पेंट",
+     "पुट्टी और प्राइमर पर धुलने वाला इमल्शन, लगभग 900 वर्ग फुट",
+     "₹22,000–36,000"
+    ],
+    [
+     "TV दीवार",
+     "18 mm BWP प्लाई पर सपाट मैट HPL लैमिनेट (हल्का ओक), 7 × 7 फीट, ऊपर काली पट्टी, LED",
+     "₹13,000–25,000"
+    ],
+    [
+     "एंट्री टाइल पट्टी",
+     "एंट्री की दीवार पर 3.5 फीट मैट दीवार टाइल (लगभग 47 वर्ग फुट), ऊपर एल्युमिनियम ट्रिम",
+     "₹6,000–10,000"
+    ],
+    [
+     "खंभे",
+     "304 स्टील कॉर्नर गार्ड, 4 फीट",
+     "₹2,000–4,000"
+    ],
+    [
+     "छत का बॉर्डर",
+     "हॉल के चारों ओर GI फ्रेम पर 2 फीट जिप्सम बॉर्डर (लगभग 170 वर्ग फुट), कोव LED के साथ",
+     "₹19,000–35,000"
+    ]
+   ],
+   "note": "जिप्सम बॉर्डर छोड़ दें तो कुल लगभग ₹1,93,000–3,20,000। फ़र्नीचर, लाइट, पंखा, मच्छर-जाली दरवाज़े और गीज़र इसमें नहीं हैं। पटना रेट पर 2026 के मोटे अंदाज़े, पक्का रेट नहीं; पटना से बाहर ढुलाई जोड़ें।"
+  },
+  "sections": {
+   "फ़ायदे": "<ul><li>हर सतह चिकनी: धारियों में धूल नहीं</li><li>कमरों में 2×2 टाइल लोकल मिस्त्री आराम से लगाता है; 2×4 सिर्फ़ वहाँ जहाँ दिखती है</li><li>TV दीवार WPC फ्लूटेड से लगभग आधे दाम में, बाद में बदलना आसान</li><li>एंट्री की दीवार जूते-बैग की रगड़ झेलती है; खंभों के कोने नहीं टूटते</li><li>बॉर्डर तार छिपाता है और शाम को हल्की रोशनी देता है</li></ul>",
+   "कमियाँ": "<ul><li>लैमिनेट असली लकड़ी या धारियों से सपाट दिखता है</li><li>बॉर्डर छत का किनारा नीचा करता है और जोड़ों की देखभाल चाहिए</li><li>दो साइज़ की टाइल = एक ही शेड के दो ऑर्डर: बैच कोड मिलाएँ</li><li>छत की वजह से सुझाए गए प्लान से थोड़ा महँगा</li></ul>",
+   "कितना चलेगा": "<ul><li>फ़र्श टाइल: 15–25 साल</li><li>लैमिनेट TV पैनल: दीवार सूखी रहे तो लगभग 10–15 साल (अंदाज़ा)</li><li>जिप्सम बॉर्डर: लीकेज न हो तो 15–20 साल, दीवारों के साथ पेंट</li><li>पेंट: 6–8 साल</li><li>स्टील गार्ड और टाइल पट्टी: पूरी उम्र</li></ul>",
+   "यह भी सोचें": "<ul><li>मच्छर-जाली दरवाज़े: खुलने वाले, एल्युमिनियम फ्रेम, बदलने वाली जाली। पहले एक कमरे में लगवाएँ</li><li>टब वाले बाथरूम का गीज़र: 50 लीटर (मॉडल में दिखाया है)</li><li>टाइल ख़रीदने से पहले दो सैंपल घर लाएँ और चाय, हल्दी, तेल डालकर देखें</li></ul>",
+   "फ़ैसला": "अब मेरी पसंद यही: लुक, सफ़ाई और ख़र्च का सबसे अच्छा मेल। पैसा कम हो तो पहले छत का बॉर्डर छोड़ें।"
+  }
+ }
+}

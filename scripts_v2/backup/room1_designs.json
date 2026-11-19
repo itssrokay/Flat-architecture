@@ -1,0 +1,2250 @@
+{
+ "DEFAULT": {
+  "title": "DEFAULT · Warm Contemporary",
+  "tagline": "Bed faces the balcony, wardrobe fills the alcove, study-dresser on the thick wall.",
+  "why": "It uses every piece of the L-shaped room for what it is best at. The 5'4\" x 3'4\" alcove beside the door is exactly the size of a 3-door wardrobe, so storage costs no floor space. The bed sits on the only long solid wall (east) and faces the 10'5\" balcony opening, giving the best view and morning light. The 7'3\" thick south wall becomes a study-cum-dresser. That leaves a clear 5'8\" zone between the bed and the balcony and a 3'10\" walkway from the door. Aluminium sliders, laminate and vitrified tile are standard, affordable and low-maintenance in Indian conditions.",
+  "sections": {
+   "Layout": "Queen bed (5'x6'6\") on east wall facing west; bedside tables both sides; study/dresser 4' on thick-wall face; floor lamp by the study desk (no lounge chair: the room has no free spot for one); 5'x7' rug.",
+   "Wardrobe": "3-door hinged, 5'3\" x 2' x 7'6\" in the SE alcove + loft to ceiling. Off-white matt laminate with oak inset strips, black profile handles, soft-close hinges. Clears the door jamb by 2\".",
+   "Window W1": "3-track aluminium sliding window (charcoal): 2 glass shutters (5 mm toughened, clear) + 1 SS-304 mosquito-mesh shutter. Flat-bar MS safety grill outside the glass, colour-matched. Black granite inner sill with 4\" ledge + external drip sill. Sheer + sage blackout drape on ceiling track.",
+   "Balcony door": "3-track, 3-panel aluminium slider (1 fixed + 2 sliding), 8 mm clear toughened glass, charcoal frame, D-handle with multipoint lock. Opens 2/3 of the 10'5\" width. Retractable pleated mosquito mesh. Black granite threshold with low-profile track, 2\" step down, sloped nosing (water check). Full-width sheer + blackout drapes stacking at both ends.",
+   "Ceiling & lighting": "Gypsum perimeter band 1'7\" wide, 6\" drop (curtain pelmet on balcony side), central raft at slab level. 2700K LED cove, 7 downlights in the band, 2 adjustable reading wall lights, floor lamp, desk shelf light.",
+   "Balcony": "Anti-skid outdoor tile; built-in teak/WPC bench with cushions against the solid wall (south end); 18\" round side table; vertical-garden panel above bench; areca palm + snake plant at north end; 3 railing planters; IP65 up-down wall light.",
+   "Palette": "Oak, off-white, sage green, rust accents, charcoal metal, warm greige floor."
+  },
+  "schedule": [
+   {
+    "area": "Floor",
+    "items": [
+     [
+      "Tile",
+      "Matte glazed vitrified tile 800×1600 mm, 9 mm, warm greige (Kajaria / Somany / Johnson class)"
+     ],
+     [
+      "Laying",
+      "Long side along the room (E–W), 2 mm epoxy grout in matching colour, 1:4 cement-sand bed"
+     ],
+     [
+      "Skirting",
+      "4\" (100 mm) cut from same tile, flush with plaster line"
+     ],
+     [
+      "Threshold (balcony)",
+      "Black granite, flamed top, 20 mm, 2\" step down with sloped nosing"
+     ]
+    ]
+   },
+   {
+    "area": "Walls",
+    "items": [
+     [
+      "Base",
+      "Cement plaster → 2 coats wall putty → primer"
+     ],
+     [
+      "Paint",
+      "Low-sheen washable emulsion, warm white (e.g. Asian Paints 'Pristine White' family) on 3 walls"
+     ],
+     [
+      "Headboard wall",
+      "Fluted panel 7'8\" × 8': 12 mm BWP plywood base + fluted MDF strips (1\" flutes) wrapped in 0.8 mm oak-grain laminate; brass-finish aluminium cap trim"
+     ],
+     [
+      "Study wall",
+      "Same paint; 4' floating shelf + frameless 5 mm mirror above the desk"
+     ]
+    ]
+   },
+   {
+    "area": "Ceiling",
+    "items": [
+     [
+      "False ceiling",
+      "Perimeter band only: 12.5 mm gypsum board (Gyproc) on GI channel framing, 1'7\" wide, 6\" drop → ceiling at 9'6\" in the band, 10' in the centre"
+     ],
+     [
+      "Cove",
+      "3\" recessed cove on the inner edge of the band with 2700K LED strip (10 W/m, dimmable)"
+     ],
+     [
+      "Curtain pelmet",
+      "Band widened to 2'1\" on the balcony side to hide the curtain track"
+     ],
+     [
+      "Finish",
+      "Ceiling-white matt emulsion"
+     ]
+    ]
+   },
+   {
+    "area": "Wardrobe",
+    "items": [
+     [
+      "Carcass",
+      "18 mm BWR/BWP plywood (or HDHMR), 0.8 mm frosty-white laminate inside, 2' deep"
+     ],
+     [
+      "Shutters",
+      "18 mm ply with 1 mm off-white matt laminate + oak-laminate vertical inset; 3 hinged doors, 7'6\" high"
+     ],
+     [
+      "Hardware",
+      "Hettich/Häfele soft-close hinges (4 per door), 12\" black aluminium bar handles"
+     ],
+     [
+      "Internals",
+      "Section 1: 2 soft-close drawers + shirt hanging rod; Section 2: 5 shelves; Section 3: long hanging (sarees/dresses) + top shelf; LED strip on door sensor"
+     ],
+     [
+      "Loft",
+      "Same carcass to ceiling, push-to-open shutters, for suitcases and quilts"
+     ],
+     [
+      "Plinth",
+      "4\" recessed black plinth so the floor can be mopped"
+     ]
+    ]
+   },
+   {
+    "area": "Bed & furniture",
+    "items": [
+     [
+      "Bed",
+      "Queen 5'×6'6\": 18 mm ply + oak laminate, hydraulic lift storage, upholstered sage headboard (foam + fabric on ply)"
+     ],
+     [
+      "Mattress",
+      "8\" pocket-spring, queen 60\"×78\""
+     ],
+     [
+      "Bedside tables",
+      "18\"×17\", 2 drawers, oak laminate on a recessed charcoal base"
+     ],
+     [
+      "Study-dresser",
+      "4'×1'9\" oak-laminate top at 30\", 2-drawer pedestal, upholstered chair"
+     ],
+     [
+      "Accent",
+      "Linen-shade floor lamp beside the study desk; 5'×7' flat-weave wool rug (the old lounge chair was removed: it stood 1\" from the bed)"
+     ]
+    ]
+   },
+   {
+    "area": "Window W1",
+    "items": [
+     [
+      "System",
+      "3-track aluminium sliding window, charcoal powder-coat (Jindal / Aluplast class)"
+     ],
+     [
+      "Shutters",
+      "2 glass shutters (5 mm clear toughened) + 1 SS-304 mosquito-mesh shutter; one glass shutter slides open"
+     ],
+     [
+      "Safety",
+      "Flat-bar MS grill (5\" pitch) outside the glass, powder-coated to match"
+     ],
+     [
+      "Sill",
+      "Black granite inside with 4\" ledge; external sill with drip groove"
+     ],
+     [
+      "Curtains",
+      "Ceiling track: linen-look sheer + sage blackout drape"
+     ]
+    ]
+   },
+   {
+    "area": "Balcony door",
+    "items": [
+     [
+      "System",
+      "3-track, 3-panel aluminium slider, charcoal; 1 fixed + 2 sliding panels → about 7' clear opening"
+     ],
+     [
+      "Glass",
+      "8 mm clear toughened glass, EPDM gaskets, interlock profiles"
+     ],
+     [
+      "Hardware",
+      "D-handle with multipoint lock, stainless rollers"
+     ],
+     [
+      "Mesh",
+      "Retractable pleated mosquito mesh, stacks at the north jamb"
+     ],
+     [
+      "Threshold",
+      "Low-profile bottom track set in black granite, 2\" step and 1:50 fall to the balcony"
+     ],
+     [
+      "Curtains",
+      "Full-width sheer + sage blackout drapes stacking at both ends"
+     ]
+    ]
+   },
+   {
+    "area": "Lighting & electrical",
+    "items": [
+     [
+      "Ambient",
+      "2700K cove LED around the room"
+     ],
+     [
+      "Task",
+      "7 × 6 W COB downlights (3000K) in the band; 2 adjustable reading wall lights at the bed; floor lamp"
+     ],
+     [
+      "Wardrobe",
+      "Sensor-operated LED strip inside"
+     ],
+     [
+      "Switching",
+      "Two-way switching of ambient light at door + bed; USB sockets at both bedsides; AC point above the headboard wall"
+     ]
+    ]
+   },
+   {
+    "area": "Balcony",
+    "items": [
+     [
+      "Floor",
+      "Anti-skid matte outdoor tile 600×600 (R11), laid on waterproofing with 1:100 fall to drain"
+     ],
+     [
+      "Seating",
+      "Built-in teak/WPC bench 2'4\"×1'4\" with storage + outdoor-fabric cushions"
+     ],
+     [
+      "Table",
+      "18\" round teak side table on a powder-coated base"
+     ],
+     [
+      "Greenery",
+      "Modular vertical-garden panel with drip line; areca palm + snake plant; 3 railing planters for herbs/flowers"
+     ],
+     [
+      "Light",
+      "IP65 up-down wall light, warm white"
+     ]
+    ]
+   }
+  ]
+ },
+ "OPTION_A": {
+  "title": "Option A · Japandi Calm",
+  "tagline": "Low platform bed against a slatted thick wall, desk under the window.",
+  "why": "A calmer, more natural room. The bed moves to the thick south wall with an ash slat wall as headboard, and the desk takes the window light. Sliding wardrobe doors avoid swing clearance.",
+  "sections": {
+   "Layout": "Low ash platform bed with head on the 7'3\" thick wall, facing north; slim bedside + stool; desk under W1; low bookcase + pouf on east wall; jute rug.",
+   "Wardrobe": "2-door sliding, ash veneer with grooves, 8'5\" high with open top niche for baskets.",
+   "Window W1": "White uPVC casement pair (outward, friction stays) with 6.38 mm laminated safety glass - no grill; internal roller mesh; solid-wood display sill; bamboo roman blind.",
+   "Balcony door": "White uPVC 2-track 4-panel slider (fixed-slide-slide-fixed), horizontal roller insect screen, Kota-stone threshold, natural linen curtains on a wooden rod.",
+   "Ceiling & lighting": "No gypsum false ceiling. Suspended ash slat raft over the bed, rice-paper pendants, surface downlights.",
+   "Balcony": "WPC deck tiles, floor cushions + low tea table, bamboo privacy screen on railing, palms in terracotta, solar paper lantern.",
+   "Palette": "Light ash, warm white, linen, moss green, black accents, light-oak plank tile."
+  },
+  "schedule": [
+   {
+    "area": "Floor",
+    "items": [
+     [
+      "Tile",
+      "Wood-look vitrified plank 200×1200 mm, light oak, matt"
+     ],
+     [
+      "Laying",
+      "Planks E–W, 1/3 stagger, 2 mm joints"
+     ],
+     [
+      "Skirting",
+      "Solid ash skirting, 3\""
+     ]
+    ]
+   },
+   {
+    "area": "Walls & ceiling",
+    "items": [
+     [
+      "Paint",
+      "Warm white limewash-effect emulsion"
+     ],
+     [
+      "Headboard",
+      "Vertical ash slat wall on the thick south wall: 1.5\" slats at 3\" centres on a black-painted backing, 8'6\" high"
+     ],
+     [
+      "Ceiling",
+      "No gypsum false ceiling. Suspended ash slat raft 6'×6'6\" over the bed; ceiling kept at 10'"
+     ]
+    ]
+   },
+   {
+    "area": "Wardrobe",
+    "items": [
+     [
+      "Type",
+      "2-door sliding, 8'5\" high, open top niche for baskets"
+     ],
+     [
+      "Materials",
+      "HDHMR carcass, ash veneer shutters with grooved lines, matt PU lacquer"
+     ],
+     [
+      "Hardware",
+      "Top-hung soft-close sliding track, recessed finger pulls"
+     ]
+    ]
+   },
+   {
+    "area": "Furniture",
+    "items": [
+     [
+      "Bed",
+      "Low Japanese platform, solid ash, 11\" high"
+     ],
+     [
+      "Desk",
+      "4'4\" solid ash desk under the window with woven-seat chair"
+     ],
+     [
+      "Storage",
+      "Low open ash bookcase 5'10\" long; jute pouf; jute rug 6'×8'"
+     ]
+    ]
+   },
+   {
+    "area": "Window & door",
+    "items": [
+     [
+      "W1",
+      "White uPVC casement pair, outward, friction stays, 6.38 mm laminated safety glass (so no grill), internal roller mesh, solid-wood sill, bamboo roman blind"
+     ],
+     [
+      "Balcony door",
+      "White uPVC 2-track 4-panel slider (fixed–slide–slide–fixed), 5 mm toughened glass, roller insect screen, Kota-stone threshold, linen curtains on a wooden rod"
+     ]
+    ]
+   },
+   {
+    "area": "Lighting",
+    "items": [
+     [
+      "Fittings",
+      "Large rice-paper pendant, 2 paper pendants as bedside lights, surface downlights, all 2700K"
+     ]
+    ]
+   },
+   {
+    "area": "Balcony",
+    "items": [
+     [
+      "Floor",
+      "WPC interlocking deck tiles on the existing tile"
+     ],
+     [
+      "Furniture",
+      "Floor cushions + low tea table"
+     ],
+     [
+      "Privacy",
+      "Bamboo screen fixed inside the railing, 5' high"
+     ],
+     [
+      "Plants",
+      "Bamboo palm / monstera in terracotta; solar paper lantern"
+     ]
+    ]
+   }
+  ]
+ },
+ "OPTION_B": {
+  "title": "Option B · Minimal Modern",
+  "tagline": "Bed on the north wall, TV/dresser wall on the thick wall, lounge corner by the balcony.",
+  "why": "The most different arrangement. The bed's head goes on the north wall beside the window, so the thick wall can host a TV/media and dresser wall viewed from the bed. A reading lounge sits at the balcony corner. Everything is flush and handleless.",
+  "sections": {
+   "Layout": "Floating walnut platform bed, head on north wall (east of W1); floating bedside under the window; 55\" TV + walnut console + tall storage on thick wall; boucle lounge chair + arc lamp at NW corner; slim console on east wall.",
+   "Wardrobe": "Floor-to-false-ceiling 2-door sliding, matt white lacquered glass, full-height mirror panel, handleless.",
+   "Window W1": "Slim black aluminium: fixed pane + inward tilt-and-turn sash, 6 mm low-E glass; invisible grill (SS-316 cables); flush quartz sill; sunscreen roller blind.",
+   "Balcony door": "Black slim lift-and-slide, 2 large panels (1 fixed, 1 sliding), 10 mm low-E toughened glass, 20 mm sightlines; flush quartz threshold with concealed drain; motorised blackout + sunscreen roller blinds in a ceiling pocket; pleated mesh.",
+   "Ceiling & lighting": "Flush gypsum ceiling at 9'5\" with recessed blind pocket and 2 linear LED lines; hidden LED in headboard panel; wall-mounted swing-arm reading light beside the window (kept clear of the inward-opening sash).",
+   "Balcony": "Grey porcelain, fold-down railing table + 2 slim metal chairs, 2 tall concrete-look planters, linear wall light.",
+   "Palette": "White, warm grey, charcoal, walnut, black metal."
+  },
+  "schedule": [
+   {
+    "area": "Floor",
+    "items": [
+     [
+      "Tile",
+      "Large-format 1200×1200 light-grey matte porcelain, 1 mm joints"
+     ],
+     [
+      "Skirting",
+      "Flush shadow-gap skirting (aluminium profile)"
+     ]
+    ]
+   },
+   {
+    "area": "Walls & ceiling",
+    "items": [
+     [
+      "Headboard wall",
+      "Full-height fabric-wrapped acoustic panels (warm grey) with a hidden LED line in the reveal"
+     ],
+     [
+      "TV wall",
+      "Microcement-look panel behind the TV"
+     ],
+     [
+      "Ceiling",
+      "Flush gypsum ceiling at 9'5\" over the whole room, 6\" recessed blind pocket along the balcony, 2 recessed linear LED lines"
+     ]
+    ]
+   },
+   {
+    "area": "Wardrobe",
+    "items": [
+     [
+      "Type",
+      "Floor-to-false-ceiling 2-door sliding, handleless"
+     ],
+     [
+      "Materials",
+      "HDHMR carcass, back-painted matt white lacquered glass shutters, one full-height mirror"
+     ],
+     [
+      "Hardware",
+      "Soft-close sliding system, internal sensor LED"
+     ]
+    ]
+   },
+   {
+    "area": "Furniture",
+    "items": [
+     [
+      "Bed",
+      "Floating walnut-veneer platform bed with integrated padded headboard, head on the north wall"
+     ],
+     [
+      "Media",
+      "Floating walnut console + tall handleless column, 55\" TV viewed from the bed"
+     ],
+     [
+      "Lounge",
+      "Bouclé lounge chair, black metal side table, arc floor lamp, charcoal low-pile rug"
+     ]
+    ]
+   },
+   {
+    "area": "Window & door",
+    "items": [
+     [
+      "W1",
+      "Slim black aluminium: fixed pane + inward tilt-and-turn sash, 6 mm low-E glass, invisible grill (SS-316 cables at 3\" centres) outside, flush quartz sill, sunscreen roller blind"
+     ],
+     [
+      "Balcony door",
+      "Slim black lift-and-slide, 2 large panels (1 fixed + 1 sliding), 10 mm low-E toughened glass, 20 mm sightlines, flush quartz threshold with concealed drain, pleated mesh, motorised blackout + sunscreen blinds"
+     ]
+    ]
+   },
+   {
+    "area": "Balcony",
+    "items": [
+     [
+      "Floor",
+      "Grey outdoor porcelain 600×1200, anti-skid"
+     ],
+     [
+      "Furniture",
+      "Fold-down railing table + 2 slim powder-coated chairs"
+     ],
+     [
+      "Plants & light",
+      "2 tall concrete-look planters with olive trees; linear IP65 wall light"
+     ]
+    ]
+   }
+  ]
+ },
+ "OPTION_C": {
+  "title": "Option C · Indian Modern Heritage",
+  "tagline": "Cane headboard wall, built-in diwan, bi-fold doors that open the whole balcony.",
+  "why": "The premium, distinctive option. A 4-panel bi-fold door folds away completely, so the room and balcony become one space. Cane, teak, brass, block prints and a built-in diwan give it an Indian character without hotel styling.",
+  "sections": {
+   "Layout": "Teak bed on the east wall with a full cane headboard panel and a teal limewash wall; brass dome pendants as bedside lights; built-in diwan (daybed) with bolsters on the thick wall under a teak jaali; low brass-top table; dhurrie rug.",
+   "Wardrobe": "3-door hinged, teak veneer frame with woven cane-mesh insets (breathable for humidity), brass bar handles, loft above.",
+   "Window W1": "Aluminium casement with teak woodgrain finish: 2 inward casements + fixed top light; decorative MS jaali-pattern safety grill; Kota-stone sill; block-print drapes + voile sheer on brass rod.",
+   "Balcony door": "4-panel aluminium bi-fold (teak finish), bottom-rolling, opens the full 10'5\" - shown folded open onto the balcony; pleated mesh stacked at the south jamb; Kota threshold with flush track; block-print curtains.",
+   "Ceiling & lighting": "Single-step tray ceiling (2'2\" band at 9'3\") with cove LED and teak edge strip; large cane pendant; brass-trim downlights.",
+   "Balcony": "Leather-finish Kota stone, rattan armchair + cane side table, terracotta planters (tulsi, jasmine, bougainvillea), pierced brass lantern, jute dhurrie.",
+   "Palette": "Teak, cane, deep teal, terracotta, ivory, brass, terrazzo-look floor."
+  },
+  "schedule": [
+   {
+    "area": "Floor",
+    "items": [
+     [
+      "Tile",
+      "Terrazzo-look vitrified tile 600×600"
+     ],
+     [
+      "Inlay",
+      "Brass-coloured strip border 1' from the walls (visual rug)"
+     ],
+     [
+      "Skirting",
+      "Teak-finish skirting"
+     ]
+    ]
+   },
+   {
+    "area": "Walls",
+    "items": [
+     [
+      "Accent",
+      "Deep teal limewash on the east (bed) wall"
+     ],
+     [
+      "Headboard",
+      "Full-width woven cane panel in a teak frame, 7'×4'6\""
+     ],
+     [
+      "Diwan wall",
+      "CNC teak jaali panel above the built-in diwan"
+     ]
+    ]
+   },
+   {
+    "area": "Ceiling",
+    "items": [
+     [
+      "False ceiling",
+      "Single-step tray: 12.5 mm gypsum band 2'2\" wide at 9'3\", centre at 10'"
+     ],
+     [
+      "Details",
+      "Teak-veneer edge strip, cove LED, brass-trim downlights, large cane pendant"
+     ]
+    ]
+   },
+   {
+    "area": "Wardrobe",
+    "items": [
+     [
+      "Type",
+      "3 hinged doors + loft"
+     ],
+     [
+      "Materials",
+      "Ply carcass, teak-veneer shutters (PU matt) with woven cane-mesh insets - breathable for humidity"
+     ],
+     [
+      "Hardware",
+      "Brass bar handles, soft-close hinges"
+     ]
+    ]
+   },
+   {
+    "area": "Furniture",
+    "items": [
+     [
+      "Bed",
+      "Teak bed with turned legs and under-bed drawers"
+     ],
+     [
+      "Diwan",
+      "Built-in daybed 6'4\"×2'4\" with storage drawers, block-print mattress, gol-takiya bolsters"
+     ],
+     [
+      "Other",
+      "Teak bedsides with cane fronts, brass dome pendants, brass-top low table, cotton dhurrie"
+     ]
+    ]
+   },
+   {
+    "area": "Window & door",
+    "items": [
+     [
+      "W1",
+      "Aluminium with teak woodgrain finish: 2 inward casements + fixed top light, 6 mm toughened glass, decorative MS jaali-pattern grill outside, Kota-stone sill, block-print drapes + voile sheer on a brass rod"
+     ],
+     [
+      "Balcony door",
+      "4-panel aluminium bi-fold (teak finish), bottom-rolling, opens the full 10'5\"; pleated mesh; Kota threshold with flush track"
+     ]
+    ]
+   },
+   {
+    "area": "Balcony",
+    "items": [
+     [
+      "Floor",
+      "Leather-finish Kota stone"
+     ],
+     [
+      "Furniture",
+      "Outdoor-grade synthetic rattan armchair + cane side table, jute dhurrie"
+     ],
+     [
+      "Plants & light",
+      "Terracotta planters (tulsi, jasmine, bougainvillea), pierced brass lantern"
+     ]
+    ]
+   }
+  ]
+ },
+ "OPTION_D": {
+  "title": "Option D · Smart Budget (Indian)",
+  "tagline": "The same well-planned layout as DEFAULT for about ₹1,93,300: ready-made pieces, a local carpenter and colour instead of costly finishes.",
+  "why": "Money goes where it lasts and gets used every day: a full-height wardrobe with a loft, proper aluminium sliders for the balcony and the window, and a good mattress. It saves on things that cost a lot but add little: no false ceiling, no panelling, no veneer or acrylic, and the existing floor stays. The look comes from colour and Indian textiles: a terracotta accent wall, indigo cotton curtains, a handloom dhurrie, a cane moodha and a Madhubani print. Walnut and frosty-white laminate tie the carpenter work to the ready-made bed. The layout is DEFAULT's, which already works: bed facing the balcony, wardrobe in the alcove, study-dresser on the thick wall.",
+  "sections": {
+   "Layout": "Queen storage bed on the east wall facing the balcony; 2 bedsides with wall lights; 3-door wardrobe + loft in the 5'4\" alcove; wall-hung study-dresser with shelves and a mirror on the thick wall; cane moodha by the window; 5'×7' dhurrie.",
+   "Wardrobe": "Local carpenter, MR ply/HDHMR carcass, frosty-white 1 mm laminate with a walnut-laminate strip, basic soft-close hinges, SS D-handles, loft above for suitcases.",
+   "Window W1": "3-track domal aluminium slider (2 glass + 1 mesh), white; plain MS grill (reuse if sound); granite offcut sill; indigo cotton curtains + voile.",
+   "Balcony door": "2-track domal aluminium sliding door, 4 panels: the two middle panels slide over the fixed end panels to give about 5' clear in the middle. A pleated mesh can be added later (about ₹6–8k).",
+   "Ceiling & lighting": "No false ceiling. 5 surface-mounted LED downlights, an LED strip on top of a laminated ply curtain pelmet for a cove-like glow, 2 bedside wall lights.",
+   "Balcony": "Existing floor kept. Folding metal bistro set, tulsi / money plant / snake plant / areca in pots, solar string lights on the railing, basic bulkhead light.",
+   "Palette": "Warm white, terracotta, indigo, mustard, walnut, cane."
+  },
+  "budget": {
+   "total": "₹1,93,300",
+   "rows": [
+    [
+     "Wardrobe",
+     "3-door hinged + loft, local carpenter, MR ply/HDHMR + 1 mm laminate, 5'3\" × 2' × 9'10\"",
+     "₹46,000"
+    ],
+    [
+     "Balcony door",
+     "2-track domal aluminium slider, 4 panels (2 slide), 5 mm toughened glass, 73 sq ft",
+     "₹40,000"
+    ],
+    [
+     "Window W1",
+     "3-track domal aluminium slider (2 glass + 1 mesh), 16 sq ft",
+     "₹13,200"
+    ],
+    [
+     "Bed",
+     "Queen engineered-wood storage bed, walnut finish (Wakefit Orion class)",
+     "₹16,100"
+    ],
+    [
+     "Mattress",
+     "6\" orthopaedic memory foam, queen",
+     "₹13,000"
+    ],
+    [
+     "Bedside tables",
+     "2 ready-made, engineered wood",
+     "₹4,000"
+    ],
+    [
+     "Study wall",
+     "Carpenter: wall desk 4'×1'8\" + 2 open shelves + plain mirror",
+     "₹9,000"
+    ],
+    [
+     "Study chair",
+     "Metal + wood cafe chair",
+     "₹3,000"
+    ],
+    [
+     "Moodha",
+     "Cane moodha + cotton cushion",
+     "₹1,500"
+    ],
+    [
+     "Paint",
+     "~590 sq ft economy/standard emulsion + putty patching; terracotta accent wall",
+     "₹9,000"
+    ],
+    [
+     "Lighting",
+     "5 surface LED downlights, pelmet LED strip + driver, 2 wall lights, electrician",
+     "₹10,500"
+    ],
+    [
+     "Pelmet & rods",
+     "Laminated ply pelmet 11', SS curtain rods",
+     "₹4,000"
+    ],
+    [
+     "Curtains",
+     "Indigo cotton curtains (balcony 4 + W1 2 panels) + voile sheers",
+     "₹7,000"
+    ],
+    [
+     "Soft",
+     "Cotton dhurrie 5'×7', block-print bedsheet + dohar, cushions",
+     "₹5,000"
+    ],
+    [
+     "Stone",
+     "Black granite balcony threshold + W1 sill",
+     "₹2,500"
+    ],
+    [
+     "Balcony",
+     "Folding bistro set, 4 plants in pots, solar string lights, bulkhead light",
+     "₹8,500"
+    ],
+    [
+     "Decor",
+     "Framed Madhubani print",
+     "₹1,000"
+    ]
+   ],
+   "note": "2026 metro prices, rounded. Aluminium work includes 18% GST; carpenter quotes usually don't. Not included: re-flooring (about ₹30–40k if needed), AC, ceiling fan, rewiring.",
+   "savings": "If it runs over: keep the existing W1 window and just add a mesh (−₹10k), buy the balcony set later (−₹5k), skip the pelmet LED and string lights (−₹3k), one bedside only (−₹2k). That brings it to about ₹1.73 lakh."
+  },
+  "schedule": [
+   {
+    "area": "Floor",
+    "items": [
+     [
+      "Existing",
+      "Keep the current floor; deep-clean and re-grout"
+     ],
+     [
+      "Rug",
+      "Handloom cotton dhurrie 5'×7' (Panipat)"
+     ]
+    ]
+   },
+   {
+    "area": "Walls",
+    "items": [
+     [
+      "Paint",
+      "Economy/standard emulsion, warm white, over putty patching"
+     ],
+     [
+      "Accent",
+      "Terracotta emulsion on the bed wall"
+     ],
+     [
+      "Art",
+      "Framed Madhubani print over the desk"
+     ]
+    ]
+   },
+   {
+    "area": "Ceiling",
+    "items": [
+     [
+      "Finish",
+      "Existing plaster, repainted white; no false ceiling"
+     ],
+     [
+      "Pelmet",
+      "Laminated ply box over the balcony curtains, LED strip on top"
+     ]
+    ]
+   },
+   {
+    "area": "Wardrobe",
+    "items": [
+     [
+      "Carcass",
+      "18 mm MR ply / HDHMR"
+     ],
+     [
+      "Shutters",
+      "Frosty-white 1 mm laminate + walnut strip"
+     ],
+     [
+      "Hardware",
+      "Basic soft-close hinges, SS D-handles"
+     ],
+     [
+      "Loft",
+      "Full-width loft to the ceiling"
+     ]
+    ]
+   },
+   {
+    "area": "Furniture",
+    "items": [
+     [
+      "Bed",
+      "Engineered-wood queen with box storage, walnut finish"
+     ],
+     [
+      "Mattress",
+      "6\" orthopaedic memory foam"
+     ],
+     [
+      "Study",
+      "Wall-hung laminated-ply desk + shelves, cafe chair"
+     ],
+     [
+      "Seat",
+      "Cane moodha"
+     ]
+    ]
+   },
+   {
+    "area": "Window & door",
+    "items": [
+     [
+      "W1",
+      "3-track domal aluminium (2 glass + mesh), white"
+     ],
+     [
+      "Balcony",
+      "2-track domal aluminium, 4 panels (2 sliding), white"
+     ],
+     [
+      "Stone",
+      "Black granite threshold and sill"
+     ]
+    ]
+   },
+   {
+    "area": "Lighting",
+    "items": [
+     [
+      "General",
+      "5 × 12 W surface LED downlights, 3000K"
+     ],
+     [
+      "Mood",
+      "LED strip on the curtain pelmet"
+     ],
+     [
+      "Bedside",
+      "2 cone wall lights, warm-white bulbs"
+     ]
+    ]
+   },
+   {
+    "area": "Textiles",
+    "items": [
+     [
+      "Curtains",
+      "Indigo cotton + voile sheer on SS rods"
+     ],
+     [
+      "Bed",
+      "Jaipuri block-print bedsheet + dohar, mustard cushions"
+     ]
+    ]
+   },
+   {
+    "area": "Balcony",
+    "items": [
+     [
+      "Seating",
+      "Folding metal bistro table + 2 chairs"
+     ],
+     [
+      "Plants",
+      "Tulsi, money plant, snake plant, areca palm"
+     ],
+     [
+      "Light",
+      "Solar string lights, IP65 bulkhead"
+     ]
+    ]
+   }
+  ]
+ },
+ "OPTION_E": {
+  "title": "Option E · Simple & Practical",
+  "tagline": "About ₹1,47,900 as recommended (₹1,28,400 with the 'Within ₹1.3 lakh' pick): plain paint, a sliding wardrobe with the mirror on its door, a standing desk. ✏️ Customise changes the 3D, colours and budget.",
+  "why": "This is how an interior designer keeps a small bedroom on a budget: spend on what you use every day (a good wardrobe, bed, mattress, a proper desk, a fan and good light) and skip what only looks fancy. The walls are simply painted: one washable paint, two shades. Nothing hangs from the ceiling except the fan and lights, the builder's windows stay, and no furniture stands in a walkway. Unlike DEFAULT there is no lounge chair: this room has no free spot where a chair can be used without blocking the path beside the bed. You sit at the desk, on the bed, or later on the balcony.",
+  "sections": {
+   "Layout": "Bed centred on the east wall (the only long solid wall), facing the balcony. One bedside on the window side and a floating shelf on the door side, so both walkways stay about 2'2\" wide. Standing desk and a pegboard on the thick wall. Sliding wardrobe with the full-length mirror on its door, right by the room's entrance. Fan over the foot of the bed. 5' of open floor between the bed and the balcony door.",
+   "Wardrobe & mirror": "Sliding doors, because the wardrobe sits right at the room's entrance: hinged doors would swing into your path. The mirror goes on the front sliding door, so you dress where your clothes are and it throws balcony light into the alcove. The wall that had the mirror becomes a pegboard for your bag, headphones and keys. Prefer to see the whole wardrobe at once? Choose hinged doors in ✏️ Customise.",
+   "Ceiling (bare concrete now)": "Your ceiling is the underside of the RCC roof slab. It needs: ~12 mm gypsum plaster (punning) to make it smooth → putty → primer → 2 coats ceiling-white paint. Before plastering, fix the fan hook (anchor fastener rated for a fan) and run the light wires in thin surface conduits, because RCC can't be cut for pipes. If the flat has a terrace above, get the roof waterproofed and coated with heat-reflective white paint first.",
+   "Walls & paint": "One washable emulsion everywhere (Asian Paints Apcolite Premium or a Berger / Nerolac equivalent, matt or low-sheen). Warm off-white on three walls, pale sage on the bed wall, ceiling white. Process: fill cracks → sand → primer on the patches → 2 coats. If the walls are still grey cement, they need 2 full coats of putty first (choose 'Bare cement plaster' in ✏️ Customise).",
+   "Lighting & fan": "1200 mm BLDC fan (~30 W, with remote). 4 surface LED panels (4000K) placed away from the pillows, 2 warm wall reading lights, a 20 W LED batten under the desk shelf. AC point and pipe sleeve done now for a split AC later.",
+   "Standing desk": "Single-motor electric sit-stand desk, 4'×2', with memory presets. Set the standing height so your elbows are at 90° (about 3'5\" for someone 5'6\"–5'8\"); sitting height about 2'4\". Monitor top at eye level. Anti-fatigue mat; the mesh chair tucks under when you stand.",
+   "Window & door": "The builder's aluminium sliders are kept (clean the tracks, oil the rollers). A pleated mosquito mesh is added to the balcony door. Beige blackout eyelet curtains on plain SS rods. Upgrade W1 to a uPVC tilt-and-turn window in ✏️ Customise if you want quieter, dust-tight, rain-safe ventilation.",
+   "Palette": "Warm off-white, pale sage, light oak, white, beige, denim blue. Change any of them in ✏️ Customise."
+  },
+  "budget": {
+   "total": "₹1,47,900",
+   "rows": [
+    [
+     "Wardrobe",
+     "2-door sliding, soft-close aluminium track, local carpenter, HDHMR / MR ply, 1 mm laminate, 5'3\" × 2' × 7'6\"",
+     "₹38,000",
+     "wardrobe"
+    ],
+    [
+     "Loft",
+     "Loft above the wardrobe up to the ceiling, 3 hinged shutters",
+     "₹8,000",
+     "loft"
+    ],
+    [
+     "Bed",
+     "Queen engineered-wood bed with box storage, light-oak finish (Wakefit Orion class)",
+     "₹16,000",
+     "bed"
+    ],
+    [
+     "Mattress",
+     "6\" memory-foam / HR-foam, queen",
+     "₹10,000",
+     "mattress"
+    ],
+    [
+     "Standing desk",
+     "Single-motor electric sit-stand frame + 4'×2' top, 3 memory presets",
+     "₹18,000",
+     "desk"
+    ],
+    [
+     "Desk chair",
+     "Basic ergonomic mesh chair for sitting mode",
+     "₹4,000",
+     "chair"
+    ],
+    [
+     "Desk wall",
+     "2 floating shelves, 20 W LED batten under the shelf, anti-fatigue mat",
+     "₹2,900",
+     "deskwall"
+    ],
+    [
+     "Mirror",
+     "Full-length mirror on the wardrobe's front sliding door",
+     "₹3,000",
+     "mirror"
+    ],
+    [
+     "Pegboard",
+     "Pegboard organiser beside the desk: bag, headphones, keys, cables",
+     "₹1,500",
+     "pegboard"
+    ],
+    [
+     "Bedside",
+     "1 ready-made bedside table + 1 floating wall shelf",
+     "₹2,300",
+     "bedside"
+    ],
+    [
+     "Paint",
+     "~560 sq ft walls: crack filling, primer on patches, 2 coats washable emulsion (Apcolite Premium class); ceiling paint; pale sage bed wall",
+     "₹8,500",
+     "paint"
+    ],
+    [
+     "Ceiling finish",
+     "Bare RCC slab: ~12 mm gypsum plaster (punning) + full putty on ~160 sq ft, fan-hook anchor, surface conduit for the lights",
+     "₹7,500",
+     "ceiling"
+    ],
+    [
+     "Ceiling fan",
+     "1200 mm BLDC fan with remote, incl. fitting",
+     "₹4,000",
+     "fan"
+    ],
+    [
+     "Lighting",
+     "4 surface LED panels, 2 wall reading lights, electrician",
+     "₹5,500",
+     "lighting"
+    ],
+    [
+     "AC provision",
+     "16 A AC point + pipe sleeve for a split AC later (the AC itself is not included)",
+     "₹2,500",
+     "ac"
+    ],
+    [
+     "Curtains",
+     "Beige blackout eyelet curtains (balcony 4 + W1 2 panels) + 2 sheers, SS rods",
+     "₹6,500",
+     "curtains"
+    ],
+    [
+     "Balcony mesh",
+     "Retractable pleated mosquito mesh for the balcony door",
+     "₹6,500",
+     "mesh"
+    ],
+    [
+     "Soft",
+     "White cotton bedsheet + denim dohar, cushions, 2'×5' cotton runner",
+     "₹2,000",
+     "soft"
+    ],
+    [
+     "Balcony",
+     "Tulsi, money plant, snake plant in terracotta pots",
+     "₹1,200",
+     "balcony"
+    ]
+   ],
+   "note": "2026 metro prices, rounded; get 2–3 local quotes. Includes finishing the bare concrete ceiling. Not included: the AC itself (roughly ₹35–45k for a 1.5 t inverter split), your monitor and laptop, re-flooring (about ₹30–40k if the floor is bare cement), terrace waterproofing if the roof is above you.",
+   "savings": "Use ✏️ Customise → 'Within ₹1.3 lakh' (hinged wardrobe, loft later, plain mirror: ₹1,28,400) or 'Tightest' (also a fold-down desk: ₹1,13,900)."
+  },
+  "schedule": [
+   {
+    "area": "Floor",
+    "items": [
+     [
+      "Existing",
+      "Keep the builder's floor; deep-clean and re-grout"
+     ],
+     [
+      "Rug",
+      "2'×5' cotton runner on the door side of the bed"
+     ]
+    ]
+   },
+   {
+    "area": "Walls",
+    "items": [
+     [
+      "Prep",
+      "Fill cracks with putty only where needed, sand, primer on the patches"
+     ],
+     [
+      "Paint",
+      "2 coats washable emulsion (Apcolite Premium / Berger / Nerolac equivalent), matt or low-sheen"
+     ],
+     [
+      "Colours",
+      "Warm off-white on 3 walls; pale sage on the bed wall (same paint); ceiling white"
+     ]
+    ]
+   },
+   {
+    "area": "Ceiling",
+    "items": [
+     [
+      "Now",
+      "Bare RCC slab (underside of the roof slab)"
+     ],
+     [
+      "Finish",
+      "~12 mm gypsum plaster (punning) → putty → primer → 2 coats ceiling white; no false ceiling"
+     ],
+     [
+      "Before plaster",
+      "Fan-hook anchor fastener; surface PVC conduits for light points"
+     ],
+     [
+      "Fan",
+      "1200 mm BLDC fan, 1'4\" downrod, blades at 8'8\""
+     ],
+     [
+      "Lights",
+      "4 × 15 W surface LED panels, 4000K, away from the pillows"
+     ]
+    ]
+   },
+   {
+    "area": "Wardrobe",
+    "items": [
+     [
+      "Carcass",
+      "18 mm HDHMR / MR ply"
+     ],
+     [
+      "Doors",
+      "2 sliding shutters, frosty-white 1 mm laminate, soft-close aluminium track"
+     ],
+     [
+      "Mirror",
+      "5 mm full-length mirror on the front slider"
+     ],
+     [
+      "Loft",
+      "Full-width loft to the ceiling, 3 hinged shutters"
+     ]
+    ]
+   },
+   {
+    "area": "Furniture",
+    "items": [
+     [
+      "Bed",
+      "Queen engineered-wood bed with box storage, light oak"
+     ],
+     [
+      "Mattress",
+      "6\" memory foam / HR foam"
+     ],
+     [
+      "Bedside",
+      "1 bedside table (window side) + 1 floating shelf (door side)"
+     ]
+    ]
+   },
+   {
+    "area": "Desk corner",
+    "items": [
+     [
+      "Desk",
+      "Single-motor electric sit-stand desk, 4'×2', 2'4\"–3'10\" range"
+     ],
+     [
+      "Screen",
+      "Monitor on a stand, top edge at eye level"
+     ],
+     [
+      "Wall",
+      "2 floating shelves with a 20 W LED batten under the lower one"
+     ],
+     [
+      "Comfort",
+      "Anti-fatigue mat; mesh chair tucks under the desk"
+     ],
+     [
+      "Pegboard",
+      "3'5\"×1'5\" pegboard with hooks beside the desk"
+     ]
+    ]
+   },
+   {
+    "area": "Window & door",
+    "items": [
+     [
+      "W1",
+      "Builder's aluminium slider kept (clean tracks, oil rollers)"
+     ],
+     [
+      "Balcony",
+      "Builder's slider kept + retractable pleated mosquito mesh"
+     ],
+     [
+      "Curtains",
+      "Beige blackout eyelet curtains + sheers on SS rods"
+     ]
+    ]
+   },
+   {
+    "area": "Lighting & electrical",
+    "items": [
+     [
+      "Reading",
+      "2 wall reading lights, 7 W warm white"
+     ],
+     [
+      "Desk",
+      "20 W LED batten under the shelf"
+     ],
+     [
+      "AC",
+      "16 A point + pipe sleeve on the north wall for a 1.5 t split AC later"
+     ],
+     [
+      "Sockets",
+      "2 sockets + USB at the desk, 1 on each side of the bed"
+     ]
+    ]
+   },
+   {
+    "area": "Balcony",
+    "items": [
+     [
+      "Plants",
+      "Tulsi, money plant, snake plant in terracotta pots"
+     ],
+     [
+      "Later",
+      "2 folding chairs when the budget allows (~₹2,500)"
+     ]
+    ]
+   }
+  ],
+  "edit": {
+   "ui": {
+    "btn": "✏️ Customise",
+    "title": "Customise Option E",
+    "intro": "Pick options: the 3D model, colours and budget update at once. Saved on this device; 'Copy link' shares your version.",
+    "total": "Your total",
+    "vs": "vs recommended",
+    "presets": "Quick picks",
+    "reset": "Reset",
+    "copy": "Copy link",
+    "copied": "Link copied",
+    "budgetOnly": "budget only",
+    "colours": "Colours (₹0)",
+    "choices": "Your choices"
+   },
+   "order": [
+    "wardrobe",
+    "loft",
+    "bed",
+    "mattress",
+    "desk",
+    "chair",
+    "deskwall",
+    "mirror",
+    "pegboard",
+    "bedside",
+    "paint",
+    "ceiling",
+    "fan",
+    "lighting",
+    "ac",
+    "curtains",
+    "mesh",
+    "window",
+    "soft",
+    "balcony"
+   ],
+   "groups": [
+    {
+     "key": "wardrobe",
+     "label": "Wardrobe doors",
+     "visual": true,
+     "default": "sliding",
+     "options": [
+      {
+       "id": "sliding",
+       "label": "Sliding (2 doors)",
+       "note": "No swing: the doors never block the room's entrance. You see half the wardrobe at a time; clean the track monthly.",
+       "rows": {
+        "wardrobe": [
+         "Wardrobe",
+         "2-door sliding, soft-close aluminium track, local carpenter, HDHMR / MR ply, 1 mm laminate, 5'3\" × 2' × 7'6\"",
+         "₹38,000"
+        ]
+       }
+      },
+      {
+       "id": "hinged",
+       "label": "Hinged (3 doors)",
+       "note": "Cheapest and longest-lasting; you see everything at once, but each door needs ~1'9\" of free space to swing.",
+       "rows": {
+        "wardrobe": [
+         "Wardrobe",
+         "3-door hinged, local carpenter, HDHMR / MR ply, 1 mm laminate, basic soft-close hinges, 5'3\" × 2' × 7'6\"",
+         "₹29,000"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "loft",
+     "label": "Loft above the wardrobe",
+     "visual": true,
+     "default": "now",
+     "options": [
+      {
+       "id": "now",
+       "label": "Build now",
+       "note": "Suitcases, quilts and winter clothes go up here.",
+       "rows": {
+        "loft": [
+         "Loft",
+         "Loft above the wardrobe up to the ceiling, 3 hinged shutters",
+         "₹8,000"
+        ]
+       }
+      },
+      {
+       "id": "later",
+       "label": "Later",
+       "note": "Saves ₹8,000 now; the carpenter can add it any time.",
+       "rows": {
+        "loft": null
+       }
+      }
+     ]
+    },
+    {
+     "key": "mirror",
+     "label": "Mirror",
+     "visual": true,
+     "default": "wardrobe",
+     "options": [
+      {
+       "id": "wardrobe",
+       "label": "On the wardrobe slider",
+       "note": "Dress where your clothes are; it reflects balcony light into the alcove. The wall beside the desk becomes a pegboard. Needs sliding doors.",
+       "rows": {
+        "mirror": [
+         "Mirror",
+         "Full-length mirror on the wardrobe's front sliding door",
+         "₹3,000"
+        ],
+        "pegboard": [
+         "Pegboard",
+         "Pegboard organiser beside the desk: bag, headphones, keys, cables",
+         "₹1,500"
+        ]
+       }
+      },
+      {
+       "id": "cabinet",
+       "label": "Mirror cabinet",
+       "note": "A 5\"-deep cabinet behind the mirror: skincare, jewellery hooks, hair dryer with its own socket, LED inside.",
+       "rows": {
+        "mirror": [
+         "Mirror",
+         "Tall mirror cabinet beside the desk: mirror door, 4 shelves, jewellery hooks, LED, socket inside",
+         "₹6,500"
+        ],
+        "pegboard": null
+       }
+      },
+      {
+       "id": "wall",
+       "label": "Plain wall mirror",
+       "note": "Cheapest: a full-length mirror fixed on the thick wall.",
+       "rows": {
+        "mirror": [
+         "Mirror",
+         "Plain full-length wall mirror on ply",
+         "₹2,000"
+        ],
+        "pegboard": null
+       }
+      }
+     ]
+    },
+    {
+     "key": "desk",
+     "label": "Desk",
+     "visual": true,
+     "default": "standing",
+     "options": [
+      {
+       "id": "standing",
+       "label": "Electric standing desk",
+       "note": "Sit or stand at the press of a button.",
+       "rows": {
+        "desk": [
+         "Standing desk",
+         "Single-motor electric sit-stand frame + 4'×2' top, 3 memory presets",
+         "₹18,000"
+        ],
+        "deskwall": [
+         "Desk wall",
+         "2 floating shelves, 20 W LED batten under the shelf, anti-fatigue mat",
+         "₹2,900"
+        ]
+       }
+      },
+      {
+       "id": "fold",
+       "label": "Fold-down wall desk",
+       "note": "Folds flat against the wall when not in use; sitting only. Saves ₹14,500.",
+       "rows": {
+        "desk": [
+         "Desk",
+         "Wall-mounted fold-down desk 3'6\"×1'6\" on folding steel brackets",
+         "₹4,500"
+        ],
+        "deskwall": [
+         "Desk wall",
+         "2 floating shelves, 20 W LED batten under the shelf",
+         "₹1,900"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "window",
+     "label": "Window W1",
+     "visual": true,
+     "default": "slider",
+     "options": [
+      {
+       "id": "slider",
+       "label": "Builder's slider (keep)",
+       "note": "Clean the tracks, oil the rollers. ₹0.",
+       "rows": {
+        "window": null
+       }
+      },
+      {
+       "id": "tt",
+       "label": "uPVC tilt-and-turn",
+       "note": "Tilts in at the top for rain-safe, secure ventilation; swings fully in for cleaning; seals out dust and noise far better. Pricey.",
+       "rows": {
+        "window": [
+         "Window W1",
+         "uPVC tilt-and-turn, 2 sashes, roller mosquito mesh, ~16 sq ft fitted",
+         "₹48,000"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "ceiling",
+     "label": "Ceiling (it's bare concrete now)",
+     "visual": false,
+     "default": "gypsum",
+     "options": [
+      {
+       "id": "gypsum",
+       "label": "Gypsum plaster + paint",
+       "note": "Recommended: a thin smooth coat hides the slab's form-marks and unevenness.",
+       "rows": {
+        "ceiling": [
+         "Ceiling finish",
+         "Bare RCC slab: ~12 mm gypsum plaster (punning) + full putty on ~160 sq ft, fan-hook anchor, surface conduit for the lights",
+         "₹7,500"
+        ]
+       }
+      },
+      {
+       "id": "putty",
+       "label": "Putty + paint only",
+       "note": "Only if the concrete is already smooth and level (check with a torch held flat against it).",
+       "rows": {
+        "ceiling": [
+         "Ceiling finish",
+         "Concrete already smooth: full putty on the slab + fan-hook anchor + surface conduit",
+         "₹3,000"
+        ]
+       }
+      },
+      {
+       "id": "pop",
+       "label": "Plaster + POP border with cove light",
+       "note": "A 1'6\" border hides the light wiring and gives a soft glow. Not shown in 3D.",
+       "rows": {
+        "ceiling": [
+         "Ceiling finish",
+         "Gypsum plaster + 1'6\" POP border around the room with a hidden LED cove + fan-hook anchor",
+         "₹16,000"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "walls",
+     "label": "Walls today",
+     "visual": false,
+     "default": "putty",
+     "options": [
+      {
+       "id": "putty",
+       "label": "Builder's putty done",
+       "note": "White, smooth walls: only patch cracks.",
+       "rows": {
+        "paint": [
+         "Paint",
+         "~560 sq ft walls: crack filling, primer on patches, 2 coats washable emulsion (Apcolite Premium class); ceiling paint; pale sage bed wall",
+         "₹8,500"
+        ]
+       }
+      },
+      {
+       "id": "bare",
+       "label": "Bare cement plaster",
+       "note": "Grey walls need 2 full coats of putty first (+₹5,000).",
+       "rows": {
+        "paint": [
+         "Paint",
+         "Bare cement-plaster walls: full 2-coat putty, primer, 2 coats washable emulsion; ceiling paint",
+         "₹13,500"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "balcony",
+     "label": "Balcony",
+     "visual": true,
+     "default": "plants",
+     "options": [
+      {
+       "id": "plants",
+       "label": "Plants only",
+       "note": "",
+       "rows": {
+        "balcony": [
+         "Balcony",
+         "Tulsi, money plant, snake plant in terracotta pots",
+         "₹1,200"
+        ]
+       }
+      },
+      {
+       "id": "set",
+       "label": "Plants + bistro set",
+       "note": "A folding table and 2 chairs for morning tea.",
+       "rows": {
+        "balcony": [
+         "Balcony",
+         "Plants in terracotta pots + folding bistro table and 2 chairs",
+         "₹6,200"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "colours": [
+    {
+     "key": "c_walls",
+     "mat": "Warm_Offwhite_Paint",
+     "label": "Wall colour",
+     "default": "offwhite",
+     "options": [
+      {
+       "id": "offwhite",
+       "label": "Warm off-white",
+       "rgb": [
+        0.94,
+        0.92,
+        0.87
+       ]
+      },
+      {
+       "id": "ivory",
+       "label": "Ivory",
+       "rgb": [
+        0.96,
+        0.93,
+        0.82
+       ]
+      },
+      {
+       "id": "grey",
+       "label": "Light grey",
+       "rgb": [
+        0.86,
+        0.86,
+        0.85
+       ]
+      },
+      {
+       "id": "peach",
+       "label": "Soft peach",
+       "rgb": [
+        0.96,
+        0.86,
+        0.78
+       ]
+      },
+      {
+       "id": "mint",
+       "label": "Pale mint",
+       "rgb": [
+        0.86,
+        0.92,
+        0.87
+       ]
+      }
+     ]
+    },
+    {
+     "key": "c_bedwall",
+     "mat": "Pale_Sage_Paint",
+     "label": "Bed wall colour",
+     "default": "sage",
+     "options": [
+      {
+       "id": "sage",
+       "label": "Pale sage",
+       "rgb": [
+        0.72,
+        0.77,
+        0.68
+       ]
+      },
+      {
+       "id": "terracotta",
+       "label": "Terracotta",
+       "rgb": [
+        0.72,
+        0.42,
+        0.3
+       ]
+      },
+      {
+       "id": "blue",
+       "label": "Powder blue",
+       "rgb": [
+        0.66,
+        0.76,
+        0.86
+       ]
+      },
+      {
+       "id": "rose",
+       "label": "Dusty rose",
+       "rgb": [
+        0.84,
+        0.66,
+        0.64
+       ]
+      },
+      {
+       "id": "beige",
+       "label": "Warm beige",
+       "rgb": [
+        0.86,
+        0.78,
+        0.66
+       ]
+      },
+      {
+       "id": "same",
+       "label": "Same as walls",
+       "rgb": null
+      }
+     ]
+    },
+    {
+     "key": "c_curtains",
+     "mat": "Beige_Blackout",
+     "label": "Curtains",
+     "default": "beige",
+     "options": [
+      {
+       "id": "beige",
+       "label": "Beige",
+       "rgb": [
+        0.78,
+        0.72,
+        0.62
+       ]
+      },
+      {
+       "id": "grey",
+       "label": "Grey",
+       "rgb": [
+        0.55,
+        0.56,
+        0.58
+       ]
+      },
+      {
+       "id": "olive",
+       "label": "Olive",
+       "rgb": [
+        0.45,
+        0.48,
+        0.3
+       ]
+      },
+      {
+       "id": "navy",
+       "label": "Navy",
+       "rgb": [
+        0.16,
+        0.2,
+        0.34
+       ]
+      },
+      {
+       "id": "mustard",
+       "label": "Mustard",
+       "rgb": [
+        0.8,
+        0.6,
+        0.2
+       ]
+      }
+     ]
+    },
+    {
+     "key": "c_wood",
+     "mat": "Light_Oak_Laminate",
+     "label": "Wood finish (bed, desk, shelves)",
+     "default": "oak",
+     "options": [
+      {
+       "id": "oak",
+       "label": "Light oak",
+       "rgb": [
+        0.74,
+        0.58,
+        0.42
+       ]
+      },
+      {
+       "id": "walnut",
+       "label": "Walnut",
+       "rgb": [
+        0.42,
+        0.28,
+        0.18
+       ]
+      },
+      {
+       "id": "teak",
+       "label": "Teak",
+       "rgb": [
+        0.6,
+        0.4,
+        0.22
+       ]
+      },
+      {
+       "id": "white",
+       "label": "White",
+       "rgb": [
+        0.93,
+        0.92,
+        0.9
+       ]
+      }
+     ]
+    },
+    {
+     "key": "c_wardrobe",
+     "mat": "Frosty_White_Laminate",
+     "label": "Wardrobe laminate",
+     "default": "white",
+     "options": [
+      {
+       "id": "white",
+       "label": "Frosty white",
+       "rgb": [
+        0.94,
+        0.93,
+        0.9
+       ]
+      },
+      {
+       "id": "grey",
+       "label": "Light grey",
+       "rgb": [
+        0.8,
+        0.8,
+        0.79
+       ]
+      },
+      {
+       "id": "sage",
+       "label": "Sage",
+       "rgb": [
+        0.62,
+        0.68,
+        0.58
+       ]
+      },
+      {
+       "id": "oak",
+       "label": "Oak",
+       "rgb": [
+        0.74,
+        0.58,
+        0.42
+       ]
+      },
+      {
+       "id": "blue",
+       "label": "Pastel blue",
+       "rgb": [
+        0.7,
+        0.78,
+        0.86
+       ]
+      }
+     ]
+    }
+   ],
+   "requires": [
+    {
+     "when": [
+      "mirror",
+      "wardrobe"
+     ],
+     "need": [
+      "wardrobe",
+      "sliding"
+     ],
+     "else": [
+      "mirror",
+      "cabinet"
+     ]
+    }
+   ],
+   "presets": [
+    {
+     "id": "recommended",
+     "label": "Recommended",
+     "choices": {}
+    },
+    {
+     "id": "budget",
+     "label": "Within ₹1.3 lakh",
+     "choices": {
+      "wardrobe": "hinged",
+      "loft": "later",
+      "mirror": "wall"
+     }
+    },
+    {
+     "id": "tight",
+     "label": "Tightest",
+     "choices": {
+      "wardrobe": "hinged",
+      "loft": "later",
+      "mirror": "wall",
+      "desk": "fold"
+     }
+    }
+   ]
+  }
+ },
+ "ROOM2_ENSUITE": {
+  "title": "V1.2 · Room 2 En-suite (bath with tub)",
+  "tagline": "A wall across the north end of Room 2 turns Bath 2 and a new tub room into one bathroom, with a single door into Room 2.",
+  "why": "Bath 2 already opens only into Room 2, and Room 2 is the longest room (23'7\"). A 5\" wall 4'11\" from the north wall makes a tub room right next to Bath 2. The old Bath 2 doorway stays open, so the WC and the tub room work as one bathroom. The only way in or out is the new 2'6\" door. The wall can't go further south: the east window W5 starts 5'5\" from the north wall.",
+  "budget": {
+   "total": "₹1,85,000",
+   "rows": [
+    [
+     "Partition wall",
+     "5\" AAC/brick wall across Room 2 (12'7\" × 10'), lintel over the door, plaster both sides",
+     "₹14,000"
+    ],
+    [
+     "Waterproofing",
+     "PU/cementitious coat on the tub-room floor, 1' up all walls and 3' up around the tub",
+     "₹9,000"
+    ],
+    [
+     "Floor tiles",
+     "Anti-skid matt vitrified 600×600, ~62 sq ft, ½\" lower than Room 2 with a floor trap",
+     "₹7,500"
+    ],
+    [
+     "Wall tiles",
+     "Matt 300×600 to 7' (~220 sq ft) + sage feature tile behind the tub",
+     "₹26,000"
+    ],
+    [
+     "Plumbing",
+     "CPVC hot/cold lines, tub waste + floor trap to the Bath 2 stack, concealed mixer body",
+     "₹18,000"
+    ],
+    [
+     "Bathtub",
+     "1500×750 mm acrylic drop-in tub on a 4\" plinth, tiled apron with a service panel",
+     "₹32,000"
+    ],
+    [
+     "Tub fittings",
+     "Wall mixer with diverter, spout, slide rail + hand shower",
+     "₹12,000"
+    ],
+    [
+     "Vanity",
+     "Wall-hung 750 mm WPC vanity, quartz top, counter basin, tall tap, mirror",
+     "₹19,000"
+    ],
+    [
+     "Bath 2 (WC)",
+     "Close-coupled EWC, small wall basin, health faucet, mirror",
+     "₹15,500"
+    ],
+    [
+     "Door",
+     "WPC frame + flush door 2'6\" × 7', privacy lock, granite threshold",
+     "₹9,500"
+    ],
+    [
+     "Electrical",
+     "15 L geyser + 16 A point, exhaust fan, 3 IP44 downlights, mirror light, switches",
+     "₹17,000"
+    ],
+    [
+     "Finishing",
+     "Frosted film on W4, curtain + rod, towel rail, hooks, paint above the tiles",
+     "₹5,500"
+    ]
+   ],
+   "note": "Rough Bangalore 2026 estimates for mid-range brands, labour included. These are planning figures, not supplier quotes.",
+   "savings": "If it runs over: a basic 1500 mm acrylic tub (about ₹18,000), a plain diverter instead of a thermostatic mixer, ceramic wall tiles and a ready-made PVC vanity bring it to about ₹1.5 lakh."
+  },
+  "sections": {
+   "Layout": "Tub room 12'7\" (north) narrowing to 12'2\" × 4'11\" clear. Tub in the NE corner along the north wall. Vanity with a mirror on the new wall, beside the door. Geyser high on the west wall. Bath 2 (4'5\" × 7'1\") keeps the WC and a small hand basin, reached through its old doorway, which now has no door leaf.",
+   "One door": "The new door is in the new wall, 9\" from Room 2's west wall. It opens into the bathroom and its hinge is on the east jamb, so the open door lies along the wall and doesn't block the Bath 2 doorway or the vanity. Room 2 has no other bathroom door.",
+   "Bathtub": "1500 × 750 mm acrylic soaking tub (about 180 L) dropped into a tiled masonry surround on a 4\" plinth. The plinth gives the waste pipe its fall to the Bath 2 stack. Wall mixer with a diverter, a spout and a hand shower on a slide rail, so the tub doubles as a shower. A PEVA curtain on a rod keeps splashes in.",
+   "Water & waterproofing": "The tub room floor is ½\" lower than Room 2 and falls to a floor trap beside the tub, with a granite threshold at the door. Waterproof the whole floor, 1' up every wall and 3' up around the tub before tiling. Hot and cold supply in CPVC, waste in PVC to the existing Bath 2 stack through the shared west wall.",
+   "Light & air": "Window W4 is now the bathroom window, so it gets frosted film. The existing high vent above the tub takes a 150 mm exhaust fan. Two IP44 downlights plus a mirror light, all 3000K warm white. A 15 L geyser on its own 16 A point.",
+   "Room 2 after the change": "Room 2 becomes 18'3\" long, 12'1\" wide at the new wall narrowing to 10'6\". It keeps both east windows (W5 and W6) and both doors to the passage and the hall. It loses the north window W4 to the bathroom.",
+   "Palette": "Warm grey matt tiles to 7', a sage-green feature wall behind the tub, oak vanity, white sanitaryware, chrome fittings."
+  },
+  "schedule": [
+   {
+    "area": "Floor",
+    "items": [
+     [
+      "Tub room",
+      "Anti-skid matt vitrified 600×600, warm grey, ½\" drop, floor trap"
+     ],
+     [
+      "Threshold",
+      "Granite strip at the door"
+     ]
+    ]
+   },
+   {
+    "area": "Walls",
+    "items": [
+     [
+      "Tiles",
+      "Matt ceramic 300×600 to 7'"
+     ],
+     [
+      "Feature",
+      "Sage-green tile behind the tub and on the east wall"
+     ],
+     [
+      "Above",
+      "Washable anti-fungal emulsion"
+     ]
+    ]
+   },
+   {
+    "area": "Bath",
+    "items": [
+     [
+      "Tub",
+      "Acrylic 1500×750 drop-in, tiled apron, service panel"
+     ],
+     [
+      "Mixer",
+      "Wall mixer + diverter, spout, hand shower on a slide rail"
+     ],
+     [
+      "Curtain",
+      "PEVA curtain on a chrome rod"
+     ]
+    ]
+   },
+   {
+    "area": "Vanity",
+    "items": [
+     [
+      "Cabinet",
+      "Wall-hung 750×450 WPC, oak laminate, 2 drawers"
+     ],
+     [
+      "Top & basin",
+      "20 mm quartz, counter-top ceramic basin 400 mm, tall pillar tap"
+     ],
+     [
+      "Mirror",
+      "Frameless 650×750 with an IP44 LED light above"
+     ]
+    ]
+   },
+   {
+    "area": "Bath 2 (WC)",
+    "items": [
+     [
+      "WC",
+      "Close-coupled EWC, dual flush, soft-close seat"
+     ],
+     [
+      "Basin",
+      "Wall-hung 450 mm + small mirror"
+     ],
+     [
+      "Doorway",
+      "Existing opening kept, no door leaf"
+     ]
+    ]
+   },
+   {
+    "area": "Door & services",
+    "items": [
+     [
+      "Door",
+      "WPC frame + flush door 2'6\"×7', privacy lock"
+     ],
+     [
+      "Geyser",
+      "15 L storage, 5-star, 16 A point"
+     ],
+     [
+      "Fan",
+      "150 mm exhaust in the existing vent"
+     ],
+     [
+      "Window W4",
+      "Frosted film"
+     ]
+    ]
+   }
+  ]
+ },
+ "HALL_REC": {
+  "title": "V1.3 · Recommended",
+  "tagline": "Matt GVT tiles through the flat, an 8 ft WPC fluted TV wall with a metal frame, anti-skid bathrooms and Kota outside.",
+  "why": "My pick for most families: it looks finished, needs almost no upkeep and sits in the middle on cost. The main door (3 ft, middle of the hall's west wall) opens into an entry with a shoe cabinet. The TV wall sits north of the door, centred under the beam; the dining table sits south, near window W7.",
+  "budget": {
+   "total": "₹1,95,000–3,26,000",
+   "rows": [
+    [
+     "Floors",
+     "Matt GVT 600×1200 in hall, passage, Room 2 and kitchen; anti-skid R11 in the bathrooms; Kota in the open square (installed)",
+     "₹1,35,000–2,27,000"
+    ],
+    [
+     "Skirting",
+     "4 inch tile skirting, whole flat",
+     "₹20,000–30,000"
+    ],
+    [
+     "Hall paint",
+     "Premium washable emulsion over putty and primer, about 900 sq ft",
+     "₹22,000–36,000"
+    ],
+    [
+     "TV wall",
+     "WPC fluted panel 8 ft × 8'5\" (about 70 sq ft), black aluminium frame, LED strip",
+     "₹16,000–29,000"
+    ],
+    [
+     "Pillars",
+     "304 steel corner guards on both pillars",
+     "₹2,000–4,000"
+    ]
+   ],
+   "note": "Furniture, lights and the fan are drawn for the layout and are not in this total. Rough 2026 estimates, not quotes."
+  },
+  "sections": {
+   "Pros": "<ul><li>Matt tile hides Bihar's dust and is safe with wet feet</li><li>One tile through the flat makes it look bigger</li><li>WPC is waterproof and termite-proof and hides the TV wires</li><li>Almost no upkeep: mop and wipe</li></ul>",
+   "Cons": "<ul><li>A deep chip in GVT shows the body colour (keep a spare box)</li><li>WPC looks like wood from far, not up close</li><li>Paint needs redoing every 6–8 years</li></ul>",
+   "How long it lasts": "<ul><li>Floor tiles: 15–25 years</li><li>WPC TV wall: 12–15 years</li><li>Premium paint: 6–8 years before a repaint</li></ul>",
+   "Verdict": "Best value. Pick this unless money is very tight or you want to build once for 25 years."
+  }
+ },
+ "HALL_BUDGET": {
+  "title": "V1.3 · Budget plain",
+  "tagline": "Double-charge tiles, plain washable paint, a TV on the wall and nothing extra. Room 1 shows Option D (Smart Budget).",
+  "why": "Spends money only where it lasts: tough tiles, anti-skid bathrooms and Kota outside. Everything else can be upgraded later without breaking anything. The main door (3 ft, middle of the hall's west wall) opens into an entry with a shoe cabinet. The TV wall sits north of the door, centred under the beam; the dining table sits south, near window W7.",
+  "budget": {
+   "total": "₹1,58,000–2,47,000",
+   "rows": [
+    [
+     "Floors",
+     "Double-charge vitrified 600×600 in hall, passage, Room 2 and kitchen; anti-skid R11 in the bathrooms; Kota in the open square (installed)",
+     "₹1,24,000–1,94,000"
+    ],
+    [
+     "Skirting",
+     "4 inch tile skirting, whole flat",
+     "₹20,000–30,000"
+    ],
+    [
+     "Hall paint",
+     "Economy washable emulsion (for example Asian Paints Tractor Emulsion or Berger Bison Glow), about 900 sq ft",
+     "₹11,000–18,000"
+    ],
+    [
+     "TV",
+     "Wall bracket, PVC wire casing, laminated shelf",
+     "₹3,000–5,000"
+    ]
+   ],
+   "note": "Furniture, lights and the fan are drawn for the layout and are not in this total. Rough 2026 estimates, not quotes."
+  },
+  "sections": {
+   "Pros": "<ul><li>Lowest cost</li><li>Double-charge tile is very tough and small chips barely show</li><li>Nothing to maintain except paint</li><li>Add the WPC TV wall later without touching the floor</li></ul>",
+   "Cons": "<ul><li>Plain look; 2 × 2 ft tiles show more joints</li><li>Few stone or wood looks in double charge</li><li>Economy paint needs redoing every 4–5 years</li><li>Visible TV wires unless cased</li></ul>",
+   "How long it lasts": "<ul><li>Floor tiles: 20–25 years</li><li>Economy paint: 4–5 years before a repaint</li></ul>",
+   "Verdict": "Pick this if money is tight now. The floor will outlast the Recommended one; the looks can come later."
+  }
+ },
+ "HALL_LONG": {
+  "title": "V1.3 · Long-lasting",
+  "tagline": "Full-body vitrified floors, a porcelain-slab TV wall with steel profiles and steel guards. Built once, left alone for 25 years.",
+  "why": "For a family that wants to do the work once. Every surface is the toughest of its kind: colour that runs through the tile, a wall finish that never fades or swells, and stainless steel that never rusts. The main door (3 ft, middle of the hall's west wall) opens into an entry with a shoe cabinet. The TV wall sits north of the door, centred under the beam; the dining table sits south, near window W7.",
+  "budget": {
+   "total": "₹2,30,000–3,85,000",
+   "rows": [
+    [
+     "Floors",
+     "Full-body vitrified 600×1200 matt in hall, passage, Room 2 and kitchen; anti-skid R11 in the bathrooms; Kota in the open square (installed)",
+     "₹1,68,000–2,81,000"
+    ],
+    [
+     "Skirting",
+     "4 inch full-body tile skirting, whole flat",
+     "₹20,000–30,000"
+    ],
+    [
+     "Hall paint",
+     "Premium washable emulsion over putty and primer, about 900 sq ft",
+     "₹22,000–36,000"
+    ],
+    [
+     "TV wall",
+     "Porcelain slabs 800×1600 (about 70 sq ft) with 304 brushed steel profiles, granite-top console",
+     "₹17,000–33,000"
+    ],
+    [
+     "Pillars",
+     "304 steel corner guards to 5 ft on both pillars",
+     "₹3,000–5,000"
+    ]
+   ],
+   "note": "Furniture, lights and the fan are drawn for the layout and are not in this total. Rough 2026 estimates, not quotes."
+  },
+  "sections": {
+   "Pros": "<ul><li>Longest life of any tile: chips and scratches hardly show</li><li>Porcelain slab wall is waterproof, fade-proof and wipes clean</li><li>Stainless steel profiles and guards never rust</li><li>Nothing to polish, seal or replace</li></ul>",
+   "Cons": "<ul><li>About ₹35,000–60,000 more than Recommended</li><li>Large slabs need a skilled mason and careful handling</li><li>Hard to change the look later</li><li>Fewer designs in full-body tiles</li></ul>",
+   "How long it lasts": "<ul><li>Floor tiles: 25–30+ years</li><li>Porcelain TV wall: 25+ years</li><li>Steel trims: life of the flat</li><li>Paint: 6–8 years</li></ul>",
+   "Verdict": "Pick this if you want to build once and not touch the hall for 20–25 years. It costs more up front but has the lowest cost over time."
+  }
+ },
+ "HALL_MARBLE": {
+  "title": "V1.3 · Marble classic",
+  "tagline": "Indian white marble in the hall and passage with a green border, a limewash TV wall with teak shelves. Room 1 shows Option C (Indian Modern).",
+  "why": "The traditional look many Bihar homes love: seamless polished marble, cool in summer, that can be re-polished to look new. The rest of the flat stays on matt GVT to keep cost and upkeep down. The main door (3 ft, middle of the hall's west wall) opens into an entry with a shoe cabinet. The TV wall sits north of the door, centred under the beam; the dining table sits south, near window W7.",
+  "budget": {
+   "total": "₹2,47,000–4,58,000",
+   "rows": [
+    [
+     "Floors",
+     "Indian white marble (Rajnagar / Makrana) in hall and passage, ground and polished; matt GVT in Room 2 and kitchen; anti-skid in the bathrooms; Kota in the open square (installed)",
+     "₹1,83,000–3,49,000"
+    ],
+    [
+     "Border",
+     "6 inch green marble border inlay round the hall",
+     "₹9,000–15,000"
+    ],
+    [
+     "Skirting",
+     "4 inch marble / tile skirting, whole flat",
+     "₹20,000–30,000"
+    ],
+    [
+     "Hall paint",
+     "Premium washable emulsion over putty and primer, about 900 sq ft",
+     "₹22,000–36,000"
+    ],
+    [
+     "TV wall",
+     "Limewash feature wall 8 ft wide in warm clay, four solid teak floating shelves",
+     "₹11,000–24,000"
+    ],
+    [
+     "Pillars",
+     "304 steel corner guards on both pillars",
+     "₹2,000–4,000"
+    ]
+   ],
+   "note": "Furniture, lights and the fan are drawn for the layout and are not in this total. Rough 2026 estimates, not quotes."
+  },
+  "sections": {
+   "Pros": "<ul><li>Classic, seamless look with no grout grid</li><li>Can be ground and re-polished to look new again</li><li>Cool underfoot in Bihar's summer</li><li>Limewash and teak feel warm and natural</li></ul>",
+   "Cons": "<ul><li>Stains from haldi and oil, etches from lemon and curd</li><li>Icy in winter; needs rugs</li><li>Re-polish every 8–12 years; hard water dulls it</li><li>Most expensive here and slowest to lay</li></ul>",
+   "How long it lasts": "<ul><li>Marble: 50+ years, with a re-polish every 8–12 years</li><li>Limewash: recoat every 5–8 years</li><li>Teak shelves: decades with occasional polish</li></ul>",
+   "Verdict": "Pick this only if the family really wants marble and is ready for the upkeep. For the same look with far less work, use glossy marble-look tiles in the hall instead."
+  }
+ },
+ "HALL_PANEL": {
+  "title": "V1.3 · Panelled hall",
+  "tagline": "The whole TV wall in fluted WPC, 3 ft sage half-wall panelling with a champagne aluminium cap round the hall, and both pillars wrapped full height.",
+  "why": "For a warm, finished, hotel-lobby look. The panels protect the lower walls from mops, chairs and scuffs, so only the top half ever needs paint. Floors are the same matt GVT as the Recommended plan. The main door (3 ft, middle of the west wall) opens between the TV wall and the entry shoe cabinet.",
+  "budget": {
+   "total": "₹2,44,000–4,22,000",
+   "rows": [
+    [
+     "Floors",
+     "Matt GVT 600×1200 in hall, passage, Room 2 and kitchen; anti-skid R11 in the bathrooms; Kota in the open square (installed)",
+     "₹1,35,000–2,27,000"
+    ],
+    [
+     "Skirting",
+     "4 inch tile skirting outside the hall",
+     "₹20,000–30,000"
+    ],
+    [
+     "Paint",
+     "Premium washable emulsion above the panels",
+     "₹18,000–30,000"
+    ],
+    [
+     "Feature wall",
+     "Fluted WPC on the whole wall north of the door (about 110 sq ft), black profile, LED strip",
+     "₹25,000–45,000"
+    ],
+    [
+     "Half-wall panels",
+     "3 ft WPC / HDHMR panels with moulding strips, about 160 sq ft, champagne aluminium cap",
+     "₹33,000–67,000"
+    ],
+    [
+     "Pillars",
+     "Both pillars wrapped full height in fluted WPC (about 72 sq ft)",
+     "₹13,000–23,000"
+    ]
+   ],
+   "note": "Furniture, lights and the fan are drawn for the layout and are not in this total. Rough 2026 estimates, not quotes. Panel prices vary a lot between makes: get the panel brand and thickness written on the quote."
+  },
+  "sections": {
+   "Pros": "<ul><li>Warm, premium look with no extra furniture</li><li>Half-wall panels take the knocks from mops, chairs and shoes; the lower wall never needs repainting</li><li>WPC is waterproof and termite-proof, and hides uneven plaster and wiring</li><li>Wrapped pillars stop chipped corners and look intentional</li></ul>",
+   "Cons": "<ul><li>The most panel work, so one of the costliest plans</li><li>Panels hide the wall: fix any damp first, or it will spread behind them</li><li>Dust settles in the flutes; dust them weekly</li><li>A lot of wood tone can feel heavy; keep the rest of the walls light</li></ul>",
+   "How long it lasts": "<ul><li>WPC feature wall and pillar wraps: 12–15 years</li><li>Half-wall panels: 10–15 years</li><li>Floor tiles: 15–25 years</li><li>Paint above the panels: 6–8 years</li></ul>",
+   "Verdict": "Pick this if you love panelling and the walls are dry. For a lighter budget, keep only the fluted TV wall (the Recommended plan) and add half-wall panels later."
+  }
+ },
+ "HALL_BEST": {
+  "title": "V1.4 · Best of both",
+  "tagline": "Smooth matt GVT (2×4 ft in the hall and passage, 2×2 ft in the rooms), one flat laminate TV panel over a low cabinet, a tile band at the entry, steel pillar guards and a slim gypsum border with cove light.",
+  "why": "This mixes my guide's Bihar-proof floor and wall picks with the Materials Field Guide's cheaper, easier-to-clean TV wall, its caution on tile size and its ceiling advice. Every surface is smooth, so there are no grooves to dust. The tub room geyser is now 50 L, because a 15 L geyser cannot fill the tub.",
+  "budget": {
+   "total": "₹2,12,000–3,55,000",
+   "rows": [
+    [
+     "Floors",
+     "Smooth matt GVT: 600×1200 in the hall and passage, 600×600 in Room 2 and the kitchen, same shade; anti-skid R11 in the bathrooms; Kota in the open square (installed)",
+     "₹1,30,000–2,15,000"
+    ],
+    [
+     "Skirting",
+     "4 inch tile skirting",
+     "₹20,000–30,000"
+    ],
+    [
+     "Hall paint",
+     "Washable emulsion over putty and primer, about 900 sq ft",
+     "₹22,000–36,000"
+    ],
+    [
+     "TV wall",
+     "Flat matt HPL laminate (light oak) on 18 mm BWP plywood, 7 × 7 ft, black top profile, LED strip",
+     "₹13,000–25,000"
+    ],
+    [
+     "Entry tile band",
+     "3'6\" matt wall tile on the entry wall (about 47 sq ft), aluminium top trim",
+     "₹6,000–10,000"
+    ],
+    [
+     "Pillars",
+     "304 steel corner guards, 4 ft",
+     "₹2,000–4,000"
+    ],
+    [
+     "Ceiling border",
+     "2 ft gypsum border on GI framing round the hall (about 170 sq ft) with cove LED",
+     "₹19,000–35,000"
+    ]
+   ],
+   "note": "Skip the gypsum border and the total drops to about ₹1,93,000–3,20,000. Furniture, lights, the fan, mesh doors and the geyser are not in this total. Rough 2026 estimates at Patna rates, not quotes; outside Patna add transport."
+  },
+  "sections": {
+   "Pros": "<ul><li>Smooth faces everywhere: no grooves collecting dust</li><li>2×2 tiles in the rooms are easy for a local mason; 2×4 only where it shows</li><li>TV wall costs about half of a WPC fluted wall and is easy to change later</li><li>Entry wall takes shoe and bag knocks; pillar corners don't chip</li><li>The border hides wiring and gives soft evening light</li></ul>",
+   "Cons": "<ul><li>Laminate looks flatter than real wood or fluting</li><li>The border lowers the ceiling edge and adds joints to look after</li><li>Two tile sizes mean two orders in the same shade: match the batch codes</li><li>Costs a little more than Recommended because of the ceiling</li></ul>",
+   "How long it lasts": "<ul><li>Floor tiles: 15–25 years</li><li>Laminate TV panel: about 10–15 years if the wall stays dry (estimate)</li><li>Gypsum border: 15–20 years without leaks, repainted with the walls</li><li>Paint: 6–8 years</li><li>Steel guards and tile band: for life</li></ul>",
+   "Also plan": "<ul><li>Mosquito mesh doors: hinged, aluminium frame, replaceable mesh. Fit one room first</li><li>Tub room geyser: 50 L (shown in the model)</li><li>Before buying tiles, take two samples home and test tea, haldi and oil on them</li></ul>",
+   "Verdict": "My pick now: the best mix of looks, easy cleaning and cost. If money is tight, drop the ceiling border first."
+  }
+ }
+}

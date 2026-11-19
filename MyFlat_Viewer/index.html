@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MyFlat Viewer</title>
-<link rel="stylesheet" href="./src/styles.css?v=15">
+<link rel="stylesheet" href="./src/styles.css?v=35">
 <script type="importmap">
 { "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/addons/" } }
 </script>
@@ -12,50 +12,60 @@
 <body>
 <header id="topbar">
   <div class="brand desk-only">MyFlat</div>
+  <select id="modelSelect" title="Choose a plan"></select>
+  <button id="walkBtn" class="toggle accent" title="Stand inside at eye level">Walk</button>
+  <button id="overviewBtn" title="Step outside and see the whole flat (orbit)">Overview</button>
+  <button id="lightsBtn" class="toggle on" title="Light fittings on/off (L)">Lights ON</button>
+  <button id="nightBtn" class="toggle" title="Day / night (N)">Day</button>
+  <button id="editBtn" class="toggle hidden" title="Change wardrobe, mirror, desk, window, colours: the 3D and budget update">✏️ Customise</button>
+  <div class="spacer"></div>
+  <button id="simpleBtn" class="simpleToggle" title="Easy mode: big buttons for walking around">👍 Easy mode</button>
   <button id="learnBtn" class="toggle learn" title="Beginner's guide: what everything is made of, how homes are built, dictionary (G)">📘 Learn</button>
   <button id="chatBtn" class="toggle chatb" title="Ask anything about your flat, the designs, materials and budget">💬 Ask</button>
   <button id="langBtn" class="lang" title="हिंदी में देखें">हिंदी</button>
-  <button id="editBtn" class="toggle hidden" title="Change wardrobe, mirror, desk, window, colours: the 3D and budget update">✏️ Customise</button>
-  <button id="simpleBtn" class="simpleToggle" title="Easy mode: big buttons for walking around">👍 Easy mode</button>
-  <select id="modelSelect" title="Model"></select>
-  <div class="sep"></div>
-  <div class="group" id="viewButtons">
-    <button data-view="top" title="Plan view (hides the roof)">Top</button>
-    <button class="desk-only" data-view="north">N</button>
-    <button class="desk-only" data-view="south">S</button>
-    <button class="desk-only" data-view="east">E</button>
-    <button class="desk-only" data-view="west">W</button>
-    <button data-view="iso">Iso</button>
-  </div>
-  <button id="projBtn" class="desk-only toggle" title="Perspective / orthographic">Persp</button>
-  <div class="sep"></div>
-  <button id="roofBtn" class="toggle on">Roof ON</button>
-  <button id="labelsBtn" class="toggle on">Labels</button>
-  <button id="edgesBtn" class="desk-only toggle on" title="Outline edges">Edges</button>
-  <button id="statusBtn" class="desk-only toggle">Status</button>
-  <button id="planBtn" class="desk-only toggle">Plan compare</button>
-  <button id="debugBtn" class="desk-only toggle">Debug</button>
-  <button id="overviewBtn" title="Step outside and see the whole flat (orbit)">Overview</button>
-  <button id="walkBtn" class="toggle accent" title="Stand inside at eye level">Walk</button>
-  <div class="sep"></div>
-  <button id="lightsBtn" class="toggle on" title="Light fittings on/off (L)">Lights ON</button>
-  <button id="nightBtn" class="toggle" title="Day / night (N)">Day</button>
-  <button id="roomDimsBtn" class="toggle" title="Wall-by-wall size of the room you are in (M)">Room size</button>
-  <button id="dimsBtn" class="toggle" title="Show dimensions of parts; select an object for W/D/H lines">Dimensions</button>
-  <button id="hoverBtn" class="desk-only toggle" title="Point at anything to see what it is (I)">Hover info</button>
-  <button id="immBtn" class="accent" title="Full-screen immersive mode (F)">⛶ Immersive</button>
-  <div class="spacer"></div>
-  <button id="resetBtn" title="Reset camera and visibility">Reset</button>
+  <button id="moreBtn" class="toggle" aria-expanded="false" title="More views, measuring and tools">More ▾</button>
 </header>
+<div id="moreMenu" class="hidden">
+  <div class="mg"><h5>View</h5>
+    <div class="mrow group" id="viewButtons">
+      <button data-view="top" title="Plan view (hides the roof)">Top</button>
+      <button data-view="north">N</button><button data-view="south">S</button><button data-view="east">E</button><button data-view="west">W</button>
+      <button data-view="iso">Iso</button>
+    </div>
+    <div class="mrow">
+      <button id="projBtn" class="toggle" title="Perspective / orthographic">Persp</button>
+      <button id="roofBtn" class="toggle on">Roof ON</button>
+      <button id="labelsBtn" class="toggle on">Labels</button>
+      <button id="edgesBtn" class="toggle on" title="Outline edges">Edges</button>
+      <button id="immBtn" class="accent" title="Full-screen immersive mode (F)">⛶ Immersive</button>
+    </div>
+  </div>
+  <div class="mg"><h5>Measure</h5>
+    <div class="mrow">
+      <button id="roomDimsBtn" class="toggle" title="Wall-by-wall size of the room you are in (M)">Room size</button>
+      <button id="dimsBtn" class="toggle" title="Show dimensions of parts; select an object for W/D/H lines">Dimensions</button>
+      <button id="hoverBtn" class="toggle" title="Point at anything to see what it is (I)">Hover info</button>
+    </div>
+  </div>
+  <div class="mg"><h5>Tools</h5>
+    <div class="mrow">
+      <button id="statusBtn" class="toggle">Status</button>
+      <button id="planBtn" class="toggle">Plan compare</button>
+      <button id="debugBtn" class="toggle">Debug</button>
+      <button id="resetBtn" title="Reset camera and visibility">Reset</button>
+    </div>
+  </div>
+</div>
 
 <aside id="left">
-  <h3>Interior design</h3>
+  <h3>Plans</h3>
   <div id="designPanel"></div>
-  <div class="cmp"><span>Compare side by side with</span><select id="compareSelect"></select></div>
   <h3 style="margin-top:14px">Rooms</h3>
   <div id="roomList"></div>
-  <div class="hint">Click a room for an eye-level view. Arrows show extra viewpoints.</div>
-  <button id="copyViewBtn" class="small">Copy current view</button>
+  <details class="tools"><summary>More tools</summary>
+    <div class="cmp"><span>Compare side by side with</span><select id="compareSelect"></select></div>
+    <button id="copyViewBtn" class="small">Copy current view</button>
+  </details>
 </aside>
 
 <main id="viewport">
@@ -66,8 +76,8 @@
   <div id="toast" class="hidden"></div>
   <div id="loading">Loading model…</div>
 
-  <button id="dockToggle" class="small">Hide controls ▾</button>
-  <div id="dock">
+  <button id="dockToggle" class="small">Controls ▴</button>
+  <div id="dock" class="collapsed">
     <section>
       <h4>Visibility</h4>
       <div id="catToggles"></div>
@@ -150,6 +160,11 @@
   </div>
 </aside>
 
-<script type="module" src="./src/main.js?v=15"></script>
+<script type="module" src="./src/main.js?v=35"></script>
+<script type="module" src="./src/declutter.js?v=35"></script>
+<script type="module" src="./src/inside.js?v=35"></script>
+<script type="module" src="./src/compare.js?v=35"></script>
+<script type="module" src="./src/colours.js?v=35"></script>
+<script type="module" src="./src/tidy.js?v=35"></script>
 </body>
 </html>

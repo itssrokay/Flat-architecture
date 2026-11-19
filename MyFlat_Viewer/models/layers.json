@@ -1,0 +1,2425 @@
+{
+ "layers": {
+  "gvt": {
+   "title": [
+    "Tiled floor: matt GVT",
+    "टाइल वाला फ़र्श: मैट GVT"
+   ],
+   "axis": "floor",
+   "feel": [
+    "Smooth with a soft, low sheen; cool underfoot. Tap it with a coin: a clear 'tak' is good, a dull hollow 'tuk' means air under the tile.",
+    "चिकना, हल्की धीमी चमक; पैर के नीचे ठंडा। सिक्के से ठोकें: साफ़ 'टक' सही है, खोखली 'टुक' मतलब टाइल के नीचे हवा।"
+   ],
+   "layers": [
+    {
+     "n": [
+      "Matt GVT tile, 9 mm",
+      "मैट GVT टाइल, 9 mm"
+     ],
+     "mm": 9,
+     "kind": "tile",
+     "what": [
+      "Vitrified body with a printed glaze on top. The stone look is only the top glaze. 2 mm joints filled with grout.",
+      "विट्रीफाइड बॉडी, ऊपर छपा हुआ ग्लेज़। पत्थर जैसा लुक सिर्फ़ ऊपर की परत में। 2 mm जोड़ में ग्राउट।"
+     ],
+     "cost": "₹55–100 / sq ft (tile)",
+     "color": "#CFC6B8"
+    },
+    {
+     "n": [
+      "Tile adhesive (C2)",
+      "टाइल एडहेसिव (C2)"
+     ],
+     "mm": 4,
+     "kind": "adhesive",
+     "what": [
+      "Polymer cement paste spread with a notched trowel. The tile is pressed in fully so no air stays under it.",
+      "दाँतेदार करनी से फैलाया पॉलिमर सीमेंट पेस्ट। टाइल पूरी दबाई जाती है ताकि नीचे हवा न रहे।"
+     ],
+     "cost": "₹12–25 / sq ft"
+    },
+    {
+     "n": [
+      "Cement-sand screed",
+      "सीमेंट-रेत का लेवल मसाला"
+     ],
+     "mm": 40,
+     "kind": "screed",
+     "what": [
+      "Levels the slab. It must be cured and flat before tiling.",
+      "स्लैब को समतल करता है। टाइल से पहले पका और सपाट होना चाहिए।"
+     ],
+     "cost": "₹15–30 / sq ft"
+    },
+    {
+     "n": [
+      "RCC slab",
+      "RCC छत / स्लैब"
+     ],
+     "mm": 125,
+     "kind": "concrete",
+     "what": [
+      "Concrete with steel bars: the structure. Already built.",
+      "सरिया वाला कंक्रीट: ढाँचा। पहले से बना है।"
+     ]
+    }
+   ],
+   "why": [
+    "Matt GVT is the best balance for Bihar: it hides dust, isn't slippery when damp, needs no polishing and costs much less than marble.",
+    "बिहार के लिए मैट GVT सबसे संतुलित: धूल छिपाती है, नमी में फिसलती नहीं, घिसाई नहीं, मार्बल से बहुत सस्ती।"
+   ],
+   "pros": [
+    [
+     "No polishing, ever",
+     "कभी घिसाई नहीं"
+    ],
+    [
+     "Glaze doesn't take stains",
+     "ग्लेज़ पर दाग नहीं"
+    ],
+    [
+     "One tile through the flat looks bigger",
+     "पूरे घर में एक टाइल, घर बड़ा लगता है"
+    ]
+   ],
+   "cons": [
+    [
+     "A deep chip shows the plain body underneath",
+     "गहरा चटका नीचे की सादी बॉडी दिखाता है"
+    ],
+    [
+     "Cold in winter",
+     "जाड़े में ठंडी"
+    ],
+    [
+     "Laying quality decides everything",
+     "सब कुछ बिछाई पर निर्भर"
+    ]
+   ],
+   "mistakes": [
+    [
+     "Big 2×4 tiles laid on a thick cement-sand bed ('masala'): they sound hollow and crack in a year or two. Use tile adhesive.",
+     "2×4 की बड़ी टाइल मोटे सीमेंट-रेत मसाले पर: खोखली बजती है और एक-दो साल में चटकती है। टाइल एडहेसिव लगवाएँ।"
+    ],
+    [
+     "'Zero joint' (tiles pressed edge to edge): edges chip and tiles can lift in summer heat. Keep 2 mm joints and a small gap at the walls, hidden by skirting.",
+     "'ज़ीरो जॉइंट' (किनारे से किनारा सटाकर): किनारे टूटते हैं, गर्मी में टाइल उठ सकती है। 2 mm जोड़ और दीवार के पास छोटा गैप रखें, स्कर्टिंग से छिपेगा।"
+    ],
+    [
+     "Not checking the batch and shade code on every box: two colours in one room.",
+     "हर डिब्बे पर बैच और शेड कोड न देखना: एक कमरे में दो रंग।"
+    ],
+    [
+     "Washing with acid (tezaab) to remove cement: it eats the grout and dulls the glaze.",
+     "सीमेंट हटाने के लिए तेज़ाब से धुलाई: ग्राउट गल जाता है, ग्लेज़ की चमक जाती है।"
+    ],
+    [
+     "Walking on it the same day: tiles shift before the adhesive sets.",
+     "उसी दिन चलना: एडहेसिव जमने से पहले टाइल खिसकती है।"
+    ]
+   ],
+   "myths": [
+    [
+     [
+      "Glossy tile is the premium choice.",
+      "चमकदार टाइल ही प्रीमियम है।"
+     ],
+     [
+      "Glossy shows every footprint and is slippery when wet. Matt is the better buy for a family home.",
+      "चमकदार पर हर निशान दिखता है और गीले में फिसलती है। परिवार के घर के लिए मैट बेहतर।"
+     ]
+    ],
+    [
+     [
+      "A thicker tile is a stronger tile.",
+      "मोटी टाइल = मज़बूत टाइल।"
+     ],
+     [
+      "Flatness, water absorption (0.5% or less) and laying matter more than thickness.",
+      "थिकनेस से ज़्यादा ज़रूरी: सपाटपन, पानी सोखना (0.5% या कम) और बिछाई।"
+     ]
+    ],
+    [
+     [
+      "'Export quality' on a Morbi box means top grade.",
+      "मोरबी के डिब्बे पर 'एक्सपोर्ट क्वालिटी' = सबसे अच्छा।"
+     ],
+     [
+      "It's a sales word. Check for ISI / IS 15622 and open boxes yourself.",
+      "यह बेचने का शब्द है। ISI / IS 15622 देखें और डिब्बे ख़ुद खोलें।"
+     ]
+    ]
+   ],
+   "alt": [
+    "Double-charge (cheaper, tougher, plainer), full-body (lasts longest), marble (most look, most upkeep). Matt GVT is still the best all-rounder.",
+    "डबल चार्ज (सस्ती, मज़बूत, सादी), फुल बॉडी (सबसे टिकाऊ), मार्बल (सबसे सुंदर, सबसे देखभाल)। फिर भी मैट GVT सबसे संतुलित।"
+   ]
+  },
+  "dc": {
+   "title": [
+    "Tiled floor: double-charge",
+    "टाइल वाला फ़र्श: डबल चार्ज"
+   ],
+   "axis": "floor",
+   "feel": [
+    "Shiny and hard; colour goes 3–4 mm deep, so wear marks don't show.",
+    "चमकदार और सख़्त; रंग 3–4 mm गहरा, घिसाव नहीं दिखता।"
+   ],
+   "layers": [
+    {
+     "n": [
+      "Double-charge tile, 10 mm",
+      "डबल चार्ज टाइल, 10 mm"
+     ],
+     "mm": 10,
+     "kind": "tile",
+     "what": [
+      "Two layers of colour pressed together, 3–4 mm deep. Polished on top.",
+      "रंग की दो परतें दबाकर, 3–4 mm गहरी। ऊपर पॉलिश।"
+     ],
+     "cost": "₹40–60 / sq ft (tile)",
+     "color": "#D6CDBC"
+    },
+    {
+     "n": [
+      "Tile adhesive (C2)",
+      "टाइल एडहेसिव (C2)"
+     ],
+     "mm": 4,
+     "kind": "adhesive",
+     "what": [
+      "Polymer cement paste spread with a notched trowel. The tile is pressed in fully so no air stays under it.",
+      "दाँतेदार करनी से फैलाया पॉलिमर सीमेंट पेस्ट। टाइल पूरी दबाई जाती है ताकि नीचे हवा न रहे।"
+     ],
+     "cost": "₹12–25 / sq ft"
+    },
+    {
+     "n": [
+      "Cement-sand screed",
+      "सीमेंट-रेत का लेवल मसाला"
+     ],
+     "mm": 40,
+     "kind": "screed",
+     "what": [
+      "Levels the slab. It must be cured and flat before tiling.",
+      "स्लैब को समतल करता है। टाइल से पहले पका और सपाट होना चाहिए।"
+     ],
+     "cost": "₹15–30 / sq ft"
+    },
+    {
+     "n": [
+      "RCC slab",
+      "RCC छत / स्लैब"
+     ],
+     "mm": 125,
+     "kind": "concrete",
+     "what": [
+      "Concrete with steel bars: the structure. Already built.",
+      "सरिया वाला कंक्रीट: ढाँचा। पहले से बना है।"
+     ]
+    }
+   ],
+   "why": [
+    "Double-charge tile has thick colour, so it is the toughest tile for the money.",
+    "डबल चार्ज टाइल में मोटी रंग की परत, कम दाम में सबसे मज़बूत।"
+   ],
+   "pros": [
+    [
+     "Wear doesn't show",
+     "घिसाव नहीं दिखता"
+    ],
+    [
+     "Cheap",
+     "सस्ती"
+    ]
+   ],
+   "cons": [
+    [
+     "Plain, speckled look",
+     "सादा, दानेदार लुक"
+    ],
+    [
+     "Usually glossy",
+     "अक्सर चमकदार"
+    ]
+   ],
+   "mistakes": [
+    [
+     "Using the polished version in a kitchen or entry where it gets wet.",
+     "रसोई या एंट्री में पॉलिश वाली, जहाँ पानी गिरता है।"
+    ]
+   ],
+   "myths": [
+    [
+     [
+      "Double-charge means double thickness.",
+      "डबल चार्ज = दुगनी मोटाई।"
+     ],
+     [
+      "It means two layers of colour pressed together on top.",
+      "मतलब ऊपर रंग की दो परतें दबाकर।"
+     ]
+    ]
+   ],
+   "alt": [
+    "Matt GVT for a nicer look at a little more cost.",
+    "थोड़े ज़्यादा में सुंदर लुक के लिए मैट GVT।"
+   ]
+  },
+  "fb": {
+   "title": [
+    "Tiled floor: full-body vitrified",
+    "टाइल वाला फ़र्श: फुल बॉडी"
+   ],
+   "axis": "floor",
+   "feel": [
+    "Matt and hard; the colour runs right through, so a chip looks like the top.",
+    "मैट और सख़्त; रंग पूरी टाइल में, चटका भी ऊपर जैसा दिखता है।"
+   ],
+   "layers": [
+    {
+     "n": [
+      "Full-body tile, 10 mm",
+      "फुल बॉडी टाइल, 10 mm"
+     ],
+     "mm": 10,
+     "kind": "tile",
+     "what": [
+      "Same colour through the whole thickness.",
+      "पूरी मोटाई में एक ही रंग।"
+     ],
+     "cost": "₹80–150 / sq ft (tile)",
+     "color": "#BDBBB6"
+    },
+    {
+     "n": [
+      "Tile adhesive (C2)",
+      "टाइल एडहेसिव (C2)"
+     ],
+     "mm": 4,
+     "kind": "adhesive",
+     "what": [
+      "Polymer cement paste spread with a notched trowel. The tile is pressed in fully so no air stays under it.",
+      "दाँतेदार करनी से फैलाया पॉलिमर सीमेंट पेस्ट। टाइल पूरी दबाई जाती है ताकि नीचे हवा न रहे।"
+     ],
+     "cost": "₹12–25 / sq ft"
+    },
+    {
+     "n": [
+      "Cement-sand screed",
+      "सीमेंट-रेत का लेवल मसाला"
+     ],
+     "mm": 40,
+     "kind": "screed",
+     "what": [
+      "Levels the slab. It must be cured and flat before tiling.",
+      "स्लैब को समतल करता है। टाइल से पहले पका और सपाट होना चाहिए।"
+     ],
+     "cost": "₹15–30 / sq ft"
+    },
+    {
+     "n": [
+      "RCC slab",
+      "RCC छत / स्लैब"
+     ],
+     "mm": 125,
+     "kind": "concrete",
+     "what": [
+      "Concrete with steel bars: the structure. Already built.",
+      "सरिया वाला कंक्रीट: ढाँचा। पहले से बना है।"
+     ]
+    }
+   ],
+   "why": [
+    "The colour runs through the whole tile, so even a chip looks like the top.",
+    "रंग पूरी टाइल में, चटका भी ऊपर जैसा दिखता है।"
+   ],
+   "pros": [
+    [
+     "Longest-lasting tile",
+     "सबसे टिकाऊ टाइल"
+    ]
+   ],
+   "cons": [
+    [
+     "Fewer designs, costlier",
+     "कम डिज़ाइन, महँगी"
+    ]
+   ],
+   "mistakes": [
+    [
+     "Paying full-body prices for a GVT. Look at the edge of a broken piece.",
+     "GVT के लिए फुल बॉडी का दाम देना। टूटे टुकड़े का किनारा देखें।"
+    ]
+   ],
+   "myths": [
+    [
+     [
+      "All vitrified tiles are full-body.",
+      "हर विट्रीफाइड टाइल फुल बॉडी है।"
+     ],
+     [
+      "Most are GVT with a printed top.",
+      "ज़्यादातर GVT हैं, ऊपर छपाई।"
+     ]
+    ]
+   ],
+   "alt": [
+    "Matt GVT costs less and is enough for a home.",
+    "मैट GVT सस्ती और घर के लिए काफ़ी।"
+   ]
+  },
+  "marble": {
+   "title": [
+    "Marble floor",
+    "मार्बल फ़र्श"
+   ],
+   "axis": "floor",
+   "feel": [
+    "Very smooth and cold; glossy after polishing. Haldi or lemon left on it stains.",
+    "बहुत चिकना और ठंडा; घिसाई के बाद चमकदार। हल्दी या नींबू पड़ा रहे तो दाग।"
+   ],
+   "layers": [
+    {
+     "n": [
+      "Indian marble, 18 mm",
+      "देसी मार्बल, 18 mm"
+     ],
+     "mm": 18,
+     "kind": "marble",
+     "what": [
+      "Natural stone slabs, ground and polished on site after laying.",
+      "प्राकृतिक पत्थर की स्लैब, बिछाने के बाद घिसाई और पॉलिश।"
+     ],
+     "cost": "₹120–250 / sq ft (stone)"
+    },
+    {
+     "n": [
+      "Cement mortar bed",
+      "सीमेंट मसाले का बेड"
+     ],
+     "mm": 25,
+     "kind": "screed",
+     "what": [
+      "Stone is laid on a thick mortar bed.",
+      "पत्थर मोटे मसाले पर बिछता है।"
+     ]
+    },
+    {
+     "n": [
+      "RCC slab",
+      "RCC छत / स्लैब"
+     ],
+     "mm": 125,
+     "kind": "concrete",
+     "what": [
+      "Concrete with steel bars: the structure. Already built.",
+      "सरिया वाला कंक्रीट: ढाँचा। पहले से बना है।"
+     ]
+    }
+   ],
+   "why": [
+    "Only if the family loves marble: it is classic and can be re-polished to look new.",
+    "तभी, जब परिवार को मार्बल बहुत पसंद हो: क्लासिक है और घिसाई से फिर नया।"
+   ],
+   "pros": [
+    [
+     "Classic, seamless look",
+     "शानदार, बिना जोड़"
+    ],
+    [
+     "Re-polish to look new",
+     "घिसाई से फिर नया"
+    ]
+   ],
+   "cons": [
+    [
+     "Stains from haldi, lemon, oil",
+     "हल्दी, नींबू, तेल के दाग"
+    ],
+    [
+     "Icy in winter",
+     "जाड़े में बर्फ़ जैसा"
+    ],
+    [
+     "Needs polishing every 8–12 years",
+     "हर 8–12 साल घिसाई"
+    ]
+   ],
+   "mistakes": [
+    [
+     "Laying marble in the kitchen.",
+     "रसोई में मार्बल।"
+    ],
+    [
+     "Using acid cleaners: they etch the surface.",
+     "तेज़ाब वाले क्लीनर: सतह पर निशान।"
+    ]
+   ],
+   "myths": [
+    [
+     [
+      "Marble keeps the house cool, tiles don't.",
+      "मार्बल घर ठंडा रखता है, टाइल नहीं।"
+     ],
+     [
+      "Both feel cool underfoot. Heat in the room comes from the roof and walls.",
+      "दोनों पैर के नीचे ठंडे। कमरे की गर्मी छत और दीवारों से आती है।"
+     ]
+    ]
+   ],
+   "alt": [
+    "A marble-look matt GVT gives the look with far less work.",
+    "मार्बल जैसी मैट GVT वही लुक बहुत कम झंझट में।"
+   ]
+  },
+  "wet": {
+   "title": [
+    "Bathroom floor",
+    "बाथरूम का फ़र्श"
+   ],
+   "axis": "floor",
+   "feel": [
+    "Slightly rough and grippy, even with wet feet. Water runs to the drain, no puddles.",
+    "हल्का खुरदरा, गीले पैर में भी पकड़। पानी नाली की ओर बहता है, जमता नहीं।"
+   ],
+   "layers": [
+    {
+     "n": [
+      "Anti-skid tile R11, 8 mm",
+      "एंटी-स्किड टाइल R11, 8 mm"
+     ],
+     "mm": 8,
+     "kind": "tile",
+     "what": [
+      "Textured matt tile; joints filled with epoxy grout that doesn't turn black.",
+      "खुरदरी मैट टाइल; जोड़ों में इपॉक्सी ग्राउट, काला नहीं पड़ता।"
+     ],
+     "cost": "₹50–90 / sq ft (tile)",
+     "color": "#A9BEC4"
+    },
+    {
+     "n": [
+      "Tile adhesive (C2)",
+      "टाइल एडहेसिव (C2)"
+     ],
+     "mm": 4,
+     "kind": "adhesive",
+     "what": [
+      "Polymer cement paste spread with a notched trowel. The tile is pressed in fully so no air stays under it.",
+      "दाँतेदार करनी से फैलाया पॉलिमर सीमेंट पेस्ट। टाइल पूरी दबाई जाती है ताकि नीचे हवा न रहे।"
+     ],
+     "cost": "₹12–25 / sq ft"
+    },
+    {
+     "n": [
+      "Waterproofing coat",
+      "वॉटरप्रूफिंग की परत"
+     ],
+     "mm": 2,
+     "kind": "membrane",
+     "what": [
+      "Two coats of polymer waterproofing, turned 1 ft up the walls (3 ft at the tub). Tested with standing water before tiling.",
+      "पॉलिमर वॉटरप्रूफिंग के दो कोट, दीवार पर 1 फीट ऊपर तक (टब के पास 3 फीट)। टाइल से पहले पानी भरकर जाँच।"
+     ],
+     "cost": "₹40–80 / sq ft"
+    },
+    {
+     "n": [
+      "Screed sloped to the drain",
+      "नाली की ओर ढलान वाला मसाला"
+     ],
+     "mm": 40,
+     "kind": "screed",
+     "what": [
+      "Gives the fall towards the drain (about 1 in 100).",
+      "नाली की ओर ढलान देता है (लगभग 100 में 1)।"
+     ]
+    },
+    {
+     "n": [
+      "RCC slab",
+      "RCC छत / स्लैब"
+     ],
+     "mm": 125,
+     "kind": "concrete",
+     "what": [
+      "Concrete with steel bars: the structure. Already built.",
+      "सरिया वाला कंक्रीट: ढाँचा। पहले से बना है।"
+     ]
+    }
+   ],
+   "why": [
+    "A bathroom floor fails from below. Waterproofing plus anti-skid tile and epoxy grout stops leaks into the flat below and falls.",
+    "बाथरूम का फ़र्श नीचे से ख़राब होता है। वॉटरप्रूफिंग, एंटी-स्किड टाइल और इपॉक्सी ग्राउट रिसाव और फिसलना दोनों रोकते हैं।"
+   ],
+   "pros": [
+    [
+     "Grip with wet feet",
+     "गीले पैर में पकड़"
+    ],
+    [
+     "No leaks into the ceiling below",
+     "नीचे की छत में रिसाव नहीं"
+    ],
+    [
+     "Joints don't turn black",
+     "जोड़ काले नहीं पड़ते"
+    ]
+   ],
+   "cons": [
+    [
+     "Textured tile needs a brush to clean",
+     "खुरदरी टाइल ब्रश से साफ़"
+    ],
+    [
+     "Waterproofing adds a day or two",
+     "वॉटरप्रूफिंग में एक-दो दिन ज़्यादा"
+    ]
+   ],
+   "mistakes": [
+    [
+     "No ponding test: fill the waterproofed floor with water for 24–48 hours and check below before tiling.",
+     "पानी भरकर जाँच नहीं: टाइल से पहले वॉटरप्रूफ़ फ़र्श पर 24–48 घंटे पानी भरें और नीचे देखें।"
+    ],
+    [
+     "Slope towards the door instead of the drain: puddles every bath.",
+     "ढलान नाली की जगह दरवाज़े की ओर: हर बार पानी जमा।"
+    ],
+    [
+     "Wall tile used on the floor because it was cheaper.",
+     "सस्ती होने से दीवार वाली टाइल फ़र्श पर।"
+    ],
+    [
+     "Waterproofing only on the floor, not up the wall behind the shower and tub.",
+     "वॉटरप्रूफिंग सिर्फ़ फ़र्श पर, शावर और टब के पीछे दीवार पर नहीं।"
+    ]
+   ],
+   "myths": [
+    [
+     [
+      "Vitrified tile is waterproof, so no waterproofing is needed.",
+      "विट्रीफाइड टाइल वॉटरप्रूफ़ है, तो वॉटरप्रूफिंग की ज़रूरत नहीं।"
+     ],
+     [
+      "Water gets through the joints and around the drain. The coat underneath is what stops it.",
+      "पानी जोड़ों और नाली के पास से जाता है। नीचे की परत ही इसे रोकती है।"
+     ]
+    ],
+    [
+     [
+      "Black grout hides dirt, so it's better.",
+      "काला ग्राउट गंदगी छिपाता है, इसलिए बेहतर।"
+     ],
+     [
+      "Fungus still grows in cement grout. Epoxy grout doesn't absorb water.",
+      "सीमेंट ग्राउट में फफूंदी फिर भी लगती है। इपॉक्सी ग्राउट पानी नहीं सोखता।"
+     ]
+    ]
+   ],
+   "alt": [
+    "Matt (not anti-skid) tile with a rubber mat is a weaker option. Anti-skid R11 stays best for wet floors.",
+    "रबर मैट के साथ साधारण मैट टाइल कमज़ोर विकल्प है। गीले फ़र्श के लिए एंटी-स्किड R11 ही सबसे अच्छा।"
+   ]
+  },
+  "kota": {
+   "title": [
+    "Kota stone floor (outside)",
+    "कोटा पत्थर का फ़र्श (बाहर)"
+   ],
+   "axis": "floor",
+   "feel": [
+    "Natural, slightly textured stone; not slippery; stays cool.",
+    "प्राकृतिक, हल्का खुरदरा पत्थर; फिसलता नहीं; ठंडा रहता है।"
+   ],
+   "layers": [
+    {
+     "n": [
+      "Kota stone, 25 mm",
+      "कोटा पत्थर, 25 mm"
+     ],
+     "mm": 25,
+     "kind": "kota",
+     "what": [
+      "Green-grey limestone slabs, natural or leather finish.",
+      "हरा-भूरा पत्थर, नेचुरल या लेदर फ़िनिश।"
+     ],
+     "cost": "₹70–120 / sq ft installed"
+    },
+    {
+     "n": [
+      "Cement mortar bed",
+      "सीमेंट मसाले का बेड"
+     ],
+     "mm": 25,
+     "kind": "screed",
+     "what": [
+      "Laid on mortar, sloped to the drain.",
+      "मसाले पर, नाली की ओर ढलान।"
+     ]
+    },
+    {
+     "n": [
+      "RCC slab",
+      "RCC छत / स्लैब"
+     ],
+     "mm": 125,
+     "kind": "concrete",
+     "what": [
+      "Concrete with steel bars: the structure. Already built.",
+      "सरिया वाला कंक्रीट: ढाँचा। पहले से बना है।"
+     ]
+    }
+   ],
+   "why": [
+    "Kota is cheap, non-slip and takes sun and rain, which is exactly what a balcony and open square need.",
+    "कोटा सस्ता है, फिसलता नहीं, धूप-बारिश झेलता है: बालकनी और आँगन को यही चाहिए।"
+   ],
+   "pros": [
+    [
+     "Not slippery when wet",
+     "गीले में फिसलता नहीं"
+    ],
+    [
+     "Stays cool in the sun",
+     "धूप में ठंडा"
+    ],
+    [
+     "Cheap and easy to find in Bihar",
+     "सस्ता और बिहार में आसानी से मिलता है"
+    ]
+   ],
+   "cons": [
+    [
+     "Oil stains soak in",
+     "तेल के दाग सोख लेता है"
+    ],
+    [
+     "Colour varies slab to slab",
+     "हर पत्थर का रंग थोड़ा अलग"
+    ]
+   ],
+   "mistakes": [
+    [
+     "Mirror-polishing Kota outside: it becomes slippery in the rain. Keep natural or leather finish.",
+     "बाहर कोटा पर शीशे जैसी पॉलिश: बारिश में फिसलता है। नेचुरल या लेदर फ़िनिश रखें।"
+    ],
+    [
+     "No slope to the drain, so water stands and leaves marks.",
+     "नाली की ओर ढलान नहीं, पानी जमता है और निशान छोड़ता है।"
+    ]
+   ],
+   "myths": [
+    [
+     [
+      "Kota is only for old or cheap houses.",
+      "कोटा सिर्फ़ पुराने या सस्ते घरों के लिए।"
+     ],
+     [
+      "Designers use it in modern homes for exactly these spaces.",
+      "डिज़ाइनर इन्हीं जगहों के लिए मॉडर्न घरों में लगाते हैं।"
+     ]
+    ]
+   ],
+   "alt": [
+    "R11 outdoor tile looks more uniform. Kota is still the best value outside.",
+    "R11 बाहरी टाइल ज़्यादा एक जैसी दिखती है। बाहर के लिए कोटा फिर भी सबसे किफ़ायती।"
+   ]
+  },
+  "wall_int": {
+   "title": [
+    "Painted inside wall",
+    "अंदर की पेंट वाली दीवार"
+   ],
+   "axis": "wall",
+   "feel": [
+    "Smooth and matt like an eggshell, with a faint dimple from the paint roller. Cool to touch. Knock: solid brick, not hollow.",
+    "अंडे के छिलके जैसी चिकनी और मैट, रोलर से हल्के-हल्के दाने। छूने में ठंडी। ठोकें: ठोस ईंट, खोखली नहीं।"
+   ],
+   "layers": [
+    {
+     "n": [
+      "Washable emulsion, 2 coats",
+      "धुलने वाला इमल्शन, 2 कोट"
+     ],
+     "mm": 0.1,
+     "kind": "paint",
+     "what": [
+      "The colour you see and touch: matt or low sheen, about the thickness of a sheet of paper.",
+      "जो रंग आप देखते और छूते हैं: मैट या हल्की चमक, लगभग काग़ज़ जितना पतला।"
+     ],
+     "cost": "₹14–35 / sq ft with labour"
+    },
+    {
+     "n": [
+      "Primer, 1 coat",
+      "प्राइमर, 1 कोट"
+     ],
+     "mm": 0.05,
+     "kind": "primer",
+     "what": [
+      "A sealer so the paint sticks evenly and does not soak in patchily.",
+      "सीलर, ताकि पेंट बराबर चिपके और कहीं-कहीं सोखे नहीं।"
+     ]
+    },
+    {
+     "n": [
+      "Wall putty, 2 coats, sanded",
+      "वॉल पुट्टी, 2 कोट, घिसाई"
+     ],
+     "mm": 1.5,
+     "kind": "putty",
+     "what": [
+      "White cement-based paste, sanded smooth. This is what makes a wall feel glass-smooth.",
+      "सफ़ेद सीमेंट वाला पेस्ट, घिसकर चिकना। दीवार इसी से शीशे जैसी चिकनी लगती है।"
+     ]
+    },
+    {
+     "n": [
+      "Cement plaster",
+      "सीमेंट प्लास्टर"
+     ],
+     "mm": 12,
+     "kind": "plaster",
+     "what": [
+      "Sand and cement (1:6) that covers the bricks and makes the wall straight. Damp shows here first.",
+      "रेत-सीमेंट (1:6) की परत, जो ईंट ढकती है और दीवार सीधी करती है। सीलन सबसे पहले यहीं दिखती है।"
+     ]
+    },
+    {
+     "n": [
+      "Brick wall, 4½ inch",
+      "ईंट की दीवार, 4½ इंच"
+     ],
+     "mm": 115,
+     "kind": "brick",
+     "what": [
+      "Burnt clay bricks in cement mortar. Already built.",
+      "सीमेंट मसाले में पक्की ईंट। पहले से बनी है।"
+     ]
+    }
+   ],
+   "note": [
+    "The other face of the wall has the same plaster, putty and paint.",
+    "दीवार के दूसरी तरफ़ भी यही प्लास्टर, पुट्टी और पेंट।"
+   ],
+   "why": [
+    "Washable emulsion over two coats of putty is the cheapest finish that still wipes clean, and you can change the colour any time.",
+    "दो कोट पुट्टी पर धुलने वाला इमल्शन सबसे सस्ती फ़िनिश है जो पोंछने से साफ़ होती है, और रंग कभी भी बदल सकते हैं।"
+   ],
+   "pros": [
+    [
+     "Cheapest finish per sq ft",
+     "प्रति वर्ग फुट सबसे सस्ता"
+    ],
+    [
+     "Marks wipe off with a damp cloth",
+     "गीले कपड़े से निशान साफ़"
+    ],
+    [
+     "Easy to repair a patch or change colour",
+     "दाग ठीक करना या रंग बदलना आसान"
+    ]
+   ],
+   "cons": [
+    [
+     "Repaint every 6–8 years",
+     "हर 6–8 साल में दोबारा पेंट"
+    ],
+    [
+     "Shows damp straight away",
+     "सीलन तुरंत दिखती है"
+    ],
+    [
+     "Chair and mop scuffs at the bottom",
+     "नीचे कुर्सी और पोंछे की रगड़"
+    ]
+   ],
+   "mistakes": [
+    [
+     "Painting over fresh plaster. Let new plaster dry for about 3–4 weeks first, or the paint blisters.",
+     "ताज़े प्लास्टर पर पेंट। नया प्लास्टर पहले लगभग 3–4 हफ़्ते सूखने दें, वरना पेंट फूलता है।"
+    ],
+    [
+     "Skipping the primer to save a day: the paint comes out patchy and peels.",
+     "एक दिन बचाने के लिए प्राइमर छोड़ना: पेंट धब्बेदार होता है और उखड़ता है।"
+    ],
+    [
+     "One rough coat of putty, not sanded: waves show under a tube light.",
+     "पुट्टी का एक खुरदरा कोट, बिना घिसाई: ट्यूबलाइट में लहरें दिखती हैं।"
+    ],
+    [
+     "'Plastic paint' on the quote with no brand or product name. Ask for both on the bill.",
+     "कोटेशन पर सिर्फ़ 'प्लास्टिक पेंट', ब्रांड या प्रोडक्ट का नाम नहीं। बिल पर दोनों लिखवाएँ।"
+    ],
+    [
+     "Painting in the monsoon: damp gets locked in.",
+     "बरसात में पेंट: नमी अंदर बंद हो जाती है।"
+    ]
+   ],
+   "myths": [
+    [
+     [
+      "Putty makes the wall waterproof.",
+      "पुट्टी दीवार को वॉटरप्रूफ़ बनाती है।"
+     ],
+     [
+      "Ordinary putty softens and flakes in damp. Fix the water source first.",
+      "साधारण पुट्टी नमी में नरम होकर झड़ती है। पहले पानी का स्रोत ठीक करें।"
+     ]
+    ],
+    [
+     [
+      "More coats of paint means it lasts longer.",
+      "ज़्यादा कोट = ज़्यादा टिकाऊ।"
+     ],
+     [
+      "Two coats is right. Extra coats crack and peel.",
+      "दो कोट सही हैं। ज़्यादा कोट चटकते और उखड़ते हैं।"
+     ]
+    ],
+    [
+     [
+      "Oil (enamel) paint on walls is stronger.",
+      "दीवार पर ऑयल (इनेमल) पेंट ज़्यादा मज़बूत।"
+     ],
+     [
+      "It yellows, traps moisture and is hard to repaint. Use it on metal and wood, not walls.",
+      "पीला पड़ता है, नमी रोकता है, दोबारा पेंट मुश्किल। धातु-लकड़ी पर लगाएँ, दीवार पर नहीं।"
+     ]
+    ]
+   ],
+   "alt": [
+    "Texture or limewash on one feature wall, a tile band at the entry. For all other walls, paint is still best.",
+    "एक फ़ीचर दीवार पर टेक्सचर या लाइमवॉश, एंट्री पर टाइल पट्टी। बाक़ी सब दीवारों पर पेंट ही सबसे अच्छा।"
+   ]
+  },
+  "wall_ext": {
+   "title": [
+    "Painted outer wall",
+    "बाहर वाली पेंट की दीवार"
+   ],
+   "axis": "wall",
+   "feel": [
+    "Inside it feels like any painted wall. Outer walls get damp first in the monsoon: watch for dark patches near the floor.",
+    "अंदर से आम पेंट वाली दीवार जैसी। बरसात में बाहर की दीवार में सीलन पहले आती है: फ़र्श के पास गहरे धब्बे देखें।"
+   ],
+   "layers": [
+    {
+     "n": [
+      "Washable emulsion, 2 coats",
+      "धुलने वाला इमल्शन, 2 कोट"
+     ],
+     "mm": 0.1,
+     "kind": "paint",
+     "what": [
+      "The colour you see and touch: matt or low sheen, about the thickness of a sheet of paper.",
+      "जो रंग आप देखते और छूते हैं: मैट या हल्की चमक, लगभग काग़ज़ जितना पतला।"
+     ],
+     "cost": "₹14–35 / sq ft with labour"
+    },
+    {
+     "n": [
+      "Primer, 1 coat",
+      "प्राइमर, 1 कोट"
+     ],
+     "mm": 0.05,
+     "kind": "primer",
+     "what": [
+      "A sealer so the paint sticks evenly and does not soak in patchily.",
+      "सीलर, ताकि पेंट बराबर चिपके और कहीं-कहीं सोखे नहीं।"
+     ]
+    },
+    {
+     "n": [
+      "Wall putty, 2 coats, sanded",
+      "वॉल पुट्टी, 2 कोट, घिसाई"
+     ],
+     "mm": 1.5,
+     "kind": "putty",
+     "what": [
+      "White cement-based paste, sanded smooth. This is what makes a wall feel glass-smooth.",
+      "सफ़ेद सीमेंट वाला पेस्ट, घिसकर चिकना। दीवार इसी से शीशे जैसी चिकनी लगती है।"
+     ]
+    },
+    {
+     "n": [
+      "Cement plaster",
+      "सीमेंट प्लास्टर"
+     ],
+     "mm": 12,
+     "kind": "plaster",
+     "what": [
+      "Sand and cement (1:6) that covers the bricks and makes the wall straight. Damp shows here first.",
+      "रेत-सीमेंट (1:6) की परत, जो ईंट ढकती है और दीवार सीधी करती है। सीलन सबसे पहले यहीं दिखती है।"
+     ]
+    },
+    {
+     "n": [
+      "Brick wall, 9 inch",
+      "ईंट की दीवार, 9 इंच"
+     ],
+     "mm": 230,
+     "kind": "brick",
+     "what": [
+      "Outer walls are two bricks thick. Already built.",
+      "बाहर की दीवार दो ईंट मोटी। पहले से बनी है।"
+     ]
+    },
+    {
+     "n": [
+      "Outside plaster",
+      "बाहर का प्लास्टर"
+     ],
+     "mm": 18,
+     "kind": "plaster",
+     "what": [
+      "Thicker plaster facing the rain, with a waterproof additive.",
+      "बारिश की तरफ़ मोटा प्लास्टर, वॉटरप्रूफ़ मसाले के साथ।"
+     ]
+    },
+    {
+     "n": [
+      "Exterior emulsion",
+      "बाहर का पेंट"
+     ],
+     "mm": 0.15,
+     "kind": "paint",
+     "what": [
+      "Weather-proof paint outside.",
+      "मौसम झेलने वाला बाहर का पेंट।"
+     ],
+     "color": "#D9CDB8"
+    }
+   ],
+   "why": [
+    "A 9 inch brick wall with outside plaster and exterior paint keeps the rain out; the inside face is finished like any wall.",
+    "9 इंच ईंट, बाहर प्लास्टर और बाहरी पेंट बारिश रोकते हैं; अंदर की तरफ़ आम दीवार जैसी फ़िनिश।"
+   ],
+   "pros": [
+    [
+     "Solid, quiet and cool",
+     "मज़बूत, शांत और ठंडी"
+    ],
+    [
+     "Lasts as long as the building",
+     "बिल्डिंग जितनी उम्र"
+    ]
+   ],
+   "cons": [
+    [
+     "Gets damp first in the monsoon",
+     "बरसात में सीलन पहले यहीं"
+    ],
+    [
+     "Hairline cracks where brick meets the concrete beam",
+     "ईंट और बीम के जोड़ पर बारीक दरार"
+    ]
+   ],
+   "mistakes": [
+    [
+     "No mesh strip where brick meets a beam or column before plastering: a crack line appears there.",
+     "प्लास्टर से पहले ईंट-बीम/खंभे के जोड़ पर जाली की पट्टी नहीं: वहाँ दरार की लाइन आती है।"
+    ],
+    [
+     "Interior paint used outside: it fades and chalks in one summer.",
+     "बाहर अंदर वाला पेंट: एक गर्मी में फीका और पाउडर जैसा।"
+    ],
+    [
+     "Painting inside to hide damp that comes through the outer wall.",
+     "बाहर की दीवार से आती सीलन को अंदर पेंट से छिपाना।"
+    ]
+   ],
+   "myths": [
+    [
+     [
+      "Waterproof paint on the inside cures damp.",
+      "अंदर वॉटरप्रूफ़ पेंट से सीलन ठीक।"
+     ],
+     [
+      "Stop the water outside: cracks, terrace, plumbing. Inside paint only hides it for a while.",
+      "पानी बाहर रोकें: दरार, छत, प्लंबिंग। अंदर का पेंट कुछ दिन छिपाता भर है।"
+     ]
+    ]
+   ],
+   "alt": [
+    "A textured or elastomeric exterior coating for very rainy faces. Plain exterior emulsion is fine for most.",
+    "बहुत बारिश वाली दीवार पर टेक्सचर या इलास्टोमेरिक कोटिंग। ज़्यादातर के लिए सादा बाहरी इमल्शन काफ़ी।"
+   ]
+  },
+  "rcc": {
+   "title": [
+    "Painted pillar or beam",
+    "पेंट वाला खंभा या बीम"
+   ],
+   "axis": "wall",
+   "feel": [
+    "Same smooth paint as the walls; corners chip easily, hence steel corner guards.",
+    "दीवार जैसा ही चिकना पेंट; कोने जल्दी टूटते हैं, इसलिए स्टील कॉर्नर गार्ड।"
+   ],
+   "layers": [
+    {
+     "n": [
+      "Washable emulsion, 2 coats",
+      "धुलने वाला इमल्शन, 2 कोट"
+     ],
+     "mm": 0.1,
+     "kind": "paint",
+     "what": [
+      "The colour you see and touch: matt or low sheen, about the thickness of a sheet of paper.",
+      "जो रंग आप देखते और छूते हैं: मैट या हल्की चमक, लगभग काग़ज़ जितना पतला।"
+     ],
+     "cost": "₹14–35 / sq ft with labour"
+    },
+    {
+     "n": [
+      "Primer, 1 coat",
+      "प्राइमर, 1 कोट"
+     ],
+     "mm": 0.05,
+     "kind": "primer",
+     "what": [
+      "A sealer so the paint sticks evenly and does not soak in patchily.",
+      "सीलर, ताकि पेंट बराबर चिपके और कहीं-कहीं सोखे नहीं।"
+     ]
+    },
+    {
+     "n": [
+      "Wall putty, 2 coats, sanded",
+      "वॉल पुट्टी, 2 कोट, घिसाई"
+     ],
+     "mm": 1.5,
+     "kind": "putty",
+     "what": [
+      "White cement-based paste, sanded smooth. This is what makes a wall feel glass-smooth.",
+      "सफ़ेद सीमेंट वाला पेस्ट, घिसकर चिकना। दीवार इसी से शीशे जैसी चिकनी लगती है।"
+     ]
+    },
+    {
+     "n": [
+      "Plaster",
+      "प्लास्टर"
+     ],
+     "mm": 10,
+     "kind": "plaster",
+     "what": [
+      "Thin plaster over the concrete.",
+      "कंक्रीट पर पतला प्लास्टर।"
+     ]
+    },
+    {
+     "n": [
+      "RCC column / beam",
+      "RCC खंभा / बीम"
+     ],
+     "mm": 230,
+     "kind": "concrete",
+     "what": [
+      "Concrete with steel bars: carries the building. Never cut into it.",
+      "सरिया वाला कंक्रीट: बिल्डिंग का भार उठाता है। इसमें कभी काट-छाँट नहीं।"
+     ]
+    }
+   ],
+   "why": [
+    "Pillars and beams hold the building up. They are only plastered and painted like the walls.",
+    "खंभे और बीम बिल्डिंग का भार उठाते हैं। इन पर सिर्फ़ दीवार जैसा प्लास्टर और पेंट।"
+   ],
+   "pros": [
+    [
+     "Strongest part of the flat",
+     "घर का सबसे मज़बूत हिस्सा"
+    ]
+   ],
+   "cons": [
+    [
+     "Corners chip easily",
+     "कोने आसानी से टूटते हैं"
+    ]
+   ],
+   "mistakes": [
+    [
+     "Cutting into a pillar or beam for wiring or a shelf. Never chase grooves in RCC; run wires on the brick wall.",
+     "तार या शेल्फ़ के लिए खंभे या बीम को काटना। RCC में कभी खाँचा नहीं; तार ईंट की दीवार में चलाएँ।"
+    ],
+    [
+     "Hanging heavy loads from a beam without asking an engineer.",
+     "इंजीनियर से पूछे बिना बीम से भारी सामान लटकाना।"
+    ]
+   ],
+   "myths": [
+    [
+     [
+      "A hairline crack along a beam means the building is failing.",
+      "बीम के साथ बारीक दरार = बिल्डिंग कमज़ोर।"
+     ],
+     [
+      "Usually it is plaster shrinking where brick meets concrete, fixed with mesh and putty. A crack that grows wider or runs diagonally needs an engineer.",
+      "आमतौर पर यह ईंट-कंक्रीट के जोड़ पर प्लास्टर सिकुड़ना है, जाली और पुट्टी से ठीक। चौड़ी होती या तिरछी दरार के लिए इंजीनियर बुलाएँ।"
+     ]
+    ]
+   ],
+   "alt": [
+    "Steel corner guards or a WPC wrap protect the corners.",
+    "स्टील कॉर्नर गार्ड या WPC रैप कोने बचाते हैं।"
+   ]
+  },
+  "ceiling": {
+   "title": [
+    "Painted ceiling",
+    "पेंट वाली छत"
+   ],
+   "axis": "ceiling",
+   "feel": [
+    "Flat and matt white; any crack or damp patch here means a leak above.",
+    "सपाट मैट सफ़ेद; दरार या सीलन यानी ऊपर से रिसाव।"
+   ],
+   "layers": [
+    {
+     "n": [
+      "Washable emulsion, 2 coats",
+      "धुलने वाला इमल्शन, 2 कोट"
+     ],
+     "mm": 0.1,
+     "kind": "paint",
+     "what": [
+      "The colour you see and touch: matt or low sheen, about the thickness of a sheet of paper.",
+      "जो रंग आप देखते और छूते हैं: मैट या हल्की चमक, लगभग काग़ज़ जितना पतला।"
+     ],
+     "cost": "₹14–35 / sq ft with labour"
+    },
+    {
+     "n": [
+      "Primer, 1 coat",
+      "प्राइमर, 1 कोट"
+     ],
+     "mm": 0.05,
+     "kind": "primer",
+     "what": [
+      "A sealer so the paint sticks evenly and does not soak in patchily.",
+      "सीलर, ताकि पेंट बराबर चिपके और कहीं-कहीं सोखे नहीं।"
+     ]
+    },
+    {
+     "n": [
+      "Wall putty, 2 coats, sanded",
+      "वॉल पुट्टी, 2 कोट, घिसाई"
+     ],
+     "mm": 1.5,
+     "kind": "putty",
+     "what": [
+      "White cement-based paste, sanded smooth. This is what makes a wall feel glass-smooth.",
+      "सफ़ेद सीमेंट वाला पेस्ट, घिसकर चिकना। दीवार इसी से शीशे जैसी चिकनी लगती है।"
+     ]
+    },
+    {
+     "n": [
+      "Ceiling plaster / POP punning",
+      "छत का प्लास्टर / POP"
+     ],
+     "mm": 6,
+     "kind": "plaster",
+     "what": [
+      "Thin smoothing coat under the slab.",
+      "स्लैब के नीचे पतली चिकनी परत।"
+     ]
+    },
+    {
+     "n": [
+      "RCC slab",
+      "RCC छत / स्लैब"
+     ],
+     "mm": 125,
+     "kind": "concrete",
+     "what": [
+      "Concrete with steel bars: the structure. Already built.",
+      "सरिया वाला कंक्रीट: ढाँचा। पहले से बना है।"
+     ]
+    }
+   ],
+   "why": [
+    "Repairing and painting the slab keeps the full 10 ft height and costs least. Add false ceiling only where it solves lighting.",
+    "स्लैब की मरम्मत और पेंट से पूरी 10 फीट ऊँचाई बचती है, ख़र्च सबसे कम। फ़ॉल्स सीलिंग सिर्फ़ वहाँ जहाँ लाइट के लिए ज़रूरी।"
+   ],
+   "pros": [
+    [
+     "Cheapest",
+     "सबसे सस्ता"
+    ],
+    [
+     "Leaks show immediately, so they get fixed",
+     "रिसाव तुरंत दिखता है, ठीक हो जाता है"
+    ],
+    [
+     "Room feels tall",
+     "कमरा ऊँचा लगता है"
+    ]
+   ],
+   "cons": [
+    [
+     "Wires and beams stay visible",
+     "तार और बीम दिखते हैं"
+    ],
+    [
+     "Only surface lights",
+     "सिर्फ़ सतह वाली लाइट"
+    ]
+   ],
+   "mistakes": [
+    [
+     "Painting before the terrace is waterproofed: the stain comes back after the first rain.",
+     "छत की वॉटरप्रूफिंग से पहले पेंट: पहली बारिश में दाग लौट आता है।"
+    ],
+    [
+     "Fan hung from a false ceiling instead of a hook in the slab.",
+     "पंखा स्लैब के हुक की जगह फ़ॉल्स सीलिंग से लटकाना।"
+    ]
+   ],
+   "myths": [
+    [
+     [
+      "A false ceiling is needed for a modern look.",
+      "मॉडर्न लुक के लिए फ़ॉल्स सीलिंग ज़रूरी।"
+     ],
+     [
+      "Clean paint, good lights and a slim border look modern too, at a fraction of the cost.",
+      "साफ़ पेंट, अच्छी लाइट और पतला बॉर्डर भी मॉडर्न लगते हैं, बहुत कम ख़र्च में।"
+     ]
+    ]
+   ],
+   "alt": [
+    "A 2 ft gypsum border in the hall if you want hidden lights.",
+    "छिपी लाइट चाहिए तो हॉल में 2 फीट का जिप्सम बॉर्डर।"
+   ]
+  },
+  "tv_laminate": {
+   "title": [
+    "Flat laminate TV panel",
+    "सपाट लैमिनेट TV पैनल"
+   ],
+   "axis": "wall",
+   "feel": [
+    "Smooth, dry and slightly warm, with a printed wood grain you can see but barely feel. Knock: a duller wooden sound than the wall.",
+    "चिकना, सूखा और हल्का गर्म; लकड़ी जैसी छपाई दिखती है, छूने में मुश्किल से। ठोकें: दीवार से धीमी लकड़ी जैसी आवाज़।"
+   ],
+   "layers": [
+    {
+     "n": [
+      "HPL laminate (sunmica), 1 mm, matt",
+      "HPL लैमिनेट (सनमाइका), 1 mm, मैट"
+     ],
+     "mm": 1,
+     "kind": "laminate",
+     "what": [
+      "The face you see: printed light oak with a tough clear top. Wipes clean.",
+      "जो दिखता है: हल्का ओक छपा, ऊपर सख़्त परत। पोंछने से साफ़।"
+     ],
+     "cost": "₹1,200–3,000 per 8×4 sheet"
+    },
+    {
+     "n": [
+      "Contact adhesive",
+      "कॉन्टैक्ट गोंद"
+     ],
+     "mm": 0.3,
+     "kind": "glue",
+     "what": [
+      "Glues the laminate to the plywood.",
+      "लैमिनेट को प्लाई पर चिपकाता है।"
+     ]
+    },
+    {
+     "n": [
+      "BWP plywood, 18 mm",
+      "BWP प्लाई, 18 mm"
+     ],
+     "mm": 18,
+     "kind": "ply",
+     "what": [
+      "Boiling-water-proof ply with termite treatment: the strong core. Write the brand and grade on the quote.",
+      "उबलते पानी में भी न ख़राब होने वाली, दीमक-रोधी प्लाई: मज़बूत कोर। कोटेशन पर ब्रांड और ग्रेड लिखवाएँ।"
+     ],
+     "cost": "₹110–180 / sq ft"
+    },
+    {
+     "n": [
+      "Balancing laminate, 0.8 mm",
+      "पीछे का बैलेंसिंग लैमिनेट, 0.8 mm"
+     ],
+     "mm": 0.8,
+     "kind": "laminate",
+     "what": [
+      "A plain sheet on the back so the board doesn't bend.",
+      "पीछे सादी शीट, ताकि बोर्ड टेढ़ा न हो।"
+     ],
+     "color": "#E9E4DA"
+    },
+    {
+     "n": [
+      "Cable gap with PVC conduit",
+      "तार के लिए गैप और PVC पाइप"
+     ],
+     "mm": 25,
+     "kind": "pipe",
+     "what": [
+      "TV, HDMI and power cables run here; keep an access flap at the socket.",
+      "TV, HDMI और बिजली के तार यहीं; सॉकेट पर खुलने वाला ढक्कन रखें।"
+     ]
+    },
+    {
+     "n": [
+      "Washable emulsion, 2 coats",
+      "धुलने वाला इमल्शन, 2 कोट"
+     ],
+     "mm": 0.1,
+     "kind": "paint",
+     "what": [
+      "The colour you see and touch: matt or low sheen, about the thickness of a sheet of paper.",
+      "जो रंग आप देखते और छूते हैं: मैट या हल्की चमक, लगभग काग़ज़ जितना पतला।"
+     ],
+     "cost": "₹14–35 / sq ft with labour"
+    },
+    {
+     "n": [
+      "Wall putty, 2 coats, sanded",
+      "वॉल पुट्टी, 2 कोट, घिसाई"
+     ],
+     "mm": 1.5,
+     "kind": "putty",
+     "what": [
+      "White cement-based paste, sanded smooth. This is what makes a wall feel glass-smooth.",
+      "सफ़ेद सीमेंट वाला पेस्ट, घिसकर चिकना। दीवार इसी से शीशे जैसी चिकनी लगती है।"
+     ]
+    },
+    {
+     "n": [
+      "Cement plaster",
+      "सीमेंट प्लास्टर"
+     ],
+     "mm": 12,
+     "kind": "plaster",
+     "what": [
+      "Sand and cement (1:6) that covers the bricks and makes the wall straight. Damp shows here first.",
+      "रेत-सीमेंट (1:6) की परत, जो ईंट ढकती है और दीवार सीधी करती है। सीलन सबसे पहले यहीं दिखती है।"
+     ]
+    },
+    {
+     "n": [
+      "Brick wall, 9 inch",
+      "ईंट की दीवार, 9 इंच"
+     ],
+     "mm": 230,
+     "kind": "brick",
+     "what": [
+      "Outer walls are two bricks thick. Already built.",
+      "बाहर की दीवार दो ईंट मोटी। पहले से बनी है।"
+     ]
+    }
+   ],
+   "why": [
+    "One flat laminate sheet looks finished, hides the cables, has no grooves to dust and costs about half of fluted WPC.",
+    "एक सपाट लैमिनेट शीट सजी हुई लगती है, तार छिपाती है, धारियाँ नहीं जिनमें धूल जमे, और WPC फ्लूटेड से लगभग आधे दाम में।"
+   ],
+   "pros": [
+    [
+     "One wipe cleans it",
+     "एक बार पोंछने से साफ़"
+    ],
+    [
+     "Hundreds of shades",
+     "सैकड़ों रंग"
+    ],
+    [
+     "Easy to change later",
+     "बाद में बदलना आसान"
+    ]
+   ],
+   "cons": [
+    [
+     "Looks flatter than real wood",
+     "असली लकड़ी से सपाट दिखता है"
+    ],
+    [
+     "The plywood underneath decides its life",
+     "उम्र नीचे की प्लाई तय करती है"
+    ]
+   ],
+   "mistakes": [
+    [
+     "Using MR or 'commercial' ply instead of BWP: it swells if the wall gets damp.",
+     "BWP की जगह MR या 'कमर्शियल' प्लाई: दीवार में नमी हो तो फूलती है।"
+    ],
+    [
+     "No laminate on the back of the board: the panel bows within months.",
+     "बोर्ड के पीछे लैमिनेट नहीं: कुछ महीनों में पैनल मुड़ जाता है।"
+    ],
+    [
+     "TV bracket screwed only into the panel instead of the wall behind.",
+     "TV ब्रैकेट सिर्फ़ पैनल में, पीछे की दीवार में नहीं।"
+    ],
+    [
+     "No conduit or access flap for cables: you break the panel to add an HDMI wire.",
+     "तार के लिए पाइप या खुलने वाला ढक्कन नहीं: HDMI जोड़ने के लिए पैनल तोड़ना पड़ता है।"
+    ],
+    [
+     "Glossy laminate: shows every fingerprint and the TV reflects in it.",
+     "चमकदार लैमिनेट: हर उँगली का निशान, TV की परछाईं।"
+    ]
+   ],
+   "myths": [
+    [
+     [
+      "Sunmica is the board.",
+      "सनमाइका ही बोर्ड है।"
+     ],
+     [
+      "Sunmica (laminate) is only a 1 mm face sheet. Ask what plywood is under it.",
+      "सनमाइका (लैमिनेट) सिर्फ़ 1 mm की ऊपरी शीट है। पूछें नीचे कौन सी प्लाई है।"
+     ]
+    ],
+    [
+     [
+      "Any ply stamped 'marine' or 'waterproof' is BWP.",
+      "'मरीन' या 'वॉटरप्रूफ़' छपी हर प्लाई BWP है।"
+     ],
+     [
+      "Look for the IS 303 BWP or IS 710 marking and a known brand on the bill.",
+      "बिल पर IS 303 BWP या IS 710 मार्किंग और जाना-माना ब्रांड देखें।"
+     ]
+    ]
+   ],
+   "alt": [
+    "WPC fluted (if you love grooves), porcelain slab (lasts longest), or just paint and a nice cabinet (cheapest). The flat laminate panel is the best value.",
+    "WPC फ्लूटेड (धारियाँ पसंद हों तो), पोर्सलेन स्लैब (सबसे टिकाऊ), या सिर्फ़ पेंट और अच्छी कैबिनेट (सबसे सस्ता)। सपाट लैमिनेट सबसे किफ़ायती।"
+   ]
+  },
+  "tv_wpc": {
+   "title": [
+    "WPC fluted panel",
+    "WPC फ्लूटेड पैनल"
+   ],
+   "axis": "wall",
+   "feel": [
+    "Ribbed under your hand, plasticky-smooth, light. Dust settles in the grooves.",
+    "हाथ में धारीदार, प्लास्टिक जैसा चिकना, हल्का। धारियों में धूल बैठती है।"
+   ],
+   "layers": [
+    {
+     "n": [
+      "WPC fluted panel, 12 mm",
+      "WPC फ्लूटेड पैनल, 12 mm"
+     ],
+     "mm": 12,
+     "kind": "wpc",
+     "what": [
+      "Wood-plastic composite with a printed wood film; waterproof and termite-proof.",
+      "लकड़ी-प्लास्टिक का पैनल, ऊपर लकड़ी जैसी फ़िल्म; पानी और दीमक से सुरक्षित।"
+     ],
+     "cost": "₹180–320 / sq ft installed"
+    },
+    {
+     "n": [
+      "Battens or clips",
+      "पट्टियाँ या क्लिप"
+     ],
+     "mm": 20,
+     "kind": "frame",
+     "what": [
+      "Panels click onto battens screwed to the wall, or are glued directly.",
+      "पैनल दीवार पर लगी पट्टियों पर फँसते हैं, या सीधे चिपकते हैं।"
+     ]
+    },
+    {
+     "n": [
+      "Wall putty, 2 coats, sanded",
+      "वॉल पुट्टी, 2 कोट, घिसाई"
+     ],
+     "mm": 1.5,
+     "kind": "putty",
+     "what": [
+      "White cement-based paste, sanded smooth. This is what makes a wall feel glass-smooth.",
+      "सफ़ेद सीमेंट वाला पेस्ट, घिसकर चिकना। दीवार इसी से शीशे जैसी चिकनी लगती है।"
+     ]
+    },
+    {
+     "n": [
+      "Cement plaster",
+      "सीमेंट प्लास्टर"
+     ],
+     "mm": 12,
+     "kind": "plaster",
+     "what": [
+      "Sand and cement (1:6) that covers the bricks and makes the wall straight. Damp shows here first.",
+      "रेत-सीमेंट (1:6) की परत, जो ईंट ढकती है और दीवार सीधी करती है। सीलन सबसे पहले यहीं दिखती है।"
+     ]
+    },
+    {
+     "n": [
+      "Brick wall, 9 inch",
+      "ईंट की दीवार, 9 इंच"
+     ],
+     "mm": 230,
+     "kind": "brick",
+     "what": [
+      "Outer walls are two bricks thick. Already built.",
+      "बाहर की दीवार दो ईंट मोटी। पहले से बनी है।"
+     ]
+    }
+   ],
+   "why": [
+    "WPC doesn't swell or get termites, so it is the safe way to get the fluted look in Bihar's damp.",
+    "WPC न फूलता है न दीमक लगती है, बिहार की नमी में धारीदार लुक का सुरक्षित तरीक़ा।"
+   ],
+   "pros": [
+    [
+     "Waterproof and termite-proof",
+     "पानी और दीमक से सुरक्षित"
+    ],
+    [
+     "Rich, textured look",
+     "भरा-पूरा धारीदार लुक"
+    ]
+   ],
+   "cons": [
+    [
+     "Dust in the grooves: wipe every 4–6 weeks",
+     "धारियों में धूल: हर 4–6 हफ़्ते पोंछें"
+    ],
+    [
+     "Looks plasticky up close",
+     "पास से प्लास्टिक जैसा"
+    ]
+   ],
+   "mistakes": [
+    [
+     "Buying MDF or PVC fluting sold as 'WPC'. Ask for the sheet name and press a fingernail on the back.",
+     "'WPC' कहकर बेचा गया MDF या PVC। शीट का नाम पूछें, पीछे नाख़ून दबाकर देखें।"
+    ],
+    [
+     "One downlight in front: the flutes look flat. Light it from the top edge.",
+     "सामने एक डाउनलाइट: धारियाँ सपाट दिखती हैं। ऊपर के किनारे से रोशनी दें।"
+    ]
+   ],
+   "myths": [
+    [
+     [
+      "'Charcoal panel' is made of charcoal.",
+      "'चारकोल पैनल' कोयले से बना है।"
+     ],
+     [
+      "It's a trade name for a printed PVC/WPC sheet. Ask for the actual material.",
+      "यह छपी PVC/WPC शीट का व्यापारिक नाम है। असली सामग्री पूछें।"
+     ]
+    ]
+   ],
+   "alt": [
+    "A flat laminate panel is cheaper and easier to clean.",
+    "सपाट लैमिनेट पैनल सस्ता और साफ़ करने में आसान।"
+   ]
+  },
+  "porcelain": {
+   "title": [
+    "Porcelain slab TV wall",
+    "पोर्सलेन स्लैब TV दीवार"
+   ],
+   "axis": "wall",
+   "feel": [
+    "Glass-hard, cool and smooth like a tile. Knock: solid.",
+    "काँच जैसा सख़्त, ठंडा और चिकना, टाइल जैसा। ठोकें: ठोस।"
+   ],
+   "layers": [
+    {
+     "n": [
+      "Porcelain slab, 9 mm",
+      "पोर्सलेन स्लैब, 9 mm"
+     ],
+     "mm": 9,
+     "kind": "tile",
+     "what": [
+      "Large 800×1600 slabs with a marble print.",
+      "800×1600 की बड़ी स्लैब, मार्बल जैसी छपाई।"
+     ],
+     "cost": "₹200–400 / sq ft installed",
+     "color": "#ECEBE8"
+    },
+    {
+     "n": [
+      "Wall tile adhesive (C2TE S1)",
+      "दीवार टाइल एडहेसिव (C2TE S1)"
+     ],
+     "mm": 6,
+     "kind": "adhesive",
+     "what": [
+      "Flexible adhesive for heavy wall slabs.",
+      "भारी स्लैब के लिए लचीला एडहेसिव।"
+     ]
+    },
+    {
+     "n": [
+      "Cement plaster",
+      "सीमेंट प्लास्टर"
+     ],
+     "mm": 12,
+     "kind": "plaster",
+     "what": [
+      "Sand and cement (1:6) that covers the bricks and makes the wall straight. Damp shows here first.",
+      "रेत-सीमेंट (1:6) की परत, जो ईंट ढकती है और दीवार सीधी करती है। सीलन सबसे पहले यहीं दिखती है।"
+     ]
+    },
+    {
+     "n": [
+      "Brick wall, 9 inch",
+      "ईंट की दीवार, 9 इंच"
+     ],
+     "mm": 230,
+     "kind": "brick",
+     "what": [
+      "Outer walls are two bricks thick. Already built.",
+      "बाहर की दीवार दो ईंट मोटी। पहले से बनी है।"
+     ]
+    }
+   ],
+   "why": [
+    "Porcelain slabs never fade, swell or stain, so a TV wall built once lasts 25+ years.",
+    "पोर्सलेन स्लैब न फीके होते, न फूलते, न दाग लगता; एक बार बनी TV दीवार 25+ साल चलती है।"
+   ],
+   "pros": [
+    [
+     "Longest life",
+     "सबसे लंबी उम्र"
+    ],
+    [
+     "Wipes like a tile",
+     "टाइल की तरह पोंछें"
+    ]
+   ],
+   "cons": [
+    [
+     "Needs a skilled mason; heavy",
+     "माहिर मिस्त्री चाहिए; भारी"
+    ],
+    [
+     "Hard to change the look",
+     "लुक बदलना मुश्किल"
+    ]
+   ],
+   "mistakes": [
+    [
+     "Ordinary tile adhesive for big wall slabs: they can come off. Use a flexible C2TE S1 adhesive.",
+     "बड़ी दीवार स्लैब पर साधारण एडहेसिव: गिर सकती हैं। लचीला C2TE S1 एडहेसिव।"
+    ]
+   ],
+   "myths": [
+    [
+     [
+      "It's real marble.",
+      "यह असली मार्बल है।"
+     ],
+     [
+      "It's a printed porcelain tile, which is why it doesn't stain.",
+      "यह छपी पोर्सलेन टाइल है, इसलिए दाग नहीं लगता।"
+     ]
+    ]
+   ],
+   "alt": [
+    "Flat laminate for a lower budget.",
+    "कम बजट में सपाट लैमिनेट।"
+   ]
+  },
+  "limewash": {
+   "title": [
+    "Limewash feature wall",
+    "लाइमवॉश फ़ीचर दीवार"
+   ],
+   "axis": "wall",
+   "feel": [
+    "Soft, chalky and cloudy; slightly powdery to touch.",
+    "मुलायम, चॉक जैसी, बादलों जैसे रंग; छूने में हल्की पाउडर जैसी।"
+   ],
+   "layers": [
+    {
+     "n": [
+      "Limewash, 2–3 coats",
+      "लाइमवॉश, 2–3 कोट"
+     ],
+     "mm": 0.3,
+     "kind": "lime",
+     "what": [
+      "Lime paint brushed on in crossing strokes.",
+      "चूने का पेंट, आड़े-तिरछे ब्रश से।"
+     ],
+     "cost": "₹60–150 / sq ft"
+    },
+    {
+     "n": [
+      "Lime primer",
+      "लाइम प्राइमर"
+     ],
+     "mm": 0.1,
+     "kind": "primer",
+     "what": [
+      "Helps the lime grip.",
+      "चूने की पकड़ के लिए।"
+     ]
+    },
+    {
+     "n": [
+      "Cement plaster",
+      "सीमेंट प्लास्टर"
+     ],
+     "mm": 12,
+     "kind": "plaster",
+     "what": [
+      "Sand and cement (1:6) that covers the bricks and makes the wall straight. Damp shows here first.",
+      "रेत-सीमेंट (1:6) की परत, जो ईंट ढकती है और दीवार सीधी करती है। सीलन सबसे पहले यहीं दिखती है।"
+     ]
+    },
+    {
+     "n": [
+      "Brick wall, 9 inch",
+      "ईंट की दीवार, 9 इंच"
+     ],
+     "mm": 230,
+     "kind": "brick",
+     "what": [
+      "Outer walls are two bricks thick. Already built.",
+      "बाहर की दीवार दो ईंट मोटी। पहले से बनी है।"
+     ]
+    }
+   ],
+   "why": [
+    "Limewash gives a soft, cloudy, hand-made look on one wall for little money.",
+    "लाइमवॉश कम पैसे में एक दीवार पर मुलायम, बादलों जैसा, हाथ से बना लुक देता है।"
+   ],
+   "pros": [
+    [
+     "Unique look",
+     "अनोखा लुक"
+    ],
+    [
+     "Breathes, good on old walls",
+     "साँस लेता है, पुरानी दीवारों पर अच्छा"
+    ]
+   ],
+   "cons": [
+    [
+     "Marks are hard to wash off",
+     "निशान धोना मुश्किल"
+    ],
+    [
+     "Touch-ups show",
+     "मरम्मत दिखती है"
+    ]
+   ],
+   "mistakes": [
+    [
+     "Using it in a corridor or near the dining table where hands touch.",
+     "गलियारे या डाइनिंग के पास जहाँ हाथ लगते हैं।"
+    ]
+   ],
+   "myths": [
+    [
+     [
+      "Limewash is just white chuna.",
+      "लाइमवॉश सादा सफ़ेद चूना है।"
+     ],
+     [
+      "Modern limewash is tinted lime paint applied in crossing strokes.",
+      "मॉडर्न लाइमवॉश रंगीन चूने का पेंट है, आड़े-तिरछे ब्रश से।"
+     ]
+    ]
+   ],
+   "alt": [
+    "A darker washable emulsion gives a calmer accent.",
+    "गहरे रंग का धुलने वाला इमल्शन शांत ऐक्सेंट देता है।"
+   ]
+  },
+  "entry_dado": {
+   "title": [
+    "Entry tile band",
+    "एंट्री की टाइल पट्टी"
+   ],
+   "axis": "wall",
+   "feel": [
+    "Hard, cool and wipeable; the aluminium trim on top feels like a smooth metal edge.",
+    "सख़्त, ठंडी, पोंछने लायक; ऊपर की एल्युमिनियम पट्टी चिकना धातु का किनारा।"
+   ],
+   "layers": [
+    {
+     "n": [
+      "Matt wall tile 300×600, 8 mm",
+      "मैट दीवार टाइल 300×600, 8 mm"
+     ],
+     "mm": 8,
+     "kind": "tile",
+     "what": [
+      "Light stone look; joints matched to the tile colour.",
+      "हल्का पत्थर जैसा; जोड़ टाइल के रंग के।"
+     ],
+     "cost": "₹40–80 / sq ft (tile)",
+     "color": "#DAD5CC"
+    },
+    {
+     "n": [
+      "Tile adhesive",
+      "टाइल एडहेसिव"
+     ],
+     "mm": 4,
+     "kind": "adhesive",
+     "what": [
+      "Fixed with adhesive, not a thick cement bed.",
+      "मोटे सीमेंट की जगह एडहेसिव से।"
+     ]
+    },
+    {
+     "n": [
+      "Cement plaster",
+      "सीमेंट प्लास्टर"
+     ],
+     "mm": 12,
+     "kind": "plaster",
+     "what": [
+      "Sand and cement (1:6) that covers the bricks and makes the wall straight. Damp shows here first.",
+      "रेत-सीमेंट (1:6) की परत, जो ईंट ढकती है और दीवार सीधी करती है। सीलन सबसे पहले यहीं दिखती है।"
+     ]
+    },
+    {
+     "n": [
+      "Brick wall, 9 inch",
+      "ईंट की दीवार, 9 इंच"
+     ],
+     "mm": 230,
+     "kind": "brick",
+     "what": [
+      "Outer walls are two bricks thick. Already built.",
+      "बाहर की दीवार दो ईंट मोटी। पहले से बनी है।"
+     ]
+    }
+   ],
+   "why": [
+    "Only the entry wall takes shoes, bags and luggage, so only that wall gets a wipeable tile band.",
+    "सिर्फ़ एंट्री की दीवार पर जूते, बैग और सामान लगते हैं, इसलिए सिर्फ़ वहीं पोंछने लायक टाइल पट्टी।"
+   ],
+   "pros": [
+    [
+     "Wipe clean, scuff-proof",
+     "पोंछकर साफ़, रगड़ से बचाव"
+    ],
+    [
+     "Lasts for decades",
+     "दशकों चलती है"
+    ]
+   ],
+   "cons": [
+    [
+     "Breaking needed to change it",
+     "बदलने के लिए तोड़ना पड़ेगा"
+    ]
+   ],
+   "mistakes": [
+    [
+     "Tiling the whole hall to 4 ft: it looks like a hospital and traps damp.",
+     "पूरे हॉल में 4 फीट टाइल: अस्पताल जैसा लगता है और सीलन रुकती है।"
+    ],
+    [
+     "No metal trim on top: the cut tile edge chips.",
+     "ऊपर धातु की पट्टी नहीं: कटा किनारा टूटता है।"
+    ]
+   ],
+   "myths": [
+    [
+     [
+      "Tiles stop damp.",
+      "टाइल सीलन रोकती है।"
+     ],
+     [
+      "They hide it and push it higher up the wall. Fix the damp first.",
+      "छिपाती है और नमी को ऊपर चढ़ा देती है। पहले सीलन ठीक करें।"
+     ]
+    ]
+   ],
+   "alt": [
+    "Darker two-tone paint on the lower band, or a WPC half-panel.",
+    "नीचे गहरे रंग का पेंट, या WPC आधा पैनल।"
+   ]
+  },
+  "gypsum": {
+   "title": [
+    "Gypsum ceiling border",
+    "जिप्सम छत बॉर्डर"
+   ],
+   "axis": "ceiling",
+   "feel": [
+    "Looks like the plastered ceiling; knock and it sounds hollow, because it hangs below the slab.",
+    "प्लास्टर वाली छत जैसा दिखता है; ठोकें तो खोखला, क्योंकि यह स्लैब के नीचे लटकता है।"
+   ],
+   "layers": [
+    {
+     "n": [
+      "Washable emulsion, 2 coats",
+      "धुलने वाला इमल्शन, 2 कोट"
+     ],
+     "mm": 0.1,
+     "kind": "paint",
+     "what": [
+      "The colour you see and touch: matt or low sheen, about the thickness of a sheet of paper.",
+      "जो रंग आप देखते और छूते हैं: मैट या हल्की चमक, लगभग काग़ज़ जितना पतला।"
+     ],
+     "cost": "₹14–35 / sq ft with labour"
+    },
+    {
+     "n": [
+      "Wall putty, 2 coats, sanded",
+      "वॉल पुट्टी, 2 कोट, घिसाई"
+     ],
+     "mm": 1.5,
+     "kind": "putty",
+     "what": [
+      "White cement-based paste, sanded smooth. This is what makes a wall feel glass-smooth.",
+      "सफ़ेद सीमेंट वाला पेस्ट, घिसकर चिकना। दीवार इसी से शीशे जैसी चिकनी लगती है।"
+     ]
+    },
+    {
+     "n": [
+      "Joint tape + compound",
+      "जोड़ टेप + कंपाउंड"
+     ],
+     "mm": 1,
+     "kind": "tape",
+     "what": [
+      "Hides the board joints so no cracks show.",
+      "बोर्ड के जोड़ छिपाता है, दरार नहीं दिखती।"
+     ]
+    },
+    {
+     "n": [
+      "Gypsum board, 12.5 mm",
+      "जिप्सम बोर्ड, 12.5 mm"
+     ],
+     "mm": 12.5,
+     "kind": "gypsum",
+     "what": [
+      "Factory-made plaster board screwed to the frame.",
+      "फ़ैक्ट्री का प्लास्टर बोर्ड, फ्रेम पर स्क्रू से।"
+     ],
+     "cost": "₹90–160 / sq ft with frame"
+    },
+    {
+     "n": [
+      "GI ceiling frame",
+      "GI फ्रेम"
+     ],
+     "mm": 50,
+     "kind": "frame",
+     "what": [
+      "Galvanised steel channels hung from the slab. LED cove sits in an aluminium channel at the edge.",
+      "स्लैब से लटकी जस्ती स्टील की चैनलें। किनारे पर एल्युमिनियम चैनल में LED।"
+     ]
+    },
+    {
+     "n": [
+      "Air gap (wires, lights)",
+      "खाली जगह (तार, लाइट)"
+     ],
+     "mm": 150,
+     "kind": "gap",
+     "what": [
+      "Room for wiring and downlights; keep an access panel.",
+      "तार और लाइट के लिए जगह; खोलने का ढक्कन रखें।"
+     ]
+    },
+    {
+     "n": [
+      "RCC slab",
+      "RCC छत / स्लैब"
+     ],
+     "mm": 125,
+     "kind": "concrete",
+     "what": [
+      "Concrete with steel bars: the structure. Already built.",
+      "सरिया वाला कंक्रीट: ढाँचा। पहले से बना है।"
+     ]
+    }
+   ],
+   "why": [
+    "A narrow border hides wires and gives soft evening light without lowering the whole ceiling.",
+    "पतला बॉर्डर तार छिपाता है और पूरी छत नीची किए बिना शाम को हल्की रोशनी देता है।"
+   ],
+   "pros": [
+    [
+     "Hidden cove light",
+     "छिपी कोव लाइट"
+    ],
+    [
+     "Room for downlights and wiring",
+     "डाउनलाइट और तार की जगह"
+    ]
+   ],
+   "cons": [
+    [
+     "Joints can crack if badly taped",
+     "ख़राब टेप हो तो जोड़ चटकते हैं"
+    ],
+    [
+     "Hides leaks above",
+     "ऊपर का रिसाव छिपाता है"
+    ]
+   ],
+   "mistakes": [
+    [
+     "Hanging the fan from the false ceiling. Fans go on a hook in the slab with a down-rod.",
+     "पंखा फ़ॉल्स सीलिंग से लटकाना। पंखा स्लैब के हुक पर, डाउन-रॉड के साथ।"
+    ],
+    [
+     "No access panel: the LED driver dies and the ceiling has to be cut.",
+     "खोलने का ढक्कन नहीं: LED ड्राइवर ख़राब होने पर छत काटनी पड़ती है।"
+    ],
+    [
+     "Joints filled without tape: hairline cracks in the first summer.",
+     "बिना टेप जोड़ भरना: पहली गर्मी में बारीक दरारें।"
+    ]
+   ],
+   "myths": [
+    [
+     [
+      "Gypsum and POP are waterproof.",
+      "जिप्सम और POP वॉटरप्रूफ़ हैं।"
+     ],
+     [
+      "At best moisture-resistant. A roof leak ruins them.",
+      "ज़्यादा से ज़्यादा नमी-रोधी। छत का रिसाव इन्हें ख़राब कर देता है।"
+     ]
+    ],
+    [
+     [
+      "POP and gypsum board are the same.",
+      "POP और जिप्सम बोर्ड एक ही हैं।"
+     ],
+     [
+      "POP is wet plaster shaped on site; gypsum board is factory-made. Both work; the crew matters most.",
+      "POP साइट पर गीला प्लास्टर है; जिप्सम बोर्ड फ़ैक्ट्री का। दोनों चलते हैं; मिस्त्री सबसे ज़रूरी।"
+     ]
+    ]
+   ],
+   "alt": [
+    "No false ceiling, just surface panel lights and a good fan. Cheapest and leak-proof.",
+    "फ़ॉल्स सीलिंग नहीं, सिर्फ़ सतह वाली पैनल लाइट और अच्छा पंखा। सबसे सस्ता, रिसाव का डर नहीं।"
+   ]
+  },
+  "wainscot": {
+   "title": [
+    "Half-wall panelling (wainscot)",
+    "आधी दीवार पैनलिंग"
+   ],
+   "axis": "wall",
+   "feel": [
+    "Smooth painted panels with raised moulding strips; takes mop and chair knocks.",
+    "चिकने पेंट वाले पैनल, उभरी पट्टियाँ; पोंछे और कुर्सी की रगड़ झेलते हैं।"
+   ],
+   "layers": [
+    {
+     "n": [
+      "WPC / HDHMR panel with moulding, 9 mm",
+      "मोल्डिंग वाला WPC / HDHMR पैनल, 9 mm"
+     ],
+     "mm": 9,
+     "kind": "wpc",
+     "what": [
+      "Satin-painted panels; champagne aluminium cap on top.",
+      "सैटिन पेंट वाले पैनल; ऊपर शैम्पेन एल्युमिनियम कैप।"
+     ],
+     "cost": "₹180–350 / sq ft",
+     "color": "#8E9E86"
+    },
+    {
+     "n": [
+      "Adhesive",
+      "गोंद"
+     ],
+     "mm": 1,
+     "kind": "glue",
+     "what": [
+      "Glued to a dry wall.",
+      "सूखी दीवार पर चिपकाया।"
+     ]
+    },
+    {
+     "n": [
+      "Cement plaster",
+      "सीमेंट प्लास्टर"
+     ],
+     "mm": 12,
+     "kind": "plaster",
+     "what": [
+      "Sand and cement (1:6) that covers the bricks and makes the wall straight. Damp shows here first.",
+      "रेत-सीमेंट (1:6) की परत, जो ईंट ढकती है और दीवार सीधी करती है। सीलन सबसे पहले यहीं दिखती है।"
+     ]
+    },
+    {
+     "n": [
+      "Brick wall, 4½ inch",
+      "ईंट की दीवार, 4½ इंच"
+     ],
+     "mm": 115,
+     "kind": "brick",
+     "what": [
+      "Burnt clay bricks in cement mortar. Already built.",
+      "सीमेंट मसाले में पक्की ईंट। पहले से बनी है।"
+     ]
+    }
+   ],
+   "why": [
+    "A 3 ft panel band protects the lower walls from mops and chairs and looks finished.",
+    "3 फीट का पैनल निचली दीवार को पोंछे और कुर्सी से बचाता है और सजा लगता है।"
+   ],
+   "pros": [
+    [
+     "No repainting of the lower wall",
+     "निचली दीवार पर दोबारा पेंट नहीं"
+    ]
+   ],
+   "cons": [
+    [
+     "Costly",
+     "महँगा"
+    ],
+    [
+     "Hides damp",
+     "सीलन छिपाता है"
+    ]
+   ],
+   "mistakes": [
+    [
+     "MDF panels on a damp wall: they swell by the second monsoon.",
+     "सीलन वाली दीवार पर MDF: दूसरी बरसात तक फूल जाता है।"
+    ]
+   ],
+   "myths": [
+    [
+     [
+      "Panels fix damp walls.",
+      "पैनल सीलन वाली दीवार ठीक करते हैं।"
+     ],
+     [
+      "They hide it while it spreads behind.",
+      "छिपाते हैं, पीछे फैलती रहती है।"
+     ]
+    ]
+   ],
+   "alt": [
+    "Two-tone washable paint on the lower band.",
+    "नीचे दो रंग का धुलने वाला पेंट।"
+   ]
+  },
+  "skirting": {
+   "title": [
+    "Tile skirting",
+    "टाइल स्कर्टिंग"
+   ],
+   "axis": "wall",
+   "feel": [
+    "A 4 inch strip of floor tile at the bottom of the wall; takes mop knocks.",
+    "दीवार के नीचे फ़र्श टाइल की 4 इंच पट्टी; पोंछे की रगड़ झेलती है।"
+   ],
+   "layers": [
+    {
+     "n": [
+      "Floor tile strip, 9 mm",
+      "फ़र्श टाइल की पट्टी, 9 mm"
+     ],
+     "mm": 9,
+     "kind": "tile",
+     "what": [
+      "Cut from the same floor tile.",
+      "उसी फ़र्श टाइल से कटी।"
+     ],
+     "cost": "₹25–45 / running ft",
+     "color": "#CFC6B8"
+    },
+    {
+     "n": [
+      "Tile adhesive (C2)",
+      "टाइल एडहेसिव (C2)"
+     ],
+     "mm": 4,
+     "kind": "adhesive",
+     "what": [
+      "Polymer cement paste spread with a notched trowel. The tile is pressed in fully so no air stays under it.",
+      "दाँतेदार करनी से फैलाया पॉलिमर सीमेंट पेस्ट। टाइल पूरी दबाई जाती है ताकि नीचे हवा न रहे।"
+     ],
+     "cost": "₹12–25 / sq ft"
+    },
+    {
+     "n": [
+      "Cement plaster",
+      "सीमेंट प्लास्टर"
+     ],
+     "mm": 12,
+     "kind": "plaster",
+     "what": [
+      "Sand and cement (1:6) that covers the bricks and makes the wall straight. Damp shows here first.",
+      "रेत-सीमेंट (1:6) की परत, जो ईंट ढकती है और दीवार सीधी करती है। सीलन सबसे पहले यहीं दिखती है।"
+     ]
+    },
+    {
+     "n": [
+      "Brick wall, 4½ inch",
+      "ईंट की दीवार, 4½ इंच"
+     ],
+     "mm": 115,
+     "kind": "brick",
+     "what": [
+      "Burnt clay bricks in cement mortar. Already built.",
+      "सीमेंट मसाले में पक्की ईंट। पहले से बनी है।"
+     ]
+    }
+   ],
+   "why": [
+    "A 4 inch tile strip protects the bottom of the wall from mops and brooms.",
+    "4 इंच की टाइल पट्टी दीवार के निचले हिस्से को पोंछे और झाड़ू से बचाती है।"
+   ],
+   "pros": [
+    [
+     "Matches the floor",
+     "फ़र्श से मेल"
+    ],
+    [
+     "Hides the expansion gap",
+     "एक्सपेंशन गैप छिपाती है"
+    ]
+   ],
+   "cons": [
+    [
+     "Joints collect dust if they stick out",
+     "बाहर निकली हो तो जोड़ों में धूल"
+    ]
+   ],
+   "mistakes": [
+    [
+     "Skirting sticking out 1 inch from the wall because it's laid on thick cement: it collects dust. Keep it nearly flush.",
+     "मोटे सीमेंट पर लगी स्कर्टिंग दीवार से 1 इंच बाहर: धूल जमती है। लगभग दीवार के बराबर रखें।"
+    ]
+   ],
+   "myths": [
+    [
+     [
+      "Skirting must be a different tile.",
+      "स्कर्टिंग अलग टाइल की होनी चाहिए।"
+     ],
+     [
+      "Cutting it from the floor tile looks cleaner and costs less.",
+      "फ़र्श की टाइल से काटना ज़्यादा साफ़ और सस्ता।"
+     ]
+    ]
+   ],
+   "alt": [
+    "Aluminium or PVC skirting profiles for a slim modern line.",
+    "पतली मॉडर्न लाइन के लिए एल्युमिनियम या PVC स्कर्टिंग।"
+   ]
+  }
+ },
+ "rules": [
+  {
+   "name": "TV_PANEL(?!_)",
+   "id": "tv_laminate"
+  },
+  {
+   "name": "TV_WALL_SLABS",
+   "id": "porcelain"
+  },
+  {
+   "name": "LIMEWASH",
+   "id": "limewash"
+  },
+  {
+   "name": "FLUTE|TV_WALL_PANEL|FEATURE_WALL_PANEL|PILLAR_WRAP",
+   "id": "tv_wpc"
+  },
+  {
+   "name": "WAINSCOT",
+   "id": "wainscot"
+  },
+  {
+   "name": "ENTRY_DADO",
+   "id": "entry_dado"
+  },
+  {
+   "name": "GYPSUM_BORDER",
+   "id": "gypsum"
+  },
+  {
+   "name": "SKIRTING",
+   "id": "skirting"
+  },
+  {
+   "spec": "anti-skid",
+   "id": "wet"
+  },
+  {
+   "spec": "kota",
+   "id": "kota"
+  },
+  {
+   "spec": "marble",
+   "id": "marble",
+   "name": "FINISH"
+  },
+  {
+   "spec": "double-charge",
+   "id": "dc"
+  },
+  {
+   "spec": "full-body",
+   "id": "fb"
+  },
+  {
+   "spec": "GVT|vitrified",
+   "id": "gvt",
+   "name": "FINISH"
+  },
+  {
+   "cat": "floors",
+   "id": "gvt"
+  },
+  {
+   "cat": "walls",
+   "sub": "external",
+   "id": "wall_ext"
+  },
+  {
+   "cat": "walls",
+   "id": "wall_int"
+  },
+  {
+   "cat": "pillars",
+   "id": "rcc"
+  },
+  {
+   "cat": "beams",
+   "id": "rcc"
+  },
+  {
+   "cat": "ceiling",
+   "id": "ceiling"
+  }
+ ],
+ "order": [
+  "wall_int",
+  "wall_ext",
+  "ceiling",
+  "gvt",
+  "wet",
+  "kota",
+  "tv_laminate",
+  "tv_wpc",
+  "porcelain",
+  "entry_dado",
+  "gypsum",
+  "skirting",
+  "rcc",
+  "dc",
+  "fb",
+  "marble",
+  "limewash",
+  "wainscot"
+ ]
+}

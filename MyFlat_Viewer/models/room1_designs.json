@@ -1793,5 +1793,458 @@
     }
    ]
   }
+ },
+ "ROOM2_ENSUITE": {
+  "title": "V2 · Room 2 En-suite (bath with tub)",
+  "tagline": "The cross wall already built at the north end of Room 2 turns Bath 2 and the tub side into one bathroom, with a single door from the bedroom.",
+  "why": "Bath 2 already opens only into Room 2, and Room 2 is the longest room (23'7\"). The cross wall built on site, 6'3\" (191 cm) from the north wall, makes a tub room right next to Bath 2. Bath 2's side facing it is open (130 cm), so the WC and the tub room work as one bathroom. The only way in or out is a 2'6\" door in the doorway at the wall's west end. A short brick infill closes the last 10 inches of Bath 2's open side, which would otherwise show into the bedroom.",
+  "budget": {
+   "total": "₹1,85,000",
+   "rows": [
+    [
+     "Partition wall",
+     "5\" AAC/brick wall across Room 2 (12'7\" × 10'), lintel over the door, plaster both sides",
+     "₹14,000"
+    ],
+    [
+     "Waterproofing",
+     "PU/cementitious coat on the tub-room floor, 1' up all walls and 3' up around the tub",
+     "₹9,000"
+    ],
+    [
+     "Floor tiles",
+     "Anti-skid matt vitrified 600×600, ~62 sq ft, ½\" lower than Room 2 with a floor trap",
+     "₹7,500"
+    ],
+    [
+     "Wall tiles",
+     "Matt 300×600 to 7' (~220 sq ft) + sage feature tile behind the tub",
+     "₹26,000"
+    ],
+    [
+     "Plumbing",
+     "CPVC hot/cold lines, tub waste + floor trap to the Bath 2 stack, concealed mixer body",
+     "₹18,000"
+    ],
+    [
+     "Bathtub",
+     "1500×750 mm acrylic drop-in tub on a 4\" plinth, tiled apron with a service panel",
+     "₹32,000"
+    ],
+    [
+     "Tub fittings",
+     "Wall mixer with diverter, spout, slide rail + hand shower",
+     "₹12,000"
+    ],
+    [
+     "Vanity",
+     "Wall-hung 750 mm WPC vanity, quartz top, counter basin, tall tap, mirror",
+     "₹19,000"
+    ],
+    [
+     "Bath 2 (WC)",
+     "Close-coupled EWC, small wall basin, health faucet, mirror",
+     "₹15,500"
+    ],
+    [
+     "Door",
+     "WPC frame + flush door 2'6\" × 7', privacy lock, granite threshold",
+     "₹9,500"
+    ],
+    [
+     "Electrical",
+     "15 L geyser + 16 A point, exhaust fan, 3 IP44 downlights, mirror light, switches",
+     "₹17,000"
+    ],
+    [
+     "Finishing",
+     "Frosted film on W4, curtain + rod, towel rail, hooks, paint above the tiles",
+     "₹5,500"
+    ]
+   ],
+   "note": "Rough Bangalore 2026 estimates for mid-range brands, labour included. These are planning figures, not supplier quotes.",
+   "savings": "If it runs over: a basic 1500 mm acrylic tub (about ₹18,000), a plain diverter instead of a thermostatic mixer, ceramic wall tiles and a ready-made PVC vanity bring it to about ₹1.5 lakh."
+  },
+  "sections": {
+   "Layout": "Tub room 12'7\" (north) narrowing to 12'0\" × 6'3\" clear. Tub in the NE corner along the north wall. Vanity with a mirror on the east wall, between the wall column and the cross wall, so the whole room is in front of it. Geyser high on the west wall. Bath 2 (4'5\" × 7'1\") keeps the WC and a small hand basin, reached through its open side beside the column.",
+   "One door": "The door is in the doorway at the west end of the cross wall. It opens into the bathroom and its hinge is on the east jamb, so the open door lies along the wall and doesn't block the Bath 2 doorway or the vanity. Room 2 has no other bathroom door.",
+   "Bathtub": "1500 × 750 mm acrylic soaking tub (about 180 L) dropped into a tiled masonry surround on a 4\" plinth. The plinth gives the waste pipe its fall to the Bath 2 stack. Wall mixer with a diverter, a spout and a hand shower on a slide rail, so the tub doubles as a shower. A PEVA curtain on a rod keeps splashes in.",
+   "Water & waterproofing": "The tub room floor is ½\" lower than Room 2 and falls to a floor trap beside the tub, with a granite threshold at the door. Waterproof the whole floor, 1' up every wall and 3' up around the tub before tiling. Hot and cold supply in CPVC, waste in PVC to the existing Bath 2 stack through the shared west wall.",
+   "Light & air": "Window W4 is now the bathroom window, so it gets frosted film. The existing high vent above the tub takes a 150 mm exhaust fan. Two IP44 downlights plus a mirror light, all 3000K warm white. A 15 L geyser on its own 16 A point.",
+   "Room 2 after the change": "The bedroom is about 17' long, 12'0\" wide at the cross wall narrowing to 10'6\". It keeps both east windows (W5 and W6) and both doors to the passage and the hall. The north window W4 (127 × 94 cm) belongs to the bathroom.",
+   "Palette": "Warm grey matt tiles to 7', a sage-green feature wall behind the tub, oak vanity, white sanitaryware, chrome fittings."
+  },
+  "schedule": [
+   {
+    "area": "Floor",
+    "items": [
+     [
+      "Tub room",
+      "Anti-skid matt vitrified 600×600, warm grey, ½\" drop, floor trap"
+     ],
+     [
+      "Threshold",
+      "Granite strip at the door"
+     ]
+    ]
+   },
+   {
+    "area": "Walls",
+    "items": [
+     [
+      "Tiles",
+      "Matt ceramic 300×600 to 7'"
+     ],
+     [
+      "Feature",
+      "Sage-green tile behind the tub and on the east wall"
+     ],
+     [
+      "Above",
+      "Washable anti-fungal emulsion"
+     ]
+    ]
+   },
+   {
+    "area": "Bath",
+    "items": [
+     [
+      "Tub",
+      "Acrylic 1500×750 drop-in, tiled apron, service panel"
+     ],
+     [
+      "Mixer",
+      "Wall mixer + diverter, spout, hand shower on a slide rail"
+     ],
+     [
+      "Curtain",
+      "PEVA curtain on a chrome rod"
+     ]
+    ]
+   },
+   {
+    "area": "Vanity",
+    "items": [
+     [
+      "Cabinet",
+      "Wall-hung 750×450 WPC, oak laminate, 2 drawers"
+     ],
+     [
+      "Top & basin",
+      "20 mm quartz, counter-top ceramic basin 400 mm, tall pillar tap"
+     ],
+     [
+      "Mirror",
+      "Frameless 650×750 with an IP44 LED light above"
+     ]
+    ]
+   },
+   {
+    "area": "Bath 2 (WC)",
+    "items": [
+     [
+      "WC",
+      "Close-coupled EWC, dual flush, soft-close seat"
+     ],
+     [
+      "Basin",
+      "Wall-hung 450 mm + small mirror"
+     ],
+     [
+      "Doorway",
+      "Open side 130 cm beside the column; last 10 inches bricked up"
+     ]
+    ]
+   },
+   {
+    "area": "Door & services",
+    "items": [
+     [
+      "Door",
+      "WPC frame + flush door 2'6\"×7', privacy lock"
+     ],
+     [
+      "Geyser",
+      "50 L storage, 5-star, 16 A point"
+     ],
+     [
+      "Fan",
+      "150 mm exhaust in the existing vent"
+     ],
+     [
+      "Window W4",
+      "Frosted film"
+     ]
+    ]
+   }
+  ]
+ },
+ "HALL_REC": {
+  "title": "V2 · Recommended",
+  "tagline": "Matt GVT tiles through the flat, an 8 ft WPC fluted TV wall with a metal frame, anti-skid bathrooms and Kota outside.",
+  "why": "My pick for most families: it looks finished, needs almost no upkeep and sits in the middle on cost. The main door (108 cm, on the hall's west wall, just south of Pillar 2's line) opens into an entry with a shoe cabinet on its north side. The TV wall sits south of the door, between the door and the wall column; the dining table sits further south, near window W7.",
+  "budget": {
+   "total": "₹1,95,000–3,26,000",
+   "rows": [
+    [
+     "Floors",
+     "Matt GVT 600×1200 in hall, passage, Room 2 and kitchen; anti-skid R11 in the bathrooms; Kota in the open square (installed)",
+     "₹1,35,000–2,27,000"
+    ],
+    [
+     "Skirting",
+     "4 inch tile skirting, whole flat",
+     "₹20,000–30,000"
+    ],
+    [
+     "Hall paint",
+     "Premium washable emulsion over putty and primer, about 900 sq ft",
+     "₹22,000–36,000"
+    ],
+    [
+     "TV wall",
+     "WPC fluted panel 8 ft × 8'5\" (about 70 sq ft), black aluminium frame, LED strip",
+     "₹16,000–29,000"
+    ],
+    [
+     "Pillars",
+     "304 steel corner guards on both pillars",
+     "₹2,000–4,000"
+    ]
+   ],
+   "note": "Furniture, lights and the fan are drawn for the layout and are not in this total. Rough 2026 estimates, not quotes."
+  },
+  "sections": {
+   "Pros": "<ul><li>Matt tile hides Bihar's dust and is safe with wet feet</li><li>One tile through the flat makes it look bigger</li><li>WPC is waterproof and termite-proof and hides the TV wires</li><li>Almost no upkeep: mop and wipe</li></ul>",
+   "Cons": "<ul><li>A deep chip in GVT shows the body colour (keep a spare box)</li><li>WPC looks like wood from far, not up close</li><li>Paint needs redoing every 6–8 years</li></ul>",
+   "How long it lasts": "<ul><li>Floor tiles: 15–25 years</li><li>WPC TV wall: 12–15 years</li><li>Premium paint: 6–8 years before a repaint</li></ul>",
+   "Verdict": "Best value. Pick this unless money is very tight or you want to build once for 25 years."
+  }
+ },
+ "HALL_BUDGET": {
+  "title": "V2 · Budget plain",
+  "tagline": "Double-charge tiles, plain washable paint, a TV on the wall and nothing extra. Room 1 shows Option D (Smart Budget).",
+  "why": "Spends money only where it lasts: tough tiles, anti-skid bathrooms and Kota outside. Everything else can be upgraded later without breaking anything. The main door (108 cm, on the hall's west wall, just south of Pillar 2's line) opens into an entry with a shoe cabinet on its north side. The TV wall sits south of the door, between the door and the wall column; the dining table sits further south, near window W7.",
+  "budget": {
+   "total": "₹1,58,000–2,47,000",
+   "rows": [
+    [
+     "Floors",
+     "Double-charge vitrified 600×600 in hall, passage, Room 2 and kitchen; anti-skid R11 in the bathrooms; Kota in the open square (installed)",
+     "₹1,24,000–1,94,000"
+    ],
+    [
+     "Skirting",
+     "4 inch tile skirting, whole flat",
+     "₹20,000–30,000"
+    ],
+    [
+     "Hall paint",
+     "Economy washable emulsion (for example Asian Paints Tractor Emulsion or Berger Bison Glow), about 900 sq ft",
+     "₹11,000–18,000"
+    ],
+    [
+     "TV",
+     "Wall bracket, PVC wire casing, laminated shelf",
+     "₹3,000–5,000"
+    ]
+   ],
+   "note": "Furniture, lights and the fan are drawn for the layout and are not in this total. Rough 2026 estimates, not quotes."
+  },
+  "sections": {
+   "Pros": "<ul><li>Lowest cost</li><li>Double-charge tile is very tough and small chips barely show</li><li>Nothing to maintain except paint</li><li>Add the WPC TV wall later without touching the floor</li></ul>",
+   "Cons": "<ul><li>Plain look; 2 × 2 ft tiles show more joints</li><li>Few stone or wood looks in double charge</li><li>Economy paint needs redoing every 4–5 years</li><li>Visible TV wires unless cased</li></ul>",
+   "How long it lasts": "<ul><li>Floor tiles: 20–25 years</li><li>Economy paint: 4–5 years before a repaint</li></ul>",
+   "Verdict": "Pick this if money is tight now. The floor will outlast the Recommended one; the looks can come later."
+  }
+ },
+ "HALL_LONG": {
+  "title": "V2 · Long-lasting",
+  "tagline": "Full-body vitrified floors, a porcelain-slab TV wall with steel profiles and steel guards. Built once, left alone for 25 years.",
+  "why": "For a family that wants to do the work once. Every surface is the toughest of its kind: colour that runs through the tile, a wall finish that never fades or swells, and stainless steel that never rusts. The main door (108 cm, on the hall's west wall, just south of Pillar 2's line) opens into an entry with a shoe cabinet on its north side. The TV wall sits south of the door, between the door and the wall column; the dining table sits further south, near window W7.",
+  "budget": {
+   "total": "₹2,30,000–3,85,000",
+   "rows": [
+    [
+     "Floors",
+     "Full-body vitrified 600×1200 matt in hall, passage, Room 2 and kitchen; anti-skid R11 in the bathrooms; Kota in the open square (installed)",
+     "₹1,68,000–2,81,000"
+    ],
+    [
+     "Skirting",
+     "4 inch full-body tile skirting, whole flat",
+     "₹20,000–30,000"
+    ],
+    [
+     "Hall paint",
+     "Premium washable emulsion over putty and primer, about 900 sq ft",
+     "₹22,000–36,000"
+    ],
+    [
+     "TV wall",
+     "Porcelain slabs 800×1600 (about 70 sq ft) with 304 brushed steel profiles, granite-top console",
+     "₹17,000–33,000"
+    ],
+    [
+     "Pillars",
+     "304 steel corner guards to 5 ft on both pillars",
+     "₹3,000–5,000"
+    ]
+   ],
+   "note": "Furniture, lights and the fan are drawn for the layout and are not in this total. Rough 2026 estimates, not quotes."
+  },
+  "sections": {
+   "Pros": "<ul><li>Longest life of any tile: chips and scratches hardly show</li><li>Porcelain slab wall is waterproof, fade-proof and wipes clean</li><li>Stainless steel profiles and guards never rust</li><li>Nothing to polish, seal or replace</li></ul>",
+   "Cons": "<ul><li>About ₹35,000–60,000 more than Recommended</li><li>Large slabs need a skilled mason and careful handling</li><li>Hard to change the look later</li><li>Fewer designs in full-body tiles</li></ul>",
+   "How long it lasts": "<ul><li>Floor tiles: 25–30+ years</li><li>Porcelain TV wall: 25+ years</li><li>Steel trims: life of the flat</li><li>Paint: 6–8 years</li></ul>",
+   "Verdict": "Pick this if you want to build once and not touch the hall for 20–25 years. It costs more up front but has the lowest cost over time."
+  }
+ },
+ "HALL_MARBLE": {
+  "title": "V2 · Marble classic",
+  "tagline": "Indian white marble in the hall and passage with a green border, a limewash TV wall with teak shelves. Room 1 shows Option C (Indian Modern).",
+  "why": "The traditional look many Bihar homes love: seamless polished marble, cool in summer, that can be re-polished to look new. The rest of the flat stays on matt GVT to keep cost and upkeep down. The main door (108 cm, on the hall's west wall, just south of Pillar 2's line) opens into an entry with a shoe cabinet on its north side. The TV wall sits south of the door, between the door and the wall column; the dining table sits further south, near window W7.",
+  "budget": {
+   "total": "₹2,47,000–4,58,000",
+   "rows": [
+    [
+     "Floors",
+     "Indian white marble (Rajnagar / Makrana) in hall and passage, ground and polished; matt GVT in Room 2 and kitchen; anti-skid in the bathrooms; Kota in the open square (installed)",
+     "₹1,83,000–3,49,000"
+    ],
+    [
+     "Border",
+     "6 inch green marble border inlay round the hall",
+     "₹9,000–15,000"
+    ],
+    [
+     "Skirting",
+     "4 inch marble / tile skirting, whole flat",
+     "₹20,000–30,000"
+    ],
+    [
+     "Hall paint",
+     "Premium washable emulsion over putty and primer, about 900 sq ft",
+     "₹22,000–36,000"
+    ],
+    [
+     "TV wall",
+     "Limewash feature wall 8 ft wide in warm clay, four solid teak floating shelves",
+     "₹11,000–24,000"
+    ],
+    [
+     "Pillars",
+     "304 steel corner guards on both pillars",
+     "₹2,000–4,000"
+    ]
+   ],
+   "note": "Furniture, lights and the fan are drawn for the layout and are not in this total. Rough 2026 estimates, not quotes."
+  },
+  "sections": {
+   "Pros": "<ul><li>Classic, seamless look with no grout grid</li><li>Can be ground and re-polished to look new again</li><li>Cool underfoot in Bihar's summer</li><li>Limewash and teak feel warm and natural</li></ul>",
+   "Cons": "<ul><li>Stains from haldi and oil, etches from lemon and curd</li><li>Icy in winter; needs rugs</li><li>Re-polish every 8–12 years; hard water dulls it</li><li>Most expensive here and slowest to lay</li></ul>",
+   "How long it lasts": "<ul><li>Marble: 50+ years, with a re-polish every 8–12 years</li><li>Limewash: recoat every 5–8 years</li><li>Teak shelves: decades with occasional polish</li></ul>",
+   "Verdict": "Pick this only if the family really wants marble and is ready for the upkeep. For the same look with far less work, use glossy marble-look tiles in the hall instead."
+  }
+ },
+ "HALL_PANEL": {
+  "title": "V2 · Panelled hall",
+  "tagline": "The whole TV wall in fluted WPC, 3 ft sage half-wall panelling with a champagne aluminium cap round the hall, and both pillars wrapped full height.",
+  "why": "For a warm, finished, hotel-lobby look. The panels protect the lower walls from mops, chairs and scuffs, so only the top half ever needs paint. Floors are the same matt GVT as the Recommended plan. The main door (108 cm, west wall) opens between the entry shoe cabinet on its north side and the TV wall on its south side.",
+  "budget": {
+   "total": "₹2,44,000–4,22,000",
+   "rows": [
+    [
+     "Floors",
+     "Matt GVT 600×1200 in hall, passage, Room 2 and kitchen; anti-skid R11 in the bathrooms; Kota in the open square (installed)",
+     "₹1,35,000–2,27,000"
+    ],
+    [
+     "Skirting",
+     "4 inch tile skirting outside the hall",
+     "₹20,000–30,000"
+    ],
+    [
+     "Paint",
+     "Premium washable emulsion above the panels",
+     "₹18,000–30,000"
+    ],
+    [
+     "Feature wall",
+     "Fluted WPC on the wall between the main door and the wall column (about 90 sq ft), black profile, LED strip",
+     "₹25,000–45,000"
+    ],
+    [
+     "Half-wall panels",
+     "3 ft WPC / HDHMR panels with moulding strips, about 160 sq ft, champagne aluminium cap",
+     "₹33,000–67,000"
+    ],
+    [
+     "Pillars",
+     "Both pillars wrapped full height in fluted WPC (about 72 sq ft)",
+     "₹13,000–23,000"
+    ]
+   ],
+   "note": "Furniture, lights and the fan are drawn for the layout and are not in this total. Rough 2026 estimates, not quotes. Panel prices vary a lot between makes: get the panel brand and thickness written on the quote."
+  },
+  "sections": {
+   "Pros": "<ul><li>Warm, premium look with no extra furniture</li><li>Half-wall panels take the knocks from mops, chairs and shoes; the lower wall never needs repainting</li><li>WPC is waterproof and termite-proof, and hides uneven plaster and wiring</li><li>Wrapped pillars stop chipped corners and look intentional</li></ul>",
+   "Cons": "<ul><li>The most panel work, so one of the costliest plans</li><li>Panels hide the wall: fix any damp first, or it will spread behind them</li><li>Dust settles in the flutes; dust them weekly</li><li>A lot of wood tone can feel heavy; keep the rest of the walls light</li></ul>",
+   "How long it lasts": "<ul><li>WPC feature wall and pillar wraps: 12–15 years</li><li>Half-wall panels: 10–15 years</li><li>Floor tiles: 15–25 years</li><li>Paint above the panels: 6–8 years</li></ul>",
+   "Verdict": "Pick this if you love panelling and the walls are dry. For a lighter budget, keep only the fluted TV wall (the Recommended plan) and add half-wall panels later."
+  }
+ },
+ "HALL_BEST": {
+  "title": "V2 · Best of both",
+  "tagline": "Smooth matt GVT (2×4 ft in the hall and passage, 2×2 ft in the rooms), one flat laminate TV panel over a low cabinet, a tile band at the entry, steel pillar guards and a slim gypsum border with cove light.",
+  "why": "This mixes my guide's Bihar-proof floor and wall picks with the Materials Field Guide's cheaper, easier-to-clean TV wall, its caution on tile size and its ceiling advice. Every surface is smooth, so there are no grooves to dust. The tub room geyser is now 50 L, because a 15 L geyser cannot fill the tub.",
+  "budget": {
+   "total": "₹2,12,000–3,55,000",
+   "rows": [
+    [
+     "Floors",
+     "Smooth matt GVT: 600×1200 in the hall and passage, 600×600 in Room 2 and the kitchen, same shade; anti-skid R11 in the bathrooms; Kota in the open square (installed)",
+     "₹1,30,000–2,15,000"
+    ],
+    [
+     "Skirting",
+     "4 inch tile skirting",
+     "₹20,000–30,000"
+    ],
+    [
+     "Hall paint",
+     "Washable emulsion over putty and primer, about 900 sq ft",
+     "₹22,000–36,000"
+    ],
+    [
+     "TV wall",
+     "Flat matt HPL laminate (light oak) on 18 mm BWP plywood, 7 × 7 ft, black top profile, LED strip",
+     "₹13,000–25,000"
+    ],
+    [
+     "Entry tile band",
+     "3'6\" matt wall tile on the entry wall (about 47 sq ft), aluminium top trim",
+     "₹6,000–10,000"
+    ],
+    [
+     "Pillars",
+     "304 steel corner guards, 4 ft",
+     "₹2,000–4,000"
+    ],
+    [
+     "Ceiling border",
+     "2 ft gypsum border on GI framing round the hall (about 170 sq ft) with cove LED",
+     "₹19,000–35,000"
+    ]
+   ],
+   "note": "Skip the gypsum border and the total drops to about ₹1,93,000–3,20,000. Furniture, lights, the fan, mesh doors and the geyser are not in this total. Rough 2026 estimates at Patna rates, not quotes; outside Patna add transport."
+  },
+  "sections": {
+   "Pros": "<ul><li>Smooth faces everywhere: no grooves collecting dust</li><li>2×2 tiles in the rooms are easy for a local mason; 2×4 only where it shows</li><li>TV wall costs about half of a WPC fluted wall and is easy to change later</li><li>Entry wall takes shoe and bag knocks; pillar corners don't chip</li><li>The border hides wiring and gives soft evening light</li></ul>",
+   "Cons": "<ul><li>Laminate looks flatter than real wood or fluting</li><li>The border lowers the ceiling edge and adds joints to look after</li><li>Two tile sizes mean two orders in the same shade: match the batch codes</li><li>Costs a little more than Recommended because of the ceiling</li></ul>",
+   "How long it lasts": "<ul><li>Floor tiles: 15–25 years</li><li>Laminate TV panel: about 10–15 years if the wall stays dry (estimate)</li><li>Gypsum border: 15–20 years without leaks, repainted with the walls</li><li>Paint: 6–8 years</li><li>Steel guards and tile band: for life</li></ul>",
+   "Also plan": "<ul><li>Mosquito mesh doors: hinged, aluminium frame, replaceable mesh. Fit one room first</li><li>Tub room geyser: 50 L (shown in the model)</li><li>Before buying tiles, take two samples home and test tea, haldi and oil on them</li></ul>",
+   "Verdict": "My pick now: the best mix of looks, easy cleaning and cost. If money is tight, drop the ceiling border first."
+  }
  }
 }

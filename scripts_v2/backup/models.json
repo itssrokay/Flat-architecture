@@ -1,0 +1,229 @@
+{
+ "default": "MyFlat_V2_Architecture.glb",
+ "designNotes": "room1_designs.json",
+ "models": [
+  {
+   "file": "MyFlat_V2_Architecture.glb",
+   "label": "V2 · Site-measured layout (13 Nov): pillars, arch, main door, Room 2 cross wall",
+   "short": "★ V2 site-measured",
+   "group": "version",
+   "startView": "Hall:0",
+   "manifest": "MyFlat_V2_Architecture.manifest.json",
+   "viewpoints": {
+    "Hall": [
+     {
+      "name": "Main door (just inside)",
+      "pos": [
+       2.438,
+       1.6,
+       6.962
+      ],
+      "target": [
+       5.883,
+       1.3,
+       5.486
+      ]
+     },
+     {
+      "name": "Whole hall (from the south-east corner)",
+      "pos": [
+       6.706,
+       1.65,
+       13.411
+      ],
+      "target": [
+       3.048,
+       0.9,
+       6.096
+      ]
+     },
+     {
+      "name": "Towards the arch (from the window side)",
+      "pos": [
+       3.658,
+       1.6,
+       12.192
+      ],
+      "target": [
+       4.816,
+       1.4,
+       3.962
+      ]
+     },
+     {
+      "name": "Pillars & Room 2 door",
+      "pos": [
+       3.048,
+       1.6,
+       8.534
+      ],
+      "target": [
+       8.382,
+       1.2,
+       6.629
+      ]
+     }
+    ],
+    "Room 2": [
+     {
+      "name": "Bedroom towards the tub side",
+      "pos": [
+       8.961,
+       1.6,
+       6.888
+      ],
+      "target": [
+       9.754,
+       1.2,
+       1.219
+      ]
+     },
+     {
+      "name": "Tub side (from the doorway)",
+      "pos": [
+       8.961,
+       1.6,
+       2.316
+      ],
+      "target": [
+       11.43,
+       1.0,
+       0.305
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "MyFlat_V1_4_Hall_BestOfBoth.glb",
+   "label": "V1.4 · Best of both: 2×4 / 2×2 matt GVT, flat laminate TV wall, gypsum border",
+   "short": "Best of both (old layout)",
+   "group": "version",
+   "design": "HALL_BEST",
+   "startView": "Hall:0",
+   "manifest": "MyFlat_V1_4_Hall_BestOfBoth.manifest.json"
+  },
+  {
+   "file": "MyFlat_V1_3_Hall_Recommended.glb",
+   "label": "V1.3 · Recommended: matt tiles + WPC TV wall",
+   "short": "Recommended",
+   "group": "version",
+   "design": "HALL_REC",
+   "startView": "Hall:0",
+   "manifest": "MyFlat_V1_3_Hall_Recommended.manifest.json"
+  },
+  {
+   "file": "MyFlat_V1_3_Hall_Budget.glb",
+   "label": "V1.3 · Budget plain: double-charge tiles + plain paint",
+   "short": "Budget plain",
+   "group": "version",
+   "design": "HALL_BUDGET",
+   "startView": "Hall:0",
+   "manifest": "MyFlat_V1_3_Hall_Budget.manifest.json"
+  },
+  {
+   "file": "MyFlat_V1_3_Hall_LongLasting.glb",
+   "label": "V1.3 · Long-lasting: full-body tiles + porcelain slab TV wall",
+   "short": "Long-lasting",
+   "group": "version",
+   "design": "HALL_LONG",
+   "startView": "Hall:0",
+   "manifest": "MyFlat_V1_3_Hall_LongLasting.manifest.json"
+  },
+  {
+   "file": "MyFlat_V1_3_Hall_Marble.glb",
+   "label": "V1.3 · Marble classic: marble hall + limewash TV wall",
+   "short": "Marble classic",
+   "group": "version",
+   "design": "HALL_MARBLE",
+   "startView": "Hall:0",
+   "manifest": "MyFlat_V1_3_Hall_Marble.manifest.json"
+  },
+  {
+   "file": "MyFlat_V1_3_Hall_Panelled.glb",
+   "label": "V1.3 · Panelled hall: WPC feature wall, half-wall panels, wrapped pillars",
+   "short": "Panelled hall",
+   "group": "version",
+   "design": "HALL_PANEL",
+   "startView": "Hall:0",
+   "manifest": "MyFlat_V1_3_Hall_Panelled.manifest.json"
+  },
+  {
+   "file": "MyFlat_V1_2_Room2_Ensuite.glb",
+   "label": "V1.2 · Room 2 en-suite bath with tub",
+   "short": "Room 2 bath (V1.2)",
+   "group": "version",
+   "design": "ROOM2_ENSUITE",
+   "startView": "Room 2 Bath:0",
+   "manifest": "MyFlat_V1_2_Room2_Ensuite.manifest.json"
+  },
+  {
+   "file": "MyFlat_V1_1_Room1_DEFAULT.glb",
+   "label": "Room 1 · DEFAULT (Warm Contemporary)",
+   "short": "DEFAULT",
+   "group": "interior",
+   "design": "DEFAULT",
+   "startView": "Room 1:0",
+   "manifest": "MyFlat_V1_1_Room1_DEFAULT.manifest.json"
+  },
+  {
+   "file": "MyFlat_V1_1_Room1_OPTION_A.glb",
+   "label": "Room 1 · Option A (Japandi Calm)",
+   "short": "A",
+   "group": "interior",
+   "design": "OPTION_A",
+   "startView": "Room 1:0",
+   "manifest": "MyFlat_V1_1_Room1_OPTION_A.manifest.json"
+  },
+  {
+   "file": "MyFlat_V1_1_Room1_OPTION_B.glb",
+   "label": "Room 1 · Option B (Minimal Modern)",
+   "short": "B",
+   "group": "interior",
+   "design": "OPTION_B",
+   "startView": "Room 1:0",
+   "manifest": "MyFlat_V1_1_Room1_OPTION_B.manifest.json"
+  },
+  {
+   "file": "MyFlat_V1_1_Room1_OPTION_C.glb",
+   "label": "Room 1 · Option C (Indian Modern)",
+   "short": "C",
+   "group": "interior",
+   "design": "OPTION_C",
+   "startView": "Room 1:0",
+   "manifest": "MyFlat_V1_1_Room1_OPTION_C.manifest.json"
+  },
+  {
+   "file": "MyFlat_V1_1_Room1_OPTION_D.glb",
+   "label": "Room 1 · Option D (Smart Budget)",
+   "short": "D",
+   "group": "interior",
+   "design": "OPTION_D",
+   "startView": "Room 1:0",
+   "manifest": "MyFlat_V1_1_Room1_OPTION_D.manifest.json"
+  },
+  {
+   "file": "MyFlat_V1_1_Room1_OPTION_E.glb",
+   "label": "Room 1 · Option E (Simple & Practical)",
+   "short": "E",
+   "group": "interior",
+   "design": "OPTION_E",
+   "startView": "Room 1:0",
+   "manifest": "MyFlat_V1_1_Room1_OPTION_E.manifest.json"
+  },
+  {
+   "file": "MyFlat_V1_1_Architecture.glb",
+   "label": "V1.1 Architecture (Room 1 corrected)",
+   "short": "V1.1 arch",
+   "group": "architecture",
+   "manifest": "MyFlat_V1_1_Architecture.manifest.json"
+  },
+  {
+   "file": "MyFlat_V1_Architecture.glb",
+   "label": "V1 Architecture (untouched baseline)",
+   "short": "V1 baseline",
+   "group": "architecture",
+   "manifest": "MyFlat_V1_Architecture.manifest.json"
+  }
+ ]
+}

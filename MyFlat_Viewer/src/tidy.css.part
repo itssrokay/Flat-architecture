@@ -1,0 +1,32 @@
+
+/* ---- Declutter pass (19 Nov 2026, src/tidy.js) ---- */
+/* Technical status line (file name, object counts) only in debug */
+body.tidy:not(.dbg) #statusbar { display: none; }
+/* Walk / Overview read as one switch */
+body.tidy #walkBtn { border-top-right-radius: 0; border-bottom-right-radius: 0; margin-right: -6px; }
+body.tidy #overviewBtn { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+body.tidy #overviewBtn:not(:hover) { background: #fff; }
+/* Lights and day/night as small icon toggles */
+body.tidy #lightsBtn, body.tidy #nightBtn { font-size: 0 !important; width: 34px; padding-left: 0; padding-right: 0; text-align: center; background: #fff; color: inherit; border-color: var(--line); }
+body.tidy #lightsBtn::before { content: '💡'; font-size: 15px; }
+body.tidy #lightsBtn:not(.on)::before { filter: grayscale(1); opacity: .45; }
+body.tidy #nightBtn::before { content: '☀️'; font-size: 15px; }
+body.tidy #nightBtn.on::before { content: '🌙'; }
+body.tidy #nightBtn.on { background: #1f2a44; border-color: #1f2a44; }
+body.tidy #lightsBtn { margin-left: 6px; }
+/* Desktop: the left panel already lists the plans and has the colour tool, so the top bar doesn't repeat them */
+@media (min-width: 901px) {
+  body.tidy:not(.no-left) #modelSelect, body.tidy:not(.no-left) #topbar .wcBtn { display: none; }
+}
+#modelSelect { max-width: 210px; }
+/* Right panel: no empty "Inspector" placeholder until something is selected */
+body.tidy #right h3:has(+ #inspector.empty), body.tidy #inspector.empty { display: none; }
+/* Walk box: short line by default; the full key list on demand */
+body.tidy #walkHud .hint-short { font-size: 13px; }
+body.tidy #walkHud .hudFull:not(.keys) .hint-desk, body.tidy #walkHud .hudFull:not(.keys) .hint-touch { display: none; }
+body.tidy #walkHud .hudFull.keys .hint-short { display: none; }
+body.tidy #walkHud { padding-top: 8px; padding-bottom: 8px; }
+body.tidy #walkHud .hudRow { margin-top: 4px; }
+body.tidy #walkHud #walkInfo { opacity: .75; font-size: 12px; }
+/* Clear focus ring for keyboard users */
+body.tidy #topbar button:focus-visible, body.tidy #left button:focus-visible, body.tidy #modelSelect:focus-visible { outline: 2px solid #2b6fd6; outline-offset: 1px; }

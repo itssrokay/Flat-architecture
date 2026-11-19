@@ -1,0 +1,89 @@
+
+/* ---- V1.5 what's inside + shopping ---- */
+.insideRow { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin: 2px 0 10px; }
+.insideRow button { font-size: 12px; padding: 6px 6px; font-weight: 600; background: #fff7e6; border-color: #ead7ac; }
+.insideBox { margin-top: 10px; padding: 9px 10px; border: 1px solid #ead7ac; background: #fffaf0; border-radius: 10px; font-size: 12px; line-height: 1.45; }
+.insideBox .ib-t { font-weight: 700; color: #7a5410; margin-bottom: 3px; }
+.insideBox .ib-t span { font-weight: 600; color: #3d2a05; }
+.insideBox .ib-chain { color: #4b4b4b; margin-bottom: 7px; }
+.insideBox .ib-chain b { color: #b98a2c; }
+.ib-shop, .sh-l { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
+a.buy { display: inline-block; padding: 4px 9px; border-radius: 7px; text-decoration: none; font-weight: 600; font-size: 12px; border: 1px solid; }
+a.buy.b { background: #eef6f2; color: #1d5c47; border-color: #b7d8c9; }
+a.buy.m { background: #eef2fb; color: #233f86; border-color: #bccbee; }
+.ib-shop .ex, .sh-l .ex { flex-basis: 100%; font-size: 11.5px; color: #555; }
+.ib-shop .ex a, .sh-l .ex a { color: #2563eb; }
+#insideModal { position: fixed; inset: 0; z-index: 80; background: rgba(20, 22, 28, .45); display: grid; place-items: center; padding: 16px; }
+#insideModal.hidden { display: none; }
+#insideModal .im-card { background: #fff; border-radius: 16px; width: min(1100px, 100%); height: min(680px, 100%); display: grid; grid-template-rows: auto 1fr; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,.25); }
+#insideModal .im-head { display: flex; gap: 10px; align-items: center; padding: 12px 16px; border-bottom: 1px solid var(--line); }
+#insideModal .im-title { font-weight: 800; font-size: 17px; flex: 1; }
+#insideModal .im-pick { max-width: 280px; font-size: 13px; padding: 5px; }
+#insideModal .im-body { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(300px, 1fr); min-height: 0; }
+#insideModal.shop .im-body { grid-template-columns: 1fr; }
+#insideModal .im-3d { position: relative; background: linear-gradient(#f6f5f1, #e9e7e1); display: grid; grid-template-rows: 1fr auto; min-height: 0; }
+#insideModal .im-canvas { position: relative; min-height: 0; overflow: hidden; }
+#insideModal .im-canvas canvas { position: absolute; inset: 0; display: block; }
+#insideModal .im-labels { position: absolute; inset: 0; }
+#insideModal .im-tag { background: #1f2328; color: #fff; font: 700 11px/1 system-ui, sans-serif; padding: 4px 6px; border-radius: 99px; pointer-events: none; }
+#insideModal .im-tag.on { background: #b7791f; }
+#insideModal .im-ctl { display: flex; gap: 12px; align-items: center; justify-content: space-between; padding: 8px 12px; font-size: 12px; color: #555; flex-wrap: wrap; }
+#insideModal .im-ctl input { vertical-align: middle; width: 160px; }
+#insideModal .im-side { overflow: auto; padding: 12px 16px 18px; font-size: 13px; }
+#insideModal.shop .im-side { padding: 14px 20px 24px; }
+#insideModal .im-feel { background: #fff7e6; border: 1px solid #ead7ac; border-radius: 10px; padding: 8px 10px; margin-bottom: 10px; line-height: 1.45; }
+#insideModal .im-end { font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: .05em; margin: 4px 0; }
+#insideModal .im-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+#insideModal .im-list li { display: grid; grid-template-columns: 18px 1fr; gap: 8px; padding: 7px 8px; border-radius: 8px; cursor: pointer; border: 1px solid transparent; }
+#insideModal .im-list li:hover, #insideModal .im-list li.on { background: #fbf6ea; border-color: #ead7ac; }
+#insideModal .im-list .sw { width: 16px; height: 16px; border-radius: 4px; border: 1px solid rgba(0,0,0,.2); margin-top: 2px; }
+#insideModal .im-list .mm { float: right; color: #888; font-size: 11.5px; font-variant-numeric: tabular-nums; }
+#insideModal .im-list .w { color: #444; margin-top: 2px; line-height: 1.4; }
+#insideModal .im-list .c { color: #1d5c47; font-size: 12px; margin-top: 2px; font-weight: 600; }
+#insideModal .im-note { font-size: 12px; color: #666; background: #f6f6f4; border-radius: 8px; padding: 8px 10px; margin: 8px 0; line-height: 1.45; }
+#insideModal h4 { margin: 14px 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: #6d3fa8; }
+#insideModal .sh-row { display: grid; grid-template-columns: minmax(180px, 1fr) minmax(0, 2fr); gap: 12px; padding: 9px 0; border-top: 1px solid var(--line); }
+#insideModal .sh-row .q { color: #888; font-size: 12px; }
+#insideModal .sh-row .sz { color: #666; font-size: 12px; margin-top: 2px; }
+@media (max-width: 760px) {
+  #insideModal { padding: 0; }
+  #insideModal .im-card { border-radius: 0; height: 100%; }
+  #insideModal .im-body { grid-template-columns: 1fr; grid-template-rows: 46% 1fr; }
+  #insideModal .sh-row { grid-template-columns: 1fr; gap: 4px; }
+}
+body.immersive .insideRow { display: none; }
+/* ---- V1.6 reasons, mistakes, click card, thumbnails ---- */
+#insideModal .im-tabs { display: flex; gap: 4px; margin: 0 0 10px; flex-wrap: wrap; position: sticky; top: -12px; background: #fff; padding: 4px 0 6px; z-index: 1; }
+#insideModal .im-tabs button { font-size: 12px; padding: 5px 10px; border-radius: 99px; }
+#insideModal .im-tabs button.on { background: #1f2328; color: #fff; border-color: #1f2328; }
+#insideModal h5 { margin: 12px 0 5px; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: #6d3fa8; }
+#insideModal .im-why { background: #eef6f2; border: 1px solid #c8e0d4; border-radius: 10px; padding: 8px 10px; line-height: 1.5; }
+#insideModal .im-pc { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+#insideModal .im-pc ul, #insideModal .im-mist { margin: 0; padding-left: 18px; display: grid; gap: 4px; line-height: 1.45; }
+#insideModal .im-pc .p h5 { color: #1d5c47; } #insideModal .im-pc .c h5 { color: #a8412f; }
+#insideModal .im-alt { margin: 0; line-height: 1.5; }
+#insideModal .im-mist li::marker { color: #b7791f; font-weight: 700; }
+#insideModal .im-myth { border: 1px solid var(--line); border-radius: 10px; margin: 6px 0; overflow: hidden; line-height: 1.45; }
+#insideModal .im-myth .m { background: #fbeeee; padding: 6px 10px; color: #7a2d22; }
+#insideModal .im-myth .f { background: #eef6f2; padding: 6px 10px; color: #1d4b3c; }
+#insideModal .sh-row { grid-template-columns: 132px minmax(160px, 1fr) minmax(0, 2fr) !important; align-items: center; }
+a.sh-img, a.pc-img { position: relative; display: block; border-radius: 10px; overflow: hidden; background: linear-gradient(#f7f6f2, #e9e7e1); border: 1px solid var(--line); text-decoration: none; }
+a.sh-img { width: 132px; height: 99px; }
+a.sh-img img, a.pc-img img { width: 100%; height: 100%; object-fit: contain; display: block; }
+a.sh-img .ph, a.pc-img .ph { display: grid; place-items: center; height: 100%; font-size: 34px; }
+a.sh-img .go, a.pc-img .go { position: absolute; right: 5px; bottom: 5px; background: rgba(31,35,40,.82); color: #fff; font: 600 10.5px system-ui, sans-serif; padding: 2px 6px; border-radius: 6px; opacity: 0; transition: opacity .15s; }
+a.sh-img:hover .go, a.pc-img:hover .go, a.pc-img .go { opacity: 1; }
+#pickCard { position: absolute; z-index: 30; width: 290px; background: #fff; border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 14px 40px rgba(0,0,0,.22); padding: 10px 12px 12px; font-size: 12.5px; line-height: 1.45; }
+#pickCard.hidden { display: none; }
+#pickCard .pc-h { display: flex; justify-content: space-between; gap: 8px; align-items: start; margin-bottom: 6px; font-size: 13.5px; }
+#pickCard .pc-h .x { padding: 1px 7px; font-size: 12px; }
+#pickCard a.pc-img { height: 150px; margin-bottom: 7px; }
+#pickCard .pc-chain { color: #555; margin-bottom: 4px; }
+#pickCard .pc-why { color: #333; background: #fff7e6; border-radius: 8px; padding: 6px 8px; margin-bottom: 7px; }
+#pickCard .pc-b { display: flex; flex-wrap: wrap; gap: 5px; }
+#pickCard .pc-b button { font-size: 12px; padding: 5px 8px; }
+#pickCard .pc-b a.buy { font-size: 12px; }
+@media (max-width: 760px) { #insideModal .sh-row { grid-template-columns: 96px 1fr !important; } #insideModal .sh-row .sh-l { grid-column: 1 / 3; } a.sh-img { width: 96px; height: 72px; } #insideModal .im-pc { grid-template-columns: 1fr; } }
+#insideModal .sh-why { color: #333; font-size: 12px; margin-top: 4px; line-height: 1.4; }
+#insideModal .sh-tip, #pickCard .pc-tip { color: #8a5e16; font-size: 12px; margin-top: 3px; line-height: 1.4; }
+#pickCard .pc-tip { background: #fdf3e1; border-radius: 8px; padding: 5px 8px; margin: -3px 0 7px; }
