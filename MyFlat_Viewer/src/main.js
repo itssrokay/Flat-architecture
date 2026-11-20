@@ -5,18 +5,18 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { CONFIG } from './config.js?v=35';
-import { Walkthrough } from './walk.js?v=35';
-import { setupImmersive } from './immersive.js?v=35';
-import { setupExtras } from './extras.js?v=35';
-import { setupLearn } from './learn.js?v=35';
-import { setupI18n } from './i18n.js?v=35';
-import { setupSimple } from './simple.js?v=35';
-import { setupEdit } from './edit.js?v=35';
-import { setupChat } from './chat.js?v=35';
+import { CONFIG } from './config.js?v=36';
+import { Walkthrough } from './walk.js?v=36';
+import { setupImmersive } from './immersive.js?v=36';
+import { setupExtras } from './extras.js?v=36';
+import { setupLearn } from './learn.js?v=36';
+import { setupI18n } from './i18n.js?v=36';
+import { setupSimple } from './simple.js?v=36';
+import { setupEdit } from './edit.js?v=36';
+import { setupChat } from './chat.js?v=36';
 // bump together with the ?v= in index.html and the imports above whenever the viewer or models change,
 // so browsers never mix a new page with old cached scripts or models
-const BUILD = '35';
+const BUILD = '36';
 
 const $ = (id) => document.getElementById(id);
 // language (English / Hindi): translates the interface in place; design notes + Learn guide load their Hindi files

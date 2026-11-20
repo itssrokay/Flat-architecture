@@ -4,12 +4,13 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 
-const V = '35';
+const V = '36';
 const $ = (id) => document.getElementById(id);
 const hi = () => (document.documentElement.lang === 'hi' ? 1 : 0);
 const T = (pair) => (Array.isArray(pair) ? pair[hi()] || pair[0] : pair);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-let DATA = null, SHOP = null;
+let DATA = null, SHOP = null, EXPLAIN = {};
+fetch(`./models/explain.json?v=${V}`).then((r) => r.json()).then((e) => { EXPLAIN = e; }).catch(() => {});
 
 Promise.all([
   fetch(`./models/layers.json?v=${V}`).then((r) => r.json()),
@@ -173,6 +174,8 @@ const L10N = {
   pull: ['Pull apart', 'अलग करें'], feel: ['How it feels', 'छूने में कैसा'], drag: ['Drag to turn · scroll to zoom · tap a layer', 'घुमाने के लिए खींचें · ज़ूम के लिए स्क्रॉल · परत पर टैप करें'],
   pick: ['Choose a finish', 'फ़िनिश चुनें'], close: ['Close', 'बंद करें'], surface: ['outside / surface', 'बाहर / सतह'], structure: ['structure', 'ढाँचा'],
   inModel: ['In this plan', 'इस प्लान में'], also: ['Also needed', 'यह भी चाहिए'], qty: ['qty', 'संख्या'],
+  exMore: ['Explain ▾', 'समझाएँ ▾'], exLess: ['Hide ▴', 'छिपाएँ ▴'], exWhy: ['Why it matters', 'क्यों ज़रूरी'], exHow: ['How it is done', 'कैसे होता है'], exCheck: ['How to check it', 'कैसे जाँचें'],
+  exVideo: ['▶ Video', '▶ वीडियो'], exRead: ['📄 Read', '📄 पढ़ें'], exMoreVid: ['More videos on YouTube', 'YouTube पर और वीडियो'], exNote: ['Note', 'ध्यान दें'],
   tLayers: ['Layers', 'परतें'], tWhy: ['Why · pros · cons', 'क्यों · फ़ायदे · कमियाँ'], tMist: ['Mistakes · myths', 'ग़लतियाँ · भ्रम'],
   why: ['Why this', 'यही क्यों'], pros: ['Good', 'फ़ायदे'], cons: ['Watch out', 'ध्यान दें'], alt: ['Alternatives', 'दूसरे विकल्प'],
   mist: ['Common mistakes in small towns and villages', 'छोटे शहर और गाँव में आम ग़लतियाँ'], myths: ['Myth vs fact', 'भ्रम और सच'], myth: ['Myth', 'भ्रम'], fact: ['Fact', 'सच'],
@@ -267,12 +270,23 @@ function openLayers(id, tab) {
   side.innerHTML = tabs + `<div class="im-feel"><b>${T(L10N.feel)}:</b> ${esc(T(d.feel))}</div>
     <div class="im-end">▲ ${T(L10N.surface)}</div>
     <ol class="im-list">${d.layers.map((l, i) => `<li data-i="${i}"><span class="sw" style="background:${swatch(l)}"></span><div><b>${i + 1}. ${esc(T(l.n))}</b>
-      <span class="mm">${l.mm >= 1 ? l.mm + ' mm' : '< 1 mm'}</span><div class="w">${esc(T(l.what))}</div>${l.cost ? `<div class="c">${esc(l.cost)}</div>` : ''}</div></li>`).join('')}</ol>
+      <span class="mm">${l.mm >= 1 ? l.mm + ' mm' : '< 1 mm'}</span><div class="w">${esc(T(l.what))}</div>${l.cost ? `<div class="c">${esc(l.cost)}</div>` : ''}${exHTML(l)}</div></li>`).join('')}</ol>
     <div class="im-end">▼ ${T(L10N.structure)}</div>${d.note ? `<div class="im-note">${esc(T(d.note))}</div>` : ''}`;
   side.querySelectorAll('.im-tabs button').forEach((b) => b.onclick = () => { modal.dataset.tab = b.dataset.tab; openLayers(id); });
-  side.querySelectorAll('.im-list li').forEach((li) => { li.onmouseenter = () => three && three.highlight(+li.dataset.i); li.onclick = () => three && three.highlight(+li.dataset.i, true); });
+  side.querySelectorAll('.im-exb').forEach((b) => b.onclick = (e) => { e.stopPropagation(); const box = b.nextElementSibling; const open = box.classList.toggle('open'); b.textContent = T(open ? L10N.exLess : L10N.exMore);
+    const li = b.closest('li'); if (open && three) three.highlight(+li.dataset.i, true); });
+  side.querySelectorAll('.im-ex a').forEach((a) => a.onclick = (e) => e.stopPropagation());
+  side.querySelectorAll('.im-list > li').forEach((li) => { li.onmouseenter = () => three && three.highlight(+li.dataset.i); li.onclick = () => three && three.highlight(+li.dataset.i, true); });
   if (!three) three = makeScene(modal.querySelector('.im-canvas'));
   three.build(d); three.explode = +modal.querySelector('.im-range').value; three.layout(true); three.start();
+}
+function exHTML(l) {
+  const x = EXPLAIN[l.kind]; if (!x || !T(x.simple)) return '';
+  const sec = (h, t) => (t && T(t) ? `<h6>${T(h)}</h6><p>${esc(T(t))}</p>` : '');
+  const steps = (x.how || []).length ? `<h6>${T(L10N.exHow)}</h6><ol>${x.how.map((s) => `<li>${esc(T(s))}</li>`).join('')}</ol>` : '';
+  const links = (x.links || []).map((k) => `<a class="ex-${k.t}" href="${esc(k.url)}" target="_blank" rel="noopener">${T(k.t === 'video' ? L10N.exVideo : L10N.exRead)} · ${esc(k.n)}</a>`).join('')
+    + (x.more ? `<a class="ex-more" href="${esc(x.more)}" target="_blank" rel="noopener">🔎 ${T(L10N.exMoreVid)}</a>` : '');
+  return `<button class="im-exb" type="button">${T(L10N.exMore)}</button><div class="im-ex"><p class="ex-simple">${esc(T(x.simple))}</p>${sec(L10N.exWhy, x.why)}${steps}${sec(L10N.exCheck, x.check)}${sec(L10N.exNote, x.note)}${links ? `<div class="ex-links">${links}</div>` : ''}</div>`;
 }
 function swatch(l) {
   if (l.color) return l.color;
@@ -355,7 +369,7 @@ function makeScene(host) {
   }
   S.highlight = (i, pin) => {
     S.items.forEach((it) => { const m = it.mesh.material; if (m.emissive) m.emissive.setHex(it.i === i ? 0x3a2a00 : 0x000000); it.lab.element.classList.toggle('on', it.i === i); });
-    modal.querySelectorAll('.im-list li').forEach((li) => li.classList.toggle('on', +li.dataset.i === i));
+    modal.querySelectorAll('.im-list > li').forEach((li) => li.classList.toggle('on', +li.dataset.i === i));
     if (pin) { const li = modal.querySelector(`.im-list li[data-i="${i}"]`); if (li) li.scrollIntoView({ block: 'nearest' }); }
   };
   labels.domElement.addEventListener('pointerup', (e) => {

@@ -648,3 +648,20 @@ body.tidy #walkHud .hudRow { margin-top: 4px; }
 body.tidy #walkHud #walkInfo { opacity: .75; font-size: 12px; }
 /* Clear focus ring for keyboard users */
 body.tidy #topbar button:focus-visible, body.tidy #left button:focus-visible, body.tidy #modelSelect:focus-visible { outline: 2px solid #2b6fd6; outline-offset: 1px; }
+
+/* ---- layer "Explain" (20 Nov 2026) ---- */
+#insideModal .im-exb { margin-top: 6px; padding: 3px 10px; font-size: 12.5px; border-radius: 999px; border: 1px solid #d9c7a0; background: #fffaf0; color: #7a4d0f; cursor: pointer; }
+#insideModal .im-exb:hover { background: #fbefd6; }
+#insideModal .im-ex { display: none; margin-top: 8px; padding: 10px 12px; background: #fff; border: 1px solid #eadfcb; border-radius: 10px; font-size: 13px; line-height: 1.5; cursor: auto; }
+#insideModal .im-ex.open { display: block; }
+#insideModal .im-ex .ex-simple { margin: 0 0 6px; font-size: 13.5px; }
+#insideModal .im-ex h6 { margin: 8px 0 2px; font-size: 12px; color: #7a4d0f; }
+#insideModal .im-ex p { margin: 0; }
+#insideModal .im-ex ol { margin: 2px 0 0; padding-left: 18px; }
+#insideModal .ex-links { display: flex; flex-direction: column; gap: 5px; margin-top: 10px; }
+#insideModal .ex-links a { display: block; padding: 6px 9px; border-radius: 8px; text-decoration: none; font-size: 12.5px; border: 1px solid #e3e3e3; color: #1f2328; background: #fafafa; }
+#insideModal .ex-links a.ex-video { border-color: #f1c4c4; background: #fff5f5; }
+#insideModal .ex-links a.ex-article { border-color: #c9d8f0; background: #f4f8ff; }
+#insideModal .ex-links a:hover { filter: brightness(.97); }
+#insideModal .ex-links a.ex-more { color: #555; }
+#insideModal .im-ex ol li, #insideModal .im-ex ol li:hover { display: list-item; padding: 1px 0; border: 0; background: none; border-radius: 0; cursor: auto; }
