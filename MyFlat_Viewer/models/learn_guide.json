@@ -1699,6 +1699,10 @@
      "Floor & paint"
     ],
     [
+     "tiles",
+     "Tiles & stone"
+    ],
+    [
      "ceiling",
      "Ceiling"
     ],
@@ -2374,6 +2378,503 @@
     "p": [],
     "links": []
    }
-  ]
+  ],
+  "tiles": [
+   {
+    "h": "Tile words, in simple terms",
+    "p": [
+     "Almost every Indian floor today is <b>vitrified tile</b>: clay and glass powder fired at about 1,200 °C until it hardly soaks up water. The names differ in <b>where the pattern is</b> and <b>how shiny</b> the top is."
+    ],
+    "table": [
+     [
+      "Name",
+      "What it really is",
+      "₹ / sq ft (tile only)"
+     ],
+     [
+      "Ceramic",
+      "Softer clay tile; walls and budget floors",
+      "₹20–50"
+     ],
+     [
+      "Double-charge",
+      "Colour pressed 3–4 mm deep; very tough, few designs",
+      "₹45–90"
+     ],
+     [
+      "GVT (matt / satin)",
+      "Printed design under a glaze; huge choice, not slippery in matt",
+      "₹40–100"
+     ],
+     [
+      "PGVT (glossy)",
+      "GVT polished to a mirror shine; marble look, slippery when wet, shows scratches",
+      "₹50–160"
+     ],
+     [
+      "Full-body",
+      "Same colour through the whole thickness; chips hardly show",
+      "more than double-charge"
+     ],
+     [
+      "Big slab (800×1600)",
+      "Very few joints, luxury look; needs skilled laying",
+      "₹80–180"
+     ],
+     [
+      "Anti-skid (R10/R11)",
+      "Rough matt surface for bathrooms",
+      "₹35–65"
+     ],
+     [
+      "Granite",
+      "Natural hard stone, 16–20 mm slabs",
+      "₹60–300"
+     ],
+     [
+      "Kota stone",
+      "Grey-green natural limestone; outdoor, not slippery",
+      "cheap"
+     ],
+     [
+      "Marble",
+      "Natural stone, beautiful, stains and needs polishing",
+      "varies widely"
+     ]
+    ],
+    "notes": [
+     "Prices are material only from 2025–26 Indian guides; laying adds about ₹15–40 per sq ft, adhesive ₹10–30. Add 18% GST."
+    ],
+    "links": [
+     [
+      "https://www.studiomatrx.org/guides/gvt-vs-pgvt-india",
+      "GVT vs PGVT (Studio Matrx)"
+     ],
+     [
+      "https://materialdepot.com/qna/what-sets-gvt-tiles-apart-from-vitrified-tiles-tiles",
+      "GVT, PGVT, double-charge, full-body: the difference"
+     ],
+     [
+      "https://www.orientbell.com/tile-guide/tile-price-per-square-foot-india",
+      "Tile prices per sq ft (Orientbell, May 2026)"
+     ]
+    ]
+   },
+   {
+    "h": "What we chose, room by room, and why",
+    "table": [
+     [
+      "Place",
+      "Our choice",
+      "Why"
+     ],
+     [
+      "Hall + passage",
+      "Matt GVT, 600×1200 (2 × 4 ft), warm light shade",
+      "Big room: big tiles mean fewer joints and a calmer look. Matt is not slippery and hides footprints; PGVT shines but is slippery and scratches."
+     ],
+     [
+      "Room 1, Room 2, kitchen floor",
+      "Same matt GVT in 600×600 (2 × 2 ft)",
+      "Smaller rooms: less cutting and waste; same shade so the flat feels connected."
+     ],
+     [
+      "Bathrooms floor",
+      "Anti-skid R11, 300×600 + epoxy grout",
+      "Safety for parents on wet floors; epoxy grout doesn't turn black or let water through."
+     ],
+     [
+      "Bathroom walls",
+      "Matt wall tile 300×600, up to 7 ft",
+      "Full splash height, easy to wipe."
+     ],
+     [
+      "Kitchen walls",
+      "Wall tile 300×600 above the counter (2 ft band) or to 6 ft",
+      "Oil and steam wipe off. The band is cheaper; 6 ft (Papa's plan) is easier to keep clean."
+     ],
+     [
+      "Kitchen counter, stair, sills, thresholds",
+      "Granite",
+      "Hardest common stone: heat, knives and feet don't hurt it."
+     ],
+     [
+      "Balcony, open square",
+      "Kota stone",
+      "Cheap, outdoor-proof, not slippery in rain."
+     ],
+     [
+      "Skirting",
+      "4 inch, cut from the floor tile",
+      "Protects the wall from mop water and kicks; matches the floor."
+     ]
+    ],
+    "notes": [
+     "Not chosen: PGVT (slippery, scratches), marble (stains, upkeep), plain ceramic on floors (chips), wooden-look tiles in bathrooms."
+    ],
+    "links": []
+   },
+   {
+    "h": "Comparison with my ratings",
+    "p": [
+     "Out of 5 for your flat. Higher is better (for 'slippery', higher means safer)."
+    ],
+    "table": [
+     [
+      "Option",
+      "Looks",
+      "Safe when wet",
+      "Scratch / chip",
+      "Easy cleaning",
+      "Cost",
+      "Hall"
+     ],
+     [
+      "Matt GVT",
+      "4",
+      "4",
+      "3",
+      "4",
+      "4",
+      "★ 4.5"
+     ],
+     [
+      "PGVT",
+      "5",
+      "2",
+      "2",
+      "3",
+      "3",
+      "3"
+     ],
+     [
+      "Double-charge",
+      "3",
+      "3",
+      "5",
+      "4",
+      "4",
+      "3.5"
+     ],
+     [
+      "Full-body",
+      "3",
+      "4",
+      "5",
+      "4",
+      "3",
+      "4"
+     ],
+     [
+      "Big slab",
+      "5",
+      "3",
+      "3",
+      "5",
+      "2",
+      "3.5"
+     ],
+     [
+      "Granite floor",
+      "4",
+      "2",
+      "5",
+      "4",
+      "2",
+      "3"
+     ],
+     [
+      "Marble",
+      "5",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2.5"
+     ],
+     [
+      "Ceramic",
+      "2",
+      "3",
+      "2",
+      "3",
+      "5",
+      "2"
+     ]
+    ],
+    "notes": [
+     "If money is tight in the hall, double-charge 600×600 is the tough budget option; full-body is the 'never shows a chip' upgrade."
+    ],
+    "links": [
+     [
+      "https://www.studiomatrx.org/guides/double-charged-vitrified-tiles-india",
+      "Double-charge vitrified tiles"
+     ],
+     [
+      "https://www.studiomatrx.org/guides/granite-vs-vitrified-tiles-india",
+      "Granite vs vitrified tiles"
+     ]
+    ]
+   },
+   {
+    "h": "Granite: where it goes (the '3' places)",
+    "p": [
+     "Papa's 'ग्रेनाइट 3' most likely means the usual three granite jobs: <b>1. kitchen counter</b>, <b>2. stair steps</b>, <b>3. window sills and door thresholds</b>. (If he meant 3 slabs or 3 ft, the calculator below still works: add a line.)"
+    ],
+    "table": [
+     [
+      "Granite",
+      "Looks",
+      "₹ / sq ft",
+      "Best for"
+     ],
+     [
+      "Black Galaxy",
+      "Black with gold flecks; hides crumbs and water marks",
+      "₹120–300",
+      "Kitchen counter ★"
+     ],
+     [
+      "Absolute / Jet black",
+      "Plain deep black; shows dust and water spots",
+      "₹110–300",
+      "Counter, sills"
+     ],
+     [
+      "Tan Brown",
+      "Brown with black-red grains",
+      "₹60–150",
+      "Stairs, counters"
+     ],
+     [
+      "Steel Grey",
+      "Grey with dark dots; modern",
+      "₹60–140",
+      "Stairs, thresholds"
+     ],
+     [
+      "Local grey / green",
+      "Plain, cheapest",
+      "₹50–90",
+      "Sills, utility"
+     ]
+    ],
+    "notes": [
+     "Ask for 18–20 mm thickness, a polished and rounded front edge, and a flamed or leather (non-shiny) finish on stair treads so they're not slippery. Seal the kitchen counter every 1–3 years."
+    ],
+    "links": [
+     [
+      "https://www.studiomatrx.org/guides/granite-flooring-india",
+      "Granite in India: types and prices"
+     ]
+    ]
+   },
+   {
+    "h": "Papa's measurement list: what it means",
+    "p": [
+     "Each line is <b>length × width in feet</b> for a floor, or <b>running length × tiling height</b> for walls. Below, each line is read against our measured plan. Edit any number, the tile size or the pieces per box (check the box label); totals add <b>10% for cutting and breakage</b> and round up to full boxes."
+    ],
+    "calc": true,
+    "notes": [
+     "Improvements to the list: (1) add the hall and passage, the biggest area; (2) say which bedroom is 12×19; (3) add the second small bathroom; (4) for walls, subtract doors and windows (a door is about 3 × 7 = 21 sq ft); (5) add skirting; (6) buy all boxes of one tile from the same batch and keep one spare box."
+    ],
+    "links": [
+     [
+      "https://materialdepot.com/qna/how-much-extra-should-i-account-for-wastage-when-making-a-purchase-tiles",
+      "How much extra tile to buy"
+     ]
+    ]
+   },
+   {
+    "h": "Buying and laying: checklist",
+    "ul": [
+     "Same <b>batch / shade code</b> on every box of one tile (printed on the box). Different batches differ in colour.",
+     "Open 2–3 boxes at the shop: look for chips, warped tiles and size differences.",
+     "Big tiles on <b>tile adhesive</b>, not a thick cement bed, with levelling clips and 2–3 mm spacers.",
+     "Bathrooms: waterproofing + 24-hour water test first, floor sloped to the drain, epoxy grout.",
+     "Tap test with a coin before the final payment: a hollow 'tuk' means air under the tile.",
+     "Keep 1 spare box of every tile for future repairs; the same design may not be available later."
+    ],
+    "links": [
+     [
+      "https://www.youtube.com/watch?v=aWRHGDvTzXc",
+      "▶ Video: laying vitrified floor tiles"
+     ],
+     [
+      "https://www.youtube.com/watch?v=YcOsKoWAjyY",
+      "▶ Video: tile adhesive vs cement"
+     ]
+    ]
+   }
+  ],
+  "tilecalc": {
+   "rows": [
+    {
+     "t": "12*19 Rom",
+     "a": 12,
+     "b": 19,
+     "k": "floor",
+     "tile": "600x600",
+     "en": "A bedroom, 228 sq ft. Our plan: Room 2 bedroom ≈ 12 × 17, Room 1 ≈ 12.6 × 14.5. Which room is this?",
+     "hi": "एक बेडरूम, 228 वर्ग फ़ुट। हमारे प्लान में कमरा 2 ≈ 12 × 17, कमरा 1 ≈ 12.6 × 14.5। यह कौन सा कमरा है?",
+     "note": "A bedroom, 228 sq ft. Our plan: Room 2 bedroom ≈ 12 × 17, Room 1 ≈ 12.6 × 14.5. Which room is this?"
+    },
+    {
+     "t": "17*15 rom 3rd flor",
+     "a": 17,
+     "b": 15,
+     "k": "floor",
+     "tile": "600x600",
+     "en": "A room on the 3rd floor, 255 sq ft. Not in our flat model: is it a separate floor?",
+     "hi": "तीसरी मंज़िल का कमरा, 255 वर्ग फ़ुट। हमारे फ़्लैट मॉडल में नहीं: क्या यह अलग मंज़िल है?",
+     "note": "A room on the 3rd floor, 255 sq ft. Not in our flat model: is it a separate floor?"
+    },
+    {
+     "t": "6*10",
+     "a": 6,
+     "b": 10,
+     "k": "floor",
+     "tile": "600x600",
+     "en": "60 sq ft, no name. Passage (plan 5 × 14.5) or balcony?",
+     "hi": "60 वर्ग फ़ुट, नाम नहीं। पैसेज (प्लान 5 × 14.5) या बालकनी?",
+     "note": "60 sq ft, no name. Passage (plan 5 × 14.5) or balcony?"
+    },
+    {
+     "t": "4*5 holl flor tils",
+     "a": 4,
+     "b": 5,
+     "k": "floor",
+     "tile": "600x1200",
+     "en": "Only 20 sq ft, but our hall is about 600 sq ft. Maybe '4×2 ft hall tiles' (our pick) or a small landing?",
+     "hi": "सिर्फ़ 20 वर्ग फ़ुट, जबकि हॉल लगभग 600 वर्ग फ़ुट। शायद 'हॉल की 4×2 फीट टाइल' (हमारी पसंद) या छोटी लैंडिंग?",
+     "note": "Only 20 sq ft, but our hall is about 600 sq ft. Maybe '4×2 ft hall tiles' (our pick) or a small landing?"
+    },
+    {
+     "t": "9*7flor",
+     "a": 9,
+     "b": 7,
+     "k": "floor",
+     "tile": "600x600",
+     "en": "Kitchen floor, 63 sq ft. Matches our plan (9.7 × 7.1). ✓",
+     "hi": "रसोई का फ़र्श, 63 वर्ग फ़ुट। हमारे प्लान (9.7 × 7.1) से मेल। ✓",
+     "note": "Kitchen floor, 63 sq ft. Matches our plan (9.7 × 7.1). ✓"
+    },
+    {
+     "t": "10*7.25bath",
+     "a": 10,
+     "b": 7.25,
+     "k": "floor",
+     "tile": "300x600",
+     "en": "The bigger bathroom (tub side), 72.5 sq ft. Plan ≈ 12.6 × 6.3. Close. ✓",
+     "hi": "बड़ा बाथरूम (टब वाला), 72.5 वर्ग फ़ुट। प्लान ≈ 12.6 × 6.3। लगभग मेल। ✓",
+     "note": "The bigger bathroom (tub side), 72.5 sq ft. Plan ≈ 12.6 × 6.3. Close. ✓"
+    },
+    {
+     "t": "5*7 bhat flor",
+     "a": 5,
+     "b": 7,
+     "k": "floor",
+     "tile": "300x600",
+     "en": "Small bathroom floor, 35 sq ft (Bath 1 ≈ 4 × 8.5 or Bath 2 ≈ 4.4 × 7.1). Only one listed: the other bathroom is missing.",
+     "hi": "छोटे बाथरूम का फ़र्श, 35 वर्ग फ़ुट (बाथ 1 ≈ 4 × 8.5 या बाथ 2 ≈ 4.4 × 7.1)। एक ही लिखा है: दूसरा बाथरूम छूट गया।",
+     "note": "Small bathroom floor, 35 sq ft (Bath 1 ≈ 4 × 8.5 or Bath 2 ≈ 4.4 × 7.1). Only one listed: the other bathroom is missing."
+    },
+    {
+     "t": "52*7 bath diwal",
+     "a": 52,
+     "b": 7,
+     "k": "wall",
+     "tile": "300x600",
+     "en": "Bathroom walls: 52 running ft tiled up to 7 ft = 364 sq ft. Our three wet rooms add up to about 78 ft of wall after doors, so this may cover only two of them.",
+     "hi": "बाथरूम की दीवारें: 52 रनिंग फ़ुट, 7 फ़ुट ऊँचाई तक = 364 वर्ग फ़ुट। हमारे तीनों बाथरूम मिलाकर दरवाज़े घटाकर लगभग 78 फ़ुट दीवार, तो शायद दो ही गिने हैं।",
+     "note": "Bathroom walls: 52 running ft tiled up to 7 ft = 364 sq ft. Our three wet rooms add up to about 78 ft of wall after doors, so this may cover only two of them."
+    },
+    {
+     "t": "27*6 किचन दिवाल",
+     "a": 27,
+     "b": 6,
+     "k": "wall",
+     "tile": "300x600",
+     "en": "Kitchen walls: 27 running ft tiled up to 6 ft = 162 sq ft. Matches the kitchen walls minus door and window. ✓",
+     "hi": "रसोई की दीवारें: 27 रनिंग फ़ुट, 6 फ़ुट ऊँचाई तक = 162 वर्ग फ़ुट। दरवाज़ा-खिड़की घटाकर रसोई की दीवारों से मेल। ✓",
+     "note": "Kitchen walls: 27 running ft tiled up to 6 ft = 162 sq ft. Matches the kitchen walls minus door and window. ✓"
+    }
+   ],
+   "extra": [
+    {
+     "t": "Hall (not in the list)",
+     "a": 16.5,
+     "b": 30,
+     "k": "floor",
+     "tile": "600x1200",
+     "en": "Hall ≈ 16.5 × 30 ft in our plan (~500 sq ft) plus the strip by the pillars. The biggest area; please measure.",
+     "hi": "हॉल हमारे प्लान में ≈ 16.5 × 30 फ़ुट (~500 वर्ग फ़ुट) और खंभों के पास की पट्टी। सबसे बड़ा हिस्सा; कृपया नापें।",
+     "note": "Hall ≈ 16.5 × 30 ft in our plan (~500 sq ft) plus the strip by the pillars. The biggest area; please measure."
+    },
+    {
+     "t": "Second small bathroom",
+     "a": 4.4,
+     "b": 7.1,
+     "k": "floor",
+     "tile": "300x600",
+     "en": "Bath 2 floor, if not counted above.",
+     "hi": "बाथ 2 का फ़र्श, अगर ऊपर नहीं गिना।",
+     "note": "Bath 2 floor, if not counted above."
+    },
+    {
+     "t": "Skirting (running ft)",
+     "a": 150,
+     "b": 0.33,
+     "k": "wall",
+     "tile": "600x1200",
+     "en": "4-inch skirting cut from the floor tile along every room wall; about 150 running ft.",
+     "hi": "हर कमरे की दीवार के साथ फ़र्श की टाइल से कटी 4 इंच स्कर्टिंग; लगभग 150 रनिंग फ़ुट।",
+     "note": "4-inch skirting cut from the floor tile along every room wall; about 150 running ft."
+    }
+   ],
+   "sizes": {
+    "600x1200": [
+     2,
+     15.5,
+     "2 × 4 ft"
+    ],
+    "600x600": [
+     4,
+     15.5,
+     "2 × 2 ft"
+    ],
+    "800x1600": [
+     2,
+     27.6,
+     "2.6 × 5.2 ft"
+    ],
+    "300x600": [
+     8,
+     15.5,
+     "1 × 2 ft"
+    ],
+    "300x300": [
+     10,
+     9.7,
+     "1 × 1 ft"
+    ]
+   },
+   "ui": {
+    "line": "Papa wrote",
+    "len": "L ft",
+    "wid": "W / H ft",
+    "area": "sq ft",
+    "tile": "Tile",
+    "per": "pcs/box",
+    "boxes": "boxes",
+    "meaning": "Our reading",
+    "floor": "Floor",
+    "wall": "Wall",
+    "total": "Papa's list, with 10% extra",
+    "total2": "Including the missing lines",
+    "add": "+ Add a line",
+    "missing": "Missing from the list (suggested)"
+   }
+  }
  }
 }

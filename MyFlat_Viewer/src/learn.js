@@ -140,11 +140,48 @@ export async function setupLearn(ctx) {
       (b.notes || []).map(n => `<p class="where">${n}</p>`).join('') +
       `<div class="lrow">${b.links.map(([u, t]) => `<a class="small lbtn" href="${esc(u)}" target="_blank" rel="noopener">🖼 ${esc(t)}</a>`).join('')}</div></div>`).join('');
   }
+  function renderTiles() {
+    const saved = guide.pages.ceiling; guide.pages.ceiling = guide.pages.tiles || [];
+    const h = renderCeiling(); guide.pages.ceiling = saved; return h;
+  }
+  function calcHTML() {
+    const c = guide.pages.tilecalc; if (!c) return '';
+    const U2 = c.ui, sizes = Object.keys(c.sizes);
+    const row = (r, i, extra) => `<div class="tc-row ${extra ? 'extra' : ''}" data-i="${i}" data-x="${extra ? 1 : 0}"><div class="tc-h"><b>${esc(r.t)}</b><span class="tc-res"></span></div>
+      <div class="tc-in"><label>${esc(U2.len)} <input type="number" step="0.25" min="0" value="${r.a}" data-f="a"></label> × <label>${esc(U2.wid)} <input type="number" step="0.25" min="0" value="${r.b}" data-f="b"></label>
+      <select data-f="k"><option value="floor" ${r.k === 'floor' ? 'selected' : ''}>${esc(U2.floor)}</option><option value="wall" ${r.k === 'wall' ? 'selected' : ''}>${esc(U2.wall)}</option></select>
+      <select data-f="tile">${sizes.map((z) => `<option value="${z}" ${z === r.tile ? 'selected' : ''}>${z} (${c.sizes[z][2]})</option>`).join('')}</select>
+      <label>${esc(U2.per)} <input type="number" min="1" value="${c.sizes[r.tile][0]}" data-f="per" class="sm"></label></div>
+      <div class="tc-nt">${esc(r.note)}</div></div>`;
+    return `<div class="tcalc">${c.rows.map((r, i) => row(r, i)).join('')}<div class="tc-tot" data-w="0"></div>
+      <div class="tc-sep">${esc(U2.missing)}</div>${c.extra.map((r, i) => row(r, 100 + i, true)).join('')}<div class="tc-tot" data-w="1"></div></div>`;
+  }
+  function wireCalc(body) {
+    const c = guide.pages.tilecalc, box = body.querySelector('.tcalc'); if (!c || !box) return;
+    const upd = () => {
+      const S = [{ fl: 0, wl: 0, by: {} }, { fl: 0, wl: 0, by: {} }];
+      box.querySelectorAll('.tc-row').forEach((tr) => {
+        const v = (f) => tr.querySelector(`[data-f="${f}"]`).value;
+        const area = (+v('a') || 0) * (+v('b') || 0), z = v('tile'), per = +v('per') || 1, pc = c.sizes[z][1] / c.sizes[z][0];
+        const need = area * 1.1 / (pc * per);
+        tr.querySelector('.tc-res').textContent = area ? `${area.toFixed(0)} ${c.ui.area} → ${Math.ceil(need)} ${c.ui.boxes}` : '';
+        for (const k of (tr.dataset.x === '1' ? [1] : [0, 1])) { const t = S[k]; if (v('k') === 'floor') t.fl += area; else t.wl += area; t.by[z] = (t.by[z] || 0) + need; }
+      });
+      box.querySelectorAll('.tc-tot').forEach((el) => { const t = S[+el.dataset.w];
+        el.innerHTML = `<b>${esc(el.dataset.w === '1' ? c.ui.total2 : c.ui.total)}:</b> ${esc(c.ui.floor)} ${Math.round(t.fl * 1.1)} · ${esc(c.ui.wall)} ${Math.round(t.wl * 1.1)} ${esc(c.ui.area)}<br>` +
+          Object.entries(t.by).map(([k, n]) => `${esc(k)} (${esc(c.sizes[k][2])}): <b>${Math.ceil(n)}</b> ${esc(c.ui.boxes)}`).join(' · '); });
+    };
+    box.querySelectorAll('input, select').forEach((el) => el.addEventListener('input', (e) => {
+      if (e.target.dataset.f === 'tile') { const tr = e.target.closest('.tc-row'); tr.querySelector('[data-f="per"]').value = c.sizes[e.target.value][0]; }
+      upd();
+    }));
+    upd();
+  }
   function renderCeiling() {
     return (guide.pages.ceiling || []).map(b => `<div class="lcard"><h4>${esc(b.h)}</h4>` + (b.p || []).map(p => `<p>${p}</p>`).join('') +
       (b.ul ? `<ul>${b.ul.map(x => `<li>${x}</li>`).join('')}</ul>` : '') +
       (b.table ? `<div class="ctable"><table class="ftable">${b.table.map((r, i) => `<tr>${r.map(c => i === 0 ? `<th>${esc(c)}</th>` : `<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</table></div>` : '') +
-      (b.notes || []).map(n => `<p class="where">${n}</p>`).join('') +
+      (b.calc ? calcHTML() : '') + (b.notes || []).map(n => `<p class="where">${n}</p>`).join('') +
       ((b.links || []).length ? `<div class="lrow">${b.links.map(([u, t]) => `<a class="small lbtn" href="${esc(u)}" target="_blank" rel="noopener">🖼 ${esc(t)}</a>`).join('')}</div>` : '') + `</div>`).join('');
   }
   function renderSteps() {
@@ -180,7 +217,8 @@ export async function setupLearn(ctx) {
     if (!open || !guide) return;
     box.querySelectorAll('.ltabs button').forEach(b => b.classList.toggle('on', b.dataset.t === tab));
     const body = $('learnBody');
-    body.innerHTML = ({ room: renderRoom, basics: renderBasics, floorpaint: renderFloorPaint, ceiling: renderCeiling, steps: renderSteps, compare: renderCompare, dict: renderDict }[tab] || renderRoom)();
+    body.innerHTML = ({ room: renderRoom, basics: renderBasics, floorpaint: renderFloorPaint, tiles: renderTiles, ceiling: renderCeiling, steps: renderSteps, compare: renderCompare, dict: renderDict }[tab] || renderRoom)();
+    wireCalc(body);
     body.querySelectorAll('.showme').forEach(b => b.onclick = () => { const c = guide.designs[designKey()][+b.dataset.i]; if (!showMe(c.show)) b.textContent = U('notin'); });
     body.querySelectorAll('.showme2').forEach(b => b.onclick = () => { if (!showMe(b.dataset.p.split('|'))) b.textContent = U('notin'); });
     body.querySelectorAll('.showterm').forEach(b => b.onclick = () => {

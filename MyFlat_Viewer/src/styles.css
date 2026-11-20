@@ -665,3 +665,17 @@ body.tidy #topbar button:focus-visible, body.tidy #left button:focus-visible, bo
 #insideModal .ex-links a:hover { filter: brightness(.97); }
 #insideModal .ex-links a.ex-more { color: #555; }
 #insideModal .im-ex ol li, #insideModal .im-ex ol li:hover { display: list-item; padding: 1px 0; border: 0; background: none; border-radius: 0; cursor: auto; }
+
+/* ---- Learn: tile calculator (20 Nov 2026) ---- */
+#learn .tcalc { display: grid; gap: 6px; margin: 6px 0; }
+#learn .tc-row { border: 1px solid #eadfcb; border-radius: 8px; padding: 6px 8px; background: #fff; }
+#learn .tc-row.extra { background: #fbf7ee; border-style: dashed; }
+#learn .tc-h { display: flex; justify-content: space-between; gap: 8px; font-size: 13px; }
+#learn .tc-res { font-weight: 700; color: #1f6f54; white-space: nowrap; font-variant-numeric: tabular-nums; }
+#learn .tc-in { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin: 4px 0; font-size: 12px; color: #666; }
+#learn .tc-in input { width: 58px; padding: 2px 4px; font-size: 12.5px; border: 1px solid #d8cdb6; border-radius: 4px; }
+#learn .tc-in input.sm { width: 42px; }
+#learn .tc-in select { padding: 2px 4px; font-size: 12px; border: 1px solid #d8cdb6; border-radius: 4px; }
+#learn .tc-nt { font-size: 12px; color: #555; }
+#learn .tc-sep { font-weight: 700; color: #7a4d0f; margin-top: 6px; }
+#learn .tc-tot { background: #eaf5ee; border: 1px solid #bfdcc9; border-radius: 8px; padding: 6px 9px; font-size: 12.5px; }

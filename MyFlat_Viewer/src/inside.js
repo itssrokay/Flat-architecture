@@ -4,7 +4,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 
-const V = '36';
+const V = '37';
 const $ = (id) => document.getElementById(id);
 const hi = () => (document.documentElement.lang === 'hi' ? 1 : 0);
 const T = (pair) => (Array.isArray(pair) ? pair[hi()] || pair[0] : pair);
