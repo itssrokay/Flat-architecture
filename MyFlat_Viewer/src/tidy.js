@@ -20,6 +20,21 @@ function shorten() {
 }
 if (sel) { new MutationObserver(shorten).observe(sel, { childList: true }); sel.addEventListener('change', shorten); shorten(); }
 
+// 1b. One switch to hide every door (frames and leaves): walk through openings, see rooms joined up.
+function doorsOn() { return window.app?.catVisible?.doors !== false; }
+function doorLabel(b) { b.textContent = doorsOn() ? (hi() ? '🚪 सब दरवाज़े हटाएँ' : '🚪 Hide all doors') : (hi() ? '🚪 दरवाज़े वापस' : '🚪 Show doors'); b.classList.toggle('on', !doorsOn()); }
+function toggleDoors() { window.viewer?.setCat?.('doors', !doorsOn()); document.querySelectorAll('.doorsBtn').forEach(doorLabel); }
+(function addDoors() {
+  const row = document.querySelector('#moreMenu #viewButtons')?.parentElement?.querySelectorAll('.mrow')[1];
+  if (!row || !window.viewer?.setCat) return setTimeout(addDoors, 400);
+  const mk = (cls) => { const b = document.createElement('button'); b.className = 'toggle doorsBtn ' + cls; b.type = 'button'; b.onclick = toggleDoors; doorLabel(b); return b; };
+  if (!row.querySelector('.doorsBtn')) row.prepend(mk(''));
+  const hudRow = document.querySelector('#walkHud .hudRow'); if (hudRow && !hudRow.querySelector('.doorsBtn')) hudRow.append(mk('small'));
+  const ins = document.querySelector('.insideRow'); if (ins && !ins.querySelector('.doorsBtn')) ins.append(mk('small'));
+  setInterval(() => document.querySelectorAll('.doorsBtn').forEach(doorLabel), 1500);   // stays right after the Controls panel or a plan switch
+})();
+document.addEventListener('keydown', (e) => { if (e.key === 'h' && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement?.tagName || '')) toggleDoors(); });
+
 // 2. Lights / day-night become icon toggles (CSS draws the icon); keep an accessible name.
 function lightLabels() {
   const l = $('lightsBtn'), n = $('nightBtn'); if (!l || !n) return;

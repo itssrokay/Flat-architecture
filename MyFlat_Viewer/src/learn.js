@@ -180,7 +180,7 @@ export async function setupLearn(ctx) {
   function renderCeiling() {
     return (guide.pages.ceiling || []).map(b => `<div class="lcard"><h4>${esc(b.h)}</h4>` + (b.p || []).map(p => `<p>${p}</p>`).join('') +
       (b.ul ? `<ul>${b.ul.map(x => `<li>${x}</li>`).join('')}</ul>` : '') +
-      (b.table ? `<div class="ctable"><table class="ftable">${b.table.map((r, i) => `<tr>${r.map(c => i === 0 ? `<th>${esc(c)}</th>` : `<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</table></div>` : '') +
+      (b.table ? `<div class="ctable"><table class="ftable">${b.table.map((r, i) => { const go = i && b.go && b.go[i]; return `<tr${go ? ` class="used" data-go="${esc(go.join('|'))}" title="${esc(U('usedGo'))}"` : ''}>${r.map((c, j) => i === 0 ? `<th>${esc(c)}</th>` : `<td>${go && j === 0 ? '✓ ' : ''}${esc(c)}${go && j === r.length - 1 ? ' <span class="gobtn">👁</span>' : ''}</td>`).join('')}</tr>`; }).join('')}</table></div>${b.go ? `<p class="usedhint">${esc(U('usedHint'))}</p>` : ''}` : '') +
       (b.calc ? calcHTML() : '') + (b.notes || []).map(n => `<p class="where">${n}</p>`).join('') +
       ((b.links || []).length ? `<div class="lrow">${b.links.map(([u, t]) => `<a class="small lbtn" href="${esc(u)}" target="_blank" rel="noopener">🖼 ${esc(t)}</a>`).join('')}</div>` : '') + `</div>`).join('');
   }
@@ -207,7 +207,7 @@ export async function setupLearn(ctx) {
       h += `<div class="dgroup">${esc(g)}</div>`;
       for (const t of list) {
         const inScene = t.re && app.objects.some(o => t.re.test(o.name) || t.re.test(o.obj.userData?.spec || ''));
-        h += `<div class="dterm"><b>${esc(t.term)}</b>${t.aka.length ? ` <span class="aka">(${esc(t.aka.join(', '))})</span>` : ''}<div>${esc(t.plain)}</div>` +
+        h += `<div class="dterm${inScene ? ' used' : ''}">${inScene ? '<span class="tick">✓</span> ' : ''}<b>${esc(t.term)}</b>${t.aka.length ? ` <span class="aka">(${esc(t.aka.join(', '))})</span>` : ''}<div>${esc(t.plain)}</div>` +
           `<div class="lrow">${inScene ? `<button class="small showterm" data-term="${esc(t.term)}">${esc(U('showme'))}</button>` : ''}${linkBtns(t.img, t.wiki)}</div></div>`;
       }
     }
@@ -219,6 +219,7 @@ export async function setupLearn(ctx) {
     const body = $('learnBody');
     body.innerHTML = ({ room: renderRoom, basics: renderBasics, floorpaint: renderFloorPaint, tiles: renderTiles, ceiling: renderCeiling, steps: renderSteps, compare: renderCompare, dict: renderDict }[tab] || renderRoom)();
     wireCalc(body);
+    body.querySelectorAll('tr[data-go]').forEach(tr => tr.onclick = () => { if (!showMe(tr.dataset.go.split('|'))) { tr.classList.add('miss'); tr.title = U('notin'); } });
     body.querySelectorAll('.showme').forEach(b => b.onclick = () => { const c = guide.designs[designKey()][+b.dataset.i]; if (!showMe(c.show)) b.textContent = U('notin'); });
     body.querySelectorAll('.showme2').forEach(b => b.onclick = () => { if (!showMe(b.dataset.p.split('|'))) b.textContent = U('notin'); });
     body.querySelectorAll('.showterm').forEach(b => b.onclick = () => {

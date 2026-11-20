@@ -196,4 +196,21 @@ function openPicker(room, which, anchor) {
   });
   const na = pop.querySelector('.wc-noacc'); if (na) na.onclick = () => { const st = state.rooms[room]; st.acc = null; st.side = ''; state.scheme = null; save(); update(); pop.remove(); render(); };
 }
-window.wallColours = { applyScheme, update, state: () => state, data: () => DATA };
+// Same rule as the shader: the face shows the paint of the room it faces; the accent side gets the accent shade.
+function colourAt(p, n) {
+  const app = window.app; if (!app || !app.rooms || !DATA || !state.on || !p || !n) return null;
+  if (Math.abs(n.y) >= 0.5) { const s = SH[state.ceil] || SH.L145; return s ? { shade: s, part: 'ceiling' } : null; }
+  const len = Math.hypot(n.x, n.z) || 1, wx = p.x + (n.x / len) * 0.12, wz = p.z + (n.z / len) * 0.12;
+  const order = ['Bathroom 1', 'Bathroom 2', 'Room 2 Bath', 'Kitchen', 'Passage', 'Room 1', 'Room 2', 'Stair', 'Balcony', 'Open Square', 'Hall'];
+  for (const name of order) {
+    const r = app.rooms.find((x) => x.name === name); if (!r) continue;
+    const b = r.box || (r.obj && new THREE.Box3().setFromObject(r.obj)); if (!b) continue;
+    if (wx < b.min.x - 0.03 || wx > b.max.x + 0.03 || wz < b.min.z - 0.03 || wz > b.max.z + 0.03) continue;
+    const grp = DATA.rooms.find((g) => g.rooms.includes(name)); if (!grp) return { shade: null, room: name };
+    const st = state.rooms[grp.k] || {}; const d = st.acc && st.side ? DIR[st.side] : null;
+    const acc = !!(d && (n.x / len) * d[0] + (n.z / len) * d[1] > 0.8);
+    return { shade: SH[acc ? st.acc : st.base] || null, accent: acc, room: name, group: grp };
+  }
+  return null;
+}
+window.wallColours = { applyScheme, update, state: () => state, data: () => DATA, colourAt };

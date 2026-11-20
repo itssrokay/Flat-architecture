@@ -1749,7 +1749,9 @@
    "lead": "आप <b>{d}</b> देख रहे हैं। हर कार्ड बताता है क्या दिखेगा, किससे बना है (ढाँचे से लेकर जो आप छूते हैं, तक की परतें) और कहाँ लगेगा। <b>दिखाओ</b> वहाँ ले जाता है; <b>तस्वीरें देखें</b> असली फ़ोटो खोलता है।",
    "stepslead": "एक कमरे का काम आमतौर पर इसी क्रम में होता है। हर कदम अगले से पहले पूरा होना चाहिए, वरना काम ख़राब होकर दोबारा करना पड़ता है।",
    "stepsnote": "विकल्प D (बजट) में कदम 2, 5 और 6 नहीं होते: कोई तोड़-फोड़ नहीं, फ़ॉल्स सीलिंग नहीं, नया फ़र्श नहीं।",
-   "comparelead": "एक ही कमरा, पाँच तरह से, आसान शब्दों में।"
+   "comparelead": "एक ही कमरा, पाँच तरह से, आसान शब्दों में।",
+   "usedHint": "✓ = आपके प्लान में इस्तेमाल · हाइलाइट लाइन दबाएँ, 3D में दिखेगा",
+   "usedGo": "3D मॉडल में दिखाएँ"
   },
   "svg": {
    "slab": "स्लैब (RCC) = आपकी छत",
@@ -2212,7 +2214,26 @@
       "https://www.google.com/search?tbm=isch&q=beam+false+ceiling+design+living+room+India",
       "बीम वाली सीलिंग डिज़ाइन देखें"
      ]
-    ]
+    ],
+    "go": {
+     "2": [
+      "_GYPSUM_BORDER$",
+      "GYPSUM_BORDER",
+      "FALSE_CEILING_BAND"
+     ],
+     "3": [
+      "_COVE_LED_1",
+      "COVE_LED"
+     ],
+     "4": [
+      "DOWNLIGHT"
+     ],
+     "7": [
+      "_GYPSUM_BORDER$",
+      "GYPSUM_BORDER",
+      "FALSE_CEILING_BAND"
+     ]
+    }
    },
    {
     "h": "आपका हॉल: पूरी फ़ॉल्स सीलिंग नहीं, सिर्फ़ बॉर्डर क्यों",
@@ -2300,7 +2321,14 @@
       "https://www.studiomatrx.org/guides/false-ceiling-cost-guide-india",
       "कॉस्ट गाइड (Studio Matrx)"
      ]
-    ]
+    ],
+    "go": {
+     "2": [
+      "_GYPSUM_BORDER$",
+      "GYPSUM_BORDER",
+      "FALSE_CEILING_BAND"
+     ]
+    }
    },
    {
     "h": "क्या प्लास्टर के बाद यह हो सकता है? हाँ",
@@ -2472,7 +2500,28 @@
       "https://www.orientbell.com/tile-guide/tile-price-per-square-foot-india",
       "टाइल के दाम प्रति वर्ग फ़ुट (Orientbell, मई 2026)"
      ]
-    ]
+    ],
+    "go": {
+     "3": [
+      "_FLOOR_HALL_FINISH",
+      "FLOOR_HALL"
+     ],
+     "7": [
+      "_FLOOR_B1_FINISH",
+      "R2B_FLOOR",
+      "FLOOR_B1"
+     ],
+     "8": [
+      "R2B_THRESHOLD",
+      "THRESHOLD_MAIN",
+      "_W1_SILL"
+     ],
+     "9": [
+      "BALCONY_FLOOR_FINISH",
+      "BALCONY_FLOOR",
+      "FLOOR_OPENSQ"
+     ]
+    }
    },
    {
     "h": "हमने क्या चुना, कमरे के हिसाब से, और क्यों",
@@ -2494,7 +2543,7 @@
      ],
      [
       "बाथरूम फ़र्श",
-      "एंटी-स्किड R11, 300×600 + एपॉक्सी ग्राउट",
+      "एंटी-स्किड R11, 600×600 (or 300×600) + एपॉक्सी ग्राउट",
       "गीले फ़र्श पर माता-पिता की सुरक्षा; एपॉक्सी ग्राउट काला नहीं होता, पानी नहीं जाने देता।"
      ],
      [
@@ -2526,7 +2575,47 @@
     "notes": [
      "नहीं चुना: PGVT (फिसलन, खरोंच), मार्बल (दाग, देखभाल), फ़र्श पर सादा सिरेमिक (टूटता है), बाथरूम में लकड़ी-लुक टाइल।"
     ],
-    "links": []
+    "links": [],
+    "go": {
+     "1": [
+      "_FLOOR_HALL_FINISH",
+      "FLOOR_HALL"
+     ],
+     "2": [
+      "_FLOOR_R2_FINISH",
+      "R1_DEF_FLOOR_FINISH",
+      "_FLOOR_KIT_FINISH",
+      "FLOOR_R2"
+     ],
+     "3": [
+      "_FLOOR_B1_FINISH",
+      "R2B_FLOOR",
+      "FLOOR_B1"
+     ],
+     "4": [
+      "R2B_TILE_N_1",
+      "R2B_TILE",
+      "ENTRY_DADO"
+     ],
+     "5": [
+      "_FLOOR_KIT_FINISH",
+      "FLOOR_KIT"
+     ],
+     "6": [
+      "R2B_THRESHOLD",
+      "THRESHOLD_MAIN",
+      "_W1_SILL",
+      "STAIR_01_F1_STEP_01"
+     ],
+     "7": [
+      "BALCONY_FLOOR_FINISH",
+      "BALCONY_FLOOR",
+      "FLOOR_OPENSQ"
+     ],
+     "8": [
+      "_SKIRTING"
+     ]
+    }
    },
    {
     "h": "तुलना और मेरी रेटिंग",
@@ -2628,7 +2717,13 @@
       "https://www.studiomatrx.org/guides/granite-vs-vitrified-tiles-india",
       "ग्रेनाइट बनाम विट्रीफाइड टाइल"
      ]
-    ]
+    ],
+    "go": {
+     "1": [
+      "_FLOOR_HALL_FINISH",
+      "FLOOR_HALL"
+     ]
+    }
    },
    {
     "h": "ग्रेनाइट: कहाँ लगेगा ('3' जगहें)",
@@ -2681,7 +2776,15 @@
       "https://www.studiomatrx.org/guides/granite-flooring-india",
       "भारत में ग्रेनाइट: प्रकार और दाम"
      ]
-    ]
+    ],
+    "go": {
+     "1": [
+      "R2B_THRESHOLD",
+      "THRESHOLD_MAIN",
+      "_W1_SILL",
+      "STAIR_01_F1_STEP_01"
+     ]
+    }
    },
    {
     "h": "पापा की नाप की सूची: इसका मतलब",

@@ -4,7 +4,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 
-const V = '37';
+const V = '38';
 const $ = (id) => document.getElementById(id);
 const hi = () => (document.documentElement.lang === 'hi' ? 1 : 0);
 const T = (pair) => (Array.isArray(pair) ? pair[hi()] || pair[0] : pair);
@@ -179,7 +179,7 @@ const L10N = {
   tLayers: ['Layers', 'परतें'], tWhy: ['Why · pros · cons', 'क्यों · फ़ायदे · कमियाँ'], tMist: ['Mistakes · myths', 'ग़लतियाँ · भ्रम'],
   why: ['Why this', 'यही क्यों'], pros: ['Good', 'फ़ायदे'], cons: ['Watch out', 'ध्यान दें'], alt: ['Alternatives', 'दूसरे विकल्प'],
   mist: ['Common mistakes in small towns and villages', 'छोटे शहर और गाँव में आम ग़लतियाँ'], myths: ['Myth vs fact', 'भ्रम और सच'], myth: ['Myth', 'भ्रम'], fact: ['Fact', 'सच'],
-  details: ['ℹ Details', 'ℹ विवरण'], prodWhy: ['👍 Why · pros · cons', '👍 क्यों · फ़ायदे · कमियाँ'], prodMist: ['⚠ Mistakes · options', '⚠ ग़लतियाँ · विकल्प'], search: ['🛒 Search on Amazon', '🛒 Amazon पर खोजें'], size: ['Size', 'साइज़'], room: ['Room', 'कमरा'], allItems: ['All items by room', 'कमरे के हिसाब से सब चीज़ें'], mistP: ['Mistakes people make', 'लोग कौन-सी ग़लतियाँ करते हैं'], breakdown: ['🔍 Break it down', '🔍 परतें खोलें'], openAmazon: ['Opens Amazon', 'Amazon खुलेगा'], tapImg: ['Tap a picture to open an example on Amazon', 'Amazon पर उदाहरण खोलने के लिए फ़ोटो दबाएँ'],
+  details: ['ℹ Details', 'ℹ विवरण'], prodWhy: ['👍 Why · pros · cons', '👍 क्यों · फ़ायदे · कमियाँ'], prodMist: ['⚠ Mistakes · options', '⚠ ग़लतियाँ · विकल्प'], search: ['🛒 Search on Amazon', '🛒 Amazon पर खोजें'], size: ['Size', 'साइज़'], room: ['Room', 'कमरा'], allItems: ['All items by room', 'कमरे के हिसाब से सब चीज़ें'], mistP: ['Mistakes people make', 'लोग कौन-सी ग़लतियाँ करते हैं'], breakdown: ['🔍 Break it down', '🔍 परतें खोलें'], paintIs: ['Paint', 'पेंट'], accentW: ['accent wall', 'एक्सेंट दीवार'], ceilingW: ['ceiling', 'छत'], shadeCard: ['Asian Paints shade', 'Asian Paints शेड'], openAmazon: ['Opens Amazon', 'Amazon खुलेगा'], tapImg: ['Tap a picture to open an example on Amazon', 'Amazon पर उदाहरण खोलने के लिए फ़ोटो दबाएँ'],
 };
 let lastSel = null;
 const insp = $('inspector');
@@ -488,14 +488,31 @@ function ensureCard() {
   card.addEventListener('pointerdown', (e) => e.stopPropagation());
 }
 function hideCard() { if (card) card.classList.add('hidden'); }
+const catOfO = (o) => { for (let p = o; p; p = p.parent) if (p.userData && p.userData.category) return p.userData.category; return ''; };
 function showCard(o, x, y) {
   ensureCard();
   const it0 = shopFor(o), id = it0 ? null : layerIdFor(o), it = it0 || (id ? null : genericFor(o)), d = id ? DATA.layers[id] : null;
   if (!d && !it) { hideCard(); return; }
   const tip = document.getElementById('tapInfo'); if (tip) tip.classList.add('hidden');
   const title = it ? T(it.n) : T(d.title);
+  let paint = '';
+  if (window.wallColours?.colourAt && ['walls', 'pillars', 'beams', 'ceiling', 'roof'].includes(catOfO(o))) {
+    const cam = window.viewer?.camera, cv = window.viewer?.renderer?.domElement;
+    if (cam && cv) {
+      const r = cv.getBoundingClientRect(), rc = new THREE.Raycaster();
+      rc.setFromCamera(new THREE.Vector2(((x - r.left) / r.width) * 2 - 1, -((y - r.top) / r.height) * 2 + 1), cam);
+      const hit = rc.intersectObject(o, true)[0];
+      if (hit && hit.face) {
+        const nrm = hit.face.normal.clone().transformDirection(hit.object.matrixWorld);
+        if (nrm.dot(rc.ray.direction) > 0) nrm.negate();
+        const c = window.wallColours.colourAt(hit.point, nrm);
+        if (c && c.shade) paint = `<div class="pc-paint"><span class="sw" style="background:${c.shade.hex}"></span><div><b>${T(L10N.paintIs)}: ${esc(c.shade.n)}</b> <span class="code">${esc(c.shade.code)}</span>
+          <div class="sub">${c.part === 'ceiling' ? T(L10N.ceilingW) : esc(T(c.group?.n || c.room || ''))}${c.accent ? ' · ' + T(L10N.accentW) : ''} · <a href="${esc(c.shade.url)}" target="_blank" rel="noopener">${T(L10N.shadeCard)} ↗</a></div></div></div>`;
+      }
+    }
+  }
   card.innerHTML = `<div class="pc-h"><b>${esc(title)}</b><button class="x" title="${T(L10N.close)}">✕</button></div>
-    ${it ? imgFor(it, 'pc-img') : ''}
+    ${it ? imgFor(it, 'pc-img') : ''}${paint}
     ${d ? `<div class="pc-chain">${d.layers.slice(0, 4).map((l) => esc(T(l.n).replace(/,.*$/, ''))).join(' → ')}${d.layers.length > 4 ? ' → …' : ''}</div>` : ''}
     ${d && d.why ? `<div class="pc-why">${esc(T(d.why))}</div>` : ''}
     ${!d && it && it.why ? `<div class="pc-why">${esc(T(it.why))}</div>` : ''}${it ? pcHTML(it, 2) : ''}${it && it.tip ? `<div class="pc-tip">⚠ ${esc(T(it.tip))}</div>` : ''}

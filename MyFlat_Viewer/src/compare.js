@@ -84,12 +84,28 @@ function drawProducts(body) {
     const d = DATA.picks[it.k] || {}; const by = (t) => (d.picks || []).filter((p) => p.t === t);
     const fallback = (b) => `<div class="cm-pick">${link(it[b].url, T(L.amazon) + ' ' + it[b].band)}</div>`;
     const like = d.like && d.like.length ? d.like : it.pros; const bad = d.bad && d.bad.length ? d.bad : it.cons;
-    return `<tr><td class="cm-item"><b>${esc(T(it.n))}</b><div class="cm-sz">${esc(T(it.size))}</div><button class="small cm-open" data-k="${it.k}">${T(L.details)} ›</button></td>
+    return `<tr><td class="cm-item"><span class="cm-th" data-k="${it.k}"></span><b>${esc(T(it.n))}</b><div class="cm-sz">${esc(T(it.size))}</div><button class="small cm-open" data-k="${it.k}">${T(L.details)} ›</button></td>
       <td>${by('b').length ? pickCell(by('b')) : fallback('budget')}</td><td>${by('m').length ? pickCell(by('m')) : fallback('mid')}</td><td>${pickCell(by('p'))}</td>
       <td class="cm-like">${li(like)}</td><td class="cm-bad">${li(bad)}</td><td class="cm-tip">${esc(T(d.tip || it.tip || ''))}</td></tr>`;
   }).join('');
   body.innerHTML = `<div class="cm-note">${esc(T(DATA.note))}</div><div class="cm-scroll"><table class="cm-table"><thead><tr><th>${T(L.item)}</th><th>${T(L.budget)}</th><th>${T(L.mid)}</th><th>${T(L.prem)}</th><th>${T(L.like)}</th><th>${T(L.bad)}</th><th>${T(L.tip)}</th></tr></thead><tbody>${rows}</tbody></table></div>`;
   body.querySelectorAll('.cm-open').forEach((b) => b.onclick = () => { const it = SHOP.items.find((x) => x.k === b.dataset.k); close(); window.inside?.openProduct(it, 'why'); });
+  fillThumbs(body);
+}
+const ICONS = { mesh: '🦟', downlight: '💡', cove: '〰️', ac: '❄️', generic: '🛒' };
+function fillThumbs(body) {
+  // pictures are rendered from the 3D model one at a time so the table opens instantly
+  const todo = [...body.querySelectorAll('.cm-th:not(.done)')];
+  const step = () => {
+    const el = todo.shift(); if (!el || !el.isConnected) return;
+    el.classList.add('done'); const k = el.dataset.k; let u = null;
+    try { u = ICONS[k] ? null : window.inside?.thumb?.(k, 200, 150); } catch (e) { u = null; }
+    const it = SHOP.items.find((x) => x.k === k); const link = it && (it.ex?.[0]?.url || it.mid?.url);
+    el.innerHTML = u ? `<img src="${u}" alt="">` : `<i>${ICONS[k] || '🛒'}</i>`;
+    if (link) { el.title = 'Amazon ↗'; el.onclick = () => window.open(link, '_blank', 'noopener'); }
+    setTimeout(step, 0);
+  };
+  step();
 }
 function drawPaints(body) {
   const tbl = (rows) => `<div class="cm-scroll"><table class="cm-table cm-paint"><thead><tr><th>${T(L.product)}</th><th>${T(L.tier)}</th><th>${T(L.finish)}</th><th>${T(L.wash)}</th><th>${T(L.price)}</th><th>${T(L.cov)}</th><th>${T(L.war)}</th><th>${T(L.say)}</th></tr></thead><tbody>
